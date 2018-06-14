@@ -1,0 +1,72 @@
+﻿void main()
+{
+
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "　６月なのに、早くもセミの声が聞こえる今日この頃、雛見沢の皆さんはいかがお過ごしでしょうか。",
+		   NULL, "It's still June, yet the air is filled with the cries of cicadas. How is everyone in Hinamizawa doing?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今年も綿流しのお祭りが近付いてまいりました。",
+		   NULL, "The Watanagashi festival is coming just around the corner.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　昨年、大変ご好評をいただきました雛見沢営林署職員による木彫りマスコットの実演販売も行なわれます。",
+		   NULL, "We staff members from the forestry service are going to perform a wood sculpting demonstration at the festival.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　保護者の同伴があればお子様にも道具をお貸しできますので、どうか親子の素敵な記念にされてはいかがでしょうか。",
+		   NULL, "We'll be happy to lend out our tools and teach your kids how to sculpt wood themselves. It'll be an excellent memorial gift!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　さて、××第４次森林施業計画に基づき、本年夏季に山林の伐採を行なうことになりました。",
+		   NULL, "Also, we would like to inform everyone that we're going to cut down trees in the local hills this summer as part of the No. XX 4th Forest Landscape Management Project.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この伐採は、老齢木や枯木を伐採することにより山林の美観を守り、新たに植樹を行なうことで山林の若返りを目的とするものです。",
+		   NULL, "This project involves preserving the beauty of the forest by cutting down old trees and planting new ones.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　営林署では、この伐採作業に参加するボランティアを募集しております。",
+		   NULL, "The forestry service needs volunteers who are interested in helping us cut down the old trees.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　青空の下での林業体験を通じて、自然の素晴らしさを満喫される貴重な経験をされてはいかがでしょうか。",
+		   NULL, "You can enjoy the beauty of nature under the blue sky while helping out with this preservation activity.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　時期はちょうど夏休みを挟み、お子様との親子での参加も可能です。",
+		   NULL, "The project will begin during summer break, so you can bring your kids, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　夏の野山での貴重なボランティア体験を通じて、お子様の健全な育成に貢献できればと思います。",
+		   NULL, "This will be a good opportunity for your kids to learn about nature and have a valuable experience.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_suzu", 128, 64 );
+
+	OutputLine(NULL, "　なお、伐採予定地は高津戸地区、谷河内地区の山林になります。",
+		   NULL, "The locations of the project are the forests in the Takatsudo and Yagouchi areas.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

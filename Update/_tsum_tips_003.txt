@@ -1,0 +1,56 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	PlayBGM( 0, "Feel", 120, 0 );
+
+	OutputLine(NULL, "　きょうは、お母さんといっしょにプールリゾートにあそびに行きました。",
+		   NULL, "Today, I went to a swimming pool with my mom.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　そしたらアキヒトおじさんもいっしょでした。",
+		   NULL, "Uncle Akihito came with us, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　たまに礼奈にいじわるするからきらいだけど、とてもやさしくておもしろいおじさんです。",
+		   NULL, "I don't like him because he's sometimes mean to me, but he's a very kind and funny old man.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　プールにいるときはアキヒトおじさんがお父さんになってあげるから、礼奈ちゃんはおじさんのことをパパってよぶんだよと言われました。",
+		   NULL, "He told me to call him Daddy for that day, because he was going to play with me at the pool like he was my daddy.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　お母さんもパパってよんだので礼奈もパパとよんだら、",
+		   NULL, "My mom called him Daddy, so I did, too.", Line_WaitForInput);
+	OutputLine(NULL, "アキヒトおじさんはすごいうれしそうで、礼奈にいっぱいいっぱいおこずかいをくれました。",
+		   NULL, " Uncle Akihito looked very happy and gave me a lot of money.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　お母さんもすごいうれしそうで、礼奈もすごいうれしかったです。",
+		   NULL, "My mom looked very happy, and it made me happy, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　またあそびにきたいです。",
+		   NULL, "I want to play with him again.", Line_WaitForInput);
+	OutputLine(NULL, "こんどはお父さんもいっしょがいいなと思いました。",
+		   NULL, " I hope my dad can come with us next time.", Line_Normal);
+	ClearMessage();
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

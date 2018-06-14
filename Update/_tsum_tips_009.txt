@@ -1,0 +1,70 @@
+﻿void main()
+{
+
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	OutputLine(NULL, "　また、父親に関しても注意を払う必要があります。",
+		   NULL, "Furthermore, it's important that we closely monitor her father.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　父親も離婚を経験して少なからずの精神的打撃を受けている上、患者に親身になろうとする余り、感応性妄想性障害を起こす可能性があります。",
+		   NULL, "Since he has also suffered mental shock from the divorce, and has been trying hard to take care of the patient, there's a strong possibility that he may develop an induced delusional disorder.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　メンタルケアの第一歩として、相手の話を充分に聞き、頭ごなしに否定しないことは初歩の初歩でありますが、特に家族の場合、これによって感応してしまうことが少なくありません。",
+		   NULL, "As the first step of mental care, one should listen to the patient's story carefully without denying it. That's the most basic of basics. However, when the patient and the listener are related, it's easy for the listener to become deeply influenced by the patient's delusions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　また、寄生虫妄想症は感応を起こすことが広く知られており、時に１つのコミュニティ全体に広がることも少なくありません。",
+		   NULL, "Additionally, delusional parasitosis is widely known to make people highly impressionable, and the influence sometimes can spread throughout a whole community.", Line_Normal);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "（よって複数人から訴えがあったとしても、必ずしも寄生虫が存在するとは限りません。",
+		   NULL, "(Therefore, even if several people claim to acquire a parasitic infection, it doesn't necessarily prove the existence of a parasite.", Line_WaitForInput);
+	OutputLine(NULL, "保健所などへの害虫駆除の訴えにはしばしば、こうした集団妄想が含まれます）",
+		   NULL, " Some of the phone calls to the Health Care Centers for the extermination of pests are nothing but a mass delusion.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　しかも今回のケースでは、共有される妄想の内容が非常に過激であるため、",
+		   NULL, "Since the subject matter of the delusion in this case is extremely rabid,", Line_WaitForInput);
+	OutputLine(NULL, "最悪の場合、寄生虫の治療と称して、感応者同士が異常な方法で相互を傷付けあい死に至らしめる、もしくは悲観して心中するなどの行為に走ることも考えられます。",
+		   NULL, " the patients might harm or even kill each other in abnormal ways, believing this to be the treatment for the disease. They might also give up hope and commit suicide together, in the worst case.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　また、この感応性妄想性障害は、二人組精神病の呼び名もあり、親身な相方に対して特に強い感応性を示します。",
+		   NULL, "This influential delusional disorder, otherwise known as shared psychotic disorder, shows a particularly strong possibility of influencing close companions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　患者に接する人間には、患者が現在治療中であることを理解させ、妄想に感応しないよう充分に注意を促す必要があるでしょう。",
+		   NULL, "Anyone who is going to contact the patients must be made to understand that the patients are under medical treatment, and must be warned not to be influenced by the patients' delusions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　なお、感応しやすい人間としては、家族、もしくは恋人のような親身になってくれる人間が挙げられます。",
+		   NULL, "Individuals who are likely to be easily influenced are the patients' family members and people who deeply care about the patients, such as boyfriends or girlfriends.", Line_Normal);
+	ClearMessage();
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

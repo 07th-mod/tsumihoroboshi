@@ -1,0 +1,229 @@
+﻿void main()
+{
+
+	SetFontOfMessage( 2, 24, 1 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawScene( "DSC00038", 1000 );
+
+	PlayBGM( 0, "Cradle_song", 120, 0 );
+
+	OutputLine(NULL, "　こんにちは、竜騎士07です。",
+		   NULL, "Hello, my name is Ryukishi07.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この度は『ひぐらしのなく頃に解』罪滅し編をお楽しみいただき、誠にありがとうございます。",
+		   NULL, "I hope you enjoyed playing Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今回のシナリオの中で、テーマとしたかったものがいくつかありますが、ここではその内のひとつ。",
+		   NULL, "There are several themes I wanted to write in this chapter, but I'd like to talk about one of them here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　殺人の否定について書かせていただこうと思います。",
+		   NULL, "It's about the denial of murder.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これは、連続殺人ノベルという物騒なカテゴリーを標榜している以上、いつか書かなければならないことでした。",
+		   NULL, "This is something I had to write sooner or later, since this is a novel about serial murders.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　近年、特に未成年者に多い短絡的な問題解決手段に、「殺人」と「自殺」の２つがあります。",
+		   NULL, "There are two means that youngsters in particular use these days to solve problems, which are \"murder\" and \"suicide\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちはストレスを受けると、その発生源を取り除くか、その発生源から逃れるかの２つを選ばされます。",
+		   NULL, "When we feel stress, we choose to either get rid of the source of the stress or to get away from it.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "Juku2", 400 );
+
+	OutputLine(NULL, "　例えば、学校である人にいじめられているとする。",
+		   NULL, "Let's say you're bullied by a kid at school.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　すると解決策は２つあり、",
+		   NULL, "You have two ways to solve the problem.", Line_WaitForInput);
+	OutputLine(NULL, "そのいじめっ子を現在の環境から「取り除く」か、",
+		   NULL, " You choose either to <i>get rid of</i> the kid from your current environment", Line_WaitForInput);
+	OutputLine(NULL, "自分がその環境から「逃れる」かを選ばされることになります。",
+		   NULL, " or to <i>get away</i> from the environment itself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いじめっ子は大抵、喧嘩にも強く人数も多いでしょうから、自分一人が挑んだところで「取り除く」ことはできません。",
+		   NULL, "Usually, bullies are stronger and have their underlings, so you don't stand a chance alone to <i>get rid of</i> them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　また、クラスを変わる、学校を辞めるなどということは、なかなかできることではなく「逃れる」ことも普通はできません。",
+		   NULL, "It's also not easy to switch classes or to quit school, so you can't easily <i>get away</i> from the situation.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Juku1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　その結果、日々状況は悪化し続け、強まるストレスは自身に早期の解決を促します。",
+		   NULL, "As a result, the situation gets worse day by day, and your stress urges you to solve the problem immediately.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その結果、短絡的解決策として「殺人」と「自殺」の２つが浮上するわけです。",
+		   NULL, "And you come up with \"murder\" or \"suicide\" as easy solutions.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　「自殺」が敗北に当るなら、せめて相討ち覚悟で「殺人」に訴えたい。",
+		   NULL, "If suicide is considered defeat, you'd want to consider murder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　最近はそう思われる方も少なくないように思います。",
+		   NULL, "I feel like there are many people who think that way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ですが、現実的に「殺人」を犯したなら、それは容易に償える罪ではありません。",
+		   NULL, "However, if you actually committed a murder, it wouldn't be easy to pay for the sin.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは殺す側の方も重々ご存知と思います。",
+		   NULL, "I believe murderers know that well, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　殺す他ないくらいに追い詰めたアイツが憎くて悔しくて、自分の人生全てを引っくり返す壮大な覚悟の末、行なうわけです。",
+		   NULL, "But, you really hate the bully who pushed you to the limit where you have no choice but to kill him. So, with a determination that turns your entire life upside down, you commit murder.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ですが、そこまでの壮大な覚悟をされているなら、",
+		   NULL, "But if you have such strong determination,", Line_WaitForInput);
+	OutputLine(NULL, "「殺人」という最終手段に訴える前に、順に訴えていきたい手段があるはずです。",
+		   NULL, " there have to be more ways to take than opting for murder, which should be the last resort.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　友人に訴える。",
+		   NULL, "You can talk to your friends.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　駄目なら家族に訴える。",
+		   NULL, "If that doesn't work, you can talk to your family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　駄目なら先生に訴える。",
+		   NULL, "If that doesn't work, you can talk to your teacher.", Line_WaitForInput);
+	OutputLine(NULL, "…それでも駄目なら？",
+		   NULL, " ...If that doesn't work... then what?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いいえ、まだまだ訴える手段はあるはずです。",
+		   NULL, "There have to be more ways.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　あなたが「殺人」に訴え、人生全てを放棄する覚悟があるならば、まだまだやれる手段はある！",
+		   NULL, "If you have the determination to give up on your life by committing murder, there have to be more ways!", Line_Normal);
+	ClearMessage();
+	DrawScene( "DSC00038", 400 );
+
+	OutputLine(NULL, "　平成はいい世の中になりました。",
+		   NULL, "Our modern era is better than any era before it.", Line_WaitForInput);
+	OutputLine(NULL, "そういう悩みを訴えるホットラインは各自治体にいくつも設けられており、",
+		   NULL, " There are many hotlines that you can call to talk to someone.", Line_WaitForInput);
+	OutputLine(NULL, "例えあなたが友人も親も持たなかったとしても、訴える先はいくらでも用意してあるのです。",
+		   NULL, " Even if you don't have any friends or family, there are many places you can go for help.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ホットラインの向こうにいるのは素人ではありません。",
+		   NULL, "The people who will answer the phone aren't amateurs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ボランティアではありますが、保護司や青少年育成に長年関わられたベテランばかりです。",
+		   NULL, "They're volunteers, but they're also veterans who have worked as social workers or juvenile counselors for a long time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その方々は、あなたの両親よりも豊富な社会経験と熱意を持っていると断言できます。",
+		   NULL, "I can assure you that they have more social experience and passion than your parents do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　無給でこんなことを引き受ける人に悪い人がいるはずがない！",
+		   NULL, "People who work to help people for free can't be bad people!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もしあなたが、相手を「殺す」か、自分を「殺す」しかもう選択肢が残されていないと思ったなら、どうか最後にこういうところへ電話してみてください。",
+		   NULL, "If you feel like you have no choice but to kill the bully or commit suicide, please try to call those hotlines.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　誰に相談しても仕方がないと思っている人ほど、誰にも打ち明けていないものです。",
+		   NULL, "People who think it's useless to talk to others usually haven't really talked to anyone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　勇気を持って電話してみましょう。",
+		   NULL, "Have the courage to call.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　電話の向こうには、信じられないくらいに頼もしい味方が待っていてくれるはずです。",
+		   NULL, "There will be somebody you can completely rely on at the other end of the line.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "『ひとりで悩まずに、誰かに相談しよう』",
+		   NULL, "Don't keep it to yourself. Talk to somebody.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それだけのことが伝えたくて、こんなにも長い物語が描かれるなら、竜騎士07という人間にはよっぽど文才がないに違いないですね…。",
+		   NULL, "Ryukishi07 wrote such a long story just to tell you this. He must be a very poor writer.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなわけで竜騎士07も皆さんに相談を。",
+		   NULL, "So, Ryukishi07 wants to talk to you all, rather than worrying all by himself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どうやったら、より面白いシナリオが描けますでしょうか…？（苦笑）",
+		   NULL, "How can I write even more entertaining stories...? (bitter laugh)", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetDrawingPointOfMessage( 0, 8 );
+
+	OutputLine(NULL, "０７ｔｈ　Ｅｘｐａｎｓｉｏｎ",
+		   NULL, "                               07th Expansion\n", Line_ContinueAfterTyping);
+
+	SetDrawingPointOfMessage( 0, 9 );
+
+	OutputLine(NULL, "竜騎士07",
+		   NULL, "                                   Ryukishi07", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	CallScript( "&eye" );
+
+}

@@ -1,0 +1,1112 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	PlayBGM( 1, "Mati", 120, 0 );
+
+	DrawScene( "H17", 1000 );
+	Wait( 3000 );
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "Kuruma6", "maskm1", 1, 0, 1300 );
+
+	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　舗装道路が終わり、砂利道がガタンガタンと車を揺らし始める。",
+		   NULL, "The car began to rattle as the road turned from asphalt to gravel.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　セミの声が窓をぴったり閉めていても車内に滲んでくるのだった。",
+		   NULL, "The cry of the cicadas seeped through the tightly shut windows.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　本当なら、こんなにもいい天気なら、窓を全開に開けてセミの声を浴びながらというのも悪くない。",
+		   NULL, "Most people would open their car windows and let the natural air in along with the sounds of the cicadas.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、…贅沢になれるというのは恐ろしい。",
+		   NULL, "But people are also spoiled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　窓を開けてセミの声を浴びたいという健全な欲求は、夏バテ気味の体にカーエアコンの方がいいと却下される。",
+		   NULL, "He'd rather keep himself cool with the air conditioning turned to max than listen to the sounds of nature.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora3", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　今年は空梅雨だった。",
+		   NULL, "Usually it was the rainy season at this time of the year.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しっとりと雨を楽しめるはずの６月からもう真夏日が訪れている。",
+		   NULL, "But this June, the summer had already come without any rain.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……２０年以上も前のあの年も、こんな空梅雨の夏だったことを思い出していた。",
+		   NULL, "...Just like how the weather was on that day, twenty years ago.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Kuruma2", 400 );
+
+	OutputLine(NULL, "「ここはやっぱり空気のいいところだよな。」",
+		   NULL, "\"The air around this area is just as clear as I remember it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "風光明媚ないい土地です。",
+		   NULL, " The winds are cool and the sunshine is bright.", Line_WaitForInput);
+	OutputLine(NULL, "ひょっとしたら岐阜の村みたいに、世界文化遺産に指定されることもあったかもしれないのに、惜しいですね。」",
+		   NULL, " This place could've become a World Heritage Site like the village in Gifu. What a waste...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そのお陰で観光客がいない。",
+		   NULL, "\"But thanks to that, there are no irritating tourists around here.", Line_WaitForInput);
+	OutputLine(NULL, "実に快適じゃないか。",
+		   NULL, " See, that makes it much better.", Line_WaitForInput);
+	OutputLine(NULL, "……どうして旅行者ってのは田舎じゃ交通法規を忘れられるんだ？",
+		   NULL, " ...Why do tourists forget about pedestrian traffic laws when they're in rural areas?", Line_WaitForInput);
+	OutputLine(NULL, "　道路いっぱいに横になりやがって。」",
+		   NULL, " They walk in the middle of the road, you know?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あっはっはっは。",
+		   NULL, "\"Ah ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "赤坂先輩はアウトドアは今も？」",
+		   NULL, " Akasaka-senpai, do you still do stuff outdoors?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「最近はさっぱりだな。",
+		   NULL, "\"Not as much as I used to.", Line_WaitForInput);
+	OutputLine(NULL, "何しろ暇のない稼業だからな。」",
+		   NULL, " My job doesn't give me much free time.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あっはっはっはっは。",
+		   NULL, "\"Ah ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "それはお互い様です。",
+		   NULL, " Same here.", Line_WaitForInput);
+	OutputLine(NULL, "………………お、いたいた。",
+		   NULL, " .........Oh, hey,", Line_WaitForInput);
+	OutputLine(NULL, "早いな。」",
+		   NULL, " there he is.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "M_Hi9", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　クラクションを鳴らすよりも早く、相手はこちらに気付き手を振った。",
+		   NULL, "The other man noticed and waved his hand before anyone in the car could honk the horn.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "　荒地を走破できそうなバイクに、そのままキャンプができそうなリュックサックを背負った若者だった。",
+		   NULL, "The man was a young fellow on a motorcycle with a big backpack on his shoulders. He looked like he was ready to go camping.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂たちは車を降りると、その若者と握手を交わす。",
+		   NULL, "Akasaka and his partners stepped out of the car and shook hands with the young man.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「小隊長殿！",
+		   NULL, "\"Captain!", Line_WaitForInput);
+	OutputLine(NULL, "　ご無沙汰いたしております。」",
+		   NULL, " It's good to see you again.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おう！",
+		   NULL, "\"Yo!", Line_WaitForInput);
+	OutputLine(NULL, "　今のとこはどうだ。元気にやってるか！",
+		   NULL, " How have you been doing lately? Well, I hope?", Line_WaitForInput);
+	OutputLine(NULL, "　今日は楽にしてくれていいぞ。",
+		   NULL, " You can take it easy today.", Line_WaitForInput);
+	OutputLine(NULL, "こちらは俺が大学時代に大変お世話になった赤坂先輩だ。」",
+		   NULL, " This is Akasaka-senpai. He took care of me back in college.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「どうも、赤坂です。",
+		   NULL, "\"Hello, my name is Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "今日はもう１人、大石という者とご一緒するお約束でしたが、直前に検査入院が入ってしまいまして同行できませんでした。",
+		   NULL, " Ooishi was supposed to come today, but he had to go for a medical check-up at the last minute.", Line_WaitForInput);
+	OutputLine(NULL, "この度はお世話になりますが、よろしく。」",
+		   NULL, " Anyway, it's a pleasure to meet you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「よろしくお願いします！」",
+		   NULL, "\"It's an honor, sir!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「さて、赤坂先輩、どこから回りますか？」",
+		   NULL, "\"So, Akasaka-senpai, where shall we go first?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　彼の名は赤坂衛。",
+		   NULL, "His name was Mamoru Akasaka.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　東京の警視庁に勤めるベテランの刑事だった。",
+		   NULL, "He was a veteran detective from the Tokyo Metropolitan Police Department.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　定年までの残り年数が見えてきたにもかかわらず、精悍なカミソリのような眼差しは消えることがない。",
+		   NULL, "Despite the fact that he was close to his retirement, he hadn't lost his clear instinct and sharp eyes at all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　数々の修羅場で育んだ経験と自信はその表情に滲み出し、筋骨隆々な肉体はいかなる暴力に対しても怯まない頼もしさを感じさせた。",
+		   NULL, "Those eyes showed the confidence he'd built through many risky experiences, and he had a well-built muscular body and a fearless aura. He must have fought against many violent criminals.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
+
+	DrawSceneWithMask( "Hi2", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　彼と雛見沢の縁は、遠く３０年近く前の昭和５３年に遡る。",
+		   NULL, "His connection to Hinamizawa went back almost thirty years, all the way to 1978.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　当時の彼は警視庁公安部に所属し、犬飼建設大臣の孫の誘拐事件に臨み、この雛見沢を訪れたのだった。",
+		   NULL, "He was in the Public Safety Division in the Metropolitan Police Department. He came to Hinamizawa to investigate the kidnapping case of the grandson of Inugai, the then-Minister of Construction.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこで大石と出会い、",
+		   NULL, "There, he met Ooishi...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……そして古手梨花と出会った。",
+		   NULL, " and Rika Furude.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　古手梨花が予言した自らの死の運命。",
+		   NULL, "Rika Furude predicted her own death.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…赤坂にとっては、この少女を運命から救い出せなかったことは、今になってもなお忘れられない痛恨の悔やみだった。",
+		   NULL, "...Akasaka regretted for the rest of his life that he couldn't save that little girl from her fate.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Terebi1", 400 );
+
+	OutputLine(NULL, "　やがて彼は雛見沢大災害をテレビで知り、当時世話になった大石と再会。",
+		   NULL, "He saw the news of the Great Hinamizawa Disaster on TV and met up again with Ooishi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　少女を襲った惨劇を、雛見沢村連続怪死事件の謎を、例え今からであっても暴こうと誓い合ったのである。",
+		   NULL, "They pledged to uncover the mystery of both the cruel fate that fell upon the little girl and the series of mysterious deaths in Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawSceneWithMask( "Hi1", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　だが雛見沢は気が遠くなるほど長い時間に渡り封鎖され続けていた。",
+		   NULL, "Unfortunately, Hinamizawa was sealed off for a long time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　よって赤坂たちはこの２０年間の間、自分たちの持つ情報を手記にまとめて発表し、",
+		   NULL, "As a result, all Akasaka and Ooishi could do for the past twenty years was publish the little information they'd gathered,", Line_WaitForInput);
+	OutputLine(NULL, "読んだ読者に当時の記憶を辿ってもらって情報を寄せてもらう以上のことはできずにいた。",
+		   NULL, " and ask for their readers to send their tips and clues.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　しかし、ようやく雛見沢村の封鎖は解かれた…。",
+		   NULL, "But, recently, the seal on Hinamizawa had finally been lifted...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、激務を極める赤坂と、体調を崩し気味な大石の足並みがなかなか揃わず、ようやく今日になって雛見沢を訪れることができたのだった。",
+		   NULL, "However, they couldn't come to Hinamizawa until today due to Akasaka's busy work schedule and Ooishi's poor health.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　本当なら大石と来る予定だったのだが、大石の検査入院が急に決まり、赤坂は１人で訪れることとなった。",
+		   NULL, "In fact, Ooishi was supposed to come with Akasaka, but he was called in for an emergency health check-up.", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 0, TRUE );
+
+	DrawSceneWithMask( "M_Hi9", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　同伴している２人は、赤坂の大学時代の後輩で、現在は陸上自衛隊に務める男と、その元部下で、雛見沢の封鎖中、その任務に関わり村内を熟知する男だった。",
+		   NULL, "The other two who came along were Akasaka's juniors from university. One worked at the Ground SDF, and the other was his subordinate. They were assigned the mission of sealing off Hinamizawa, so they were quite knowledgeable about the village.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂は自分の荷物の中から、スクラップ帖を取り出す。",
+		   NULL, "Akasaka took out a scrapbook from his bag.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…角はよれよれになり、相当の劣化がうかがえた。",
+		   NULL, "The corners of the scrapbook were all dented, making it look very old.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　スクラップ帖をバラバラとめくり、しばし黙考した赤坂は最初の行き先を口にした。",
+		   NULL, "Akasaka flipped through the pages, thought for a second, and let them know his first destination.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……では、鬼ヶ淵沼をお願いします。」",
+		   NULL, "\"Alright, please take me to Onigafuchi Swamp.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「了解いたしました。",
+		   NULL, "\"No problem.", Line_WaitForInput);
+	OutputLine(NULL, "それではご案内いたします！」",
+		   NULL, " Right this way, sir!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　若者はバイクに跨り、赤坂たちが車に戻るのを待つ。",
+		   NULL, "The young man got on his bike and waited for the others to get back to their car.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それから互いにクラクションで応えあった後、バイクの先導で鬼ヶ淵沼に向かった…。",
+		   NULL, "They honked at each other to signal that they were ready, and the young man led the car to the swamp...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "Sora4", "maskc", 1, 0, 300 );
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "　森が開けると、大地をコンクリートで固められたとても不自然な土地が姿を現す。",
+		   NULL, "Heading through the forest, they came to an open area where the ground was covered by concrete.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沼どころか、水一滴もない。",
+		   NULL, "There wasn't even a single drop of water in sight.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　水の代わりにコンクリートで満たしたのだ。",
+		   NULL, "All the water of the swamp had been replaced by concrete.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そう、ここが鬼ヶ淵沼跡だった。",
+		   NULL, "...That was what Onigafuchi Swamp looked like now.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「はははは、沼どころか、水溜りもないな。」",
+		   NULL, "\"Hahahaha. There isn't even a single drop of water, let alone a swamp.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「大災害後のだいぶ初期に埋め立てられたと聞いています。",
+		   NULL, "\"I was told that they sealed the swamp right after the Disaster.", Line_WaitForInput);
+	OutputLine(NULL, "自分がここへ着任した時はすでに埋め立てられていました。」",
+		   NULL, " This place was already encased in concrete by the time I arrived here for my mission.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ちょっと降りてみよう。」",
+		   NULL, "\"Let's go down there and take a closer look.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂は車を降りると、コンクリートで固められた死んだ沼の中央に歩いていく。",
+		   NULL, "Akasaka got out of the car and walked to the center of the concrete-filled swamp.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　駐車場にするわけでもなければ、ヘリポートがあるわけでもない。",
+		   NULL, "It wasn't a parking lot or a heliport.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……ただただ、広大な森の空き地に現れたコンクリートの巨大な大地。",
+		   NULL, "...It was just a huge empty concrete space right in the middle of the forest.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……なるほど、これがネットでよくいうＵＦＯの着陸場というやつか。」",
+		   NULL, "\"...So, this is the place people say was a landing spot for UFOs.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなこと言われてるんですか。」",
+		   NULL, "\"Really? I've never heard of that.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ここの写真がよくミステリー系のサイトに紹介されてるよ。",
+		   NULL, "\"Well, that's what they write on occult websites.", Line_WaitForInput);
+	OutputLine(NULL, "ここで政府と宇宙人が交流してたって言うんだ。",
+		   NULL, " They say that this is the place where our government met with aliens.", Line_WaitForInput);
+	OutputLine(NULL, "確かに、こんな森の中に、ポカンとこんなコンクリートの空き地があれば、不審に思うよな。」",
+		   NULL, " I can't blame them for such rumors, though because an empty concrete space in the middle of a forest sure does look weird.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わっはっはっはっはっは。」",
+		   NULL, "\"Wa ha ha ha ha ha.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
+
+	DrawSceneWithMask( "Oni2", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　この沼は、昭和５８年の６月末に突如湧き出した火山性ガスの発生場所だ。",
+		   NULL, "Volcanic gas erupted from this swamp in June, 1983.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　致死性の極めて高い、硫化水素と二酸化炭素の混合ガスは深夜の内に村を丸ごと飲み込み、",
+		   NULL, "The deadly mixture of hydrogen sulfide and carbon dioxide", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢という村を一夜にして滅ぼしたのである。",
+		   NULL, " engulfed and destroyed Hinamizawa in a single night.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、封鎖された後、ここを管理していた自衛隊によって沼は埋め立てられた。",
+		   NULL, "The village was sealed off and the SDF covered the swamp with concrete.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
+
+	OutputLine(NULL, "「ネットで騒いでる連中にも、連中なりの根拠があるらしい。",
+		   NULL, "\"But the people who write those rumors on the Internet actually have a point.", Line_WaitForInput);
+	OutputLine(NULL, "地質学的に言って、ガスの発生源を塞ぐために沼をコンクリートで固めるなんてのは、何の意味もないかららしいんだ。」",
+		   NULL, " Any geologist could tell you that covering a source of volcanic gas with concrete is absolutely useless.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「なるほど、確かに活火山の火口をコンクリートで埋めたという話は聞かないですね。",
+		   NULL, "\"Hmm... that's true. I've never heard of anyone trying to prevent a volcano from erupting by pouring concrete into its crater.", Line_WaitForInput);
+	OutputLine(NULL, "でもまぁ、税金での無駄な工事は我が国の伝統ですから。」",
+		   NULL, " On the other hand, our country is known for wasteful construction using the taxpayer's money.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ネット上で、怪現象やＵＦＯなどをこよなく愛するミステリーマニアたちの間で近年、話題になっているのが、この雛見沢大災害なのだ。",
+		   NULL, "Lately, people who love things like supernatural phenomena and UFOs write on the Internet about the Great Hinamizawa Disaster.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雛見沢大災害は、マグマ溜りから噴出した火山ガスが湧き出して発生したことがすでに確認されている。",
+		   NULL, "It's well known by now that the cause of the Disaster was an eruption of deadly volcanic gas from a magma chamber.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　昭和６１年にはアフリカのカメルーンにあるニオス湖でも同様の災害があったこともあり、地球規模でどこにでも起こり得る不幸な災害ということで決着した。",
+		   NULL, "In 1986, a similar natural disaster occurred at Lake Nyos in Cameroon, Africa. So, people easily believed that such a rare natural disaster could occur anywhere on Earth, and that was what happened in Hinamizawa as well.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　だが、近年になって、ネット上である風説が流れるようになっていた。",
+		   NULL, "However, a rumor about another possible explanation had begun to fly around on the Internet recently.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+
+	OutputLine(NULL, "　それは、この雛見沢大災害が実は、政府が事実を隠蔽するために作ったカバーストーリーで、その実態は宇宙人による細菌テロだった…というのだ。",
+		   NULL, "They say that the Disaster was a cover-up by the government, and that it was actually a biochemical terrorist attack by aliens.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka2", 400 );
+
+	OutputLine(NULL, "　なぜ近年になってこんな話が…？",
+		   NULL, "Why had such a rumor begun to spread now...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ミステリーマニアたちが根拠とするのは「３４号文書」と呼ばれるある秘密ファイルの存在だった。",
+		   NULL, "They claim to back up their theory with a secret document known as <i>File No. 34</i>.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この「３４号文書」という名称はネット上である個人が便宜的に付けた名称だったが、国家陰謀をイメージさせるネーミングが受けたのか、瞬く間に広がり定着した。",
+		   NULL, "Someone online named it <i>File No. 34</i> for descriptive purposes, but the name spread and stuck since then because it sounded like a government conspiracy. People loved it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼らはどこそこで入手したと称しては、その画像や内容を転載したが、どれも出自不明ないい加減な内容だった。",
+		   NULL, "It's unknown how or from where they obtained those documents, but they posted scans and pictures, which were all ridiculous.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　捏造が相次ぎ、その存在さえ疑われている。",
+		   NULL, "Plus, more fake evidence was produced over time, so now even the existence of such documents are in doubt.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "File", 1000 );
+
+	OutputLine(NULL, "　ここで、彼らが言う「３４号文書」について説明しなければならない。",
+		   NULL, "<i>File No. 34</i> deserves a bit more explanation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ただしインターネットの世界でのこと、風説が入り混じり、もはや都市伝説と化した感もあるため、",
+		   NULL, "However, since it started on the Internet, truths and lies were all mixed together, and it has become more like an urban legend.", Line_WaitForInput);
+	OutputLine(NULL, "諸説に別れ、諸派が互いを否定しあっている状況にあるのだが、概ね以下の内容であることを前提にしている。",
+		   NULL, " So, this is what is believed to mostly be true.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　「３４号文書」は、雛見沢の診療所に勤務していた鷹野三四という看護婦が残した手記である。",
+		   NULL, "<i>File No. 34</i> was a notebook written by a nurse named Miyo Takano who worked at a local clinic in Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　３４号とは、連番を示すものではなく、この女性の名前をもじったものらしい。",
+		   NULL, "<i>File No. 34</i> was most likely named after her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この女性は、雛見沢に伝わる奇妙な鬼伝説の歴史を追い、その伝説が何を意味するかを解き明かそうとする個人研究者であったと伝えられる。",
+		   NULL, "This woman was a researcher who studied the demon myth of Hinamizawa and tried to solve what it meant.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その内容によれば、昭和５８年の雛見沢大災害は事前に予見されていた、というのである。",
+		   NULL, "The contents of this notebook state that she prophesied the Great Hinamizawa Disaster of 1983.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼女の研究によるならば、雛見沢には太古の昔、宇宙から飛来したＵＦＯが墜落し、鬼ヶ淵沼に沈んだという。",
+		   NULL, "According to her research, a UFO crash-landed in Hinamizawa a long time ago and sunk into Onigafuchi Swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのＵＦＯには、地球には存在しない、宇宙の寄生細菌が漂着しており、村人たちは次々感染したという。",
+		   NULL, "The UFO carried parasitic bacteria from space, and they began to infect the locals.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この細菌に寄生された人間は凶暴化し、「鬼」と呼ばれるに相応しい存在と化したという。",
+		   NULL, "The infected villagers began to behave extremely violently, so much so that they were fit for the word \"demon\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野三四はこれこそが、沼から湧き出した鬼の正体だとしている。",
+		   NULL, "Miyo Takano insisted that this was the explanation for the myth about demons pouring out of the swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　墜落したＵＦＯに乗っていた宇宙人は、地球人たちが自分の持ち込んだ宇宙からの細菌に感染して大変なことになっていることを知り、その姿を村人の前に現す決意をした。",
+		   NULL, "An alien who survived the crash realized that the earthlings had gone crazy because of the bacteria he brought in, and he decided to show himself to the villagers to help them out.", Line_WaitForInput);
+	OutputLine(NULL, "…これがオヤシロさまの降臨であるという。",
+		   NULL, " ...This is how Oyashiro-sama was born.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　宇宙人は、地球外文明の高度な方法で村人を治療したが、対症療法にしかならなかった。",
+		   NULL, "The alien was able to cure the villagers with highly advanced technology, but couldn't eradicate the bacteria completely.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その為、宗教的シンボルとして、オヤシロさまの名で崇められていた宇宙人は、症状を悪化させないためにルールを作り村に課したという。",
+		   NULL, "Since the villagers looked up to the alien as some sort of deity, the alien utilized its status to hand down specific rules to the villagers in order to stabilize the disease.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　細菌たちは、雛見沢の風土にのみ馴染んでいたため、宿主が雛見沢を離れると症状を悪化させてしまうのだった。",
+		   NULL, "The bacteria took a liking to Hinamizawa's habitat. So, when a carrier of the disease left Hinamizawa, their symptoms would reemerge.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その為、村から離れるなという規則を作ったのだ。",
+		   NULL, "Therefore, the alien made it a rule not to leave the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これがその後の鬼ヶ淵村の仙人を巡る伝説につながっていく。",
+		   NULL, "This leads to the legend of the transcendants of Onigafuchi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、仙人たちが持っていたという仙術や奇跡の技は、全て宇宙人がもたらした地球外文明の英知だったのだ。",
+		   NULL, "The weird practices and miracles that the villagers performed were realized by means of the advanced technology that they received from the alien.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「わっはっはっはっは。",
+		   NULL, "\"Wa ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "そういうののマニアな人たちは、つくづくそういうのが好きですよね。",
+		   NULL, " Those maniacs do indeed have a colorful perspective on things, don't they?", Line_WaitForInput);
+	OutputLine(NULL, "ノストラダムスの大予言だって、９９年にはあんなに騒いだのに、７月が過ぎたら何事もなかったかのようにみんな過ごしてる。",
+		   NULL, " Do you remember Nostradamus' prophecies? People said that the world was going to end in 1999, but nothing happened in July and people acted like they didn't even know about it.", Line_WaitForInput);
+	OutputLine(NULL, "民放もあれだけ煽っておいて無責任ったらありゃしない。」",
+		   NULL, " Those TV shows made people as scared as they could be and then ignored the fact that it didn't happen.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「でも、鷹野三四は雛見沢大災害を予見したらしい。",
+		   NULL, "\"But Miyo Takano did predict the Great Hinamizawa Disaster.", Line_WaitForInput);
+	OutputLine(NULL, "それは嘘じゃない。",
+		   NULL, " It's not a lie.", Line_WaitForInput);
+	OutputLine(NULL, "確かにこのスクラップ帖に書いてある。」",
+		   NULL, " Look at this page in this scrapbook.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなまさか。",
+		   NULL, "\"You must be joking.", Line_WaitForInput);
+	OutputLine(NULL, "あっはっはっは……、……。",
+		   NULL, " Aha ha ha ha.........", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂先輩、それ本当に…？」",
+		   NULL, " ...Akasaka-senpai, is this for real...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　仙人たちの時代から長い時間を経る内に、人々に寄生した細菌は非常に安定したものになり、人体に無害なものとなった。",
+		   NULL, "As time passed, the bacteria stabilized in human bodies and became harmless.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　宇宙人も細菌も、人々の記憶から薄れていく…。",
+		   NULL, "The alien and the bacteria began to fade away from people's minds...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、宇宙人たちは御三家に守られながら何百年もの間、生き続けてきたというのである。",
+		   NULL, "However, the alien has lived on for hundreds of years with the protection of the Three Families.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　古手神社の秘密神殿の中で代々、ご神体として崇められながら生きてきたのである。",
+		   NULL, "It still lives on as the spirit of a deity in the secret temple of the Furude Shrine.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その宇宙人は、寄生している細菌たちを操り、その結果、村人たちを何百年にも渡って支配していた。",
+		   NULL, "The alien manipulated the bacteria living inside of the villagers and maintained control over them for hundreds of years.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そしてその支配を取り戻すため、彼らは再び寄生細菌の太古の力を取り戻すべく、研究を初め、……うんぬんかんぬん。",
+		   NULL, "The alien wanted to regain its power, and started researching how to bring back the lost powers of the bacteria... etcetera etcetera...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ここで諸説が入り混じり、つまりは、寄生細菌を地球規模でバラ撒き地球支配を目論もうとした宇宙人の地球侵略計画こそが雛見沢大災害の正体である、というらしい。",
+		   NULL, "Things get much stranger from there. People say that the Disaster was actually part of the alien's plan to conquer the entire Earth by spreading the reawakened bacteria.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それで、実は日本政府内には宇宙人の侵略と戦うための秘密部門があって、",
+		   NULL, "The Japanese government has a secret division that fights against alien invasions,", Line_WaitForInput);
+	OutputLine(NULL, "彼らはアメリカの秘密基地、エリア５１で訓練を受けていてうんぬんかんぬん。",
+		   NULL, " and they trained at Area 51 in the US... etcetera etcetera...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして彼らが動き出し、この宇宙人の地球侵略を食い止めるため、村を全て封鎖して毒ガス攻撃で完全に封殺した…というのである。",
+		   NULL, "And they moved in to stop the invasion by sealing off the entire village, and they killed all of the residents by using toxic gas.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「わっはっはっはっは！！",
+		   NULL, "\"Wa ha ha ha!!", Line_WaitForInput);
+	OutputLine(NULL, "　映画でそんなのありましたね。",
+		   NULL, " Hey, there's a movie that's just like that.", Line_WaitForInput);
+	OutputLine(NULL, "ほら、黒人の俳優が主演の。",
+		   NULL, " Some black guy is the lead character... What was the title...", Line_WaitForInput);
+	OutputLine(NULL, "何て言ったっけなぁ。",
+		   NULL, " M.I. something!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "ＭＩ…なんだっけ！」",
+		   NULL, "\"Yeah, I know.", Line_WaitForInput);
+	OutputLine(NULL, "「この辺まで来ると俺もそろそろ滅茶苦茶だなとは思う。",
+		   NULL, " It's too crazy to be real.", Line_WaitForInput);
+	OutputLine(NULL, "ただ、この滅茶苦茶を書いた鷹野三四は昭和５８年の６月中旬。",
+		   NULL, " But, the writer of this bunch of bull, Miyo Takano, was mysteriously murdered in June 1983.", Line_WaitForInput);
+	OutputLine(NULL, "正体不明の怪死を遂げる。",
+		   NULL, " Right before her death,", Line_WaitForInput);
+	OutputLine(NULL, "そしてその死の直前に、自らの死を悟ったかのように、村の１人の少女にこのスクラップ帖を預けて意思を託したというんだ。」",
+		   NULL, " she gave this scrapbook to a girl as if she knew she was going to die very soon.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　その少女の名は「少女Ａ」。",
+		   NULL, "That girl is known as \"Girl A\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ネット上で諸説が飛び交っているが、当時の事件を詳細に調べた人間が「竜宮礼奈」という個人名を特定したとされ、最近は「竜宮礼奈説」でほぼ定着しているようだ。",
+		   NULL, "...Some guy who investigated the case was able to track it down to a girl named \"Reina Ryuugu\". So, now it's known as the \"Reina Ryuugu Theory\" on the internet.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　竜宮礼奈は鷹野三四の意思を継ぎ、宇宙人たちの侵略計画を打ち砕くため、学校を占拠して、警察に陰謀を暴くよう要求したらしい。",
+		   NULL, "Reina Ryuugu inherited Miyo Takano's will by means of the scrapbooks. She tried to fight against the planned invasion by holding a school hostage and demanding the local police uncover the alien's plot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もちろん、当時は誰もがそれを世迷言だと笑い捨てたし、彼女が正常な心理状態にあったのかどうかも疑った。",
+		   NULL, "Of course, no one believed her and they assumed she was in a state of paranoia.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　結局、竜宮礼奈は、鷹野三四というミステリーマニアの妄想を真に受け、稚拙な犯行に走ってしまったのではないかというのが当時の見解だったのだが。",
+		   NULL, "Back then, people assumed that Reina Ryuugu took Miyo Takano's delusions seriously and was motivated to commit a poorly executed crime.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「竜宮礼奈は学校占拠時から警察に対し、宇宙人に支配された御三家が、細菌テロを行なおうとしていると訴えていた。",
+		   NULL, "\"When she held the school hostage, Reina Ryuugu told local police that the alien was controlling the Three Families, and that it was plotting bioterrorism on a massive scale.", Line_WaitForInput);
+
+	PlaySE( 0, "s_Z02_Kyousou", 128, 64 );
+
+	OutputLine(NULL, "そしてその翌日なんだ。",
+		   NULL, " And the very next day, the Great Hinamizawa Disaster occurred.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "雛見沢大災害が起こるのは。」",
+		   NULL, "\"You've got to be kidding!", Line_WaitForInput);
+	OutputLine(NULL, "「まさか！",
+		   NULL, " Couldn't it be just a coincidence?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そりゃ偶然じゃないんですか。」",
+		   NULL, "\"I don't know.", Line_WaitForInput);
+	OutputLine(NULL, "「わからない。",
+		   NULL, " According to people who believe it's not just a coincidence, there are many inconsistencies in the SDF's immedate sealing-off operation.", Line_WaitForInput);
+	OutputLine(NULL, "偶然ではないと思う連中に言わせると、その後の自衛隊による封鎖はおかしなことだらけらしい。",
+		   NULL, " Filling this swamp with concrete is one example.", Line_WaitForInput);
+	OutputLine(NULL, "例えばこの沼の埋め立てが一例だ。",
+		   NULL, " Several of the SDF soldiers on duty at the time testified that some people were conducting secret investigations outside the usual geological survey before the area was closed off.", Line_WaitForInput);
+	OutputLine(NULL, "そして埋め立てる前に、明らかに通常の地質調査とは異なる秘密の調査を行なっていたとされていて、当時、ここの封鎖に関わっていた自衛隊員たちがそれを何人も証言している。",
+		   NULL, " Of course, those who think it's just a coincidence say that the researchers simply took precautionary measures to keep unauthorized people out of the area.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "……否定派はそれを、単にガスの発生地なので、危険に備えて立入を制限していただけだと主張するんだがね。」",
+		   NULL, "\"I'd have to agree with the latter people.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「それは多分、…否定派の言うのが正しいんじゃないかと思いますね。」",
+		   NULL, "\"People also question why they sealed off the village for such a long time.", Line_WaitForInput);
+	OutputLine(NULL, "「他にも、異常に長かった封鎖期間も疑惑の目が向けられている。",
+		   NULL, " After its volcanic gas eruption, Miyake Island was only sealed off for four to five years.", Line_WaitForInput);
+	OutputLine(NULL, "近年の東京都三宅島の火山ガス災害の例を見てもわかるように、４〜５年で立入禁止を解いている。",
+		   NULL, " What happened in Hinamizawa was an exceptionally rare natural disaster, yet it was sealed for over twenty years.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "雛見沢のケースは例外中の例外のケースのはずなのに、封鎖は極めて長期に及んだ。」",
+		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_WaitForInput);
+	OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
+		   NULL, " But, in the case of Hinamizawa, there were no residents alive who wished to return in the first place. Perhaps the government took their time until they were absolutely certain that it was safe.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
+		   NULL, "\"Hmm.", Line_WaitForInput);
+	OutputLine(NULL, "「ふむ。",
+		   NULL, " How about this one?", Line_WaitForInput);
+	OutputLine(NULL, "あとこんな話もあるぞ。",
+		   NULL, " The SDF members who were on the mission to seal off Hinamizawa had their blood samples taken periodically. Some of them were discharged from the mission without any explanation after the results came back.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢を封鎖していた自衛隊員たちは定期的に血を抜かれての厳密な検査を受けていたといい、何らかの結果によって、自他ともに理解できない理由で任務を解かれることがあったという。",
+		   NULL, " Some believe that they were using the members of the SDF as human test subjects to see if they got infected or not.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "それは実は、細菌感染の陽性反応を見るもので、自衛隊員たちを留まらせることによる何らかの人体実験だったと囁かれているらしい。」",
+		   NULL, "\"I think they were just checking up on the members' health condition, since they were in the area where the gas disaster occurred.", Line_WaitForInput);
+	OutputLine(NULL, "「それは、やはりガスが湧き出す危険性があっただけに健康管理には気を遣ったということでしょう。",
+		   NULL, " Besides, normal businessmen also take annual physical check-ups, and they have their blood samples taken there as well.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "それに、普通のサラリーマンだって、年に一度は健康診断を受け、その時に血を抜かれてるはずです。」",
+		   NULL, "\"Yeah, I understand your point, too.", Line_WaitForInput);
+	OutputLine(NULL, "「まぁ、君の言うことももっともだと思う。",
+		   NULL, " But I have another interesting theory.", Line_WaitForInput);
+	OutputLine(NULL, "あともっと面白い話もあるぞ。",
+		   NULL, " There are some people who believe that there was no gas emitted during the so-called Great Hinamizawa Disaster.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "雛見沢大災害時に火山ガスは発生していないと主張する連中がいる。」",
+		   NULL, "\"No volcanic gas?", Line_WaitForInput);
+	OutputLine(NULL, "「火山ガスは発生していない？",
+		   NULL, " What does that mean?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　どういう意味ですか。」",
+		   NULL, "\"Basically what they're saying is that there was no volcanic gas and it was a sort of government cover-up.", Line_WaitForInput);
+	OutputLine(NULL, "「つまり、元々火山ガスなんか噴出してなくて、ガス災害というのが政府の嘘であると主張してるらしい。",
+		   NULL, " It's like in the Spielberg movie. You know, the one where humans make contact with UFOs?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "ほら、スピルバーグの人類とＵＦＯがコンタクトする某映画でも、同じ設定だったじゃないか。」",
+		   NULL, "\"See, that's exactly how maniacs always explain things.", Line_WaitForInput);
+	OutputLine(NULL, "「それこそミステリー狂のこじつけだと思いますね。",
+		   NULL, " What kind of basis do they have to say that there was no volcanic gas emission?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "で、その連中は何を根拠に火山ガスが発生しなかったと言っているんです？」",
+		   NULL, "\"Well, a bunch of those maniacs came to Hinamizawa as soon as the seal was lifted.", Line_WaitForInput);
+	OutputLine(NULL, "「封鎖解除後、ミステリーマニアがどっと押し寄せて、ＵＦＯ説を補強するためにいろいろ調べたらしい。",
+		   NULL, " According to them,", Line_WaitForInput);
+	OutputLine(NULL, "で、連中の主張はこうだ。",
+		   NULL, " the hydrogen sulfide in the volcanic gas should've caused some corrosion to metallic objects and major damage to the wildlife.", Line_WaitForInput);
+	OutputLine(NULL, "政府発表の火山ガス成分によるならば、硫化水素によって金属が腐食されたり、自然体系に大きなダメージが残るはずだ。",
+		   NULL, " However, they found no such signs of disruption, which led them to claim that there was no volcanic gas to begin with.", Line_WaitForInput);
+	OutputLine(NULL, "にも関わらず雛見沢にはそういう痕跡が残っておらず、よって、火山ガスが噴出したとはとうてい思えない、とか何とか言ってる。",
+		   NULL, " ...But this village was abandoned for twenty years.", Line_WaitForInput);
+	OutputLine(NULL, "……もっともあれから２０年も放置された村なんだ。",
+		   NULL, " I doubt that they could find anything anyway.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "そんな痕跡を発見できたかどうかは疑わしいな。」",
+		   NULL, "\"Ha ha ha. Well, that's the thing with the Internet. You can't believe everything you read on it!", Line_WaitForInput);
+	OutputLine(NULL, "「はっはっは、やはりつくづくインターネットというのは信用できませんねぇ。",
+		   NULL, " ...Akasaka-senpai, please don't tell me you're buying these stories.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "……で、まさか赤坂先輩は、その怪しげな話を信じてるわけですか？」",
+		   NULL, "\"At first, I didn't.", Line_WaitForInput);
+	OutputLine(NULL, "「最初は信じなかったが、最近は俺もわからない。",
+		   NULL, " But lately, I'm beginning to think that there might be some truth to them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "何割かは真実が含まれているかもしれないと思うようになっている。」",
+		   NULL, "\"You believe in UFOs? Oh, come on!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「赤坂先輩ともあろうお方がＵＦＯ話を信じるんですか？」",
+		   NULL, "\"Well,", Line_WaitForInput);
+	OutputLine(NULL, "「このスクラップ帖。",
+		   NULL, " what if this scrapbook is the real <i>File No. 34?</i>\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "これが本物の『３４号文書』だとしたら？」",
+		   NULL, "\"Huh?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「え？」",
+		   NULL, "\"This scrapbook is the one that Reina Ryuugu possessed when she took the school hostage on June 25th, 1983.", Line_WaitForInput);
+	OutputLine(NULL, "「昭和５８年６月２５日に雛見沢営林署に人質を取って篭城した、竜宮礼奈が所持していた、正真正銘、本物の『３４号文書』だ。",
+		   NULL, " It was assumed to be lost during the confusion of the Disaster. But, Ooishi-san's old friend was able to locate it in an evidence storage at the prefectural police headquarters.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "雛見沢大災害の混乱で長いこと行方不明だったが、近年、大石さんの古い友人が県警の保存庫で発見したらしい。」",
+		   NULL, "Back then, Ooishi thought Reina Ryuugu was delusional. But after reading this again after the Great Hinamizawa Disaster, some of the contents seem to hold vital clues.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　当時は妄想と思った大石ですら、…雛見沢大災害の後に読み直すと、決して笑い捨てられる内容ではなかった。",
+		   NULL, "It's not the alien part that he was interested in, but her theory that an endemic disease of parasitic microbes in Hinamizawa was responsible for the \"curse of Oyashiro-sama\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　宇宙人の部分ではなく、雛見沢に土着の寄生細菌による風土病が「オヤシロさまの祟り」であったという部分だ。",
+		   NULL, "Of course, there's no proof that such microbes existed, so it still remains at a theoretical level.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん、病原体は発見されていないので仮説の域を出ない。",
+		   NULL, "\"Ooishi-san says that the Three Families might've been researching how to bring back\n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「大石さんの仮説なんだが、御三家が過去の信仰心を村に取り戻すために、大昔の毒性の強い病原体を研究していたのは本当じゃないか、って言うんだ。",
+		   NULL, "the original, deadlier microbe in order to revive the religious devotion the villagers used to have.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢大災害は、実はその結果の失敗じゃないかってな。」",
+		   NULL, " The Great Hinamizawa Disaster could be an experiment that went wrong.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろんこの辺りには、ネット上の仮説や珍説も入り混じる。",
+		   NULL, "This theory is also based on the theories and myths he found on the Internet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雛見沢大災害の直前に謎の死を遂げた診療所長。",
+		   NULL, "The village clinic's chief doctor died mysteriously right before the Great Hinamizawa Disaster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、篭城事件の夜に惨殺された古手梨花という少女の謎…。",
+		   NULL, "A girl, Rika Furude, was brutally murdered on the night Reina Ryuugu took the school hostage...", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "So_K1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　診療所の地下に秘密の研究施設があり、そこで入江は細菌の研究をさせられていたが、罪の意識に耐えかねて自殺。",
+		   NULL, "There could have been an underground research lab beneath the village clinic, and Dr. Irie could have been forced to do micro-biological research, but he couldn't live with his own sins, and committed suicide.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……オヤシロさまの復活という宗教的セレモニーの何らかの意味のため、梨花は宗教的儀式で惨殺されて生贄に…。",
+		   NULL, "...Rika Furude could have been brutally murdered in a sacrifice for some sort of ritual ceremony in the name of Oyashiro-sama's revival...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、彼らが研究した細菌は失敗作だった。",
+		   NULL, "However, their experiment went wrong.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それは村人たちに寄生するどころか、そのまま死に至らしめてしまう殺人ウィルスだったのだ。",
+		   NULL, "...Instead of the microbes being parasitic in the villagers, they became a killer virus.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　かくして村は、一夜にして滅びてしまうことになる…。",
+		   NULL, "And they exterminated the entire village in one night...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "Sora4", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「ただのガス災害じゃないことは明白なんだ。",
+		   NULL, "\"It's obvious that it wasn't a simple gas disaster.", Line_WaitForInput);
+	OutputLine(NULL, "ガスが湧く直前に、１人の少女が細菌テロを予告し、数人の村人が怪死を遂げている。",
+		   NULL, " We cannot ignore the fact that one girl predicted a bioterrorist attack right before the Disaster, and that several villagers died mysteriously,", Line_WaitForInput);
+	OutputLine(NULL, "それをスクラップ帖にまとめた鷹野三四本人も含めてね。",
+		   NULL, " including Miyo Takano herself, who wrote about all that in the scrapbook.", Line_WaitForInput);
+	OutputLine(NULL, "あれを偶然の予見不可能な災害だとするには、どうも腑に落ちない要素が少なくない。",
+		   NULL, " It doesn't sound right to say that the Great Hinamizawa Disaster was an unpredicted and coincidental natural disaster.", Line_WaitForInput);
+	OutputLine(NULL, "この『３４号文書』を読めば、それらは明らかにはっきりしてくる。」",
+		   NULL, " When you read this <i>File No. 34</i>, it's obvious.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「じゃあ…、雛見沢大災害は自然災害ではなく、カルト集団による細菌テロ？」",
+		   NULL, "\"So... you're saying that the Great Hinamizawa Disaster wasn't a rare natural disaster, but that it was in fact an act of bioterrorism by some cultists?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　某サリン事件で知られるカルト集団が、毒ガスや危険なウィルスを研究し散布していたらしいという話は、この平成の時代には誰もが知ることだった。",
+		   NULL, "In the modern era, everyone in Japan knows about the shocking incident where a doomsday cult created a nerve gas, Sarin, and unleashed it for the purposes of mass murder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが昭和の時代なら、カルト集団が細菌テロに及ぶ…などとは誰も想像できなかった。",
+		   NULL, "But in the 80s, the idea of a single cult being able to carry out such an act of terrorism didn't even cross our minds.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「その後の自衛隊の長い封鎖は、その殺人ウィルスを調査するためではないかと囁かれているんだが、すっきりしないな。」",
+		   NULL, "\"Some also whisper that the SDF kept the area sealed for so long so they could study some lethal virus... but I'm not convinced.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はははははは。",
+		   NULL, "\"Ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "ＵＦＯに乗った宇宙人がって話よりは、カルト集団がって方が近年は信憑性がありますからね。」",
+		   NULL, " At least this story sounds more convincing than the one with aliens in UFOs. The idea of cultists and domestic terrorism sounds more rational.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「本当にＵＦＯが墜落した可能性もあるかもしれないな。",
+		   NULL, "\"Maybe there really was an UFO that crash-landed.", Line_WaitForInput);
+	OutputLine(NULL, "……竜宮礼奈が人質篭城時に出した要求の筆頭は、鬼ヶ淵沼の底には墜落したＵＦＯの残骸があるから引き上げろ、というものだったらしい。」",
+		   NULL, " ...When Reina Ryuugu took the school hostage, one of her demands to the police was to have them pull out the wreckage of the UFO from the Onigafuchi Swamp.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「馬鹿馬鹿しい…。」",
+		   NULL, "\"That's ridiculous...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「それが馬鹿馬鹿しいか調べたくても、見ろ。",
+		   NULL, "\"Well, even if I wanted to make sure if it's ridiculous or not, look at it.", Line_WaitForInput);
+	OutputLine(NULL, "沼はコンクリートで数メートルの厚さで固められ、確かめる術もない。",
+		   NULL, " The swamp is filled with concrete several meters thick and there's no way we can check.", Line_WaitForInput);
+	OutputLine(NULL, "地質学的にはガスを防ぐ効果は何も期待できないはずの馬鹿馬鹿しい工事によってだ。」",
+		   NULL, " This is all because of that ridiculous construction that doesn't even do anything to prevent the volcanic gas.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「赤坂先輩がそれを立証するには、あとはここの住民の生き残りを見つけて、体内からその特殊な病原体ってやつを見付け出す他、ないんじゃないですか。」",
+		   NULL, "\"Well then, the only way to prove Akasaka-senpai's theory would be to find a survivor of Hinamizawa and try to find that microbe in him or her.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…それも致命的だ。",
+		   NULL, "\"Sadly, that's almost impossible.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢大災害後の雛見沢出身者に対する魔女狩りのせいで今や出身者の存在は不明だ。",
+		   NULL, " After the Great Hinamizawa Disaster, some survivors were subject to a witch hunt.", Line_WaitForInput);
+	OutputLine(NULL, "彼らは名乗りなどあげまい。」",
+		   NULL, " So, even if there are any survivors, they won't tell you that they're from this area.\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawScene( "Simen1", 400 );
+
+	OutputLine(NULL, "　雛見沢大災害の直後から、雛見沢出身者たちの間に、オヤシロさまの祟りと称して奇行に走る人間が現れた。",
+		   NULL, "Right after the Disaster, some people who were from Hinamizawa started displaying erratic behavior.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その一部が、猟奇事件や奇怪な方法での自殺を遂げ始めると、全国で近所の雛見沢出身者を排斥する一種の魔女狩りが発生した。",
+		   NULL, "When they started dying mysteriously and committing suicide in strange ways, people got scared of them and chased them out of their neighborhoods.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この当時の政府のプライバシー保護の甘さもあり、今や雛見沢出身者は頑なに口を閉ざし、自らの出身を隠し続けているという。",
+		   NULL, "The government was practically useless in protecting their privacy at the time, so the former residents of Hinamizawa lied about where they were from and have kept it that way since.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawSceneWithMask( "Sora4", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「じゃあ、お手上げじゃないですか。」",
+		   NULL, "\"In that case, it's a dead end.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「それでも諦めないのが刑事魂ってもんだよ。",
+		   NULL, "\"But it's my duty as a cop to keep trying.", Line_WaitForInput);
+	OutputLine(NULL, "……あれが自然災害じゃなかったっていう状況証拠はいくらでもあるんだ。",
+		   NULL, " ...There's enough circumstantial evidence to say that the Great Hinamizawa Disaster wasn't a natural one.", Line_WaitForInput);
+	OutputLine(NULL, "何か１つの具体的証拠が見付かれば、芋づる式に全てを白日の下に晒せるかもしれない。」",
+		   NULL, " If I could grab ahold of one piece of concrete proof, I think I could start reeling in the truth behind all of this.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まぁ、あれから２０年経過してますからね。",
+		   NULL, "\"Yeah, but it's been over twenty years.", Line_WaitForInput);
+	OutputLine(NULL, "真相はあまりに遠い闇の中かもしれません。」",
+		   NULL, " The truth might be lying somewhere very deep in the darkness.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだな。………２１世紀の今頃になってここを訪れても、何もわかりはしないのかもな。」",
+		   NULL, "\"That's true... I might not find any answers. It's already the 21st century.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　昭和５８年の６月に。",
+		   NULL, "What happened in Hinamizawa in June 1983?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　一体、雛見沢で何があったと言うんだ。",
+		   NULL, "The only factual evidence that I had was that Miyo Takano mysteriously died and left her scrapbook predicting a bioterrorist attack.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　確実にわかっていることは、鷹野三四が細菌テロを予見して怪死を遂げて。",
+		   NULL, "A young girl took a school hostage to make people listen to this prediction, but no one took it seriously.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを主張した少女が学校を占拠してまで訴えたが誰も耳を貸さず。",
+		   NULL, "The chief doctor of the village clinic committed suicide. People believed that a little girl, Rika Furude, was a reincarnation of Oyashiro-sama, and she was brutally murdered.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　診療所の所長が怪死を遂げ、オヤシロさまの生まれ変わりと村人たちに信じられていた古手梨花という少女が、惨殺されたという事実のみ。",
+		   NULL, "What was the truth behind this scrapbook?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　このスクラップ帖は一体何なのか。",
+		   NULL, "Was it written to reveal a huge conspiracy?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　内容が示すとおり、それは壮大な陰謀を暴いた一大告発書なのか。",
+		   NULL, "Or was it just a bunch of delusions written by an occult maniac?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　当時、誰もが思ったように、これは偏執的マニアによる妄想のでっち上げなのか。",
+		   NULL, "If the contents of this scrapbook were true, the disaster could've been avoided if we had heeded the warnings of one girl.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これが事実なら、我々は１人の少女の訴えに耳を貸すことであの大災害を免れた。",
+		   NULL, "If they weren't true, then who created the disaster to follow the scenario of the scrapbook?", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　これが虚実なら、じゃあ誰がこのスクラップ帖に沿うように災害を引き起こしたんだ。",
+		   NULL, "After the Sarin nerve gas incident,\n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　あの某サリン事件のカルト集団以降、世間に流行った言葉に「マインドコントロール」というものがある。",
+		   NULL, "the words \"mind control\" came into the spotlight.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　「洗脳」が短絡的手段によって短期間の間に強制的に行なわれることに対して、",
+		   NULL, "In contrast to \"brainwashing,\" which can easily force a person to commit certain acts in the short term,", Line_WaitForInput);
+	OutputLine(NULL, "「マインドコントロール」はより時間をかけてじわじわと行い、本人がそれを正義と信じて自発的に行なうようになる点で、洗脳よりも格段に恐ろしい人格侵食であると言われている。",
+		   NULL, " \"mind control\" takes a long time to gradually make a person believe that what he or she must do is the right thing to do, and to act upon it as if it were his or her own idea. It's a form of character alteration, which is far more serious than brainwashing.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　カルト集団は終末思想で信者たちに常に不安と恐怖を植え付け、それから救済される方法として何かを命じられ、それに自発的に従わせようとする。",
+		   NULL, "The cult behind the Sarin gas incident induced fear and anxiety into its members through its revelations of doomsday. At the same time, they ordered them to do certain things as means of salvation, and had them do so voluntarily.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その図式は、どことなく、「３４号文書」に踊らされた竜宮礼奈に似なくもない。",
+		   NULL, "The formula was quite similar to how Reina Ryuugu became a puppet of <i>File No. 34</i>.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　では、竜宮礼奈は何者かに「マインドコントロール」を受けていたのか？",
+		   NULL, "So, does that mean that Reina Ryuugu was \"mind-controlled\" by someone?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして彼女をマインドコントロールしたカルト集団は、まさに某カルト集団がそうだと吹聴していたように世界の終末を引き起こして、教義の信憑性を訴えたのか？",
+		   NULL, "Does that mean that the cult that mind-controlled her tried to cause the end of the world in order to increase the credibility of their teachings, just like the other cult did?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ならば、この「３４号文書」はカルトにとっての経典なのか？",
+		   NULL, "Would that make <i>File No. 34</i> some sort of religious textbook for them?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何が真相かわからなくなる時、…この惨劇を見て誰が楽しんでいるのかを思うときがある。",
+		   NULL, "When I lose my grip on what's true and what's not, it sometimes makes me feel that someone might be laughing in amusement at this disaster.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　このスクラップ帖は、そう、脚本なのだ。",
+		   NULL, "This scrapbook was like a... script.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　数千人もの村人の命を一夜にして奪う、惨劇の舞台脚本。",
+		   NULL, "It was a script for a tragedy that takes the lives of thousands of villagers in one night.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の死を見て笑う地獄の観劇者のための、悪魔たちの脚本。",
+		   NULL, "It was a script for demons who laugh at that loss of human life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この脚本を誰かが書いた。",
+		   NULL, "Someone wrote the script.", Line_WaitForInput);
+	OutputLine(NULL, "そして誰かが上演した。",
+		   NULL, " Someone performed it.", Line_WaitForInput);
+	OutputLine(NULL, "それを見て誰かが笑った。",
+		   NULL, " Someone watched the show and laughed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　くそ……！！",
+		   NULL, "Damn it...!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……昭和５８年の６月に雛見沢で、一体何が起こったって言うんだ……！！",
+		   NULL, "...What the hell happened in Hinamizawa in June 1983?!!!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "white", 0 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	DrawScene( "End_2", 1000 );
+
+	DrawScene( "End_3", 3000 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 4000 );
+
+	DrawScene( "black", 400 );
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

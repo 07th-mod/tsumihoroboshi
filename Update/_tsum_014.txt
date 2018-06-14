@@ -1,0 +1,1003 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+
+	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	SetDrawingPointOfMessage( 0, 6 );
+
+	OutputLine(NULL, "●「帰巣性」と「ホームシック」について",
+		   NULL, "\"About 'homing ability' and 'homesickness'\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　広義の意味で「帰巣性」を取り扱うなら、およそほとんどの生き物に帰巣性があると言えるだろう。",
+		   NULL, "If you interpret \"homing ability\" in a broad sense, you can say that most animals have a homing ability.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　人間についても同じで、我々は睡眠や休息、食事といった行為を、よく馴染んだ場所、つまり家で行ないたがる。",
+		   NULL, "It's the same with humans. We like to sleep, rest, and eat at a place where we feel comfortable--namely, our homes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この家は、まさに巣に通じるだろう。",
+		   NULL, "Your home is to you what nests are to animals.", Line_WaitForInput);
+	OutputLine(NULL, "ゆえに人にも帰巣性があると言える。",
+		   NULL, " Therefore, we can say that humans have a homing ability as well.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　そもそも動物はなぜ巣を必要とするのか。",
+		   NULL, "First of all, why do animals need nests?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これも人間とまったく同じだ。",
+		   NULL, "The answer is the same as for humans.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　睡眠や休息、食事という行為は、生存のために不可欠な行為であり、同時に隙を見せる無用心な行為でもある。",
+		   NULL, "Sleeping, resting, and eating are the essential actions for survival. At the same time, those actions leave one defenseless as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その為、隙を見せても大丈夫な「安全地帯」を設ける必要があったからである。",
+		   NULL, "That's why you need a \"safe area\" where you can be defenseless.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　この「安全地帯」を得ないことは、高度なストレスを与えることは誰でも知っている。",
+		   NULL, "Everybody knows that not having this \"safe area\" results in a high level of stress.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　動物を慣れない環境に強引に移せば、相当のストレスを与えることになるし、",
+		   NULL, "When you move an animal to a new environment, it naturally becomes stressed.", Line_WaitForInput);
+	OutputLine(NULL, "人間とて、不慣れな土地で気を許せない生活を強いれば、相当のストレスを与えることになる。",
+		   NULL, " When you force a person to live in a foreign land where they aren't comfortable, they become greatly stressed as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのストレスを「ホームシック」と呼ぶことは誰もが知っているだろう。",
+		   NULL, "Everybody also knows that this kind of stress is called \"homesickness\".", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　日本では「ホームシック」については研究が非常に浅い。",
+		   NULL, "The Japanese don't know much about \"homesickness\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その定義を長く、心の弛みのせいとし、その救済を放置してきた歴史があるからである。",
+		   NULL, "We defined it as mental weakness, and we neglected to treat it for a long period of time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「ホームシック」の歴史は非常に長く、中世ヨーロッパでは、精神的なものではなく、肉体的な病気とまで信じていた。",
+		   NULL, "However, \"homesickness\" has a very long history. In Europe's Middle Ages, people believed that it wasn't a mental but rather a physical disease.", Line_WaitForInput);
+	OutputLine(NULL, "中でもとりわけ、スイス人が罹患しやすいと信じられていた。",
+		   NULL, " People also believed that out of everyone, the Swiss got the disease the most.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　これは、当時のヨーロッパにおいて、スイス人が出稼ぎ民族として知られていたためだろう。",
+		   NULL, "The Swiss, you see, were known to be an ethnic group that worked away from home in that era.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　郷里を遠く離れ、しかも現代のように電話で声を聞くこともできない。",
+		   NULL, "They lived far away from their homes. There were no telephones at that time, so they couldn't even hear their families' voices for ages and ages.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな異郷で働くスイスの若者たちが「ホームシック」にかかったことは想像に難しくない。",
+		   NULL, "It's easy to imagine that the young Swiss workers got homesick while working in a strange land.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　この「ホームシック」にかかったスイス人たちは、郷里へどうしても帰りたくなり、",
+		   NULL, "These Swiss who got homesick wanted to go home,", Line_WaitForInput);
+	OutputLine(NULL, "でも仕事の都合で帰ることができない葛藤が生じた時、身体的にも精神的にも衰弱し、時には精神に異常すら来たし、脱走や自殺といった逃避行為に駆り立てたという。",
+		   NULL, " but they couldn't because of their jobs. The conflict made them weak physically and mentally. Some of them went crazy and tried to escape from their reality by committing suicide or running away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　当時のスイス人たちもこの迷信を信じ、「ホームシック」にかからないための民間療法や魔術紛いのものが多数流行したという。",
+		   NULL, "The Swiss at the time were very superstitious, and many folk remedies and occult-like treatments to prevent homesickness went around.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　郷里に帰る以外、治療の方法がないのだから、不治の病とも言えたに違いない。",
+		   NULL, "Since going home was the only treatment, they must've called it a fatal disease.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ただし、病と呼ぶのは正しくない。",
+		   NULL, "But it isn't really one, of course.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　正確には「ホームシック」とは、郷里という「安全地帯」へ戻りたいと脳が欲求する、帰巣のための信号であると言えるからだ。",
+		   NULL, "Specifically, \"homesickness\" is a sign of that human homing instinct. Your brain desires to go back to your \"safe area\", namely your home.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　始め、脳は郷里への思い出などを掻きたて、自然な帰郷を促す。",
+		   NULL, "At first, your brain makes you remember the happy memories of your home, and it urges you to go home in a natural way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、理性がそれを咎め帰郷を果たせないと、脳は身体に異常な信号を送るようになる。",
+		   NULL, "But when reason stops you from achieving your desire, your brain starts sending unnatural signals to your body.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その結果、衰弱が起こり、より異郷での生活を困難としていき、最後には理性を曲げることで、帰郷を果たすのである。",
+		   NULL, "As a result, your body gets weak, and that makes it more difficult for you to live in a strange land. In the end, you have to bend reason in order to achieve your desire to go home.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　つまり、「帰巣性」ゆえに「ホームシック」が生み出されるのである。",
+		   NULL, "So, homesickness is born from our homing instincts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　同時に、この「帰巣性」が強ければ、より強力な「ホームシック」が生み出されるわけでもある。",
+		   NULL, "And the stronger one's homing instinct is, the stronger their homesickness.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　この「帰巣性」の強さには、もちろん個人差があるし、環境にも大きく左右される。",
+		   NULL, "The strength of that homing instinct varies from individual to individual, and depends on the environment in which those individuals live.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　故郷がより安全であり、現在の環境がより危険であるなら「帰巣性」は強く宿るだろう。",
+		   NULL, "When your home is safe and the environment you live in is dangerous, your homing instinct grows stronger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　逆に、故郷よりも現在の環境が安全であるなら「帰巣性」は極めて弱くなるだろうと思われる。",
+		   NULL, "On the other hand, when the environment you live in is safer than your home, your homing instinct becomes very weak.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　また、単に安全かどうかだけでなく、文化的なものも作用するだろう。",
+		   NULL, "Safety isn't the only element that affects its strength. Cultural aspects affect it too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　節目ごとに里帰りを求める風習の数々は地方差があり、出身地の文化によってもまた「帰巣性」の強弱は変わると思われる。",
+		   NULL, "The many customs demanding families to return home for major events varies with each region, so your birthplace's culture also alters the strength of your homing instinct.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな中にあって、極めて過剰に「帰巣性」が強いと考えられるのが『鬼ヶ淵村』の仙人たちである。",
+		   NULL, "Amongst those regions, the \"transcendants\" of Onigafuchi Village were believed to have an excessively strong homing instinct.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　鬼ヶ淵村の仙人たちは、戒律により村から出ることを禁じていた。",
+		   NULL, "The people of Onigafuchi forbade their fellows from ever leaving.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これにはすでに述べた選民思想や、穢れ意識などが作用しているものと思われるが、",
+		   NULL, "Many believed this was the effect of the elitism and sense of purity I already mentioned before.", Line_WaitForInput);
+	OutputLine(NULL, "禁を破って村を捨てれば、必ずオヤシロさまが追ってきて祟りを成すという、現在でも強く信じられている迷信は、先に述べた「ホームシック」と捉えることもできる。",
+		   NULL, " People today still strongly believe that Oyashiro-sama puts his curse on you if you break his rule and abandon the village. This superstition can be interpreted as homesickness.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　「帰巣性」と「ホームシック」の関係が比例的であるならば、",
+		   NULL, "If homesickness is directly proportional to one's homing instinct,", Line_WaitForInput);
+	OutputLine(NULL, "祟りという大袈裟な表現はまさに「ホームシック」の強さを示すものであり、同時に「帰巣性」の強さを示すものでもある。",
+		   NULL, " then the exaggerated expression, \"curse,\" would signify the strength of that homesickness, and also their homing instinct.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その「帰巣性」の強さゆえに、下界を強く忌み嫌い、閉鎖社会を形作ったのではないだろうか。",
+		   NULL, "I can assume that they hated the outside world and created an insular society precisely because of their powerful homing ability.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　太古の鬼ヶ淵村においては、残念ながら「帰巣性」の強さを測るケースがない。",
+		   NULL, "Unfortunately, there's no way to measure the strength of the homing ability that the primitive people of Onigafuchi had.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　戒律で村を出ることが厳しく禁じられていたため、「ホームシック」にかかるまで村を出ていたケースが存在しないからだ。",
+		   NULL, "It was so strongly forbidden to leave the village that nobody left long enough to get homesick.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　ところが、明治以降の近年になって事情が一変した。",
+		   NULL, "However, after the Meiji era, things changed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　近代化の波が押し寄せ、鬼ヶ淵村の神聖性が失われた。",
+		   NULL, "The sacredness of Onigafuchi dwindled with the efforts of modernization.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　都会に憧れる若者が増え、また職を得るために村を出る決断も迫られた。",
+		   NULL, "Many young people started longing for city life, and some people were forced to leave the village to get a job.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その結果、村人たちの流出が始まったのである。",
+		   NULL, "As a result, villagers started venturing outside the village borders.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　ここで、鬼ヶ淵村の仙人の末裔たちは、初めて己が「帰巣性」の強さについて知るのである。",
+		   NULL, "That was when the transcendants of Onigafuchi realized how strong their homing ability was for the first time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢住民は異常に「ホームシック」が強かったのである。",
+		   NULL, "The residents of Hinamizawa got extremely homesick.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　やがてその「ホームシック」を誰ともなく「オヤシロさまの祟り」と呼ぶようになった。",
+		   NULL, "After a while, people started to call this homesickness \"the curse of Oyashiro-sama\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも出稼ぎに出た誰かが、異郷の地で祟りに遭い、狂い死んだとの噂が流れると、流出住民たちは次々と村か、周辺の町へ舞い戻ってくることとなる。",
+		   NULL, "It became rumored that a person who left the village to get a job in a strange land was cursed, that he went crazy and died, and people who had left the village started coming back to either it or the nearby town.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　この「ホームシック」、「帰巣性」の強さは、おそらくは文化によるもの、",
+		   NULL, "Their homesickness and their homing ability were very strong, because of their culture.", Line_WaitForInput);
+	OutputLine(NULL, "すなわち雛見沢独自の信仰であるオヤシロさま信仰により培われたと考えるのが妥当だろう。",
+		   NULL, " It's reasonable to think that these were cultivated by the unique religion in Hinamizawa, namely the cult of Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　彼らは生まれた時から無意識の内にオヤシロさまの戒律を刷り込まれ、村を出ることに対し、無意識の内に罪を感じていたに違いない。",
+		   NULL, "From the moment they were born, they were taught the rules of Oyashiro-sama. They must've felt guilty about leaving the village unconsciously.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その結果、「ホームシック」を「オヤシロさまの祟り」と捉えたのだろう。",
+		   NULL, "As a result, they considered their homesickness to be the curse of Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　オヤシロさまの戒律があるから「帰巣性」が強まったのか、「ホームシック」が強すぎるからオヤシロさまの戒律を作ったのか。",
+		   NULL, "I'm not sure if their homesickness got stronger because of the rules of Oyashiro-sama, or if they made the rules of Oyashiro-sama because their homesickness got stronger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……卵が先か鶏が先かははっきりしない。",
+		   NULL, "...I don't know which came first.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
+
+	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "yorumushi", 120, 0 );
+
+	OutputLine(NULL, "　……私は小さい文字に読み疲れ、ごろりと転がり天井を仰いだ。",
+		   NULL, "...I got tired of reading such small print, and lay down on the floor on my back.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　「オヤシロさまの祟り」の正体はホームシックだって？",
+		   NULL, "The true identity of the curse of Oyashiro-sama is... homesickness?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の話を理解してくれた三四さんのスクラップ帖だと思い、期待して読んだのに。",
+		   NULL, "Miyo-san believed my story, and she let me read these scrapbooks. That's why I expected to find something interesting.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……その内容が、私がカウンセラーの先生方に何度も言われた言葉、「ホームシック」でまとめられてしまったので、ちょっと不快だった。",
+		   NULL, "...But what it's saying is that the answer to it all is \"homesickness,\" which many doctors told me so many times at counseling. I'm a little upset.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ホームシックなんて言葉で、……あの異常な体験をどう説明できるというのか。",
+		   NULL, "The word \"homesickness\" can't explain the extraordinary experience I had.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は確かにあの光り輝く眩しい浴室でオヤシロさまが降臨されるのを見た。",
+		   NULL, "I saw Oyashiro-sama come down to me from a bright light in the bathroom.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして血管の中からぶくぶくと溢れ出す、あの汚らしい赤黒いうじ虫の群れを見た。",
+		   NULL, "I saw the dusky-red nasty maggots come out of my blood vessels.", Line_WaitForInput);
+	OutputLine(NULL, "それらに対しては何の説明にもなっていない。",
+		   NULL, " This scrapbook doesn't explain any of that.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "File", 400 );
+
+	OutputLine(NULL, "　あのうじ虫の群れを三四さんはどう説明するというのか。",
+		   NULL, "I don't understand how Miyo-san was going to explain the cloud of maggots.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それとも元々説明などないのか？",
+		   NULL, "Maybe she didn't have any explanation of that to begin with.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　やっぱりあれは錯乱した私の妄想だったのか……？",
+		   NULL, "Was it just a delusion...?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は「うじ虫」の説明を求めて、三四さんに借りている数冊のスクラップ帖を、",
+		   NULL, "I flipped through one of the other scrapbooks Miyo-san let me borrow,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_page", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "ベラベラっと流し見する。",
+		   NULL, " looking for an explanation of the \"maggots\" I saw.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　………すると、…なんと見付かった。",
+		   NULL, "...Then... I found it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それも、私の期待するそのままの見出しでだ。",
+		   NULL, "It had the exact title I was looking for.", Line_Normal);
+	ClearMessage();
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	PlayBGM( 0, "B10_Giwaku2", 120, 0 );
+
+	SetDrawingPointOfMessage( 0, 6 );
+
+	OutputLine(NULL, "●「うじ虫」と「オヤシロさまの祟り」について",
+		   NULL, "\"About 'maggots'\n            and 'the curse of Oyashiro-sama'\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　明治の頃の、流出住民集団帰郷の際、帰郷者たちの中である奇病の噂が流れた。",
+		   NULL, "In the Meiji era, a group of villagers were on their way back to Hinamizawa, and they started discussing a rumor about a weird disease.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雛見沢を離れると、傷口が腐り「うじ虫」が湧き出して体中を内側から食い尽くすというのである。",
+		   NULL, "They said that \"maggots\" started crawling out of the wounds of a person who left Hinamizawa, and that the maggots ate the person's body from the inside.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　その奇病について、当時の古手神社神主はそれこそ「オヤシロさまの祟り」の印であると説いたという。",
+		   NULL, "The Shinto priest of the Furude Shrine at that time explained that the weird disease was a sign of \"the curse of Oyashiro-sama\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　当時の口伝によると、神主は不出である絵巻物を広げ、その「うじ湧き」が太古の昔から語り継がれていたことを示したらしい。",
+		   NULL, "According to tradition, the Shinto priest showed the villagers an ancient scroll, and he told them that the story of the maggots had been passed down through the ages.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　何でも、鬼たちがやって来たという「鬼の国」は、「死者の国」とも読み取れるらしく、",
+		   NULL, "This is what the scroll said: The world where the demons came from must be interpreted as the land of death,", Line_WaitForInput);
+	OutputLine(NULL, "死者の国の鬼たちは、常にその身をうじ虫に食われ続けているというのである。",
+		   NULL, " and the demons in that land of death had to live their lives while being eaten by maggots.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その鬼たちの血を宿す彼らは、オヤシロさまの加護がある雛見沢では何の問題もないが、",
+		   NULL, "The villagers who are of the demon's blood had nothing to worry about as long as they lived in Hinamizawa under the protection of Oyashiro-sama.", Line_WaitForInput);
+	OutputLine(NULL, "異郷の地で加護を失うと、鬼の血の中で眠っていた「うじ虫」たちも目覚め、全身に溢れかえって、その身を食い尽くしてしまうと言うのだ。",
+		   NULL, " But once they left Hinamizawa, abandoning that protection, the maggots that had been sleeping in the blood of the demons would start to awaken, and they'd eat their bodies from the inside out.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　しばらくの間、この「うじ湧き病」はひどく恐れられ、仕事の都合で郷里を離れなければならない時には、この「祟り」から赦しを得る免罪符を神社に求めたという。",
+		   NULL, "This \"maggot disease\" scared the villagers for a while, and they asked the Shrine to provide them with protective talismans whenever they had to leave the village on business.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "（この辺が、中世スイスのホームシック予防と合致するのは面白い）",
+		   NULL, "(This is interesting, as it's similar to the way homesickness was dealt with by the Swiss in the Middle Ages.)", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　大戦を境に、この「うじ湧き病」の妄想は潰えたが、郷里から離れて住まう親族に免罪符を送る習慣は根強く残っている。",
+		   NULL, "After the war started, the delusion of the \"maggot disease\" faded away, but there remained a custom to send talismans to families that lived away from Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　また、免罪符の中に「蛆（うじ）」の字が含まれているのもその名残だろう。",
+		   NULL, "The talismans had the word \"maggot\" on them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、ここで興味深いのは、奇病の噂が流れる以前には、雛見沢住民とて「うじ湧き」について知らなかったという点である。",
+		   NULL, "But the most interesting part about all this is that the residents of Hinamizawa didn't know about the \"maggot disease\" until the rumors began.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　これまで私は、無意識レベルで刷り込まれた信仰が、「ホームシック」を「祟り」だと認識させると考えていた。",
+		   NULL, "I'd thought that their unconscious worship made those people think of homesickness as a \"curse\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　よってこの事前知識なき「うじ湧き」の一件は、これまでの私の研究と真っ向から対立するものとなる。",
+		   NULL, "So this case of the previously unknown \"maggot disease\" directly contradicted the research I had done so far.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
+		   NULL, "It's natural to think that the group of people who were on their way back to the village were lost in a mass delusion because they strongly believed in the curse, and that the Shinto priest took advantage of their state of panic to instill a deeper faith in them...", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　偶然の集団妄想が、たまたま太古の絵巻物と一致しただけとするには、どうにも腑に落ちない。",
+		   NULL, "But I'm not fully convinced that it was merely a coincidence that this mass delusion matched with the story in the old picture scroll.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　「オヤシロさまの祟り」を受けると、何の予備知識がなくても「傷口にうじ虫が湧く」のだろうか？",
+		   NULL, "I wonder if it's possible to see maggots in a wound without having the prerequisite knowledge when a person is cursed by Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰か「祟り」を私の目の前で受けてはくれないだろうか。",
+		   NULL, "I wish Oyashiro-sama would put his curse on someone I could study.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ぜひ観察し、傷口にうじ虫が湧いたかどうか聞いてみたいものだ。",
+		   NULL, "I'd love to see those maggots coming out of someone.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
+	PlaySE( 0, "s_Down", 100, 64 );
+	DrawScene( "File", 400 );
+
+	OutputLine(NULL, "　…………それは、まるで三四さんが私に直接問い掛けているかのようだった。",
+		   NULL, "...I felt as if Miyo-san was here and making that request of me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そうだ。",
+		   NULL, "I remember.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女がこのスクラップ帖を渡す時、……あるいはあなたになら何かわかるかもしれない…というようなことを言っていたような気がする。",
+		   NULL, "When she gave me the scrapbooks... she said that I might be the only who could understand them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は一瞬だけ喜んだ。",
+		   NULL, "I felt good just for a moment", Line_WaitForInput);
+	OutputLine(NULL, "あの「うじ虫」が、私ひとりの妄想ではなかったからだ。",
+		   NULL, " because I found out that the maggots weren't a delusion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが同時に、…あれが私の「妄想」であったとする逃げ道も失ってしまう。",
+		   NULL, "But at the same time... it destroyed my excuse that it was a delusion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……つまり、あの「うじ虫」は、私の見間違いでも何でもなく、…本当にいたのだ。",
+		   NULL, "......The maggots weren't a delusion... They were there.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに気付いた途端に、手首や肘、膝の内側、首筋などが急に痒くなったような気がした。",
+		   NULL, "All of a sudden, my wrists, elbows, inner thighs, and neck started itching.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……再びカミソリで血管を開いてみたい衝動に駆られるが、それを私は静かに押し殺した。",
+		   NULL, "......I felt the urge to cut open a blood vessel, but I quietly held it down.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私がうじ虫が湧いたという話をした時、三四さんがものすごく真剣な表情を浮かべていたことを思い出す。",
+		   NULL, "I remembered that Miyo-san looked very serious when I talked about the maggots.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………さぞや、ぞっとしたに違いない。",
+		   NULL, "...She must've thought it was creepy.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、ぞっとしたのは私も同じだ。",
+		   NULL, "But so did I.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……誰も信じてくれないと嘆きながらも、……自分の血管の中にあんな気持ち悪いものがびっしり蠢いているなんて信じたくなかった。",
+		   NULL, "...While I was crying because nobody believed me...... a part of me didn't want to believe that my body was filled with those creepy things.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから心のどこかで、やっぱりこれは妄想なのだろうと思い込みたがっている部分もあったと思う。",
+		   NULL, "I think part of me wanted to believe that it was a delusion.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、それが否定されてしまった。",
+		   NULL, "But now I know it wasn't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは幻でも何でもなく、……私と同じ体験をした人たちが過去に実在していたのだ。",
+		   NULL, "It wasn't a delusion... There are some people who had the same experience.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……鬼の血の中のうじ虫が、オヤシロさまの加護を失うと溢れ出す…？",
+		   NULL, "...Maggots in the demon's blood will awaken when you lose the protection of Oyashiro-sama...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　では、逆を返せば、…オヤシロさまの加護があれば溢れ出さないだけで、",
+		   NULL, "In other words... they may not awaken under the protection of Oyashiro-sama,", Line_WaitForInput);
+	OutputLine(NULL, "村人全員がこのうじ虫を知らずに血管の中に飼っているということにはならないだろうか…？",
+		   NULL, " but all the villagers still have the maggots in them without knowing it...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ということは……鬼の血を宿すとはつまり、……あの気持ちの悪いうじ虫たちを宿している…という意味なのか…？",
+		   NULL, "People of the demon's blood are... people who have the creepy maggots in their bodies...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は結論を急がず、再びスクラップ帖をバラバラと捲った。",
+		   NULL, "I tried not to jump to conclusions, and flipped the pages again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…自然と、うじ虫に関連した何かを探してしまう。",
+		   NULL, "...I unconsciously looked for something related to maggots.", Line_Normal);
+	ClearMessage();
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	SetDrawingPointOfMessage( 0, 6 );
+
+	OutputLine(NULL, "●「寄生虫」による宿主支配について",
+		   NULL, "\"About 'Parasites' and control of the host\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　集団帰郷者の「うじ湧き病」で考えたのだが、そもそも雛見沢の過度の「ホームシック」が、何らかの寄生虫による感染症とは考えられないだろうか。",
+		   NULL, "The \"maggot disease\" made me think about something. Is it possible to say that the extremely strong homesickness of Hinamizawa was an infectious disease caused by some kind of parasite?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これは、彼らが傷口から湧き出す「うじ虫」を見たからということではなく、",
+		   NULL, "I'm not trying to connect the maggots they saw with parasites.", Line_WaitForInput);
+	OutputLine(NULL, "そもそも彼らが文化（信仰）だと思っているものが、そもそも感染症と関連するのではないかと考察するものである。",
+		   NULL, " I'm trying to think about the possibility that their culture (their religion) might be associated with an infectious disease.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　感染症の多くは、寄生虫たちが望まず引き起こしているものである。",
+		   NULL, "Many infectious diseases are caused unintentionally by parasites.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　寄生虫にとって宿主は文字通りに宿である。",
+		   NULL, "A parasite's host is literally its home.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　よって、彼らにとって究極の寄生とは、宿主に気付かれない完全な共生であろう。",
+		   NULL, "It wants to live within the host's body for as long as it can. The best way to do that is to coexist with the host without the host knowing it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、寄生虫たちは時に、宿主を支配して自らの繁栄に利用しようとすることがある。",
+		   NULL, "But some parasites try to control their hosts and use them for prosperity.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　例えば、中間宿主を経由して感染する寄生虫に見られる能力に、",
+		   NULL, "For example, some parasites have an ability to control their host", Line_WaitForInput);
+	OutputLine(NULL, "宿主の行動を支配して、より上位の宿主にわざと捕食させ、伝染しようとする試みが知られている。",
+		   NULL, " in order to force them to be eaten by a superior host.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　代表的な例では、蝸牛、蟻を中間宿主とし、上位宿主である羊に捕食されるよう牧草の葉先に中間宿主を誘導するDicrocoelium　dendriticum が挙げられる。",
+		   NULL, "A typical example is the Dicrocoelium dendriticrum. It uses snails or ants as intermediate hosts, and it forces them to move to the upper side of vegetation so that it's easier for a superior host to consume it.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　より高度な動物を支配する例では、鼠を中間宿主とし、上位宿主を猫とするToxoplasma　gondiiも挙げられる。",
+		   NULL, "One parasite that controls more complicated animals is called Toxoplasma gondii. It uses mice as intermediate hosts, with the superior hosts being cats.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この場合、中間宿主である鼠から、猫に対する忌避性を喪失させることによって、捕食・伝染させる確率を向上させていることが知られている。",
+		   NULL, "This parasite makes a mouse lose its fear of cats in order to increase its chance of getting eaten, so that the parasite can live within a cat instead.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　また、不特定の宿主への無差別感染を目的としたケースもある。",
+		   NULL, "There are parasites that choose hosts at random.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　特に有名な例ではRabiesvirus が挙げられる。",
+		   NULL, "The rabies virus is commonly known for that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは感染者の脳に寄生して繁殖し、その後、唾液腺を経由して唾液に混じる。",
+		   NULL, "It lives and breeds in the brain of a host, and it moves into the host's saliva through the salivary glands.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同時に、感染者の攻撃性を著しく向上させ、無差別に噛み付き、傷口に唾液と混じって侵入することで伝染する。",
+		   NULL, "It makes the host extremely aggressive, in order to make it bite things randomly, so that it in turn can move into other hosts through the saliva.", Line_WaitForInput);
+	OutputLine(NULL, "……ちなみにこれは狂犬病のこと。",
+		   NULL, " ...That's what rabies does.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　このように、寄生虫には自らの繁栄のために、宿主を支配する能力を宿すものが少なくないのである。",
+		   NULL, "Many parasites have a similar ability to control hosts to their benefit.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　さて、これまで挙げたもののほとんどは、寄生虫たちがより繁栄し伝染していくためのケースだが、",
+		   NULL, "The examples I used above are about parasites that move into other hosts to prosper.", Line_WaitForInput);
+	OutputLine(NULL, "もっと単純に、彼らがより過ごしやすい環境を欲して宿主の行動を支配するケースもあるのではないか。",
+		   NULL, " But I think there must be some kind of parasite that controls its hosts in order to have a comfortable environment in which to live.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ここで私は、かつて提唱した、鬼ヶ淵村住民の異常な「帰巣性」と「ホームシック」をリンクさせられないかと考える。",
+		   NULL, "I want to try to connect this theory to the abnormal homing ability and homesickness of the Onigafuchi residents.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　つまり、雛見沢にはある種の寄生虫が蔓延していて、村人全てに寄生していると仮定する。",
+		   NULL, "Let's say there's some kind of parasite that exists in Hinamizawa, and it lives within all of the villagers' bodies.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その寄生虫たちは、この雛見沢がもっとも居心地のよい環境であり、",
+		   NULL, "For the parasite, Hinamizawa is the most comfortable environment to live in,", Line_WaitForInput);
+	OutputLine(NULL, "宿主に対してこの地に留まり続けるように、強い「帰巣性」を与え、",
+		   NULL, " so it gives the hosts a strong homing ability, in order to make them stay in Hinamizawa.", Line_WaitForInput);
+	OutputLine(NULL, "無視して土地を離れようとすると、「ホームシック」を引き起こして抵抗するのではないだろうか。",
+		   NULL, " Furthermore, it causes the hosts to get homesick whenever they ignore this homing ability and try to leave.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　寄生虫は名が示す通り、宿主に寄生しなければ生きていけない。",
+		   NULL, "Parasites need hosts in which to live.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな彼らにとって、自分たちの過ごしやすい環境に、宿主である人間がコミュニティを形成して住み続けることは都合がいいはずだ。",
+		   NULL, "It's convenient for them if their hosts build a community in the environment where it feels comfortable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この、宿主を自分たちの過ごしやすい土地に縛りつけようとする寄生虫の存在を仮定すると、意外にもこれまでのナゾに説明がつけやすい。",
+		   NULL, "This theory makes it easier for me to explain the mysteries I described earlier.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　つまり、太古の鬼ヶ淵村の仙人たちは、この寄生虫の存在を知っていたことになる。",
+		   NULL, "The transcendants of Onigafuchi knew about the existence of this parasite.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、宿主である自分たちが村を離れて生きていけないことを知っていて、俗世を嫌う戒律や文化を作った。",
+		   NULL, "They knew that, as hosts to the parasites, they couldn't live outside of the village. That's why they created a culture and rules that prohibited contact with the outside world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは近年のダム戦争の異常な盛り上がりも説明できる。",
+		   NULL, "It also explains why people acted so abnormal during the dam conflict.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　では……、オヤシロさまの伝説で語られる、沼から湧き出した鬼とはつまり、寄生虫の大量発生のことなのではないだろうか。",
+		   NULL, "So... The demons that came out of the swamp in the legend of Oyashiro-sama can be interpreted as the mass spread of the parasite.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鬼たちが村人を襲ったという記述は、おそらく末期の感染者の錯乱した行為を示すに違いない。",
+		   NULL, "The story about the demons attacking the villagers must be a metaphor for the behavior of the infected villagers who were controlled by the parasite.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+	DrawScene( "Si_H2", 400 );
+
+	SetColorOfMessage( TRUE, 0xff, 0x99, 0x99 );
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	OutputLine(NULL, "　………さすがに、あまりに突拍子もない話だったので、笑い捨てようと思った。",
+		   NULL, "...This theory is too crazy. I should have just laughed about it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、三四さんに悪いと思ったので、笑うのはやめた。",
+		   NULL, "But I felt bad for Miyo-san, so I decided not to.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この雛見沢が、…実は寄生虫に支配されているって…？",
+		   NULL, "Hinamizawa is controlled by a parasite...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　確かにあの傷口から溢れ出したうじ虫のことだけを取り上げるなら、そうとこじ付けられないこともない。",
+		   NULL, "You could use that theory to explain how the maggots came out of me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……馬鹿馬鹿しいと思う気持ちと、…祟りなんてあやふやなものよりもずっと説得力があると思う気持ちが交錯して、頭がぐるぐると回った。",
+		   NULL, "...I felt a little bit dizzy. I was so confused, and a part of me thought it was ridiculous... and another part of me thought it was more convincing than any curse.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "File", 400 );
+
+	OutputLine(NULL, "　だが多分、……このスクラップ帖を書いたため、三四さんは消されたに違いないのだ。",
+		   NULL, "But... Miyo-san was probably erased because she wrote these scrapbooks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ということは……、",
+		   NULL, "If so...", Line_WaitForInput);
+	OutputLine(NULL, "消した連中にとって、このスクラップ帖は無視できない内容なのだ。",
+		   NULL, " the contents of these scrapbooks must be something that they can't ignore.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…もし相手がそうなら、三四さんを消した後、スクラップ帖を全て集め闇に葬ろうとするはずだ。",
+		   NULL, "...They'd try to get all of her scrapbooks and consign them to oblivion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………もしそこで、数冊が紛失していることに気付いたなら。",
+		   NULL, "...What if they noticed some of her scrapbooks are missing?", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　……………背筋がぞっとしてくるのを感じた。",
+		   NULL, "...I felt a chill running through my spine.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私はこのスクラップ帖を持っていることを秘密にしないといけない。",
+		   NULL, "I have to keep it a secret that I have these scrapbooks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そして、単なるフィクションと片付けず、この内容をもっともっと理解しようと努力しなければならない。",
+		   NULL, "...And I'll have to try to understand more about their contents.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　三四さんは確か、連続怪死事件を、オヤシロさま信仰の復興のため、御三家が起こしていると言ってなかったっけ…？",
+		   NULL, "I remember Miyo-san told me that the Three Families are behind the series of the mysterious deaths, and that they're trying to resurrect the cult of Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　…今読んだばかりの説によるならば、……寄生虫は、現在の雛見沢という環境を維持しようと常に働くはずだ。",
+		   NULL, "...According to the theory I just read... the parasite must be trying to maintain the current environment of Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　寄生虫にとってのもっとも良い環境というのは、太古の鬼ヶ淵村と同じ、完全隔離の村だ。",
+		   NULL, "The healthiest environment for it is a completely closed village, just like the primitive Onigafuchi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　宿主は誰も外へ出ず、彼らにとっては快適に違いない。",
+		   NULL, "It must be very comfortable for the parasite if no hosts go outside the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　現在のように、村人たちが買い物などでひょいひょいと村を離れるのは、彼らにとって苦痛なはず。",
+		   NULL, "They don't even like that the villagers often leave the village to go shopping.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうなれば、………寄生虫たちは自然と宿主を、オヤシロさま信仰復興に誘導するのではないか。",
+		   NULL, "That means... the parasite would try to goad the hosts into resurrecting the cult of Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あれ？",
+		   NULL, "Hm?", Line_WaitForInput);
+	OutputLine(NULL, "　………そう言えばさっき、スクラップ帖のどこかで、鬼の血を最も色濃く受け継ぐのが御三家だって記載があったような気がする。",
+		   NULL, " ...I remember there was an article in the scrapbook saying that the demon's blood runs thickest in the Three Families.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鬼の血を最も色濃く受け継ぐというのは、……つまり、もっとも寄生虫に多く感染し、彼らの支配下にあるということじゃないのか？",
+		   NULL, "That would mean... that they have a larger amount of the parasite in them than the other villagers, and that they're under its control.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　確かに御三家は、鬼ヶ淵村時代への逆行を画策しているようにも見える。",
+		   NULL, "The Three Families seem to be planning to bring the village back to the Onigafuchi era.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ダム戦争以降の綿流しの復興など、明治に廃れた信仰を現代に蘇らせようとしているように思える節がある。",
+		   NULL, "Reviving the Watanagashi festival after the dam conflict can be interpreted as their desire to revive the faith that had started to fade away in the Meiji era.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その御三家、特に園崎家は、地域や公共機関に強力な影響力を持っている…。",
+		   NULL, "The Three Families, especially the Sonozaki family, have a great influence over the region and the public organizations...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……何だこれ…。",
+		   NULL, "...What's going on here...?", Line_WaitForInput);
+	OutputLine(NULL, "こんな出来の悪い仮説なのに、……ぺたぺたとピースが埋まっていく。",
+		   NULL, " I'd thought this to be a poorly written theory... but the pieces fit together, one after another.", Line_WaitForInput);
+	OutputLine(NULL, "こんな滅茶苦茶なジグソーパズルは初めてだ。",
+		   NULL, " I've never played a jigsaw puzzle as crazy as this.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　馬鹿馬鹿しいと思う気持ちと、実はとんでもない事実が明かされようとしている気持ちで、頭の中がぐるぐると渦を巻く。",
+		   NULL, "I felt my brain swirling due to this absurd theory. A part of me thought this was ridiculous, and another part of me thought I might be about to expose an unbelievable truth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…その中央を覗き込もうとすると、渦に酔って、落ちて溺れてしまいそうだった。",
+		   NULL, "...When I tried to look into the center of it, I felt as if I was going to fall into the whirlpool and drown.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "File", 400 );
+
+	OutputLine(NULL, "　…………もっと真剣に、腰を据えて読もう。",
+		   NULL, "...I'll have to devote myself to reading more seriously.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何か真実があるはずなんだ。",
+		   NULL, "There must be some truth to this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………茨城へ引っ越して以来、ずっと私の生活を狂わせてきた不幸の元凶。",
+		   NULL, "...It caused misfortune and made my life miserable after I moved to Ibaraki.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　お母さんの離婚も、私の自暴自棄も、みんなみんな全てに説明がつく真相がもうじきで判明しそうなのだ…！",
+		   NULL, "I might be able to find the truth, including the cause of my parents' divorce and my desperate behavior...!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_knock", 128, 64 );
+	DrawScene( "Re_H3", 400 );
+
+	OutputLine(NULL, "　その時、突然の荒々しいノックに私は飛び上がった。",
+		   NULL, "Right then, I heard a knock on the door all of a sudden, scaring me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　慌ててスクラップ帖をクッションの下に隠す。",
+		   NULL, "I hid the scrapbooks under a cushion.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "yorumushi", 120, 0 );
+
+	OutputLine(NULL, "「礼奈、電話が来てるぞ。」",
+		   NULL, "\"Reina, you have a phone call.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「電話？",
+		   NULL, "\"A phone call?", Line_WaitForInput);
+	OutputLine(NULL, "　こんな時間に？",
+		   NULL, " This late?", Line_WaitForInput);
+	OutputLine(NULL, "　……誰だろ。」",
+		   NULL, " ...Who is it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「本屋さんからだぞ。",
+		   NULL, "\"It's from a bookstore.", Line_WaitForInput);
+	OutputLine(NULL, "本の取り寄せとか頼んだのか？",
+		   NULL, " Did you order some books?", Line_WaitForInput);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_Z03_Haikyo", 128, 64 );
+
+	OutputLine(NULL, "　興宮書房の大石さんって人からだ。」",
+		   NULL, " They said they were Ooishi-san from the Okinomiya bookstore.\"", Line_Normal);
+	ClearMessage();
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+}
