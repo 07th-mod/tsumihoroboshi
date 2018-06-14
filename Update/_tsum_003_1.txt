@@ -4,20 +4,26 @@
 	PlayBGM( 0, "Cafe", 120, 0 );
 	DrawScene( "Re4", 400 );
 
+	PlaySE(4, "S09/00/waitA17001", 128, 64);
 	OutputLine(NULL, "「いらっしゃいませー、エンジェルモートへようこそ。",
 		   NULL, "\"Welcome to Angel Mort.", Line_WaitForInput);
+	PlaySE(4, "S09/00/waitA17002", 128, 64);
 	OutputLine(NULL, "本日はイベントデーになりますが、チケットはお持ちですか？」",
 		   NULL, " Today we're holding a special event. Do you have a ticket?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/02/170200060", 128, 64);
 	OutputLine(NULL, "「えっと、チケットはないですけど、名乗ればいいと言われてます。",
 		   NULL, "\"Umm, we don't have a ticket, but we were told to give our names.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200061", 128, 64);
 	OutputLine(NULL, "竜宮レナと前原圭一です。」",
 		   NULL, " We're Rena Ryuugu and Keiichi Maebara.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/00/waitA17003", 128, 64);
 	OutputLine(NULL, "「只今、リストを確認しております。",
 		   NULL, "\"Let me check on our list.", Line_WaitForInput);
+	PlaySE(4, "S09/00/waitA17004", 128, 64);
 	OutputLine(NULL, "少々お待ち下さい。」",
 		   NULL, " Please wait for a moment.\"", Line_Normal);
 	ClearMessage();
@@ -38,8 +44,10 @@
 
 	DrawSceneWithMask( "Re5", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S09/01/170100062", 128, 64);
 	OutputLine(NULL, "「いやしかし、…恐ろしい連中だった。",
 		   NULL, "\"Anyway... those people were just too freaky back there.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100063", 128, 64);
 	OutputLine(NULL, "あんなのがひしめいていたら、健全な客は店内までたどり着けないぞ。」",
 		   NULL, " There's no way that normal people could get through them without a struggle.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -48,6 +56,7 @@
 	DrawBustshotWithFiltering( 0, "Re_WaraiA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200062", 128, 64);
 	OutputLine(NULL, "「あははははは、そうかもだね。",
 		   NULL, "\"Ahahahahaha, you might be right.", Line_WaitForInput);
 
@@ -55,14 +64,18 @@
 	ChangeBustshot( 0, "Re_KaiiA1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200063", 128, 64);
 	OutputLine(NULL, "でも、レナの行く手を阻むことは誰にもできないんだよ〜〜、はぅ〜☆」",
 		   NULL, " But nobody can stop me! Hauuuuu☆!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100064", 128, 64);
 	OutputLine(NULL, "「それはそうと、相変わらずのキレだったな…。",
 		   NULL, "\"You sure did them in...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あれは肘か？膝か？",
 		   NULL, " Did you use your elbows or knees?", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100066", 128, 64);
 	OutputLine(NULL, "　顔面の急所を正確にブチ抜くとは、…恐ろしいヤツ。」",
 		   NULL, " You hit them right in the middle of their faces... You're a scary person.\"", Line_Normal);
 	ClearMessage();
@@ -81,14 +94,18 @@
 	ChangeBustshot( 0, "Re_KaiiB1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200064", 128, 64);
 	OutputLine(NULL, "「だってだって、レナのお持ち帰りを邪魔するんだもん〜☆",
 		   NULL, "\"That's because they tried to sabotage my chance to take my girls home with me☆.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200065", 128, 64);
 	OutputLine(NULL, "　きっとみんなかぁいいよぉ、みぃんなお持ち帰りぃ〜！！」",
 		   NULL, " They must look so kyute today! I'm taking all of them home with me!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100067", 128, 64);
 	OutputLine(NULL, "「…かぁいいモードのレナが相手じゃなぁ。",
 		   NULL, "\"...When you're in Kyute Mode, nobody stands a chance.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100068", 128, 64);
 	OutputLine(NULL, "まぁ連中もあれだけ派手にブチのめされれば、敗北を受け入れられるだろう。」",
 		   NULL, " I sure hope they admitted their loss after getting beaten up that badly...\"", Line_Normal);
 	ClearMessage();
@@ -97,20 +114,27 @@
 	ChangeBustshot( 0, "Re_DefB1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200066", 128, 64);
 	OutputLine(NULL, "「圭一くんだってすごかったよ？",
 		   NULL, "\"You did great too, Keiichi-kun.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　大勢に囲まれて飲み込まれたと思ったら、急にシンとなって、そのあとみんな、涙を流しながら道を開けてた。",
 		   NULL, " At first, I thought you'd be engulfed by them, but then they became all quiet and let you through with tears in their eyes.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200068", 128, 64);
 	OutputLine(NULL, "なんでかな、かな？」",
 		   NULL, " What did you do to them, to them?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100069", 128, 64);
 	OutputLine(NULL, "「……いや別に…。",
 		   NULL, "\"...Nothing really...", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100070", 128, 64);
 	OutputLine(NULL, "落選したお前たちの代わりにこの俺が入店してやる、お前たちの分まで俺が見届けてきてやる、",
 		   NULL, " I just told them that I'd get into the restaurant and make sure to see everything they wanted to see.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100071", 128, 64);
 	OutputLine(NULL, "だから同士諸君、今は涙を流しても次の抽選の勝者になれ、",
 		   NULL, " And I told them, 'You might have to shed tears now, but I believe you can get a ticket next time.'", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100072", 128, 64);
 	OutputLine(NULL, "とまぁ、その辺りのことを少々語ったら、みんな理解してくれたようで…。」",
 		   NULL, " That's all I said, but they seemed to understand me...\"", Line_Normal);
 	ClearMessage();
@@ -119,16 +143,21 @@
 	ChangeBustshot( 0, "Re_DefB1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200069", 128, 64);
 	OutputLine(NULL, "「…圭一くんって、アジテーション得意だよね。",
 		   NULL, "\"...You're so good at that sort of thing.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200070", 128, 64);
 	OutputLine(NULL, "聞いている人を共感させる能力というか。",
 		   NULL, " You know, making people listen to you.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200071", 128, 64);
 	OutputLine(NULL, "うんうん、我が部の口先の魔術師って感じ。」",
 		   NULL, " Yeah, you sure are our club's Magician of Words.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100073", 128, 64);
 	OutputLine(NULL, "「その口先の魔術師って、もう決定なのかよー？！",
 		   NULL, "\"They're all calling me that now.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100074", 128, 64);
 	OutputLine(NULL, "　他の通り名はないのかよぅ！」",
 		   NULL, " Can't you please come up with a better name?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -137,8 +166,10 @@
 	ChangeBustshot( 0, "Re_WaraiA1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あはははは！",
 		   NULL, "\"Ahahahahaha!", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200073", 128, 64);
 	OutputLine(NULL, "　どうだろうね、考えてみるね！」",
 		   NULL, " I'll think about it!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -149,12 +180,16 @@
 
 	DrawSceneWithMask( "Re4", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/00/waitA17005", 128, 64);
 	OutputLine(NULL, "「大変お待たせしました。",
 		   NULL, "\"Thank you so much for waiting.", Line_WaitForInput);
+	PlaySE(4, "S09/00/waitA17006", 128, 64);
 	OutputLine(NULL, "リストにお名前を確認しました。",
 		   NULL, " I confirmed your names in the list.", Line_WaitForInput);
+	PlaySE(4, "S09/00/waitA17007", 128, 64);
 	OutputLine(NULL, "お席へご案内します。",
 		   NULL, " I'll take you to your table.", Line_WaitForInput);
+	PlaySE(4, "S09/00/waitA17008", 128, 64);
 	OutputLine(NULL, "どうぞこちらへ！」",
 		   NULL, " Please follow me!\"", Line_Normal);
 	ClearMessage();
@@ -195,22 +230,27 @@
 	DrawScene( "black", 400 );
 	DrawSceneWithMask( "Re4", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S09/00/manH17001", 128, 64);
 	OutputLine(NULL, "「やはりエンジェルモートは",
 		   NULL, "\"Angel Mort is", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "制服命ザンスねぇ〜！！」",
 		   NULL, " all about the uniform!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/00/manI17001", 128, 64);
 	OutputLine(NULL, "「食は舌で味わうものでござるが、",
 		   NULL, "\"You taste food with your tongue,", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_cork", 128, 64 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "エンジェルモートは目で味わうのでござるよ〜！！",
 		   NULL, " but in Angel Mort, you can taste it with your eyes, too!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　今日はたゆん",
 		   NULL, " Where's the waitress with the big", Line_ContinueAfterTyping);
 
@@ -219,6 +259,7 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "たゆん",
 		   NULL, " heavy", Line_ContinueAfterTyping);
 
@@ -227,10 +268,12 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S09/00/manI17002", 128, 64);
 	OutputLine(NULL, "のウェイトレスさんはいないでござるか〜！！」",
 		   NULL, " pair of melons? I don't see her today!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/00/manJ17001", 128, 64);
 	OutputLine(NULL, "「むほほほほ！",
 		   NULL, "\"Muohoho!", Line_WaitForInput);
 
@@ -239,13 +282,16 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S09/00/manJ17002", 128, 64);
 	OutputLine(NULL, "　女の子のローテのチェックは基本ですよお！！",
 		   NULL, " You need to check the shift roster!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　巨乳好きなら",
 		   NULL, " If you like girls with big tits,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "火、",
 		   NULL, " you have to come on Tuesdays and", Line_ContinueAfterTyping);
 
@@ -254,6 +300,7 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "木",
 		   NULL, " Thursdays", Line_ContinueAfterTyping);
 
@@ -262,10 +309,12 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, " after", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "１７時以降は絶対押さえたいですねえぇえ！",
 		   NULL, " 5 PM!", Line_ContinueAfterTyping);
 
@@ -275,6 +324,7 @@
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "S09/00/manJ17004", 128, 64);
 	OutputLine(NULL, "　逆属性の方は金曜１７時以降が勝負！！」",
 		   NULL, " If you like girls with small tits, you have to come on Fridays after 5 PM!!\"", Line_ContinueAfterTyping);
 

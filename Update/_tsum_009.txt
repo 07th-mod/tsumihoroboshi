@@ -5,6 +5,7 @@
 	DrawSceneWithMask( "Si_H4", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "03_cele", 120, 0 );
 
+	PlaySE(4, "S09/02/170200350", 128, 64);
 	OutputLine(NULL, "「再婚なんか、する必要ないよ。」",
 		   NULL, "\"You don't need to get remarried.\"", Line_Normal);
 	ClearMessage();
@@ -19,28 +20,37 @@
 		   NULL, "He noticed the sad tone in my voice, and realizing that I didn't agree with the idea of his remarriage, he looked down.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/00/172900019", 128, 64);
 	OutputLine(NULL, "「………無理もないよな。",
 		   NULL, "\"......I understand.", Line_WaitForInput);
+	PlaySE(4, "S09/00/172900020", 128, 64);
 	OutputLine(NULL, "…礼奈の気持ちも分かるよ。",
 		   NULL, " ...I know how you feel, Reina.", Line_WaitForInput);
+	PlaySE(4, "S09/00/172900021", 128, 64);
 	OutputLine(NULL, "事前に礼奈にもよく相談、」",
 		   NULL, " I should've talked about it with you first and...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「妊娠したなんて、あの女の嘘だよ。」",
 		   NULL, "\"That woman is lying to you about her pregnancy.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/00/172900022", 128, 64);
 	OutputLine(NULL, "「あの女なんて言い方しちゃだめだ。",
 		   NULL, "\"Don't talk like that.", Line_WaitForInput);
+	PlaySE(4, "S09/00/172900023", 128, 64);
 	OutputLine(NULL, "リナさんは、」",
 		   NULL, " Rina-san is...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/02/170200352", 128, 64);
 	OutputLine(NULL, "「本当のことを話す。",
 		   NULL, "\"I'll tell you the truth.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200353", 128, 64);
 	OutputLine(NULL, "あの女と鉄という男は二人組の悪人。",
 		   NULL, " That woman and a guy called 'Tecchan' are a team of bad people.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200354", 128, 64);
 	OutputLine(NULL, "我が家の財産を狙ってお父さんに近付いてきただけ。」",
 		   NULL, " She went out with you only because she was trying to get our money.\"", Line_Normal);
 	ClearMessage();
@@ -75,8 +85,10 @@
 
 	DrawSceneWithMask( "Si_H3", "maskdown", 1, 0, 300 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「なぁ礼奈…、もう一度ゆっくりと父さんたちと話し合おう。",
 		   NULL, "\"Hey, Reina... Let's sit down with a cup of tea and talk.", Line_WaitForInput);
+	PlaySE(4, "S09/00/172900025", 128, 64);
 	OutputLine(NULL, "そうすればきっと分かってくれるから。」",
 		   NULL, " I'm sure you'll understand once you hear me out.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -280,30 +292,37 @@
 	DrawBustshot( 0, "Tetu2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/21/172000065", 128, 64);
 	OutputLine(NULL, "「んで、なんじゃい。",
 		   NULL, "\"So,", Line_WaitForInput);
+	PlaySE(4, "S09/21/172000066", 128, 64);
 	OutputLine(NULL, "重要な話っちゅうんは。」",
 		   NULL, " whaddya want?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/02/170200355", 128, 64);
 	OutputLine(NULL, "「リナさんって、",
 		   NULL, "\"Has Rina-san...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…昨日以来、",
 		   NULL, " come back to Okinomiya", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "興宮に帰ってますか？」",
 		   NULL, " since yesterday?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/21/172000067", 128, 64);
 	OutputLine(NULL, "「……んん？」",
 		   NULL, "\"......Nnn?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/02/170200355_1", 128, 64);
 	OutputLine(NULL, "「実はリナさん、……事情があって、隠れてるんです。」",
 		   NULL, "\"As a matter of fact... she's hiding somewhere.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -312,12 +331,15 @@
 	ChangeBustshot( 0, "Tetu3", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はぁ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
+	PlaySE(4, "S09/21/172000069", 128, 64);
 	OutputLine(NULL, "　どういうごっちゃん！！」",
 		   NULL, " I don't get it!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/02/170200357", 128, 64);
 	OutputLine(NULL, "「リナさんから、鉄平さんが来たら連れて来てほしいと言われてるんです。」",
 		   NULL, "\"Rina-san told me to take you to her when you came to my house.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -326,8 +348,10 @@
 	ChangeBustshot( 0, "Tetu2", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/21/172000070", 128, 64);
 	OutputLine(NULL, "「……はぁ？？",
 		   NULL, "\"...Hah??", Line_WaitForInput);
+	PlaySE(4, "S09/21/172000071", 128, 64);
 	OutputLine(NULL, "　律子のやつ、どうしたんね…！」",
 		   NULL, " The fuck is Ritsuko thinkin'...?\"", Line_Normal);
 	ClearMessage();
@@ -396,8 +420,10 @@
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
+	PlaySE(4, "S09/21/172000072", 128, 64);
 	OutputLine(NULL, "「お、…！",
 		   NULL, "\"Oh...!", Line_WaitForInput);
+	PlaySE(4, "S09/21/172000073", 128, 64);
 	OutputLine(NULL, "　どうしたんね…。」",
 		   NULL, " What's goin' on...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -424,12 +450,15 @@
 		   NULL, "I grabbed the big hatchet I'd hidden in a bush, and lifted it up high.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/02/170200358", 128, 64);
 	OutputLine(NULL, "「ごめんなさい、電池の接触不良かな……。",
 		   NULL, "\"I'm sorry. I guess the battery went out...", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200359", 128, 64);
 	OutputLine(NULL, "ちょっと待ってくださいね…。」",
 		   NULL, " Hold on a second...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「おう、早ぅせんとな。」",
 		   NULL, "\"'Kay. Hurry it up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -442,8 +471,10 @@
 		   NULL, " while I raised the hatchet into the air.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/21/172000075", 128, 64);
 	OutputLine(NULL, "「……あぁん、ライターあるわ。",
 		   NULL, "\"...Oh, I got a lighter.", Line_WaitForInput);
+	PlaySE(4, "S09/21/172000076", 128, 64);
 	OutputLine(NULL, "出すんね。」",
 		   NULL, " I'll just fire this baby up...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -472,6 +503,7 @@
 	ChangeBustshot( 0, "Tetu3", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/21/172000077", 128, 64);
 	OutputLine(NULL, "「…………ッッ！！！！」",
 		   NULL, "\".........!!!!\"", Line_Normal);
 	ClearMessage();
@@ -772,14 +804,18 @@
 	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/03/170300110", 128, 64);
 	OutputLine(NULL, "「寝かせてあげなよ。",
 		   NULL, "\"Let her sleep.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300111", 128, 64);
 	OutputLine(NULL, "たまにはそういう日もあるよ。」",
 		   NULL, " She must be really tired today.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100230", 128, 64);
 	OutputLine(NULL, "「…ん。",
 		   NULL, "\"...Ah.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100231", 128, 64);
 	OutputLine(NULL, "それもそうだな。」",
 		   NULL, " You're right.\"", Line_Normal);
 	ClearMessage();
@@ -811,6 +847,7 @@
 	DrawBustshotWithFiltering( 0, "Me_DefA1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S09/01/170100232", 128, 64);
 	OutputLine(NULL, "「………そんな苦労をしてるなんて、全然気付きもしなかったぜ。」",
 		   NULL, "\"...I didn't even notice that she's been through such a tough time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -819,8 +856,10 @@
 	ChangeBustshot( 0, "Me_WaraiB2", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300112", 128, 64);
 	OutputLine(NULL, "「レナはそういうのを表に出さないタイプだよね。",
 		   NULL, "\"Rena is the kind of girl who doesn't show her pain to others.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300113", 128, 64);
 	OutputLine(NULL, "ひょっとすると、普段、陽気に振舞っているのも、そういう風に意識して振舞っているからかもね。」",
 		   NULL, " She always looks happy and cheerful, but she might be acting that way on purpose.\"", Line_Normal);
 	ClearMessage();
@@ -869,6 +908,7 @@
 	ChangeBustshot( 0, "Me_DefB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300114", 128, 64);
 	OutputLine(NULL, "「別に、圭ちゃんが両親と生活してることを申し訳なく思うことはないよ。」",
 		   NULL, "\"You don't have to feel bad about living with your parents.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -883,12 +923,15 @@
 	ChangeBustshot( 0, "Me_TokuiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300115", 128, 64);
 	OutputLine(NULL, "「確かに家族ってのは、生まれてきた子どもである私たちにとって、一番最初のコミュニティなんだと思う。",
 		   NULL, "\"A family is the most common community for kids like us to live in.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300116", 128, 64);
 	OutputLine(NULL, "でもね、コミュニティは家族だけじゃないんだよ。」",
 		   NULL, " But it's not the only community we have.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100233", 128, 64);
 	OutputLine(NULL, "「……仲間、か？」",
 		   NULL, "\"...You mean friends?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -897,10 +940,12 @@
 	ChangeBustshot( 0, "Me_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300117", 128, 64);
 	OutputLine(NULL, "「わかってるじゃん。」",
 		   NULL, "\"You're right.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100233_1", 128, 64);
 	OutputLine(NULL, "「俺たちは、レナにとって、家族に負けないくらいの存在なんだろうか…？」",
 		   NULL, "\"Do you think we're as good as family to Rena...?\"", Line_Normal);
 	ClearMessage();
@@ -909,8 +954,10 @@
 	ChangeBustshot( 0, "Me_TokuiB2", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300119", 128, 64);
 	OutputLine(NULL, "「掃除洗濯、炊事に買い物。",
 		   NULL, "\"Rena does cleaning, laundry, cooking, and shopping, so she must be tired every day.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300120", 128, 64);
 	OutputLine(NULL, "それに疲れて昼寝だけして過ごすことだってレナにはできるんだよ。",
 		   NULL, " She could spend her afternoon taking naps.", Line_WaitForInput);
 
@@ -918,19 +965,24 @@
 	ChangeBustshot( 0, "Me_WinkA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300121", 128, 64);
 	OutputLine(NULL, "　でもレナはそれをしない。",
 		   NULL, " But she doesn't do that.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300122", 128, 64);
 	OutputLine(NULL, "放課後の時間いっぱいを私たちと部活をして過ごす。",
 		   NULL, " She spends her afternoons playing with us.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300123", 128, 64);
 	OutputLine(NULL, "それはつまり、………なんて言えばいいのかなぁ、",
 		   NULL, " That means... how should I put it...?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…そう、仲間ってことなんだよ。」",
 		   NULL, " ...That means we're her best friends.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/01/170100234", 128, 64);
 	OutputLine(NULL, "「レナにとっては、…家族と同じくらいの意味のある、仲間ってことなのか？」",
 		   NULL, "\"So you're saying... we're friends with as much value as family to her?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -939,6 +991,7 @@
 	ChangeBustshot( 0, "Me_tohohoA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………。」",
 		   NULL, "\"...............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -955,8 +1008,10 @@
 	ChangeBustshot( 0, "me_AkuwaraiA2", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300125", 128, 64);
 	OutputLine(NULL, "「あー、……圭ちゃんが今日まで、仲間って言葉をどういう意味で使ってきたか知らないけどさ。",
 		   NULL, "\"Ah... I didn't know what friends meant for you until today.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300126", 128, 64);
 	OutputLine(NULL, "…仲間ってのは、家族とまったく同格じゃないのかなぁ？」",
 		   NULL, " ...But I believe friends are just as important and valuable as family.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -964,6 +1019,7 @@
 	DrawBustshotWithFiltering( 2, "Ri_WaraiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GK1", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/05/170500025", 128, 64);
 	OutputLine(NULL, "「……難しく考えることではないのですよ。」",
 		   NULL, "\"......It's actually very easy to understand.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -976,12 +1032,15 @@
 	ChangeBustshot( 2, "Ri_NikoA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/05/170500026", 128, 64);
 	OutputLine(NULL, "「居場所があればいいのです。",
 		   NULL, "\"The important thing is to have people around whom you can feel comfortable.", Line_WaitForInput);
+	PlaySE(4, "S09/05/170500027", 128, 64);
 	OutputLine(NULL, "それがある場所を、家族と言ったり、仲間と言ったり、呼び方が少し変わるだけのことなのですよ。」",
 		   NULL, " Sometimes you call them family or sometimes you call them friends. It's just a matter of the word you use.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100235", 128, 64);
 	OutputLine(NULL, "「………梨花ちゃんにとって、家族と仲間は同じものか？」",
 		   NULL, "\"...Are friends the same as family to you, Rika-chan?\"", Line_Normal);
 	ClearMessage();
@@ -990,8 +1049,10 @@
 	ChangeBustshot( 2, "Ri_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/05/170500028", 128, 64);
 	OutputLine(NULL, "「……ボクはそうだと思っていますです。",
 		   NULL, "\"...Yes, they are.", Line_WaitForInput);
+	PlaySE(4, "S09/05/170500029", 128, 64);
 	OutputLine(NULL, "沙都子も魅ぃも、そしてレナもそうだと思いますですよ。」",
 		   NULL, " I believe they are to Satoko, Mii, and Rena, too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1000,10 +1061,12 @@
 	DrawBustshotWithFiltering( 1, "Me_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300127", 128, 64);
 	OutputLine(NULL, "「だから私たちは、いっつも一緒にいようとするんじゃないかなぁ。」",
 		   NULL, "\"I guess that's why we always try to stay together.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100235_1", 128, 64);
 	OutputLine(NULL, "「梨花ちゃんは、みんなといると寂しくないか？」",
 		   NULL, "\"Do you ever feel lonely when you're with your friends?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1012,8 +1075,10 @@
 	ChangeBustshot( 2, "Ri_NikoA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/05/170500030", 128, 64);
 	OutputLine(NULL, "「……みんなは家族なのです。",
 		   NULL, "\"......They're my family.", Line_WaitForInput);
+	PlaySE(4, "S09/05/170500031", 128, 64);
 	OutputLine(NULL, "寂しくなんかないのですよ？」",
 		   NULL, " So, I'm not lonely.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1034,6 +1099,7 @@
 		   NULL, "...Rena would, too.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/01/170100236", 128, 64);
 	OutputLine(NULL, "「俺、………ちょっと恥ずかしいよ。」",
 		   NULL, "\"I'm... a little embarrassed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1042,14 +1108,18 @@
 	DrawBustshot( 0, "Me_DefA2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「うん？」",
 		   NULL, "\"Why?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/01/170100237", 128, 64);
 	OutputLine(NULL, "「今日まで俺、仲間って言葉を使ってきたけどさ。",
 		   NULL, "\"I've been using the word, 'friends'.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100238", 128, 64);
 	OutputLine(NULL, "……本当の意味で理解してなかったと思う。",
 		   NULL, " ...But I don't think I understood its true meaning until today.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100239", 128, 64);
 	OutputLine(NULL, "仲間ってのは、…もっともっと大切で掛け替えのない、すげえもんなんだよな。」",
 		   NULL, " Friends are... more important and irreplaceable than I thought they were.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1058,14 +1128,18 @@
 	ChangeBustshot( 0, "Me_WinkB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300130", 128, 64);
 	OutputLine(NULL, "「…………それ、すっごく当り前のことだからさ。",
 		   NULL, "\"That's like...... common sense.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300131", 128, 64);
 	OutputLine(NULL, "もし今日まで分かってなかったなら、よく胸に刻んだ方がいいよ。」",
 		   NULL, " So, you should take this opportunity to remember that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「そうだな。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100241", 128, 64);
 	OutputLine(NULL, "…そうするぜ。」",
 		   NULL, " ...I will.\"", Line_Normal);
 	ClearMessage();
@@ -1074,6 +1148,7 @@
 	ChangeBustshot( 0, "Me_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300132", 128, 64);
 	OutputLine(NULL, "「あと、それを二度と口にしない方がいいかもだね！",
 		   NULL, "\"I also recommend that you don't say that again!", Line_WaitForInput);
 
@@ -1081,6 +1156,7 @@
 	ChangeBustshot( 0, "Me_AkuwaraiA2", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300133", 128, 64);
 	OutputLine(NULL, "　今、圭ちゃん、かなり恥ずかしいことを言ってたと思うよ〜。」",
 		   NULL, " Kei-chan, you just said something very embarrassing, you know?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1101,6 +1177,7 @@
 
 	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S09/02/170200360", 128, 64);
 	OutputLine(NULL, "「………くぁぁ……。」",
 		   NULL, "\"......Zzz......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1120,6 +1197,7 @@
 	DrawBustshot( 0, "Tie1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/22/171400001", 128, 64);
 	OutputLine(NULL, "「委員長、竜宮さんを起こしてください。」",
 		   NULL, "\"Class president, wake her up, please.\"", Line_Normal);
 	ClearMessage();
@@ -1127,6 +1205,7 @@
 	DrawBustshotWithFiltering( 2, "me_AkuwaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/03/170300134", 128, 64);
 	OutputLine(NULL, "「レナぁ、ほらほら。」",
 		   NULL, "\"Rena, get up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1135,6 +1214,7 @@
 	DrawBustshotWithFiltering( 1, "Re_HauA1", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200361", 128, 64);
 	OutputLine(NULL, "「ふぁうぅうぅ…。」",
 		   NULL, "\"Hwwaaaa...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1191,14 +1271,18 @@
 	DrawBustshotWithFiltering( 0, "Re_WaraiA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/02/170200362", 128, 64);
 	OutputLine(NULL, "「どうしたんだろ。",
 		   NULL, "\"Keiichi-kun,", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200363", 128, 64);
 	OutputLine(NULL, "圭一くん、すっごく嬉しそうだね。今日は何かあるの？」",
 		   NULL, " you look very happy. Did something special happen today?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100242", 128, 64);
 	OutputLine(NULL, "「別に今日、何かあるわけじゃないぜ。",
 		   NULL, "\"Nothing.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100243", 128, 64);
 	OutputLine(NULL, "今日は今日だし、明日は明日だろ。」",
 		   NULL, " Today is today. Tomorrow is tomorrow, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1207,16 +1291,21 @@
 	ChangeBustshot( 0, "RE_DefB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200364", 128, 64);
 	OutputLine(NULL, "「……うん？」",
 		   NULL, "\"......Yeah...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S09/01/170100244", 128, 64);
 	OutputLine(NULL, "「今日が晴れてるならそれで十分。",
 		   NULL, "\"I'm just happy that we have perfect weather today.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100245", 128, 64);
 	OutputLine(NULL, "明日の天気なんか知ったこっちゃないってことさ。",
 		   NULL, " I don't care about the weather tomorrow.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100246", 128, 64);
 	OutputLine(NULL, "だから、今日という日を俺は精一杯遊び倒したい。",
 		   NULL, " I want to enjoy today as much as I can.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100247", 128, 64);
 	OutputLine(NULL, "いつ天気が崩れたって後悔しないくらいに徹底的にな。」",
 		   NULL, " When the weather changes, I don't want to regret that I didn't.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1233,8 +1322,10 @@
 
 	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S09/01/170100248", 128, 64);
 	OutputLine(NULL, "「魅音〜、今日の部活は何だー？",
 		   NULL, "\"Mion, what are we doing today for club activities?", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100249", 128, 64);
 	OutputLine(NULL, "　それに最近、罰ゲームがちょいと刺激不足だぜー。」",
 		   NULL, " We need something very exciting for the punishment, too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1243,10 +1334,13 @@
 	DrawBustshotWithFiltering( 1, "Me_AkuwaraiB2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「くっくっく！",
 		   NULL, "\"Heh heh heh!", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300136", 128, 64);
 	OutputLine(NULL, "　言うねぇ圭ちゃん。",
 		   NULL, " That's the spirit I like, Kei-chan.", Line_WaitForInput);
+	PlaySE(4, "S09/03/170300137", 128, 64);
 	OutputLine(NULL, "そこまで言うなら、今日の放課後には生き地獄ってヤツを拝ましてあげるよ…！」",
 		   NULL, " Because you insist, I'll put you through a living hell...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1255,16 +1349,21 @@
 	DrawBustshotWithFiltering( 2, "Re_KomaruA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200365", 128, 64);
 	OutputLine(NULL, "「け、圭一くん、あんまり魅ぃちゃんを挑発しちゃだめだよぅ…。」",
 		   NULL, "\"K-Keiichi-kun, don't provoke her too much...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S09/01/170100250", 128, 64);
 	OutputLine(NULL, "「おいおい、臆すのかよレナぁ。",
 		   NULL, "\"Hey, are you scared, Rena?", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100251", 128, 64);
 	OutputLine(NULL, "上等じゃねぇかよ！",
 		   NULL, " I know you're better than that!", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100252", 128, 64);
 	OutputLine(NULL, "　また俺たちの実力で大暴れしてやろうぜ！",
 		   NULL, " Let's show her our true power again!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　俺とレナの決着だって、まだまだ着いちゃいないんだからなぁ。」",
 		   NULL, " Remember, we haven't brought an end to our last battle.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1277,8 +1376,10 @@
 	ChangeBustshot( 2, "Re_WaraiB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/02/170200366", 128, 64);
 	OutputLine(NULL, "「あはは、それもそうだね。",
 		   NULL, "\"Ahaha, I do remember that.", Line_WaitForInput);
+	PlaySE(4, "S09/02/170200367", 128, 64);
 	OutputLine(NULL, "よぅし、レナも思いっきりがんばるぞー！」",
 		   NULL, " Okay, let's do it, then!\"", Line_Normal);
 	ClearMessage();
@@ -1286,6 +1387,7 @@
 	DrawBustshotWithFiltering( 1, "Sa_AkuwaraiA1", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S09/04/170400036", 128, 64);
 	OutputLine(NULL, "「レナさんには先日の借りがございますものねぇ！",
 		   NULL, "\"Rena-san, you certainly got me last time!", Line_WaitForInput);
 
@@ -1293,6 +1395,7 @@
 	ChangeBustshot( 1, "Sa_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/04/170400037", 128, 64);
 	OutputLine(NULL, "　きっちり倍返しさせていただきましてですわよー！」",
 		   NULL, " For that, I must pay you back with interest!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1301,6 +1404,7 @@
 	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300138", 128, 64);
 	OutputLine(NULL, "「いいねいいねぇ。",
 		   NULL, "\"This is getting very interesting.", Line_WaitForInput);
 
@@ -1308,6 +1412,7 @@
 	ChangeBustshot( 2, "Me_TokuiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/03/170300139", 128, 64);
 	OutputLine(NULL, "盛り上がってきたよ、くっくっく！」",
 		   NULL, " It's going to be a blast! Heh heh heh!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1316,6 +1421,7 @@
 	DrawBustshot( 0, "Ri_WaraiA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S09/05/170500032", 128, 64);
 	OutputLine(NULL, "「……早く、放課後になるといいのです。」",
 		   NULL, "\"......I can't wait for school to finish.\"", Line_Normal);
 	ClearMessage();
@@ -1328,8 +1434,10 @@
 		   NULL, "That time we spend just talking together is also very precious.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「そうだな。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
+	PlaySE(4, "S09/01/170100255", 128, 64);
 	OutputLine(NULL, "早く放課後になるといいなぁ。」",
 		   NULL, " It would be nice if school ended soon.\"", Line_Normal);
 	ClearMessage();
