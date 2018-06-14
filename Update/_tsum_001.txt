@@ -29,7 +29,6 @@ void main()
 		   NULL, "Would you still wear your coat and scarf?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/03/150300005", 128, 64);
 	OutputLine(NULL, "　そんなはずはない。",
 		   NULL, "Absolutely not, right?", Line_Normal);
 	ClearMessage();
@@ -38,7 +37,6 @@ void main()
 
 	OutputLine(NULL, "　だから６月であっても、これだけ暑い日が続けば、俺たちにとってはそりゃ夏だ！",
 		   NULL, "Even though it's still June,", Line_WaitForInput);
-	PlaySE(4, "S20/11/440700385", 128, 64);
 	OutputLine(NULL, "ってことになるわけだ。",
 		   NULL, " it's already summer to us, since we've been having hot days for so long!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -74,7 +72,10 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
-	PlaySE(4, "S09/00/ALLB51001|S09/00/ALLB51001b|S09/00/ALLG51001|S09/00/ALLG51001b", 128, 64);
+	PlaySE(4, "S09/00/ALLB51001", 128, 64);
+	PlaySE(5, "S09/00/ALLB51001b", 128, 64);
+	PlaySE(6, "S09/00/ALLG51001", 128, 64);
+	PlaySE(7, "S09/00/ALLG51001b", 128, 64);
 	OutputLine(NULL, "「「「おおーーーー！！！！」」」",
 		   NULL, "\"Yeah!!!!!\"", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
@@ -111,10 +112,9 @@ void main()
 	DrawBustshotWithFiltering( 2, "Re_WaraiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/500200713", 128, 64);
 	OutputLine(NULL, "「そうだね！",
 		   NULL, "\"Yeah!", Line_WaitForInput);
-	PlaySE(4, "S09/02/500200713", 128, 64);
 	OutputLine(NULL, "　全員で表ではしゃぐのって何だか楽しそうかな、かな！」",
 		   NULL, " It's going to be so much fun to play outside with everybody together, together!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -130,7 +130,7 @@ void main()
 
 	DrawSceneWithMask( "GR1", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22170", 128, 64);
 	OutputLine(NULL, "「ま、そういうこったな！…およそ勝負と名のつく以上、俺たち部活メンバーは常にリスクを背負ってるからな。」",
 		   NULL, "\"Well, yeah! For us club members, every game comes with a risk.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -139,7 +139,7 @@ void main()
 	DrawBustshotWithFiltering( 2, "Me_TokuiA2&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300621", 128, 64);
 	OutputLine(NULL, "「くっくっく！",
 		   NULL, "\"Heh heh heh!", Line_WaitForInput);
 	PlaySE(4, "S09/03/500300622", 128, 64);
@@ -190,7 +190,7 @@ void main()
 		   NULL, "\"......Tomita and his friends play with water guns a lot, so they might have an advantage.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/25/502500054", 128, 64);
 	OutputLine(NULL, "「ふっふっふ！",
 		   NULL, "\"Huh huh huh!", Line_WaitForInput);
 
@@ -244,7 +244,7 @@ void main()
 	PlaySE(4, "S09/01/HR_KEI22240", 128, 64);
 	OutputLine(NULL, "「はっはっはっはっは！！",
 		   NULL, "\"Ha ha ha ha ha!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22250", 128, 64);
 	OutputLine(NULL, "　罰ゲームでブラを付けたまま帰宅して、さぁ脱ごうとしたところでお袋に見つかった俺の哀愁などわかるものかーー！",
 		   NULL, " You have no idea how miserable I was when I had to go home wearing a bra and my mom saw me in it right before I was about to take it off!", Line_WaitForInput);
 	PlaySE(4, "S09/01/HR_KEI22260", 128, 64);
@@ -295,7 +295,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "Me_TokuiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300625", 128, 64);
 	OutputLine(NULL, "「くっくっく！！",
 		   NULL, "\"Heh heh heh!!", Line_WaitForInput);
 	PlaySE(4, "S09/03/500300626", 128, 64);
@@ -318,7 +318,7 @@ void main()
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "B04_Bukatu", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22270", 128, 64);
 	OutputLine(NULL, "「…て、てめらぁ〜！！",
 		   NULL, "\"...You!!", Line_WaitForInput);
 	PlaySE(4, "S09/01/HR_KEI22280", 128, 64);
@@ -344,7 +344,7 @@ void main()
 	PlaySE(4, "S09/01/HR_KEI22300", 128, 64);
 	OutputLine(NULL, "　沙都子てめー！！",
 		   NULL, " Satoko!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22310", 128, 64);
 	OutputLine(NULL, "　そのセリフは俺の怒りに火を注いだぜ！！",
 		   NULL, " You just added oil to the flames of my rage!!", Line_WaitForInput);
 	PlaySE(4, "S09/01/HR_KEI22320", 128, 64);
@@ -356,7 +356,7 @@ void main()
 	ChangeBustshot( 1, "Me_HutekiA1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300629", 128, 64);
 	OutputLine(NULL, "「くっくっく！！",
 		   NULL, "\"Heh heh heh!!", Line_WaitForInput);
 	PlaySE(4, "S09/03/500300630", 128, 64);
@@ -384,7 +384,7 @@ void main()
 	PlaySE(4, "S09/03/500300634", 128, 64);
 	OutputLine(NULL, "　でもその可能性も高いかなぁ？",
 		   NULL, " But I'm pretty sure that's what's going to happen!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300635", 128, 64);
 	OutputLine(NULL, "　くっくっく！」",
 		   NULL, " Heh heh heh!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -578,7 +578,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/HR_REN00020", 128, 64);
 	OutputLine(NULL, "「うん！！」",
 		   NULL, " \"Yes!!\"", Line_ContinueAfterTyping);
 
@@ -725,10 +725,10 @@ void main()
 	PlaySE(4, "S09/03/500300640", 128, 64);
 	OutputLine(NULL, "…くっくっく、ひねくれた圭ちゃんのためにさらに補足するなら、",
 		   NULL, " ...Heh heh heh, I'll break it down more for you, Kei-chan.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300641", 128, 64);
 	OutputLine(NULL, "水鉄砲というこの容器から出た水が最初に触れたものが標的であった時、被弾とするわけ。",
 		   NULL, " You're only hit when it's water from a water gun.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300642", 128, 64);
 	OutputLine(NULL, "つまり、水鉄砲を経由した水をバケツに貯めてぶっかけても無効ってわけ。」",
 		   NULL, " In other words, you're not hit when somebody splashes you with a bucket of water.\"", Line_Normal);
 	ClearMessage();
@@ -748,7 +748,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "Sa_WaraiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400626", 128, 64);
 	OutputLine(NULL, "「ほっほっほ！！",
 		   NULL, "\"Ho ho ho!!", Line_WaitForInput);
 	PlaySE(4, "S09/04/500400627", 128, 64);
@@ -797,7 +797,7 @@ void main()
 	PlaySE(4, "S09/03/500300645", 128, 64);
 	OutputLine(NULL, "こりゃあ面白くなりそうだよ！",
 		   NULL, " This is going to be fun!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300646", 128, 64);
 	OutputLine(NULL, "　くっくっく！",
 		   NULL, " Heh heh heh!", Line_WaitForInput);
 	PlaySE(4, "S09/03/500300647", 128, 64);
@@ -909,19 +909,17 @@ void main()
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300653", 128, 64);
 	OutputLine(NULL, "「…３、",
 		   NULL, "\"...Three,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…２、",
 		   NULL, " two,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…１、」",
 		   NULL, " one...\"", Line_Normal);
 	ClearMessage();
@@ -1375,7 +1373,7 @@ void main()
 	PlaySE(4, "S09/01/HR_KEI22510", 128, 64);
 	OutputLine(NULL, "「ううをおおおりゃあぁああああぁ！！",
 		   NULL, "\"Whooooryaaaaaah!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22520", 128, 64);
 	OutputLine(NULL, "　魅音んんんんん！！！」",
 		   NULL, " Mioooooooooooon!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1384,7 +1382,7 @@ void main()
 	DrawBustshotWithFiltering( 2, "Me_OdorokiA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300656", 128, 64);
 	OutputLine(NULL, "「ッ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
 
@@ -1597,7 +1595,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/03/500300665", 128, 64);
 	OutputLine(NULL, "「ッ？！……な、なんだってええぇえッ？！」",
 		   NULL, "\"What?! ...What's this?!\"", Line_ContinueAfterTyping);
 
@@ -1644,10 +1642,10 @@ void main()
 		   NULL, " I got hit first, so my shot didn't count!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22570", 128, 64);
 	OutputLine(NULL, "「そいつに気付くのだいぶ遅かったぜ！！",
 		   NULL, "\"You took too long to figure it out!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22580", 128, 64);
 	OutputLine(NULL, "　伏せろ魅音んんッ！！」",
 		   NULL, " Now get down, Mion!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1691,10 +1689,10 @@ void main()
 		   NULL, "\"Our next target is Maebara-san. Let's get him...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/25/502500058", 128, 64);
 	OutputLine(NULL, "「こ、こっちは二人だもんね！",
 		   NULL, "\"It's one against two!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/25/502500059", 128, 64);
 	OutputLine(NULL, "　負けるわけがない…！」",
 		   NULL, " We can take him...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1909,7 +1907,7 @@ void main()
 	DrawBustshotWithFiltering( 2, "Sa_AkuwaraiA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400630", 128, 64);
 	OutputLine(NULL, "「ほっほっほっほ！！",
 		   NULL, "\"Ho ho ho ho!!", Line_WaitForInput);
 	PlaySE(4, "S09/04/500400631", 128, 64);
@@ -2079,7 +2077,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400632", 128, 64);
 	OutputLine(NULL, "「をっほっほ！",
 		   NULL, "\"O ho ho!", Line_WaitForInput);
 	PlaySE(4, "S09/04/500400633", 128, 64);
@@ -2117,7 +2115,7 @@ void main()
 		   NULL, " I'll be nice and shoot you in the forehead. I don't want you to get your clothes wet, after all!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400639", 128, 64);
 	OutputLine(NULL, "「をっほっほっほ！！",
 		   NULL, "\"O ho ho ho!!", Line_WaitForInput);
 	PlaySE(4, "S09/04/500400640", 128, 64);
@@ -2239,7 +2237,7 @@ void main()
 		   NULL, "\"Let us finish this. It's not like us to wait for the bell to bring an end to this battle!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/500200742", 128, 64);
 	OutputLine(NULL, "「そうだね。",
 		   NULL, "\"You're right.", Line_WaitForInput);
 	PlaySE(4, "S09/02/500200743", 128, 64);
@@ -2356,7 +2354,6 @@ void main()
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「最後の逆転」",
 		   NULL, " Rena didn't need to take", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -2442,7 +2439,7 @@ void main()
 	PlaySE(4, "S09/04/500400649", 128, 64);
 	OutputLine(NULL, "「水鉄砲なんて、ちょっと砂粒を入れて空撃ちすれば、すぐに詰まっちゃうんですのよ？",
 		   NULL, "\"Didn't you know that you can easily break a water gun by putting a little bit of sand in an empty tank and pulling the trigger several times?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400650", 128, 64);
 	OutputLine(NULL, "　ほっほっほっほ！！」",
 		   NULL, " Ho ho ho ho!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2566,7 +2563,7 @@ void main()
 	ChangeBustshot( 1, "Sa_AkireruA1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400658", 128, 64);
 	OutputLine(NULL, "「ほっほっほっほ！",
 		   NULL, "\"Ho ho ho ho!", Line_WaitForInput);
 	PlaySE(4, "S09/04/500400659", 128, 64);
@@ -2650,10 +2647,10 @@ void main()
 	DrawBustshotWithFiltering( 2, "Sa_AkireruA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GR4", "maskright", 7, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400666", 128, 64);
 	OutputLine(NULL, "「レナさんが何を言っているのか、私さっぱりでしてよ。",
 		   NULL, "\"I have absolutely no idea what you're referring to, Rena-san.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400667", 128, 64);
 	OutputLine(NULL, "その壊れた水鉄砲で何ができるおつもりだか。」",
 		   NULL, " What do you think you can do with a jammed water gun?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2732,7 +2729,7 @@ void main()
 	ChangeBustshot( 0, "Sa_OdorokiA1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400668", 128, 64);
 	OutputLine(NULL, "「……………なッ！！！！」",
 		   NULL, "\"...Wha?!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2784,7 +2781,7 @@ void main()
 	DrawBustshotWithFiltering( 2, "Re_WaraiB1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GR3", "maskright", 7, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/500200760", 128, 64);
 	OutputLine(NULL, "「まだまだ詰めが甘かったね…！！」",
 		   NULL, "\"Your endgame wasn't good enough...!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2793,7 +2790,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "Sa_HannbesoA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/04/500400669", 128, 64);
 	OutputLine(NULL, "「こ、…この私が…ッ！！」",
 		   NULL, "\"I can't believe... I lost...!!\"", Line_Normal);
 	ClearMessage();
@@ -3158,7 +3155,7 @@ void main()
 	ChangeBustshot( 0, "Re_WaraiB1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/500200766", 128, 64);
 	OutputLine(NULL, "「あっはっはっは！",
 		   NULL, "\"Ahahahaha!", Line_WaitForInput);
 
@@ -3168,20 +3165,20 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_gun", 128, 64 );
 
-	PlaySE(4, "S09/02/170201722", 128, 64);
+	PlaySE(4, "S09/02/500200767", 128, 64);
 	OutputLine(NULL, "　負けても恨まないでね！！」",
 		   NULL, " Don't hate me if you lose!!\"   ", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22690", 128, 64);
 	OutputLine(NULL, "「あぁ恨まない！！",
 		   NULL, "\"No, never!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22690_01", 128, 64);
 	OutputLine(NULL, "　この勝負を終わらせた自分の不甲斐なさを恨んでやるぜ！！",
 		   NULL, " I'd hate myself for ending this game!!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -3190,7 +3187,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22700", 128, 64);
 	OutputLine(NULL, "　だが、そいつを恨むのはどうやらレナの方になりそうだなッ！！」",
 		   NULL, " But I know I won't be the one crying in the end!!\"", Line_ContinueAfterTyping);
 
@@ -3225,7 +3222,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S09/01/170101473", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22710", 128, 64);
 	OutputLine(NULL, "「くそったれええぇ！！",
 		   NULL, "\"Shut uuuup!!", Line_WaitForInput);
 
@@ -3235,7 +3232,7 @@ void main()
 	EnlargeScreen( 0, 216, 64, 48, FALSE, 400, TRUE );
 	DrawScene( "black", 100 );
 
-	PlaySE(4, "S09/01/170101474", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22720", 128, 64);
 	OutputLine(NULL, "　うをおりゃあああ！！！」",
 		   NULL, " Whoaaaryaaahhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -3779,7 +3776,7 @@ void main()
 		   NULL, " We tied.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22810", 128, 64);
 	OutputLine(NULL, "「まぁな。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "S09/01/HR_KEI22820", 128, 64);
@@ -3859,20 +3856,17 @@ void main()
 
 	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "「かっこつけときながら、保身第一って辺りが魅音っぽい。",
-		   NULL, "\"She was just trying to sound cool, but the main reason she delivered that verdict was to protect herself.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "うん。",
-		   NULL, " That's so like Mion, you know?", Line_ContinueAfterTyping);
+	PlaySE(4, "S09/01/HR_KEI22860", 128, 64);
+	OutputLine(NULL, "「かっこつけときながら、保身第一って辺りが魅音っぽい。」",
+		   NULL, "\"She was just trying to sound cool, but the main reason she delivered that verdict was to protect herself.\"", Line_WaitForInput);
+	PlaySE(4, "S09/02/500200781", 128, 64);
+	OutputLine(NULL, "「うん。あ！」",
+		   NULL, "\"Yeah. Hey!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "あ！",
-		   NULL, " Look!", Line_WaitForInput);
 	PlaySE(4, "S09/01/HR_KEI22870", 128, 64);
-	OutputLine(NULL, "　逃げたぞ！………ず、図星かよ…わかりやすいヤツだなぁ…。」",
+	OutputLine(NULL, "「逃げたぞ！　………ず、図星かよ…わかりやすいヤツだなぁ…」",
 		   NULL, " She's running away! ...Looks like my guess was right... She's so obvious...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
@@ -3907,7 +3901,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "Ri_WaraiA1&", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "G1", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/01/HR_KEI22880", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3925,7 +3919,7 @@ void main()
 	ChangeBustshot( 1, "Ri_KomaruA1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/05/500500274", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"......Meep.", Line_WaitForInput);
 	PlaySE(4, "S09/05/500500275", 128, 64);
@@ -4004,7 +3998,7 @@ void main()
 	ChangeBustshot( 2, "re_KaiiA1&", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/500200782", 128, 64);
 	OutputLine(NULL, "「はぅ〜〜！！！",
 		   NULL, "\"Hauuuuuuuu!!!", Line_WaitForInput);
 
