@@ -3,9 +3,9 @@ void main()
 	DrawScene( "black", 3000 );
 	PlayBGM( 1, "higurashi", 120, 0 );
 	PlayBGM( 0, "03_cele", 120, 0 );
-	DrawScene( "si_Tumi", 1000 );
+	DrawScene( "text/si_Tumi", 1000 );
 	Wait( 15000 );
-	DrawScene( "Tyuui", 1000 );
+	DrawScene( "text/Tyuui", 1000 );
 	Wait( 3000 );
 
 	DrawScene( "black", 3000 );
@@ -14,7 +14,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Sora6", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/mo_g1_01", "maskm1", 1, 0, 1300 );
 	SetSpeedOfMessage( TRUE, 64 );
 
 	SetDrawingPointOfMessage( 0, 6 );
@@ -36,8 +36,6 @@ void main()
 	OutputLine(NULL, "　……気を許せば、その姿さえも掻き消えてしまうのではないかと思うくらいに儚げに。",
 		   NULL, "...She sounded so fragile that it made me worry she might vanish into thin air along with her words.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "Mo_G3", "maskup", 1, 0, 1300 );
 
 	OutputLine(NULL, "　でも、誰も何も急かさなかった。",
 		   NULL, "But nobody is pressuring her to continue.", Line_Normal);
@@ -111,7 +109,7 @@ void main()
 		   NULL, "...She noticed Rika-chan was looking at the sky, so she decided to look that way as well.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora6", 400 );
+	DrawScene( "background/sora2", 400 );
 
 	SetDrawingPointOfMessage( 0, 3 );
 
@@ -202,6 +200,8 @@ void main()
 	OutputLine(NULL, "…その音は残酷にも、それでも時間は流れていることを思い出させてくれた。",
 		   NULL, " ...but it reminded us that time had been passing by.", Line_Normal);
 	ClearMessage();
+	
+	DrawSceneWithMask( "background/mo_g1_01", "maskm1", 1, 0, 1300 );
 
 	OutputLine(NULL, "　その音が切っ掛けで、みんなは空を見るのを止め、目線を再び地上に戻す。",
 		   NULL, "The noise took our attention away from the sky and back to the ground.", Line_Normal);
@@ -215,6 +215,8 @@ void main()
 	OutputLine(NULL, "　レナは小さな息を吐き出して、何かを飲み込むように俯く仕草をした後、俺たちが普段よく知るレナの表情に戻った。",
 		   NULL, "Rena heaved a small sigh, nodded as if she understood something, and looked at us like she always did.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2a_okoruA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	SetDrawingPointOfMessage( 0, 6 );
 
@@ -257,6 +259,8 @@ void main()
 	OutputLine(NULL, "　問い掛けにも聞こえたが、誰も口を挟まなかった。",
 		   NULL, "It sounded like a question, but nobody answered.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2b_defB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S09/02/440100004", 128, 64);
 	OutputLine(NULL, "「だからね、私。",
@@ -274,6 +278,8 @@ void main()
 	OutputLine(NULL, "…だって、世の中が綺麗事だけで縛られてて、やっていい努力がわずかだけに決められていたら、……幸せじゃない人たちは、ますます幸せを勝ち取れなくなっちゃうじゃない？",
 		   NULL, " ...If we were only allowed to do nice things, and if there was a limit to how much we could struggle... people who aren't happy wouldn't be able to seize happiness at all.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2b_komaruB2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S09/02/440100007", 128, 64);
 	OutputLine(NULL, "　不幸ってね、連鎖するものだと思うの。",
@@ -283,7 +289,11 @@ void main()
 		   NULL, " Once they begin, they're very, very hard to escape.", Line_WaitForInput);
 	PlaySE(4, "S09/02/440100009", 128, 64);
 	OutputLine(NULL, "そこから抜け出すには、運とか人の助けとか、そういう他力本願なものだけじゃ到底足りない。",
-		   NULL, " In order to escape the chain of misfortunes, you need more than just luck or even assistance.", Line_WaitForInput);
+		   NULL, " In order to escape the chain of misfortunes, you need more than just luck or even assistance.", Line_Normal);
+	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2b_okoruB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );	   
+	
 	PlaySE(4, "S09/02/440100010", 128, 64);
 	OutputLine(NULL, "自分でももっともっと努力しないといけないと思うの。",
 		   NULL, " I think you need to struggle as hard as you possibly can.", Line_WaitForInput);
@@ -298,10 +308,16 @@ void main()
 	OutputLine(NULL, "　レナはそこで一度区切り、空を見上げて一息ついてから、再び口を開いた。",
 		   NULL, "Rena stopped talking, looked up, heaved a sigh, and opened her mouth again.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2a_defA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S09/02/440100013", 128, 64);
 	OutputLine(NULL, "「でも、………だからってみんなにもそれを受け入れてもらおうなんて、甘えるつもりもないかな。",
-		   NULL, "\"But... I'm not saying that I expect you to accept what I did.", Line_WaitForInput);
+		   NULL, "\"But... I'm not saying that I expect you to accept what I did.", Line_Normal);
+	ClearMessage();	   
+
+	DrawBustshot( 2, "sprite/sunset/re2a_waraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
 	PlaySE(4, "S09/02/440100014", 128, 64);
 	OutputLine(NULL, "…だって、本当に汚らしいもの。",
 		   NULL, " ...I know that was a very bad thing to do.", Line_WaitForInput);
@@ -333,6 +349,8 @@ void main()
 	OutputLine(NULL, "そんな遠さを。",
 		   NULL, " the distance between us was.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshot( 2, "sprite/sunset/re2a_komaruA2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………でも、それでもいいよ。",
@@ -343,7 +361,11 @@ void main()
 		   NULL, " There's nothing we can do about it.", Line_WaitForInput);
 	PlaySE(4, "S09/02/440100018", 128, 64);
 	OutputLine(NULL, "そういう風に出来てる世の中だもん。",
-		   NULL, " That's just how things are in this world.", Line_WaitForInput);
+		   NULL, " That's just how things are in this world.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 2, "sprite/sunset/re2b_komaruB2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+  
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "多分、私が逆の立場でいられたなら、……同じように唖然として、無責任で無慈悲な同情を浮かべていたに違いないもの。」",
 		   NULL, " If I were you... I'd probably look just as stunned, and I'd say something irresponsible and merciless.\"", Line_Normal);
@@ -366,10 +388,14 @@ void main()
 	OutputLine(NULL, "　…もちろん、俺たちの誰にも、言い返す言葉など思いつきはしなかった。",
 		   NULL, "...But none of us knew what to say.", Line_Normal);
 	ClearMessage();
+	
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　レナはほんの一瞬だけ残念そうな顔をすると、軽やかに廃車を駆け上り、屋根の上のステージに乗った。",
 		   NULL, "Rena looked disappointed for a moment, then turned and clambered on top of an abandoned car.", Line_Normal);
 	ClearMessage();
+	
+	DrawScene( "scene/301", 1000 );
 
 	OutputLine(NULL, "　そして両手を広げて、ふわっと回転してスカートをなびかせた後、スカートの両端を摘んで、優雅そうなお辞儀の真似をする。",
 		   NULL, "Then she spread her arms out and gave a little twirl, letting her skirt billow up before she grabbed both ends and gave us a graceful curtsy.", Line_Normal);
@@ -411,12 +437,12 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Tumi_T2", 5000 );
+	DrawScene( "prologue/Tumi_T2", 5000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Tumi_T1", 1000 );
+	DrawScene( "prologue/Tumi_T1", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
