@@ -18,9 +18,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _tsum_003_3.txt
 - [x] _tsum_003_4.txt
 - [x] _tsum_004.txt
-- [ ] **_tsum_005.txt**
-- [ ] _tsum_006.txt
-- [ ] _tsum_007.txt
+- [x] _tsum_005.txt
+- [x] _tsum_006.txt
+- [ ] **_tsum_007.txt**
 - [ ] _tsum_008.txt
 - [ ] _tsum_009.txt
 - [ ] _tsum_010.txt
@@ -66,4 +66,6 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - in _tsum_001.txt, line 770 has no voice (for some reason)
 - in _tsum_002_2.txt, lines 253 to 271 have no voices
 - in _tsum_003_3.txt, line 938 has no voice. Most likely on PS2
+- in _tsum_005.txt, line 1144 has no voice. Looks like a random cut that might be in the PS2 voices
+- in _tsum_006.txt, lines 404 to 419 are missing a few voices. Text was toned down a bit.
 - 

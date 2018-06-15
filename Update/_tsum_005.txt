@@ -440,7 +440,7 @@ void main()
 		   NULL, "I enjoyed tasting the happiness and chatting with my mother.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/00/173000001", 128, 64);
 	OutputLine(NULL, "「礼奈ちゃん。",
 		   NULL, "\"Reina-chan,", Line_WaitForInput);
 	PlaySE(4, "S09/00/173000002", 128, 64);
@@ -547,7 +547,7 @@ void main()
 
 	PlayBGM( 0, "Feel", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/00/173000010", 128, 64);
 	OutputLine(NULL, "「お母さんね。",
 		   NULL, "\"I'm thinking about divorcing your father and getting married to Akihito-san.\"", Line_Normal);
 	ClearMessage();
@@ -750,7 +750,6 @@ void main()
 
 	OutputLine(NULL, "と。",
 		   NULL, "Why?!", Line_WaitForInput);
-	PlaySE(4, "S09/01/170100999", 128, 64);
 	OutputLine(NULL, "　どうして？！",
 		   NULL, " You haven't talked with my father about this, have you? It's not too late!", Line_Normal);
 	ClearMessage();
@@ -764,7 +763,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/00/173000012", 128, 64);
 	OutputLine(NULL, "「お母さんね。",
 		   NULL, " ......pregnant.\"", Line_Normal);
 	ClearMessage();
@@ -896,90 +895,74 @@ void main()
 		   NULL, "I learned in this world that there are people you should be nice to, and \"enemies\" you shouldn't be nice to.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「敵」は存在するだけで私の生活を破壊してしまう、悪い人のこと。",
 		   NULL, "The \"enemies\" are the ones who would destroy my life with their very existence.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　別に悪意があるかどうかは問題じゃない。",
 		   NULL, "Whether they mean to harm me or not doesn't matter.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　花壇に勝手に生える雑草と同じ。",
 		   NULL, "They're like weeds growing in a flowerbed.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　たんぽぽに何の罪もないだろうけれど、チューリップのための土の養分を吸い取ってしまうから、抜いてしまわなくてはならない。",
 		   NULL, "Dandelions are innocent, but they take all of the nutrition for the tulips from the soil. That's why we have to pull them out.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　たんぽぽに何の罪がなくても。",
 		   NULL, "The dandelions did nothing wrong...", Line_WaitForInput);
 	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "S09/01/170100624", 128, 64);
 	OutputLine(NULL, "……それが、",
 		   NULL, " But, they're", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「敵」。",
 		   NULL, " the enemy.", Line_WaitForInput);
 	SetSpeedOfMessage( FALSE, 0 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "悪い人。",
 		   NULL, " Enemies are bad people.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そう、あの男性は、悪い人だったのだ。",
 		   NULL, "That guy was a bad person.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　あの男性を受け入れてはいけなかった。",
 		   NULL, "I shouldn't have accepted him.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　全身全霊で拒絶するべきだったのだ。",
 		   NULL, "I should've rejected him with everything I had.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そうすることによって、母との仲を少しでも縁遠くすることができたのではないか。",
 		   NULL, "By doing so, I might've been able to disrupt their relationship.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そうすることによって、母をあの男性とうまくやっていけるという気にさせずに済んだのではないか。",
 		   NULL, "By doing so, I might've been able to make my mother feel like their relationship was not going to work.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そうだったなら、………私自身の努力によって、両親の仲は壊れずに済んだのかもしれないのだから。",
 		   NULL, "If I tried to do so... my parents wouldn't have had to break up.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "Re_H3", 400 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　父と二人して流す涙だったが、…二人の涙は少しだけ意味が違う。",
 		   NULL, "My father and I cried together... but, we cried for different reasons.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　父にとっては、あまりに突然で理不尽な出来事への涙だったに違いない。",
 		   NULL, "He must've cried because it happened so fast and didn't make any sense to him.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1036,7 +1019,6 @@ void main()
 		   NULL, "But for some reason, I was able to imagine what kind of things he wrote when I felt it through the envelope.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150601967", 128, 64);
 	OutputLine(NULL, "　…だって、",
 		   NULL, "...After all,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -1329,7 +1311,6 @@ void main()
 		   NULL, "Oyashiro-sama came to me.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S14/02/210200299", 128, 64);
 	OutputLine(NULL, "　オヤシロさまは言った。",
 		   NULL, "Oyashiro-sama told me", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢に帰ろうと。",
@@ -1367,7 +1348,6 @@ void main()
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "That's right.", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢にずっといればよかった。",
@@ -1536,7 +1516,6 @@ void main()
 		   NULL, "But, the cold air and the sound of rain didn't change a bit, and that made me realize I was still in this world.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S19/08/500800053", 128, 64);
 	OutputLine(NULL, "　オヤシロさまの祟り、か。",
 		   NULL, "The curse of Oyashiro-sama.", Line_Normal);
 	ClearMessage();
@@ -1763,7 +1742,6 @@ void main()
 		   NULL, "After all the desserts I ate... I still got hungry.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S02/03/130300575", 128, 64);
 	OutputLine(NULL, "　そうだ。",
 		   NULL, "I almost forgot.", Line_WaitForInput);
 	OutputLine(NULL, "………リナさん、ショートケーキを買ってくれたんだっけ。",
@@ -1803,7 +1781,6 @@ void main()
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S18/02/160200395", 128, 64);
 	OutputLine(NULL, "　でも、……どうしてかな。",
 		   NULL, "But... I don't know why.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
