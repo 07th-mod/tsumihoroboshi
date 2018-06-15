@@ -15,10 +15,10 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _tsum_002_2.txt
 - [x] _tsum_003_1.txt
 - [x] _tsum_003_2.txt
-- [ ] _tsum_003_3.txt
-- [ ] _tsum_003_4.txt
-- [ ] _tsum_004.txt
-- [ ] _tsum_005.txt
+- [x] _tsum_003_3.txt
+- [x] _tsum_003_4.txt
+- [x] _tsum_004.txt
+- [ ] **_tsum_005.txt**
 - [ ] _tsum_006.txt
 - [ ] _tsum_007.txt
 - [ ] _tsum_008.txt
@@ -62,6 +62,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Known issues (for fixing)
 
-- on _tsum_001.txt, line 248 slightly mismatches. Might be unchanged on PS2
-- on _tsum_001.txt, line 770 has no voice (for some reason)
-- on _tsum_002_2.txt, lines 253 to 271 have no voices
+- in _tsum_001.txt, line 248 slightly mismatches. Might be unchanged on PS2
+- in _tsum_001.txt, line 770 has no voice (for some reason)
+- in _tsum_002_2.txt, lines 253 to 271 have no voices
+- in _tsum_003_3.txt, line 938 has no voice. Most likely on PS2
+- 
