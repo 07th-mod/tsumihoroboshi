@@ -31,11 +31,11 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _tsum_014.txt
 - [x] _tsum_015_1.txt
 - [x] _tsum_015_2.txt
-- [ ] **_tsum_016.txt**
-- [ ] _tsum_017.txt
-- [ ] _tsum_018.txt
-- [ ] _tsum_019.txt
-- [ ] _tsum_020.txt
+- [x] _tsum_016.txt
+- [x] _tsum_017.txt
+- [x] _tsum_018.txt
+- [x] _tsum_019.txt
+- [ ] **_tsum_020.txt**
 - [ ] _tsum_021.txt
 - [ ] _tsum_022.txt
 - [ ] _tsum_023_1.txt
@@ -77,5 +77,6 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] in _tsum_010.txt, line 2358 was cut from the PS3 release
 - [ ] in _tsum_011.txt, line 1486 doesn't entirely match with the PS3 script
 - [ ] in _tsum_011.txt, lines 1647, 1667, 1673, 1762, 1765, 1768, 2002 are for some reason absent in the PS3 release
-- [ ] in _tsum_013_.txt, line 1630 was toned down. PS2 is probably uncensored
-- [ ] 
+- [ ] in _tsum_013.txt, line 1630 was toned down. PS2 is probably uncensored
+- [ ] in _tsum_016.txt, lines 799, 802 and 810 were cut from the PS3 release
+- [ ] in _tsum_016.txt, lines 823, 827 and 1684 were toned down significantly
