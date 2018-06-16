@@ -174,7 +174,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
-	DrawBustshot( 2, "sprite/normal/tomita2_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/tomita2_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	
 	PlaySE(4, "S09/24/502400067", 128, 64);
 	OutputLine(NULL, "「任せて下さいよ前原さん！",
@@ -193,7 +193,7 @@ void main()
 		   NULL, "\"......Tomita and his friends play with water guns a lot, so they might have an advantage.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	
-	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Warai_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/oka2_Warai_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	PlaySE(4, "S09/25/502500054", 128, 64);
 	OutputLine(NULL, "「ふっふっふ！",
@@ -1670,9 +1670,9 @@ void main()
 		   NULL, "Mion squatted down and covered her head.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
+	DrawScene( "background/GR2", 10 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Shinken_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-	DrawScene( "background/GR2", 10 );
 
 	OutputLine(NULL, "　その瞬間、魅音の背後を襲った富田くん、岡村くんの二人が俺と対峙する！！",
 		   NULL, "Now it was me versus Tomita-kun and Okamura-kun!!", Line_Normal);
@@ -3283,7 +3283,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DisableWindow();
-	DrawSprite( 0, "eye_kei", NULL, 150-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	DrawSprite( 0, "portrait/normal/eye_kei", NULL, 150-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 0, 150-320-150, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
 	DisplayWindow();
 
@@ -3300,7 +3300,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DisableWindow();
-	DrawSprite( 1, "portrait/normal/eye_kei", NULL, -43-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	DrawSprite( 1, "portrait/normal/eye_re", NULL, -43-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 1, -43-320+150, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
 	DisplayWindow();
 
@@ -3728,9 +3728,8 @@ void main()
 	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/GR1", "maskright", 7, 0, 300 );
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/tomita2_Warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
 	PlaySE( 0, "s_daidageki", 128, 64 );
@@ -3751,7 +3750,7 @@ void main()
 		   NULL, " You were so cool!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	
-	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Warai_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oka2_Warai_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	PlaySE(4, "S09/25/502500064", 128, 64);
 	OutputLine(NULL, "「竜宮さんにもシビレましたー！！",
