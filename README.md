@@ -8,7 +8,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Scripts progress
 
->Bold lines mean "in progress"
+> **Everything is done!** The scripts are now entering bugfixing.
 
 - [x] _tsum_001.txt
 - [x] _tsum_002_1.txt
@@ -45,20 +45,20 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _tsum_025.txt
 - [x] _tsum_026.txt
 - [x] _tsum_op.txt
-- [ ] **_tsum_tips_001.txt**
-- [ ] **_tsum_tips_002.txt**
-- [ ] **_tsum_tips_003.txt**
-- [ ] **_tsum_tips_004.txt**
-- [ ] **_tsum_tips_005.txt**
-- [ ] **_tsum_tips_006.txt**
-- [ ] **_tsum_tips_007.txt**
-- [ ] **_tsum_tips_008.txt**
-- [ ] **_tsum_tips_009.txt**
-- [ ] **_tsum_tips_010.txt**
-- [ ] **_tsum_tips_011.txt**
-- [ ] **_tsum_tips_012.txt**
-- [ ] **_tsum_tips_013.txt**
-- [ ] **_tsum_tips_014.txt**
+- [x] _tsum_tips_001.txt
+- [x] _tsum_tips_002.txt
+- [x] _tsum_tips_003.txt
+- [x] _tsum_tips_004.txt
+- [x] _tsum_tips_005.txt
+- [x] _tsum_tips_006.txt
+- [x] _tsum_tips_007.txt
+- [x] _tsum_tips_008.txt
+- [x] _tsum_tips_009.txt
+- [x] _tsum_tips_010.txt
+- [x] _tsum_tips_011.txt
+- [x] _tsum_tips_012.txt
+- [x] _tsum_tips_013.txt
+- [x] _tsum_tips_014.txt
 
 # Known issues (for fixing)
 
@@ -91,3 +91,4 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] in _tsum_026.txt, line 108 was toned significantly
 - [ ] in _tsum_026.txt, lines 168 and 171 were cut from the PS3 release
 - [ ] in _tsum_026.txt, line 609 was cut for some reason
+- [ ] in _tsum_tips_014.txt, lines 683 to 694 were cut from the PS3 release
