@@ -1669,10 +1669,10 @@ void main()
 	OutputLine(NULL, "　魅音がはっとして頭を抱えるようにしゃがみ込む。",
 		   NULL, "Mion squatted down and covered her head.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
+	
+	DrawBustshotWithFiltering( 0, "sprite/normal/oka2_Shinken_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/tomita2_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, FALSE );
 	DrawScene( "background/GR2", 10 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Shinken_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	OutputLine(NULL, "　その瞬間、魅音の背後を襲った富田くん、岡村くんの二人が俺と対峙する！！",
 		   NULL, "Now it was me versus Tomita-kun and Okamura-kun!!", Line_Normal);
@@ -1788,8 +1788,8 @@ void main()
 		   NULL, " And with those guns, I shot them each in the middle of their chests.", Line_Normal);
 	ClearMessage();
 	
-	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Shinken_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Kanashimi_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Shinken_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Kanashimi_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, FALSE );
 
 	PlaySE(4, "S09/24/502400071", 128, 64);
 	OutputLine(NULL, "「………は、早過ぎる…。」",
@@ -1801,7 +1801,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oka2_Odoroki_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oka2_Odoroki_0", 200, TRUE );
 	
 	PlaySE(4, "S09/25/502500060", 128, 64);
 	OutputLine(NULL, "「ぼ、僕たちが二人掛りで負けるなんて…。」",
@@ -3254,7 +3254,7 @@ void main()
 		   NULL, "\"Maebara-san, go!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Ikari_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/tomita2_Ikari_0", 200, TRUE );
 
 	PlaySE(4, "S09/24/502400074", 128, 64);
 	OutputLine(NULL, "「竜宮さん、しっかりーー！！」",
@@ -3433,7 +3433,7 @@ void main()
 		   NULL, "They finally realized that our intensely beautiful one-on-one battle was over...", Line_Normal);
 	ClearMessage();
 	
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomita2_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/tomita2_Shinken_0", 200, TRUE );
 
 	PlaySE(4, "S09/24/502400077", 128, 64);
 	OutputLine(NULL, "「い、委員長、…判定は…？！」",

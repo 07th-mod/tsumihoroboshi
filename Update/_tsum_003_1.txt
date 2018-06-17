@@ -2,7 +2,7 @@ void main()
 {
 
 	PlayBGM( 0, "Cafe", 120, 0 );
-	DrawScene( "Re4", 400 );
+	DrawScene( "background/res4", 400 );
 
 	PlaySE(4, "S09/00/waitA17001", 128, 64);
 	OutputLine(NULL, "「いらっしゃいませー、エンジェルモートへようこそ。",
@@ -41,7 +41,7 @@ void main()
 		   NULL, "No wonder this waitress makes sure to check the list.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re5", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/res5", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S09/01/170100062", 128, 64);
 	OutputLine(NULL, "「いやしかし、…恐ろしい連中だった。",
@@ -52,7 +52,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Re_WaraiA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2a_waraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200062", 128, 64);
@@ -60,7 +60,7 @@ void main()
 		   NULL, "\"Ahahahahaha, you might be right.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KaiiA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_kaiiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200063", 128, 64);
@@ -89,7 +89,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KaiiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_kaiiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200064", 128, 64);
@@ -109,7 +109,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200066", 128, 64);
@@ -138,7 +138,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_defA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200069", 128, 64);
@@ -161,7 +161,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_waraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200072", 128, 64);
@@ -176,7 +176,7 @@ void main()
 		   NULL, "Rena laughs loudly.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res4", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/waitA17005", 128, 64);
 	OutputLine(NULL, "「大変お待たせしました。",
@@ -193,7 +193,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Re6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　相変わらずの、ドキドキものの衣装に身を包んだウェイトレスさんが俺たちを席まで案内してくれた。",
 		   NULL, "The waitress led us to our seats.", Line_WaitForInput);
@@ -223,7 +223,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Re4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/res4", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/manH17001", 128, 64);
 	OutputLine(NULL, "「やはりエンジェルモートは",
@@ -325,7 +325,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Re1", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/res1", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　……あぁ、とんでもない日に来たなぁと思った。",
 		   NULL, "...I regret coming here today.", Line_WaitForInput);
@@ -397,7 +397,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "F_a", 0 );
+	DrawScene( "background/furiker_a", 0 );
 
 	OutputLine(NULL, "よくやった感動した！！",
 		   NULL, " You made me proud!!", Line_ContinueAfterTyping);

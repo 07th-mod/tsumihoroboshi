@@ -10,7 +10,7 @@ void main()
 
 	PlayBGM( 1, "Suzume", 120, 0 );
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Ma_J3", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma_j3_01", "maskm1", 1, 0, 300 );
 
 	OutputLine(NULL, "　……目が覚めても、まだわくわくしていた。",
 		   NULL, "...I awoke from my dream, still feeling excited.", Line_Normal);
@@ -36,7 +36,7 @@ void main()
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig2", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　今日は日曜日。",
 		   NULL, "It was Sunday today.", Line_WaitForInput);
@@ -80,7 +80,7 @@ void main()
 	DrawScene( "white", 400 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Ma_J1", 400 );
+	DrawScene( "background/ma_j3_01", 400 );
 
 	PlaySE(4, "S09/01/170100001", 128, 64);
 	OutputLine(NULL, "「…………………ふぁ、………あぁ…。」",
@@ -135,7 +135,7 @@ void main()
 		   NULL, "After all, I can always sleep 'til noon on Sunday now.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hi2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/hi1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　雛見沢に来てから、人生がまったく変わった気がする。",
 		   NULL, "My life has changed completely since I moved here.", Line_Normal);
@@ -189,13 +189,13 @@ void main()
 		   NULL, "They wouldn't even realize how exciting a simple water gun fight could be.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma_G3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/Ma_G3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　階下に降りると、親父とお袋が固いテレビ番組を見ながら、あーだこーだと議論に花を咲かせていた。",
 		   NULL, "I went downstairs and saw my parents watching a serious TV program, arguing about the topic together.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma_S1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/Ma_S1", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/172600001", 128, 64);
 	OutputLine(NULL, "「大体、日本の電話料金は高すぎるんだ。",
@@ -252,8 +252,6 @@ void main()
 	OutputLine(NULL, "　両親の冷たい関係など、子供にとって毒にしかならないのだから。",
 		   NULL, "A cold relationship between parents doesn't bring any benefits to their kids.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "Ma_S2", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/172700003", 128, 64);
 	OutputLine(NULL, "「あら、圭一。",
