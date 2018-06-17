@@ -62,13 +62,13 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Known issues (for fixing)
 
-- [ ] in _tsum_001.txt, line 248 slightly mismatches. Might be unchanged on PS2
-- [ ] in _tsum_001.txt, line 770 has no voice (for some reason)
-- [ ] in _tsum_002_2.txt, lines 253 to 271 have no voices
-- [ ] in _tsum_003_3.txt, line 938 has no voice. Most likely on PS2
-- [ ] in _tsum_005.txt, line 1144 has no voice. Looks like a random cut that might be in the PS2 voices
-- [ ] in _tsum_006.txt, lines 404 to 419 are missing a few voices. Text was toned down a bit
-- [ ] in _tsum_007.txt, big chunks of the script has no voices (especially the first 1000 lines). Search for ``PlaySE(4, "", 128, 64);`` for all of them
+- [x] in _tsum_001.txt, line 248 slightly mismatches. PS2 version is the same :(
+- [x] in _tsum_001.txt, line 770 has no voice (for some reason)
+- [x] in _tsum_002_2.txt, lines 253 to 271 have no voices
+- [x] in _tsum_003_3.txt, line 938 has no voice. Most likely on PS2
+- [x] in _tsum_005.txt, line 1144 has no voice. Missing in PS2 voices too
+- [x] in _tsum_006.txt, lines 404 to 419 are missing a few voices. Text was toned down a bit. PS2 voices were the same
+- [x] in _tsum_007.txt, big chunks of the script has no voices (especially the first 1000 lines). Search for ``PlaySE(4, "", 128, 64);`` for all of them
 - [ ] in _tsum_008.txt, line 1932, the text was changed from "I'm pregnant" to "He's proposed to me" (paraphrasing, of course). PS2 might have the correct voice
 - [ ] in _tsum_008.txt, lines 1982 and 1988, both voices were changed to match the previous change. Same PS2 case might applies here
 - [ ] in _tsum_008.txt, line 2014, line has no voice because it was toned down
