@@ -8,7 +8,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Scripts progress
 
->Bold lines mean "in progress"
+> **Everything is done!** The scripts are now entering bugfixing.
 
 - [x] _tsum_001.txt
 - [x] _tsum_002_1.txt
@@ -35,30 +35,30 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _tsum_017.txt
 - [x] _tsum_018.txt
 - [x] _tsum_019.txt
-- [ ] **_tsum_020.txt**
-- [ ] _tsum_021.txt
-- [ ] _tsum_022.txt
-- [ ] _tsum_023_1.txt
-- [ ] _tsum_023_2.txt
-- [ ] _tsum_024_1.txt
-- [ ] _tsum_024_2.txt
-- [ ] _tsum_025.txt
-- [ ] _tsum_026.txt
-- [ ] _tsum_op.txt
-- [ ] _tsum_tips_001.txt
-- [ ] _tsum_tips_002.txt
-- [ ] _tsum_tips_003.txt
-- [ ] _tsum_tips_004.txt
-- [ ] _tsum_tips_005.txt
-- [ ] _tsum_tips_006.txt
-- [ ] _tsum_tips_007.txt
-- [ ] _tsum_tips_008.txt
-- [ ] _tsum_tips_009.txt
-- [ ] _tsum_tips_010.txt
-- [ ] _tsum_tips_011.txt
-- [ ] _tsum_tips_012.txt
-- [ ] _tsum_tips_013.txt
-- [ ] _tsum_tips_014.txt
+- [x] _tsum_020.txt
+- [x] _tsum_021.txt
+- [x] _tsum_022.txt
+- [x] _tsum_023_1.txt
+- [x] _tsum_023_2.txt
+- [x] _tsum_024_1.txt
+- [x] _tsum_024_2.txt
+- [x] _tsum_025.txt
+- [x] _tsum_026.txt
+- [x] _tsum_op.txt
+- [x] _tsum_tips_001.txt
+- [x] _tsum_tips_002.txt
+- [x] _tsum_tips_003.txt
+- [x] _tsum_tips_004.txt
+- [x] _tsum_tips_005.txt
+- [x] _tsum_tips_006.txt
+- [x] _tsum_tips_007.txt
+- [x] _tsum_tips_008.txt
+- [x] _tsum_tips_009.txt
+- [x] _tsum_tips_010.txt
+- [x] _tsum_tips_011.txt
+- [x] _tsum_tips_012.txt
+- [x] _tsum_tips_013.txt
+- [x] _tsum_tips_014.txt
 
 # Known issues (for fixing)
 
@@ -80,3 +80,15 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] in _tsum_013.txt, line 1630 was toned down. PS2 is probably uncensored
 - [ ] in _tsum_016.txt, lines 799, 802 and 810 were cut from the PS3 release
 - [ ] in _tsum_016.txt, lines 823, 827 and 1684 were toned down significantly
+- [ ] in _tsum_020.txt, lines 1620 and 1623 were cut from the PS3 release
+- [ ] in _tsum_021.txt, lines 2050, 2068 and 2101 was toned down significantly
+- [ ] in _tsum_021.txt, lines 2090 and 2093 were cut from the PS3 release
+- [ ] in _tsum_022.txt, lines 925 and 1443 were cut from the PS3 release
+- [ ] in _tsum_023_1.txt, line 538 was changed in the console release
+- [ ] in _tsum_024_1.txt, lines 935 to 964 have no voices
+- [ ] in _tsum_025.txt, line 388, for some reason the laugh is unvoiced
+- [ ] in _tsum_025.txt, lines 4797 to 4806 are unvoiced
+- [ ] in _tsum_026.txt, line 108 was toned significantly
+- [ ] in _tsum_026.txt, lines 168 and 171 were cut from the PS3 release
+- [ ] in _tsum_026.txt, line 609 was cut for some reason
+- [ ] in _tsum_tips_014.txt, lines 683 to 694 were cut from the PS3 release
