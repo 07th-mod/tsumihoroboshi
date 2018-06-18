@@ -7,11 +7,11 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "Re6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Kei_Nayamu#", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kei2_Nayamu_0", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -124,25 +124,26 @@ void main()
 		   NULL, " but I didn't care, exactly because I was having so much fun.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re3", "maskup", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_WinkA1$", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me5_WinkA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskup", 1, 0, 300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "　次々ととんでもない遊びを考え出す魅ぃちゃん。",
 		   NULL, "Mii-chan always comes up with such extraordinary games.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawSceneWithMask( "Re1", "maskleft", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sa_WaraiA1-", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa6_WaraiA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そして、いたずら盛りの沙都子ちゃんに、",
 		   NULL, "Satoko-chan loves to play pranks.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_WaraiA1$", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri6_WaraiA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "抜け目ないけど憎めない梨花ちゃん。",
@@ -150,7 +151,8 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Kei_Warai#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/kei2_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そしてにぎやかで本当に面白い圭一くん。",
@@ -236,7 +238,7 @@ void main()
 		   NULL, " even if the world ended tomorrow.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/res4", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　そんなことを考えていたら、いつの間にか私の手は止まっていた。",
 		   NULL, "I noticed my hands stopped moving while I was thinking about these things.", Line_Normal);
@@ -282,8 +284,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Me_WinkA2$", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re5", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me5_WinkA1_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S09/03/170300039", 128, 64);
 	OutputLine(NULL, "「おおおお？！",
@@ -296,7 +298,7 @@ void main()
 		   NULL, " I guess she went too fast in the beginning!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re4", 400 );
+	DrawScene( "background/res4", 400 );
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
@@ -424,7 +426,7 @@ void main()
 		   NULL, " Am I right, everyone?\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re_s1_Resut", 400 );
+	DrawScene( "background/res_s1", 400 );
 
 	PlaySE(4, "S09/00/manH17003", 128, 64);
 	PlaySE(5, "S09/00/manI17004", 128, 64);
@@ -446,9 +448,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Re6", "maskleft", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_DefA1$", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri6_DefA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500011", 128, 64);
@@ -460,7 +462,7 @@ void main()
 		   NULL, "I had left the table.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/02/170200114", 128, 64);
 	OutputLine(NULL, "「あはははは、ごめん。",
@@ -522,7 +524,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Re1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/res5", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　お手洗いに行く途中、レジ前でウェイトレスとお客が何か言い合いをしているのが見えた。",
 		   NULL, "On my way to the bathroom, I saw a waitress and a customer arguing at the register.", Line_Normal);
@@ -546,7 +548,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Rina_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/rina_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/20/172100001", 128, 64);
@@ -571,7 +573,7 @@ void main()
 
 	PlayBGM( 0, "Feel", 120, 0 );
 	DisableWindow();
-	ChangeBustshot( 0, "Rina_Def", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/rina_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/20/172100004", 128, 64);
@@ -598,7 +600,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Rina_Warai", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/rina_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/20/172100006", 128, 64);
@@ -613,10 +615,6 @@ void main()
 	OutputLine(NULL, "「あはははははは、そうみたいですね。」",
 		   NULL, "\"Ahahahahahaha, it seems that way.\"", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	ChangeBustshot( 0, "Rina_Def", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/20/172100008", 128, 64);
 	OutputLine(NULL, "「…まぁ仕方ないわね。",
@@ -638,7 +636,7 @@ void main()
 		   NULL, "The store manager gave her a fake smile and led her to their showcase.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re4", 400 );
+	DrawScene( "background/res4", 400 );
 
 	PlaySE(4, "S09/20/172100010", 128, 64);
 	OutputLine(NULL, "「私は、この可愛らしいのにしようかしらね。",
@@ -665,8 +663,8 @@ void main()
 		   NULL, " Hauuuuuu!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Rina_Warai", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/rina_warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/20/172100014", 128, 64);
 	OutputLine(NULL, "「あははは、本当にこういうのに目がないわねぇ。",
@@ -686,6 +684,8 @@ void main()
 	OutputLine(NULL, "……あはは、私もショートケーキでいいです。」",
 		   NULL, " ...Ahaha, I'll take a shortcake as well.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ChangeBustshot( 2, "sprite/normal/rina_def_0", 200, TRUE );
 
 	PlaySE(4, "S09/20/172100016", 128, 64);
 	OutputLine(NULL, "「あらぁ。",
@@ -702,6 +702,8 @@ void main()
 	OutputLine(NULL, "はぅ。」",
 		   NULL, " Hau.\"", Line_Normal);
 	ClearMessage();
+	
+	ChangeBustshot( 2, "sprite/normal/rina_warai_0", 200, TRUE );
 
 	PlaySE(4, "S09/20/172100018", 128, 64);
 	OutputLine(NULL, "「そう。",
@@ -727,7 +729,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Rina_Def", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/rina_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/20/172100021", 128, 64);

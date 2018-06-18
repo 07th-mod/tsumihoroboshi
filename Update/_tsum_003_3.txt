@@ -1,28 +1,6 @@
 void main()
 {
-	char	rn_Iri_Def1;
-	char	rn_Iri_Def2;
-	char	rn_Iri_Warai;
-	char	rn_Iri_Majime;
-	char	rn_Iri_Majime2;
 
-	int	i;
-	i = GetRandomNumber( 3 );
-	if(i == 0)
-	{
-		rn_Iri_Def1 = "Iri_Def1#";	rn_Iri_Def2 = "Iri_Def2#";	rn_Iri_Warai = "Iri_Warai#";
-		rn_Iri_Majime = "Iri_Majime#";	rn_Iri_Majime2 = "Iri_Majime2#";
-	}
-	if(i == 1)
-	{
-	rn_Iri_Def1 = "Iri_Def1!";	rn_Iri_Def2 = "Iri_Def2!";	rn_Iri_Warai = "Iri_Warai!";
-		rn_Iri_Majime = "Iri_Majime!";	rn_Iri_Majime2 = "Iri_Majime2!";
-	}
-	if(i == 2)
-	{
-		rn_Iri_Def1 = "Iri_Def1+";	rn_Iri_Def2 = "Iri_Def2+";	rn_Iri_Warai = "Iri_Warai+";
-		rn_Iri_Majime = "Iri_Majime+";	rn_Iri_Majime2 = "Iri_Majime2+";
-	}
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
@@ -61,8 +39,8 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
 
-	DrawBustshotWithFiltering( 0, rn_Iri_Majime, "maskup", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Re6", "maskup", 7, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/iri1_Majime_0", "maskup", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskup", 7, 0, 300 );
 	PlayBGM( 0, "B04_Bukatu", 120, 0 );
 
 	OutputLine(NULL, "　空中を舞うように大回転しながら、スタッと美しく着地を決めて現れたのは……か、監督ッ？！？！",
@@ -70,7 +48,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, rn_Iri_Majime2, 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/iri1_Majime2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000002", 128, 64);
@@ -95,7 +73,8 @@ void main()
 		   NULL, "\"What do you mean? What did I do...?!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawScene( "F_b", 0 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/sa6_HauA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/furiker_c", 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE(4, "S09/10/171000004", 128, 64);
@@ -154,31 +133,29 @@ void main()
 
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
+	
+	
+	DrawBustshotWithFiltering( 0, "sprite/normal/iri1_Majime2_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
+	ChangeBustshot( 0, "sprite/normal/iri1_Majime_0", 200, TRUE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　監督が絶叫した瞬間に、監督の頭に大中小のタライが次々と多段ヒットし、しかもダメ押しに中華鍋まで振ってきた…！",
 		   NULL, "At the moment of his scream, three different metal buckets fell on his head one after another, and a Chinese wok finished the job...!", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Sa_AkireruA1-", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "scene/303c", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "B03_Dame", 120, 0 );
 
 	PlaySE(4, "S09/04/170400003", 128, 64);
 	OutputLine(NULL, "「まぁ、この格好が罰ゲームになった時点で、多少は心の準備がありましたのよ…。」",
 		   NULL, "\"Well, I was prepared for this the moment my punishment was chosen...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_WaraiA1$", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500004", 128, 64);
 	OutputLine(NULL, "「……沙都子のメイドさんは、ある意味、命に関わりますです。」",
 		   NULL, "\"To see Satoko in a maid costume is like a matter of life and death to you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_KaiiA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200090", 128, 64);
 	OutputLine(NULL, "「はぅ〜〜〜！！！",
@@ -192,10 +169,6 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	DrawScene( "white", 0 );
-	DrawBustshot( 1, rn_Iri_Majime, -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawBustshot( 2, "Re_KaiiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Re1", 10 );
 
 	PlaySE(4, "S09/10/171000005", 128, 64);
 	OutputLine(NULL, "「それはさせませんッ！！",
@@ -204,11 +177,7 @@ void main()
 	OutputLine(NULL, "　お持ち帰るのはこの私、入江京介です！！」",
 		   NULL, " I'm going to take her home with me or my name is not Kyousuke Irie!!\"", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	ChangeBustshot( 2, "Re_KaiiB1#", 200, TRUE );
-	DisplayWindow();
-
+	
 	PlaySE(4, "S09/02/170200093", 128, 64);
 	OutputLine(NULL, "「だめだよだめだめだめ〜〜〜☆",
 		   NULL, "\"No, no, no, no, no~~~~☆.", Line_WaitForInput);
@@ -247,7 +216,7 @@ void main()
 		   NULL, " Hauuuuu!!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene( "Bg0", 0 );
+	DrawScene( "background/furiker_c", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
@@ -259,10 +228,8 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-	DrawBustshot( 2, "Re_KaiiB1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Re1", 400 );
+	
+	DrawScene( "scene/303c", 400 );
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -276,19 +243,11 @@ void main()
 	OutputLine(NULL, "おお？！",
 		   NULL, " What?!", Line_WaitForInput);
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, rn_Iri_Majime, "maskup", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
-
 	OutputLine(NULL, "　だが監督もむっくりとゾンビみたいに起き上がる。",
 		   NULL, " Coach got up on his feet like a zombie.", Line_WaitForInput);
 	OutputLine(NULL, "…レナの超高速弾を全弾受けたのに、立ち上がれるのかぁあぁ！！",
 		   NULL, " ...I couldn't believe he could still get up after getting hit by all of her super-fast attacks!!", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	ChangeBustshot( 1, rn_Iri_Warai, 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000007", 128, 64);
 	OutputLine(NULL, "「ふはぁはははははははははッ！！！",
@@ -323,27 +282,18 @@ void main()
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
-	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskdown" , 7, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "semi", 120, 0 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, rn_Iri_Warai, "maskup", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000010", 128, 64);
 	OutputLine(NULL, "　無駄無駄無駄です！！",
 		   NULL, "No, that doesn't work, either!!", Line_WaitForInput);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	DisableWindow();
-	ChangeBustshot( 1, rn_Iri_Majime2, 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000011", 128, 64);
 	OutputLine(NULL, "　入江は何度でも蘇る、メイドがそこにいれば何度でも蘇る、",
@@ -391,15 +341,14 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene( "Bg0", 0 );
+	DrawScene( "background/furiker_c", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DrawBustshot( 2, "Re_WaraiB1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Re1", 400 );
+	
+	DrawScene( "scene/303c", 400 );
 
 	PlaySE(4, "S09/02/170200095", 128, 64);
 	OutputLine(NULL, "「それでもダメ〜〜、レナがお持ち帰りぃ〜〜〜☆",
@@ -408,6 +357,8 @@ void main()
 	OutputLine(NULL, "　はぅ〜！！」",
 		   NULL, " Hauuuuuu!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　監督、痙攣して倒れてるぞ…。",
 		   NULL, "Irie was down on the floor, his body twitching...", Line_WaitForInput);
@@ -415,7 +366,7 @@ void main()
 		   NULL, " Rena just hit him with a barrage at point-blank range...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/01/170100089", 128, 64);
 	OutputLine(NULL, "「しっかし……、圧巻な光景だなぁ。",
@@ -426,7 +377,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sa_AkireruA1-", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa6_AkireruA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/04/170400004", 128, 64);
@@ -438,7 +389,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_TohohoA2$", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me5_TohohoA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300006", 128, 64);
@@ -447,7 +398,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Ri_WaraiA1$", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/ri6_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500005", 128, 64);
@@ -460,7 +411,7 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Re6", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "B11_Rika", 120, 0 );
 
 	PlaySE(4, "S09/01/170100091", 128, 64);
@@ -472,7 +423,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_KaiiA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2a_kaiiA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200097", 128, 64);
@@ -486,7 +437,7 @@ void main()
 		   NULL, " Hauu, hauuu!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re5", 0 );
+	DrawScene( "background/res1", 0 );
 
 	PlaySE(4, "S09/01/170100093", 128, 64);
 	OutputLine(NULL, "「そら、ウェイトレスさん、今日のお勧めは何かなぁ？」",
@@ -494,7 +445,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Me_WinkA1$", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/me5_WinkA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300007", 128, 64);
@@ -504,7 +455,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshotWithFiltering( 2, "Sa_AkuwaraiA1-", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa6_AkuwaraiA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/04/170400006", 128, 64);
@@ -514,7 +465,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Ri_waraiA1$", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri6_WaraiA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500006", 128, 64);
@@ -524,7 +475,7 @@ void main()
 
 	PlaySE( 0, "s_jikuu", 128, 64 );
 	DrawScene( "white", 400 );
-	DrawScene( "Re4", 400 );
+	DrawScene( "background/res2", 400 );
 
 	OutputLine(NULL, "　こんな壮絶な格好のウェイトレスさんが独り占めできて、レナはさっきから鼻血がぼたぼた出まくりだ。",
 		   NULL, "Rena's nose was bleeding because she got to keep the waitresses in cute costumes all to herself.", Line_WaitForInput);
@@ -540,8 +491,8 @@ void main()
 		   NULL, "I now understand what a slack-jawed smile means... Huh huh huh...☆", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Re_KaiiB1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re6", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2b_kaiiB1_0", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S09/02/170200100", 128, 64);
 	OutputLine(NULL, "「ねーねー、梨花ちゃんウェイトレスさぁん、あ〜〜んやって〜☆」",
@@ -549,7 +500,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_WaraiA1$", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri6_WaraiA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500007", 128, 64);
@@ -557,7 +508,7 @@ void main()
 		   NULL, "\"...Sure...\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re5", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S09/01/170100094", 128, 64);
 	OutputLine(NULL, "「沙都子〜、俺にもひとつ頼むよ〜〜！",
@@ -568,7 +519,9 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sa_YareyareA1-", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa6_YareyareA1_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
+
 	DisplayWindow();
 
 	PlaySE(4, "S09/04/170400007", 128, 64);
@@ -576,7 +529,7 @@ void main()
 		   NULL, "\"Open your mouth. Aah, I hate this!", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sa_OdorokiA1-", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sa6_OdorokiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/04/170400008", 128, 64);
@@ -588,7 +541,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 1, "Me_TohohoA1$", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me5_TohohoA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300008", 128, 64);
@@ -599,7 +552,7 @@ void main()
 		   NULL, " Why do I have to massage your shoulders?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_WinkA2$", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me5_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300010", 128, 64);
@@ -619,7 +572,6 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Re3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　どのボックスシートにも４人がぎゅうぎゅうとすし詰めのはずなのに、この一角だけは俺とレナでゆったりと座り、",
 		   NULL, "Every table had four people squeezed in together, but only Rena and myself were at this table,", Line_WaitForInput);
@@ -634,7 +586,7 @@ void main()
 		   NULL, " This had never happened before at Angel Mort and it never will again.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res2", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/manK17004", 128, 64);
 	OutputLine(NULL, "「……そ、そうでござったか。",
@@ -655,7 +607,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_TohohoA1$", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me5_TohohoA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
+	
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300011", 128, 64);
@@ -699,7 +653,7 @@ void main()
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sa_AkireruA1-", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa6_AkireruA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/04/170400010", 128, 64);
@@ -711,7 +665,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Ri_DefA1$", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/ri6_DefA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500008", 128, 64);
@@ -728,7 +682,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "white", 10 );
-	DrawScene( "Re_s1_Resut", 0 );
+	DrawBustshotWithFiltering( 0, "portrait/normal/kameda1b_Odoroki_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/res5", 0 );
 	PlayBGM( 0, "B03_Dame", 120, 0 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
@@ -743,8 +698,6 @@ void main()
 
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
-
-	DrawScene( "Re6", 400 );
 
 	OutputLine(NULL, "　亀田くんたちが突然、絶叫すると俺に食って掛かる。",
 		   NULL, "All of a sudden, Kameda-kun screamed, starting to blame me.", Line_Normal);
@@ -798,6 +751,10 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
+	
+	DrawBustshotWithFiltering( 1, "sprite/normal/oka1_Shinken_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tomita1_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 7, 0, FALSE );
+	
 	PlaySE(4, "S09/24/172400011", 128, 64);
 	PlaySE(5, "S09/25/172500009", 128, 64);
 	OutputLine(NULL, "「「ぼぼ、僕たちもずるいと思います！！」」",
@@ -845,7 +802,8 @@ void main()
 	PlayBGM( 0, "B04_Bukatu", 120, 0 );
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Me_AkuwaraiA2$", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/me5_AkuwaraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300013", 128, 64);
@@ -868,7 +826,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WaraiA1$", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me5_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300016", 128, 64);
@@ -876,7 +834,7 @@ void main()
 		   NULL, "\"Well, Kameda-kun, Tomita, and Okamura.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WinkA1$", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me5_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300017", 128, 64);
@@ -886,7 +844,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Re_BikkuriA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2a_bikkuriA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200101", 128, 64);
@@ -898,7 +856,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_HutekiA1$", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me5_HutekiA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300018", 128, 64);
@@ -906,13 +864,18 @@ void main()
 		   NULL, "\"They defeated many fighters and won a massive victory yesterday.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_AkuwaraiA1$", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me5_AkuwaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300019", 128, 64);
 	OutputLine(NULL, "こんなメンバーですらない連中なんか束でかかってきても負ける気しないでしょ〜？」",
 		   NULL, " I'm pretty sure a battle against these guys would be trivial, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawBustshotWithFiltering( 0, "portrait/normal/kameda1a_Warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oka1_Shinken_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tomita1_Shinken_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 7, 0, FALSE );
+	DrawSceneWithMask( "background/res5", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　亀田くんが、よっしゃあ！！と手を叩く。",
 		   NULL, "Kameda-kun clapped his hands with glee.", Line_WaitForInput);
@@ -928,8 +891,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Sa_AkuwaraiA1-", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re5", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa6_AkuwaraiA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/04/170400012", 128, 64);
 	OutputLine(NULL, "「そう言えば、圭一さんとレナさんの勝負は、預かり勝負でございましたものねぇ。",
@@ -940,7 +903,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_DefA1$", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri6_DefA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/05/170500010", 128, 64);
@@ -957,7 +920,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_KaiiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/re2a_kaiiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200103", 128, 64);
@@ -971,7 +934,7 @@ void main()
 		   NULL, " I wonder what kind of costume you'll have to wear~☆.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KaiiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_kaiiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200106", 128, 64);
@@ -1018,26 +981,23 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Re1", 0 );
 
 	DisableWindow();
-	DrawBustshot( 0, rn_Iri_Majime2, 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, TRUE );
+	DrawBustshot( 0, "sprite/normal/iri1_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/res1", 0 );
 	DisplayWindow();
 	PlaySE( 0, "s_Down", 128, 64 );
-
-	OutputLineAll(NULL, "", Line_Normal);
-
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Me_DefA2$", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "Re3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me5_DefA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/03/170300020", 128, 64);
 	OutputLine(NULL, "「ふむふむ。",
 		   NULL, "\"Well, well.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_WinkA1$", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me5_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300021", 128, 64);
@@ -1065,8 +1025,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Sa_AkireruA1-", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re6", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa6_AkireruA1_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S09/04/170400014", 128, 64);
 	OutputLine(NULL, "「富田さんも岡村さんも、やめておくなら今の内でしてよー。",
@@ -1076,11 +1036,15 @@ void main()
 		   NULL, " As you already know, you have to undergo the punishment if you lose.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	
+	DrawBustshotWithFiltering( 0, "sprite/normal/tomita1_Shinken_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );	
 
 	PlaySE(4, "S09/24/172400013", 128, 64);
 	OutputLine(NULL, "「そ、それは覚悟の内です…！」",
 		   NULL, "\"W-We know that...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawBustshotWithFiltering( 1, "sprite/normal/oka1_Shinken_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	PlaySE(4, "S09/25/172500012", 128, 64);
 	OutputLine(NULL, "「僕たちも男なんです！",
@@ -1112,7 +1076,8 @@ void main()
 		   NULL, " ...I had to admit, they have potential...!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re4", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kameda1a_Niyari_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/res5", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　その後輩二人組を尻目に、ニヤリと笑うのは……エンジェルモートの魔王、亀田！",
 		   NULL, "Kameda, the evil Lord of Angel Mort, sneered at the two...!", Line_Normal);
@@ -1141,15 +1106,15 @@ void main()
 		   NULL, "Coach Irie, the Count of Maids, laughed like he was afraid of nothing!!", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, rn_Iri_Def2, "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/iri1_Majime_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/10/171000014", 128, 64);
 	OutputLine(NULL, "「ふ、……ここは大人の本気というものを見せてあげましょう。",
 		   NULL, "\"Well... I'll show you how serious an adult can be.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, rn_Iri_Majime2, 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/iri1_Majime2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000015", 128, 64);
@@ -1172,7 +1137,8 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_KaiiB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2b_kaiiB1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200107", 128, 64);
@@ -1203,8 +1169,8 @@ void main()
 		   NULL, " What kind of game are we playing?!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Me_AkuwaraiA1$", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Re3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/me5_AkuwaraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/03/170300026", 128, 64);
 	OutputLine(NULL, "「くっくっく！",
@@ -1214,7 +1180,7 @@ void main()
 		   NULL, " That's the spirit!", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WAraiA2$", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me5_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300028", 128, 64);
@@ -1239,7 +1205,7 @@ void main()
 		   NULL, " or a competitive eating contest!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res4", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/00/waitA17009", 128, 64);
 	OutputLine(NULL, "「……あの、…店長。",
@@ -1293,7 +1259,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Me_WinkA2$", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/me5_WinkA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, FALSE );
+	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300030", 128, 64);
@@ -1322,7 +1289,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WaraiA1$", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me5_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/03/170300033", 128, 64);
@@ -1344,7 +1311,7 @@ void main()
 		   NULL, "Damn it, having two stomachs for a competitive eating contest was an absolute advantage too!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/01/170100111", 128, 64);
 	OutputLine(NULL, "「レナはどうだ…？",
@@ -1355,7 +1322,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_KaiiB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2b_kaiiB1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/02/170200110", 128, 64);
@@ -1375,7 +1342,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/01/170100113", 128, 64);
 	OutputLine(NULL, "「監督は…、どうですか。",
@@ -1386,7 +1353,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, rn_Iri_Def1, "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/iri1_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000017", 128, 64);
@@ -1398,8 +1365,8 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DrawScene( "white", 10 );
-	DrawBustshot( 1, rn_Iri_Majime2, -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "Re1", 200 );
+	DrawBustshot( 1, "sprite/normal/iri1_Majime2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/res1", 200 );
 
 	PlaySE(4, "S09/10/171000019", 128, 64);
 	OutputLine(NULL, "私に不可能の文字はありません…！！」",
@@ -1428,7 +1395,7 @@ void main()
 	DrawScene( "black", 400 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Re4", 400 );
+	DrawScene( "background/res4", 400 );
 
 	PlaySE(4, "S09/03/170300037", 128, 64);
 	OutputLine(NULL, "「じゃあ準備はいいかなッ？！？！",
@@ -1496,15 +1463,15 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
-	DrawScene( "F_a", 0 );
+	DrawScene( "background/furiker_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
-	DrawScene( "F_b", 0 );
+	DrawScene( "background/furiker_b", 0 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene( "Bg0", 0 );
+	DrawScene( "background/furiker_c", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 400 );
@@ -1521,8 +1488,8 @@ void main()
 		   NULL, "My hands clash with the others' in midair.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Re_WaraiA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Re6", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2a_waraiA1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S09/02/170200111", 128, 64);
 	OutputLine(NULL, "「あははははは、みんな遅いよ〜〜。",
@@ -1547,7 +1514,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KaiiA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_kaiiA1_0", 200, TRUE );
 	DisplayWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 
@@ -1564,7 +1531,8 @@ void main()
 		   NULL, "I see. I now understand why people say women always have room for dessert!!!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kameda1a_Warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/res5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　だがエンジェルモートという特殊環境においては、レナに対しても一歩も引けを取らないのが亀田くんだ！！",
 		   NULL, "But, in the special environment of Angel Mort, Kameda-kun wasn't far behind Rena!!", Line_WaitForInput);
@@ -1588,6 +1556,8 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "yabaisemi", 120, 0 );
+	
+	ChangeBustshot( 0, "sprite/normal/kameda1a_Niyari_0", 200, TRUE );
 
 	PlaySE(4, "S09/23/172800024", 128, 64);
 	OutputLine(NULL, "「……ぐふぅ。",
@@ -1606,7 +1576,7 @@ void main()
 		   NULL, " Just watch me!!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/res4", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　そんな超人たちの暴れっぷりを見ても、富田くん岡村くんコンビは焦らなかった。",
 		   NULL, "Tomita-kun and Okamura-kun look at the extraordinary techniques Rena and Kameda-kun are displaying, but they seem to be very calm.", Line_WaitForInput);
@@ -1665,7 +1635,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DrawScene( "white", 10 );
-	DrawScene( "Re4", 0 );
+	DrawScene( "background/res4", 0 );
 
 	OutputLine(NULL, "　あうあうあぅ！",
 		   NULL, "Ow ow ow!", Line_WaitForInput);
@@ -1712,8 +1682,8 @@ void main()
 		   NULL, " It would take too long to use body heat, and I didn't have any other source of heat with me...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, rn_Iri_Def2, "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Re1", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/iri1_Def2_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S09/10/171000020", 128, 64);
 	OutputLine(NULL, "「すみませんウェイトレスさん、注文をいいでしょうか。",
@@ -1721,7 +1691,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DisableWindow();
-	ChangeBustshot( 2, rn_Iri_Majime, 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/iri1_Majime_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000021", 128, 64);
@@ -1738,7 +1708,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, rn_Iri_Majime2, 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/iri1_Majime2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S09/10/171000023", 128, 64);
