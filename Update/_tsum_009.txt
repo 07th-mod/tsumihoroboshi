@@ -30,7 +30,7 @@ void main()
 		   NULL, " I should've talked about it with you first and...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S09/02/170200351", 128, 64);
 	OutputLine(NULL, "「妊娠したなんて、あの女の嘘だよ。」",
 		   NULL, "\"That woman is lying to you about her pregnancy.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -945,9 +945,8 @@ void main()
 	OutputLine(NULL, "それはつまり、………なんて言えばいいのかなぁ、",
 		   NULL, " That means... how should I put it...?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 5000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…そう、仲間ってことなんだよ。」",
 		   NULL, " ...That means we're her best friends.\"", Line_Normal);
 	ClearMessage();

@@ -921,7 +921,7 @@ void main()
 	ChangeBustshot( 0, "Me_majimeB2", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/03/170300506", 128, 64);
 	OutputLine(NULL, "もちろん、圭ちゃんが罪の十字架を背負い続けることはとても大切なこと。",
 		   NULL, " It's very important that you keep reminding yourself of your sin", Line_WaitForInput);
 	PlaySE(4, "S09/03/170300507", 128, 64);
@@ -1218,7 +1218,7 @@ void main()
 	PlaySE(4, "S09/03/170300532", 128, 64);
 	OutputLine(NULL, "「ってことはさ、圭ちゃん。",
 		   NULL, "\"In other words, Kei-chan,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/03/170300533", 240, 64);
 	OutputLine(NULL, "………前の町での十字架は圭ちゃんが密かに胸に秘めることであって、こっちでわざわざ口にする必要なんてないんじゃない？",
 		   NULL, " the sin you committed in the city is something that you should keep secret in your heart. You don't need to dig it back up just to tell us.", Line_WaitForInput);
 
@@ -1439,7 +1439,7 @@ void main()
 	PlaySE(4, "S09/01/170100990", 128, 64);
 	OutputLine(NULL, "…魅音はないって言ったじゃないか！！！",
 		   NULL, " ...You told me there was none!!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps2/01/170100991", 128, 64);
 	OutputLine(NULL, "　バラバラ殺人があったのによ！！！",
 		   NULL, " But there was a dismemberment lynch murder!!!", Line_WaitForInput);
 	PlaySE(4, "S09/01/170100992", 128, 64);
@@ -2620,9 +2620,8 @@ void main()
 	OutputLine(NULL, "　………レナと魅ぃを、",
 		   NULL, " ...You remember how you...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……殺したことを。」",
 		   NULL, "  killed Rena and Mii...\"", Line_Normal);
 	ClearMessage();
