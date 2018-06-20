@@ -4,8 +4,7 @@ void main()
 	PlayBGM( 0, "Cradle_song", 120, 0 );
 	SetColorOfMessage( TRUE, 0xff, 0xcc, 0xff );
 
-	DrawSprite( 1, "Waku_W", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 1300, FALSE );
-	DrawSceneWithMask( "Re_H1", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
 	DisplayWindow();
 
@@ -21,9 +20,9 @@ void main()
 	OutputLine(NULL, "　そうしてどんどん高みを目指していく母は、いつも輝いていて、私の憧れだった。",
 		   NULL, "She sought to go higher and higher. She was always shining, and she was my hero.", Line_Normal);
 	ClearMessage();
-
+	
 	DrawScene( "black", 400 );
-	DrawScene( "Mati2", 400 );
+	DrawScene( "background/flashback/Mati2", 400 );
 
 	OutputLine(NULL, "　母は元々は興宮にある小さな衣装メーカーのデザイナーだったそうだ。",
 		   NULL, "My mother started her career as a fashion designer at a small clothing factory in Okinomiya.", Line_WaitForInput);
@@ -38,7 +37,7 @@ void main()
 		   NULL, "They met through their jobs, and soon got married.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati4", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/Mati4", "maskc", 1, 0, 1300 );
 
 	OutputLine(NULL, "　初めは興宮の小さなアパートで暮らしていたが、",
 		   NULL, "They lived in a small apartment in Okinomiya,", Line_WaitForInput);
@@ -68,7 +67,7 @@ void main()
 		   NULL, "I really did feel happy every day.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati2", 400 );
+	DrawScene( "background/flashback/Mati2", 400 );
 
 	OutputLine(NULL, "　当時は小さかったからよく知らないのだが、両親の勤めていた会社が経営不振に陥ったという。",
 		   NULL, "I was small at that time and didn't really understand what was going on, but it seemed like the company my parents were working for was having financial difficulties.", Line_Normal);
@@ -94,8 +93,6 @@ void main()
 		   NULL, "My mother and her peers were hired because their talent and experience made them immediate assets at their new company.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
-
-	FadeSprite( 1, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　だが、それには父は含まれていなかった。",
@@ -115,8 +112,7 @@ void main()
 		   NULL, "My mother's new company had high expectations of her talent and promised her a responsible project.", Line_Normal);
 	ClearMessage();
 
-	DrawSprite( 1, "Waku_W", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 1300, FALSE );
-	DrawSceneWithMask( "Re_H1", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "　溢れる才能と情熱をこんな田舎で冷めさせたくない。",
@@ -137,7 +133,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Mati12", 400 );
+	DrawScene( "background/flashback/mati12", 400 );
 
 	OutputLine(NULL, "　引っ越した後、母は新会社でのプロジェクトを見事に開花させた。",
 		   NULL, "After we moved to Ibaraki, my mother was a big success.", Line_WaitForInput);
@@ -148,7 +144,7 @@ void main()
 		   NULL, "Not only did she have great leadership skills, she was full of energy, and I believe she made the best use of her talents to succeed.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re_G1", 400 );
+	DrawScene( "background/flashback/Re_G1", 400 );
 
 	OutputLine(NULL, "　毎晩帰りが遅かったし、休日なんてまったくないように感じた。",
 		   NULL, "She came home late every night and barely had any days off.", Line_WaitForInput);
@@ -192,8 +188,6 @@ void main()
 		   NULL, "He started to take care of things around the house for my mother, who got busier and busier, having one project after another.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Si_d1", 400 );
-
 	OutputLine(NULL, "　掃除や洗濯、私の学校行事への参加などをがんばって勤めた。",
 		   NULL, "He cleaned the house, did the laundry, and came to my school events.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -208,7 +202,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Re_H3", 400 );
+	DrawScene( "background/flashback/Re_H3", 400 );
 
 	OutputLine(NULL, "　お母さんはまた忙しいんだね。",
 		   NULL, "\"I guess she's busy again.\"", Line_WaitForInput);
@@ -228,8 +222,6 @@ void main()
 	OutputLine(NULL, "　そう言った。",
 		   NULL, "That was what he always told me.", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "Si_d1", 400 );
 
 	OutputLine(NULL, "　私は、料理を手伝うことにした。",
 		   NULL, "I decided to help my father with the cooking.", Line_WaitForInput);
@@ -286,7 +278,7 @@ void main()
 		   NULL, "He couldn't find a job and spent a lot of time at home, so he seemed to enjoy spending time doing the housework with his daughter more than anything.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati12", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/flashback/mati12", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　そして、私はどんどん母の代役が務められるようになり、",
 		   NULL, "I started to become better and better at filling in for my mother,", Line_WaitForInput);
@@ -342,9 +334,6 @@ void main()
 		   NULL, "But I always preferred to be alone with her, so I was happier when we could do that.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 400, FALSE );
-	DrawScene( "Mati10", 400 );
-
 	OutputLine(NULL, "　あの日も、母は私を連れてお洒落な町並みに遊びに行った。",
 		   NULL, "One day, she took me to a very high-end part of town.", Line_Normal);
 	ClearMessage();
@@ -379,7 +368,7 @@ void main()
 		   NULL, "On that day, I realized my mother's design work had made her a very successful woman and she was earning a lot of money.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Saten1", 400 );
+	DrawScene( "background/flashback/saten1", 400 );
 
 	OutputLine(NULL, "　そして、オレンジジュースだけでも１０００円するような高級な喫茶店で一休みした。",
 		   NULL, "We took a break at a ridiculously expensive-looking restaurant that probably charged 1,000 yen for a glass of orange juice.", Line_Normal);
@@ -694,11 +683,11 @@ void main()
 		   NULL, "I thought my mother appreciated his support.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Saten1", 400 );
+	DrawScene( "background/flashback/saten1", 400 );
 
 	OutputLine(NULL, "　だから。",
 		   NULL, "So...", Line_WaitForInput);
-	OutputLine(NULL, "　だから。",
+		   
 	OutputLine(NULL, "……これは母の裏切り行為だと思った。",
 		   NULL, " I took her decision as a betrayal.", Line_Normal);
 	ClearMessage();
@@ -773,21 +762,18 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DisableWindow();
-	DrawSprite( 1, "Waku_b", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
-	DisplayWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "T2", 120, 0 );
-	DrawSceneWithMask( "Re_H1", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
 	PlaySE(4, "S09/00/173000013", 128, 64);
 	OutputLine(NULL, "　母が父に、離婚したい旨を直接会って話したかどうかは分からない。",
 		   NULL, "I don't know whether my mother actually told him about the divorce in person.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re_G1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/flashback/Re_G1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　ただ、母の弁護士だと名乗る中年の女性が現れ、玄関や電話で何度かやり取りをしていたのは見た。",
 		   NULL, "A middle-aged woman who called herself a lawyer came to the house several times to talk to my father on my mother's behalf. She sometimes called him, too.", Line_WaitForInput);
@@ -807,7 +793,7 @@ void main()
 		   NULL, "Well, again, I'm not even sure if she told him in person.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Denwa", 400 );
+	DrawScene( "background/flashback/denwa", 400 );
 
 	OutputLine(NULL, "　弁護士は父に、直接の面会、職場への連絡その他を何から何まであれこれと制約し、",
 		   NULL, "The lawyer told him not to meet my mother, not to call her at work, and many other things, too.", Line_WaitForInput);
@@ -826,7 +812,7 @@ void main()
 		   NULL, "He wanted to talk to her. He called some of their mutual friends, but he only found out the name of the guy she was having affair with and nothing more.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re_H3", 1000 );
+	DrawScene( "background/flashback/Re_H3", 1000 );
 
 	OutputLine(NULL, "　父が私に、相手の男を知っているか？",
 		   NULL, "He asked me,", Line_WaitForInput);
@@ -960,7 +946,7 @@ void main()
 		   NULL, "If I tried to do so... my parents wouldn't have had to break up.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re_H3", 400 );
+	DrawScene( "background/flashback/re_h3", 400 );
 
 	OutputLine(NULL, "　父と二人して流す涙だったが、…二人の涙は少しだけ意味が違う。",
 		   NULL, "My father and I cried together... but, we cried for different reasons.", Line_WaitForInput);
@@ -991,7 +977,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Saten1", 1000 );
+	DrawScene( "background/flashback/saten1", 1000 );
 
 	OutputLine(NULL, "　その後、弁護士に連れられて、私だけが母と面会できることになった。",
 		   NULL, "One day, the lawyer let me see my mother.", Line_Normal);
@@ -1193,8 +1179,6 @@ void main()
 		   NULL, "After that, I spent many days without feeling anything. I didn't know if the days were long or short. I didn't know which season I was living in.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Si_d1", 400 );
-
 	OutputLine(NULL, "　母が家にいない生活は、そう珍しいものではなかったはずなのに。",
 		   NULL, "It was supposed to be nothing out of the ordinary, not having my mother around.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1220,9 +1204,6 @@ void main()
 	OutputLine(NULL, "…そういうものが目に付く度に、父は涙し、私はイラついた。",
 		   NULL, " he shed tears, which left me frustrated.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Re_H2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　だから、家中に残る母の痕跡を、全て綺麗に片付けてしまおうと思った。",
 		   NULL, "That's why I decided to completely remove her belongings from the house.", Line_WaitForInput);
@@ -1252,8 +1233,6 @@ void main()
 	OutputLine(NULL, "記憶がぼやけた。",
 		   NULL, " my mind was already not working properly.", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　…………これ以上を思い出そうとすると、",
 		   NULL, ".........When I try to remember what happened after that...", Line_ContinueAfterTyping);
@@ -1307,7 +1286,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "black", 400 );
+	DrawScene( "background/oyashirosama", 400 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1361,6 +1340,8 @@ void main()
 	OutputLine(NULL, "私たちは、雛見沢に帰らないといけなかったのだ。",
 		   NULL, " We had to go back to Hinamizawa.", Line_Normal);
 	ClearMessage();
+	
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　………頭がぼんやりして、……鈍痛が走る。",
 		   NULL, "...I started feeling disoriented again... and a dull pain ran through my head.", Line_WaitForInput);
@@ -1370,7 +1351,7 @@ void main()
 		   NULL, "It might be a scream from within me telling me not to push myself too hard to remember any further.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 400 );
+	DrawScene( "background/flashback/re_s2", 400 );
 
 	OutputLine(NULL, "　かつて雛見沢に住んでいた家は、元のまま残っていた。",
 		   NULL, "The house where we used to live in Hinamizawa was still there.", Line_WaitForInput);
@@ -1393,7 +1374,7 @@ void main()
 		   NULL, "I forgot the streets and even the names of close friends I used to play with.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hi2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/flashback/hi1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　ご近所の人たちは、亡くなった祖母の息子夫婦が離婚で戻ってきたことは理解していたが、",
 		   NULL, "The neighbors knew that the son of the deceased woman had come back divorced,", Line_WaitForInput);
@@ -1475,7 +1456,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "Rain", 120, 0 );
-	DrawScene( "Mo_R1", 200 );
+	DrawScene( "background/mo_r1_02", 200 );
 
 	OutputLine(NULL, "　その時、雨で溜まった水が一気に零れて、車の天井をバタバタバタ！っと叩く音に驚かされ、私は我に帰る。",
 		   NULL, "All of a sudden, big raindrops hit the roof of the car, and I recovered my senses.", Line_Normal);
@@ -1612,7 +1593,7 @@ void main()
 
 	FadeFilm( 0, TRUE );
 
-	DrawSceneWithMask( "Mo_R2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_r1_02", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　時計を見ると、午後の１１時をとっくに過ぎていた。",
 		   NULL, "When I looked at the clock, it was already past\n11 PM.", Line_WaitForInput);
@@ -1623,8 +1604,6 @@ void main()
 	OutputLine(NULL, "せめて炊飯器のタイマーをセットしなくちゃ。",
 		   NULL, " At least, I'd have to set the timer on the rice cooker.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　雨はまだ止む様子はないのかな。",
 		   NULL, "It didn't look like the rain was going to stop anytime soon.", Line_WaitForInput);
@@ -1724,8 +1703,6 @@ void main()
 		   NULL, "...But, she always tells me things that I can't say myself...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_R1", "maskup", 1, 0, 300 );
-
 	OutputLine(NULL, "　帰ろう、レナ。",
 		   NULL, "Let's go home, Rena.", Line_WaitForInput);
 	OutputLine(NULL, "自分の家へ。",
@@ -1796,7 +1773,6 @@ void main()
 	OutputLine(NULL, "……どうしても好きになれなくて…。",
 		   NULL, " her perfume...", Line_Normal);
 	ClearMessage();
-	FadeSprite( 1, 0, TRUE );
 
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
