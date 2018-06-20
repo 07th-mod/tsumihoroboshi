@@ -68,7 +68,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] in _tsum_003_3.txt, line 938 has no voice. Most likely on PS2
 - [x] in _tsum_005.txt, line 1144 has no voice. Looks like a random cut that might be in the PS2 voices
 - [x] in _tsum_006.txt, lines 404 to 419 are missing a few voices. Text was toned down a bit
-- [ ] in _tsum_007.txt, big chunks of the script has no voices (especially the first 1000 lines). Search for ``PlaySE(4, "", 128, 64);`` for all of them
+- [x] in _tsum_007.txt, big chunks of the script has no voices (especially the first 1000 lines). Search for ``PlaySE(4, "", 128, 64);`` for all of them
 - (unfixable) in _tsum_008.txt, line 1932, the text was changed from "I'm pregnant" to "He's proposed to me" (paraphrasing, of course). PS2 might have the correct voice
 - (unfixable) in _tsum_008.txt, lines 1982 and 1988, both voices were changed to match the previous change. Same PS2 case might applies here
 - (unfixable) in _tsum_008.txt, line 2014, line has no voice because it was toned down
@@ -88,7 +88,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] in _tsum_024_1.txt, lines 935 to 964 have no voices
 - [x] in _tsum_025.txt, line 388, for some reason the laugh is unvoiced
 - [x] in _tsum_025.txt, lines 4797 to 4806 are unvoiced
-- [ ] in _tsum_026.txt, line 108 was toned significantly
-- [ ] in _tsum_026.txt, lines 168 and 171 were cut from the PS3 release
+- [x] in _tsum_026.txt, line 108 was toned significantly
+- [x] in _tsum_026.txt, lines 168 and 171 were cut from the PS3 release
 - [x] in _tsum_026.txt, line 609 was cut for some reason
-- [ ] in _tsum_tips_014.txt, lines 683 to 694 were cut from the PS3 release
+- (unfixable) in _tsum_tips_014.txt, lines 683 to 694 were cut from the PS3 release
