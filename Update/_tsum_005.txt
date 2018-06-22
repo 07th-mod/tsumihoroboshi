@@ -562,222 +562,225 @@
 	PlayBGM( 0, "Feel", 120, 0 );
 
 	OutputLine(NULL, "「お母さんね。",
-		   NULL, "\"I'm thinking about divorcing your father and getting married to Akihito-san.\"", Line_Normal);
+		   NULL, "\"I'm thinking", Line_WaitForInput);
+		   
+	OutputLine(NULL, "\nお父さんと別れて、アキヒトおじさんと結婚しようと思うの。」",
+		   NULL, " about divorcing your father and getting married to Akihito-san.\"", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1,  -320, -240, 0, 0, 256, 0, 0, 300, FALSE );
+	MoveSprite( 1, 0, 0, 0, 0, 256, 0, 0, 0, TRUE );
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
-	OutputLine(NULL, "お父さんと別れて、アキヒトおじさんと結婚しようと思うの。」",
+	OutputLine(NULL, "　その当時、母はかなりの成功を収めていた。",
 		   NULL, "At that time, my mother was a very successful woman.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　その当時、母はかなりの成功を収めていた。",
+	OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
 		   NULL, "I didn't know this at the time, but she was drafted by a headhunter to work at a bigger company, where she was promoted to a higher and more responsible position, one where she could bring out the most of her talent.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
+	OutputLine(NULL, "　もちろん立場だけじゃない。",
 		   NULL, "Of course, the position wasn't the only thing she gained.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　もちろん立場だけじゃない。",
+	OutputLine(NULL, "　アルバイト程度の収入しか入れられない父と違い、母の収入は一家三人の家計を支えてなお余りあるほどだった。",
 		   NULL, "Compared to my father's low salary, my mother was earning enough money to support a family of three and still have some left over.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　アルバイト程度の収入しか入れられない父と違い、母の収入は一家三人の家計を支えてなお余りあるほどだった。",
+	OutputLine(NULL, "　それは、母の羽振りから何となくわかっていた。",
 		   NULL, "I'd kind of realized it from the way she spent money.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　それは、母の羽振りから何となくわかっていた。",
+	OutputLine(NULL, "　母は活躍すればするほどに格は上がり、自らの格に相応しい人たちと交流するようになっていた。",
 		   NULL, "The greater a position she achieved, the more she spent time with people at her level.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　母は活躍すればするほどに格は上がり、自らの格に相応しい人たちと交流するようになっていた。",
+	OutputLine(NULL, "　そんな人たちは皆、才能に溢れ、輝いていた。",
 		   NULL, "All of them were bright and talented.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　そんな人たちは皆、才能に溢れ、輝いていた。",
+	OutputLine(NULL, "　それに比べれば、父が霞んで見えることもあったのかもしれない。",
 		   NULL, "Compared to them, my father might've looked unattractive to her.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　それに比べれば、父が霞んで見えることもあったのかもしれない。",
+	OutputLine(NULL, "　確かにアキヒトおじさんを好きではあった。",
 		   NULL, "I liked Uncle Akihito.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　確かにアキヒトおじさんを好きではあった。",
+	OutputLine(NULL, "　でも、それは他人というカテゴリーの中では好きという程度で、父と比べられる次元ではない。",
 		   NULL, "But, I liked him as one of my mother's friends, not in the same way I liked my father.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　でも、それは他人というカテゴリーの中では好きという程度で、父と比べられる次元ではない。",
+	OutputLine(NULL, "　父も母も好きな私にとって、母が父と別れたいと切り出すことは、足元の大地が裂けてしまうのと同じ衝撃があった。",
 		   NULL, "I liked my father and mother equally, so it was very shocking to me that my mother wanted to divorce him. I felt as if the ground below me was beginning to crack.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　父も母も好きな私にとって、母が父と別れたいと切り出すことは、足元の大地が裂けてしまうのと同じ衝撃があった。",
+	OutputLine(NULL, "　そしてその表現は、この上なく適切だったことがすぐに分かる。",
 		   NULL, "That expression, I realized, actually fit my situation very well.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　そしてその表現は、この上なく適切だったことがすぐに分かる。",
+	OutputLine(NULL, "　裂けた大地の、どちら側かを選ばなければならなかったからだ。",
 		   NULL, "I had to choose which side of the cracked ground I wanted to stand on.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　裂けた大地の、どちら側かを選ばなければならなかったからだ。",
+	OutputLine(NULL, "　母は、こちらの家で一緒に住もうと言った。",
 		   NULL, "My mother told me to live with her, at her new house.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　母は、こちらの家で一緒に住もうと言った。",
+	OutputLine(NULL, "　それは、アキヒトおじさんという他人がいる家のことだ。",
 		   NULL, "'Her new house' meant the house Uncle Akihito lived in.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　それは、アキヒトおじさんという他人がいる家のことだ。",
+	OutputLine(NULL, "　家と家族は聖域だと思っていた。",
 		   NULL, "I thought a house was a sanctuary for a family.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　家と家族は聖域だと思っていた。",
+	OutputLine(NULL, "　他人が土足で踏み込めない神聖な場所だと信じていた。",
 		   NULL, "I believed that a house was a holy place where strangers couldn't easily enter.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　他人が土足で踏み込めない神聖な場所だと信じていた。",
+	OutputLine(NULL, "　……だからこそ、そんな神聖な場所に、他人を安易に踏み込ませる母の常識が信じられなかった。",
 		   NULL, "...That was why I couldn't believe her. How could she let a stranger invade such a holy place so easily?", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　……だからこそ、そんな神聖な場所に、他人を安易に踏み込ませる母の常識が信じられなかった。",
+	OutputLine(NULL, "　お父さんをどうして嫌いになったの？",
 		   NULL, "Why do you hate my father?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　お父さんをどうして嫌いになったの？",
+	OutputLine(NULL, "　母は答えず、少し俯いた。",
 		   NULL, "My mother looked down and didn't answer.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　母は答えず、少し俯いた。",
+	OutputLine(NULL, "　私はさらに言葉をかける。",
 		   NULL, "I asked her another question.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　私はさらに言葉をかける。",
+	OutputLine(NULL, "　ねぇ、どうしてお父さんと一緒じゃだめなの？",
 		   NULL, "Why can't you stay with my father?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　ねぇ、どうしてお父さんと一緒じゃだめなの？",
+	OutputLine(NULL, "　私のその問い掛けは、おそらく母にとってももっとも鋭く胸をえぐるものだったと思う。",
 		   NULL, "I think that was the hardest and the most heartbreaking of all questions for my mother to answer.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　私のその問い掛けは、おそらく母にとってももっとも鋭く胸をえぐるものだったと思う。",
+	OutputLine(NULL, "　はっきり断じてしまうなら。これは母の浮気だった。",
 		   NULL, "In short, my mother had cheated on him.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　はっきり断じてしまうなら。これは母の浮気だった。",
+	OutputLine(NULL, "　父より魅力のある人に情が移った以上のどんな言い方があるというのか。",
 		   NULL, "She loved another man who was more attractive than my father. It was just that and nothing more.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　父より魅力のある人に情が移った以上のどんな言い方があるというのか。",
+	OutputLine(NULL, "　父に何の落ち度もないことは、他ならぬ私自身がよく知っていた。",
 		   NULL, "I knew more than anybody that it wasn't my father's fault.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　父に何の落ち度もないことは、他ならぬ私自身がよく知っていた。",
+	OutputLine(NULL, "　そもそも、雛見沢から引っ越すのだって、母を最大限に応援しようという気持ちで決めたはず。",
 		   NULL, "First of all, he decided to move from Hinamizawa to support my mother as much as he could.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　そもそも、雛見沢から引っ越すのだって、母を最大限に応援しようという気持ちで決めたはず。",
+	OutputLine(NULL, "　父個人にとっては何もいいことはなかったはずだ。",
 		   NULL, "For him, nothing good had come from that.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　父個人にとっては何もいいことはなかったはずだ。",
+	OutputLine(NULL, "　実際、父は引っ越してきてからとても辛い日々を送っていたと思う。",
 		   NULL, "Actually, I think he had a very tough time since we moved to Ibaraki.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　実際、父は引っ越してきてからとても辛い日々を送っていたと思う。",
+	OutputLine(NULL, "　それでも、影から母の支えになれればと、目立たないところで一生懸命がんばってきたんじゃないか。",
 		   NULL, "But, he volunteered to be her support and tried very hard to do that.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　それでも、影から母の支えになれればと、目立たないところで一生懸命がんばってきたんじゃないか。",
+	OutputLine(NULL, "　母だって、父のそんな内助の功に感謝しているのではなかったのか。",
 		   NULL, "I thought my mother appreciated his support.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "Saten1", 400 );
 
-	OutputLine(NULL, "　母だって、父のそんな内助の功に感謝しているのではなかったのか。",
-		   NULL, "So...", Line_WaitForInput);
 	OutputLine(NULL, "　だから。",
+		   NULL, "So...", Line_WaitForInput);
+	OutputLine(NULL, "……これは母の裏切り行為だと思った。",
 		   NULL, " I took her decision as a betrayal.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "……これは母の裏切り行為だと思った。",
+	OutputLine(NULL, "　私は、母の離婚も含めて全てに嫌だと言った。",
 		   NULL, "I told her that I disagreed with everything, including their divorce.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　私は、母の離婚も含めて全てに嫌だと言った。",
+	OutputLine(NULL, "　店中の人がこちらに振り返るくらいの大声で。",
 		   NULL, "I said it very loudly and made everybody in the store jump.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　店中の人がこちらに振り返るくらいの大声で。",
+	OutputLine(NULL, "　アキヒトおじさんとは今までのように親しい関係を続ければいいじゃない。",
 		   NULL, "Sure, continue your relationship with Uncle Akihito, but don't divorce my father.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　アキヒトおじさんとは今までのように親しい関係を続ければいいじゃない。",
+	OutputLine(NULL, "　お父さんが可哀想。",
 		   NULL, "I feel bad for him.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　お父さんが可哀想。",
+	OutputLine(NULL, "　そんなのじゃお父さんが可哀想だ。",
 		   NULL, "I feel terrible for him.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　そんなのじゃお父さんが可哀想だ。",
+	OutputLine(NULL, "　お父さんはずっとお母さんを影で支えてきてくれたのに、これじゃああんまりにお父さんが可哀想だ。",
 		   NULL, "He has been doing nothing but support you patiently this whole time. How could you do such a cruel thing to him?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　お父さんはずっとお母さんを影で支えてきてくれたのに、これじゃああんまりにお父さんが可哀想だ。",
+	OutputLine(NULL, "　そう、あらん限りの声で叫んだ。",
 		   NULL, "I screamed as loud as I could.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　そう、あらん限りの声で叫んだ。",
+	OutputLine(NULL, "　でも母は言った。",
 		   NULL, "Then my mother answered.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　でも母は言った。",
+	OutputLine(NULL, "　…もうね、",
 		   NULL, "\"...It's", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "　…もうね、",
+	OutputLine(NULL, "遅いの、",
 		   NULL, " too", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "遅いの、",
+	OutputLine(NULL, "と。",
 		   NULL, " late.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "と。",
-		   NULL, "Why?!", Line_WaitForInput);
 	OutputLine(NULL, "　どうして？！",
+		   NULL, "Why?!", Line_WaitForInput);
+	OutputLine(NULL, "　お父さんにまだ何も言ってないんだから、遅いなんてことないでしょ？！",
 		   NULL, " You haven't talked with my father about this, have you? It's not too late!", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　お父さんにまだ何も言ってないんだから、遅いなんてことないでしょ？！",
+	OutputLine(NULL, "「お母さんね。",
 		   NULL, "\"I'm...", Line_WaitForInput);
 
 	FadeOutBGM( 0, 0, FALSE );
@@ -786,8 +789,8 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	OutputLine(NULL, "「お母さんね。",
-		   NULL, " ......pregnant.\"", Line_Normal);
+	OutputLine(NULL, "………妊娠してるの。」",
+		   NULL, "......pregnant.\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -800,104 +803,104 @@
 	PlayBGM( 0, "T2", 120, 0 );
 	DrawSceneWithMask( "Re_H1", "maskc", 1, 0, 1300 );
 
-	OutputLine(NULL, "………妊娠してるの。」",
+	OutputLine(NULL, "　母が父に、離婚したい旨を直接会って話したかどうかは分からない。",
 		   NULL, "I don't know whether my mother actually told him about the divorce in person.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "Re_G1", "maskleft", 1, 0, 300 );
 
-	OutputLine(NULL, "　母が父に、離婚したい旨を直接会って話したかどうかは分からない。",
+	OutputLine(NULL, "　ただ、母の弁護士だと名乗る中年の女性が現れ、玄関や電話で何度かやり取りをしていたのは見た。",
 		   NULL, "A middle-aged woman who called herself a lawyer came to the house several times to talk to my father on my mother's behalf. She sometimes called him, too.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　ただ、母の弁護士だと名乗る中年の女性が現れ、玄関や電話で何度かやり取りをしていたのは見た。",
+	OutputLine(NULL, "　父は弁護士に、妻と直接話したいと何度も懇願したが、それはかなわないようだった。",
 		   NULL, "My father begged the lawyer to let him speak directly to my mother many times, but it never happened.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　父は弁護士に、妻と直接話したいと何度も懇願したが、それはかなわないようだった。",
+	OutputLine(NULL, "　そのやり取りから思うに、父にとって母の離婚は余りに唐突で、寝耳に水に違いなかった。",
 		   NULL, "I could tell by the way they talked that he had no clue when my mother told him she wanted a divorce.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　そのやり取りから思うに、父にとって母の離婚は余りに唐突で、寝耳に水に違いなかった。",
+	OutputLine(NULL, "　いや、それどころか、直接会って聞かされたかどうかもわからない。",
 		   NULL, "Well, again, I'm not even sure if she told him in person.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "Denwa", 400 );
 
-	OutputLine(NULL, "　いや、それどころか、直接会って聞かされたかどうかもわからない。",
-		   NULL, "The lawyer told him not to meet my mother, not to call her at work, and many other things, too.", Line_WaitForInput);
 	OutputLine(NULL, "　弁護士は父に、直接の面会、職場への連絡その他を何から何まであれこれと制約し、",
+		   NULL, "The lawyer told him not to meet my mother, not to call her at work, and many other things, too.", Line_WaitForInput);
+	OutputLine(NULL, "とどのつまり、",
 		   NULL, " To top it all off,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "とどのつまり、",
+	OutputLine(NULL, "二度と母に会うなと告げた。",
 		   NULL, " she told him not to see my mother ever again.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
-	OutputLine(NULL, "二度と母に会うなと告げた。",
+	OutputLine(NULL, "　それでも母と話がしたくて、父も知る母の友人たちに連絡を取ったが、浮気の相手の名が分かる以上の何もなりはしなかった。",
 		   NULL, "He wanted to talk to her. He called some of their mutual friends, but he only found out the name of the guy she was having affair with and nothing more.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "Re_H3", 1000 );
 
-	OutputLine(NULL, "　それでも母と話がしたくて、父も知る母の友人たちに連絡を取ったが、浮気の相手の名が分かる以上の何もなりはしなかった。",
+	OutputLine(NULL, "　父が私に、相手の男を知っているか？",
 		   NULL, "He asked me,", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　父が私に、相手の男を知っているか？",
+	OutputLine(NULL, "　と聞いたので。",
 		   NULL, "\"Do you know the guy?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　と聞いたので。",
+	OutputLine(NULL, "　私は知ってるよ、",
 		   NULL, "I told him,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "　私は知ってるよ、",
+	OutputLine(NULL, "と答えた。",
 		   NULL, " \"I do.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "と答えた。",
-		   NULL, "I also told him", Line_WaitForInput);
 	OutputLine(NULL, "　色々とお菓子をくれる面白いおじさん。",
+		   NULL, "I also told him", Line_WaitForInput);
+	OutputLine(NULL, "そうも言った。",
 		   NULL, " that he was a funny guy and had given me candy many times.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "そうも言った。",
+	OutputLine(NULL, "　………その時の父の形相が忘れられない。",
 		   NULL, "...I'll never forget how he looked when I told him that.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "white", 0 );
 	DrawScene( "black", 10 );
 
-	OutputLine(NULL, "　………その時の父の形相が忘れられない。",
+	OutputLine(NULL, "　父は私に初めて手を上げた。",
 		   NULL, "He hit me for the first time.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　父は私に初めて手を上げた。",
-		   NULL, "He hit me so hard that his hand print stayed on my cheek for a while.", Line_WaitForInput);
 	OutputLine(NULL, "　平手の後がしばらく残るくらいに力強く。",
+		   NULL, "He hit me so hard that his hand print stayed on my cheek for a while.", Line_WaitForInput);
+	OutputLine(NULL, "それから父は床に突っ伏し、わんわんと泣いた。",
 		   NULL, " Then, he fell on the floor and cried loudly.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "それから父は床に突っ伏し、わんわんと泣いた。",
+	OutputLine(NULL, "　少し遅れてから、つられるように私も泣いた。",
 		   NULL, "And then, I started to cry, too.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　少し遅れてから、つられるように私も泣いた。…叩かれたからじゃない。",
+	OutputLine(NULL, "…叩かれたからじゃない。",
 		   NULL, "...I didn't cry because he hit me.", Line_Normal);
 	ClearMessage();
 
