@@ -5,7 +5,7 @@ void main()
 
 	PlayBGM( 0, "Iru", 120, 0 );
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Mati10", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/mati2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　父がジャケットを取り寄せたという店は、ちょっと小洒落た感じのブティックだった。",
 		   NULL, "The store where my father ordered the jackets from is a fancy boutique.", Line_Normal);
@@ -53,7 +53,7 @@ void main()
 		   NULL, "...But I didn't really feel comfortable waiting there, so I told him I'd be back soon and left the store.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati10", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/mati2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　どこか、ファーストフードみたいなところがあればいいのだが。",
 		   NULL, "I wondered if there are any fast-food restaurants nearby.", Line_WaitForInput);
@@ -90,7 +90,7 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten2", "maskright", 1, 0, 300 );
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	OutputLine(NULL, "　お店に足を踏み入れての最初の印象は、煙草臭さだった。",
@@ -108,9 +108,6 @@ void main()
 		   NULL, "While she was thinking about leaving, the proprietor spoke to her brusquely and showed her to a table. Rena gave up on the idea of leaving and sat down.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
-
-	DrawScene( "Saten4", 400 );
-
 	OutputLine(NULL, "　店内には、珈琲や煙草を楽しむサロンというイメージはなく、どちらかというと、ガラの悪いゴロツキの溜まり場といった感じだった。",
 		   NULL, "The atmosphere in the shop was far from a clean, normal coffee house where you would go to simply enjoy coffee and cigarettes. It was more like a place where vulgar people would hang around.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -125,7 +122,7 @@ void main()
 		   NULL, " ...But Rena looked as though she wanted to leave as soon as she finished her tea.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　カランカランという、来客を知らせる音が聞こえてくる。",
 		   NULL, "The bell hanging from the entrance door rang, letting her know a customer just came in.", Line_Normal);
@@ -155,8 +152,6 @@ void main()
 	OutputLine(NULL, "　その２人は、先ほどから黄色い声でげらげらと笑い合っている奥の男女のところへ行くと、神妙に頭を垂れながら挨拶をした。",
 		   NULL, "They walked up to the couple who had been laughing loudly, and greeted them with a bow.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "Saten3", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/21/172000001", 128);
 	OutputLine(NULL, "「おう！",
@@ -298,8 +293,6 @@ void main()
 		   NULL, " I'm askin' ya if they paid ya the interest!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten4", "maskleft", 1, 0, 300 );
-
 	OutputLine(NULL, "　男と、律子と呼ばれた女は険悪そうに怒鳴りあう。",
 		   NULL, "The man and Ritsuko yelled at each other.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -356,8 +349,6 @@ void main()
 		   NULL, "He hit the table hard, and dropped a glass on the floor. The noise thickened the tension in the atmosphere.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten3", "maskright", 1, 0, 300 );
-
 	PlayVoice(4, "ps2/00/loana17003", 240);
 	OutputLine(NULL, "「すす、……すんまへん…！！」",
 		   NULL, "\"W-W-We are very sorry!!\"", Line_WaitForInput);
@@ -404,8 +395,9 @@ void main()
 		   NULL, "After a while, Ritsuko opened her mouth as if to offer them help.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Rina_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/rina_def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/tetu_3_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/saten2", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps2/20/172100027", 240);
 	OutputLine(NULL, "「鉄っちゃん。",
@@ -419,7 +411,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Tetu2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tetu_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/21/172000024", 240);
@@ -438,8 +430,6 @@ void main()
 		   NULL, " ......Mmmmm...!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten4", "maskleft", 1, 0, 300 );
-
 	OutputLine(NULL, "　男は力ずくで律子を無理やり抱き寄せると、人目もはばからず、その唇を貪った。",
 		   NULL, "The man pulled Ritsuko roughly into his arms, and frantically kissed her lips without caring about the other customers.", Line_Normal);
 	ClearMessage();
@@ -457,9 +447,6 @@ void main()
 		   NULL, "After a while, he finally got bored of kissing and let her go.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Rina_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten3", "maskright", 1, 0, 300 );
-
 	PlayVoice(4, "ps2/20/172100032", 240);
 	OutputLine(NULL, "「うちの人は、私のことになるとすーぐ頭に血が上っちゃうのよね。",
 		   NULL, "\"He gets really mad when it comes to me, too.", Line_WaitForInput);
@@ -469,7 +456,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Tetu1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tetu_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/21/172000026", 240);
@@ -487,7 +474,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Rina_Warai", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/rina_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100034", 240);
@@ -499,7 +486,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Tetu3", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tetu_3_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/21/172000030", 240);
@@ -526,7 +513,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Rina_Def", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/rina_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100036", 240);
@@ -551,7 +538,7 @@ void main()
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshot( 0, "Rina_Def", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/rina_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100039", 240);
@@ -570,8 +557,8 @@ void main()
 		   NULL, "\"W-We truly apologize for the inconvenience...\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Tetu1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten4", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tetu_1_0", "maskleft", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/saten2", "maskleft", 1, 0, 300 );
 
 	PlayVoice(4, "ps2/21/172000037", 240);
 	OutputLine(NULL, "「んまぁ。",
@@ -585,7 +572,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Rina_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/rina_def_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100042", 240);
@@ -607,7 +594,7 @@ void main()
 	OutputLine(NULL, "……鉄っちゃん、悪いけどあんた、ちょっと席を外してちょうだい。」",
 		   NULL, " ...Tecchan, would you give us a minute?\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Saten4", 400 );
+	DrawScene( "background/saten2", 400 );
 
 	PlayVoice(4, "ps2/21/172000040", 240);
 	OutputLine(NULL, "「ちぇ。",
@@ -626,9 +613,9 @@ void main()
 		   NULL, "...He was far too amenable to that request, as if they'd planned for him to leave the table at that moment.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten1", "maskup", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Rina_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/rina_def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　男が手洗いの扉の向こうに消えるまで見送ると、律子はショルダーバッグから折りたたんだ書類を取り出し、机の上に広げた。",
@@ -643,7 +630,7 @@ void main()
 		   NULL, " You don't want to ruin your life because of an outlaw like him, do you?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Rina_Warai", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/rina_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100050", 240);
@@ -663,7 +650,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Rina_Def", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/rina_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100052", 240);
@@ -692,7 +679,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshotWithFiltering( 0, "Rina_Warai", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/rina_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100054", 240);
@@ -755,8 +742,8 @@ void main()
 		   NULL, "After a while, the man returned from the bathroom.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 2, "Tetu1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Saten2", 400 );
+	DrawBustshot( 2, "sprite/normal/tetu_1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/saten2", 400 );
 
 	PlayVoice(4, "ps2/21/172000042", 240);
 	OutputLine(NULL, "「おう、話はついたがーー？」",
@@ -768,7 +755,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Rina_warai", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/rina_warai_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps2/20/172100062", 240);
@@ -795,7 +782,7 @@ void main()
 		   NULL, "The man and Ritsuko got what they wanted, and grinned at each other.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten4", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten2", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　書類は書く欄が多いらしく、２人の記入作業はなかなか終わらないようだった。",
 		   NULL, "There were many things to fill out on the documents, and it was taking them a long time.", Line_WaitForInput);
@@ -934,7 +921,7 @@ void main()
 		   NULL, " I'll be yer scary ex-boyfriend.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten1", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps2/00/loana17011", 240);
 	OutputLine(NULL, "「…………あの、",
@@ -967,7 +954,8 @@ void main()
 		   NULL, "The man pat them on their shoulders, and then walked to the door.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Saten2", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/tetu_1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/saten2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　…その時、ちょうど入店しようとした客がいたらしく、扉を挟んで鉢合わせになったらしかった。",
 		   NULL, "...Another person was just about to enter, and they nearly ran into each other.", Line_Normal);
@@ -976,10 +964,15 @@ void main()
 	OutputLine(NULL, "　男の乱暴さから考えて、彼が道を譲るとは考えがたい。",
 		   NULL, "The man probably wouldn't make way for the person, considering his personality.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 400, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tetu_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "　………だが、男は、扉の向こうの男が誰か気付くと、道を譲った。",
 		   NULL, "......But, when he noticed who that person was, he stepped aside.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshotWithFiltering( 1, "sprite/normal/kasa_1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	OutputLine(NULL, "　入ってきたのは、負けず劣らずガラの悪い男。",
 		   NULL, "The person looked as vulgar as all the other men.", Line_WaitForInput);
@@ -1007,7 +1000,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Rina_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 400, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/rina_def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/20/172100078", 128);
@@ -1141,8 +1135,7 @@ void main()
 
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 2, "Si_WinkA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/si1a_WinkA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/06/170600018", 128);
@@ -1169,6 +1162,8 @@ void main()
 	OutputLine(NULL, "詩音だった。",
 		   NULL, " Shion.", Line_Normal);
 	ClearMessage();
+	
+	DrawSceneWithMask( "background/saten2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　詩音は渋る葛西の背中を押し、店内にずかずかと入ってきた。",
 		   NULL, "Shion pushed Kasai into the store while he hesitated.", Line_WaitForInput);
@@ -1178,15 +1173,14 @@ void main()
 		   NULL, "She looked at a girl who was sitting down and stopped in her tracks.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Si_DefA1#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/si1a_DefA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	PlayVoice(4, "ps3/s09/06/170600021", 128);
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WaraiB1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600022", 128);
@@ -1201,11 +1195,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_BikkuriA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
-
-	DisableWindow();
-	ChangeBustshot( 1, "Si_DefA1#", 200, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re2a_bikkuriA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200273", 128);
@@ -1215,13 +1205,17 @@ void main()
 	OutputLine(NULL, "　あ、………詩ぃちゃん…？」",
 		   NULL, " Oh......... Shii-chan...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DisableWindow();
+	ChangeBustshot( 1, "sprite/normal/si1a_DefA1_0", 200, TRUE );
+	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600025", 128);
 	OutputLine(NULL, "「こんなとこで会うなんてびっくりです。",
 		   NULL, "\"I'm surprised to see you here.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WinkB1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600026", 128);
@@ -1242,7 +1236,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_KomaruB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re2b_komaruB2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200275", 128);
@@ -1254,7 +1248,8 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_DefA1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_DefA1_0", 200, FALSE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kasa_3_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 7, 0, FALSE );	
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600031", 128);
@@ -1265,7 +1260,7 @@ void main()
 		   NULL, " Are you talking about Kasai here?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WaraiA1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600033", 128);
@@ -1276,18 +1271,13 @@ void main()
 		   NULL, " He'll protect me when my life is in danger, won't you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Kasa3", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
-
 	PlayVoice(4, "ps3/s09/15/1715000006", 128);
 	OutputLine(NULL, "「……それがお望みでしたら命に代えてでも。」",
 		   NULL, "\"...I'll give my life for your sake, if that's what you want me to do.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_AkuwaraiB1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_AkuwaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600035", 128);
@@ -1298,7 +1288,7 @@ void main()
 		   NULL, " Kasai, if you were twenty years younger, I might have fallen for you!", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WinkB1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600037", 128);
@@ -1325,8 +1315,6 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Re_NandeB1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Saten3", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200277", 128);
@@ -1354,8 +1342,7 @@ void main()
 		   NULL, " indicating that he was familiar with them.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Si_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
+	ChangeBustshot( 1, "sprite/normal/si1a_DefA1_0", 200, TRUE );
 
 	PlayVoice(4, "ps3/s09/06/170600040", 128);
 	OutputLine(NULL, "「誰？",
@@ -1364,10 +1351,6 @@ void main()
 	OutputLine(NULL, "　私は全然、あんなの見たことないけど？」",
 		   NULL, " I've never seen them before.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kasa3", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/15/1715000009", 128);
 	OutputLine(NULL, "「……男は北条鉄平。",
@@ -1382,8 +1365,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Re_NandeA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re2a_nandeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200279", 128);
@@ -1403,7 +1385,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_OkoruB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re2b_okoruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200280", 128);
@@ -1437,7 +1419,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "Kasa2", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/kasa_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/15/1715000016", 128);
@@ -1472,7 +1454,7 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	DrawBustshot( 0, "Si_WinkA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600042", 128);
@@ -1516,10 +1498,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
-	FadeBustshotWithFiltering( 1, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
-	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshot( 0, "Kasa3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ChangeBustshot( 0, "sprite/normal/kasa_3_0", 200, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "Z01_Iwakan", 120, 0 );
 
@@ -1534,16 +1513,13 @@ void main()
 		   NULL, " I've also heard that they set up badger games.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawBustshotWithFiltering( 2, "Re_OkoruA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Saten2", "maskright", 1, 0, 300 );
-
 	PlayVoice(4, "ps3/s09/02/170200286", 128);
 	OutputLine(NULL, "「美人局（つつもたせ）って何ですか？」",
 		   NULL, "\"What's a badger game?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Si_AkuwaraiA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_AkuwaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600046", 128);
@@ -1558,8 +1534,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/kasa_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/15/1715000023", 128);
@@ -1571,7 +1546,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_TokuiB1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_TokuiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600049", 128);
@@ -1582,7 +1557,7 @@ void main()
 		   NULL, " Whoever that is, I'm so sorry for him.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WinkA1#", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600051", 128);
@@ -1602,7 +1577,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WaraiA1#", 200, TRUE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, FALSE );
+	ChangeBustshot( 1, "sprite/normal/si1a_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600053", 128);
@@ -1631,7 +1607,7 @@ void main()
 	OutputLine(NULL, "「今、お帰りになりましたよ。」",
 		   NULL, "\"She just took her leave.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Saten3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　レナの姿はすでになく、閉まりかけたガラス扉だけがその行き先を知っているようだった…。",
 		   NULL, "Rena was already gone. The door, which had just closed, looked as if it was the only thing that knew where she went...", Line_Normal);
@@ -1645,7 +1621,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	DrawScene( "black", 400 );
+	DrawScene( "background/re_s4", 400 );
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
 	PlayBGM( 0, "yorumushi", 120, 0 );
 
@@ -1653,7 +1629,7 @@ void main()
 		   NULL, "When I got home, the door was locked.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Si_H4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　鍵を開けて入ると、居間にメモが置かれているのを見つける。",
 		   NULL, "I used my key to get in, and I found a note in the living room.", Line_WaitForInput);
@@ -1680,13 +1656,11 @@ void main()
 		   NULL, "Rina-san must have had some free time between jobs and asked him out to have dinner together.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-
 	OutputLine(NULL, "　軽くため息をつき、私は馴染めない居間を嫌い、自分の部屋に戻った。",
 		   NULL, "I heaved a sigh, looked at the new living room I hated, and went to my room.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/si_h2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　つい先ほど、喫茶店で聞いた話が鮮明に脳裏に蘇る。",
 		   NULL, "I thought back over what I just heard at the coffee house.", Line_Normal);
@@ -1863,7 +1837,7 @@ void main()
 
 	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
 
-	DrawSceneWithMask( "Saten3", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/saten2", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　脳裏に、あの喫茶店での会話が蘇る。",
 		   NULL, "I remember their conversation at the coffee house.", Line_Normal);
@@ -1895,7 +1869,7 @@ void main()
 	DrawScene( "black", 400 );
 	FadeFilm( 0, TRUE );
 
-	DrawSceneWithMask( "Re_H1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_h1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　父の書斎の鍵の掛かった引き出し。",
 		   NULL, "They're in one of his drawers, which he usually locks.", Line_WaitForInput);
@@ -1978,7 +1952,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "aka2", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/aka2", "maskright", 7, 0, 300 );
 
 	OutputLine(NULL, "　通帳を開く。",
 		   NULL, "I opened the bankbook.", Line_Normal);
@@ -2025,7 +1999,7 @@ void main()
 		   NULL, " ......I looked at the date of the withdrawal, and I traced it back in my memory.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　………そうだ、",
 		   NULL, "......I remembered...", Line_ContinueAfterTyping);
@@ -2175,7 +2149,7 @@ void main()
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 	PlayBGM( 2, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "　その頃の日付に目を移すと、……無味簡素なはずの日付が再び雄弁に語り出す。",
@@ -2248,7 +2222,7 @@ void main()
 		   NULL, "Rina-san is eating up the contents...!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　……どうしようどうしよう。",
 		   NULL, "...What should I do?", Line_WaitForInput);
@@ -2294,7 +2268,7 @@ void main()
 		   NULL, "If she pressed her breasts against his back, he'd protect her no matter what.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　…私と父の争いに置き換えられたら話がおかしくなってしまう。",
 		   NULL, "...I couldn't make this a problem between me and him.", Line_WaitForInput);

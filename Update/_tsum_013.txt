@@ -3,12 +3,12 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xbb );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawSceneWithMask( "G1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/g1", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Hi9", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_hi3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -57,8 +57,8 @@ void main()
 		   NULL, " ...I saw her there.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Ta_def#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Tosyo2", 3000 );
+	DrawBustshot( 0, "sprite/normal/ta1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/tosyo2", 3000 );
 
 	PlayVoice(4, "ps3/s09/09/170900001", 128);
 	OutputLine(NULL, "「あら、レナちゃんじゃないかしら。",
@@ -80,7 +80,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_warai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900004", 128);
@@ -101,9 +101,7 @@ void main()
 		   NULL, " ...Her smile gave no indication that she knew her death was just a few days away.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Tosyo7", "maskleft", 1, 0, 300 );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 
 	OutputLine(NULL, "　彼女は、よくここで富竹さんと待ち合わせをしているとのことだった。",
 		   NULL, "She said that she often met with Tomitake-san at the library.", Line_WaitForInput);
@@ -117,12 +115,12 @@ void main()
 	OutputLine(NULL, "　元々急いで帰る用事があるわけでもない。",
 		   NULL, "I had nothing to do after that.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私は図書館の中の自販機でアイスミルクティーをご馳走になり、しばし三四さんとの会話に花を咲かせた。",
 		   NULL, "I let her buy me a canned iced milk tea from the vending machine in the library, and we talked for a while.", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　……今、こうして思い出せば皮肉だった。",
 		   NULL, "...Once I came to think about it, it was a little ironic.", Line_WaitForInput);
@@ -142,8 +140,8 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_def_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200619", 128);
@@ -152,7 +150,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_warai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900007", 128);
@@ -184,7 +182,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900013", 128);
@@ -231,8 +229,10 @@ void main()
 	OutputLine(NULL, "　……もちろん、雛見沢に１年も住んでいる以上、知らないわけはなかった。",
 		   NULL, "...Of course, I know about it. I've lived here for more than a year.", Line_Normal);
 	ClearMessage();
+	
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
 
-	DrawSceneWithMask( "JY2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ji2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　毎年、綿流しの祭りの日に、ダム戦争以来の村の仇敵がつぎつぎに怪死を遂げていく謎の事件。",
 		   NULL, "Every year on the day of the Watanagashi festival, one traitor to the village dies mysteriously. It's been that way since the dam conflict.", Line_Normal);
@@ -262,7 +262,7 @@ void main()
 		   NULL, "My reason for that is because I strongly believe that Satoshi-kun was the one who murdered his aunt on the fourth year.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho1_Houjouke", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ho1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　証拠など何もないけれど、………そうだと確信している。",
 		   NULL, "I don't have any evidence... but I just know it.", Line_WaitForInput);
@@ -284,9 +284,10 @@ void main()
 
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 0, FALSE );
+	FadeFilm( 0, TRUE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Ta_Warai#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_warai_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background//ke_ky2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　でも、悟史くんが４年目の犯人ですと言い出すわけにも行かず、私はしばらくの間、三四さんの話の聞き役に徹していた。",
@@ -305,7 +306,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900016", 128);
@@ -341,7 +342,7 @@ void main()
 		   NULL, " I think there are some people who want to revive those traditions and regain the name and awe of Onigafuchi.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　三四さんの話は突拍子もないけど、刺激的で面白かった。",
 		   NULL, "Miyo-san's theory was more than a little crazy, but it was also fascinating.", Line_WaitForInput);
@@ -397,7 +398,7 @@ void main()
 		   NULL, " ...I know there was conflict between the Sonozaki family and the Houjou family during the dam wars... but still, she was very cold to Satoshi-kun.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　でも、魅ぃちゃんはその罪を認めたじゃないか。",
 		   NULL, "But Mii-chan admitted that what she did was wrong.", Line_WaitForInput);
@@ -417,7 +418,8 @@ void main()
 		   NULL, "I decided to change the subject because I knew it'd make me feel uncomfortable if we kept talking about the Sonozaki family.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Tosyo7", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_def_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/ke_ky2", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200624", 128);
 	OutputLine(NULL, "「そもそも、オヤシロさま信仰って一体何なんでしょうね…。",
@@ -430,10 +432,6 @@ void main()
 		   NULL, " In folk tales, humans usually try to wipe out the demons.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
-
 	PlayVoice(4, "ps3/s09/09/170900020", 128);
 	OutputLine(NULL, "「そうね。",
 		   NULL, "\"That's quite true.", Line_WaitForInput);
@@ -445,7 +443,7 @@ void main()
 		   NULL, " However, there are actually many stories that say people in old days worshipped a god that had drifted to our world from the land of the gods.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900023", 128);
@@ -462,7 +460,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900025", 128);
@@ -473,7 +471,7 @@ void main()
 		   NULL, " Ancient Japanese culture was far behind that of other nations.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900027", 128);
@@ -500,7 +498,7 @@ void main()
 		   NULL, " I think most drifted god worship are based on encounters with foreigners.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Akuwarai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_akuwarai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900031", 128);
@@ -549,8 +547,10 @@ void main()
 	OutputLine(NULL, "「鬼ヶ淵村以外に漂着し、そこから旅をしてここまでやってきた可能性はありませんか？」",
 		   NULL, "\"Isn't there a possibility that the foreigner washed ashore somewhere else first and then traveled to Onigafuchi?\"", Line_Normal);
 	ClearMessage();
+	
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
 
-	DrawSceneWithMask( "Oni2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/oni1", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/09/170900039", 128);
 	OutputLine(NULL, "「ところがオヤシロさま信仰の決定的なところは、",
@@ -599,7 +599,10 @@ void main()
 		   NULL, "...After all, my life went wrong after I left...", Line_Normal);
 
 	ClearMessage();
-	DrawScene( "aka2", 400 );
+	
+	FadeFilm( 0, TRUE );
+	
+	DrawScene( "background/aka2", 400 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "　……これ以上を考えると、頭がぼぅっと霞んで来るのでやめる。",
@@ -636,7 +639,7 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　私はあの時、母の離婚の責任を自分に感じて自暴自棄になっただけだ。",
 		   NULL, "I got desperate because I felt responsible for the divorce.", Line_WaitForInput);
@@ -655,8 +658,8 @@ void main()
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Ta_Akuwarai#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_akuwarai_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/09/170900045", 128);
 	OutputLine(NULL, "「それだけ知ってれば十分よ。",
@@ -677,7 +680,7 @@ void main()
 		   NULL, " They decided to let the demons live in the village with them.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900050", 128);
@@ -719,7 +722,7 @@ void main()
 		   NULL, "She took a scrapbook out of her paper bag.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "File", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/09/170900054", 128);
 	OutputLine(NULL, "「これ、レナちゃんに貸してあげるわ。」",
@@ -762,8 +765,8 @@ void main()
 		   NULL, "However, the day I'd return the scrapbook to Miyo-san never came...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Ta_def#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo7", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_def_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/09/170900059", 128);
 	OutputLine(NULL, "「どうしたの？",
@@ -822,7 +825,8 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Tosyo7", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_def_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200640", 128);
@@ -834,7 +838,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ta_Warai#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900062", 128);
@@ -854,7 +858,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900064", 128);
@@ -898,7 +902,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Akuwarai#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_akuwarai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900066", 128);
@@ -921,7 +925,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900067", 128);
@@ -932,7 +936,7 @@ void main()
 		   NULL, " ...You broke the rule of Oyashiro-sama, which is to never leave Hinamizawa.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ke5", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ke5", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200649", 128);
 	OutputLine(NULL, "「そうです。",
@@ -988,7 +992,7 @@ void main()
 		   NULL, " Go on.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　あの時の悪寒と汚らわしさが、ぞくぞくと背筋を上りだす。",
 		   NULL, "The chill I felt at that time came back to me.", Line_WaitForInput);
@@ -1011,7 +1015,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 	PlayBGM( 0, "B08_Izyou", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200658", 128);
@@ -1050,7 +1054,7 @@ void main()
 		   NULL, "I understand, Ryugu-san. So, please calm down...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 	PlaySE( 0, "s_semi", 128, 64 );
 
 	PlayVoice(4, "ps3/s09/02/170200666", 128);
@@ -1114,8 +1118,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 2, "Ta_def#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Tosyo8", 4000 );
+	DrawBustshotWithFiltering( 2, "portrait/normal/ta1_human_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawScene( "background/ke_ky2", 4000 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1135,7 +1139,7 @@ void main()
 		   NULL, " ...Her touch brought me back to reality.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ke5", 400 );
+	DrawScene( "background/ke5", 400 );
 
 	PlayVoice(4, "ps3/s09/09/170900076", 128);
 	OutputLine(NULL, "「……………それで、……どうしたの？」",
@@ -1191,7 +1195,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_chisibuki", 128, 64 );
-	DrawScene( "ryuuketu1", 10 );
+	DrawScene( "background/ryuuketu1", 10 );
 
 	OutputLine(NULL, "　そこから……やっぱり、血と、赤黒くてたくさん蠢く汚らしいうじ虫の群れが…！！",
 		   NULL, "I knew it... A lot of blood and many dusky-red maggots came out from the wound...!!", Line_Normal);
@@ -1233,7 +1237,7 @@ void main()
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "white", 3000 );
 	PlayBGM( 0, "Soul_scour", 120, 0 );
-	DrawScene( "black", 400 );
+	DrawScene( "background/oyashirosama", 400 );
 
 	OutputLine(NULL, "　その時、………………まぶしい光いっぱいに満たされたのだ。",
 		   NULL, "And then... a very bright light shone upon me.", Line_Normal);
@@ -1272,7 +1276,7 @@ void main()
 		   NULL, "That wasn't all. All the maggots that were moving throughout all my veins disappeared, too...!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　オヤシロさまは教えてくれた。",
 		   NULL, "Oyashiro-sama taught me.", Line_WaitForInput);
@@ -1309,7 +1313,7 @@ void main()
 		   NULL, "The answer was very simple.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　それは雛見沢に帰ること。",
 		   NULL, "All I needed to do was to go back to Hinamizawa.", Line_Normal);
@@ -1337,7 +1341,7 @@ void main()
 		   NULL, "And so, I had to go back...!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
+	DrawScene( "background/oyashirosama", 400 );
 
 	OutputLine(NULL, "　オヤシロさまはこうも言った。",
 		   NULL, "Oyashiro-sama also told me this:", Line_Normal);
@@ -1369,7 +1373,7 @@ void main()
 		   NULL, "He did. I heard him tell me that!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　私はもっともっと早くに雛見沢に帰らなければならなかったんだ。",
 		   NULL, "I should've gone back to Hinamizawa earlier.", Line_WaitForInput);
@@ -1389,7 +1393,7 @@ void main()
 		   NULL, " Let's go back to Hinamizawa. That's the only place where we can live!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　早く早く！",
 		   NULL, "We need to hurry!", Line_WaitForInput);
@@ -1426,8 +1430,8 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshot( 0, "Ta_Def#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Tosyo7", 4000 );
+	DrawBustshot( 0, "portrait/normal/ta1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/ke_ky2", 4000 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1442,7 +1446,7 @@ void main()
 		   NULL, "...I was breathing hard, and Miyo-san was holding my shoulders.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ke5", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ke5", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　………今日までせっかく忘れていた忌まわしい記憶が蘇るのを感じた。",
 		   NULL, "...I could feel that the terrible memory I'd been trying to forget was awakening.", Line_WaitForInput);
@@ -1477,7 +1481,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Hi2", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/hi1", "maskm1", 1, 0, 300 );
 
 	OutputLine(NULL, "　そして、………雛見沢へ戻ってきた。",
 		   NULL, "So... we came back to Hinamizawa.", Line_Normal);
@@ -1505,7 +1509,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Sinryo_matiai2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_matiai1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　引っ越した後も、しばらくは穀倉の方の心療内科に通った。",
 		   NULL, "After I moved here, I went to the clinic in Gogura for a while.", Line_WaitForInput);
@@ -1546,7 +1550,7 @@ void main()
 		   NULL, " ...I liked that.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK2", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk3", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　だから、学校での自己紹介の時、レナと呼んでほしいと言った。",
 		   NULL, "When I was introduced to my classmates, I told them to call me Rena.", Line_WaitForInput);
@@ -1582,7 +1586,8 @@ void main()
 		   NULL, " The lights were still flickering...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Tosyo7", 400 );
+	DrawBustshotWithFiltering( 0, "portrait/normal/ta1_def_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawScene( "background/ke_ky2", 400 );
 
 	PlayVoice(4, "ps3/s09/02/170200679", 128);
 	OutputLine(NULL, "「………すみません。",
@@ -1591,17 +1596,13 @@ void main()
 	OutputLine(NULL, "……私、だいぶ取り乱してました…？」",
 		   NULL, " ...Was I panicking that badly...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
-
+	
 	PlayVoice(4, "ps3/s09/09/170900078", 128);
 	OutputLine(NULL, "「小声で何か呟いてたわね。",
 		   NULL, "\"You were muttering to yourself.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900079", 128);
@@ -1659,7 +1660,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900081", 128);
@@ -1692,7 +1693,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900086", 128);
@@ -1718,7 +1719,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900091", 128);
@@ -1784,7 +1785,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900098", 128);
@@ -1806,8 +1807,7 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_def_0", 200, TRUE );
 	DisplayWindow();
 	PlaySE( 0, "s_suzu", 128, 64 );
 
@@ -1816,7 +1816,7 @@ void main()
 		   NULL, "\"Well... I'll let you borrow my secret files and my scrapbooks.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "portrait/normal/ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/09/170900102", 128);
@@ -1836,7 +1836,7 @@ void main()
 		   NULL, "She took a few scrapbooks out of her paper bag, and handed them to me.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "File", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/09/170900105", 128);
 	OutputLine(NULL, "「ぜひ読んで、感想を聞かせてね。",
@@ -1920,7 +1920,7 @@ void main()
 		   NULL, " ...I don't think he'd have believed me even if I told him.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 	PlaySE( 0, "s_yabaisemi", 128, 64 );
 
 	OutputLine(NULL, "　富竹さんは、…………間違いない。",
@@ -1960,7 +1960,7 @@ void main()
 		   NULL, "It might be for another reason... Anyway... he died from the curse of Oyashiro-sama, without a doubt.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	StopSE( 0 );
@@ -2060,7 +2060,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "M_Hi12", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　これは怪しげな狂信者たちの暗躍なのか、それともオヤシロさまの祟りなのか。",
@@ -2136,8 +2136,6 @@ void main()
 	OutputLine(NULL, "　……そんな三四さんが残したものを、読みもせずに焼き捨てていいんだろうか…。",
 		   NULL, "...It'd feel wrong to burn them without taking a look.", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　それが陰謀なら、暴かなければならない。",
 		   NULL, "If it's a conspiracy, I have to expose it.", Line_WaitForInput);
