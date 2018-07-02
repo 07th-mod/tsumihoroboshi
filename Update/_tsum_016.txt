@@ -8,14 +8,14 @@ void main()
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 300 );
 	PlayBGM( 1, "denwa_m", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Ma_G3", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma_g3_01", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "B_Dive", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/01/170100589", 128);
@@ -55,9 +55,10 @@ void main()
 	OutputLine(NULL, "……多分、ダム戦争の当時から、陰で様々な工作をしてきた連中なんだと思う。」",
 		   NULL, " ...They must be the ones who have been pulling strings behind the scenes, ever since the dam conflict.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Damu2", "maskup", 1, 0, 300 );
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, FALSE );
+	DrawSceneWithMask( "background/damu2", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100594", 128);
 	OutputLine(NULL, "「………ダム戦争の最中に、園崎家が裏で色々と暗躍したーって話は、俺も少しは聞いたことがあるな。」",
@@ -105,7 +106,7 @@ void main()
 		   NULL, "...and...?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati12", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/mati12", "maskleft", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200812", 128);
 	OutputLine(NULL, "「大石さんが言うには、孫の誘拐や大臣の脅迫などの手口は、恐ろしいほどに高度だったんだって。",
@@ -122,7 +123,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Hi1", 400 );
+	DrawScene( "background/hi1", 400 );
 
 	OutputLine(NULL, "　ダム戦争の当時、園崎家が本当に戦争紛いの違法行為で抵抗したのは有名だ。",
 		   NULL, "Everybody knows that the Sonozaki family had tried to stop the dam project even if it meant breaking the law.", Line_WaitForInput);
@@ -142,7 +143,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "File", 400 );
+	DrawScene( "background/file", 400 );
 
 	OutputLine(NULL, "　ダム戦争が終結した直後に大石が掴んだ情報だった。",
 		   NULL, "Ooishi had uncovered the information right after the dam conflict ended.", Line_WaitForInput);
@@ -183,7 +184,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Ma_G3", "maskdown", 1, 0, 300 );
+	FadeFilm( 0, FALSE );
+	DrawSceneWithMask( "background/ma_g3_01", "maskdown", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100599", 128);
 	OutputLine(NULL, "「……う、……嘘みたいな話だな…。」",
@@ -378,7 +380,7 @@ void main()
 		   NULL, " What's the secret that killed Miyo-san?!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	PlayVoice(4, "ps3/s09/02/170200842", 128);
 	OutputLine(NULL, "「簡単に言うと、……………このスクラップ帖に書いてあることが事実なら、彼らの神が貶められることになるの。」",
@@ -423,8 +425,10 @@ void main()
 	OutputLine(NULL, "　何を根拠にそうだと断じるのかはわからないが、どういう内容であれ、オヤシロさまを狂信的に信仰する連中にとっては、神を冒涜する内容でしかない。",
 		   NULL, "I had no idea what she read that made her so certain, but whatever it was, it'd be sacrilegious for people who believed so strongly in Oyashiro-sama.", Line_Normal);
 	ClearMessage();
+	
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, FALSE );
 
-	DrawScene( "Ji1", 400 );
+	DrawScene( "background/ji1", 400 );
 
 	PlayVoice(4, "ps3/s09/02/170200848", 128);
 	OutputLine(NULL, "「オヤシロさまの教えって、いくつもあるけど、その原点はたったのひとつしかない。",
@@ -453,7 +457,7 @@ void main()
 		   NULL, "The people believe that Oyashiro-sama does all that for them, but the truth is that the people abused his name for that purpose, generation after generation, and nothing more than that.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Oni1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/oni1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　そもそもオヤシロさまはなぜ降臨したのか。",
 		   NULL, "Why did Oyashiro-sama descend in the first place?", Line_WaitForInput);
@@ -492,7 +496,8 @@ void main()
 		   NULL, "People had no resistance against whatever it was that came out of the swamp. They became demons, attacked the other villagers, and turned them into demons as well.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Oni1_nega1_6", "maskc", 1, 0, 300 );
+	FadeFilm( 0, FALSE );
+	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
 
 	OutputLine(NULL, "　そう。",
 		   NULL, "That's right.", Line_WaitForInput);
@@ -556,6 +561,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
 
 	OutputLine(NULL, "　対症療法とは即ち、症状を軽減させるだけの根本的でない治療法を指す。",
 		   NULL, "All his treatment could do was reduce the symptoms of the infection.", Line_WaitForInput);
@@ -566,7 +572,8 @@ void main()
 		   NULL, "...Villagers could have their symptoms suppressed, but there was no way to kill the parasites that had infested them.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Hi2", 400 );
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, FALSE );
+	DrawScene( "background/hi1", 400 );
 
 	OutputLine(NULL, "　やがて、村は二つに分かれる。",
 		   NULL, "After a while, the village was divided into two groups.", Line_WaitForInput);
@@ -603,6 +610,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
 
 	OutputLine(NULL, "　「オヤシロさま」の力があれば、感染者も異常な症状を出さずに生活できる。",
 		   NULL, "Under the power of \"Oyashiro-sama,\" infected people could live without showing symptoms.", Line_WaitForInput);
@@ -655,7 +663,7 @@ void main()
 		   NULL, " ...That reaction is the truth behind 'the curse of Oyashiro-sama'.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　感染症の最大の特徴は、錯乱や凶暴性だった。",
 		   NULL, "The strongest symptoms of the infectious disease were violence and delirium.", Line_WaitForInput);
@@ -793,7 +801,8 @@ void main()
 		   NULL, "\"............I see.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Y_kawa3", "maskright", 1, 0, 300 );
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, FALSE );
+	DrawSceneWithMask( "background/y_kawa3", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps2/02/170200881", 128);
 	OutputLine(NULL, "「太古の綿流しはね、実はハラワタ流しと書く、物騒なものでね。",
@@ -828,7 +837,9 @@ void main()
 		   NULL, " They created a vaccine from the infected people who died from the extremely strong parasites, and that helped the uninfected villagers boost their immune system.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma_G3", "maskright", 1, 0, 300 );
+	DrawScene( "black", 50 );
+	FadeFilm( 0, FALSE );
+	DrawSceneWithMask( "background/ma_g3_01", "maskright", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100639", 128);
 	OutputLine(NULL, "「…………オヤシロさまってのは何者なんだよ一体。",
@@ -984,7 +995,7 @@ void main()
 	DrawScene( "white", 400 );
 
 	SetColorOfMessage( TRUE, 0xff, 0x88, 0x88 );
-	DrawSceneWithMask( "Re_Tel", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "background/re_tel", "maskleft", 7, 0, 300 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1050,7 +1061,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "File", 400 );
+	DrawScene( "background/file", 400 );
 
 	OutputLine(NULL, "　人体は寄生虫の侵入を受けると、EosinoやMacrophegeと言った免疫細胞でそれを駆逐しようとする。",
 		   NULL, "When a parasite enters a human body, that body's immune system cells (eosinophils and macrophages) try to kill the parasite.", Line_WaitForInput);
@@ -1154,7 +1165,7 @@ void main()
 		   NULL, "In other words, there's no hay fever in Hinamizawa, and you can cure your hay fever by moving here.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_tel", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100657", 128);
 	OutputLine(NULL, "「……つまり、特定はできなくても、その存在だけは疑いようがないってわけだ。」",
@@ -1271,7 +1282,7 @@ void main()
 		   NULL, "In other words, they want to bring back the primitive endemic disease, namely the harmful, strong version of the parasite.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re_Tel", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_tel", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100663", 128);
 	OutputLine(NULL, "「ちょっと待てよ！",
@@ -1444,7 +1455,7 @@ void main()
 		   NULL, " after five years of research.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　５年目の犠牲者である富竹さんの異常な死に方は、同じ体験をした私にだけはわかる。",
 		   NULL, "Tomitake-san is the victim of the fifth year. He died in an extremely abnormal way. And I'm the only one who understands his death, because I experienced the same thing.", Line_WaitForInput);
@@ -1476,7 +1487,7 @@ void main()
 		   NULL, "The parasite was weak and harmless, but my mental instability allowed it to worsen my symptoms dramatically.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　その結果が、私の錯乱と凶暴化だったのだ。",
 		   NULL, "As a result, I went crazy and became violent.", Line_Normal);
@@ -1533,7 +1544,7 @@ void main()
 		   NULL, " It would be in celebration of the revival of Oyashiro-sama.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Si_H2", 400 );
+	DrawScene( "background/re_tel", 400 );
 
 	PlayVoice(4, "ps3/s09/01/170100675", 128);
 	OutputLine(NULL, "「………なぁ、それってよ、",
@@ -1621,7 +1632,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Oisi1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/oisi1_1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200948", 128);
@@ -1657,7 +1668,7 @@ void main()
 		   NULL, " He only told me things to make me suspicious of the Sonozaki family. He could have just been trying to look like he was on my side, and that he's actually their minion.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re_Tel", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_tel", "maskdown", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100688", 128);
 	OutputLine(NULL, "「け、……警察を疑い出したらおしまいだぞ…。」",
@@ -1738,7 +1749,7 @@ void main()
 		   NULL, " Please tell me!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_g1", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200965", 128);
 	OutputLine(NULL, "「……御三家である魅ぃちゃんや梨花ちゃんが直接関係しているかはわからない。",
@@ -1798,7 +1809,7 @@ void main()
 		   NULL, " Sure, it'd be great if we could pull her to our side, but what if we couldn't?!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re_Tel", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_tel", "maskdown", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100701", 128);
 	OutputLine(NULL, "「じゃあ…、俺とレナだけでどう戦うつもりなんだよ？！」",
@@ -1962,7 +1973,7 @@ void main()
 		   NULL, "On \"The Day of Oyashiro-sama's Revival\" they're going to spread a dangerous parasite, and that day might be just around the corner...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Re_H3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_g1", "maskleft", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/00/172900067", 128);
 	OutputLine(NULL, "「……礼奈。",
@@ -2016,7 +2027,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
-	DrawSceneWithMask( "Ma_G3", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/ma_g3_01", "maskright", 7, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170201000", 128);
 	OutputLine(NULL, "「ごめんね圭一くん。",

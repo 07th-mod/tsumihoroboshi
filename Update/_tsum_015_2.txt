@@ -2,7 +2,8 @@ void main()
 {
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_NandeA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2b_komaruB2_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200697", 128);
@@ -31,9 +32,6 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruB1#", 200, TRUE );
-	DisplayWindow();
 	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200700", 128);
@@ -88,7 +86,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_NandeA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_nandeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200702", 128);
@@ -206,7 +204,7 @@ void main()
 		   NULL, " They were attacked right after that.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 1, "Tomi_def#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/tomi1_def_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200712", 128);
@@ -215,7 +213,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
-	DrawBustshot( 2, "Ta_Def#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "sprite/normal/ta1_def_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200713", 128);
@@ -292,7 +290,7 @@ void main()
 		   NULL, "If it was Mion, she'd be sticking her tongue out by now. But Rena wouldn't make a joke out of something like this.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "ryuuketu1", 400 );
+	DrawScene( "background/ryuuketu1", 400 );
 
 	PlayVoice(4, "ps3/s09/02/170200723", 128);
 	OutputLine(NULL, "「三四さんが殺された理由は、……多分、彼女の研究のせいだと思うの。",
@@ -335,7 +333,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "File", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200727", 128);
 	OutputLine(NULL, "「………………私は、……三四さんのスクラップ帖をほんの数冊借りて読んだだけ。",
@@ -354,7 +352,8 @@ void main()
 		   NULL, " ...Right now, I'm trying to find out whether Miyo-san's theory is right or not.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "M_Hi13", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2a_komaruA2_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100542", 128);
 	OutputLine(NULL, "「……で、……何なんだ一体。",
@@ -374,7 +373,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_KomaruA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_komaruA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200732", 128);
@@ -394,7 +393,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_NandeB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_nandeB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200735", 128);
@@ -418,7 +417,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_NandeA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_nandeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　……レナはまるで寒さでも感じるかのように、自分の両肘を抱く仕草をした。",
@@ -437,7 +436,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_WaraiA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_waraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200737", 128);
@@ -462,7 +461,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200739", 128);
@@ -482,7 +481,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_defA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200741", 128);
@@ -493,7 +492,7 @@ void main()
 		   NULL, " But it's very reassuring that I can ask you for help when I need it.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_WaraiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_waraiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200743", 128);
@@ -533,8 +532,6 @@ void main()
 		   NULL, "....................", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "M_Hi13", 400 );
-
 	OutputLine(NULL, "　しばらく息を殺していると、車の音が聞こえてきて、白いワゴン車が通り過ぎていった。",
 		   NULL, "We stayed quiet for a while. I could hear a car coming closer, and after a while a white van passed by.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -551,7 +548,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_OkoruA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/re2b_okoruB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, FALSE );
+	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200745", 128);
@@ -605,7 +603,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Sora5", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora5", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　……もう本当に突拍子もない話で、…当事者であるレナ自身がにわかには信じ難いというのも無理はなかった。",
 		   NULL, "...I don't blame her for not being able to believe what's going on, because this is really crazy.", Line_WaitForInput);
@@ -628,7 +626,8 @@ void main()
 		   NULL, "That's why... they're trying to kill Rena...?", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "M_Hi13", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2b_okoruB1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100558", 128);
 	OutputLine(NULL, "「じゃあ、レナの家が危ないってことはないのか！？」",
@@ -636,7 +635,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_WaraiA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2a_waraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200751", 128);
@@ -647,7 +646,7 @@ void main()
 		   NULL, " I hid the scrapbooks in my secret hideout at the garbage dump.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200753", 128);
@@ -661,7 +660,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_WaraiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_waraiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200754", 128);
@@ -686,7 +685,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200757", 128);
@@ -712,7 +711,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_KomaruB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_komaruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200760", 128);
@@ -734,7 +733,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	ChangeBustshot( 2, "Re_OkoruA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_okoruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200761", 128);
@@ -757,7 +756,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DrawScene( "black", 400 );
-	DrawScene( "Simen2", 400 );
+	DrawScene( "background/simen3", 400 );
 	PlayBGM( 0, "B_Dive", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200765", 128);
@@ -789,7 +788,7 @@ void main()
 		   NULL, " Nobody really says it out loud, but everybody is suspicious that the Sonozaki family is behind it... That's what I've heard.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "ryuuketu1", 400 );
+	DrawScene( "background/ryuuketu1", 400 );
 
 	PlayVoice(4, "ps3/s09/02/170200768", 128);
 	OutputLine(NULL, "「でも、裏切り者を制裁するなら、別に綿流しの晩にこだわらなくてもいいんじゃない？",
@@ -818,7 +817,7 @@ void main()
 		   NULL, " Their goal is to revive the level of belief in Oyashiro-sama that used to exist in primitive times.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "JY2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/jy2", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100571", 128);
 	OutputLine(NULL, "「……オヤシロさま信仰…。",
@@ -902,7 +901,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 	PlayBGM( 0, "semi", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/01/170100577", 128);
@@ -930,8 +929,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawBustshotWithFiltering( 0, "Re_KomaruA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "M_Hi13", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/re2a_komaruA1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/02/170200791", 128);
 	OutputLine(NULL, "「………もう少し、時間がほしいの。",
@@ -953,7 +952,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_OkoruB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_okoruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200795", 128);
@@ -970,7 +969,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/02/170200797", 128);
@@ -998,8 +997,7 @@ void main()
 		   NULL, "The cries of the cicadas surrounded around me, making it seem as if I was alone there the whole time.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "M_Hi12", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　……………俺は仕方なく歩き始めるが、……呆然としたままだった。",
 		   NULL, "...I started walking... still dumbfounded.", Line_WaitForInput);
@@ -1049,7 +1047,7 @@ void main()
 		   NULL, " I mean... it's not funny even if it's a joke.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/Sora", 400 );
 
 	OutputLine(NULL, "　……だが、なるほど、レナの言うとおりだな。",
 		   NULL, "...But Rena is right about one thing.", Line_WaitForInput);
@@ -1117,8 +1115,6 @@ void main()
 		   NULL, "If I had said that it was ridiculous or something to her face, Rena wouldn't have trusted me ever again.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "M_Hi5", 400 );
-
 	OutputLine(NULL, "　その時、ぎょっとした。",
 		   NULL, "At that point, however, I gasped.", Line_Normal);
 	ClearMessage();
@@ -1126,12 +1122,12 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "background/mo2", "maskleft", 1, 0, 300 );
 	PlaySE( 0, "s_jikuu_short", 128, 64 );
 
 	OutputLine(NULL, "　白いワゴン車が路肩に止まっていたからだ。",
 		   NULL, "A white van was parked on the side of the street.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
 
 	PlayBGM( 1, "suzu", 120, 0 );
 
@@ -1456,7 +1452,7 @@ void main()
 		   NULL, "The man started the engine and drove away.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　走り去った後には何も残らない。",
 		   NULL, "After they left, I saw nothing.", Line_WaitForInput);

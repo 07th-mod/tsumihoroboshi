@@ -3,11 +3,11 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 0, "semi", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora", "maskm1", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskleft", 1, 0, 300 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -21,7 +21,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_TohohoB1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1b_TohohoA1_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300269", 128);
@@ -46,7 +46,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_TokuiA1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_TokuiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300270", 128);
@@ -63,7 +63,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_TohohoB2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_TohohoA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300271", 128);
@@ -95,7 +95,7 @@ void main()
 		   NULL, "...Mion and I stopped talking and used our notebooks to fan ourselves.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　空いた机が目に入る。",
 		   NULL, "I looked at the empty seat nearby.", Line_WaitForInput);
@@ -111,7 +111,7 @@ void main()
 		   NULL, "She called and told Chie-sensei she couldn't come because she's sick.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	PlayVoice(4, "ps3/s09/01/170100494", 128);
 	OutputLine(NULL, "「……………レナのやつ、",
@@ -183,9 +183,9 @@ void main()
 		   NULL, "She must have not quite recovered yet...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK1", "maskup", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Me_YowakiA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/me1a_YowakiA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/gk1", "maskup", 1, 0, 300 );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300278", 128);
@@ -193,7 +193,7 @@ void main()
 		   NULL, "\"...This ol' man thought she'd get over it if she played along with us.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_TohohoA1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_TohohoA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300279", 128);
@@ -210,7 +210,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_DefB2", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1b_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300280", 128);
@@ -228,7 +228,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WinkA1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300281", 128);
@@ -239,7 +239,7 @@ void main()
 		   NULL, " You get lonely, and you want to call home just to hear your mom's voice. But that actually makes your homesickness worse.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_TokuiB2", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1b_TokuiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300283", 128);
@@ -253,7 +253,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_DefA1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300284", 128);
@@ -276,7 +276,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_TokuiB1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1b_TokuiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300288", 128);
@@ -290,7 +290,7 @@ void main()
 		   NULL, " By finding initial success through relying on someone and receiving comfort, they grow addicted to indulging in misfortune.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WinkA2", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_WinkA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300291", 128);
@@ -307,7 +307,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_waraiA1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300293", 128);
@@ -325,7 +325,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_tohohoB1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1b_TohohoA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300294", 128);
@@ -333,7 +333,7 @@ void main()
 		   NULL, "\"That's a golden rule for psychologists, did you know?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_DefB1", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1b_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300295", 128);
@@ -362,7 +362,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WaraiA2", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300298", 128);
@@ -381,8 +381,7 @@ void main()
 		   NULL, " ...I dunno about that.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Ri_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri1_DefA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlayVoice(4, "ps3/s09/05/170500085", 128);
 	OutputLine(NULL, "「……圭一にだってできることがありますですよ。」",
@@ -403,7 +402,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_WAraiA1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/ri1_WaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/05/170500086", 128);
@@ -420,7 +419,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_DefA2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/me1a_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300300", 128);
@@ -432,7 +431,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_DefA1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/ri1_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/05/170500087", 128);
@@ -473,7 +472,9 @@ void main()
 		   NULL, " she'd be very disappointed, because she'd think that I didn't understand her pain...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "GK2", 400 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_DefA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri1_DefA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/gk1", 400 );
 
 	PlayVoice(4, "ps3/s09/01/170100512", 128);
 	OutputLine(NULL, "「………………そうだな。",
@@ -507,14 +508,15 @@ void main()
 	OutputLine(NULL, "　俺は、本当の意味でレナの味方になっていなかった…。",
 		   NULL, "I wasn't on her side in the real sense of the term...", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
+	ChangeBustshot( 2, "portrait/normal/ri1_WaraiA1_0", 200, TRUE );
+	DisplayWindow();
+
 
 	OutputLine(NULL, "　その時、梨花ちゃんの手が俺の頭を、そっと撫でた。",
 		   NULL, "All of a sudden, Rika-chan patted my head.", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	DrawBustshot( 0, "Ri_WaraiA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/05/170500089", 128);
 	OutputLine(NULL, "「……圭一は一番のレナの味方ですよ。",
@@ -533,7 +535,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_TokuiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_TokuiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300302", 128);
@@ -544,7 +546,7 @@ void main()
 		   NULL, " Kei-chan, you really did give her great strength on that day.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Me_AkuwaraiB2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_AkuwaraiA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/03/170300304", 128);
@@ -561,9 +563,9 @@ void main()
 
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_door", 128, 64 );
-	DrawSceneWithMask( "GK1", "maskright", 7, 0, 300 );
 	DisableWindow();
-	DrawBustshot( 0, "Tie1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tie_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/gk3", "maskright", 7, 0, 300 );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/22/171400007", 128);
@@ -580,7 +582,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskup", 1, 0, 300 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "background/Sora", 400 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -594,7 +596,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "G1", 400 );
+	DrawScene( "background/g1", 400 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
@@ -602,7 +604,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Hi5", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -618,9 +620,6 @@ void main()
 		   NULL, " because I had an errand to run.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Hi7", "maskleft", 1, 0, 300 );
-
 	OutputLine(NULL, "　買い物の内容も大したものじゃない。",
 		   NULL, "It wasn't a big errand.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -635,7 +634,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "M_Hi15", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　だから、帰り道に商店街へよろうと、いつもと違う道に入ったときだった。",
 		   NULL, "I started walking towards the shopping center.", Line_Normal);
@@ -693,7 +692,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "M_Hi13", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　レナは仕草で、俺に茂みの影にしゃがんで隠れるように指示する。",
 		   NULL, "Rena gestured for me to squat down to hide in the shadow of the bush.", Line_WaitForInput);
