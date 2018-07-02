@@ -5,7 +5,8 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+	Wait( 100 );
 
 	PlayBGM( 1, "Mati", 120, 0 );
 
@@ -676,153 +677,154 @@
 	PlaySE( 0, "s_Z02_Kyousou", 128, 64 );
 
 	OutputLine(NULL, "そしてその翌日なんだ。",
-		   NULL, " And the very next day, the Great Hinamizawa Disaster occurred.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " And the very next day,", Line_WaitForInput);
 
 	OutputLine(NULL, "雛見沢大災害が起こるのは。」",
-		   NULL, "\"You've got to be kidding!", Line_WaitForInput);
+		   NULL, " the Great Hinamizawa Disaster occurred.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
 	OutputLine(NULL, "「まさか！",
+		   NULL, "\"You've got to be kidding!", Line_WaitForInput);
+	OutputLine(NULL, "　そりゃ偶然じゃないんですか。」",
 		   NULL, " Couldn't it be just a coincidence?\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　そりゃ偶然じゃないんですか。」",
-		   NULL, "\"I don't know.", Line_WaitForInput);
 	OutputLine(NULL, "「わからない。",
-		   NULL, " According to people who believe it's not just a coincidence, there are many inconsistencies in the SDF's immedate sealing-off operation.", Line_WaitForInput);
+		   NULL, "\"I don't know.", Line_WaitForInput);
 	OutputLine(NULL, "偶然ではないと思う連中に言わせると、その後の自衛隊による封鎖はおかしなことだらけらしい。",
-		   NULL, " Filling this swamp with concrete is one example.", Line_WaitForInput);
+		   NULL, " According to people who believe it's not just a coincidence, there are many inconsistencies in the SDF's immedate sealing-off operation.", Line_WaitForInput);
 	OutputLine(NULL, "例えばこの沼の埋め立てが一例だ。",
-		   NULL, " Several of the SDF soldiers on duty at the time testified that some people were conducting secret investigations outside the usual geological survey before the area was closed off.", Line_WaitForInput);
+		   NULL, " Filling this swamp with concrete is one example.", Line_WaitForInput);
 	OutputLine(NULL, "そして埋め立てる前に、明らかに通常の地質調査とは異なる秘密の調査を行なっていたとされていて、当時、ここの封鎖に関わっていた自衛隊員たちがそれを何人も証言している。",
+		   NULL, " Several of the SDF soldiers on duty at the time testified that some people were conducting secret investigations outside the usual geological survey before the area was closed off.", Line_WaitForInput);
+	OutputLine(NULL, "……否定派はそれを、単にガスの発生地なので、危険に備えて立入を制限していただけだと主張するんだがね。」",
 		   NULL, " Of course, those who think it's just a coincidence say that the researchers simply took precautionary measures to keep unauthorized people out of the area.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "……否定派はそれを、単にガスの発生地なので、危険に備えて立入を制限していただけだと主張するんだがね。」",
+	OutputLine(NULL, "「それは多分、…否定派の言うのが正しいんじゃないかと思いますね。」",
 		   NULL, "\"I'd have to agree with the latter people.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「それは多分、…否定派の言うのが正しいんじゃないかと思いますね。」",
-		   NULL, "\"People also question why they sealed off the village for such a long time.", Line_WaitForInput);
 	OutputLine(NULL, "「他にも、異常に長かった封鎖期間も疑惑の目が向けられている。",
-		   NULL, " After its volcanic gas eruption, Miyake Island was only sealed off for four to five years.", Line_WaitForInput);
+		   NULL, "\"People also question why they sealed off the village for such a long time.", Line_WaitForInput);
 	OutputLine(NULL, "近年の東京都三宅島の火山ガス災害の例を見てもわかるように、４〜５年で立入禁止を解いている。",
+		   NULL, " After its volcanic gas eruption, Miyake Island was only sealed off for four to five years.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢のケースは例外中の例外のケースのはずなのに、封鎖は極めて長期に及んだ。」",
 		   NULL, " What happened in Hinamizawa was an exceptionally rare natural disaster, yet it was sealed for over twenty years.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "雛見沢のケースは例外中の例外のケースのはずなのに、封鎖は極めて長期に及んだ。」",
-		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_WaitForInput);
 	OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
+		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
 		   NULL, " But, in the case of Hinamizawa, there were no residents alive who wished to return in the first place. Perhaps the government took their time until they were absolutely certain that it was safe.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
-		   NULL, "\"Hmm.", Line_WaitForInput);
 	OutputLine(NULL, "「ふむ。",
-		   NULL, " How about this one?", Line_WaitForInput);
+		   NULL, "\"Hmm.", Line_WaitForInput);
 	OutputLine(NULL, "あとこんな話もあるぞ。",
-		   NULL, " The SDF members who were on the mission to seal off Hinamizawa had their blood samples taken periodically. Some of them were discharged from the mission without any explanation after the results came back.", Line_WaitForInput);
+		   NULL, " How about this one?", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢を封鎖していた自衛隊員たちは定期的に血を抜かれての厳密な検査を受けていたといい、何らかの結果によって、自他ともに理解できない理由で任務を解かれることがあったという。",
+		   NULL, " The SDF members who were on the mission to seal off Hinamizawa had their blood samples taken periodically. Some of them were discharged from the mission without any explanation after the results came back.", Line_WaitForInput);
+	OutputLine(NULL, "それは実は、細菌感染の陽性反応を見るもので、自衛隊員たちを留まらせることによる何らかの人体実験だったと囁かれているらしい。」",
 		   NULL, " Some believe that they were using the members of the SDF as human test subjects to see if they got infected or not.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "それは実は、細菌感染の陽性反応を見るもので、自衛隊員たちを留まらせることによる何らかの人体実験だったと囁かれているらしい。」",
-		   NULL, "\"I think they were just checking up on the members' health condition, since they were in the area where the gas disaster occurred.", Line_WaitForInput);
 	OutputLine(NULL, "「それは、やはりガスが湧き出す危険性があっただけに健康管理には気を遣ったということでしょう。",
+		   NULL, "\"I think they were just checking up on the members' health condition, since they were in the area where the gas disaster occurred.", Line_WaitForInput);
+	OutputLine(NULL, "それに、普通のサラリーマンだって、年に一度は健康診断を受け、その時に血を抜かれてるはずです。」",
 		   NULL, " Besides, normal businessmen also take annual physical check-ups, and they have their blood samples taken there as well.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "それに、普通のサラリーマンだって、年に一度は健康診断を受け、その時に血を抜かれてるはずです。」",
-		   NULL, "\"Yeah, I understand your point, too.", Line_WaitForInput);
 	OutputLine(NULL, "「まぁ、君の言うことももっともだと思う。",
-		   NULL, " But I have another interesting theory.", Line_WaitForInput);
+		   NULL, "\"Yeah, I understand your point, too.", Line_WaitForInput);
 	OutputLine(NULL, "あともっと面白い話もあるぞ。",
+		   NULL, " But I have another interesting theory.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢大災害時に火山ガスは発生していないと主張する連中がいる。」",
 		   NULL, " There are some people who believe that there was no gas emitted during the so-called Great Hinamizawa Disaster.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "雛見沢大災害時に火山ガスは発生していないと主張する連中がいる。」",
-		   NULL, "\"No volcanic gas?", Line_WaitForInput);
 	OutputLine(NULL, "「火山ガスは発生していない？",
+		   NULL, "\"No volcanic gas?", Line_WaitForInput);
+	OutputLine(NULL, "　どういう意味ですか。」",
 		   NULL, " What does that mean?\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　どういう意味ですか。」",
-		   NULL, "\"Basically what they're saying is that there was no volcanic gas and it was a sort of government cover-up.", Line_WaitForInput);
 	OutputLine(NULL, "「つまり、元々火山ガスなんか噴出してなくて、ガス災害というのが政府の嘘であると主張してるらしい。",
+		   NULL, "\"Basically what they're saying is that there was no volcanic gas and it was a sort of government cover-up.", Line_WaitForInput);
+	OutputLine(NULL, "ほら、スピルバーグの人類とＵＦＯがコンタクトする某映画でも、同じ設定だったじゃないか。」",
 		   NULL, " It's like in the Spielberg movie. You know, the one where humans make contact with UFOs?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "ほら、スピルバーグの人類とＵＦＯがコンタクトする某映画でも、同じ設定だったじゃないか。」",
-		   NULL, "\"See, that's exactly how maniacs always explain things.", Line_WaitForInput);
 	OutputLine(NULL, "「それこそミステリー狂のこじつけだと思いますね。",
+		   NULL, "\"See, that's exactly how maniacs always explain things.", Line_WaitForInput);
+	OutputLine(NULL, "で、その連中は何を根拠に火山ガスが発生しなかったと言っているんです？」",
 		   NULL, " What kind of basis do they have to say that there was no volcanic gas emission?\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "で、その連中は何を根拠に火山ガスが発生しなかったと言っているんです？」",
-		   NULL, "\"Well, a bunch of those maniacs came to Hinamizawa as soon as the seal was lifted.", Line_WaitForInput);
 	OutputLine(NULL, "「封鎖解除後、ミステリーマニアがどっと押し寄せて、ＵＦＯ説を補強するためにいろいろ調べたらしい。",
-		   NULL, " According to them,", Line_WaitForInput);
+		   NULL, "\"Well, a bunch of those maniacs came to Hinamizawa as soon as the seal was lifted.", Line_WaitForInput);
 	OutputLine(NULL, "で、連中の主張はこうだ。",
-		   NULL, " the hydrogen sulfide in the volcanic gas should've caused some corrosion to metallic objects and major damage to the wildlife.", Line_WaitForInput);
+		   NULL, " According to them,", Line_WaitForInput);
 	OutputLine(NULL, "政府発表の火山ガス成分によるならば、硫化水素によって金属が腐食されたり、自然体系に大きなダメージが残るはずだ。",
-		   NULL, " However, they found no such signs of disruption, which led them to claim that there was no volcanic gas to begin with.", Line_WaitForInput);
+		   NULL, " the hydrogen sulfide in the volcanic gas should've caused some corrosion to metallic objects and major damage to the wildlife.", Line_WaitForInput);
 	OutputLine(NULL, "にも関わらず雛見沢にはそういう痕跡が残っておらず、よって、火山ガスが噴出したとはとうてい思えない、とか何とか言ってる。",
-		   NULL, " ...But this village was abandoned for twenty years.", Line_WaitForInput);
+		   NULL, " However, they found no such signs of disruption, which led them to claim that there was no volcanic gas to begin with.", Line_WaitForInput);
 	OutputLine(NULL, "……もっともあれから２０年も放置された村なんだ。",
+		   NULL, " ...But this village was abandoned for twenty years.", Line_WaitForInput);
+	OutputLine(NULL, "そんな痕跡を発見できたかどうかは疑わしいな。」",
 		   NULL, " I doubt that they could find anything anyway.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "そんな痕跡を発見できたかどうかは疑わしいな。」",
-		   NULL, "\"Ha ha ha. Well, that's the thing with the Internet. You can't believe everything you read on it!", Line_WaitForInput);
 	OutputLine(NULL, "「はっはっは、やはりつくづくインターネットというのは信用できませんねぇ。",
+		   NULL, "\"Ha ha ha. Well, that's the thing with the Internet. You can't believe everything you read on it!", Line_WaitForInput);
+	OutputLine(NULL, "……で、まさか赤坂先輩は、その怪しげな話を信じてるわけですか？」",
 		   NULL, " ...Akasaka-senpai, please don't tell me you're buying these stories.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "……で、まさか赤坂先輩は、その怪しげな話を信じてるわけですか？」",
-		   NULL, "\"At first, I didn't.", Line_WaitForInput);
 	OutputLine(NULL, "「最初は信じなかったが、最近は俺もわからない。",
+		   NULL, "\"At first, I didn't.", Line_WaitForInput);
+	OutputLine(NULL, "何割かは真実が含まれているかもしれないと思うようになっている。」",
 		   NULL, " But lately, I'm beginning to think that there might be some truth to them.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "何割かは真実が含まれているかもしれないと思うようになっている。」",
+	OutputLine(NULL, "「赤坂先輩ともあろうお方がＵＦＯ話を信じるんですか？」",
 		   NULL, "\"You believe in UFOs? Oh, come on!\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
 
-	OutputLine(NULL, "「赤坂先輩ともあろうお方がＵＦＯ話を信じるんですか？」",
-		   NULL, "\"Well,", Line_WaitForInput);
 	OutputLine(NULL, "「このスクラップ帖。",
+		   NULL, "\"Well,", Line_WaitForInput);
+	OutputLine(NULL, "これが本物の『３４号文書』だとしたら？」",
 		   NULL, " what if this scrapbook is the real <i>File No. 34?</i>\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "これが本物の『３４号文書』だとしたら？」",
+	OutputLine(NULL, "「え？」",
 		   NULL, "\"Huh?\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「え？」",
-		   NULL, "\"This scrapbook is the one that Reina Ryuugu possessed when she took the school hostage on June 25th, 1983.", Line_WaitForInput);
 	OutputLine(NULL, "「昭和５８年６月２５日に雛見沢営林署に人質を取って篭城した、竜宮礼奈が所持していた、正真正銘、本物の『３４号文書』だ。",
+		   NULL, "\"This scrapbook is the one that Reina Ryuugu possessed when she took the school hostage on June 25th, 1983.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢大災害の混乱で長いこと行方不明だったが、近年、大石さんの古い友人が県警の保存庫で発見したらしい。」",
 		   NULL, " It was assumed to be lost during the confusion of the Disaster. But, Ooishi-san's old friend was able to locate it in an evidence storage at the prefectural police headquarters.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "雛見沢大災害の混乱で長いこと行方不明だったが、近年、大石さんの古い友人が県警の保存庫で発見したらしい。」",
+	OutputLine(NULL, "　当時は妄想と思った大石ですら、…雛見沢大災害の後に読み直すと、決して笑い捨てられる内容ではなかった。",
 		   NULL, "Back then, Ooishi thought Reina Ryuugu was delusional. But after reading this again after the Great Hinamizawa Disaster, some of the contents seem to hold vital clues.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	OutputLine(NULL, "　当時は妄想と思った大石ですら、…雛見沢大災害の後に読み直すと、決して笑い捨てられる内容ではなかった。",
+	OutputLine(NULL, "　宇宙人の部分ではなく、雛見沢に土着の寄生細菌による風土病が「オヤシロさまの祟り」であったという部分だ。",
 		   NULL, "It's not the alien part that he was interested in, but her theory that an endemic disease of parasitic microbes in Hinamizawa was responsible for the \"curse of Oyashiro-sama\".", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　宇宙人の部分ではなく、雛見沢に土着の寄生細菌による風土病が「オヤシロさまの祟り」であったという部分だ。",
+	OutputLine(NULL, "　もちろん、病原体は発見されていないので仮説の域を出ない。",
 		   NULL, "Of course, there's no proof that such microbes existed, so it still remains at a theoretical level.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "　もちろん、病原体は発見されていないので仮説の域を出ない。",
-		   NULL, "\"Ooishi-san says that the Three Families might've been researching how to bring back\n", Line_ContinueAfterTyping);
 	OutputLine(NULL, "「大石さんの仮説なんだが、御三家が過去の信仰心を村に取り戻すために、大昔の毒性の強い病原体を研究していたのは本当じゃないか、って言うんだ。",
-		   NULL, "the original, deadlier microbe in order to revive the religious devotion the villagers used to have.", Line_WaitForInput);
+		   NULL, "\"Ooishi-san says that the Three Families might've been researching how to bring back the original, deadlier microbe in order to revive the religious devotion the villagers used to have.", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢大災害は、実はその結果の失敗じゃないかってな。」",
 		   NULL, " The Great Hinamizawa Disaster could be an experiment that went wrong.\"", Line_Normal);
 	ClearMessage();
