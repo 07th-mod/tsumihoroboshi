@@ -5,7 +5,10 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
 
 	PlayBGM( 0, "T1", 120, 0 );
 
@@ -234,7 +237,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_Normal);
 
-ClearMessage();
+	ClearMessage();
 
 	Wait( 1000 );
 	DrawScene( "black", 1000 );

@@ -586,7 +586,7 @@ void main()
 		   NULL, " but it's only five if you pay it today. If you wait even a day longer, it'll be doubled.", Line_WaitForInput);
 	PlayVoice(4, "ps2/20/172100045", 240);
 	OutputLine(NULL, "　そしたらあんた達、すぐに逆立ちしても払えなくなっちゃうわよ。",
-		   NULL, " And if it's doubled, I don't think you'll be be able to pay it no matter what you do.", Line_WaitForInput);
+		   NULL, " And if it's doubled, I don't think you'll be able to pay it no matter what you do.", Line_WaitForInput);
 	PlayVoice(4, "ps2/20/172100046", 240);
 	OutputLine(NULL, "でね、私、あんた達にいい話があるの。",
 		   NULL, " So, I'm going to make you a deal.", Line_WaitForInput);
@@ -791,7 +791,7 @@ void main()
 	OutputLine(NULL, "　男と律子も、しばらくかかることが分かっているようで、上機嫌に下品な雑談を始めていた。",
 		   NULL, "The man and Ritsuko, already knowing that, started talking amongst themselves.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
+	PlayBGM( 0, "getting_mad", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/21/172000046", 128);
 	OutputLine(NULL, "「律子、お前の雛見沢の旦那の調子はどうなんね。」",
@@ -964,14 +964,14 @@ void main()
 	OutputLine(NULL, "　男の乱暴さから考えて、彼が道を譲るとは考えがたい。",
 		   NULL, "The man probably wouldn't make way for the person, considering his personality.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 400, FALSE );
 	DrawBustshotWithFiltering( 2, "sprite/normal/tetu_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "　………だが、男は、扉の向こうの男が誰か気付くと、道を譲った。",
 		   NULL, "......But, when he noticed who that person was, he stepped aside.", Line_Normal);
 	ClearMessage();
-	
+
 	DrawBustshotWithFiltering( 1, "sprite/normal/kasa_1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	OutputLine(NULL, "　入ってきたのは、負けず劣らずガラの悪い男。",
@@ -1162,7 +1162,7 @@ void main()
 	OutputLine(NULL, "詩音だった。",
 		   NULL, " Shion.", Line_Normal);
 	ClearMessage();
-	
+
 	DrawSceneWithMask( "background/saten2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　詩音は渋る葛西の背中を押し、店内にずかずかと入ってきた。",
@@ -1205,7 +1205,7 @@ void main()
 	OutputLine(NULL, "　あ、………詩ぃちゃん…？」",
 		   NULL, " Oh......... Shii-chan...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DisableWindow();
 	ChangeBustshot( 1, "sprite/normal/si1a_DefA1_0", 200, TRUE );
 	DisplayWindow();
@@ -1249,7 +1249,7 @@ void main()
 
 	DisableWindow();
 	ChangeBustshot( 1, "sprite/normal/si1a_DefA1_0", 200, FALSE );
-	DrawBustshotWithFiltering( 0, "sprite/normal/kasa_3_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 7, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/normal/kasa_3_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 7, 0, FALSE );
 	DisplayWindow();
 
 	PlayVoice(4, "ps3/s09/06/170600031", 128);
@@ -1407,7 +1407,7 @@ void main()
 		   NULL, " They're very, very bad people, so you should never get involved with them.\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yabaisemi", 120, 0 );
+	PlayBGM( 0, "semi_r", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/02/170200283", 128);
 	OutputLine(NULL, "「どう性質が悪いんですか？」",
@@ -1500,7 +1500,7 @@ void main()
 	DisableWindow();
 	ChangeBustshot( 0, "sprite/normal/kasa_3_0", 200, TRUE );
 	DisplayWindow();
-	PlayBGM( 0, "Z01_Iwakan", 120, 0 );
+	PlayBGM( 0, "iwakannnohatuga", 120, 0 );
 
 	PlayVoice(4, "ps3/s09/15/1715000020", 128);
 	OutputLine(NULL, "「あの二人は性質の悪いゴロツキです。",
@@ -1623,7 +1623,7 @@ void main()
 
 	DrawScene( "background/re_s4", 400 );
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
-	PlayBGM( 0, "yorumushi", 120, 0 );
+	PlayBGM( 0, "yoru", 120, 0 );
 
 	OutputLine(NULL, "　自宅へ帰ってくると鍵が掛かっていた。",
 		   NULL, "When I got home, the door was locked.", Line_Normal);
@@ -1727,7 +1727,7 @@ void main()
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 0, "B08_Izyou", 120, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
 
 	OutputLine(NULL, "　リナさんは、",
 		   NULL, "Rina-san is", Line_ContinueAfterTyping);
@@ -1801,7 +1801,7 @@ void main()
 	OutputLine(NULL, "　男性は、……例え私のお父さんであっても、",
 		   NULL, "Women can deceive men... even my father...", Line_WaitForInput);
 	OutputLine(NULL, "……ある種の汚らわしい方法で、マニュアル的に籠絡できるのだ。",
-		   NULL, " ...They can use dirty methods to ensare men like they're following a manual.", Line_WaitForInput);
+		   NULL, " ...They can use dirty methods to ensnare men like they're following a manual.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1898,7 +1898,7 @@ void main()
 		   NULL, "I removed everything from the cash box to get at the bankbooks. Then, I found something new.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	OutputLine(NULL, "　…金庫の底に、新券の壱万円札の束があったからだ。",
 		   NULL, "...On the bottom of the box, there was a bundle of new 10,000 yen bills.", Line_WaitForInput);
@@ -2075,7 +2075,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	OutputLine(NULL, "　……父は、将来への蓄えであるはずの定額預金に手をつけていたのである。",
 		   NULL, "...My father was using money from his time deposits.", Line_WaitForInput);
@@ -2150,7 +2150,7 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 2, "yabaisemi", 120, 0 );
+	PlayBGM( 2, "semi_r", 120, 0 );
 
 	OutputLine(NULL, "　その頃の日付に目を移すと、……無味簡素なはずの日付が再び雄弁に語り出す。",
 		   NULL, "The simple numbers and dates on the bankbook had started talking to me.", Line_WaitForInput);

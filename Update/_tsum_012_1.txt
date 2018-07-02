@@ -146,7 +146,7 @@ void main()
 		   NULL, "\"...What, that old bag Oryou is there?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s09/11/170700009", 128);
 	OutputLine(NULL, "　やだなぁ、大石は巡回中でいつ戻ってくるかわからないとかいって誤魔化せません？」",
-		   NULL, " Can you tell her that I'm partrolling right now and don't know when I'll be back?\"", Line_WaitForInput);
+		   NULL, " Can you tell her that I'm patrolling right now and don't know when I'll be back?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlayVoice(4, "ps3/s09/19/173100010", 128);
@@ -328,7 +328,7 @@ void main()
 		   NULL, " Victory shall be mine!!\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yorumushi", 120, 0 );
+	PlayBGM( 0, "yoru", 120, 0 );
 	DrawBustshotWithFiltering( 2, "sprite/normal/re2a_hauA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/je2", "maskright", 1, 0, 300 );
 
@@ -491,7 +491,7 @@ void main()
 	Wait( 2200 );
 
 	SetSpeedOfMessage( FALSE, 0 );
-	PlayBGM( 1, "yorumushi", 120, 0 );
+	PlayBGM( 1, "yoru", 120, 0 );
 	DrawBustshotWithFiltering( 1, "sprite/night/kuma_Def_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "background/m_y4", "maskup", 1, 0, 300 );
 
@@ -842,7 +842,7 @@ void main()
 	OutputLine(NULL, "入江の先生に電話番号聞いて、署から在宅確認を取らせてください。」",
 		   NULL, " Get her phone number from Dr. Irie and make someone at the station call her house.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 2, "sprite/night/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlayVoice(4, "ps3/s09/19/173100018", 128);
@@ -1024,9 +1024,9 @@ void main()
 	PlayVoice(4, "ps3/s09/11/170700071", 128);
 	OutputLine(NULL, "オヤシロさまの祟りが５連続ってことになっちまいます。",
 		   NULL, " That would make this the fifth curse of Oyashiro-sama.", Line_WaitForInput);
-		   
-	ChangeBustshot( 1, "sprite/night/oisi1_5_0", 200, TRUE );	   
-		   
+
+	ChangeBustshot( 1, "sprite/night/oisi1_5_0", 200, TRUE );
+
 	PlayVoice(4, "ps3/s09/11/170700072", 128);
 	OutputLine(NULL, "………くそ。何とか今年でシッポを掴んでやりたいなぁ…！",
 		   NULL, " ...Damn it. I've got to get whoever's behind it this year for sure...!", Line_WaitForInput);
