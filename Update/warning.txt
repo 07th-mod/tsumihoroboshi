@@ -1,0 +1,70 @@
+void main()
+{
+	PlayBGM( 0, "03_cele", 120, 0 );
+	ClearMessage();
+	DrawScene( "scenario_a", 3000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "\"Keiichi-kun, waaait!\"", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	ModDrawCharacterWithFiltering(2, 2, "warning/re1a_def_a1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 500, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "\"You're about to play a partial version of the Tsumihoroboshi patch.", Line_WaitForInput);
+	OutputLineAll(NULL, " It only covers a part of the story, alright? Alright?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "\"Remember that this release is for testing purposes only.", Line_WaitForInput);
+	OutputLineAll(NULL, " Anything might happen.", Line_WaitForInput);
+
+	ModDrawCharacter(2, 2, "warning/re1a_hig_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	OutputLineAll(NULL, " Save files may not work,", Line_WaitForInput);
+	OutputLineAll(NULL, " game might freeze,", Line_WaitForInput);
+	OutputLineAll(NULL, " some of my sprites could be missing...", GetGlobalFlag(GLinemodeSp));
+
+	ModDrawCharacter(2, 2, "warning/re1b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "In the worst case I could suddenly turn into a vortex.", Line_WaitForInput);
+	OutputLineAll(NULL, " Yeah, they really did that to me once.", Line_WaitForInput);
+	OutputLineAll(NULL, " Can you believe it!?", Line_ContinueAfterTyping);
+
+	Wait(200);
+	DrawBustshotWithFiltering( 2, "mask2", "mask2", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 100, TRUE );
+	Wait(0);
+
+	ModDrawCharacter(2, 2, "warning/re1b_komaru_b1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	OutputLineAll(NULL, NULL, Line_Continue);
+
+	OutputLineAll(NULL, " I'm scared!\"", GetGlobalFlag(GLinemodeSp));
+
+	ModDrawCharacter(2, 2, "warning/re1b_warai_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "\"If you still want to play it, promise me you will report any issues you find here: goo.gl/685t1X\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLineAll(NULL, "\"Good luck! ☆\"", GetGlobalFlag(GLinemodeSp));
+
+	ModDrawCharacterWithFiltering(2, 2, "warning/re5_hau_a1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 500, TRUE );
+
+	OutputLineAll(NULL, "\"...Huh?", Line_WaitForInput);
+	OutputLineAll(NULL, " Where did my clothes go?\"", GetGlobalFlag(GLinemodeSp));
+
+	ModDrawCharacter(2, 2, "warning/re5_bikkuri_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	OutputLineAll(NULL, "\"Don't look at me like that, you pervert!\"", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+	ModDrawCharacterWithFiltering(2, 2, "warning/renasen1_def_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 500, TRUE );
+
+	Wait(500);
+
+	DrawScene("black", 200);
+
+	PlaySE( 4, "wa_015", 128, 64 );
+}
