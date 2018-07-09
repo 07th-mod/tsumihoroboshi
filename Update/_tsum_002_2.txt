@@ -617,7 +617,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/res_s1", "maskright", 7, 0, 300 );
 	PlayBGM( 0, "3", 120, 0 );
 
@@ -942,10 +942,8 @@ void main()
 		   NULL, " We exhausted ourselves to obtain that victory.", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/01/170100054", 128, 64);
 	OutputLine(NULL, "だから魅音たちの罰ゲームを見届けるのは権利であり、」",
-		   NULL, " To watch our friends undergo the punishment is our right and...\"", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " To watch our friends undergo the punishment is our right and...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DrawScene( "white", 10 );
@@ -989,7 +987,8 @@ void main()
 		   NULL, "\"Hey you, young couple!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/00/mana17006", 128, 64);
 	OutputLine(NULL, "　大人しくチケットを差し出すでござるよー！！」",
-		   NULL, " Share your empty seats with us, all nice and quiet-like!!\"", Line_ContinueAfterTyping);
+		   NULL, " Share your empty seats with us, all nice and quiet-like!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
@@ -1004,10 +1003,9 @@ void main()
 
 	PlaySE(4, "ps3/s09/00/manb17006", 128, 64);
 	OutputLine(NULL, "　ここは通さねえぜ〜！！」",
-		   NULL, " We won't let you go through!!\"", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+		   NULL, " We won't let you go through!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
 	PlaySE(4, "ps3/s09/00/manc17005", 128, 64);
 	OutputLine(NULL, "「エンジェルモートのイベントチケットを二人だけで消化しようなどとは許せんにゃりん！！",
 		   NULL, " \"I won't allow you to use your ticket for yourselves!!", Line_ContinueAfterTyping);
@@ -1146,7 +1144,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "black", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 

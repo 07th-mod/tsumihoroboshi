@@ -973,7 +973,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
 	DrawBustshotWithFiltering( 0, "sprite/sunset/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/mo_g1_01", "maskleft", 1, 0, 300 );
@@ -1472,11 +1472,12 @@ void main()
 		   NULL, " You have to believe that this was the only choice!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/01/170100370", 128, 64);
 	OutputLine(NULL, "　それはつまり、仲間に相談する価値がないって思うこと、仲間を一生否定し続けるってことだぞ！！！",
-		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_Normal);
-	ClearMessage();
-
+		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_ContinueAfterTyping);
+	Wait(1500);
 	OutputLine(NULL, "　レナにとって、俺たちはその程度の存在だったのか？！",
 		   NULL, "Are we worth nothing to you, Rena?", Line_WaitForInput);
+	ClearMessage();
+
 	PlaySE(4, "ps3/s09/01/170100371", 128, 64);
 	OutputLine(NULL, "　違うだろ？！",
 		   NULL, " Of course not!", Line_WaitForInput);
@@ -2370,7 +2371,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawSceneWithMask( "background/ymo1", "maskup", 1, 0, 300 );
@@ -2792,7 +2793,7 @@ void main()
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 1300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/re_s4_01", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　みんなと別れた後も、何だかぼーっとするような、",
@@ -2882,7 +2883,7 @@ void main()
 
 	DrawSceneWithMask( "background/re_g1", "maskleft", 1, 0, 300 );
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/02/170200586", 128, 64);
 	OutputLine(NULL, "「……ただいま。",
