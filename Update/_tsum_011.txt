@@ -1230,15 +1230,15 @@ void main()
 		   NULL, "But there might've been something more I could've done... I might've been lazy in thinking about what I could do.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200542", 128, TRUE);
 	OutputLine(NULL, "それなのに、昭和５７年の私は、悟史くんと仲間のつもりだったんだよね。",
-		   NULL, " But at that time, in 1982, I thought I was his friend.", Line_WaitForInput);
-	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
+		   NULL, " But at that time, in 1982, I thought I was his friend. ", GetGlobalFlag(GLinemodeSp));
 
 	DrawScene( "scene/034", 1000 );
 
 	SetSpeedOfMessage( TRUE, 16 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200543", 128, TRUE);
 	OutputLine(NULL, "……あははははは、",
-		   NULL, " ...Ahahahahaha.", Line_Continue);
+		   NULL, "...Ahahahahaha.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
