@@ -1472,11 +1472,12 @@ void main()
 		   NULL, " You have to believe that this was the only choice!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/01/170100370", 128, 64);
 	OutputLine(NULL, "　それはつまり、仲間に相談する価値がないって思うこと、仲間を一生否定し続けるってことだぞ！！！",
-		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_Normal);
-	ClearMessage();
-
+		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_ContinueAfterTyping);
+	Wait(1500);
 	OutputLine(NULL, "　レナにとって、俺たちはその程度の存在だったのか？！",
 		   NULL, "Are we worth nothing to you, Rena?", Line_WaitForInput);
+	ClearMessage();
+
 	PlaySE(4, "ps3/s09/01/170100371", 128, 64);
 	OutputLine(NULL, "　違うだろ？！",
 		   NULL, " Of course not!", Line_WaitForInput);
