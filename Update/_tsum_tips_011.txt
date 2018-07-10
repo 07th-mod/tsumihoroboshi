@@ -12,7 +12,7 @@ void main()
 
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 	SetColorOfMessage( TRUE, 0xff, 0x00, 0x00 );
-	DrawSceneWithMask( "M_Y4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_y4", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　大石との電話を終えて電話ボックスを出た瞬間。",
 		   NULL, "I finished talking with Ooishi on the phone, and soon left the phone booth.", Line_WaitForInput);
@@ -45,7 +45,6 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi_r", 120, 0 );
-	DrawFilm( 3, 255, 255, 255, 256, 0, 0, TRUE );
 
 	OutputLine(NULL, "　暗闇からじっとこちらを覗く、光る目…。",
 		   NULL, "I saw glowing eyes staring at me in the dark...", Line_WaitForInput);
@@ -129,8 +128,6 @@ void main()
 		   NULL, " making a realistic noise as it crunched across the gravel.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
-
 	OutputLine(NULL, "　その音のあまりに残酷なくらいの現実感が、私を現実に引き戻す。",
 		   NULL, "The noise pulled me back to reality.", Line_Normal);
 	ClearMessage();
@@ -190,7 +187,7 @@ void main()
 		   NULL, "I ran so hard that it felt like my lungs were about to explode. And then, I looked back... to find that the thing was no longer chasing after me.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "M_Y2", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/m_y2", "maskright", 7, 0, 300 );
 
 	OutputLine(NULL, "　…………気のせい………？",
 		   NULL, "......Was it my imagination...?", Line_Normal);

@@ -2,7 +2,7 @@ void main()
 {
 
 	PlayBGM( 0, "Cradle_song", 120, 0 );
-	DrawSceneWithMask( "Mati9", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/mati7", "maskm1", 1, 0, 300 );
 
 	OutputLine(NULL, "　鹿骨市内のある割烹にて、その席は設けられた。",
 		   NULL, "The summit was being held at a traditional Japanese restaurant in Shishibone City.", Line_Normal);
@@ -20,7 +20,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Oisi2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/night/oisi1_2_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700237", 128, 64);
@@ -30,6 +30,8 @@ void main()
 	OutputLine(NULL, "遅刻しちゃって申し訳ないですねぇ。」",
 		   NULL, " We apologize for being late.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawBustshotWithFiltering( 1, "sprite/night/kasa_1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/15/1715000043", 128, 64);
 	OutputLine(NULL, "「……お客人、ご案内いたします。",
@@ -52,9 +54,9 @@ void main()
 		   NULL, "They walked through the restaurant's pretentious landscaped garden, and they came to the gorgeous Japanese-style entrance.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "RyouteiG", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kasa_1_0", "maskleft", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/rouka1_01", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　玄関には和服の女性と葛西がいた。",
 		   NULL, "A woman in a kimono was waiting at the entrance, as was Kasai.", Line_WaitForInput);
@@ -68,7 +70,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshotWithFiltering( 2, "Oisi4", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_4_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700239", 128, 64);
@@ -88,7 +90,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700241", 128, 64);
@@ -107,7 +109,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Kasa2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/kasa_2_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000045", 128, 64);
@@ -116,7 +118,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700245", 128, 64);
@@ -128,7 +130,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Kasa1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kasa_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000046", 128, 64);
@@ -137,7 +139,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700247", 128, 64);
@@ -145,7 +147,7 @@ void main()
 		   NULL, "\"Well, we seem to be at war, but I'm hoping we can settle this like adults.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700248", 128, 64);
@@ -166,7 +168,7 @@ void main()
 		   NULL, " Neither do we.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700251", 128, 64);
@@ -187,7 +189,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200003", 128, 64);
@@ -215,7 +217,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700254", 128, 64);
@@ -226,7 +228,7 @@ void main()
 		   NULL, " ...Can I go back and get my bulletproof jacket?", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s05/11/100700346", 128, 64);
@@ -236,8 +238,8 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
-	DrawBustshot( 1, "Me_DefA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "Ryoutei1", 400 );
+	DrawBustshot( 1, "sprite/normal/me1a_DefA1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/ryoutei2_01", 400 );
 
 	OutputLine(NULL, "　客室の襖があくと、お膳が並び、………魅音が座っていた。",
 		   NULL, "On the other side of the door, there were several tables... and Mion was sitting at one of them.", Line_Normal);
@@ -252,7 +254,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700257", 128, 64);
@@ -264,7 +266,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_SinmyouB2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_SinmyouA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300574", 128, 64);
@@ -289,7 +291,10 @@ void main()
 		   NULL, "The waitresses, who had been waiting behind the door, started bringing out drinks.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei2", "maskup", 1, 0, 300 );
+	
+	DrawBustshotWithFiltering( 1, "sprite/normal/kuma_Def_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/19/173100034", 128, 64);
 	OutputLine(NULL, "「………大石さん、……一体こりゃ、何のつもりっすかね……。」",
@@ -308,7 +313,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	OutputLine(NULL, "　しばらくの間、この火薬の匂いすら漂いかねない、緊張感のある酒席が繰り広げられるのだった。",
 		   NULL, "They started drinking, but the tension continued for a while.", Line_Normal);
@@ -318,7 +323,7 @@ void main()
 		   NULL, "Mion made the waitresses and the other members of the Sonozaki Corps leave the room, and soon only Ooishi and his subordinates, Mion, Akane, and Kasai were left in the room.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700262", 128, 64);
 	OutputLine(NULL, "「さて。",
@@ -333,7 +338,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Aka_Def", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/aka_Def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200008", 128, 64);
@@ -373,9 +378,9 @@ void main()
 		   NULL, "\"Kasai.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskright", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshot( 2, "Kasa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/kasa_1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000048", 128, 64);
@@ -395,7 +400,7 @@ void main()
 		   NULL, "He explained that Rena found something he lost there, and that she offered to bring it back to him.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei2", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/11/170700268", 128, 64);
 	OutputLine(NULL, "「…ちょいと無理がございませんかねぇ？",
@@ -412,7 +417,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kasa2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kasa_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000050", 128, 64);
@@ -424,7 +429,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi5", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_5_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700272", 128, 64);
@@ -446,6 +451,8 @@ void main()
 	OutputLine(NULL, "…大石が歪んだ笑いで凄むと場は一気に緊迫した。",
 		   NULL, " ...Ooishi threatened them with a nasty smile, and it piled all the more tension onto the atmosphere in the room.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshotWithFiltering( 0, "sprite/normal/kuma_Komaru_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );	
 
 	PlaySE(4, "ps3/s09/19/173100035", 128, 64);
 	OutputLine(NULL, "「お、…大石さん…、まぁまぁ…。」",
@@ -472,6 +479,8 @@ void main()
 	OutputLine(NULL, "代わって熊谷が先を促した。",
 		   NULL, " Kumagai took over, continuing from there.", Line_Normal);
 	ClearMessage();
+	
+	ChangeBustshot( 0, "sprite/normal/kuma_Def_0", 200, TRUE );
 
 	PlaySE(4, "ps3/s09/19/173100036", 128, 64);
 	OutputLine(NULL, "「それで、園崎家さんはどうおっしゃりたいわけですか。",
@@ -492,16 +501,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-
-	FadeBustshotWithFiltering( 1, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
-
-	DrawBustshot( 0, "Me_MajimeA2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_MajimeA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/ryoutei2_01", 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300576", 128, 64);
 	OutputLine(NULL, "「……警察は竜宮レナを保護なさる理由をお聞かせください。」",
 		   NULL, "\"...You need to explain to me why the police have to protect Rena Ryuugu to begin with.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_5_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/11/170700276", 128, 64);
 	OutputLine(NULL, "「そりゃ決まってるじゃないかよ。",
@@ -523,7 +532,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_DefA1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300577", 128, 64);
@@ -540,7 +549,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_MajimeB1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_MajimeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300578", 128, 64);
@@ -585,9 +594,9 @@ void main()
 		   NULL, "Ooishi and his subordinates glared back at her without saying a word, making it obvious that her guess was right.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei1", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kasa_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/16/172200013", 128, 64);
 	OutputLine(NULL, "「葛西。」",
@@ -604,7 +613,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kasa_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そしてすぐに戻ってきた。",
@@ -616,7 +625,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ryoutei2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　刑事たちの誰もが、この中に現金が唸るほど詰まっていて、それで自分たちを何らかに利用しようと買収してくるに違いないと思った。",
 		   NULL, "Every one of the officers assumed that there was a tremendous amount of money in the suitcase, and that the Sonozaki family was trying to buy them off.", Line_Normal);
@@ -629,7 +638,7 @@ void main()
 	DrawScene( "white", 400 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
 	PlaySE( 0, "s_Down", 90, 64 );
-	DrawScene( "File", 400 );
+	DrawScene( "background/file", 400 );
 	PlaySE( 0, "s_Down", 90, 64 );
 
 	PlaySE(4, "ps3/s09/11/170700282", 128, 64);
@@ -693,7 +702,8 @@ void main()
 		   NULL, "Ooishi and the others desperately turned the pages of the well-thumbed scrapbooks.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei1", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700285", 128, 64);
 	OutputLine(NULL, "「……………これ、…間違いなく、鷹野三四のなんでしょうねぇ？」",
@@ -701,7 +711,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200021", 128, 64);
@@ -709,7 +719,7 @@ void main()
 		   NULL, "\"Without a doubt.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei2", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kuma_Komaru_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );	
 
 	PlaySE(4, "ps3/s09/19/173100040", 128, 64);
 	OutputLine(NULL, "「…お、………大石さん、……もしこれらに類するものを竜宮レナが持っているとするなら……。」",
@@ -758,7 +768,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Ryoutei1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700287", 128, 64);
 	OutputLine(NULL, "「………ここにあるスクラップ帖、全部がこんな中身なんですか。」",
@@ -766,7 +776,8 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_MajimeA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/me1a_MajimeA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300583", 128, 64);
@@ -854,8 +865,8 @@ void main()
 		   NULL, " That one is about Ossie, the mysterious creature in Onigafuchi Swamp...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Me_MajimeB1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei1", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/me1b_MajimeA1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/03/170300585", 128, 64);
 	OutputLine(NULL, "「おそらく、竜宮レナが持つスクラップ帖には、皆さんもよくご存知の『寄生虫説』が記されてるのだろうと察します。」",
@@ -964,8 +975,8 @@ void main()
 		   NULL, "...A combination of a number of factors made Takano's ridiculous theory become highly creditable to him.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Oisi3", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei2", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_3_0", "maskup", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700292", 128, 64);
 	OutputLine(NULL, "「いくつかお聞きしたい。",
@@ -976,7 +987,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_MajimeA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_MajimeA1_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300586", 128, 64);
@@ -985,7 +996,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi5", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_5_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700294", 128, 64);
@@ -1004,6 +1015,7 @@ void main()
 		   NULL, " ...Do you think we'd do such a lousy job as to let the police find the bodies...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
+	ChangeBustshot( 1, "sprite/normal/me1a_HutekiA1_0", 200, TRUE );
 
 	OutputLine(NULL, "　魅音がにたりと陰のある笑いをする。",
 		   NULL, "Mion wore a cold smile.", Line_WaitForInput);
@@ -1012,6 +1024,8 @@ void main()
 	OutputLine(NULL, "　…それは言い過ぎの発言だったのだろう。",
 		   NULL, "...She had said too much.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ChangeBustshot( 1, "sprite/normal/me1a_MajimeA1_0", 200, TRUE );
 
 	OutputLine(NULL, "　咎める意味でなのか、茜がコホンと咳払いをすると、魅音はすぐに口をつぐんだ。",
 		   NULL, "Akane cleared her throat as if to condemn the statement, and that made Mion shut her mouth.", Line_Normal);
@@ -1026,7 +1040,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi3", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_3_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700296", 128, 64);
@@ -1055,8 +1069,6 @@ void main()
 		   NULL, "The reasons which made Ooishi take Rena's delusion seriously collapsed one by one...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei1", "maskleft", 1, 0, 300 );
-
 	OutputLine(NULL, "　魅音と茜が目配せをし合う。",
 		   NULL, "Mion and Akane looked at each other.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1066,7 +1078,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 1, "Aka_Def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/aka_Def_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200023", 128, 64);
@@ -1125,9 +1137,6 @@ void main()
 		   NULL, " If we get raided now, we're going to lose face.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Oisi3", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei2", "maskright", 1, 0, 300 );
-
 	PlaySE(4, "ps3/s09/11/170700298", 128, 64);
 	OutputLine(NULL, "「あんたのとこの面目なんて知ったことじゃないよ。",
 		   NULL, "\"Who cares about your face?", Line_WaitForInput);
@@ -1139,10 +1148,6 @@ void main()
 		   NULL, " We're going to go through with them.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
-
 	PlaySE(4, "ps3/s09/16/172200030", 128, 64);
 	OutputLine(NULL, "「埃が出れば結構ではございますが、",
 		   NULL, "\"If you find something, good for you.", Line_WaitForInput);
@@ -1150,6 +1155,8 @@ void main()
 	OutputLine(NULL, "………出なかった場合、いくら大石さんと言えど、決して軽んじれない責任問題に発展するかと存じますが？」",
 		   NULL, " ...But if you don't, you know it'll cause a big liability issue that even you won't escape lightly, Ooishi-san.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ChangeBustshot( 2, "sprite/normal/oisi1_5_0", 200, TRUE );
 
 	PlaySE(4, "ps3/s09/11/170700301", 128, 64);
 	OutputLine(NULL, "「………上等だよ、うちと全面戦争するかぁ？！",
@@ -1194,7 +1201,7 @@ void main()
 		   NULL, " ...Kumagai butted in, and tried to calm him down.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei1", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/19/173100045", 128, 64);
 	OutputLine(NULL, "「………一斉捜査を控えることに対する見返りは…？」",
@@ -1206,7 +1213,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Me_majimeB2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/me1b_MajimeA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300592", 128, 64);
@@ -1218,7 +1225,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "File", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　このスクラップ帖は、鷹野三四の説がいかに滑稽であるかを証明する。",
 		   NULL, "These scrapbooks proved how ridiculous Miyo Takano's theory was.", Line_WaitForInput);
@@ -1262,7 +1269,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Ryoutei2", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/kuma_Def_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/ryoutei2_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/19/173100046", 128, 64);
 	OutputLine(NULL, "「……………大石さん。」",
@@ -1279,7 +1287,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_2_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/11/170700304", 128, 64);
@@ -1309,7 +1317,7 @@ void main()
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-	DrawSceneWithMask( "Ryoutei1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　開けっ放しにされた襖を葛西が閉めると、室内は再び静寂で満たされた。",
 		   NULL, "Kasai closed the door Ooishi left open. The room was filled with silence again.", Line_Normal);
@@ -1318,6 +1326,8 @@ void main()
 	OutputLine(NULL, "　その中、再び熊谷が発言する。",
 		   NULL, "At that point, Kumagai opened his mouth.", Line_Normal);
 	ClearMessage();
+	
+	DrawBustshotWithFiltering( 2, "sprite/normal/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/19/173100047", 128, 64);
 	OutputLine(NULL, "「園崎家さんの言い分は了解いたしました。",
@@ -1334,7 +1344,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Me_DefB2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_DefA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300594", 128, 64);
@@ -1367,7 +1377,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_MajimeA2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_MajimeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300597", 128, 64);
@@ -1401,7 +1411,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/aka_Def_0", "maskleft", 1, -300, 0, FALSE, 0, 0, 0, 0, 0, 7, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　茜が魅音に小声で何か入れ知恵する。",
@@ -1409,7 +1419,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　魅音は小さく頷いてからそれを口にした。",
@@ -1417,7 +1427,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Me_defA1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_DefA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300601", 128, 64);
@@ -1468,9 +1478,9 @@ void main()
 		   NULL, "Akane cut in.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryoutei2", "maskleft", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, FALSE );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200035", 128, 64);
@@ -1487,6 +1497,8 @@ void main()
 		   NULL, " So please do be careful not to do anything that might waste it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DrawBustshotWithFiltering( 2, "sprite/normal/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	
 	PlaySE(4, "ps3/s09/19/173100064", 128, 64);
 	OutputLine(NULL, "「……わかりました。",
 		   NULL, "\"...Understood.", Line_WaitForInput);
@@ -1519,13 +1531,13 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Ryoutei1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryoutei2_01", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　全てが終了し、刑事たちが立ち上がり、ようやく緊張した時間が終わりを告げた。",
 		   NULL, "The meeting ended, and the police stood up from their seats. The tension in the room had finally ceased.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa3", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/kasa_3_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 	DisplayWindow();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -1533,13 +1545,15 @@ void main()
 	OutputLine(NULL, "　葛西がスクラップ帖をアタッシュケースにしまい、熊谷に手渡した。",
 		   NULL, "Kasai put the scrapbooks back in the suitcase and handed it to Kumagai.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	DrawBustshotWithFiltering( 2, "sprite/normal/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "　熊谷は葛西の目を見てから小さく頷き、アタッシュケースを受け取る。",
 		   NULL, "Kumagai looked at Kasai, nodded lightly, and took what was offered him.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/aka_Def_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200039", 128, 64);
@@ -1566,7 +1580,7 @@ void main()
 
 	PlaySE( 0, "s_door", 128, 64 );
 	DrawSceneWithMask( "black", "maskleft", 7, 0, 300 );
-	DrawScene( "Ryoutei2", 400 );
+	DrawScene( "background/ryoutei2_01", 400 );
 
 	OutputLine(NULL, "　最後に魅音に対して一礼し、刑事たちは退出していった……。",
 		   NULL, "The officers left after bowing to Mion...", Line_Normal);
@@ -1586,7 +1600,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_AkuwaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_AkuwaraiA1_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300608", 128, 64);
@@ -1594,7 +1608,7 @@ void main()
 		   NULL, "\"Oh, man... My shoulders hurt...", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Me_tohohoB2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_TohohoA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/03/170300609", 128, 64);
@@ -1603,7 +1617,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Aka_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/aka_Def_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );	
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200041", 128, 64);
@@ -1619,17 +1633,12 @@ void main()
 	OutputLine(NULL, "あと外の若いのも呼び入れて何か冷たいのを振舞ってやりな。」",
 		   NULL, " Oh, and you can let the grunts in and give them something cold to drink, too.\"", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 1, "Kasa1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei1", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kasa_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/15/1715000052", 128, 64);
 	OutputLine(NULL, "「ビールだけで、よろしいですか？」",
 		   NULL, "\"You want me to bring only beer?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Aka_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200045", 128, 64);
 	OutputLine(NULL, "「あぁ、この子は駄目駄目。",
@@ -1639,8 +1648,7 @@ void main()
 		   NULL, " Bring some orange juice for her.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Me_TohohoA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ryoutei2", "maskright", 1, 0, 300 );
+	ChangeBustshot( 1, "sprite/normal/me1a_TohohoA1_0", 200, TRUE );
 
 	PlaySE(4, "ps3/s09/03/170300610", 128, 64);
 	OutputLine(NULL, "「ちぇーー、子ども扱いしてー。",
@@ -1649,11 +1657,6 @@ void main()
 	OutputLine(NULL, "肩書きが上でも全然大人扱いしてもらってないよー。」",
 		   NULL, " I guess my rank doesn't matter to you, huh?\"", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/16/172200047", 128, 64);
 	OutputLine(NULL, "「いくつになってもでっかい子どもだよあんたは。",
@@ -1675,7 +1678,7 @@ void main()
 		   NULL, " You have to play it smarter when meeting with the common man.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kasa_2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000053", 128, 64);
@@ -1683,6 +1686,8 @@ void main()
 		   NULL, "\"I'm a little embarrassed...\"", Line_Normal);
 	ClearMessage();
 
+	ChangeBustshot( 0, "sprite/normal/aka_Warai_0", 200, TRUE );
+	
 	PlaySE(4, "ps3/s09/16/172200053", 128, 64);
 	OutputLine(NULL, "「しかしさぁ、あの大石をコケにするとは、レナちゃんもやるじゃない？",
 		   NULL, "\"By the way, I'm very impressed with Rena-chan for making a fool out of Ooishi.", Line_WaitForInput);
@@ -1698,13 +1703,16 @@ void main()
 	PlaySE(4, "ps3/s09/16/172200057", 128, 64);
 	OutputLine(NULL, "　葛西、今度レナちゃんに会ったらぜひそう伝えておいてよー。",
 		   NULL, " Kasai, whenever you see her next time, let her know I said that.", Line_WaitForInput);
+		   
+	ChangeBustshot( 0, "sprite/normal/aka_Sakebi_0", 200, TRUE );	   
+		   
 	PlaySE(4, "ps3/s09/16/172200058", 128, 64);
 	OutputLine(NULL, "その時、まぁた物騒な話を吹き込むんじゃないよ？！」",
 		   NULL, " And don't tell her any more creepy stories, alright?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kasa_1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/15/1715000054", 128, 64);
@@ -1713,7 +1721,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	OutputLine(NULL, "　これで、……レナを中心にした鷹野さんのスクラップ帖の魔力は封殺できたはずだ。",
 		   NULL, "With that, they successfully dispelled the magical power of Takano's scrapbooks.", Line_WaitForInput);
@@ -1742,12 +1750,12 @@ void main()
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawSceneWithMask( "Ma2", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/ma2", "maskup", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ma_J1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma_j3_01", "maskleft", 1, 0, 300 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1771,7 +1779,7 @@ void main()
 		   NULL, "...There was only one person I knew who might come see me so late.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　窓を開けてもう一度目を凝らす。",
 		   NULL, "I opened the window and looked more carefully this time.", Line_WaitForInput);

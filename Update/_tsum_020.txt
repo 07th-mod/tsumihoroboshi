@@ -10,7 +10,7 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0x22, 0x22 );
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawSceneWithMask( "Mo_R1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_r1_03", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　この隠れ家で灯りを付けても、うまい具合に廃車の山に遮られて、光は漏れない。",
 		   NULL, "Even if I turned on the light in my hideout, nobody would see it because of the piles of abandoned cars in the way.", Line_WaitForInput);
@@ -73,7 +73,8 @@ void main()
 		   NULL, "They might be using one of the bomb shelters that was built during the war as some kind of secret underground research center.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "JSA1", 1000 );
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
+	DrawScene( "background/jsa1", 1000 );
 
 	OutputLine(NULL, "　そう言えば、……古手神社の敷地の中に、中が公開されない秘密の建物がひとつあった。",
 		   NULL, "Now that I come to think about it... I remember a secret building nobody is allowed into on the premises of the Furude Shrine.", Line_WaitForInput);
@@ -132,6 +133,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 0 );
+	FadeFilm( 0, TRUE );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -152,7 +154,7 @@ void main()
 		   NULL, "I thought about many possible scary scenarios, which made me nervous...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Y_Damu2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/y_damu2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　やがて、ダム現場の工事事務所跡の方から、車のヘッドライトらしきものが光るのが見えた。",
 		   NULL, "After a while, I saw the headlights of the car near the former dam construction office.", Line_Normal);
@@ -273,7 +275,7 @@ void main()
 		   NULL, "I decided to wait until they finished looking for me and went away.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Y_Damu2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/y_damu2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　早く帰れ、早く帰れ。",
 		   NULL, "Go away. Go away.", Line_WaitForInput);
@@ -508,7 +510,7 @@ void main()
 		   NULL, "I finally got out from under the blanket and looked outside the window.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_YG4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_yg1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　車のライトがＵターンし、引き上げていくのが見えた。",
 		   NULL, "The car made a U-turn and drove away.", Line_WaitForInput);
@@ -546,7 +548,7 @@ void main()
 		   NULL, "They clearly said that they're after \"the scrapbooks\".", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　私は今日まで、自分が狙われる理由を、三四さんのスクラップ帖を受け取ったからと推測してきたが、誰の口からもそう聞かされていたわけではない。",
 		   NULL, "Up until now, I'd only assumed that they were chasing after me because I had Miyo-san's scrapbooks.", Line_WaitForInput);
@@ -569,7 +571,7 @@ void main()
 		   NULL, " She has Miyo Takano's scrapbooks.\" That's what they said!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　それから、竜宮家前に監視を残したということも言った。",
 		   NULL, "They also said that they're keeping watch on my house.", Line_WaitForInput);
@@ -690,7 +692,7 @@ void main()
 		   NULL, "My father wouldn't notice it. My friends wouldn't notice it. <i>It</i> would replace me without having anyone noticed it...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	OutputLine(NULL, "　いや、私が気付いていないだけで……、",
 		   NULL, "Wait.", Line_WaitForInput);
@@ -723,7 +725,7 @@ void main()
 		   NULL, "...Mice are only used by <i>them</i> for that purpose. It's not that they lose their fear of cats in order to help <i>them</i> achieve their purpose.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　だから園崎家も同じこと。",
 		   NULL, "The same thing goes with the Sonozaki family.", Line_WaitForInput);
@@ -766,10 +768,9 @@ void main()
 	OutputLine(NULL, "　ところがさらにさらに稀に、……その気付きを、客観的に証明できる鼠が現れる。",
 		   NULL, "But even more rarely... a mouse appears from nowhere, notices <i>their</i> existence, and objectively proves it.", Line_WaitForInput);
 
-	DrawFilm( 2, 0xff, 0xaa, 0xaa, 256, 0, 0, TRUE );
-
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/ta1_def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	OutputLine(NULL, "それがまさに三四さんだった。",
@@ -808,7 +809,7 @@ void main()
 		   NULL, "...<i>They</i> killed Miyo-san.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Akuwarai#", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 3000, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ta1_akuwarai_0", "maskc", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 3000, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "そして、……入れ替わろうとした。",
@@ -822,8 +823,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	FadeFilm( 0, TRUE );
-
+	
 	OutputLine(NULL, "　……………なら、……私をも消し、入れ替わろうとするだろう。",
 		   NULL, "...They'll try to kill me and replace me, too.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -851,7 +851,7 @@ void main()
 		   NULL, " here.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　三四さんの死の翌日に現れた。",
 		   NULL, "It appeared the day after Miyo-san died.", Line_WaitForInput);
@@ -874,7 +874,7 @@ void main()
 		   NULL, "They'll keep coming... They'll keep coming...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_R1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_r1_03", "maskup", 1, 0, 300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -886,7 +886,7 @@ void main()
 		   NULL, "Right then, I heard somebody coming down the slope.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_YG4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_yg1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は再び身を屈め、音が聞こえた方を疑う。",
 		   NULL, "I concealed my presence again, and I looked at the direction where the footsteps were coming from.", Line_WaitForInput);
@@ -1065,7 +1065,7 @@ void main()
 		   NULL, " ...Hee hee hee.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mo_YG4", 0 );
+	DrawScene( "scene/039a", 0 );
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1082,9 +1082,7 @@ void main()
 		   NULL, "I threw off the blanket, and saw the owner of the voice.", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	DrawBustshot( 0, "Ri_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
-	DisplayWindow();
+	DrawScene( "scene/039b", 2000 );
 
 	OutputLine(NULL, "　………それは、……梨花ちゃんだった。",
 		   NULL, "...<i>It</i> is... Rika-chan.", Line_WaitForInput);
@@ -1118,7 +1116,8 @@ void main()
 	OutputLine(NULL, "　三四さん、私、……そして、梨花ちゃんまでも…ということなのか…。",
 		   NULL, "<i>It</i> came to Miyo-san, to me... and to Rika-chan...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
+	
+	DrawScene( "background/mo_r1_03", 300 );
 
 	OutputLine(NULL, "　だから私は、恐怖に押しつぶされる前に、少しでも心を奮い立たせようと、あえて攻撃的に口を開いた。",
 		   NULL, "I decided to talk aggressively on purpose in order to work up courage before my fear crushed me down.", Line_Normal);
@@ -1130,7 +1129,8 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_WaraiA1", 200, TRUE );
+	DrawBustshotWithFiltering( 0, "portrait/night/ri1_WaraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/mo_yg1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500095", 128, 64);
@@ -1165,7 +1165,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_NikoA1", 200, TRUE );
+	ChangeBustshot( 0, "portrait/night/ri1_NikoA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500097", 128, 64);
@@ -1226,7 +1226,7 @@ void main()
 		   NULL, " her true character.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE(4, "ps3/s09/05/170500099", 128, 64);
@@ -1329,7 +1329,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Ri_NiyariA1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "portrait/night/ri1_NiyariA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/mo_yg1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500104", 128, 64);
@@ -1394,7 +1395,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_FumanA1", 200, TRUE );
+	ChangeBustshot( 0, "portrait/night/ri1_FumanA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500108", 128, 64);
@@ -1430,7 +1431,7 @@ void main()
 		   NULL, "...I realized that this creepy thing that looks just like Rika was only here to talk to me. I felt my tension fade away a little bit.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_YG1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_r1_03", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　だが、………このような深夜のありえない場所で、…私と何を話したいというのか。",
 		   NULL, "But still... I don't know what she wants to talk to me about at a place like this, so late at night.", Line_WaitForInput);
@@ -1449,7 +1450,7 @@ void main()
 		   NULL, "I waited for <i>it</i> to make a move for a while... And then, <i>it</i> opened its mouth again.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	PlaySE(4, "ps3/s09/05/170500116", 128, 64);
 	OutputLine(NULL, "「…………あなたは、何かに怯えている。",
@@ -1498,7 +1499,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Mo_R1", 400 );
+	DrawScene( "background/mo_r1_03", 400 );
 
 	OutputLine(NULL, "　こいつは、車の内外に立ち会うことで互いが守られているなんて言ったが。",
 		   NULL, "<i>It</i> told me earlier that we were safe from each other because one was in the car and the other was standing outside.", Line_WaitForInput);
@@ -1515,8 +1516,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawBustshot( 0, "Ri_NiyariA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Mo_YG4", 400 );
+	DrawBustshot( 0, "portrait/night/ri1_NiyariA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/mo_yg1", 400 );
 
 	PlaySE(4, "ps3/s09/05/170500121", 128, 64);
 	OutputLine(NULL, "「怖がらないで。",
@@ -1653,7 +1654,7 @@ void main()
 		   NULL, "And <i>it</i> also admitted the direct \"cause\" of the maggot disease that Tomitake-san died from!!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_YG4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_r1_03", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201128", 128, 64);
 	OutputLine(NULL, "「………私にもあの死に方をさせるつもりなんでしょう！",
@@ -1670,7 +1671,8 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 2, "Ri_FumanA1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshotWithFiltering( 2, "portrait/night/ri1_FumanA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/mo_yg1", 400 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500132", 128, 64);
@@ -1702,7 +1704,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_NiyariA1", 200, TRUE );
+	ChangeBustshot( 2, "portrait/night/ri1_NiyariA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500134", 128, 64);
@@ -1725,7 +1727,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_FumanA1", 200, TRUE );
+	ChangeBustshot( 2, "portrait/night/ri1_FumanA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500137", 128, 64);
@@ -1759,7 +1761,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_NiyariA1", 200, TRUE );
+	ChangeBustshot( 2, "portrait/night/ri1_NiyariA1_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そいつは、ため息をひとつ深く吐くと、ちょっと小馬鹿にするような仕草をして苦笑いを浮かべるのだった。",
@@ -1808,11 +1810,6 @@ void main()
 		   NULL, "\"...End soon...?\"", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshot( 0, "Ri_WaraiA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
-	DisplayWindow();
-
 	PlaySE(4, "ps3/s09/05/170500147", 128, 64);
 	OutputLine(NULL, "「あなたには関係のないことよ。",
 		   NULL, "\"It has nothing to do with you.", Line_WaitForInput);
@@ -1837,10 +1834,6 @@ void main()
 	OutputLine(NULL, "「…わ、……私をこれからどうするつもりなの！！」",
 		   NULL, "\"...What... What are you going to do to me?!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DisableWindow();
-	ChangeBustshot( 0, "Ri_NiyariA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500150", 128, 64);
 	OutputLine(NULL, "「私はどうもしないわ。",
@@ -1882,10 +1875,6 @@ void main()
 	OutputLine(NULL, "“次の”竜宮レナとうまくやれるようにするわ。",
 		   NULL, " I'm going to try to get along with the 'next' Rena Ryuugu.", Line_WaitForInput);
 
-	DisableWindow();
-	ChangeBustshot( 0, "Ri_WaraiA1", 200, TRUE );
-	DisplayWindow();
-
 	PlaySE(4, "ps3/s09/05/170500155", 128, 64);
 	OutputLine(NULL, "……せめて“次の”竜宮レナは変に勘が良くないことを祈るだけよ。",
 		   NULL, " ...I have to pray that the 'next' Rena Ryuugu doesn't have such good intuition.", Line_WaitForInput);
@@ -1900,7 +1889,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	PlaySE(4, "ps3/s09/05/170500157", 128, 64);
 	OutputLine(NULL, "「私も昔は、小さな狂いが生じるたびに直そうと奔走したものだけど。",
@@ -1958,7 +1947,7 @@ void main()
 		   NULL, "<i>It</i> closed the syringe case, and put it back into <i>its</i> pocket.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mo_YG1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo_yg1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　そして踵を返し、スクラップの斜面を登り始める…。",
 		   NULL, "<i>It</i> turned around and started climbing up the slope...", Line_WaitForInput);
@@ -1969,7 +1958,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_FumanA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/night/ri1_FumanA1_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500163", 128, 64);
@@ -1983,7 +1972,7 @@ void main()
 		   NULL, " ...I hope I can get along with the 'next' Rena Ryuugu.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ri_NiyariA1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/night/ri1_NiyariA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/05/170500166", 128, 64);
@@ -2013,7 +2002,7 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　私の、悲鳴にも近い叫びは果たして届いているのか。",
 		   NULL, "I wondered if my scream was reaching <i>it</i>.", Line_WaitForInput);
@@ -2138,7 +2127,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "Mo_YG4", 400 );
+	DrawScene( "background/mo_yg1", 400 );
 
 	OutputLine(NULL, "　笑い声は次第に夜の闇に薄れていく。",
 		   NULL, "That laughter gradually disappeared into the darkness.", Line_WaitForInput);
@@ -2208,7 +2197,6 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Mo_R2", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	OutputLine(NULL, "　明暗のはっきり別れた影絵の世界が浮かび上がる。",
@@ -2219,7 +2207,7 @@ void main()
 		   NULL, "When I reached my backpack... I realized something and gasped in surprise.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskup", 1, 0, 300 );
 
 	PlaySE( 0, "s_jikuu_short", 128, 64 );
 
@@ -2348,7 +2336,7 @@ void main()
 		   NULL, "...Now I know why she was laughing at me in a sarcastic way... She... She knew that I wouldn't have much time left...!!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	OutputLine(NULL, "　とても痒いが、掻いちゃだめだ。掻けば掻くほどに痒さが増し、…最後には富竹さんの二の舞だ！",
 		   NULL, "It itches very badly, but I can't scratch. The more I scratch, the itchier it gets... And I'm not going to do the same thing Tomitake-san did!", Line_WaitForInput);
@@ -2396,7 +2384,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Mo_R2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　深呼吸を一度して呼吸を整えると、私は手早く荷物をまとめた。",
 		   NULL, "I took a deep breath, and I immediately started panicking.", Line_WaitForInput);
@@ -2407,9 +2394,8 @@ void main()
 	OutputLine(NULL, "早くこの場を離れなければ！",
 		   NULL, " I have to leave here as soon as possible!", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "black", 400 );
-	DrawScene( "Moon", 400 );
+	
+	DrawScene( "background/moon", 400 );
 
 	OutputLine(NULL, "　荷物をまとめながら、私は感じていた。",
 		   NULL, "I felt it while packing my stuff.", Line_WaitForInput);

@@ -16,7 +16,7 @@ void main()
 		   NULL, "I don't remember how many years ago it was.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hi10", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/hi1", "maskc", 1, 0, 1300 );
 
 	OutputLine(NULL, "　ある田舎の自然が綺麗な村があってね。",
 		   NULL, "There was this beautiful village surrounded by nature.", Line_WaitForInput);
@@ -38,7 +38,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "M_Hi12", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_hi8", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　でもね、行って本当に息を呑んだんだよ。",
 		   NULL, "But when I got there, the place took my breath away.", Line_WaitForInput);
@@ -59,7 +59,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Kusa", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/ma3", "maskc", 1, 0, 1300 );
 
 	OutputLine(NULL, "　あの時、訪れたのがまさに今、家を建てている場所なんだけどね。",
 		   NULL, "That village is where I'm building our new house.", Line_WaitForInput);
@@ -111,7 +111,7 @@ void main()
 		   NULL, "That was when I began to think that it might be a great place to live.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora5", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　確かにここには何もないし、都会での生活に比べると不便かもしれない。",
 		   NULL, "There was nothing here, and things are a bit inconvenient compared to the life in a city.", Line_WaitForInput);
@@ -225,7 +225,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	DrawScene( "F_a", 0 );
+	DrawScene( "background/furiker_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
 
@@ -238,6 +238,8 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
+	
+	DrawSceneWithMask( "background/ma_s1", "maskleft", 1, 0, 300 );
 
 	Wait( 1000 );
 	DrawScene( "black", 1000 );

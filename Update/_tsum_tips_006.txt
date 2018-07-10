@@ -9,7 +9,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 0, "Feel", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　沙都子は、校庭で遊んでいる子たちと混ざりに行った。",
 		   NULL, "Satoko went to join the children playing in the schoolyard.", Line_WaitForInput);
@@ -34,13 +34,11 @@ void main()
 
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_door", 128, 64 );
-	DrawSceneWithMask( "Hu_R1", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "background/hu_r1", "maskleft", 7, 0, 300 );
 
 	OutputLine(NULL, "　私は押入れの冬用の布団の山の一番奥に手を突っ込み、それを引っ張り出す。",
 		   NULL, "I stuck my hand deep inside the pile of winter futons in the closet, and pulled one out.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "Hu_R2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　それからちょっと洒落たグラスに、製氷室で作った氷をいっぱいに詰め込む。",
 		   NULL, "Next, I filled a stylish-looking glass with ice.", Line_WaitForInput);
@@ -85,7 +83,7 @@ void main()
 		   NULL, "And thanks to that, I could enjoy a single bottle for a long time. It wasn't bad, if you thought about it like that.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora5", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/Sora5", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　お気に入りの窓辺に座布団を敷き、……私はグラス片手に見慣れた景色と髪を撫でる風を肴にする。",
 		   NULL, "I put a cushion on my favorite spot by the window... and with the glass in one hand, I enjoyed the familiar view and the soft wind brushing through my hair.", Line_WaitForInput);
@@ -214,6 +212,8 @@ void main()
 	OutputLine(NULL, "…次のスゴロクではきっと、６が立て続けに出てくれることもあるわよ。」",
 		   NULL, " ...I'm sure I'll get six in a row on the next board game.\"", Line_Normal);
 	ClearMessage();
+	
+	DrawSceneWithMask( "background/hu_r4", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　６月２５日か。",
 		   NULL, "June 25th.", Line_WaitForInput);

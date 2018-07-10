@@ -13,7 +13,7 @@ void main()
 	DrawScene( "black", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "DSC00038", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 
 	PlayBGM( 0, "Cradle_song", 120, 0 );
 
@@ -49,9 +49,6 @@ void main()
 		   NULL, "When we feel stress, we choose to either get rid of the source of the stress or to get away from it.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
-	DrawScene( "Juku2", 400 );
-
 	OutputLine(NULL, "　例えば、学校である人にいじめられているとする。",
 		   NULL, "Let's say you're bullied by a kid at school.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -73,8 +70,6 @@ void main()
 	OutputLine(NULL, "　また、クラスを変わる、学校を辞めるなどということは、なかなかできることではなく「逃れる」ことも普通はできません。",
 		   NULL, "It's also not easy to switch classes or to quit school, so you can't easily <i>get away</i> from the situation.", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "Juku1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　その結果、日々状況は悪化し続け、強まるストレスは自身に早期の解決を促します。",
 		   NULL, "As a result, the situation gets worse day by day, and your stress urges you to solve the problem immediately.", Line_WaitForInput);
@@ -134,7 +129,6 @@ void main()
 	OutputLine(NULL, "　あなたが「殺人」に訴え、人生全てを放棄する覚悟があるならば、まだまだやれる手段はある！",
 		   NULL, "If you have the determination to give up on your life by committing murder, there have to be more ways!", Line_Normal);
 	ClearMessage();
-	DrawScene( "DSC00038", 400 );
 
 	OutputLine(NULL, "　平成はいい世の中になりました。",
 		   NULL, "Our modern era is better than any era before it.", Line_WaitForInput);

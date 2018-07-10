@@ -9,7 +9,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlaySE( 0, "s_door", 128, 64 );
-	DrawSceneWithMask( "Sora5", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/Sora6", "maskright", 7, 0, 300 );
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　私はお気に入りの窓を開け、いつものように座布団をそこに敷くと、ささやかな縁側を楽しむのだった。",
@@ -125,6 +125,8 @@ void main()
 	OutputLine(NULL, "　私は表の物干し竿ではためいている洗濯物を取り込むために、洗濯籠を掴むと表へ向かうのだった。",
 		   NULL, "I grabbed a basket and went outside to take the laundry in.", Line_Normal);
 	ClearMessage();
+	
+	DrawSceneWithMask( "black", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　雲はますますに鉛色になってくる。",
 		   NULL, "The clouds were getting darker.", Line_WaitForInput);

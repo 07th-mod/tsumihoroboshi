@@ -2,7 +2,7 @@ void main()
 {
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_KomaruA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/night/re2a_komaruA2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "それはレナの姿だった。",
@@ -46,8 +46,8 @@ void main()
 
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
 	DrawScene( "black", 400 );
-	DrawBustshot( 2, "Re_BikkuriB1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Ma2", 400 );
+	DrawBustshotWithFiltering( 2, "sprite/night/re2b_bikkuriB1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/ma2", 400 );
 
 	OutputLine(NULL, "　俺が荒々しい音とともに飛び出してきたので、レナはかなり驚いたようだった。",
 		   NULL, "Rena looked surprised to see me, even though I came out after making a lot of noise.", Line_Normal);
@@ -65,7 +65,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/night/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201338", 128, 64);
@@ -74,7 +74,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_NandeA1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/night/re2a_nandeA1_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -140,7 +140,7 @@ void main()
 
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_KomaruB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/night/re2b_komaruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　招きいれようとすると、レナはとても曖昧な顔をしながらそれを拒否した。",
@@ -152,7 +152,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	PlaySE(4, "ps3/s09/02/170201341", 128, 64);
 	OutputLine(NULL, "「…………もうね、…だめなの。",
@@ -343,8 +343,8 @@ void main()
 		   NULL, "I don't care who you were before...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Re_KomaruA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ma2", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/night/re2a_komaruA1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ma2", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201359", 128, 64);
 	OutputLine(NULL, "「………ね、",
@@ -389,7 +389,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_komaruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201361", 128, 64);
@@ -414,7 +414,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_BikkuriA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2a_bikkuriA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201363", 128, 64);
@@ -453,7 +453,7 @@ void main()
 		   NULL, "I couldn't understand that simple thing when she said she wasn't Reina...!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/moon", "maskc", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101083", 128, 64);
 	OutputLine(NULL, "「……レナも、聞いたろ？",
@@ -583,15 +583,15 @@ void main()
 		   NULL, " But they still didn't reach me...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Re_Defa1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ma2", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/night/re2a_defA1_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ma2", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201372", 128, 64);
 	OutputLine(NULL, "「………私ね、もう多分長くない命だと思うけど。",
 		   NULL, "\"...I don't think I have much time left.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_waraiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201373", 128, 64);
@@ -604,7 +604,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_OkoruB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_okoruB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201374", 128, 64);
@@ -628,7 +628,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_HauA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2a_hauA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201377", 128, 64);
@@ -648,7 +648,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_Waraib1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_waraiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201379", 128, 64);
@@ -672,7 +672,8 @@ void main()
 	OutputLine(NULL, "「……………………レナ…、…………レナぁぁあ………！」",
 		   NULL, "\"............Rena... Renaaaaa......!\"", Line_Normal);
 	ClearMessage();
-
+	
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Birth_and_death", 120, 0 );
 
 	OutputLine(NULL, "　俺はレナの心が、今どれほど追い詰められているかを知っていた。",
@@ -729,7 +730,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_NandeB1#", 200, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/night/re2b_nandeB1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/ma2", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201384", 128, 64);
@@ -752,7 +754,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2a_komaruA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201385", 128, 64);
@@ -763,7 +765,7 @@ void main()
 		   NULL, " ...You've always believed in me, Keiichi-kun.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_Defb1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201387", 128, 64);
@@ -777,7 +779,7 @@ void main()
 		   NULL, " You're the only one who trusts me, right...?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　俺の目からぼろぼろと涙が落ちる。",
 		   NULL, "Tears fell from my eyes.", Line_WaitForInput);
@@ -794,6 +796,8 @@ void main()
 	OutputLine(NULL, "　気付けばう二人して涙を浮かべあい、額を付け合っていた。",
 		   NULL, "Before I knew it, we were putting our foreheads together with tears in our eyes.", Line_Normal);
 	ClearMessage();
+	
+	DrawScene( "background/moon", 1000 );
 
 	PlaySE(4, "ps3/s09/02/170201390", 128, 64);
 	OutputLine(NULL, "「………あのね。",
@@ -944,9 +948,9 @@ void main()
 	OutputLine(NULL, "　絶対に…死ぬまで言うからな…！",
 		   NULL, "I'd keep saying them until I die...!", Line_Normal);
 	ClearMessage();
-
-	DrawBustshotWithFiltering( 2, "re_DefA1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ma2", "maskup", 1, 0, 300 );
+	
+	DrawBustshotWithFiltering( 2, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawSceneWithMask( "background/ma2", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201397", 128, 64);
 	OutputLine(NULL, "「ありがとう、圭一くん………。",
@@ -959,7 +963,7 @@ void main()
 		   NULL, " ...We'll win for sure.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_waraiB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/night/re2b_waraiB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201400", 128, 64);
@@ -981,7 +985,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1#", 200, TRUE );
+	ChangeBustshot( 2, "sprite/night/re2b_defB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201403", 128, 64);
@@ -1009,7 +1013,7 @@ void main()
 		   NULL, "If I grabbed her arm... she wouldn't trust me anymore.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma5", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101112", 128, 64);
 	OutputLine(NULL, "「ま、待てよレナ…。",
@@ -1019,7 +1023,7 @@ void main()
 		   NULL, " What do you have to do to get ready for tomorrow...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Re_DefA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201405", 128, 64);
@@ -1027,7 +1031,7 @@ void main()
 		   NULL, "\"...It's a secret.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_HauB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/night/re2b_hauB1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201406", 128, 64);
@@ -1063,7 +1067,7 @@ void main()
 		   NULL, "Mion laughed bitterly and said, \"why does everybody want us to be the bad guys so much,\" but she understood the situation.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ma_G2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma_g3", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/03/170300612", 128, 64);
 	OutputLine(NULL, "「……いっそ、悪役に徹しさせてもらってもいいよ？",
@@ -1181,7 +1185,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	OutputLine(NULL, "　とにかく、……レナが思い込んでいる危機感とは対照的に、…周りは動揺していない。",
 		   NULL, "Anyway... compared to the sense of impending doom Rena seems to be feeling... the others seemed to be taking it rather easy.", Line_WaitForInput);

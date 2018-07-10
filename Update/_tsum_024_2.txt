@@ -2,7 +2,7 @@ void main()
 {
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Re_DefB1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ChangeBustshot( 0, "sprite/normal/renasen2_def_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201407", 128, 64);
@@ -33,7 +33,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/renasen2_muhyokaku_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201409", 128, 64);
@@ -56,10 +56,6 @@ void main()
 		   NULL, "Rena was the only one who was smiling... It was terrifying.", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefA1#", 200, TRUE );
-	DisplayWindow();
-
 	PlaySE(4, "ps3/s09/02/170201411_1", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん。",
 		   NULL, "\"Mii-chan,", Line_WaitForInput);
@@ -71,8 +67,8 @@ void main()
 		   NULL, " Tell everyone to move to the center.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Me_OdorokiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_OdorokiA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/gk1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/03/170300698_1", 128, 64);
 	OutputLine(NULL, "「………レ、…レレ、レナ…、あんた、……何をやってんの………！」",
@@ -98,8 +94,8 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawBustshotWithFiltering( 0, "Re_Hi_DefB1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/normal/renasen1_def_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/gk3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　魅音の言葉は暴力的な音に掻き消された。",
 		   NULL, "A loud noise washed out Mion's voice.", Line_WaitForInput);
@@ -108,6 +104,8 @@ void main()
 	OutputLine(NULL, "　…それはレナが思い切り力任せに鉈で教壇を叩いた音だった。",
 		   NULL, "...Rena hit the teacher's desk really hard with her hatchet.", Line_Normal);
 	ClearMessage();
+	
+	ChangeBustshot( 0, "sprite/normal/renasen2_muhyokaku_0", 200, TRUE );
 
 	OutputLine(NULL, "　…バリバリと不気味な音を立てながら、レナは天板に食い込む鉈を抜く。",
 		   NULL, "...She pulled out the hatchet, making an ominous ripping noise.", Line_WaitForInput);
@@ -149,20 +147,12 @@ void main()
 		   NULL, " hell...", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_defA1#", 200, TRUE );
-	DisplayWindow();
-
 	PlaySE(4, "ps3/s09/02/170201413", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃんはやっぱり駄目だね。",
 		   NULL, "\"I knew I couldn't trust you, Mii-chan.", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/02/170201414", 128, 64);
 	OutputLine(NULL, "じゃあ圭一くんに頼むよ。",
 		   NULL, " I'm going to ask Keiichi-kun, then.", Line_WaitForInput);
-
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefB1#", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201415", 128, 64);
 	OutputLine(NULL, "……圭一くんだけは最後まで私の仲間なんだよね？",
@@ -293,7 +283,7 @@ void main()
 		   NULL, "...That's right. Just like how I didn't feel guilty or hesitate to kill Rena and Mion...!!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　クラス中が、お通夜のように静まり返りながら、机を壁際に寄せて、レナの希望する広場を作った。",
 		   NULL, "Everybody went all quiet while pushing the desks against the wall to make a space where Rena wanted it.", Line_Normal);
@@ -314,7 +304,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/renasen2_muhyokaku_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201419", 128, 64);
@@ -397,14 +387,14 @@ void main()
 	OutputLine(NULL, "　……見せしめに１人や２人、間引いたって何の問題もない…。",
 		   NULL, "...She might get rid of one or two just to set an example...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　俺はレナを不機嫌にさせないため、…とりあえず指示に従い、みんなのロッカーから縄跳びを集めた。",
 		   NULL, "I decided to do what Rena said because I didn't want her to lose her temper... I got out everybody's jump ropes from their lockers.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "re_Hi_muhyouA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/renasen2_muhyokaku_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201424", 128, 64);
@@ -427,7 +417,7 @@ void main()
 		   NULL, " would you?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101162", 128, 64);
 	OutputLine(NULL, "「………………………………ぅ…。」",
@@ -455,8 +445,8 @@ void main()
 	OutputLine(NULL, "　でも、…レナひとりを取り押さえられるだけの人数がいる。",
 		   NULL, "But... there were enough people here to overpower her.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
-	DrawScene( "ryuuketu1", 400 );
+	
+	DrawScene( "background/ryuuketu1", 400 );
 
 	OutputLine(NULL, "　……だが、そうなれば必ずレナは、今、人質に取っている子の頭に鉈を打ち込むだろう。",
 		   NULL, "...But if we did that, Rena would probably hit her hostage with the hatchet.", Line_WaitForInput);
@@ -511,7 +501,7 @@ void main()
 	OutputLine(NULL, "　…………しかも皮肉にも、…レナにはその経験があるわけだから、さらに容赦なく慣れた手つきで、だ…。",
 		   NULL, "...Of course... Rena had done that before. She'd probably do it again with no hesitation...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　だが、……レナの要求に応じている内は、少なくとも流血の惨事が起きない。",
 		   NULL, "But... as long as we did what she said, we could prevent that bloody tragedy.", Line_WaitForInput);
@@ -525,7 +515,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 1, "Me_YowakiA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DrawBustshot( 1, "portrait/normal/me1a_YowakiA1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/01/170101163", 128, 64);
@@ -567,7 +557,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/renasen2_muhyokaku_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201430", 128, 64);
@@ -585,10 +575,6 @@ void main()
 	OutputLine(NULL, "　レナが口にする「死」という言葉の凄みに、小さい子たちが何人か泣き出す…。",
 		   NULL, "Some of the little kids started crying when they heard the word \"die\"...", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	ChangeBustshot( 2, "Re_Hi_DefB1#", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201433", 128, 64);
 	OutputLine(NULL, "「大丈夫だよみんな。",
@@ -667,7 +653,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Tie2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/normal/tie_2_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　……レナが教室を占拠する上で、一番邪魔な存在が知恵先生だったのだ。",
@@ -703,7 +689,7 @@ void main()
 		   NULL, "...So, naturally, the next option was to lure her out somewhere...!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Denwa", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/g3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　レナは知恵先生に電話をかけ、誰にも内緒で相談したいことがある…と言って、どこか遠くへ呼んだに違いない。",
 		   NULL, "Rena called Chie-sensei and told her she wanted to talk to her in private... in order to lure her out to some place far from here.", Line_WaitForInput);
@@ -738,7 +724,7 @@ void main()
 	OutputLine(NULL, "　多分、学校の２階、……営林署の事務室からだ。",
 		   NULL, "She probably used the phone on the second floor of the school... the one belonging to the forestry service.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GR2", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/gr2", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　この学校の入っている営林署は出張所みたいなもので、いつも職員が常駐しているわけではない。",
 		   NULL, "This school was using part of the forestry service building, but this particular location was more of a branch office,", Line_WaitForInput);
@@ -809,7 +795,7 @@ void main()
 		   NULL, "...Damn it... Everything seemed to be working out in her favor...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "GK3", 1000 );
+	DrawScene( "background/gk1", 1000 );
 
 	PlaySE(4, "ps3/s09/01/170101164", 128, 64);
 	OutputLine(NULL, "「………縛ったぞ………。」",
@@ -834,16 +820,12 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_Hi_muhyouA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sprite/normal/renasen2_muhyokaku_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「ありがとう、圭一くん。",
 		   NULL, "\"Thank you, Keiichi-kun.", Line_WaitForInput);
-
-	DisableWindow();
-	ChangeBustshot( 0, "re_Hi_DEfB1#", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201438", 128, 64);
 	OutputLine(NULL, "……圭一くんを疑りはしないけど、一応、全員を調べるね？",
@@ -856,7 +838,7 @@ void main()
 		   NULL, " ......And I'm saying this to everybody.", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_OkoruA1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/renasen2_ikakaku_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201441", 128, 64);
@@ -868,7 +850,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "re_WaraiB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/renasen2_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201443", 128, 64);
@@ -894,7 +876,7 @@ void main()
 		   NULL, " Get it?!", Line_WaitForInput);
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_OkoruB1#", 200, TRUE );
+	ChangeBustshot( 0, "sprite/normal/renasen2_ikakaku_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201450", 128, 64);
@@ -904,7 +886,8 @@ void main()
 	OutputLine(NULL, "　刃向かっても自分の命１つじゃ責任が取れないってこと、よく胸に刻んでおくんだよッ！！！」",
 		   NULL, " You'd better remember that you involve another person's life besides your own when you attempt to stand against me!!!\"", Line_Normal);
 	ClearMessage();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　……なんてやつだ…。",
 		   NULL, "...How awful...", Line_WaitForInput);
@@ -927,8 +910,10 @@ void main()
 	OutputLine(NULL, "　人の命を自分の一存で危険になんか晒せない…！",
 		   NULL, "You can't risk somebody's life with your own decisions...!", Line_Normal);
 	ClearMessage();
+	
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/renasen2_muhyokaku_0", "maskup", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawSceneWithMask( "background/gk1", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201452", 128, 64);
