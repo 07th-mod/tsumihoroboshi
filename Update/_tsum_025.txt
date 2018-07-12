@@ -37,7 +37,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
 	DrawBustshotWithFiltering( 2, "sprite/sunset/oisi1_3_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
@@ -232,16 +232,16 @@ void main()
 	OutputLine(NULL, "「大石さん、校長と担任です！」",
 		   NULL, "\"Ooishi-san, the principal and the teacher are here!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 0, "sprite/sunset/tie_3_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/gr1_01", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700321_1", 128, 64);
 	OutputLine(NULL, "「あぁどうもどうも知恵先生…！！",
 		   NULL, "\"Hello, Chie-sensei!!", Line_WaitForInput);
-		   
-	FadeBustshotWithFiltering( 0, "down", 1, FALSE, 0, 0, 300, TRUE );	   
-		   
+
+	FadeBustshotWithFiltering( 0, "down", 1, FALSE, 0, 0, 300, TRUE );
+
 	PlaySE(4, "ps3/s09/11/170700321_2", 128, 64);
 	OutputLine(NULL, "　だ、大丈夫ですか…。」",
 		   NULL, " Are you okay?\"", Line_WaitForInput);
@@ -250,7 +250,7 @@ void main()
 	OutputLine(NULL, "　ハンカチを目に当てながら泣き崩れる知恵先生に大石が駆け寄る…。",
 		   NULL, "Ooishi ran up to Chie-sensei, who was crying with a handkerchief held up to her face.", Line_Normal);
 	ClearMessage();
-	
+
 	PlaySE(4, "ps3/s09/22/171400072", 128, 64);
 	OutputLine(NULL, "「……レナちゃんはとても真面目ないい子なんです…！",
 		   NULL, "\"Rena-chan is a good girl...!", Line_WaitForInput);
@@ -284,7 +284,7 @@ void main()
 	OutputLine(NULL, "何とか穏便に解決しますからご安心を…。」",
 		   NULL, " I'll take care of this as peacefully as possible...\"", Line_Normal);
 	ClearMessage();
-	
+
 	ChangeBustshot( 2, "sprite/sunset/oisi1_1_0", 200, TRUE );
 
 	OutputLine(NULL, "　知恵先生はすっかりしゃがみ込んでしまって、それ以上の話はできそうになかった。",
@@ -308,7 +308,7 @@ void main()
 	OutputLine(NULL, "ぜひ私と子どもたちを交換していただきたい！」",
 		   NULL, " I will take the place of the children.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 1, "sprite/sunset/tie_3_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/22/171400075", 128, 64);
@@ -350,7 +350,7 @@ void main()
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/kuruma1_02", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/11/170700332", 128, 64);
@@ -1030,7 +1030,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/gk1_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201498", 128, 64);
@@ -1352,9 +1352,9 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201530", 128, 64);
 	OutputLine(NULL, "校庭の真ん中まででいいよ。",
 		   NULL, " Just go halfway out into the schoolyard.", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "portrait/sunset/renasen2_muhyokaku_0", 200, TRUE );	   
-		   
+
+	ChangeBustshot( 0, "portrait/sunset/renasen2_muhyokaku_0", 200, TRUE );
+
 	PlaySE(4, "ps3/s09/02/170201531", 128, 64);
 	OutputLine(NULL, "……余計な立ち話とかしちゃ駄目。",
 		   NULL, " Don't say anything.", Line_WaitForInput);
@@ -1494,7 +1494,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "semi", 120, 0 );
 	DrawScene( "background/gr1_01", 400 );
@@ -1590,7 +1590,7 @@ void main()
 	OutputLine(NULL, "……お預かりします。」",
 		   NULL, " ......I'll take them.\"", Line_Normal);
 	ClearMessage();
-	
+
 	FadeBustshotWithFiltering( 0, "right", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 2, "portrait/sunset/oisi1_1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -1738,7 +1738,7 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_page", 128, 64 );
 	PlayBGM( 0, "pros", 120, 0 );
 
@@ -2088,7 +2088,7 @@ void main()
 	DrawScene( "black", 400 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_door", 128, 64 );
 	DisableWindow();
 	DrawBustshotWithFiltering( 2, "sprite/sunset/re2a_hig_muhyouA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
@@ -2579,7 +2579,7 @@ void main()
 	OutputLine(NULL, "「熊ちゃん、危険物第４類とかわかる？」",
 		   NULL, "\"Kuma-chan, do you know anything about class-4 hazardous materials?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 1, "sprite/sunset/oisi1_4_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawBustshotWithFiltering( 2, "sprite/sunset/kuma_Komaru_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/g1_01", 400 );
@@ -2696,7 +2696,7 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/00/oyaji17010", 128, 64);
 	OutputLine(NULL, "「……大石、まずいぞい。」",
@@ -3032,7 +3032,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/00/polia17005", 128, 64);
 	OutputLine(NULL, "「………し、失礼します！",
@@ -3411,7 +3411,7 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_Z02_Kyousou", 128, 64 );
 
 	OutputLine(NULL, "　１９時までに一斉捜査が行なわれて解毒剤が届けられなかった場合、人質全員と一緒にガソリンで焼け死ぬことを選びたいと思います。",
@@ -3543,7 +3543,7 @@ void main()
 	PlaySE( 0, "s_page", 128, 64 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
@@ -3662,7 +3662,7 @@ void main()
 	OutputLine(NULL, "　何が味方だ！」",
 		   NULL, " How can she call me her ally?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 1, "sprite/sunset/kuma_Def_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, TRUE );
 
 	PlaySE(4, "ps3/s09/19/173100119", 128, 64);
@@ -3791,7 +3791,7 @@ void main()
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -4067,7 +4067,7 @@ void main()
 	OutputLine(NULL, "　部活で騙すのは許せるけど、仲間である圭一くんを騙すなんて許せない。",
 		   NULL, " I won't say anything about your tricks during the club activities, but this? I can't forgive you!", Line_WaitForInput);
 	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
-	
+
 	ChangeBustshot( 0, "sprite/sunset/renasen2_ikakaku_0", 200, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -4075,7 +4075,7 @@ void main()
 	StopSE( 0 );
 	FadeOutBGM( 2, 0, FALSE );
 
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -4165,7 +4165,7 @@ void main()
 	OutputLine(NULL, "　それより、気を遣ってくれたことをお前が感謝すべきじゃないか！！」",
 		   NULL, " Shouldn't you be grateful for what she's done for you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	ChangeBustshot( 0, "sprite/sunset/re2a_hig_defA1_0", 200, TRUE );
 
 	OutputLine(NULL, "　少し攻撃的な言動になったかもしれない。",
@@ -4188,7 +4188,7 @@ void main()
 		   NULL, " I was her friend, I really liked her...!!", Line_WaitForInput);
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201578", 128, 64);
@@ -4240,12 +4240,12 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
-	
+
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/ryuuketu1", "maskdown", 1, 0, 300 );
 
 	PlayBGM( 0, "Birth_and_death", 120, 0 );
@@ -4438,7 +4438,7 @@ void main()
 		   NULL, "I knew how this story ended, but I couldn't come on to the stage.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "sprite/sunset/re2a_hig_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/sunset/re2a_hig_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/gk1_01", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101215", 128, 64);
@@ -4465,7 +4465,7 @@ void main()
 	OutputLine(NULL, "　…………どうしたの圭一くん…？」",
 		   NULL, " ......What's wrong, Keiichi-kun?\"", Line_Normal);
 	ClearMessage();
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　俺はゆっくりと立ち上がり、レナに近付く。",
@@ -4478,8 +4478,8 @@ void main()
 	OutputLine(NULL, "　……あの時、レナがそうしてくれたように、両手を差し出しながら。",
 		   NULL, "Just like what Rena did for me before, with my arms open.", Line_Normal);
 	ClearMessage();
-	
-	DrawBustshotWithFiltering( 0, "portrait/sunset/re2a_nandeA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+
+	DrawBustshotWithFiltering( 0, "portrait/sunset/re2a_nandeA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/gk1_01", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101217", 128, 64);
@@ -5043,8 +5043,8 @@ void main()
 	OutputLine(NULL, "　レナああぁあぁああ！！！」",
 		   NULL, " Rena!!!\"", Line_ContinueAfterTyping);
 
-	ChangeBustshot( 0, "portrait/sunset/renasen1_muhyokaku_0", 100, TRUE );	   
-		   
+	ChangeBustshot( 0, "portrait/sunset/renasen1_muhyokaku_0", 100, TRUE );
+
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -5156,7 +5156,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE( 0, "s_TR018b", 128, 64 );
 
@@ -5588,7 +5588,7 @@ void main()
 	OutputLine(NULL, "　…俺たちはあんなにも明るくて楽しい仲間だったレナを…よく覚えてるだろ…？」",
 		   NULL, " We had so much fun together...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DisableWindow();
 	ChangeBustshot( 2, "portrait/sunset/ri1_FumanA1_0", 200, TRUE );
 	DisplayWindow();
@@ -5788,7 +5788,7 @@ void main()
 	OutputLine(NULL, "　沙都子は、本当はまだ怖いくせにニヤリと笑うと、目を閉じて精神を集中させ始める…。",
 		   NULL, "Satoko grinned and then closed her eyes to concentrate...", Line_Normal);
 	ClearMessage();
-	
+
 	ChangeBustshot( 1, "portrait/sunset/sa1a_YareyareA1_0", 200, TRUE );
 
 }

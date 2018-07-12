@@ -6,7 +6,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -412,7 +412,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "background/kuruma2_02", 400 );
 
 	PlaySE(4, "ps3/s09/19/173100179", 128, 64);
@@ -594,7 +594,7 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　俺は、宇宙人の話を延々と続けるレナに言った。",
@@ -734,7 +734,7 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "higurashi_utu", 120, 0 );
 
 	OutputLine(NULL, "　レナの視界から逃れた俺は、足早にコードを探す。",
@@ -899,7 +899,7 @@ void main()
 	ClearMessage();
 
 	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
-	
+
 	PlayBGM( 1, "semi_r", 120, 0 );
 
 	OutputLine(NULL, "　時限発火装置ッ！！！",
@@ -992,12 +992,12 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "semi_r", 120, 0 );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　俺をぬっと、黒い影が覆った。",
@@ -1041,9 +1041,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
-	
+
 	ChangeBustshot( 0, "portrait/night/renasen1_tuukaku_0", 200, TRUE );
-	
+
 	OutputLine(NULL, "……目覚まし時計なんか持ってるのかな、………かな？」",
 		   NULL, " and why did you have the alarm clock in your hands? ...Why did you?\"", Line_Normal);
 	ClearMessage();
@@ -1115,9 +1115,9 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201626", 128, 64);
 	OutputLine(NULL, "「あはははははははははははははははははははは、圭一くんのこと、信じてたのに。",
 		   NULL, "\"Ahahahahahahahahahahahahahahahahahahahaha, I trusted you, Keiichi-kun...", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "portrait/night/re2a_hig_muhyouA1_0", 200, TRUE );	   
-		   
+
+	ChangeBustshot( 0, "portrait/night/re2a_hig_muhyouA1_0", 200, TRUE );
+
 	PlaySE(4, "ps3/s09/02/170201627", 128, 64);
 	OutputLine(NULL, "………ひどいよ、圭一くん。」",
 		   NULL, " How could you...\"", Line_Normal);
@@ -1145,13 +1145,13 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
 	DisableWindow();
 	DrawBustshot( 0, "portrait/night/renasen1_muhyokaku_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 100, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　レナの鉈が、無慈悲に振り上げられて………。",
@@ -1198,9 +1198,9 @@ void main()
 	OutputLine(NULL, "「……うわあああぁあぁああぁ！！！」",
 		   NULL, "\"Whahhhhh!!!\"", Line_ContinueAfterTyping);
 
-	DrawBustshot( 2, "portrait/night/ri1_KomaruA2_0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, TRUE );	   
-	ChangeBustshot( 0, "portrait/night/re2a_hig_okoruA1_0", 200, TRUE );	
-		   
+	DrawBustshot( 2, "portrait/night/ri1_KomaruA2_0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, TRUE );
+	ChangeBustshot( 0, "portrait/night/re2a_hig_okoruA1_0", 200, TRUE );
+
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
@@ -1216,7 +1216,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
-	
+
 	DrawSceneWithMask( "background/js3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　突然のことに何が起こったかわからなかった。",
@@ -1642,7 +1642,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawScene( "scene/032", 1000 );
 
 	OutputLine(NULL, "　迎える梨花は、後ろ足をすっと一歩引き、腰を落として迎撃体勢を取る。",
@@ -1670,7 +1670,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "white", 400 );
 	DrawSceneWithMask( "background/gk1_01", "maskleft", 1, 0, 300 );
 
@@ -1840,7 +1840,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawBustshot( 0, "portrait/sunset/sa1a_OdorokiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/gk1_01", 400 );
 
@@ -1910,7 +1910,7 @@ void main()
 	OutputLine(NULL, "「……悪ぅございましたわねぇ、私は解けるほど痩せてなくて。」",
 		   NULL, "\"I apologize for not being thin enough to slip out myself.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DisableWindow();
 	ChangeBustshot( 0, "portrait/sunset/sa1a_OdorokiA1_0", 200, TRUE );
 	DisplayWindow();
@@ -2215,8 +2215,8 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "　コーン！",
 		   NULL, "Smash!", Line_ContinueAfterTyping);
-		   
-	FadeBustshotWithFiltering( 1, "down", 1, FALSE, 0, 0, 300, TRUE );	   
+
+	FadeBustshotWithFiltering( 1, "down", 1, FALSE, 0, 0, 300, TRUE );
 
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
@@ -2302,7 +2302,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/sunset/sa1a_AkuwaraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );	
+	DrawBustshotWithFiltering( 0, "sprite/sunset/sa1a_AkuwaraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/04/170400197", 128, 64);
@@ -2327,7 +2327,7 @@ void main()
 	OutputLine(NULL, "　沙都子が自分の襟の裏をまさぐると…妙な形に折り曲げたヘアピンが現れる。",
 		   NULL, "Satoko reached for the back of her collar... and produced a bent hair pin.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	FadeBustshotWithFiltering( 0, "right", 1, FALSE, 0, 0, 300, TRUE );
 
 	OutputLine(NULL, "　沙都子は窓を開けるとそこに登り、魅音のＵ字ロックの鍵穴に向かい合う。",
@@ -2362,7 +2362,7 @@ void main()
 	OutputLine(NULL, "　も、もう外したの？」",
 		   NULL, " Did you unlock it already?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DrawBustshotWithFiltering( 1, "sprite/sunset/sa1a_AkuwaraiA1_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawBustshotWithFiltering( 2, "sprite/sunset/me1a_OdorokiA1_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/gk1_01", "maskleft", 1, 0, 300 );
@@ -2977,7 +2977,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
@@ -3088,7 +3088,7 @@ void main()
 	OutputLine(NULL, "だからここはゴールじゃなくて、行き止まりって言うんだよ？」",
 		   NULL, " So this isn't a goal--it's a dead end.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	DisableWindow();
 	ChangeBustshot( 0, "sprite/sunset/renasen2_tuukaku_0", 200, TRUE );
 	DisplayWindow();
@@ -3109,7 +3109,7 @@ void main()
 	OutputLine(NULL, "そして、最後まで信じるんだ。」",
 		   NULL, "  You keep believing until that point, too.\"", Line_Normal);
 	ClearMessage();
-	
+
 	DisableWindow();
 	ChangeBustshot( 0, "sprite/sunset/renasen2_muhyokaku_0", 200, TRUE );
 	DisplayWindow();
@@ -3192,7 +3192,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "　俺は金属バットで肩を叩きながら、もう片方の手で、レナにかかってこいと合図する。",
 		   NULL, "I tapped my shoulder with the metal bat, gesturing for Rena to come at me.", Line_Normal);
@@ -3287,16 +3287,16 @@ void main()
 	OutputLine(NULL, "………俺たち部活メンバーには、簡単な信じさせ方があるじゃねぇかよ？」",
 		   NULL, " don't you remember our club's rules?\"", Line_Normal);
 	ClearMessage();
-	
+
 	SetValidityOfInterface(FALSE);
 	SetValidityOfSaving(FALSE);
 
 	DrawSprite( 5, "scene/014d", NULL, -429, -723, -135, 0, 0, 0, FALSE, FALSE, 0, 0, 4, 200, TRUE );
 	MoveSprite( 5, -429, -240, -135, 0, 0, 0, 0, 3000, TRUE );
-	
+
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
-	
+
 	PlaySE(4, "ps3/s09/02/170201672", 128, 64);
 	OutputLine(NULL, "「……………勝った方が正義、ってことだね…！」",
 		   NULL, "\"Whoever can seize victory is the correct one...\"", Line_WaitForInput);
@@ -3425,7 +3425,7 @@ void main()
 	PlaySE(4, "ps3/s09/01/170101411", 128, 64);
 	OutputLine(NULL, "自分ってヤツをな！",
 		   NULL, " I learned about myself!", Line_WaitForInput);
-		   
+
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -3435,7 +3435,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "black", 0 );	   
+	DrawScene( "black", 0 );
 
 	PlaySE(4, "ps3/s09/01/170101412", 128, 64);
 	OutputLine(NULL, "　どういう時に自分が最高のパワーを出せるかわかって来たんだ。」",
@@ -3454,7 +3454,7 @@ void main()
 	DisplayWindow();
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	PlaySE( 0, "s_furu", 128, 64 );
 
 	PlaySE(4, "ps3/s09/02/170201676", 128, 64);
@@ -3464,8 +3464,8 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201677", 128, 64);
 	OutputLine(NULL, "　それは何かなぁ？",
 		   NULL, " I wonder what it is...", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "sprite/sunset/renasen1_ikakaku_0", 200, TRUE );	   
+
+	ChangeBustshot( 0, "sprite/sunset/renasen1_ikakaku_0", 200, TRUE );
 
 	PlaySE(4, "ps3/s09/02/170201678", 128, 64);
 	OutputLine(NULL, "　かなあ！！」",
@@ -3492,7 +3492,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-	
+
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "black", 200 );
@@ -3529,7 +3529,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　だが俺は無様に防戦に回ったりなんかしない！",
@@ -3537,7 +3537,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawSceneWithMask( "background/gy3_01", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　互いに剣戟をぶつけ合い、相手を力でねじ伏せようとするッ！！",
@@ -3683,8 +3683,8 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201682", 128, 64);
 	OutputLine(NULL, "「あはははははははははははははは！！",
 		   NULL, "\"Ahahahahahahahahahahahahahaha!!", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "sprite/sunset/renasen1_ikakaku_0", 200, TRUE );	   
+
+	ChangeBustshot( 0, "sprite/sunset/renasen1_ikakaku_0", 200, TRUE );
 
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
@@ -3702,7 +3702,7 @@ void main()
 	OutputLine(NULL, "　圭一くんの虚勢が痛々しいよ！」",
 		   NULL, "Your bluffing is just pathetic!\"", Line_Normal);
 	ClearMessage();
-	
+
 	ChangeBustshot( 2, "sprite/sunset/renasen1_muhyokaku_0", 200, TRUE );
 
 	DrawScene( "scene/cutin6", 10 );
@@ -3721,7 +3721,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 
 	DrawSceneWithMask( "background/gy3_01", "maskleft", 1, 0, 300 );
-	
+
 	PlaySE(4, "ps3/s09/01/170101419", 128, 64);
 	OutputLine(NULL, "「チッチッチ！",
 		   NULL, "\"Heh heh heh!", Line_WaitForInput);
@@ -3742,7 +3742,7 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 
 	DrawSceneWithMask( "background/gy3_01", "maskleft", 1, 0, 300 );
-	
+
 	PlaySE(4, "ps3/s09/01/170101421", 128, 64);
 	OutputLine(NULL, "　俺はご褒美のデカさに比例してパワーアップする男だぜッ？！",
 		   NULL, " My strength increases in proportion to my reward, don't you know?", Line_WaitForInput);
@@ -3783,7 +3783,7 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	DrawSceneWithMask( "background/gy3_01", "maskleft", 1, 0, 300 );
-	
+
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE(4, "ps3/s09/01/170101423", 128, 64);
 	OutputLine(NULL, "　もちろん、俺専属のメイドさんだよなぁあぁ！！",
@@ -3794,7 +3794,7 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	
+
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE(4, "ps3/s09/01/170101424", 128, 64);
 	OutputLine(NULL, "　朝はおはようございますから、夜はおやすみなさいまで、たっぷりたっぷりご奉仕三昧だ！",
@@ -3816,7 +3816,7 @@ void main()
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101425", 128, 64);
@@ -3837,7 +3837,7 @@ void main()
 	PlaySE(4, "ps3/s09/01/170101426", 128, 64);
 	OutputLine(NULL, "　うをお、夜はおやすみなさいまで？",
 		   NULL, " Wait, until I go to sleep at night?", Line_WaitForInput);
-		   
+
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -3846,7 +3846,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
-	DrawScene( "black", 200 );	   
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101427", 128, 64);
 	OutputLine(NULL, "　いやぁ、今夜は寝かさないぜ〜〜はあはあ！！",
@@ -3860,7 +3860,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	
+
 	DrawScene( "black", 300 );
 
 	PlaySE(4, "ps3/s09/01/170101428", 128, 64);
@@ -3892,7 +3892,7 @@ void main()
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-	DrawBustshotWithFiltering( 0, "sprite/sunset/re2a_waraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/sunset/re2a_waraiA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/Sora2", 0 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -3912,15 +3912,15 @@ void main()
 	OutputLine(NULL, "　圭一くんらしいなぁ！",
 		   NULL, " That's so like you, Keiichi-kun!", Line_WaitForInput);
 
-	ChangeBustshot( 0, "sprite/sunset/renasen1_muhyokaku_0", 200, TRUE );	   
-		   
+	ChangeBustshot( 0, "sprite/sunset/renasen1_muhyokaku_0", 200, TRUE );
+
 	SetValidityOfInput( FALSE );
 	Wait( 100 );
 	SetValidityOfInput( TRUE );
 
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
-	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen2_tuukaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen2_tuukaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/Sora2", 0 );
 
 	PlaySE(4, "ps3/s09/02/170201687", 128, 64);
@@ -3935,7 +3935,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	
+
 	ChangeBustshot( 0, "sprite/sunset/renasen1_ikakaku_0", 200, TRUE );
 
 	PlaySE(4, "ps3/s09/02/170201688", 128, 64);
@@ -4007,32 +4007,32 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
-	
+
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	
+
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　火花が飛び散ってんだぜ、当りゃ大怪我確定なんだぜ…！！",
 		   NULL, "Sparks were flying. We could get seriously injured!!", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin4", 0 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );	   
-	
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　転げ落ちりゃ骨折するかもしれねぇってのに、くそ、なんでこんなに面白いんだよッ！！",
 		   NULL, " If we fell off of the rooftop, we'd break our bones, yet this was so much fun!!", Line_Normal);
 	ClearMessage();
-	
+
 	DrawScene( "scene/cutin5", 0 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );	   
-	
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　俺は今日一日、レナに散々怖がらせられて、泣いたり悲しんだりしてたんだぜ？",
@@ -4042,7 +4042,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	
+
 	DrawScene( "scene/cutin3", 0 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
@@ -4051,13 +4051,13 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　それが、どこでどう間違ったらこんなことになっちまうんだろうな！！",
 		   NULL, "How did all that turn into this?", Line_Normal);
 	ClearMessage();
-	
+
 	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen2_muhyokaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 
@@ -4111,12 +4111,12 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201689", 128, 64);
 	OutputLine(NULL, "「お生憎だね！",
 		   NULL, "\"Too bad!", Line_WaitForInput);
-		   
+
 	ChangeBustshot( 0, "sprite/sunset/renasen1_muhyokaku_0", 200, TRUE );
 
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
-	
+
 	DisableWindow();
 	DrawBustshot( 0, "sprite/sunset/renasen2_muhyokaku_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, FALSE );
 	DrawScene( "background/sora2", 0 );
@@ -4125,14 +4125,14 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201690", 128, 64);
 	OutputLine(NULL, "　レナはエレガントで上品なのが大好きなの。",
 		   NULL, " That's not me. I like being elegant and graceful.", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin2", 10 );
-	PlaySE( 0, "s_Ken_B8k", 128, 64 );	
+	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 
 	DisableWindow();
 	DrawBustshot( 0, "sprite/sunset/renasen2_ikakaku_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, FALSE );
 	DrawScene( "background/sora2", 0 );
-	DisplayWindow();	
+	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201691", 128, 64);
 	OutputLine(NULL, "そういうヘラヘラしたのは圭一くんがひとりでお楽しみあそばせ！！」",
@@ -4183,7 +4183,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101433", 128, 64);
@@ -4201,7 +4201,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen1_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen1_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
@@ -4209,34 +4209,34 @@ void main()
 	OutputLine(NULL, "「はは！",
 		   NULL, "\"Ha ha!", Line_WaitForInput);
 
-	PlaySE( 0, "s_furu", 128, 64 );	   
+	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	   
-		   
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	
-	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen2_tuukaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+
+	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen2_tuukaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201693", 128, 64);
 	OutputLine(NULL, "　ようやく体が温まって来たところだよ。",
 		   NULL, " Finally, I'm all warmed up.", Line_WaitForInput);
 
-	PlaySE( 0, "s_furu", 128, 64 );	   
+	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "scene/cutin3", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	   
-		   
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	
-	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen1_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+
+	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen1_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/02/170201694", 128, 64);
@@ -4255,9 +4255,9 @@ void main()
 
 	DrawScene( "scene/cutin5", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
-	
-	DrawScene( "black", 200 );	   
-		   
+
+	DrawScene( "black", 200 );
+
 	PlaySE(4, "ps3/s09/01/170101435", 128, 64);
 	OutputLine(NULL, "　バーカ、なりゃしねえよ。",
 		   NULL, " Stupid, this isn't even a warm-up.", Line_WaitForInput);
@@ -4272,7 +4272,7 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "ps3/s09/01/170101436", 128, 64);
@@ -4299,7 +4299,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 1*2, TRUE );
-	
+
 	DrawBustshotWithFiltering( 0, "sprite/sunset/renasen1_ikakaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/sora2", 200 );
 
@@ -4313,7 +4313,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 
 	ClearMessage();
-	
+
 	DrawBustshotWithFiltering( 2, "sprite/sunset/kuma_Def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/kuruma3_02", "maskleft", 7, 0, 300 );
 
@@ -4387,7 +4387,7 @@ void main()
 	OutputLine(NULL, "　……誰もが、呆然と、この屋根の上の二人の姿に目を奪われていたのだ。",
 		   NULL, "Everyone watching was captivated by their battle on the rooftop.", Line_Normal);
 	ClearMessage();
-	
+
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4401,7 +4401,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	
+
 	DrawSceneWithMask( "background/gry2", "maskup", 7, 0, 2000 );
 
 	OutputLine(NULL, "　その時、突然大声が沸き起こり沈黙を破った。",
@@ -4491,7 +4491,7 @@ void main()
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	OutputLine(NULL, "　俺もレナも互いが示し合わせたようにぴったりのタイミングで互いを蹴りあって間合いを開く！",
@@ -4512,22 +4512,22 @@ void main()
 	PlaySE(4, "ps3/s09/01/170101439", 128, 64);
 	OutputLine(NULL, "　楽しくなって来たぜえええ！！！",
 		   NULL, " This is a blast!!!", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin2", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	 
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
-	DrawScene( "black", 200 );	
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101440", 128, 64);
 	OutputLine(NULL, "　どうだ、レナ！！",
 		   NULL, " What do you think, Rena?", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin5", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );		   
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	PlaySE(4, "ps3/s09/01/170101441", 128, 64);
 	OutputLine(NULL, "　最高に楽しくねぇかッ！！」",
@@ -4543,14 +4543,14 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "scene/cutin1", 0 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
-	
+
 	DrawScene( "background/sora_01", 10 );
 
 	PlaySE(4, "ps3/s09/02/170201697", 128, 64);
 	OutputLine(NULL, "「あははははははははははは！",
 		   NULL, "\"Ahahahahahahahahahahaha!", Line_WaitForInput);
 
-	DrawScene( "scene/cutin4", 10 );	   
+	DrawScene( "scene/cutin4", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -4558,7 +4558,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	
+
 	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_tuukaku_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora_01", "maskleft", 1, 0, 300 );
 
@@ -4566,7 +4566,7 @@ void main()
 	OutputLine(NULL, "　レナは最初っから楽しいよ！！",
 		   NULL, " I've been having fun since the very beginning!!", Line_WaitForInput);
 
-	DrawScene( "scene/cutin6", 0 );	   
+	DrawScene( "scene/cutin6", 0 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -4583,7 +4583,7 @@ void main()
 	OutputLine(NULL, "　かなあ！！」",
 		   NULL, " Split it opeeen!!\"", Line_Normal);
 	ClearMessage();
-	
+
 	ChangeBustshot( 0, "sprite/night/renasen1_ikakaku_0", 200, TRUE );
 
 	DrawScene( "scene/cutin4", 0 );
@@ -4608,7 +4608,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "scene/cutin5", 0 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
-	
+
 	DrawScene( "background/gy7", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101444", 128, 64);
@@ -4672,7 +4672,7 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_warai_0", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/moon", "maskleft", 7, 0, 300 );
 
@@ -4704,7 +4704,7 @@ void main()
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 5*2, TRUE );
-	
+
 	DrawScene( "background/moon", 0 );
 
 	OutputLine(NULL, "　それは何だかとても幻想的な風景。",
@@ -4735,7 +4735,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -4774,11 +4774,11 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	OutputLine(NULL, "　……何て、あいつらは楽しそうなんだよって！！",
 		   NULL, "...Why does it look like they're having fun?", Line_Normal);
 	ClearMessage();
-	
+
 	DrawScene( "scene/cutin2", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
@@ -4789,18 +4789,18 @@ void main()
 	PlaySE(4, "ps3/s09/01/170101448", 128, 64);
 	OutputLine(NULL, "「なんかよ、こういう涼しさでこう熱くなるとよ！",
 		   NULL, "\"Getting all fired up in a breeze this cool...", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin5", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 
-	DrawScene( "black", 200 );	
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101449", 128, 64);
 	OutputLine(NULL, "　綿流しの祭りの時を思い出すんだよなぁ！！",
 		   NULL, " It reminds me of the Watanagashi festival!!", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin4", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
@@ -4809,8 +4809,8 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	
-	DrawScene( "black", 200 );	
+
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101450", 128, 64);
 	OutputLine(NULL, "　どうも俺は静かに夕涼みってのがダメでさ！",
@@ -4835,7 +4835,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4843,18 +4843,18 @@ void main()
 
 	OutputLine(NULL, "　綿流しの祭りは俺たち部活メンバーで、祭り全体をかき回してやった！",
 		   NULL, "All us club members went crazy on the night of Watanagashi!", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin2", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	
-	DrawScene( "black", 200 );	   
+
+	DrawScene( "black", 200 );
 
 	OutputLine(NULL, "　最後に本部テントで村長にこってり絞られたけどな、絶対に来年もかき回してやるぜってみんなで笑いあったっけ！！",
 		   NULL, " The mayor scolded us by the end of it, but we laughed at each other, and promised to do the same thing again next year!!", Line_Normal);
 	ClearMessage();
-	
+
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
@@ -4872,8 +4872,8 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201705", 128, 64);
 	OutputLine(NULL, "「月に狂うか、何だかかっこいいじゃない？！",
 		   NULL, "\"Going crazy under the moon, huh? That sounds cool, doesn't it?", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "sprite/night/renasen1_warai_0", 200, TRUE );	   
+
+	ChangeBustshot( 0, "sprite/night/renasen1_warai_0", 200, TRUE );
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -4900,12 +4900,12 @@ void main()
 	OutputLine(NULL, "「ああ同感だな！！",
 		   NULL, "\"Yeah, I feel the same!!", Line_WaitForInput);
 
-	DrawScene( "scene/cutin2", 10 );	   
+	DrawScene( "scene/cutin2", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
-	DrawScene( "black", 200 );	
+
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101453", 128, 64);
 	OutputLine(NULL, "　仲間と命のやり取りをしてて、そいつが面白いと感じちまうようじゃ、俺たちは最高にイッちまってる！！",
@@ -4973,31 +4973,31 @@ void main()
 	DrawScene( "scene/cutin4", 0 );
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	DisableWindow();
-	DrawScene( "background/gy7", 200 );	
+	DrawScene( "background/gy7", 200 );
 	DisplayWindow();
 
 	PlaySE(4, "ps3/s09/02/170201707", 128, 64);
 	OutputLine(NULL, "「ほおら何をやってんだかッ！！",
 		   NULL, "\"Hey, what are you doing?", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	 
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
-	DrawScene( "black", 200 );		   
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/02/170201708", 128, 64);
 	OutputLine(NULL, "　バットが汗で滑ってるんじゃない？",
 		   NULL, " Are you getting too sweaty to hold the bat?", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin6", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	   
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_warai_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora_01", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
@@ -5017,7 +5017,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101455", 128, 64);
@@ -5032,7 +5032,7 @@ void main()
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	
+
 	DrawBustshotWithFiltering( 2, "sprite/night/renasen2_warai_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/sora_01", "maskleft", 1, 0, 300 );
 
@@ -5059,7 +5059,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
-	
+
 	DrawScene( "background/gy7", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101458", 128, 64);
@@ -5088,7 +5088,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/02/170201712", 128, 64);
@@ -5136,7 +5136,7 @@ void main()
 	PlaySE( 0, "s_furu", 128, 64 );
 	EnlargeScreen( 288, 0, 64, 60, FALSE, 400, TRUE );
 	RotateBG( 320, 30, 320, 30, 540, 0x100000, 0x80000, FALSE, 256, 1, 0, 0, 200, TRUE);
-	
+
 	DrawScene( "black", 200 );
 
 	OutputLine(NULL, "　飛ぶ！",
@@ -5208,7 +5208,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	OutputLine(NULL, "　そして時に退きあい、もったいぶるように間合いを計り、再び飛び込み合って火花を散らせあう！",
@@ -5243,7 +5243,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DrawScene( "black", 200 );
 
 	OutputLine(NULL, "　互いの打撃の激しい応酬。",
@@ -5334,14 +5334,14 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawScene( "black", 200 );
-	
+
 	DisableWindow();
 	DrawSprite( 0, "eye/eye_kei", NULL, 90-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 0, 90-320-90, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
 	DisplayWindow();
-	
+
 	DisableWindow();
 	DrawSprite( 1, "eye/eye_re", NULL, 7-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 1, 7-320+100, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
@@ -5406,15 +5406,15 @@ void main()
 	PlaySE(4, "ps3/s09/02/170201717", 128, 64);
 	OutputLine(NULL, "「あの時も同じだった！",
 		   NULL, "\"It was the same back then!", Line_WaitForInput);
-		   
-	ChangeBustshot( 0, "sprite/night/renasen1_warai_0", 200, TRUE );	   
+
+	ChangeBustshot( 0, "sprite/night/renasen1_warai_0", 200, TRUE );
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "scene/cutin1", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	
-	
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
 	DrawBustshot( 0, "sprite/night/renasen2_warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/moon", 200 );
 
@@ -5437,7 +5437,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawScene( "background/gy7", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101464", 128, 64);
@@ -5463,7 +5463,7 @@ void main()
 	DrawScene( "scene/cutin6", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 50 );
 	SetValidityOfInput( TRUE );
@@ -5472,7 +5472,7 @@ void main()
 	PlaySE( 0, "s_Ken_B8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	
+
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sprite/night/renasen2_warai_0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "background/moon", "maskleft", 1, 0, 300 );
@@ -5508,11 +5508,11 @@ void main()
 	OutputLine(NULL, "「じゃあレナも、あの時と同じセリフで返そうかな。」",
 		   NULL, "\"Okay then, I'll respond just the same.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	OutputLine(NULL, "　２人ともニヤリと笑い合う！！",
 		   NULL, "We both smiled wickedly in the same moment!!", Line_Normal);
 	ClearMessage();
-	
+
 	DisableWindow();
 	DrawSprite( 0, "eye/eye_kei", NULL, 90-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 0, 90-320-90, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
@@ -5540,7 +5540,7 @@ void main()
 		   NULL, " I don't even want to end this!!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	
+
 	DisableWindow();
 	DrawSprite( 1, "eye/eye_re", NULL, 7-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
 	MoveSprite( 1, 7-320+100, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
@@ -5579,15 +5579,15 @@ void main()
 	OutputLine(NULL, "　圭一くん、足が藁だよ！！」",
 		   NULL, " Your feet are getting weak, as if they're made out of straw!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	MoveSprite( 1, 7-420+1000, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
 
 	PlaySE(4, "ps3/s09/01/hr_kei22710", 128, 64);
 	OutputLine(NULL, "「くそったれええぇ！！",
 		   NULL, "\"Shut up!!", Line_WaitForInput);
-		   
-	MoveSprite( 0, 90-230-1000, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );	   
-		   
+
+	MoveSprite( 0, 90-230-1000, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+
 	PlaySE(4, "ps3/s09/01/hr_kei22720", 128, 64);
 	OutputLine(NULL, "　うをおりゃあああ！！！」",
 		   NULL, " Whooaaahhhhh!!!\"", Line_Normal);
@@ -6013,7 +6013,7 @@ void main()
 	OutputLine(NULL, "　君がいない世界はさぞや退屈だろうと思うよ！！」",
 		   NULL, " A world without you would be so boring!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	ChangeBustshot( 0, "sprite/night/renasen1_warai_0", 200, TRUE );
 
 	DrawScene( "scene/cutin1", 10 );
@@ -6100,13 +6100,13 @@ void main()
 	PlaySE(4, "ps3/s09/01/170101480", 128, 64);
 	OutputLine(NULL, "「ちぇ、それにお前、毒を盛られてて今夜で死んじまうんじゃねぇのかよ！",
 		   NULL, "\"Hey, aren't you supposed to die tonight due to some poison?", Line_WaitForInput);
-		   
+
 	DrawScene( "scene/cutin5", 10 );
 	PlaySE( 0, "s_Ken_A8k", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );	 
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
-	DrawScene( "black", 200 );	   
+	DrawScene( "black", 200 );
 
 	PlaySE(4, "ps3/s09/01/170101481", 128, 64);
 	OutputLine(NULL, "　余命の短いヤツがピンピンしやがって！！」",
@@ -6305,7 +6305,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "background/gy7", 200 );
 
 	OutputLine(NULL, "　圭一がぱっと後に飛び退き、金属バットで屋根を力強く叩いた。",
@@ -6335,7 +6335,7 @@ void main()
 	OutputLine(NULL, "「じゃあ、…………一度、間合いを開こうじゃねぇか。」",
 		   NULL, "\"Okay...... let's pause for a moment.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	PlaySE(4, "ps3/s09/02/170201738", 128, 64);
 	OutputLine(NULL, "「………そうだね。",
 		   NULL, "\"......Sure.", Line_WaitForInput);
@@ -6360,7 +6360,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "SORA-YUME-", 120, 0 );
 
 	PlaySE(4, "ps3/s09/01/170101491", 128, 64);
@@ -6372,7 +6372,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 2, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora_01", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
@@ -6727,7 +6727,7 @@ void main()
 		   NULL, "\"Ahahahahahahahahahahahahahahaha...\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/night/re2a_defA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/sora_01", 400 );
 
 	PlaySE(4, "ps3/s09/01/170101527", 128, 64);
@@ -6745,7 +6745,7 @@ void main()
 	OutputLine(NULL, "……体が冷めちゃわない内に、決着をつけよう。」",
 		   NULL, " We better finish up before it gets too cold.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	
+
 	ChangeBustshot( 0, "sprite/night/renasen2_def_0", 200, TRUE );
 
 	OutputLine(NULL, "　２人は思い思いの構えで、互いの持つ凶器を構えあう。",
@@ -6914,11 +6914,11 @@ void main()
 	OutputLine(NULL, "行くぜ。」",
 		   NULL, " are you ready?\"", Line_Normal);
 	ClearMessage();
-	
+
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_shinken_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/night/renasen2_shinken_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/sora_01", "maskleft", 1, 0, 300 );
-	DisplayWindow();	
+	DisplayWindow();
 
 	OutputLine(NULL, "　……合図は、なかった。",
 		   NULL, "There was no signal.", Line_Normal);
@@ -6930,11 +6930,11 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "semi_r", 120, 0 );
-	
+
 	ChangeBustshot( 0, "sprite/night/renasen1_def_0", 200, TRUE );
-	
+
 	PlaySE( 0, "s_furu", 128, 64 );
 	EnlargeScreen( 288, 0, 64, 48, FALSE, 400, TRUE );
 	DrawScene( "white", 400 );
@@ -6956,7 +6956,7 @@ void main()
 	ClearMessage();
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawScene( "fight/fight2", 2000 );
 
 	OutputLine(NULL, "　…そして、レナの影が、圭一の金属バットを激しく打ち、",
@@ -6982,7 +6982,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-	
+
 	DrawScene( "fight/fight5", 300 );
 
 	OutputLine(NULL, "　金属バットはぐるぐると回転しながら屋根の上で一度跳ねてから…校庭へ。",
@@ -7003,7 +7003,7 @@ void main()
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
 	PlaySE( 0, "s_Down", 128, 64 );
-	
+
 	DrawSprite( 5, "fight/fight6", NULL, -429, -660, -135, 0, 0, 0, FALSE, FALSE, 0, 0, 4, 200, TRUE );
 	MoveSprite( 5, -429, -600, -135, 0, 0, 0, 0, 3000, TRUE );
 
@@ -7026,7 +7026,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "　それが、決着だった。",
 		   NULL, "This was the end.", Line_Normal);
@@ -7279,13 +7279,13 @@ void main()
 	ClearMessage();
 
 	MoveSprite( 5, -429, -660, -135, 0, 0, 0, 0, 3000, TRUE );
-	
+
 	OutputLine(NULL, "　レナはゆっくりと立ち上がると、振り上げていた鉈をゆっくりと下ろした。",
 		   NULL, "Rena stood up slowly and lowered her hatchet.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/night/re2a_nandeA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );	
+	DrawBustshotWithFiltering( 0, "sprite/night/re2a_nandeA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/moon", "maskleft", 1, 0, 300 );
 	DisplayWindow();
 
@@ -7440,7 +7440,7 @@ void main()
 	OutputLine(NULL, "……相談するんだよッ！！！！」",
 		   NULL, " your friends!!!\"", Line_Normal);
 	ClearMessage();
-	
+
 	DrawScene( "scene/042a", 1000 );
 
 	PlaySE(4, "ps3/s09/02/170201799", 128, 64);
@@ -7594,7 +7594,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　そして俺は、……こんな顛末を予想していなかっただろう、地獄の観劇者たちに言ってやる！",
