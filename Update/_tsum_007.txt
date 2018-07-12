@@ -773,7 +773,8 @@ void main()
 
 	PlaySE(4, "ps2/20/172100062", 240, 64);
 	OutputLine(NULL, "「鉄っちゃんの利子、借金で一括返済するってー。",
-		   NULL, "\"They're going to borrow money to pay your interest.", Line_WaitForInput);
+		   NULL, "\"They're going to borrow money to pay your interest.", Line_Continue);
+	Wait( 2100 ); // autofix multiline voice
 	OutputLine(NULL, "まぁ、５０万くらいさ、真面目にやればすぐ返済できるってね。」",
 		   NULL, " It's only 500,000 yen, so they can pay their debts soon if they work really hard.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -892,7 +893,8 @@ void main()
 
 	PlaySE(4, "ps2/20/172100074", 240, 64);
 	OutputLine(NULL, "「ん！",
-		   NULL, "\"Mm!", Line_WaitForInput);
+		   NULL, "\"Mm!", Line_Continue);
+	Wait( 200 ); // autofix multiline voice
 	OutputLine(NULL, "　んんんん…！！",
 		   NULL, " Mmmm...!!", Line_WaitForInput);
 	PlaySE(4, "ps2/20/172100075", 240, 64);
