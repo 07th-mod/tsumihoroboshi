@@ -10,42 +10,47 @@ void main()
 	Wait( 100 );
 
 	DrawSceneWithMask( "background/sora2", "maskleft", 1, 0, 300 );
-	
+
 	PlayBGM( 1, "Mati", 120, 0 );
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	SetSpeedOfMessage( TRUE, 128 );
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "☆リナ☆",
 		   NULL, "☆Rina☆", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "身長１６８ｃｍ　Ｂ８９Ｗ６０Ｈ８７",
-		   NULL, " Height 168cm, B89 W60 H87", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Height 168cm, B89 W60 H87", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "趣味：最近は室内ガーデニングに興味があって、目標は手作りハーブで紅茶を飲むこと☆",
-		   NULL, "Hobbies: I'm interested in indoor gardening. I want to make tea with the herbs I grow.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Hobbies: I'm interested in indoor gardening. I want to make tea with the herbs I grow.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いっつも楽しくて為になるお話をいっぱい聞かせてくれてありがと〜☆",
 		   NULL, "\"I always enjoy your funny and interesting stories!", Line_WaitForInput);
 	OutputLine(NULL, "　今度お店に内緒で一緒にどっか遊びに行こうね☆」",
-		   NULL, " We should go out somewhere next time in private!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " We should go out somewhere next time in private!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	SetDrawingPointOfMessage( 0, 13 );
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 13 ); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "紳士倶楽部　ブルー・マーメイド",
 		   NULL, "               Gentlemen's Club Blue Mermaid", Line_ContinueAfterTyping);
 
-	SetDrawingPointOfMessage( 0, 14 );
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 14 ); }
 
 	OutputLine(NULL, "専属マネージャー　間宮リナ",
 		   NULL, "                 Private Manager Rina Mamiya", Line_ContinueAfterTyping);
