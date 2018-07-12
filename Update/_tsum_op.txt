@@ -263,7 +263,8 @@ void main()
 
 	PlaySE(4, "ps3/s09/02/440100004", 128, 64);
 	OutputLine(NULL, "「だからね、私。",
-		   NULL, "\"That's why", Line_WaitForInput);
+		   NULL, "\"That's why", Line_Continue);
+	Wait( 500 ); // autofix multiline voice
 	OutputLine(NULL, "魅ぃちゃんの部活って好きなの。",
 		   NULL, " I really like Mii-chan's club.", Line_WaitForInput);
 	PlaySE(4, "ps3/s09/02/440100005", 128, 64);

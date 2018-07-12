@@ -585,6 +585,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/02/hr_ren00020", 128, 64);
 	OutputLine(NULL, "「うん！！」",
 		   NULL, " \"Yes!!\"", Line_ContinueAfterTyping);
@@ -3178,12 +3179,14 @@ void main()
 	SetValidityOfInput( TRUE );
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/hr_kei22690", 128, 64);
 	OutputLine(NULL, "「あぁ恨まない！！",
 		   NULL, "\"No, never!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/hr_kei22690_01", 128, 64);
 	OutputLine(NULL, "　この勝負を終わらせた自分の不甲斐なさを恨んでやるぜ！！",
 		   NULL, " I'd hate myself for ending this game!!", Line_ContinueAfterTyping);
@@ -3193,6 +3196,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/hr_kei22700", 128, 64);
 	OutputLine(NULL, "　だが、そいつを恨むのはどうやらレナの方になりそうだなッ！！」",
 		   NULL, " But I know I won't be the one crying in the end!!\"", Line_ContinueAfterTyping);
@@ -3880,6 +3884,7 @@ void main()
 
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/hr_kei22870", 128, 64);
 	OutputLine(NULL, "「逃げたぞ！　………ず、図星かよ…わかりやすいヤツだなぁ…」",
 		   NULL, " She's running away! ...Looks like my guess was right... She's so obvious...\"", Line_WaitForInput);
