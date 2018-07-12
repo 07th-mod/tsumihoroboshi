@@ -3947,6 +3947,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s03/02/140200157", 128, 64);
 	OutputLine(NULL, "…圭ちゃん………。」",
 		   NULL, " Kei-chan...\"", Line_Normal);
@@ -4945,6 +4946,7 @@ void main()
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/170101264", 128, 64);
 	OutputLine(NULL, "　なのにお前は最後の瞬間まで、………私を信じてって言って、",
 		   NULL, " with a metal bat, to the point of death!!!", Line_WaitForInput);
@@ -5003,6 +5005,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/170101271", 128, 64);
 	OutputLine(NULL, "「レナが命を懸けて俺を救おうとしてくれたように、今度は俺がレナを救う！！",
 		   NULL, "\"Just as you tried to save me with your life, I'm going to save you, Rena!!", Line_WaitForInput);

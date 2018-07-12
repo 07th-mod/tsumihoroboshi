@@ -649,6 +649,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manc17001", 128, 64);
 	OutputLine(NULL, "「ボ、僕を仲間に加えてくれたら、エンジェルモートトレカのレアカードを進呈するよおぉぉ！！」",
 		   NULL, "\"I-If you let me join you, I'll honor you with a rare Angel Mort trading card!!\"", Line_ContinueAfterTyping);
@@ -658,6 +659,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mand17001", 128, 64);
 	OutputLine(NULL, "「オイラならフロントフィールドの夏コミ新刊を限定本付きでー！！！」",
 		   NULL, " \"I'd come with Front Field's newest Summerket issue and its Limited Edition book!!!\"", Line_ContinueAfterTyping);
@@ -667,6 +669,7 @@ void main()
 
 	PlaySE( 0, "s_Down", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mane17001", 128, 64);
 	OutputLine(NULL, "「『ひぐらし』β版、着せ替えモード搭載版で譲ってぇえぇ！！」",
 		   NULL, " \"I'll give you the beta version of Higurashi with a mode that lets you change everyone's outfits!\"", Line_ContinueAfterTyping);
@@ -676,6 +679,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manf17001", 128, 64);
 	OutputLine(NULL, "「Ｇ氏の魔改造フィギュアでなんとかーッ！！」",
 		   NULL, " \"Make a deal with me for a modded version of G's figure!!\"", Line_ContinueAfterTyping);
@@ -687,6 +691,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mang17001", 128, 64);
 	OutputLine(NULL, "「お…俺はリアルマネー壱萬円だすよー！！」",
 		   NULL, " \"I... I'll give you 10,000 yen in real money!!\"", Line_ContinueAfterTyping);
@@ -702,6 +707,7 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mana17002", 128, 64);
 	OutputLine(NULL, "「「「こんの愚か者ぉおおぉ！！！",
 		   NULL, "\"\"\"YOU FOOL!!!", Line_ContinueAfterTyping);
@@ -862,6 +868,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mana17003", 128, 64);
 	OutputLine(NULL, "「しかも女子と二人きりでボックスシートを埋めようとは不届き千万ッ！！」",
 		   NULL, " \"And he's trying to fill a booth alone with his girlfriend! How reprehensible!!\"", Line_ContinueAfterTyping);
@@ -870,6 +877,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mana17004", 128, 64);
 	OutputLine(NULL, "「一緒に座ってラブラブな空気を打ち砕いてやるでござるーッ！！」",
 		   NULL, " \"We're going to sit with them and crush their lovey-dovey mood!!\"", Line_ContinueAfterTyping);
@@ -880,6 +888,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manc17003", 128, 64);
 	OutputLine(NULL, "「最後の一発まで抵抗しろー！",
 		   NULL, " \"Fight back to the last round!", Line_ContinueAfterTyping);
@@ -890,6 +899,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manc17004", 128, 64);
 	OutputLine(NULL, "　ゲルマンの鉄の意志を見せてやるのだー！！」",
 		   NULL, " Show them the iron will of the Germans!!\"", Line_ContinueAfterTyping);
@@ -947,6 +957,7 @@ void main()
 	DrawBustshotWithFiltering( 2, "Re_WaraiB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Re_s1_Resut", "maskright", 1, 0, 0 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/02/170200051", 128, 64);
 	OutputLine(NULL, "「義務でもあるもんね！！」",
 		   NULL, " \"Our duty as well!!\"", Line_Normal);
@@ -991,18 +1002,21 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manb17005", 128, 64);
 	OutputLine(NULL, "「ひゃっひゃっひゃ！",
 		   NULL, " \"Hya hya hya!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manb17006", 128, 64);
 	OutputLine(NULL, "　ここは通さねえぜ〜！！」",
 		   NULL, " We won't let you go through!!\"", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manc17005", 128, 64);
 	OutputLine(NULL, "「エンジェルモートのイベントチケットを二人だけで消化しようなどとは許せんにゃりん！！",
 		   NULL, " \"I won't allow you to use your ticket for yourselves!!", Line_ContinueAfterTyping);
@@ -1016,6 +1030,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manc17006", 128, 64);
 	OutputLine(NULL, "　余った枠に我らを加えるでござるよー！！」",
 		   NULL, " You have to share the empty seats with us!!\"", Line_ContinueAfterTyping);
@@ -1106,6 +1121,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/01/170100061", 128, 64);
 	OutputLine(NULL, "「おうッ！！」",
 		   NULL, "\"Yeah!!\"", Line_Normal);

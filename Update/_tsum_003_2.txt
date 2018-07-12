@@ -467,6 +467,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/23/172800002", 128, 64);
 	OutputLine(NULL, "　あ、",
 		   NULL, " What,", Line_ContinueAfterTyping);
@@ -690,6 +691,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mank17002", 128, 64);
 	OutputLine(NULL, "「なな、何という部活でござるか！！」",
 		   NULL, " \"What a great club!!\"", Line_ContinueAfterTyping);
@@ -698,6 +700,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manl17002", 128, 64);
 	OutputLine(NULL, "「こんな夢のような部活は聞いたことないにゃりんんん！！」",
 		   NULL, " \"I've never heard of a club as wonderful as this in my life!!\"", Line_ContinueAfterTyping);
@@ -707,6 +710,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/02/170200089", 128, 64);
 	OutputLine(NULL, "「はぅ〜、みんななダメだよ、部活は雛見沢に住んでる人しか入れないんだよ〜〜☆」",
 		   NULL, "\n\"Hauu... You can't join our club. Only people who live in Hinamizawa can join~~☆.\"", Line_ContinueAfterTyping);
@@ -727,8 +731,11 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/mank17003", 128, 64);
+	WaitToFinishVoicePlaying( 5 ); // autofix interrupted voice
 	PlaySE(5, "ps3/s09/00/manl17003", 128, 64);
+	WaitToFinishVoicePlaying( 6 ); // autofix interrupted voice
 	PlaySE(6, "ps3/s09/00/manm17002", 128, 64);
 	OutputLine(NULL, "「「「ななな、なんとぉおおぉ！！！」」」",
 		   NULL, "\"Wh-Wh-Wh-What?!!!\"", Line_ContinueAfterTyping);
@@ -746,6 +753,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/00/manm17003", 128, 64);
 	OutputLine(NULL, "「こここれはー住民票を雛見沢に移すっきゃなあぁあぁ！！」",
 		   NULL, " \"Then, I have to move my certificate of residence to Hinamizawa at once!!\"", Line_ContinueAfterTyping);
@@ -833,6 +841,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/23/172800015", 128, 64);
 	OutputLine(NULL, "　然るにこのセーラー服とブルマの組み合わせは素晴らしい！！",
 		   NULL, " That's why this combination of a sailor-style school uniform and gym shorts is wonderful!!", Line_ContinueAfterTyping);
@@ -853,12 +862,14 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/23/172800017", 128, 64);
 	OutputLine(NULL, "　制服と体操服という近いカテゴリーにありながら交わることのなかったこれら衣装を、そうデザートに例えるならまさに苺大福！！",
 		   NULL, " A school uniform and gym clothes are in the same category, namely school clothes, but they've never been combined together. It's just like a strawberry daifuku!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Kamera", 128, 64 );
 
+	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	PlaySE(4, "ps3/s09/23/172800018", 128, 64);
 	OutputLine(NULL, "　誰もが絶対に合わないと思った組み合わせが、",
 		   NULL, " Nobody thought they'd taste good together.", Line_ContinueAfterTyping);
