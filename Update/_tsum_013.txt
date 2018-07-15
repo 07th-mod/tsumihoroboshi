@@ -326,7 +326,7 @@ void main()
 	FadeFilm( 0, TRUE );
 	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ModDrawCharacterWithFiltering(0, 9, "sprite/normal/ta1_warai_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "background//ke_ky2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2526,7 +2526,7 @@ void main()
 
 	CallScript( "&eyeCamp" );
 	SetValidityOfSkipping( FALSE );
-	DrawSceneWithMask( "GetTIP_tsum013", "mask1900", 7, 0, 400 );
+	DrawSceneWithMask( "tips/gettip_tsum013", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
 	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
 	SetValidityOfSkipping( TRUE );
