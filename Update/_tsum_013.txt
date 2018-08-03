@@ -411,8 +411,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　でも、それならば、２年目の北条夫妻事故死や、３年目の古手夫妻の病死と自殺、４年目の麻薬常習者の犯人捏造などは、警察などにも強力に影響力を持つ勢力が関与していることになる。",
-			   NULL, "<size=-2>If her theory was true, it would mean that the accidental deaths of the Houjou couple in the second year, the suicide and the death by disease of the Furude couple in the third year, and the drug addict murderer in the fourth year were all cooked up. It'd mean someone who has a lot of power and influence over the police was involved.", Line_Normal);
+		OutputLine(NULL, "　でも、それならば、２年目の北条夫妻事故死や、３年目の古手夫妻の病死と自殺、４年目の麻薬常習者の犯人捏造などは、",
+			   NULL, "<size=-2>If her theory was true, it would mean that the accidental deaths of the Houjou couple in the second year, the suicide and the death by disease of the Furude couple in the third year, and the drug addict murderer in the fourth year were all cooked up.", Line_Normal);
+		ClearMessage();
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "警察などにも強力に影響力を持つ勢力が関与していることになる。",
+			   NULL, "It'd mean someone who has a lot of power and influence over the police was involved.", Line_Normal);
 	} else {
 		OutputLine(NULL, "　でも、それならば、２年目の北条夫妻事故死や、３年目の古手夫妻の病死と自殺、４年目の麻薬常習者の犯人捏造などは、警察などにも強力に影響力を持つ勢力が関与していることになる。",
 			   NULL, "If her theory was true, it would mean that the accidental deaths of the Houjou couple in the second year, the suicide and the death by disease of the Furude couple in the third year, and the drug addict murderer in the fourth year were all cooked up. It'd mean someone who has a lot of power and influence over the police was involved.", Line_Normal);
