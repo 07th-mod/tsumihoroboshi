@@ -879,7 +879,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800015", 128, TRUE);
@@ -900,7 +900,8 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800017", 128, TRUE);
 	OutputLine(NULL, "　制服と体操服という近いカテゴリーにありながら交わることのなかったこれら衣装を、そうデザートに例えるならまさに苺大福！！",
@@ -908,7 +909,8 @@ void main()
 
 	PlaySE( 0, "s_Kamera", 128, 64 );
 
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀田</color>", NULL, "<color=#f5e6d3>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800018", 128, TRUE);
 	OutputLine(NULL, "　誰もが絶対に合わないと思った組み合わせが、",
