@@ -1829,17 +1829,17 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900010", 128, TRUE);
-	OutputLine(NULL, "「こらこら、それはみんなの共用のものだから、礼奈だけってわけじゃないんだぞ。」",
-		   NULL, "\"Hey, this is for everybody.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「こらこら、それはみんなの共用のものだから、礼奈だけってわけじゃないんだぞ。",
+		   NULL, "\"Hey, this is for everybody. Not just for you, Reina.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900011", 128, TRUE);
+	OutputLine(NULL, "あはははあはは！」",
+		   NULL, " Ahahahahaahaha!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900011", 128, TRUE);
-	OutputLine(NULL, "「あはははあはは！",
-		   NULL, "\"Ahahahahaahaha!", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200264", 128, TRUE);
-	OutputLine(NULL, "　共用でもレナが占領しちゃうからだめー。",
-		   NULL, " I understand, but I'm not going to get off the chair once I sit on it!", Line_WaitForInput);
+	OutputLine(NULL, "「共用でもレナが占領しちゃうからだめー。",
+		   NULL, "\"I understand, but I'm not going to get off the chair once I sit on it!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200265", 128, TRUE);
 	OutputLine(NULL, "あははははは。」",
 		   NULL, " Ahahahahaha.\"", Line_Normal);
