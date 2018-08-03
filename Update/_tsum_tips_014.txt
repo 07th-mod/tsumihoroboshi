@@ -895,8 +895,13 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44016", 128, TRUE);
-	OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
-		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
+			   NULL, "\"<size=-5>I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
+	} else {
+		OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
+			   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
+	}
 	Wait( 6200 ); // autofix multiline voice
 	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
 		   NULL, " But, in the case of Hinamizawa, there were no residents alive who wished to return in the first place. Perhaps the government took their time until they were absolutely certain that it was safe.\"", Line_Normal);
