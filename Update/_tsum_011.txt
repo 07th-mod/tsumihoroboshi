@@ -1232,7 +1232,12 @@ void main()
 	OutputLine(NULL, "それなのに、昭和５７年の私は、悟史くんと仲間のつもりだったんだよね。",
 		   NULL, " But at that time, in 1982, I thought I was his friend. ", GetGlobalFlag(GLinemodeSp));
 
-	DrawScene( "scene/034", 1000 );
+	if (GetGlobalFlag(GArtStyle) == 0) {
+		DrawScene( "scene/034", 1000);
+	} else {
+		DrawBustshot(4, "scene/034", 0, -80, -134, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 1000, FALSE );
+		MoveBustshot( 4, NULL, 0, 80, -134, 4, 5000, TRUE );
+	}
 
 	SetSpeedOfMessage( TRUE, 16 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
