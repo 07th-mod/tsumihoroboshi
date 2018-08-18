@@ -26,14 +26,10 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　メンタルケアの第一歩として、相手の話を充分に聞き、頭ごなしに否定しないことは初歩の初歩でありますが、特に家族の場合、これによって感応してしまうことが少なくありません。",
-			   NULL, "<size=-2>As the first step of mental care, one should listen to the patient's story carefully without denying it. That's the most basic of basics. However, when the patient and the listener are related, it's easy for the listener to become deeply influenced by the patient's delusions.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　メンタルケアの第一歩として、相手の話を充分に聞き、頭ごなしに否定しないことは初歩の初歩でありますが、特に家族の場合、これによって感応してしまうことが少なくありません。",
-			   NULL, "As the first step of mental care, one should listen to the patient's story carefully without denying it. That's the most basic of basics. However, when the patient and the listener are related, it's easy for the listener to become deeply influenced by the patient's delusions.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　メンタルケアの第一歩として、相手の話を充分に聞き、頭ごなしに否定しないことは初歩の初歩でありますが、特に家族の場合、これによって感応してしまうことが少なくありません。",
+		   NULL, "As the first step of mental care, one should listen to the patient's story carefully without denying it. That's the most basic of basics. However, when the patient and the listener are related, it's easy for the listener to become deeply influenced by the patient's delusions.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

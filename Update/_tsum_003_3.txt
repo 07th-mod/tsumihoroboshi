@@ -255,14 +255,10 @@ void main()
 		   NULL, "...Once Rena goes into Kyute Mode, she becomes merciless.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　お持ち帰りを邪魔するものは、岩なら砕き、河なら埋め、海なら裂いてでも渡るだろう…。",
-			   NULL, "<size=-2>If a rock tried to sabotage her chance to take her favorites home with her, she'd break it into pieces. If it was a river, she'd fill it up with sand. If it was the sea, she'd split it in half like Moses did and walk through it... ", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　お持ち帰りを邪魔するものは、岩なら砕き、河なら埋め、海なら裂いてでも渡るだろう…。",
-			   NULL, "If a rock tried to sabotage her chance to take her favorites home with her, she'd break it into pieces. If it was a river, she'd fill it up with sand. If it was the sea, she'd split it in half like Moses did and walk through it... ", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　お持ち帰りを邪魔するものは、岩なら砕き、河なら埋め、海なら裂いてでも渡るだろう…。",
+		   NULL, "If a rock tried to sabotage her chance to take her favorites home with her, she'd break it into pieces. If it was a river, she'd fill it up with sand. If it was the sea, she'd split it in half like Moses did and walk through it... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おお？！",
 		   NULL, "What?!", Line_WaitForInput);

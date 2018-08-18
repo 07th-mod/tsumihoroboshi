@@ -1244,14 +1244,10 @@ void main()
 		   NULL, "Ooishi took Rena's story seriously, and he wanted to find the research facility that was developing the \"parasite\". He was intending to use it as a proof of the potential bioterrorist attack.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　…でもその場所の見当がまったくつかないので、県警の暴力団対策本部と公安部と連携して、県内の一斉捜査大作戦を展開しようとしていたのだ。",
-			   NULL, "<size=-2>...But as he had no idea where to start looking, he tried to conduct simultaneous raids on all the facilities the Sonozaki family owned in the entire prefecture, in cooperation with the task force for gang groups and Public Safety.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　…でもその場所の見当がまったくつかないので、県警の暴力団対策本部と公安部と連携して、県内の一斉捜査大作戦を展開しようとしていたのだ。",
-			   NULL, "...But as he had no idea where to start looking, he tried to conduct simultaneous raids on all the facilities the Sonozaki family owned in the entire prefecture, in cooperation with the task force for gang groups and Public Safety.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　…でもその場所の見当がまったくつかないので、県警の暴力団対策本部と公安部と連携して、県内の一斉捜査大作戦を展開しようとしていたのだ。",
+		   NULL, "...But as he had no idea where to start looking, he tried to conduct simultaneous raids on all the facilities the Sonozaki family owned in the entire prefecture, in cooperation with the task force for gang groups and Public Safety.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -311,14 +311,10 @@ void main()
 
 	DrawSceneWithMask( "background/m_hi4", "maskc", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　同伴している２人は、赤坂の大学時代の後輩で、現在は陸上自衛隊に務める男と、その元部下で、雛見沢の封鎖中、その任務に関わり村内を熟知する男だった。",
-			   NULL, "<size=-2>The other two who came along were Akasaka's juniors from university. One worked at the Ground SDF, and the other was his subordinate. They were assigned the mission of sealing off Hinamizawa, so they were quite knowledgeable about the village.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　同伴している２人は、赤坂の大学時代の後輩で、現在は陸上自衛隊に務める男と、その元部下で、雛見沢の封鎖中、その任務に関わり村内を熟知する男だった。",
-			   NULL, "The other two who came along were Akasaka's juniors from university. One worked at the Ground SDF, and the other was his subordinate. They were assigned the mission of sealing off Hinamizawa, so they were quite knowledgeable about the village.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　同伴している２人は、赤坂の大学時代の後輩で、現在は陸上自衛隊に務める男と、その元部下で、雛見沢の封鎖中、その任務に関わり村内を熟知する男だった。",
+		   NULL, "The other two who came along were Akasaka's juniors from university. One worked at the Ground SDF, and the other was his subordinate. They were assigned the mission of sealing off Hinamizawa, so they were quite knowledgeable about the village.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -523,14 +519,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　昭和６１年にはアフリカのカメルーンにあるニオス湖でも同様の災害があったこともあり、地球規模でどこにでも起こり得る不幸な災害ということで決着した。",
-			   NULL, "<size=-2>In 1986, a similar natural disaster occurred at Lake Nyos in Cameroon, Africa. So, people easily believed that such a rare natural disaster could occur anywhere on Earth, and that was what happened in Hinamizawa as well.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　昭和６１年にはアフリカのカメルーンにあるニオス湖でも同様の災害があったこともあり、地球規模でどこにでも起こり得る不幸な災害ということで決着した。",
-			   NULL, "In 1986, a similar natural disaster occurred at Lake Nyos in Cameroon, Africa. So, people easily believed that such a rare natural disaster could occur anywhere on Earth, and that was what happened in Hinamizawa as well.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　昭和６１年にはアフリカのカメルーンにあるニオス湖でも同様の災害があったこともあり、地球規模でどこにでも起こり得る不幸な災害ということで決着した。",
+		   NULL, "In 1986, a similar natural disaster occurred at Lake Nyos in Cameroon, Africa. So, people easily believed that such a rare natural disaster could occur anywhere on Earth, and that was what happened in Hinamizawa as well.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 0, FALSE );
@@ -895,13 +887,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44016", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
-			   NULL, "\"<size=-5>I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
-	} else {
-		OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
-			   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-5>", Line_Continue); }
+	OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
+		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
 	Wait( 6200 ); // autofix multiline voice
 	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
 		   NULL, " But, in the case of Hinamizawa, there were no residents alive who wished to return in the first place. Perhaps the government took their time until they were absolutely certain that it was safe.\"", Line_Normal);
@@ -1324,24 +1312,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「洗脳」が短絡的手段によって短期間の間に強制的に行なわれることに対して、",
 		   NULL, "In contrast to \"brainwashing,\" which can easily force a person to commit certain acts in the short term, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "「マインドコントロール」はより時間をかけてじわじわと行い、本人がそれを正義と信じて自発的に行なうようになる点で、洗脳よりも格段に恐ろしい人格侵食であると言われている。",
-			   NULL, "<size=-2>\"mind control\" takes a long time to gradually make a person believe that what he or she must do is the right thing to do, and to act upon it as if it were his or her own idea. It's a form of character alteration, which is far more serious than brainwashing.", Line_Normal);
-	} else {
-		OutputLine(NULL, "「マインドコントロール」はより時間をかけてじわじわと行い、本人がそれを正義と信じて自発的に行なうようになる点で、洗脳よりも格段に恐ろしい人格侵食であると言われている。",
-			   NULL, "\"mind control\" takes a long time to gradually make a person believe that what he or she must do is the right thing to do, and to act upon it as if it were his or her own idea. It's a form of character alteration, which is far more serious than brainwashing.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "「マインドコントロール」はより時間をかけてじわじわと行い、本人がそれを正義と信じて自発的に行なうようになる点で、洗脳よりも格段に恐ろしい人格侵食であると言われている。",
+		   NULL, "\"mind control\" takes a long time to gradually make a person believe that what he or she must do is the right thing to do, and to act upon it as if it were his or her own idea. It's a form of character alteration, which is far more serious than brainwashing.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　カルト集団は終末思想で信者たちに常に不安と恐怖を植え付け、それから救済される方法として何かを命じられ、それに自発的に従わせようとする。",
-			   NULL, "<size=-2>The cult behind the Sarin gas incident induced fear and anxiety into its members through its revelations of doomsday. At the same time, they ordered them to do certain things as means of salvation, and had them do so voluntarily.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　カルト集団は終末思想で信者たちに常に不安と恐怖を植え付け、それから救済される方法として何かを命じられ、それに自発的に従わせようとする。",
-			   NULL, "The cult behind the Sarin gas incident induced fear and anxiety into its members through its revelations of doomsday. At the same time, they ordered them to do certain things as means of salvation, and had them do so voluntarily.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　カルト集団は終末思想で信者たちに常に不安と恐怖を植え付け、それから救済される方法として何かを命じられ、それに自発的に従わせようとする。",
+		   NULL, "The cult behind the Sarin gas incident induced fear and anxiety into its members through its revelations of doomsday. At the same time, they ordered them to do certain things as means of salvation, and had them do so voluntarily.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

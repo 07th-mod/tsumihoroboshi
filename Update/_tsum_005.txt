@@ -660,14 +660,10 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
-			   NULL, "<size=-2>I didn't know this at the time, but she was drafted by a headhunter to work at a bigger company, where she was promoted to a higher and more responsible position, one where she could bring out the most of her talent.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
-			   NULL, "I didn't know this at the time, but she was drafted by a headhunter to work at a bigger company, where she was promoted to a higher and more responsible position, one where she could bring out the most of her talent.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
+		   NULL, "I didn't know this at the time, but she was drafted by a headhunter to work at a bigger company, where she was promoted to a higher and more responsible position, one where she could bring out the most of her talent.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

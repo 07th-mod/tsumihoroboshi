@@ -1355,15 +1355,11 @@ void main()
 	ModDrawCharacter(0, 3, "sprite/normal/me1b_wink_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300431", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_Continue);
-		OutputLine(NULL, "　葛西さんをリーダーにお父さんのとこの若い衆たちを引き連れて、テキサスの砂漠でトレーナーさんと戦争ごっこをやったあとは、サンフランシスコでのんびり観光してたー。",
-			   NULL, "<size=-2>We gathered some younger men from my father's office and appointed Kasai-san as leader of the group. We went to a desert in Texas, played war games with some instructors, and went sightseeing in San Francisco afterwards. ", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　葛西さんをリーダーにお父さんのとこの若い衆たちを引き連れて、テキサスの砂漠でトレーナーさんと戦争ごっこをやったあとは、サンフランシスコでのんびり観光してたー。",
-			   NULL, "We gathered some younger men from my father's office and appointed Kasai-san as leader of the group. We went to a desert in Texas, played war games with some instructors, and went sightseeing in San Francisco afterwards. ", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　葛西さんをリーダーにお父さんのとこの若い衆たちを引き連れて、テキサスの砂漠でトレーナーさんと戦争ごっこをやったあとは、サンフランシスコでのんびり観光してたー。",
+		   NULL, "We gathered some younger men from my father's office and appointed Kasai-san as leader of the group. We went to a desert in Texas, played war games with some instructors, and went sightseeing in San Francisco afterwards. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300432", 128, TRUE);
 	OutputLine(NULL, "あははははは。」",

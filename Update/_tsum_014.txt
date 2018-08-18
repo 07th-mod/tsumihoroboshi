@@ -543,14 +543,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
-			   NULL, "<size=-2>It's natural to think that the group of people who were on their way back to the village were lost in a mass delusion because they strongly believed in the curse, and that the Shinto priest took advantage of their state of panic to instill a deeper faith in them...", Line_Normal);
-	} else {
-		OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
-			   NULL, "It's natural to think that the group of people who were on their way back to the village were lost in a mass delusion because they strongly believed in the curse, and that the Shinto priest took advantage of their state of panic to instill a deeper faith in them...", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
+		   NULL, "It's natural to think that the group of people who were on their way back to the village were lost in a mass delusion because they strongly believed in the curse, and that the Shinto priest took advantage of their state of panic to instill a deeper faith in them...", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 128, 64 );

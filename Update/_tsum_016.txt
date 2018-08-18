@@ -126,15 +126,11 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200813", 128, TRUE);
 	OutputLine(NULL, "その事件は、園崎家が命令を下したことだけはわかっているけど、結局、未解決なんだって。",
 		   NULL, "The police know that the Sonozaki family gave orders to the kidnappers, but the case still remains unsolved. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200814", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_Continue);
-		OutputLine(NULL, "……当時、園崎家の頭首である園崎お魎は、武装闘争の方針を打ち出していて、配下である暴力団組織の中に特攻隊を組織したそうなの。",
-			   NULL, "<size=-2>...At that time, the head of the Sonozaki family, Oryou, had announced a plan to fight against the dam project by force. She even formed a special attack corps using the yakuza group that's under the Sonozaki family's command. ", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "……当時、園崎家の頭首である園崎お魎は、武装闘争の方針を打ち出していて、配下である暴力団組織の中に特攻隊を組織したそうなの。",
-			   NULL, "...At that time, the head of the Sonozaki family, Oryou, had announced a plan to fight against the dam project by force. She even formed a special attack corps using the yakuza group that's under the Sonozaki family's command. ", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "……当時、園崎家の頭首である園崎お魎は、武装闘争の方針を打ち出していて、配下である暴力団組織の中に特攻隊を組織したそうなの。",
+		   NULL, "...At that time, the head of the Sonozaki family, Oryou, had announced a plan to fight against the dam project by force. She even formed a special attack corps using the yakuza group that's under the Sonozaki family's command. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200815", 128, TRUE);
 	OutputLine(NULL, "ダム計画の撤回がどうしても望めない時は、建設省に突入して武力制圧しようなんて、そんな物騒な計画を本気で練っていたらしいの。」",
@@ -209,14 +205,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　計画こそ実施されなかったが、この特攻隊は、帰国して園崎お魎直轄の暗殺部隊となり、未解決の脅迫事件多数に関わり、大臣の孫の誘拐にも成功したのだという。",
-			   NULL, "<size=-2>While the plan was never carried out, the special attack corps became a death squad under the direct control of Oryou after they came back from America. They were involved in many unsolved terrorist incidents, and they succeeded in kidnapping the grandson of the Minister as well.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　計画こそ実施されなかったが、この特攻隊は、帰国して園崎お魎直轄の暗殺部隊となり、未解決の脅迫事件多数に関わり、大臣の孫の誘拐にも成功したのだという。",
-			   NULL, "While the plan was never carried out, the special attack corps became a death squad under the direct control of Oryou after they came back from America. They were involved in many unsolved terrorist incidents, and they succeeded in kidnapping the grandson of the Minister as well.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　計画こそ実施されなかったが、この特攻隊は、帰国して園崎お魎直轄の暗殺部隊となり、未解決の脅迫事件多数に関わり、大臣の孫の誘拐にも成功したのだという。",
+		   NULL, "While the plan was never carried out, the special attack corps became a death squad under the direct control of Oryou after they came back from America. They were involved in many unsolved terrorist incidents, and they succeeded in kidnapping the grandson of the Minister as well.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );

@@ -739,15 +739,11 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200483", 128, TRUE);
 	OutputLine(NULL, "　うぅん、誰も助けなかった。",
 		   NULL, " No, nobody did. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200484", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_Continue);
-		OutputLine(NULL, "魅ぃちゃんは一番力があるくせに、村のしがらみがどうとか、よく分からない理由で煙に巻いて、結局、無責任な同情の言葉をかけて、傷つけるだけだった！」",
-			   NULL, "<size=-2>Mii-chan had the most influence out of all of us, but she made up a lame excuse, saying that it might create a conflict between the Sonozaki family and the villagers. In the end, all she did was hurting him by offering her sympathy!\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "魅ぃちゃんは一番力があるくせに、村のしがらみがどうとか、よく分からない理由で煙に巻いて、結局、無責任な同情の言葉をかけて、傷つけるだけだった！」",
-			   NULL, "Mii-chan had the most influence out of all of us, but she made up a lame excuse, saying that it might create a conflict between the Sonozaki family and the villagers. In the end, all she did was hurting him by offering her sympathy!\"", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "魅ぃちゃんは一番力があるくせに、村のしがらみがどうとか、よく分からない理由で煙に巻いて、結局、無責任な同情の言葉をかけて、傷つけるだけだった！」",
+		   NULL, "Mii-chan had the most influence out of all of us, but she made up a lame excuse, saying that it might create a conflict between the Sonozaki family and the villagers. In the end, all she did was hurting him by offering her sympathy!\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacterWithFiltering(2, 3, "sprite/sunset/me1b_odoroki_a1_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -2675,14 +2671,10 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　ビニール越しだから、中身が手触りでわかってしまうこともあり、みんな苦笑いを浮かべながら恐る恐る取り扱っていたが、最後の方にはそれを茶化し合いもした。",
-			   NULL, "<size=-2>Since each part of the corpses is in a separate plastic trash bag, we can tell what's inside in each bag by touching it. First, we forced ourselves to laugh whenever we had to touch the bodies, because we were scared. But after a while, we got used to it, to the point where we could make jokes about it.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　ビニール越しだから、中身が手触りでわかってしまうこともあり、みんな苦笑いを浮かべながら恐る恐る取り扱っていたが、最後の方にはそれを茶化し合いもした。",
-			   NULL, "Since each part of the corpses is in a separate plastic trash bag, we can tell what's inside in each bag by touching it. First, we forced ourselves to laugh whenever we had to touch the bodies, because we were scared. But after a while, we got used to it, to the point where we could make jokes about it.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ビニール越しだから、中身が手触りでわかってしまうこともあり、みんな苦笑いを浮かべながら恐る恐る取り扱っていたが、最後の方にはそれを茶化し合いもした。",
+		   NULL, "Since each part of the corpses is in a separate plastic trash bag, we can tell what's inside in each bag by touching it. First, we forced ourselves to laugh whenever we had to touch the bodies, because we were scared. But after a while, we got used to it, to the point where we could make jokes about it.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

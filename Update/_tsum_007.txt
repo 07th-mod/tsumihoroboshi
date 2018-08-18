@@ -1730,15 +1730,11 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600047", 128, TRUE);
 	OutputLine(NULL, "　結婚詐欺とちょっと似てるのかな？",
 		   NULL, " marriage fraud? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600048", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_Continue);
-		OutputLine(NULL, "　ようするに、カモと女をくっつけて、いい感じになったところで男が乱入して、俺の女に何しやがるーって、金を巻き上げる古典的恐喝です。」",
-			   NULL, "<size=-2>The woman finds a catch, a man who has money, and begins a relationship with him. Then, her boyfriend shows up and catches them in the act, blames the guy for stealing his girlfriend, then blackmails him for money.\"", Line_Normal);
-	} else {
-		OutputLine(NULL, "　ようするに、カモと女をくっつけて、いい感じになったところで男が乱入して、俺の女に何しやがるーって、金を巻き上げる古典的恐喝です。」",
-			   NULL, "The woman finds a catch, a man who has money, and begins a relationship with him. Then, her boyfriend shows up and catches them in the act, blames the guy for stealing his girlfriend, then blackmails him for money.\"", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ようするに、カモと女をくっつけて、いい感じになったところで男が乱入して、俺の女に何しやがるーって、金を巻き上げる古典的恐喝です。」",
+		   NULL, "The woman finds a catch, a man who has money, and begins a relationship with him. Then, her boyfriend shows up and catches them in the act, blames the guy for stealing his girlfriend, then blackmails him for money.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

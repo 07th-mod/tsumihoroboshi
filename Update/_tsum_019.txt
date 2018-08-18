@@ -687,15 +687,11 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201055", 128, TRUE);
 	OutputLine(NULL, "「三四さんの研究によると、オヤシロさま伝説の根底には、大昔のある風土病の存在があるんです。",
 		   NULL, "\"According to Miyo-san's research, the origin of the legend of Oyashiro-sama lies in a primitive endemic disease. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201056", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_Continue);
-		OutputLine(NULL, "その風土病の猛威がオヤシロさまの祟りと恐れられ、それを治療できる医者的存在がオヤシロさまと崇められ村を支配した。」",
-			   NULL, "<size=-2>People feared this endemic disease and called it the 'curse of Oyashiro-sama,' and then someone like a doctor treated the disease, and was then worshipped by the villagers as Oyashiro-sama himself. The village was then under his control.\"", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "その風土病の猛威がオヤシロさまの祟りと恐れられ、それを治療できる医者的存在がオヤシロさまと崇められ村を支配した。」",
-			   NULL, "People feared this endemic disease and called it the 'curse of Oyashiro-sama,' and then someone like a doctor treated the disease, and was then worshipped by the villagers as Oyashiro-sama himself. The village was then under his control.\"", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "その風土病の猛威がオヤシロさまの祟りと恐れられ、それを治療できる医者的存在がオヤシロさまと崇められ村を支配した。」",
+		   NULL, "People feared this endemic disease and called it the 'curse of Oyashiro-sama,' and then someone like a doctor treated the disease, and was then worshipped by the villagers as Oyashiro-sama himself. The village was then under his control.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }

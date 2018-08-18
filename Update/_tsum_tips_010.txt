@@ -128,25 +128,17 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
-			   NULL, "<size=-2>Furthermore, although it may depend on the tendency of the delusions, there are also cases where a \"persecutory delusion\" turns into a \"pursuit delusion\" or a \"conspiracy delusion,\" resulting in the patient creating an imaginary enemy and taking up anti-social behavior.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
-			   NULL, "Furthermore, although it may depend on the tendency of the delusions, there are also cases where a \"persecutory delusion\" turns into a \"pursuit delusion\" or a \"conspiracy delusion,\" resulting in the patient creating an imaginary enemy and taking up anti-social behavior.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
+		   NULL, "Furthermore, although it may depend on the tendency of the delusions, there are also cases where a \"persecutory delusion\" turns into a \"pursuit delusion\" or a \"conspiracy delusion,\" resulting in the patient creating an imaginary enemy and taking up anti-social behavior.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
-			   NULL, "<size=-2>(For example, there are cases where believers of a religious cult were deeply influenced by the cult founder's paranoid visions, which shifted the group into a conspiracy delusion, and that made them conduct anti-social behavior in the name of self-defense. ", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
-			   NULL, "(For example, there are cases where believers of a religious cult were deeply influenced by the cult founder's paranoid visions, which shifted the group into a conspiracy delusion, and that made them conduct anti-social behavior in the name of self-defense. ", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
+		   NULL, "(For example, there are cases where believers of a religious cult were deeply influenced by the cult founder's paranoid visions, which shifted the group into a conspiracy delusion, and that made them conduct anti-social behavior in the name of self-defense. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
 		   NULL, "Although no such cases have been reported in Japan yet, it could very well happen in the near future.)", Line_Normal);
