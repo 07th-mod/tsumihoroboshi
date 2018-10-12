@@ -8349,10 +8349,16 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
+	DrawScene( "white", 50 );
+	PlaySE( 0, "thunder", 128, 64 );
+	DrawScene( "end_1", 1000 );
+	DrawScene( "end_2", 1000 );
+	DrawScene( "end_3", 1000 );	
+	PlayBGM( 0, "song_ps2ed1", 120, 0 );
 	SetValidityOfSkipping( FALSE );
 	SetValidityOfInput( FALSE );
 	SetValidityOfUserEffectSpeed( FALSE );
-	CallScript( "&endroll_staff6");
+	CallScript( "&endroll_staff6" );
 	SetValidityOfInput( TRUE );
 
 	DrawSceneWithMask( "Omake_Haikei", "mask4", 1, 0, 1500 );
