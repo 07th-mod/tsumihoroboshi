@@ -831,8 +831,8 @@ void main()
 		   NULL, "Tomita-kun and Okamura-kun were standing behind Kameda-kun!", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 0, "ps2/00/172400012", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 25, "ps2/00/172400012", 240, TRUE);
 	OutputLine(NULL, "「大体、前原さんが昨日ので優勝できたのは、",
 		   NULL, "\"First of all, you only won the game yesterday because", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -851,11 +851,11 @@ void main()
 
 	SetSpeedOfMessage( FALSE, 0 );
 
-	ModPlayVoiceLS(5, 0, "ps2/00/172500010", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(5, 24, "ps2/00/172500010", 240, TRUE);
 	OutputLine(NULL, "「前原さんが負けたら罰ゲームが可哀想だなぁと思って、わざと負けてあげたんです！！",
 		   NULL, "\"We felt sorry for you always having to suffer punishments, so we let you shoot us!!", Line_WaitForInput);
-	ModPlayVoiceLS(5, 0, "ps2/00/172500011", 240, TRUE);
+	ModPlayVoiceLS(5, 24, "ps2/00/172500011", 240, TRUE);
 	OutputLine(NULL, "　僕たちにもちょっとは感謝してほしいです…！！！」",
 		   NULL, " You should appreciate our sacrifice...!!!\"", Line_Normal);
 	ClearMessage();
@@ -1310,7 +1310,7 @@ void main()
 		   NULL, " are you sure we can do this?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/yoshi17001", 128, TRUE);
 	OutputLine(NULL, "「うんうん、いいから運んじゃってー！",
 		   NULL, "\"Yeah, go ahead and bring them the desserts!", Line_WaitForInput);
@@ -1612,7 +1612,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その消えた後の虚空に、伸ばした全員の手がぶつかり合った。",
-		   NULL, "My hands clash with the others' in midair.", Line_Normal);
+		   NULL, "My hands clashed with the others' in midair.", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacterWithFiltering(0, 2, "sprite/normal/re2a_warai_a1_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
@@ -1717,7 +1717,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな超人たちの暴れっぷりを見ても、富田くん岡村くんコンビは焦らなかった。",
-		   NULL, "Tomita-kun and Okamura-kun look at the extraordinary techniques Rena and Kameda-kun are displaying, but they seem to be very calm.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tomita-kun and Okamura-kun looked at the extraordinary techniques Rena and Kameda-kun were displaying, but they seemed to be very calm.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

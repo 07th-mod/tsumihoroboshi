@@ -5,8 +5,8 @@ void main()
 	DrawScene( "background/res4", 400 );
 
 	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ウェイトレス</color>", NULL, "<color=#f5e6d3>Waitress</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/waita17001", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「いらっしゃいませー、エンジェルモートへようこそ。",
 		   NULL, "\"Welcome to Angel Mort.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/waita17002", 128, TRUE);
