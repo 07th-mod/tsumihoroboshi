@@ -678,14 +678,14 @@ void main()
 	OutputLine(NULL, "こいつ、自分ひとりでクラス丸ごと殲滅するつもりなんだ。",
 		   NULL, " that she was going to try to defeat everybody by herself.", Line_WaitForInput);
 	OutputLine(NULL, "いや、つもりなんてもんじゃない。",
-		   NULL, " No, not \"try\".", Line_WaitForInput);
+		   NULL, " No, not 'try.'", Line_WaitForInput);
 	OutputLine(NULL, "クラスを丸ごと殲滅",
 		   NULL, " She was going to", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "“する”、",
-		   NULL, " \"do\"", Line_ContinueAfterTyping);
+		   NULL, " 'do'", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -701,7 +701,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナがここまで本気で“やる”って言ってんだから、俺がそうならないわけにはいかないだろ。",
-		   NULL, "If she was seriously going to \"do\" it, I'd have to be serious and do it, too.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "If she was seriously going to 'do' it, I'd have to be serious and do it, too.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2219,7 +2219,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あんな撃ちまくる戦い方をしていたらすぐに水がなくなってしまいそうなのに、沙都子の銃の水流は鋭いままだった。",
-		   NULL, "She kept shooting, so her tank must have almost been empty... but her shots were still sharp and fast.", Line_Normal);
+		   NULL, "She kept shooting, so her tank must have been almost empty... but her shots were still sharp and fast.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_gun", 128, 64 );
@@ -4343,17 +4343,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/hr_kei22860", 128, TRUE);
 	OutputLine(NULL, "「かっこつけときながら、保身第一って辺りが魅音っぽい。」",
-		   NULL, "\"She was just trying to sound cool, but the main reason she delivered that verdict was to protect herself.\"", Line_WaitForInput);
+		   NULL, "\"She was just trying to sound cool, but the main reason she delivered that verdict was to protect herself.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/500200781", 128, TRUE);
 	OutputLine(NULL, "「うん。あ！」",
-		   NULL, "\"Yeah. Hey!\"", Line_Continue);
-
+		   NULL, "\"Yeah. Hey!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/hr_kei22870", 128, TRUE);
 	OutputLine(NULL, "「逃げたぞ！　………ず、図星かよ…わかりやすいヤツだなぁ…」",
-		   NULL, " She's running away! ...Looks like my guess was right... She's so obvious...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"She's running away! ...Looks like my guess was right... She's so obvious...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
