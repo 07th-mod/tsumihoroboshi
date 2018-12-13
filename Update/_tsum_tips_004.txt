@@ -35,7 +35,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500037", 128, TRUE);
 	OutputLine(NULL, "「………幸せそうね。",
 		   NULL, "\"...You look pleased.", Line_Continue);
-	Wait( 900 ); // autofix multiline voice
+	Wait( 1900 ); // autofix multiline voice
 	OutputLine(NULL, "そっか、今日はあんたの大好きな甘いものがたくさん食べられたものね。」",
 		   NULL, " Oh, that's right. You ate lots of your favorite sweets today.\"", Line_Normal);
 	ClearMessage();
@@ -72,9 +72,7 @@ void main()
 		   NULL, "I just wanted to enjoy the memory of the excitement I felt today by sitting here quietly, enjoying the sunset.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、空を見上げるとほんの少しだけ重みのある雲が見えた。",
@@ -96,7 +94,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500038", 128, TRUE);
 	OutputLine(NULL, "「………大地震や大津波などの報せとして、浅瀬に普段は絶対に見かけることができない深海の魚が現れることがある。",
 		   NULL, "\"......People say that when deep-sea animals come up to the shallows", Line_Continue);
-	Wait( 2800 ); // autofix multiline voice
+	Wait( 11200 ); // autofix multiline voice
 	OutputLine(NULL, "…っていう話があるらしいわね。」",
 		   NULL, " it's a sign of a big earthquake or a tsunami.\"", Line_Normal);
 	ClearMessage();
@@ -141,7 +139,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500039", 128, TRUE);
 	OutputLine(NULL, "「……うるさいな、言われなくてもわかってる。",
 		   NULL, "\"...Yeah, yeah, I know. You don't have to tell me.", Line_Continue);
-	Wait( 2000 ); // autofix multiline voice
+	Wait( 4500 ); // autofix multiline voice
 	OutputLine(NULL, "洗濯物を取り入れるわよ。」",
 		   NULL, " I'll get the laundry.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -164,6 +162,7 @@ void main()
 		   NULL, "I normally like rain... but I didn't think I'd enjoy it today.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene( "black", 1000 );
 }
