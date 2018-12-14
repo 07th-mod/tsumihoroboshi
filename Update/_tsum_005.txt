@@ -6,8 +6,6 @@ void main()
 
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
-	DisplayWindow();
-
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母は、とても忙しい人だった。",
@@ -135,7 +133,6 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　溢れる才能と情熱をこんな田舎で冷めさせたくない。",
@@ -379,7 +376,6 @@ void main()
 		   NULL, "I still remember there was this one guy who particularly doted on me. He was a good-looking young man (I called him \"Uncle\" once and he got mad at me) who was nicely tanned with dyed brown hair.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -622,11 +618,7 @@ void main()
 		   NULL, "\"If I said I'm going to live in another house away from your father, which of us would you like to live with?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200210", 128, TRUE);
@@ -649,7 +641,6 @@ void main()
 		   NULL, " about divorcing your father and getting married to Akihito-san.\"", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, 0, 0, 0, 0, 256, 0, 0, 0, TRUE );
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -892,17 +883,14 @@ void main()
 		   NULL, " You haven't talked with my father about this, have you? It's not too late!", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの母</color>", NULL, "<color=#f5e6d3>Rena's mother</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000012", 128, TRUE);
 	OutputLine(NULL, "「お母さんね。",
 		   NULL, "\"I'm...", Line_WaitForInput);
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000013", 128, TRUE);
 	OutputLine(NULL, "………妊娠してるの。」",
 		   NULL, "......pregnant.\"", Line_Normal);
 	ClearMessage();
@@ -911,11 +899,10 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "T2", 120, 0 );
+	PlayBGM( 1, "T2", 120, 0 );
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの母</color>", NULL, "<color=#f5e6d3>Rena's mother</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000013", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母が父に、離婚したい旨を直接会って話したかどうかは分からない。",
 		   NULL, "I don't know whether my mother actually told him about the divorce in person.", Line_Normal);
 	ClearMessage();
@@ -1492,6 +1479,7 @@ void main()
 		   NULL, "Maybe I was thinking that I wanted to do damage to her reputation and successful life by destroying her daughter, destroying myself.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Soul_scour", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1511,8 +1499,6 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "background/oyashirosama", 400 );
-
-	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまが、来てくれたのだ。",
@@ -2087,6 +2073,8 @@ void main()
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
 	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_tsum005", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
