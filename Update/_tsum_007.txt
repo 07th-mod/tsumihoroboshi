@@ -1001,7 +1001,6 @@ void main()
 	ModPlayVoiceLS(4, 20, "ps2/20/172100074", 240, TRUE);
 	OutputLine(NULL, "「ん！",
 		   NULL, "\"Mm!", Line_Continue);
-	Wait( 200 ); // autofix multiline voice
 	OutputLine(NULL, "　んんんん…！！",
 		   NULL, " Mmmm...!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 20, "ps2/20/172100075", 240, TRUE);
@@ -1030,7 +1029,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100077", 128, TRUE);
 	OutputLine(NULL, "「……ボソボソボソ。」",
-		   NULL, "\"......\" She whispers into his ear.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"......*whisper*\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
@@ -1055,12 +1054,12 @@ void main()
 	OutputLine(NULL, "「…………あの、",
 		   NULL, "\".........Umm...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……すみません、",
 		   NULL, " ...Excuse me.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…書きました。」",
 		   NULL, " ...We finished.\"", GetGlobalFlag(GLinemodeSp));

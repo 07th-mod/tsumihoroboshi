@@ -1397,13 +1397,15 @@ void main()
 		   NULL, "\"I'm not lying!!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100344", 128, TRUE);
 	OutputLine(NULL, "　俺は雛見沢に来てから、どれだけ仲間が掛け替えのないものかを知った。",
-		   NULL, " I've learned how important friends are since I moved to Hinamizawa.", Line_WaitForInput);
+		   NULL, " I've learned how important friends are since I moved to Hinamizawa.", Line_Continue);
+	Wait( 500 );
 	OutputLine(NULL, "だから、そんな仲間たちを救うためなら俺はどこまでも戦うぜ！！",
 		   NULL, " I'll fight for my friends!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100345", 128, TRUE);
 	OutputLine(NULL, "　沙都子や悟史を虐める叔母がそんなにもうぜえヤツなら、悟史になんか勿体ねえッ！！",
-		   NULL, "If I was here last year and knew what Satoko's aunt did to her and Satoshi, I wouldn't have given Satoshi the opportunity to beat her to death!!", Line_WaitForInput);
+		   NULL, "If I was here last year and knew what Satoko's aunt did to her and Satoshi, I wouldn't have given Satoshi the opportunity to beat her to death!!", Line_Continue);
+	Wait( 700 );
 	OutputLine(NULL, "　この俺が叩き殺してやったッ！！",
 		   NULL, " I would've done it myself!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100346", 128, TRUE);
@@ -1637,7 +1639,7 @@ void main()
 		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_Continue);
 	Wait(1500);
 	OutputLine(NULL, "　レナにとって、俺たちはその程度の存在だったのか？！",
-		   NULL, "Are we worth nothing to you, Rena?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Are we worth nothing to you, Rena?", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

@@ -2102,10 +2102,10 @@ void main()
 	OutputLine(NULL, "「……あーーーーー！",
 		   NULL, "\"...Oh!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	Wait( 2000 );
 	OutputLine(NULL, "　そうだったそうだった。",
-		   NULL, " I remember.", Line_WaitForInput);
+		   NULL, " I remember.", Line_Continue);
+	Wait( 1500 );
 	OutputLine(NULL, "ちょいと待って。」",
 		   NULL, " Hold on a second.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2703,7 +2703,6 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DisplayWindow();
 	SetSpeedOfMessage( FALSE, 0 );
 
 }

@@ -1502,10 +1502,10 @@ void main()
 		   NULL, "\"I can't believe people throw so much scrap out here.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100098", 128, TRUE);
 	OutputLine(NULL, "知ってる？",
-		   NULL, " Do you know there used to be a place where people threw tons of abandoned cars without wheels?", Line_WaitForInput);
+		   NULL, " Did you know?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100099", 128, TRUE);
 	OutputLine(NULL, "　昔、平坂の二丁目にもタイヤの外れた車ばっかり積んであるところがあってねー。」",
-		   NULL, " It was near Hirasaka.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " There used to be a place near Hirasaka where people threw tons of abandoned cars without wheels.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2806,7 +2806,9 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　ぐッ！！!",
 		   NULL, " Ugg!!!", Line_ContinueAfterTyping);
@@ -2819,7 +2821,9 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　ちょ、",
 		   NULL, " Stop!", Line_ContinueAfterTyping);
@@ -2839,8 +2843,6 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
 	OutputLine(NULL, "　タンマ、",
 		   NULL, " Stop it!", Line_ContinueAfterTyping);
 
@@ -2848,7 +2850,9 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…タンマ！！！」",
 		   NULL, " ...Wait!!!\"", Line_ContinueAfterTyping);
@@ -2878,16 +2882,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100168", 128, TRUE);
 	OutputLine(NULL, "「マ、マジで洒落ンなんないって…！！",
-		   NULL, "\"I-I'm serious! Stop it right now...!!", Line_WaitForInput);
+		   NULL, "\"I-I'm serious! Stop it right now...!!", Line_ContinueAfterTyping);
 
+	Wait( 2000 );
 	PlaySE( 0, "s_Down", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　ぎぇぐッ！！",
-		   NULL, " Ugg!!", Line_WaitForInput);
+		   NULL, " Ugg!!", Line_ContinueAfterTyping);
 
+	Wait( 300 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
