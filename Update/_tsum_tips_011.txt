@@ -9,12 +9,12 @@ void main()
 
 	Wait( 100 );
 
+	ClearMessage();
 
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 	SetColorOfMessage( TRUE, 0xff, 0x00, 0x00 );
 	DrawSceneWithMask( "background/m_y4", "maskup", 1, 0, 300 );
 
-	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石との電話を終えて電話ボックスを出た瞬間。",
 		   NULL, "I finished talking with Ooishi on the phone, and soon left the phone booth.", GetGlobalFlag(GLinemodeSp));
@@ -157,14 +157,11 @@ void main()
 		   NULL, "\"D-Don't come closer... you monster!!\"", Line_Normal);
 	ClearMessage();
 
+	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, FALSE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　じゃりり、ガッ、ジャララララ！！",
-		   NULL, "It kept walking towards me!!", Line_ContinueAfterTyping);
-
-	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-
-	OutputLineAll(NULL, "", Line_Normal);
+		   NULL, "It kept walking towards me!!", Line_Normal);
 
 	ClearMessage();
 
@@ -206,8 +203,7 @@ void main()
 		   NULL, "I screamed loudly in fear and started running.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして肺が爆発しそうになるまで走ってから振り返り、……もうあの奇怪な気配がそこにいないことを悟る。",
@@ -263,6 +259,7 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene( "black", 1000 );
 }
