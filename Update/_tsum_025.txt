@@ -8,11 +8,11 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Okinomiya PS</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/vtp_okeijia_1001", 128, TRUE);
-	OutputLine(NULL, "「興宮ＳＰより全車へ。",
-		   NULL, "\"Okinomiya SP to all vehicles.", Line_WaitForInput);
+	OutputLine(NULL, "「興宮ＰＳより全車へ。",
+		   NULL, "\"Okinomiya PS to all vehicles.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/vtp_okeijia_1002", 128, TRUE);
-	OutputLine(NULL, "興宮ＳＰより全車へ。",
-		   NULL, " Okinomiya SP to all vehicles.", Line_WaitForInput);
+	OutputLine(NULL, "興宮ＰＳより全車へ。",
+		   NULL, " Okinomiya PS to all vehicles.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/vtp_okeijia_1003", 128, TRUE);
 	OutputLine(NULL, "雛見沢営林署にて篭城事件発生。",
 		   NULL, " A hostage situation has broken out at the Hinamizawa forestry service building.", Line_WaitForInput);
@@ -1009,9 +1009,8 @@ void main()
 	OutputLine(NULL, "　……ただですね、",
 		   NULL, " The thing is", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "やはり話の規模があまりに大き過ぎるもので、」",
 		   NULL, " this is on a really big scale...\"", Line_Normal);
 	ClearMessage();
@@ -2556,15 +2555,13 @@ void main()
 	OutputLine(NULL, "…そうなればあとは一斉捜査で、やつらの陰謀が暴ける…",
 		   NULL, " After that, their investigation will expose the conspiracy...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
+	Wait( 1500 );
 	// (backup) SetValidityOfInput( TRUE );
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "…",
 		   NULL, " ...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "そうなんだろ？」",
 		   NULL, " right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2923,7 +2920,7 @@ void main()
 	OutputLine(NULL, "…………そうだ、ジジィに聞いてみよう。",
 		   NULL, " ......I know, I'll ask the old guy. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700442", 128, TRUE);
 	OutputLine(NULL, "あぁすみません、署に連絡して鑑識のじいさまがいるか聞いてみてください。」",
 		   NULL, "Excuse me, could you call the station and see if the old guy from the forensics department is still there?\"", Line_Normal);
 	ClearMessage();
@@ -4077,8 +4074,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私の味方の大石さんへ",
-		   NULL, "To my ally, Ooishi-san.", Line_ContinueAfterTyping);
-
+		   NULL, "To my ally, Ooishi-san.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4437,10 +4433,8 @@ void main()
 	OutputLine(NULL, "「…………………だめ……だよ……、",
 		   NULL, "\"......No, you can't...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
-	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200157", 128, TRUE);
 	OutputLine(NULL, "…圭ちゃん………。」",
 		   NULL, " Kei-chan...\"", Line_Normal);
 	ClearMessage();
@@ -5513,12 +5507,8 @@ void main()
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "金属バットで殴り殺しちまうんだ！！！",
-		   NULL, "...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "...", Line_WaitForInput);
 	SetSpeedOfMessage( FALSE, 0 );
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101264", 128, TRUE);
 	OutputLine(NULL, "　なのにお前は最後の瞬間まで、………私を信じてって言って、",
 		   NULL, " with a metal bat, to the point of death!!!", Line_WaitForInput);
@@ -5571,15 +5561,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201608", 128, TRUE);
 	OutputLine(NULL, "「……そ、……それ以上、近寄ると本当にライターを！」",
-		   NULL, "\"If you come any closer, I'll light the lighter!\"", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"If you come any closer, I'll light the lighter!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
-
-
-	WaitToFinishVoicePlaying( 4 ); // autofix interrupted voice
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101271", 128, TRUE);
 	OutputLine(NULL, "「レナが命を懸けて俺を救おうとしてくれたように、今度は俺がレナを救う！！",
@@ -5620,16 +5604,18 @@ void main()
 	OutputLine(NULL, "「俺を信じろ！！",
 		   NULL, "\"Trust me!!", Line_Continue);
 	Wait( 600 );
-	OutputLine(NULL, "　レナああぁあぁああ！！！」",
-		   NULL, " Rena!!!\"", Line_Continue);
-
-	ModDrawCharacter(0, 2, "portrait/sunset/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 100, TRUE );
-
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, FALSE );
+	OutputLine(NULL, "　レナああぁあぁああ！！！」",
+		   NULL, " Rena!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "portrait/sunset/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 100, TRUE );
+
 	SetSpeedOfMessage( FALSE, 0 );
 
 	PlaySE( 0, "s_furu", 128, 64 );
@@ -6132,12 +6118,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s09/19/173100170", 128, TRUE);
 	OutputLine(NULL, "「ご無事をお、",
-		   NULL, "\"Be safe...\"", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"Be safe...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "」ブツ…！",
-		   NULL, " Click...!", Line_Normal);
+		   NULL, "Click...!", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );

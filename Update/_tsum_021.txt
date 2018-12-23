@@ -549,10 +549,10 @@ void main()
 		   NULL, "...I think they put it in someone's lunch.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201164", 128, TRUE);
 	OutputLine(NULL, "覚えてる？",
-		   NULL, " You remember Mii-chan gave out a piece of her omelet to everyone the other day at lunch,", Line_WaitForInput);
+		   NULL, " Don't you remember?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201165", 128, TRUE);
 	OutputLine(NULL, "　先日、魅ぃちゃんが卵焼きを１人１個ずつ分けてくれたよね？",
-		   NULL, " don't you?", Line_WaitForInput);
+		   NULL, " Mii-chan gave out a piece of her omelet to everyone the other day at lunch.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201166", 128, TRUE);
 	OutputLine(NULL, "　あの時にやられたんだと思う。",
 		   NULL, " She must have put it in the omelet. ", GetGlobalFlag(GLinemodeSp));
@@ -2126,8 +2126,8 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(0, 2, "portrait/night/re2a_hig_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201279", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「嘘だッ！！！",
 		   NULL, "\"Yes, you are!!!", Line_WaitForInput);
 

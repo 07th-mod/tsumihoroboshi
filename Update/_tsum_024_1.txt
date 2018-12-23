@@ -1292,89 +1292,54 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "竜宮さんが不良になる",
-		   NULL, "Ryuugu-san becomes a bad kid.", Line_ContinueAfterTyping);
+		   NULL, "Ryuugu-san becomes a bad kid.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "↓",
-		   NULL, "↓", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "↓\n悪いことをして逮捕される",
+		   NULL, "↓\nShe does something bad and gets arrested by the police.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "悪いことをして逮捕される",
-		   NULL, " She does something bad and gets arrested by the police.", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "↓",
-		   NULL, "↓", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "↓\n担任の重大な責任",
+		   NULL, "↓\nIt's her teacher's responsibility.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "担任の重大な責任",
-		   NULL, " It's her teacher's responsibility.", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_tataku", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "↓",
-		   NULL, "↓", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "↓\n懲戒免職",
+		   NULL, "↓\nI'll be dishonorably discharged.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "懲戒免職",
-		   NULL, " I'll be dishonorably discharged.", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "↓",
-		   NULL, "↓", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "↓\nカレーが食べられない",
+		   NULL, "↓\nI can't eat curry anymore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "カレーが食べられない",
-		   NULL, " I can't eat curry anymore.", Line_ContinueAfterTyping);
-
+	DisableWindow();
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene( "white", 10 );
+	DrawScene( "white", 100 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-	DrawScene( "background/aka2", 0 );
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "↓",
-		   NULL, "↓", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "死",
-		   NULL, " I'm dead.", Line_ContinueAfterTyping);
-
+	DrawScene( "background/aka2", 50 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	OutputLineAll(NULL, "", Line_Normal);
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "↓\n死",
+		   NULL, "↓\nI'm dead.", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 

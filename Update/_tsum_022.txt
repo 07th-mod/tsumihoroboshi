@@ -1065,7 +1065,6 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500182", 128, TRUE);
@@ -1075,7 +1074,6 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
 	PlaySE( 0, "s_boyoon", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 0, 3*2, TRUE );
@@ -2977,7 +2975,7 @@ void main()
 	OutputLine(NULL, "　……ただただ泣いた。",
 		   NULL, "...I just kept crying.", Line_WaitForInput);
 	OutputLine(NULL, "罪を涙に変えて、目から思い切り搾り出してやりたかった。",
-		   NULL, " I wanted transmute my sin to tears in order to squeeze it out of me.", Line_Normal);
+		   NULL, " I wanted to transmute my sin to tears in order to squeeze it out of me.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

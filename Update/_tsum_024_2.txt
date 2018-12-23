@@ -81,25 +81,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300698_1", 128, TRUE);
 	OutputLine(NULL, "「………レ、…レレ、レナ…、あんた、……何をやってんの………！」",
-		   NULL, "\"...R-R-Rena... what are you doing...?\"", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"...R-R-Rena... what are you doing...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
-
-
+	DrawScene( "black", 100 );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　バッギャッ！！！",
-		   NULL, "Bam!!!", Line_Continue);
-
-	DrawScene( "black", 0 );
-	PlaySE( 0, "s_tataku", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-
-	OutputLineAll(NULL, "", Line_Normal);
+		   NULL, "Bam!!!", Line_Normal);
 
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
@@ -596,7 +588,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101163", 128, TRUE);
 	OutputLine(NULL, "「……………………従おう。」",
-		   NULL, "\"...Let's do as Rena says.\"", Line_WaitForInput);
+		   NULL, "\"...Let's do as Rena says.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300702", 128, TRUE);
 	OutputLine(NULL, "「圭ちゃん……。」",
 		   NULL, "\"Kei-chan...\"", Line_Normal);
@@ -950,11 +945,10 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(0, 2, "sprite/normal/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201437", 128, TRUE);
 	OutputLine(NULL, "「ありがとう、圭一くん。",
 		   NULL, "\"Thank you, Keiichi-kun.", Line_WaitForInput);
-
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201438", 128, TRUE);
 	OutputLine(NULL, "……圭一くんを疑りはしないけど、一応、全員を調べるね？",
 		   NULL, " ...I don't mean to doubt you, Keiichi-kun, but I'll make sure just in case.", Line_WaitForInput);
