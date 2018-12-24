@@ -11,15 +11,14 @@ void main()
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	DrawScene( "black", 1000 );
-	Wait( 3000 );
+	Wait( 1000 );
 	DrawScene( "white", 1000 );
 	DrawSceneWithMask( "background/kuruma6", "maskm1", 1, 0, 1300 );
 
-	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-	SetSpeedOfMessage( FALSE, 0 );
-
 	ClearMessage();
+	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, FALSE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　舗装道路が終わり、砂利道がガタンガタンと車を揺らし始める。",
 		   NULL, "The car began to rattle as the road turned from asphalt to gravel.", Line_Normal);
@@ -76,32 +75,35 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44001", 128, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yeah.", Line_Continue);
-	Wait( 300 ); // autofix multiline voice
+	Wait( 1600 ); // autofix multiline voice
 	OutputLine(NULL, "風光明媚ないい土地です。",
-		   NULL, " The winds are cool and the sunshine is bright.", Line_WaitForInput);
+		   NULL, " The winds are cool and the sunshine is bright.", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "ひょっとしたら岐阜の村みたいに、世界文化遺産に指定されることもあったかもしれないのに、惜しいですね。」",
 		   NULL, " This place could've become a World Heritage Site like the village in Gifu. What a waste...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300009", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「そのお陰で観光客がいない。",
 		   NULL, "\"But thanks to that, there are no irritating tourists around here.", Line_Continue);
-	Wait( 2700 ); // autofix multiline voice
+	Wait( 3300 ); // autofix multiline voice
 	OutputLine(NULL, "実に快適じゃないか。",
-		   NULL, " See, that makes it much better.", Line_WaitForInput);
+		   NULL, " See, that makes it much better.", Line_Continue);
+	Wait( 3700 );
 	OutputLine(NULL, "……どうして旅行者ってのは田舎じゃ交通法規を忘れられるんだ？",
-		   NULL, " ...Why do tourists forget about pedestrian traffic laws when they're in rural areas? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...Why do tourists forget about pedestrian traffic laws when they're in rural areas?", Line_Continue);
+	Wait( 5000 );
 	OutputLine(NULL, "　道路いっぱいに横になりやがって。」",
-		   NULL, "They walk in the middle of the road, you know?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " They walk in the middle of the road, you know?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44002", 128, TRUE);
 	OutputLine(NULL, "「あっはっはっは。",
 		   NULL, "\"Ah ha ha ha.", Line_Continue);
-	Wait( 600 ); // autofix multiline voice
+	Wait( 2800 ); // autofix multiline voice
 	OutputLine(NULL, "赤坂先輩はアウトドアは今も？」",
 		   NULL, " Akasaka-senpai, do you still do stuff outdoors?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -110,20 +112,22 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300010", 128, TRUE);
 	OutputLine(NULL, "「最近はさっぱりだな。",
 		   NULL, "\"Not as much as I used to.", Line_Continue);
-	Wait( 1100 ); // autofix multiline voice
+	Wait( 2400 ); // autofix multiline voice
 	OutputLine(NULL, "何しろ暇のない稼業だからな。」",
 		   NULL, " My job doesn't give me much free time.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101262", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44003", 128, TRUE);
 	OutputLine(NULL, "「あっはっはっはっは。",
 		   NULL, "\"Ah ha ha ha ha.", Line_Continue);
-	Wait( 700 ); // autofix multiline voice
+	Wait( 2500 ); // autofix multiline voice
 	OutputLine(NULL, "それはお互い様です。",
-		   NULL, " Same here.", Line_WaitForInput);
+		   NULL, " Same here.", Line_Continue);
+	Wait( 2900 );
 	OutputLine(NULL, "………………お、いたいた。",
-		   NULL, " .........Oh, hey,", Line_WaitForInput);
+		   NULL, " .........Oh, hey,", Line_Continue);
+	Wait( 1300 );
 	OutputLine(NULL, "早いな。」",
 		   NULL, " there he is.\"", Line_Normal);
 	ClearMessage();
@@ -136,8 +140,7 @@ void main()
 		   NULL, "The other man noticed and waved his hand before anyone in the car could honk the horn.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -154,7 +157,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/menba44001", 128, TRUE);
 	OutputLine(NULL, "「小隊長殿！",
 		   NULL, "\"Captain!", Line_Continue);
-	Wait( 400 ); // autofix multiline voice
+	Wait( 1400 ); // autofix multiline voice
 	OutputLine(NULL, "　ご無沙汰いたしております。」",
 		   NULL, " It's good to see you again.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -163,11 +166,13 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44004", 128, TRUE);
 	OutputLine(NULL, "「おう！",
 		   NULL, "\"Yo!", Line_Continue);
-	Wait( 200 ); // autofix multiline voice
+	Wait( 1600 ); // autofix multiline voice
 	OutputLine(NULL, "　今のとこはどうだ。元気にやってるか！",
-		   NULL, " How have you been doing lately? Well, I hope?", Line_WaitForInput);
+		   NULL, " How have you been doing lately? Well, I hope?", Line_Continue);
+	Wait( 3000 );
 	OutputLine(NULL, "　今日は楽にしてくれていいぞ。",
-		   NULL, " You can take it easy today.", Line_WaitForInput);
+		   NULL, " You can take it easy today.", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "こちらは俺が大学時代に大変お世話になった赤坂先輩だ。」",
 		   NULL, " This is Akasaka-senpai. He took care of me back in college.\"", Line_Normal);
 	ClearMessage();
@@ -176,9 +181,10 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300011", 128, TRUE);
 	OutputLine(NULL, "「どうも、赤坂です。",
 		   NULL, "\"Hello, my name is Akasaka.", Line_Continue);
-	Wait( 1100 ); // autofix multiline voice
+	Wait( 2800 ); // autofix multiline voice
 	OutputLine(NULL, "今日はもう１人、大石という者とご一緒するお約束でしたが、直前に検査入院が入ってしまいまして同行できませんでした。",
-		   NULL, " Ooishi was supposed to come today, but he had to go for a medical check-up at the last minute.", Line_WaitForInput);
+		   NULL, " Ooishi was supposed to come today, but he had to go for a medical check-up at the last minute.", Line_Continue);
+	Wait( 10000 );
 	OutputLine(NULL, "この度はお世話になりますが、よろしく。」",
 		   NULL, " Anyway, it's a pleasure to meet you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -218,7 +224,7 @@ void main()
 		   NULL, "Those eyes showed the confidence he'd built through many risky experiences, and he had a well-built muscular body and a fearless aura. He must have fought against many violent criminals.", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 
 	DrawSceneWithMask( "background/hi1", "maskc", 1, 0, 300 );
 
@@ -307,7 +313,7 @@ void main()
 		   NULL, "In fact, Ooishi was supposed to come with Akasaka, but he was called in for an emergency health check-up.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
+	FadeFilm( 0, FALSE );
 
 	DrawSceneWithMask( "background/m_hi4", "maskc", 1, 0, 300 );
 
@@ -329,7 +335,7 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_page", 128, 64 );
 
@@ -340,6 +346,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300012", 128, TRUE);
+	Wait( 2000 );
 	OutputLine(NULL, "「……では、鬼ヶ淵沼をお願いします。」",
 		   NULL, "\"Alright, please take me to Onigafuchi Swamp.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -348,7 +355,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/menba44003", 128, TRUE);
 	OutputLine(NULL, "「了解いたしました。",
 		   NULL, "\"No problem.", Line_Continue);
-	Wait( 500 ); // autofix multiline voice
+	Wait( 1500 ); // autofix multiline voice
 	OutputLine(NULL, "それではご案内いたします！」",
 		   NULL, " Right this way, sir!\"", Line_Normal);
 	ClearMessage();
@@ -366,11 +373,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/Sora", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
@@ -405,7 +408,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44006", 128, TRUE);
 	OutputLine(NULL, "「大災害後のだいぶ初期に埋め立てられたと聞いています。",
 		   NULL, "\"I was told that they sealed the swamp right after the Disaster.", Line_Continue);
-	Wait( 2600 ); // autofix multiline voice
+	Wait( 4600 ); // autofix multiline voice
 	OutputLine(NULL, "自分がここへ着任した時はすでに埋め立てられていました。」",
 		   NULL, " This place was already encased in concrete by the time I arrived here for my mission.\"", Line_Normal);
 	ClearMessage();
@@ -445,14 +448,15 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300016", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「ここの写真がよくミステリー系のサイトに紹介されてるよ。",
 		   NULL, "\"Well, that's what they write on occult websites.", Line_Continue);
-	Wait( 2000 ); // autofix multiline voice
+	Wait( 4900 ); // autofix multiline voice
 	OutputLine(NULL, "ここで政府と宇宙人が交流してたって言うんだ。",
-		   NULL, " They say that this is the place where our government met with aliens. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " They say that this is the place where our government met with aliens.", Line_Continue);
+	Wait( 5000 );
 	OutputLine(NULL, "確かに、こんな森の中に、ポカンとこんなコンクリートの空き地があれば、不審に思うよな。」",
-		   NULL, "I can't blame them for such rumors, though because an empty concrete space in the middle of a forest sure does look weird.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I can't blame them for such rumors, though because an empty concrete space in the middle of a forest sure does look weird.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
@@ -462,7 +466,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 
 	DrawSceneWithMask( "background/oni1", "maskc", 1, 0, 300 );
 
@@ -488,13 +492,12 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	FadeFilm( 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300017", 128, TRUE);
 	OutputLine(NULL, "「ネットで騒いでる連中にも、連中なりの根拠があるらしい。",
 		   NULL, "\"But the people who write those rumors on the Internet actually have a point.", Line_Continue);
-	Wait( 3100 ); // autofix multiline voice
+	Wait( 5700 ); // autofix multiline voice
 	OutputLine(NULL, "地質学的に言って、ガスの発生源を塞ぐために沼をコンクリートで固めるなんてのは、何の意味もないかららしいんだ。」",
 		   NULL, " Any geologist could tell you that covering a source of volcanic gas with concrete is absolutely useless.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -503,7 +506,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44009", 128, TRUE);
 	OutputLine(NULL, "「なるほど、確かに活火山の火口をコンクリートで埋めたという話は聞かないですね。",
 		   NULL, "\"Hmm... that's true. I've never heard of anyone trying to prevent a volcano from erupting by pouring concrete into its crater.", Line_Continue);
-	Wait( 5100 ); // autofix multiline voice
+	Wait( 7100 ); // autofix multiline voice
 	OutputLine(NULL, "でもまぁ、税金での無駄な工事は我が国の伝統ですから。」",
 		   NULL, " On the other hand, our country is known for wasteful construction using the taxpayer's money.\"", Line_Normal);
 	ClearMessage();
@@ -525,9 +528,7 @@ void main()
 		   NULL, "In 1986, a similar natural disaster occurred at Lake Nyos in Cameroon, Africa. So, people easily believed that such a rare natural disaster could occur anywhere on Earth, and that was what happened in Hinamizawa as well.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、近年になって、ネット上である風説が流れるようになっていた。",
@@ -540,8 +541,6 @@ void main()
 	OutputLine(NULL, "　それは、この雛見沢大災害が実は、政府が事実を隠蔽するために作ったカバーストーリーで、その実態は宇宙人による細菌テロだった…というのだ。",
 		   NULL, "They say that the Disaster was a cover-up by the government, and that it was actually a biochemical terrorist attack by aliens.", Line_Normal);
 	ClearMessage();
-
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
 
 	DrawScene( "background/aka2", 400 );
 
@@ -571,7 +570,7 @@ void main()
 		   NULL, "Plus, more fake evidence was produced over time, so now even the existence of such documents are in doubt.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
+	FadeFilm( 1800, FALSE );
 	DrawScene( "background/file", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -678,25 +677,27 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44010", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっはっは。",
 		   NULL, "\"Wa ha ha ha ha.", Line_Continue);
-	Wait( 700 ); // autofix multiline voice
+	Wait( 2500 ); // autofix multiline voice
 	OutputLine(NULL, "そういうののマニアな人たちは、つくづくそういうのが好きですよね。",
 		   NULL, " Those maniacs do indeed have a colorful perspective on things, don't they? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44011", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "ノストラダムスの大予言だって、９９年にはあんなに騒いだのに、７月が過ぎたら何事もなかったかのようにみんな過ごしてる。",
-		   NULL, "Do you remember Nostradamus' prophecies? People said that the world was going to end in 1999, but nothing happened in July and people acted like they didn't even know about it. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "Do you remember Nostradamus' prophecies? People said that the world was going to end in 1999, but nothing happened in July and people acted like they didn't even know about it.", Line_Continue);
+	Wait( 9500 );
 	OutputLine(NULL, "民放もあれだけ煽っておいて無責任ったらありゃしない。」",
-		   NULL, "Those TV shows made people as scared as they could be and then ignored the fact that it didn't happen.\"", Line_Normal);
+		   NULL, " Those TV shows made people as scared as they could be and then ignored the fact that it didn't happen.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300018", 128, TRUE);
 	OutputLine(NULL, "「でも、鷹野三四は雛見沢大災害を予見したらしい。",
 		   NULL, "\"But Miyo Takano did predict the Great Hinamizawa Disaster.", Line_Continue);
-	Wait( 2400 ); // autofix multiline voice
+	Wait( 6300 ); // autofix multiline voice
 	OutputLine(NULL, "それは嘘じゃない。",
-		   NULL, " It's not a lie.", Line_WaitForInput);
+		   NULL, " It's not a lie.", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "確かにこのスクラップ帖に書いてある。」",
 		   NULL, " Look at this page in this scrapbook.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -705,9 +706,10 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44012", 128, TRUE);
 	OutputLine(NULL, "「そんなまさか。",
 		   NULL, "\"You must be joking.", Line_Continue);
-	Wait( 800 ); // autofix multiline voice
+	Wait( 2000 ); // autofix multiline voice
 	OutputLine(NULL, "あっはっはっは……、……。",
-		   NULL, " Aha ha ha ha.........", Line_WaitForInput);
+		   NULL, " Aha ha ha ha.........", Line_Continue);
+	Wait( 6000 );
 	OutputLine(NULL, "…赤坂先輩、それ本当に…？」",
 		   NULL, " ...Akasaka-senpai, is this for real...?\"", Line_Normal);
 	ClearMessage();
@@ -766,24 +768,25 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44013", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっはっは！！",
 		   NULL, "\"Wa ha ha ha!!", Line_Continue);
-	Wait( 600 ); // autofix multiline voice
+	Wait( 2000 ); // autofix multiline voice
 	OutputLine(NULL, "　映画でそんなのありましたね。",
-		   NULL, " Hey, there's a movie that's just like that.", Line_WaitForInput);
-	OutputLine(NULL, "ほら、黒人の俳優が主演の。",
-		   NULL, " Some black guy is the lead character... What was the title...", Line_WaitForInput);
-	OutputLine(NULL, "何て言ったっけなぁ。",
+		   NULL, " Hey, there's a movie that's just like that.", Line_Continue);
+	Wait( 2900 );
+	OutputLine(NULL, "ほら、黒人の俳優が主演の。何て言ったっけなぁ。",
+		   NULL, " Some black guy is the lead character... What was the title...", Line_Continue);
+	Wait( 2400 );
+	OutputLine(NULL, "ＭＩ…なんだっけ！」",
 		   NULL, " M.I. something!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "ＭＩ…なんだっけ！」",
-		   NULL, "\"Yeah, I know.", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300019", 128, TRUE);
 	OutputLine(NULL, "「この辺まで来ると俺もそろそろ滅茶苦茶だなとは思う。",
-		   NULL, " It's too crazy to be real.", Line_Continue);
-	Wait( 1100 ); // autofix multiline voice
+		   NULL, "\"Yeah, I know. It's too crazy to be real.", Line_Continue);
+	Wait( 6300 ); // autofix multiline voice
 	OutputLine(NULL, "ただ、この滅茶苦茶を書いた鷹野三四は昭和５８年の６月中旬。",
-		   NULL, " But, the writer of this bunch of bull, Miyo Takano, was mysteriously murdered in June 1983.", Line_WaitForInput);
+		   NULL, " But, the writer of this bunch of bull, Miyo Takano, was mysteriously murdered in June 1983.", Line_Continue);
+	Wait( 6100 );
 	OutputLine(NULL, "正体不明の怪死を遂げる。",
 		   NULL, " Right before her death, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -841,7 +844,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44014", 128, TRUE);
 	OutputLine(NULL, "「まさか！",
 		   NULL, "\"You've got to be kidding!", Line_Continue);
-	Wait( 1100 ); // autofix multiline voice
+	Wait( 1300 ); // autofix multiline voice
 	OutputLine(NULL, "　そりゃ偶然じゃないんですか。」",
 		   NULL, " Couldn't it be just a coincidence?\"", Line_Normal);
 	ClearMessage();
@@ -850,9 +853,9 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300021", 128, TRUE);
 	OutputLine(NULL, "「わからない。",
 		   NULL, "\"I don't know.", Line_Continue);
-	Wait( 600 ); // autofix multiline voice
+	Wait( 2100 ); // autofix multiline voice
 	OutputLine(NULL, "偶然ではないと思う連中に言わせると、その後の自衛隊による封鎖はおかしなことだらけらしい。",
-		   NULL, " According to people who believe it's not just a coincidence, there are many inconsistencies in the SDF's immedate sealing-off operation.", Line_WaitForInput);
+		   NULL, " According to people who believe it's not just a coincidence, there are many inconsistencies in the SDF's immediate sealing-off operation.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300022", 128, TRUE);
 	OutputLine(NULL, "例えばこの沼の埋め立てが一例だ。",
 		   NULL, " Filling this swamp with concrete is one example. ", GetGlobalFlag(GLinemodeSp));
@@ -876,7 +879,7 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300025", 128, TRUE);
 	OutputLine(NULL, "「他にも、異常に長かった封鎖期間も疑惑の目が向けられている。",
 		   NULL, "\"People also question why they sealed off the village for such a long time.", Line_Continue);
-	Wait( 3000 ); // autofix multiline voice
+	Wait( 6700 ); // autofix multiline voice
 	OutputLine(NULL, "近年の東京都三宅島の火山ガス災害の例を見てもわかるように、４〜５年で立入禁止を解いている。",
 		   NULL, " After its volcanic gas eruption, Miyake Island was only sealed off for four to five years. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -890,7 +893,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-5>", Line_Continue); }
 	OutputLine(NULL, "「三宅島のケースは島民が帰島を強く希望したからと聞いています。",
 		   NULL, "\"I heard that the residents of Miyake Island returned to their home island faster than was originally intended, because they had requested it so strongly.", Line_Continue);
-	Wait( 6200 ); // autofix multiline voice
+	Wait( 6100 ); // autofix multiline voice
 	OutputLine(NULL, "雛見沢には帰る人がそもそもいないんだから、充分安全が確認できるまでたっぷり期間を置いただけなのでは？」",
 		   NULL, " But, in the case of Hinamizawa, there were no residents alive who wished to return in the first place. Perhaps the government took their time until they were absolutely certain that it was safe.\"", Line_Normal);
 	ClearMessage();
@@ -899,7 +902,7 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300027", 128, TRUE);
 	OutputLine(NULL, "「ふむ。",
 		   NULL, "\"Hmm.", Line_Continue);
-	Wait( 200 ); // autofix multiline voice
+	Wait( 3500 ); // autofix multiline voice
 	OutputLine(NULL, "あとこんな話もあるぞ。",
 		   NULL, " How about this one? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -914,9 +917,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44017", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「それは、やはりガスが湧き出す危険性があっただけに健康管理には気を遣ったということでしょう。",
 		   NULL, "\"I think they were just checking up on the members' health condition, since they were in the area where the gas disaster occurred.", Line_Continue);
-	Wait( 5200 ); // autofix multiline voice
+	Wait( 7900 ); // autofix multiline voice
 	OutputLine(NULL, "それに、普通のサラリーマンだって、年に一度は健康診断を受け、その時に血を抜かれてるはずです。」",
 		   NULL, " Besides, normal businessmen also take annual physical check-ups, and they have their blood samples taken there as well.\"", Line_Normal);
 	ClearMessage();
@@ -925,9 +929,10 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300030", 128, TRUE);
 	OutputLine(NULL, "「まぁ、君の言うことももっともだと思う。",
 		   NULL, "\"Yeah, I understand your point, too.", Line_Continue);
-	Wait( 1500 ); // autofix multiline voice
+	Wait( 5500 ); // autofix multiline voice
 	OutputLine(NULL, "あともっと面白い話もあるぞ。",
-		   NULL, " But I have another interesting theory.", Line_WaitForInput);
+		   NULL, " But I have another interesting theory.", Line_Continue);
+	Wait( 4000 );
 	OutputLine(NULL, "雛見沢大災害時に火山ガスは発生していないと主張する連中がいる。」",
 		   NULL, " There are some people who believe that there was no gas emitted during the so-called Great Hinamizawa Disaster.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -936,7 +941,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44018", 128, TRUE);
 	OutputLine(NULL, "「火山ガスは発生していない？",
 		   NULL, "\"No volcanic gas?", Line_Continue);
-	Wait( 700 ); // autofix multiline voice
+	Wait( 2700 ); // autofix multiline voice
 	OutputLine(NULL, "　どういう意味ですか。」",
 		   NULL, " What does that mean?\"", Line_Normal);
 	ClearMessage();
@@ -945,7 +950,7 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300031", 128, TRUE);
 	OutputLine(NULL, "「つまり、元々火山ガスなんか噴出してなくて、ガス災害というのが政府の嘘であると主張してるらしい。",
 		   NULL, "\"Basically what they're saying is that there was no volcanic gas and it was a sort of government cover-up.", Line_Continue);
-	Wait( 4300 ); // autofix multiline voice
+	Wait( 10300 ); // autofix multiline voice
 	OutputLine(NULL, "ほら、スピルバーグの人類とＵＦＯがコンタクトする某映画でも、同じ設定だったじゃないか。」",
 		   NULL, " It's like in the Spielberg movie. You know, the one where humans make contact with UFOs?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -954,7 +959,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44019", 128, TRUE);
 	OutputLine(NULL, "「それこそミステリー狂のこじつけだと思いますね。",
 		   NULL, "\"See, that's exactly how maniacs always explain things.", Line_Continue);
-	Wait( 2200 ); // autofix multiline voice
+	Wait( 5200 ); // autofix multiline voice
 	OutputLine(NULL, "で、その連中は何を根拠に火山ガスが発生しなかったと言っているんです？」",
 		   NULL, " What kind of basis do they have to say that there was no volcanic gas emission?\"", Line_Normal);
 	ClearMessage();
@@ -972,21 +977,22 @@ void main()
 		   NULL, "the hydrogen sulfide in the volcanic gas should've caused some corrosion to metallic objects and major damage to the wildlife. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300035", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "にも関わらず雛見沢にはそういう痕跡が残っておらず、よって、火山ガスが噴出したとはとうてい思えない、とか何とか言ってる。",
 		   NULL, "However, they found no such signs of disruption, which led them to claim that there was no volcanic gas to begin with.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300036", 128, TRUE);
 	OutputLine(NULL, "……もっともあれから２０年も放置された村なんだ。",
-		   NULL, " ...But this village was abandoned for twenty years. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...But this village was abandoned for twenty years.", Line_Continue);
+	Wait( 6600 );
 	OutputLine(NULL, "そんな痕跡を発見できたかどうかは疑わしいな。」",
-		   NULL, "I doubt that they could find anything anyway.\"", Line_Normal);
+		   NULL, " I doubt that they could find anything anyway.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44020", 128, TRUE);
 	OutputLine(NULL, "「はっはっは、やはりつくづくインターネットというのは信用できませんねぇ。",
 		   NULL, "\"Ha ha ha. Well, that's the thing with the Internet. You can't believe everything you read on it!", Line_Continue);
-	Wait( 3900 ); // autofix multiline voice
+	Wait( 7900 ); // autofix multiline voice
 	OutputLine(NULL, "……で、まさか赤坂先輩は、その怪しげな話を信じてるわけですか？」",
 		   NULL, " ...Akasaka-senpai, please don't tell me you're buying these stories.\"", Line_Normal);
 	ClearMessage();
@@ -995,7 +1001,7 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300037", 128, TRUE);
 	OutputLine(NULL, "「最初は信じなかったが、最近は俺もわからない。",
 		   NULL, "\"At first, I didn't.", Line_Continue);
-	Wait( 800 ); // autofix multiline voice
+	Wait( 5400 ); // autofix multiline voice
 	OutputLine(NULL, "何割かは真実が含まれているかもしれないと思うようになっている。」",
 		   NULL, " But lately, I'm beginning to think that there might be some truth to them.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1012,9 +1018,9 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300038", 128, TRUE);
 	OutputLine(NULL, "「このスクラップ帖。",
 		   NULL, "\"Well,", Line_Continue);
-	Wait( 300 ); // autofix multiline voice
+	Wait( 2900 ); // autofix multiline voice
 	OutputLine(NULL, "これが本物の『３４号文書』だとしたら？」",
-		   NULL, " what if this scrapbook is the real <i>File No. 34?</i>\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " what if this scrapbook is the real <i>File No. 34</i> ?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
@@ -1051,9 +1057,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300041", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「大石さんの仮説なんだが、御三家が過去の信仰心を村に取り戻すために、大昔の毒性の強い病原体を研究していたのは本当じゃないか、って言うんだ。",
 		   NULL, "\"Ooishi-san says that the Three Families might've been researching how to bring back the original, deadlier microbe in order to revive the religious devotion the villagers used to have.", Line_Continue);
-	Wait( 7400 ); // autofix multiline voice
+	Wait( 13400 ); // autofix multiline voice
 	OutputLine(NULL, "雛見沢大災害は、実はその結果の失敗じゃないかってな。」",
 		   NULL, " The Great Hinamizawa Disaster could be an experiment that went wrong.\"", Line_Normal);
 	ClearMessage();
@@ -1109,18 +1116,20 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300042", 128, TRUE);
 	OutputLine(NULL, "「ただのガス災害じゃないことは明白なんだ。",
 		   NULL, "\"It's obvious that it wasn't a simple gas disaster.", Line_Continue);
-	Wait( 2100 ); // autofix multiline voice
+	Wait( 3800 ); // autofix multiline voice
 	OutputLine(NULL, "ガスが湧く直前に、１人の少女が細菌テロを予告し、数人の村人が怪死を遂げている。",
 		   NULL, " We cannot ignore the fact that one girl predicted a bioterrorist attack right before the Disaster, and that several villagers died mysteriously, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300043", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "それをスクラップ帖にまとめた鷹野三四本人も含めてね。",
-		   NULL, "including Miyo Takano herself, who wrote about all that in the scrapbook.", Line_WaitForInput);
+		   NULL, "including Miyo Takano herself, who wrote about all that in the scrapbook.", Line_Continue);
+	Wait( 6000 );
 	OutputLine(NULL, "あれを偶然の予見不可能な災害だとするには、どうも腑に落ちない要素が少なくない。",
-		   NULL, " It doesn't sound right to say that the Great Hinamizawa Disaster was an unpredicted and coincidental natural disaster. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " It doesn't sound right to say that the Great Hinamizawa Disaster was an unpredicted and coincidental natural disaster.", Line_Continue);
+	Wait( 8600 );
 	OutputLine(NULL, "この『３４号文書』を読めば、それらは明らかにはっきりしてくる。」",
-		   NULL, "When you read this <i>File No. 34</i>, it's obvious.\"", Line_Normal);
+		   NULL, " When you read this <i>File No. 34</i>, it's obvious.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
@@ -1150,7 +1159,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44024", 128, TRUE);
 	OutputLine(NULL, "「はははははは。",
 		   NULL, "\"Ha ha ha ha.", Line_Continue);
-	Wait( 600 ); // autofix multiline voice
+	Wait( 2600 ); // autofix multiline voice
 	OutputLine(NULL, "ＵＦＯに乗った宇宙人がって話よりは、カルト集団がって方が近年は信憑性がありますからね。」",
 		   NULL, " At least this story sounds more convincing than the one with aliens in UFOs. The idea of cultists and domestic terrorism sounds more rational.\"", Line_Normal);
 	ClearMessage();
@@ -1159,7 +1168,7 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300045", 128, TRUE);
 	OutputLine(NULL, "「本当にＵＦＯが墜落した可能性もあるかもしれないな。",
 		   NULL, "\"Maybe there really was an UFO that crash-landed.", Line_Continue);
-	Wait( 2000 ); // autofix multiline voice
+	Wait( 6000 ); // autofix multiline voice
 	OutputLine(NULL, "……竜宮礼奈が人質篭城時に出した要求の筆頭は、鬼ヶ淵沼の底には墜落したＵＦＯの残骸があるから引き上げろ、というものだったらしい。」",
 		   NULL, " ...When Reina Ryuugu took the school hostage, one of her demands to the police was to have them pull out the wreckage of the UFO from the Onigafuchi Swamp.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1172,14 +1181,15 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300046", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「それが馬鹿馬鹿しいか調べたくても、見ろ。",
 		   NULL, "\"Well, even if I wanted to make sure if it's ridiculous or not, look at it.", Line_Continue);
-	Wait( 3000 ); // autofix multiline voice
+	Wait( 5500 ); // autofix multiline voice
 	OutputLine(NULL, "沼はコンクリートで数メートルの厚さで固められ、確かめる術もない。",
-		   NULL, " The swamp is filled with concrete several meters thick and there's no way we can check. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " The swamp is filled with concrete several meters thick and there's no way we can check.", Line_Continue);
+	Wait( 6500 );
 	OutputLine(NULL, "地質学的にはガスを防ぐ効果は何も期待できないはずの馬鹿馬鹿しい工事によってだ。」",
-		   NULL, "This is all because of that ridiculous construction that doesn't even do anything to prevent the volcanic gas.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " This is all because of that ridiculous construction that doesn't even do anything to prevent the volcanic gas.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
@@ -1192,9 +1202,10 @@ void main()
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300047", 128, TRUE);
 	OutputLine(NULL, "「…それも致命的だ。",
 		   NULL, "\"Sadly, that's almost impossible.", Line_Continue);
-	Wait( 1400 ); // autofix multiline voice
+	Wait( 2800 ); // autofix multiline voice
 	OutputLine(NULL, "雛見沢大災害後の雛見沢出身者に対する魔女狩りのせいで今や出身者の存在は不明だ。",
-		   NULL, " After the Great Hinamizawa Disaster, some survivors were subject to a witch hunt.", Line_WaitForInput);
+		   NULL, " After the Great Hinamizawa Disaster, some survivors were subject to a witch hunt.", Line_Continue);
+	Wait( 8000 );
 	OutputLine(NULL, "彼らは名乗りなどあげまい。」",
 		   NULL, " So, even if there are any survivors, they won't tell you that they're from this area.\"", Line_Normal);
 	ClearMessage();
@@ -1228,21 +1239,22 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300048", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「それでも諦めないのが刑事魂ってもんだよ。",
 		   NULL, "\"But it's my duty as a cop to keep trying.", Line_Continue);
-	Wait( 1700 ); // autofix multiline voice
+	Wait( 4700 ); // autofix multiline voice
 	OutputLine(NULL, "……あれが自然災害じゃなかったっていう状況証拠はいくらでもあるんだ。",
-		   NULL, " ...There's enough circumstantial evidence to say that the Great Hinamizawa Disaster wasn't a natural one. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " ...There's enough circumstantial evidence to say that the Great Hinamizawa Disaster wasn't a natural one.", Line_Continue);
+	Wait( 5800 );
 	OutputLine(NULL, "何か１つの具体的証拠が見付かれば、芋づる式に全てを白日の下に晒せるかもしれない。」",
-		   NULL, "If I could grab ahold of one piece of concrete proof, I think I could start reeling in the truth behind all of this.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " If I could grab ahold of one piece of concrete proof, I think I could start reeling in the truth behind all of this.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Military Officer</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/officera44028", 128, TRUE);
 	OutputLine(NULL, "「まぁ、あれから２０年経過してますからね。",
 		   NULL, "\"Yeah, but it's been over twenty years.", Line_Continue);
-	Wait( 1600 ); // autofix multiline voice
+	Wait( 5200 ); // autofix multiline voice
 	OutputLine(NULL, "真相はあまりに遠い闇の中かもしれません。」",
 		   NULL, " The truth might be lying somewhere very deep in the darkness.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1389,22 +1401,13 @@ void main()
 		   NULL, "...What the hell happened in Hinamizawa in June 1983?!!!", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "white", 0 );
+	FadeOutBGM( 0, 200, FALSE );
+	DrawScene( "white", 50 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
-	DrawScene( "End_2", 1000 );
+	DrawScene( "End_2", 2000 );
 
 	DrawScene( "End_3", 3000 );
 
-	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	SetValidityOfInput( TRUE );
 	DrawScene( "black", 4000 );
-
-	DrawScene( "black", 400 );
-	Wait( 1000 );
-	DrawScene( "black", 1000 );
 }
