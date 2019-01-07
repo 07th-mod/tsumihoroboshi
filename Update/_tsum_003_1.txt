@@ -254,7 +254,7 @@ void main()
 	OutputLine(NULL, "「やはりエンジェルモートは",
 		   NULL, "\"Angel Mort is", Line_Continue);
 
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	PlaySE( 0, "wa_011", 128, 64 );
 
 	OutputLine(NULL, "制服命ザンスねぇ〜！！」",
 		   NULL, " all about the uniform!!\"", GetGlobalFlag(GLinemodeSp));
@@ -322,7 +322,7 @@ void main()
 
 	PlaySE( 0, "s_tataku", 128, 64 );
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "の",
@@ -347,7 +347,6 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
 
 	OutputLineAll(NULL, "", Line_Normal);
-
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -421,32 +420,27 @@ void main()
 		   NULL, "Who could imagine Rena and I would do so well as to win?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
+	DisableWindow();
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "background/furiker_a", 50 );
+	PlaySE( 0, "wa_007", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
+	
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すげえよ前原圭一、",
 		   NULL, "You're great, Keiichi Maebara.", Line_ContinueAfterTyping);
-
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "background/furiker_a", 0 );
-
 	OutputLine(NULL, "よくやった感動した！！",
-		   NULL, " You made me proud!!", Line_ContinueAfterTyping);
-
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
-
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, " You made me proud!!", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 

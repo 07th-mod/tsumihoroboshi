@@ -7,6 +7,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
+	DrawScene( "white", 400 );
 	DrawSceneWithMask( "background/res_s1", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig2", 120, 0 );
 
@@ -44,7 +45,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, TRUE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 300, TRUE );
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa2a_odoroki_a1_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -119,6 +120,7 @@ void main()
 		   NULL, "\"No, stop it! You cold-blooded demons!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	PlaySE( 0, "s_boyoon", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
@@ -164,8 +166,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200129", 128, TRUE);
 	OutputLine(NULL, "「あははははは、圭一くんのぽよんぽよんのぽんぽん、かぁいいよ〜ぅ☆」",
-		   NULL, "\"Ahahahahaha, your big wiggly tummy is sho kyute!\"", Line_Continue);
+		   NULL, "\"Ahahahahaha, your big wiggly tummy is sho kyute!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
@@ -175,10 +179,6 @@ void main()
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100129", 128, TRUE);
@@ -190,7 +190,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100130", 128, TRUE);
 	OutputLine(NULL, "　わふ、ふぎゃぎゃーー！！！」",
 		   NULL, " Ah! Nooooo!!!\"", Line_Continue);
-
+	Wait( 200 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -288,6 +288,7 @@ void main()
 		   NULL, " Especially not since you had to walk around in a way more embarrassing costume the other day.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	PlaySE( 0, "s_tataku", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……グサ！！",
 		   NULL, "...Guhh!!", GetGlobalFlag(GLinemodeSp));
@@ -335,8 +336,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(2, 4, "sprite/normal/sa2a_akireru_a1_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 200, TRUE );
+	ModDrawCharacterWithFiltering(2, 4, "sprite/normal/sa2a_akireru_a1_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400022", 128, TRUE);
@@ -384,6 +385,7 @@ void main()
 		   NULL, " You can go home now.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 	ModDrawCharacter(0, 2, "sprite/normal/re2b_def_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/res_s1", "maskright", 1, 0, 300 );
 
@@ -444,15 +446,21 @@ void main()
 		   NULL, " Right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModDrawCharacter(3, 4, "sprite/normal/sa2a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	ModDrawCharacter(2, 5, "sprite/normal/ri2_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "background/res_s1", "maskright", 1, 0, 300 );
+	DisableWindow();
+	FadeAllBustshots( 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/normal/sa2a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri2_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>＆<color=#6972c1>梨花</color>", NULL, "<color=#fcdb77>Satoko</color> & <color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400023", 128, TRUE);
+	OutputLine(NULL, "「ですわよー！」",
+		   NULL, "\"That's correct!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(5, 5, "ps3/s09/05/170500015", 128, TRUE);
-	OutputLine(NULL, "「ですわよー！」「にぱ〜☆」",
-		   NULL, "\"That's correct!\" \"Nipah~☆.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「にぱ〜☆」",
+		   NULL, "\"Nipah~☆.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -501,8 +509,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(2, 2, "sprite/normal/re2a_warai_a1_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 200, TRUE );
+	ModDrawCharacterWithFiltering(2, 2, "sprite/normal/re2a_warai_a1_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200140", 128, TRUE);
@@ -710,17 +718,17 @@ void main()
 		   NULL, "\"Alright. Let's go, then!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "z2_hig3", 120, 0 );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺たちは魅音の姿が店内に消えるまで手を振った後、それぞれの自転車にまたがり、興宮を後にした。",
 		   NULL, "We waved at Mion until she went back inside the restaurant, and after that, we all got on our bicycles and left Okinomiya.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
+	FadeOutBGM( 0, 10000, FALSE );
 	DrawScene( "background/sora2", 10000 );
+	PlayBGM( 1, "z2_hig3", 120, 0 );
 	SetValidityOfInput( TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -984,7 +992,7 @@ void main()
 		   NULL, " ...Her appearance made my heart skip a beat.", Line_Normal);
 	ClearMessage();
 	ModDrawCharacter(1, 2, "sprite/sunset/re2a_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "background/hi4_01", "maskup", 1, 0, 300 );
+	DrawScene( "background/hi4_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200155", 128, TRUE);
@@ -1081,8 +1089,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(2, 2, "sprite/sunset/re2a_def_a1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 200, TRUE );
+	ModDrawCharacterWithFiltering(2, 2, "sprite/sunset/re2a_def_a1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200160", 128, TRUE);
@@ -1230,7 +1238,8 @@ void main()
 		   NULL, "We got to the place where I'd always meet Rena in the morning and say goodbye in the evening.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/m_hi1_01", "maskleft", 1, 0, 300 );
+	DrawScene( "black", 300 );
+	DrawScene( "background/m_hi1_01", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100152", 128, TRUE);
@@ -1251,7 +1260,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(1, 2, "sprite/sunset/re2a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 2, "sprite/sunset/re2a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200167", 128, TRUE);
@@ -1297,12 +1306,12 @@ void main()
 	OutputLine(NULL, "「うふふふ、",
 		   NULL, "\"Hee hee hee.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "それはその、",
 		   NULL, " That would be...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…女の子の秘密、ってことで！」",
 		   NULL, " a woman's secret!\"", GetGlobalFlag(GLinemodeSp));
@@ -1769,6 +1778,7 @@ void main()
 
 	DisableWindow();
 	Wait( 2000 );
+	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "background/mo_g1_01", "maskright", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
@@ -2181,7 +2191,7 @@ void main()
 		   NULL, " The treasure hunt could wait.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "black", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　薄暗くなってくるに従い、電気スタンドの灯りが心強くなり、影の色をどんどんと濃くしていく。",
@@ -2343,11 +2353,6 @@ void main()
 	OutputLine(NULL, "もう少し、まどろみを深くしよう……。",
 		   NULL, " Just a little bit longer... and I closed my eyes...", Line_Normal);
 	ClearMessage();
-
-	DisableWindow();
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
 
 	CallScript( "&eye" );
 	FadeOutBGM( 0, 1000, FALSE );
