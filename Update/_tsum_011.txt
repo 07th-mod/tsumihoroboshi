@@ -13,7 +13,7 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "white", 3000 );
-	DrawSceneWithMask( "scene/301", "maskup", 1, 0, 1300 );
+	DrawScene( "scene/301", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -48,7 +48,7 @@ void main()
 		   NULL, "Everybody else seemed to be feeling the same way.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/Sora2", 300 );
+	DrawSceneWithMask( "background/Sora2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは、質問はある？",
@@ -258,7 +258,7 @@ void main()
 	OutputLine(NULL, "どうして、",
 		   NULL, " Why...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どうして俺たちに相談してくれなかったんだよ？」",
 		   NULL, " Why didn't you tell us?\"", Line_Normal);
@@ -481,17 +481,17 @@ void main()
 	OutputLine(NULL, "　あはははは、",
 		   NULL, " Ahahahaha,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "圭一のばーかばーか、",
 		   NULL, " that's ridiculous.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何を言ってるか全然わかんないや、",
 		   NULL, " I have no idea what you're talking about, Keiichi.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あははははは。」",
 		   NULL, " Ahahahahaha.\"", Line_Normal);
@@ -501,6 +501,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100325", 128, TRUE);
 	OutputLine(NULL, "「それが…………",
 		   NULL, "\"I know it......", Line_Continue);
+	Wait( 1800 );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "泣いてるって言ってんだよおおぉぉッ！！！」",
 		   NULL, " You're crying right noooow!!!\"", GetGlobalFlag(GLinemodeSp));
@@ -508,7 +509,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ModDrawCharacter(0, 2, "sprite/sunset/re2b_warai_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/mo_g1_01", "maskup", 1, 0, 300 );
+	DrawScene( "background/mo_g1_01", 300 );
 	ModDrawCharacter(0, 2, "sprite/sunset/re2b_def_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -539,7 +540,7 @@ void main()
 	OutputLine(NULL, "「………………まずは、",
 		   NULL, "\".........Well...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…ん、」",
 		   NULL, " umm...\"", Line_Normal);
@@ -681,7 +682,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ModDrawCharacter(0, 2, "sprite/sunset/re2a_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/mo_g1_01", "maskright", 1, 0, 300 );
+	DrawScene( "background/mo_g1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200477", 128, TRUE);
@@ -691,7 +692,7 @@ void main()
 	OutputLine(NULL, "叔母さんがヒステリックで頭のネジのどうかしてることも、悟史くんと沙都子ちゃんを意味もなく虐めていたことも全部、",
 		   NULL, " Everybody knew that their aunt was a hysterical and crazy person, and that she bullied Satoshi-kun and Satoko-chan.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 8200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "全部ね。",
 		   NULL, " Everybody knew everything. ", GetGlobalFlag(GLinemodeSp));
@@ -722,7 +723,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200482", 128, TRUE);
 	OutputLine(NULL, "……それで、結果はどうだった？",
-		   NULL, "...And what happened?", Line_WaitForInput);
+		   NULL, "...And what happened?", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "　誰かが悟史くんを助けてくれた？",
 		   NULL, " Did anybody help Satoshi-kun?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -757,15 +759,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200485", 128, TRUE);
 	OutputLine(NULL, "「嘘だッ！！！",
-		   NULL, "\"Yes, it is!!!", Line_WaitForInput);
+		   NULL, "\"Yes, it is!!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DisableWindow();
 	ModDrawCharacter(0, 2, "sprite/sunset/re2b_okoru_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200486", 128, TRUE);
-	OutputLine(NULL, "　……悟史くんはわかってたよ。",
-		   NULL, " ...Satoshi-kun knew it, too.", Line_WaitForInput);
+	OutputLine(NULL, "……悟史くんはわかってたよ。",
+		   NULL, "...Satoshi-kun knew it, too.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200487", 128, TRUE);
 	OutputLine(NULL, "魅ぃちゃんが口ぶりだけは同情してるふりをしながらも、全然助ける気がないことをわかってた。",
 		   NULL, " He knew that you were only pretending to sympathize with him. He knew that you had no intention to help him.", Line_WaitForInput);
@@ -818,7 +822,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 200, TRUE );
-	ModDrawCharacter(1, 5, "sprite/sunset/ri1_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 5, "sprite/sunset/ri1_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500048", 128, TRUE);
@@ -971,12 +975,13 @@ void main()
 	OutputLine(NULL, "「………信じてくださるかどうかはわかりませんけど、",
 		   NULL, "\"...I don't know if you'll believe me when I tell you this either, but", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 32 );
 	OutputLine(NULL, "………",
 		   NULL, "...............", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
+	Wait( 1800 );
 	OutputLine(NULL, "ちゃんと気付いてますのよ。",
 		   NULL, " I realized it on my own.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400076", 128, TRUE);
@@ -993,6 +998,9 @@ void main()
 		   NULL, "\"...............I see.\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ModDrawCharacter(1, 4, "sprite/sunset/sa1a_muhyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400077", 128, TRUE);
 	OutputLine(NULL, "「にーにーがいなくなってしまったあの夜に、気付きましたのよ。",
@@ -1003,7 +1011,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(1, 4, "sprite/sunset/sa1a_muhyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	ModDrawCharacter(2, 2, "sprite/sunset/re2b_komaru_b2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1048,13 +1055,15 @@ void main()
 	OutputLine(NULL, "それでももう、",
 		   NULL, "But... that won't bring Nii-nii back.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…にーにーは帰ってきませんのね。」",
 		   NULL, " He's not coming back.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は痛々しい表情で俯く。",
@@ -1083,9 +1092,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(0, 2, "sprite/sunset/re2a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/mo_g1_01", "maskleft", 1, 0, 300 );
+	DrawScene( "background/mo_g1_01", 300 );
 	PlayBGM( 0, "Birth_and_death", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1213,41 +1222,45 @@ void main()
 		   NULL, " But at that time, in 1982, I thought I was his friend. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	if (GetGlobalFlag(GArtStyle) == 0) {
-		DrawScene( "scene/034", 1000);
-	} else {
-		DrawBustshot(4, "scene/034", 0, -80, -134, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 1000, FALSE );
-		MoveBustshot( 4, NULL, 0, 80, -134, 4, 5000, TRUE );
-	}
-
 	SetSpeedOfMessage( TRUE, 16 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200543", 128, TRUE);
 	OutputLine(NULL, "……あははははは、",
 		   NULL, "...Ahahahahaha.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 3200 );
 	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "あはははははははは！",
 		   NULL, " Ahahahahahahahaha!", Line_Continue);
-	Wait( 800 );
+	Wait( 1800 );
 	OutputLine(NULL, "　あーっはっはっはっはっは！！",
 		   NULL, " Ahh ha ha ha ha ha ha!!", Line_Continue);
-	Wait( 900 );
+	Wait( 2100 );
 	OutputLine(NULL, "　あはーっはっはっはっはっはっは……！！",
-		   NULL, " Aha ha ha ha ha ha ha...!!", Line_WaitForInput);
+		   NULL, " Aha ha ha ha ha ha ha...!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	if (GetGlobalFlag(GArtStyle) == 0) {
+		DrawScene( "scene/034", 1000);
+	} else {
+		DrawBustshot(4, "scene/034", 0, -80, -134, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 1000, TRUE );
+		DrawBustshot(1, "", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
+		MoveBustshot( 4, NULL, 0, 80, -134, 4, 5000, TRUE );
+	}
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200544", 128, TRUE);
-	OutputLine(NULL, "　うわぁあぁあぁあぁああああ！！",
-		   NULL, " Ahhhhhhhhhhhhhhh!!", Line_Continue);
-	Wait( 800 );
+	OutputLine(NULL, "うわぁあぁあぁあぁああああ！！",
+		   NULL, "Ahhhhhhhhhhhhhhh!!", Line_Continue);
+	Wait( 6100 );
 	OutputLine(NULL, "　わあああああぁああぁああああ！！！",
 		   NULL, " Ahhhhhhhhhh!!!", Line_Continue);
-	Wait( 800 );
+	Wait( 2800 );
 	OutputLine(NULL, "　わああぁああぁぁぁぁぁん！！！",
 		   NULL, " Aaaaaaaaaaaaahhhhhh!!", Line_Continue);
-	Wait( 800 );
+	Wait( 2700 );
 	OutputLine(NULL, "　わああああああああああ！！」",
 		   NULL, " Waaaaaaahhhhhhhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -1257,9 +1270,6 @@ void main()
 	Wait( 2500 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "background/Sora2", 4000 );
-	SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	SetValidityOfInput( TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1408,14 +1418,14 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100344", 128, TRUE);
 	OutputLine(NULL, "　俺は雛見沢に来てから、どれだけ仲間が掛け替えのないものかを知った。",
 		   NULL, " I've learned how important friends are since I moved to Hinamizawa.", Line_Continue);
-	Wait( 500 );
+	Wait( 8600 );
 	OutputLine(NULL, "だから、そんな仲間たちを救うためなら俺はどこまでも戦うぜ！！",
 		   NULL, " I'll fight for my friends!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100345", 128, TRUE);
 	OutputLine(NULL, "　沙都子や悟史を虐める叔母がそんなにもうぜえヤツなら、悟史になんか勿体ねえッ！！",
 		   NULL, "If I was here last year and knew what Satoko's aunt did to her and Satoshi, I wouldn't have given Satoshi the opportunity to beat her to death!!", Line_Continue);
-	Wait( 700 );
+	Wait( 6600 );
 	OutputLine(NULL, "　この俺が叩き殺してやったッ！！",
 		   NULL, " I would've done it myself!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100346", 128, TRUE);
@@ -1476,7 +1486,7 @@ void main()
 	OutputLine(NULL, "だけどな、",
 		   NULL, " But...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…悪いことで得た平穏ってのは…絶対に長く続いたりしないんだ。",
 		   NULL, " the peace I get by doing an evil deed won't last forever. ", GetGlobalFlag(GLinemodeSp));
@@ -1602,17 +1612,17 @@ void main()
 	OutputLine(NULL, "　嘘だ",
 		   NULL, " That's not true", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "嘘だ",
 		   NULL, " that's not true", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
+	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "嘘だ、",
 		   NULL, " that's not true", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そんなのは嘘だッ！！！」",
 		   NULL, " that's not true!!!\"", Line_Continue);
@@ -1646,7 +1656,7 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100370", 128, TRUE);
 	OutputLine(NULL, "　それはつまり、仲間に相談する価値がないって思うこと、仲間を一生否定し続けるってことだぞ！！！",
 		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_Continue);
-	Wait(1500);
+	Wait(9100);
 	OutputLine(NULL, "　レナにとって、俺たちはその程度の存在だったのか？！",
 		   NULL, " Are we worth nothing to you, Rena?", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
@@ -1691,7 +1701,7 @@ void main()
 		   NULL, "\".........Haha...", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…あははははは。",
 		   NULL, " ...ahahahahaha.", Line_WaitForInput);
@@ -1699,7 +1709,7 @@ void main()
 	OutputLine(NULL, "………つまりそれは、",
 		   NULL, " .........So what you're saying...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…私も未熟だったってこと？」",
 		   NULL, " is that I was immature too, right?\"", Line_Normal);
@@ -1759,7 +1769,7 @@ void main()
 	OutputLine(NULL, "本当に、",
 		   NULL, "Finally...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…今さらだね。",
 		   NULL, " but it's too late.", Line_WaitForInput);
@@ -1837,7 +1847,7 @@ void main()
 	OutputLine(NULL, "だから、",
 		   NULL, " So...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……俺はレナに協力しようと思う…！」",
 		   NULL, " I'm going to side with her...!\"", GetGlobalFlag(GLinemodeSp));
@@ -1872,7 +1882,7 @@ void main()
 	OutputLine(NULL, "だけど、",
 		   NULL, " But", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "それを俺は許す！",
 		   NULL, " I forgive her for that too!", Line_Continue);
@@ -1959,9 +1969,7 @@ void main()
 		   NULL, "This is the best possible choice, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
-	DisableWindow();
-	FadeAllBustshots( 300, TRUE );
+	DrawScene( "background/mo_g1_01", 300 );
 	ModDrawCharacterWithFiltering(0, 2, "sprite/sunset/re2b_komaru_b1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1972,7 +1980,7 @@ void main()
 	OutputLine(NULL, "…………け、",
 		   NULL, ".........K-", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……いいち…",
 		   NULL, "Keiichi-kun", Line_Continue);
@@ -2031,12 +2039,12 @@ void main()
 	OutputLine(NULL, "「……け、",
 		   NULL, "\"......K", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……圭一くんの言葉は",
 		   NULL, "-Keiichi-kun, I appreciate it...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……本当なら嬉しいよ……！",
 		   NULL, " if you really mean it...!", Line_WaitForInput);
@@ -2044,7 +2052,7 @@ void main()
 	OutputLine(NULL, "　でも、",
 		   NULL, " But...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…でも！",
 		   NULL, " but!", Line_WaitForInput);
@@ -2061,7 +2069,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(1, 5, "portrait/sunset/ri1_fuman_a1_", "0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 5, "portrait/sunset/ri1_fuman_a1_", "0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは…梨花ちゃんの手だった。",
@@ -2199,12 +2207,12 @@ void main()
 	OutputLine(NULL, "…皆さんという、",
 		   NULL, " ...Because we have you,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "仲間という、",
 		   NULL, " a family", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "家族がいたから。」",
 		   NULL, " made of friends.\"", GetGlobalFlag(GLinemodeSp));
@@ -2268,12 +2276,12 @@ void main()
 	OutputLine(NULL, "「…………仲間の大切さを語るのは、",
 		   NULL, "\"...I always thought it was my job as the leader of this club...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…部長である私の役目だと思ってただけに、",
 		   NULL, " to talk about the importance of friends...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 3400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…いやはや、…私も部長失格かなぁ、なんて。",
 		   NULL, " So... I guess I'm not that good a leader after all, huh?", Line_WaitForInput);
@@ -2330,17 +2338,17 @@ void main()
 	OutputLine(NULL, "だから、レナの罪を、",
 		   NULL, " So, I", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "許す。」",
 		   NULL, " forgive you for your sin, Rena.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/mo_g1_01", "maskleft", 1, 0, 300 );
+	DrawScene( "background/mo_g1_01", 400 );
 	ModDrawCharacter(1, 5, "portrait/sunset/ri1_fuman_a1_", "0", -380, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(2, 4, "portrait/sunset/sa1a_hau_a1_", "0", 380, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	ModDrawCharacter(0, 3, "portrait/sunset/me1a_majime_a1_", "0", 200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/mo_g1_01", "maskleft", 1, 0, 300 );
+	DrawScene( "background/mo_g1_01", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100435", 128, TRUE);
@@ -2426,7 +2434,7 @@ void main()
 	OutputLine(NULL, "「……………あ、",
 		   NULL, "\"............Ah", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ぅ……、」",
 		   NULL, ".........\"", Line_Normal);
@@ -2544,9 +2552,9 @@ void main()
 		   NULL, " and I brought about the end of the world.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 10 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１人の仲間を救うため、人命が奪われたところまでは、……その遠い世界の出来事と重なる。",
@@ -2635,7 +2643,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
 	OutputLine(NULL, "　ビニール越しだから、中身が手触りでわかってしまうこともあり、みんな苦笑いを浮かべながら恐る恐る取り扱っていたが、最後の方にはそれを茶化し合いもした。",
 		   NULL, "Since each part of the corpses is in a separate plastic trash bag, we can tell what's inside in each bag by touching it. First, we forced ourselves to laugh whenever we had to touch the bodies, because we were scared. But after a while, we got used to it, to the point where we could make jokes about it.", Line_Normal);
 	ClearMessage();
@@ -2647,24 +2655,27 @@ void main()
 		   NULL, " but we all tried our best.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	ModDrawCharacter(2, 3, "sprite/night/me1a_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, FALSE );
-	DrawSceneWithMask( "background/ymo2", "maskright", 1, 0, 300 );
+	DrawScene( "black", 300 );
+	ModDrawCharacter(2, 3, "sprite/night/me1a_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/ymo2", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　死体の隠し方について、なぜか造詣の深い魅音は、穴はもっと深い方がいいと指導し。",
 		   NULL, "Mion somehow had detailed knowledge of how to hide corpses, and she told me to dig the hole deeper.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawScene( "black", 300 );
 	ModDrawCharacter(1, 5, "sprite/night/ri1_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "background/ymo3", "maskleft", 1, 0, 300 );
+	DrawScene( "background/ymo3", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんは小さな体で、精一杯、袋運びを手伝ってくれた。",
 		   NULL, "Rika-chan helped to carry the bags.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModDrawCharacter(0, 4, "sprite/night/sa1b_def_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ymo3", "maskright", 1, 0, 300 );
+	DisableWindow();
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/night/sa1b_def_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして沙都子はトラップ隠蔽の妙技で、埋めた跡を見事にカモフラージュをしてくれる。",
@@ -2705,7 +2716,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 1, "higurashi", 120, 0 );
+	PlayBGM( 1, "yoru", 120, 0 );
 	ModDrawCharacter(0, 3, "sprite/night/me1b_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2761,7 +2772,6 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200574", 128, TRUE);
 	OutputLine(NULL, "……ちょっと熱が出ちゃったみたいで、なんかぼーっとする…。",
 		   NULL, " ...I think I caught a cold or something. I feel feverish and dizzy...", Line_WaitForInput);
-
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200575", 128, TRUE);
 	OutputLine(NULL, "あはははは…。」",
 		   NULL, " Ahahahaha...\"", GetGlobalFlag(GLinemodeSp));
@@ -2992,9 +3002,6 @@ void main()
 		   NULL, "\"......I think we'll keep wondering whether or not the day of reckoning will come for the rest of our lives.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/night/sa1a_def_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400094", 128, TRUE);
 	OutputLine(NULL, "「そうかもしれませんわね…。",
@@ -3070,10 +3077,10 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 3000 );
 
+	FadeOutBGM( 0, 1000, FALSE );
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 1300 );
-	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/re_s4_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3395,7 +3402,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+	DrawScene( "white", 2000 );
+	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はそのまま羽毛布団に飲み込まれ、……新しい世界で訪れる、最初の夜の眠りに落ちるのだった…。",
@@ -3419,10 +3427,10 @@ void main()
 		   NULL, "...But the sunshine was a little bit brighter, and Keiichi-kun's smile looked a little bit more gentle than before.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "background/g1", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawScene( "background/gk1", 400 );
+	DrawSceneWithMask( "white", "maskright", 1, 0, 1300 );
+	DrawSceneWithMask( "background/g1", "maskright", 1, 0, 1300 );
+	DrawSceneWithMask( "white", "maskright", 1, 0, 1300 );
+	DrawScene( "background/gk1", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちは前にも増して大はしゃぎで、スローペースに、そしてハイテンションに日々を送っていく。",
@@ -3474,6 +3482,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 1, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3497,7 +3506,8 @@ void main()
 
 	CallScript( "&eyeCamp" );
 	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_tsum011", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
