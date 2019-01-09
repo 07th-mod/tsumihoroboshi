@@ -1,9 +1,6 @@
 void main()
 {
 
-	ModDrawCharacter(0, 2, "sprite/normal/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
-
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200697", 128, TRUE);
@@ -32,7 +29,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "getting_mad", 120, 0 );
+	ModDrawCharacter(0, 2, "sprite/normal/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawScene( "background/m_hi5", 400 );
+	PlayBGM( 0, "msys07", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200700", 128, TRUE);
@@ -198,7 +197,7 @@ void main()
 	OutputLine(NULL, "……鷹野三四さん、",
 		   NULL, " ...Miyo Takano-san was", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…殺されたんだって。」",
 		   NULL, " murdered.\"", GetGlobalFlag(GLinemodeSp));
@@ -220,8 +219,6 @@ void main()
 		   NULL, " I lowered my voice and let her continue.", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200710", 128, TRUE);
 	OutputLine(NULL, "「綿流しの夜、私たちは三四さんと、あと富竹さんに会ったよね？",
@@ -241,8 +238,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
-	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 1000, FALSE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200713", 128, TRUE);
@@ -260,7 +257,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200714", 128, TRUE);
@@ -328,7 +324,7 @@ void main()
 		   NULL, "If it was Mion, she'd be sticking her tongue out by now. But Rena wouldn't make a joke out of something like this.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/ryuuketu1", 400 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200723", 128, TRUE);
@@ -399,7 +395,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 2, "sprite/normal/re2a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
+	DrawScene( "background/m_hi5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100542", 128, TRUE);
@@ -580,7 +576,7 @@ void main()
 	OutputLine(NULL, "「シ！",
 		   NULL, "\"Shh!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　車が来る！」",
 		   NULL, " A car is coming!\"", Line_Normal);
@@ -617,7 +613,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 2, "sprite/normal/re2b_okoru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
+	DrawScene( "background/m_hi5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200745", 128, TRUE);
@@ -706,7 +702,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 2, "sprite/normal/re2b_okoru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
+	DrawScene( "background/m_hi5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100558", 128, TRUE);
@@ -996,7 +992,7 @@ void main()
 	OutputLine(NULL, "だから彼らは三四さんの研究が核心に近付いたことを知り、",
 		   NULL, "They found out that Miyo-san was getting close to the secret, and that's why they", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 4900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "消したの。」",
 		   NULL, " killed her.\"", Line_Normal);
@@ -1005,6 +1001,7 @@ void main()
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/aka2", 400 );
 	PlayBGM( 0, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100577", 128, TRUE);
@@ -1035,7 +1032,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ModDrawCharacter(0, 2, "sprite/normal/re2a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/m_hi5", "maskup", 1, 0, 300 );
+	DrawScene( "background/m_hi5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200791", 128, TRUE);
@@ -1253,8 +1250,9 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "background/mo2", "maskleft", 1, 0, 300 );
-	PlaySE( 0, "s_jikuu_short", 128, 64 );
+	PlaySE( 0, "s_jikuu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　白いワゴン車が路肩に止まっていたからだ。",
@@ -1345,9 +1343,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "semi_r", 120, 0 );
-
-	DrawFilm( 3, 255, 255, 255, 256, 0, 10, FALSE );
+	PlayBGM( 0, "kaze", 120, 0 );
+	Negative( 400 , TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まさかまさか、…そんなことはあるものか。",
@@ -1378,7 +1375,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
-	FadeFilm( 0, FALSE );
+	FadeFilm( 100, FALSE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
@@ -1396,6 +1393,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　面識のない自分に話しかけるわけもない。",
@@ -1411,6 +1409,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから聞こえなかったふりをして、そのまま通り過ぎようとした時、もう一度、声をかけられた。",
 		   NULL, "I pretended I didn't hear him, and I kept walking by. And then, he said it again", Line_WaitForInput);
+	PlaySE( 0, "s_tr018b", 128, 64 );
 	OutputLine(NULL, "クラクション付きで。",
 		   NULL, " and honked the horn as well.", Line_Normal);
 	ClearMessage();
@@ -1666,7 +1665,8 @@ void main()
 
 	CallScript( "&eyeCamp" );
 	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_tsum015", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

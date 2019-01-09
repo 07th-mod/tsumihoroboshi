@@ -3,6 +3,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 0, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 	DrawSceneWithMask( "background/Sora", "maskm1", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -88,7 +89,7 @@ void main()
 	OutputLine(NULL, "…わっはっは、",
 		   NULL, " Wa ha ha ha...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………はぁ………。」",
 		   NULL, " haaaah......\"", Line_Normal);
@@ -130,12 +131,12 @@ void main()
 	OutputLine(NULL, "「……………レナのやつ、",
 		   NULL, "\"...Rena", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…最近、",
 		   NULL, " seems to be feeling down", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "元気ないよな。」",
 		   NULL, " these days.\"", GetGlobalFlag(GLinemodeSp));
@@ -207,7 +208,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 3, "sprite/normal/me1a_yowaki_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/gk1", "maskup", 1, 0, 300 );
+	DrawScene( "background/gk1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300278", 128, TRUE);
@@ -624,7 +625,7 @@ void main()
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_door", 128, 64 );
 	ModDrawCharacter(2, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "background/gk3", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/gk3", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s09/22/171400007", 128, TRUE);
@@ -646,9 +647,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_chaim", 128, 64 );
-	Wait( 300 );
-	PlaySE( 0, "s_chaim", 128, 64 );
+	PlaySE( 0, "wa_001", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -656,8 +655,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
@@ -690,7 +689,6 @@ void main()
 		   NULL, "I didn't see the point of going all the way to the store just to get detergent, but my mom told me to go because she's busy helping my dad with his work.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask( "background/m_hi5", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

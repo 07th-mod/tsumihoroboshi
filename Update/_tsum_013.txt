@@ -3,10 +3,14 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xbb );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	PlayBGM( 1, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 	DrawSceneWithMask( "background/g1", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask( "background/m_hi3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "getting_mad", 120, 0 );
@@ -153,10 +157,8 @@ void main()
 		   NULL, "She had no idea that she was going to be the victim of its fifth year.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200619", 128, TRUE);
@@ -213,9 +215,9 @@ void main()
 		   NULL, " There's that old saying, 'everything that happens twice will happen a third time'... So isn't it also true that what happens four times will happen a fifth?\"", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	PlayBGM( 1, "semi_r", 120, 0 );
-	DrawFilm( 2, 0xbb, 0xbb, 0xbb, 256, 0, 400, TRUE );
+	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 2000 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　５年目の連続怪死事件が起こると確信していた三四さん本人が、その５年目の犠牲者になってしまうとは…。",
@@ -235,7 +237,6 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	FadeFilm( 0, FALSE );
 
 	PlayBGM( 1, "suzu", 120, 0 );
 
@@ -315,7 +316,7 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 	FadeFilm( 0, FALSE );
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
+	DrawScene( "background/ke_ky2", 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -398,7 +399,6 @@ void main()
 		OutputLine(NULL, "　でも、それならば、２年目の北条夫妻事故死や、３年目の古手夫妻の病死と自殺、４年目の麻薬常習者の犯人捏造などは、",
 			   NULL, "<size=-2>If her theory was true, it would mean that the accidental deaths of the Houjou couple in the second year, the suicide and the death by disease of the Furude couple in the third year, and the drug addict murderer in the fourth year were all cooked up.", Line_Normal);
 		ClearMessage();
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
 		OutputLine(NULL, "警察などにも強力に影響力を持つ勢力が関与していることになる。",
 			   NULL, "It'd mean someone who has a lot of power and influence over the police was involved.", Line_Normal);
 	} else {
@@ -479,7 +479,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ke_ky2", "maskright", 1, 0, 300 );
+	DrawScene( "background/ke_ky2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200624", 128, TRUE);
@@ -687,7 +687,7 @@ void main()
 	FadeFilm( 0, FALSE );
 
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……これ以上を考えると、頭がぼぅっと霞んで来るのでやめる。",
@@ -746,7 +746,7 @@ void main()
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
+	DrawScene( "background/ke_ky2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900045", 128, TRUE);
@@ -870,7 +870,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
+	DrawScene( "background/ke_ky2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900059", 128, TRUE);
@@ -935,7 +935,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/ke_ky2", "maskup", 1, 0, 300 );
+	DrawScene( "background/ke_ky2", 400 );
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1006,11 +1006,12 @@ void main()
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "………………………",
 		   NULL, "............", Line_Continue);
+	Wait( 900 );
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "オヤシロさまに、",
 		   NULL, " have met...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…会ったことがあるんです。」",
 		   NULL, " Oyashiro-sama.\"", GetGlobalFlag(GLinemodeSp));
@@ -1132,7 +1133,7 @@ void main()
 		   NULL, "...But once I unsealed it, I started remembering things one after another.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、あの時、血に混じって、…それは蠢いていた。",
@@ -1141,7 +1142,7 @@ void main()
 
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
+	PlayBGM( 0, "msys08", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200658", 128, TRUE);
@@ -1185,7 +1186,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/aka1", 400 );
-	PlaySE( 0, "s_semi", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200666", 128, TRUE);
@@ -1244,13 +1244,13 @@ void main()
 
 	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 1, 400, FALSE );
-	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "white", 400 );
+	PlaySE( 0, "thunder", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	ModDrawCharacter(2, 9, "portrait/normal/ta1_human_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "background/ke_ky2", 4000 );
+	DrawScene( "background/ke_ky2", 1000 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1326,14 +1326,14 @@ void main()
 		   NULL, "I felt the maggots moving in my veins, and I felt the urge to look inside.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "semi_r", 120, 0 );
+	PlayBGM( 0, "yabaisemi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、ツーーーと、手首に浮く血管にそってカミソリを入れて……。",
 		   NULL, "I cut a vein on my wrist...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlaySE( 0, "s_chisibuki", 128, 64 );
+	PlaySE( 0, "thisikuki", 128, 64 );
 	DrawScene( "background/ryuuketu1", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1381,7 +1381,7 @@ void main()
 
 	FadeOutBGM( 0, 3000, FALSE );
 	DrawScene( "white", 3000 );
-	PlayBGM( 0, "Soul_scour", 120, 0 );
+	PlayBGM( 1, "suzu", 120, 0 );
 	DrawScene( "background/oyashirosama", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1389,6 +1389,8 @@ void main()
 		   NULL, "And then... a very bright light shone upon me.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "Soul_scour", 120, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは……生まれて初めて経験する、神秘体験だった。",
 		   NULL, "It was a very bizarre sensation. I had never experienced anything like it in my life.", GetGlobalFlag(GLinemodeSp));
@@ -1509,6 +1511,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/oyashirosama", 400 );
+	PlaySE( 0, "s_suzu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまはこうも言った。",
@@ -1571,6 +1574,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
+	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　早く早く！",
@@ -1594,20 +1598,22 @@ void main()
 	OutputLine(NULL, "　何でみんなには見えないの？！",
 		   NULL, "Why can't anybody see it?!", Line_WaitForInput);
 	OutputLine(NULL, "　うじ虫もオヤシロさまもどうして見えないの？！",
-		   NULL, " Why can't they see the maggots or Oyashiro-sama?", Line_WaitForInput);
+		   NULL, " Why can't they see the maggots or Oyashiro-sama? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　みんなで私を騙しているんだ、みんなにも見えているはずなんだ、いやいややめて、もう注射はいや…！！！",
-		   NULL, " Everybody is trying to fool me. I know they can see them, too. No, no. Please stop. I don't want to get another shot...!!!", Line_WaitForInput);
+		   NULL, "Everybody is trying to fool me. I know they can see them, too. No, no. Please stop. I don't want to get another shot...!!!", Line_WaitForInput);
 	OutputLine(NULL, "　あああぁああぁあぁああぅああぁ………。",
 		   NULL, " Aaaaaaaahhhh...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
+	FadeOutBGM( 1, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 4000, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 	ModDrawCharacter(0, 9, "portrait/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "background/ke_ky2", 4000 );
+	DrawScene( "background/ke_ky2", 1000 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -1790,7 +1796,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 9, "portrait/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "background/ke_ky2", 400 );
+	DrawScene( "background/ke_ky2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200679", 128, TRUE);
@@ -2163,7 +2169,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/aka1", 400 );
-	PlaySE( 0, "s_semi_r", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんは、…………間違いない。",
