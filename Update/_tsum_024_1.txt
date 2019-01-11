@@ -400,7 +400,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 100 );
+	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
@@ -616,6 +616,8 @@ void main()
 		   NULL, " Everybody take a seat!!\"", Line_Normal);
 	ClearMessage();
 
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	PlaySE( 0, "s_door", 128, 64 );
 	ModDrawCharacter(3, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "background/gk3", "maskleft", 1, 0, 300 );
 
@@ -629,12 +631,11 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
+	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/gr2", 400 );
-	FadeOutBGM( 0, 300, FALSE );
-	PlaySE( 0, "s_chaim", 128, 64 );
-	Wait( 300 );
-	PlaySE( 0, "s_chaim", 128, 64 );
+	PlaySE( 0, "wa_001", 128, 64 );
 	PlayBGM( 0, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -805,13 +806,12 @@ void main()
 		   NULL, "...Was she going to break into the clinic and get questionable weird samples...?", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして最後の、レナ自身の余命が問題だ。",
 		   NULL, "The last problem of all was how much time she had left.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………絶望的に不利な状況下で、自らにも残された時間が少ないと知ったら、刺し違えてでもと短絡的になることは考えられる。",
@@ -885,6 +885,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(0, 3, "sprite/normal/me1a_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 400, TRUE );
 	PlayBGM( 0, "pros", 120, 0 );
 
@@ -1032,9 +1033,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps2/03/170300660", 240, TRUE);
 	OutputLine(NULL, "「あっはっはっはっはー。",
-		   NULL, "\"Ah ha ha ha haa.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "\"Ah ha ha ha haa.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps2/03/170300661", 240, TRUE);
 	OutputLine(NULL, "…じゃあアウトかもだー、あっはっはー。」",
 		   NULL, " ...Well then, she might be out of our hands, ah ha ha.\"", Line_Normal);
@@ -1276,7 +1275,7 @@ void main()
 		   NULL, " Au au auuuu!\"", Line_Normal);
 	ClearMessage();
 
-	ChangeScene( "black", 6, 500 );
+	DrawScene( "black", 2000 );
 
 	SetStyleOfMessageSwinging( 1 );
 
@@ -1321,13 +1320,11 @@ void main()
 		   NULL, "↓\nI can't eat curry anymore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "white", 100 );
+	PlaySE( 0, "thunder", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );
 	DrawScene( "background/aka2", 50 );
-	PlaySE( 0, "s_daidageki", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "↓\n死",
@@ -1337,7 +1334,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	ModDrawCharacter(2, 22, "sprite/normal/tie_3_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "background/g3", "maskup", 1, 0, 300 );
+	DrawScene( "background/g3", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s09/22/171400057", 128, TRUE);
@@ -1356,6 +1353,7 @@ void main()
 		   NULL, "It looked funny, so I decided to leave her alone.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_door", 128, 64 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
 
@@ -1515,6 +1513,7 @@ void main()
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "background/g1", "maskright", 1, 0, 300 );
+	PlaySE( 0, "s_knock", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　校門のところに停まっている黒塗りの車に駆け寄り、窓を叩いた。",
@@ -1607,6 +1606,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
+	PlaySE( 0, "s_Door", 128, 64 );
 	ModDrawCharacter(2, 3, "sprite/normal/me1b_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/gk3", "maskright", 1, 0, 300 );
 
@@ -1809,16 +1809,18 @@ void main()
 		   NULL, "...But I just didn't understand what Rena wanted from Chie-sensei.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 0, 400, FALSE );
+	PlaySE( 0, "s_door", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう思った時、ガラガラと引き戸が開き、お手洗いに行っていた子が帰ってきた。",
 		   NULL, "While I was thinking about it, the door opened, and one of our classmates came back from the bathroom.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, FALSE );
-	DrawScene( "white", 400 );
-	PlaySE( 0, "s_door", 128, 64 );
 	ModDrawCharacter(0, 2, "sprite/normal/renasen2_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "background/gk3", "maskright", 7, 0, 300 );
+	DrawScene( "background/gk3", 50 );
+	PlaySE( 0, "wa_025", 128, 64 );
+	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナと、一緒に。",

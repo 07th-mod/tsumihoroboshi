@@ -297,7 +297,7 @@ void main()
 	OutputLine(NULL, "「園崎組が私に関心があるのではなく、",
 		   NULL, "\"It might be the Sonozaki family who are after me...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 3000 );
+	Wait( 4000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……園崎本家が私に関心があるというのはどうですか？」",
 		   NULL, " not just the Sonozaki Corps.\"", Line_Normal);
@@ -516,18 +516,19 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201039", 128, TRUE);
-	OutputLine(NULL, "「彼らは三四さんを消し、その三四さんが残したスクラップ帖も葬ろうとしているんです。",
-		   NULL, "\"They killed Miyo-san, and they're trying to get at her scrapbooks.", Line_WaitForInput);
+	OutputLine(NULL, "「彼らは三四さんを消し、その三四さんが残したスクラップ帖も葬ろうとしているんです。 ",
+		   NULL, "\"They killed Miyo-san, and they're trying to get at her scrapbooks. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201040", 128, TRUE);
 	OutputLine(NULL, "最初の内は、私が持っているのかどうか分かりかねているようだったんですが、",
-		   NULL, " They weren't sure that I had them, so they followed me to find out...", Line_Continue);
+		   NULL, "They weren't sure that I had them, so they followed me to find out...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 6000 );
+	Wait( 6200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……昨日を境に、",
 		   NULL, " but I think they changed their plans yesterday.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "疑わしきは殺せという方針に変ったように感じています。」",
 		   NULL, " They're now trying to kill anyone they think is suspicious.\"", GetGlobalFlag(GLinemodeSp));
@@ -668,12 +669,12 @@ void main()
 	OutputLine(NULL, "「……………ふむ、",
 		   NULL, "\"...Hmmmm", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ふむ、",
 		   NULL, " ...Hmmmm", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……続けてください。",
 		   NULL, "... Go on, I'm listening.", Line_WaitForInput);
@@ -1161,8 +1162,9 @@ void main()
 		   NULL, "Well, like I said, I think they just made a mistake.\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
-	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
+	DisableWindow();
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+	Negative( 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………私の脳に、ざらついたシャーベットが登っていくのがわかる。",
@@ -1241,8 +1243,8 @@ void main()
 		   NULL, " ...There's no way... It can't be true...", Line_Normal);
 	ClearMessage();
 
+	FadeFilm( 700, FALSE );
 	DrawScene( "black", 400 );
-	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まだ信じられない。",
@@ -1430,7 +1432,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "white", 1000 );
-	FadeOutBGM( 0, 1300, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawSceneWithMask( "background/denwa", "maskright", 1, 0, 1300 );
 	PlayBGM( 1, "yoru", 120, 0 );
 
@@ -1473,12 +1475,12 @@ void main()
 		   NULL, " it's getting really bad now!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s09/19/173100026", 128, TRUE);
 	OutputLine(NULL, "　竜宮レナを探させているのは園崎組、",
-		   NULL, " It's Tatsuyoshi Kasai", Line_Continue);
+		   NULL, " The one who gave the Sonozaki Corps the order to find Rena Ryuugu,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 3300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "葛西辰由！」",
-		   NULL, " who gave the Sonozaki Corps the order to find Rena Ryuugu!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " it's Tatsuyoshi Kasai!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1491,7 +1493,7 @@ void main()
 	ClearMessage();
 
 	ModDrawCharacter(0, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "black", 400 );
+	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西辰由は組長の舎弟の中でも相当序列の高い大物だ。",
@@ -1666,13 +1668,13 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "Mati", 120, 0 );
+	PlayBGM( 2, "yoru", 120, 0 );
 	DrawSceneWithMask( "background/mati7", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
 	ModDrawCharacter(2, 6, "sprite/normal/si1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "background/si_g1", "maskleft", 1, 0, 300 );
+	DrawScene( "background/si_g1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600056", 128, TRUE);
@@ -1818,7 +1820,6 @@ void main()
 		   NULL, " Anyway, I hope she's alright.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "denwa_m", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1870,6 +1871,7 @@ void main()
 
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 15, "sprite/normal/kasa_3_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	FadeOutBGM( 2, 300, FALSE );
 	PlayBGM( 0, "pros", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
@@ -1910,7 +1912,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "background/ma2", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "denwa_m", 120, 0 );
@@ -1919,7 +1921,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	FadeOutBGM( 1, 300, FALSE );
-	DrawSceneWithMask( "background/ma_g3_01", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ma_g3_01", "maskm1", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100784", 128, TRUE);
