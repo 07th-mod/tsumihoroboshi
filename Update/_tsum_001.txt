@@ -1,8 +1,6 @@
 void main()
 {
 
-//TODO: Need PS3 blur effect in a place where fight take place.
-
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -1025,7 +1023,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "background/GR3", 400 );//blur
+	DrawScene( "background/blur/GR3", 800 );
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
@@ -1489,7 +1487,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "background/GR1", 400 );//blur
+	DrawScene( "background/blur/GR1", 800 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/hr_kei22510", 128, TRUE);
@@ -1564,7 +1562,7 @@ void main()
 		   NULL, " Really, I can admire how fast she does those things!!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/GR1", 200 ); //blur
+	DrawScene( "background/blur/GR1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　駆け寄る俺が間合いをザクザクと詰めていった。",
@@ -1905,7 +1903,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "white", 200 );
-	DrawScene( "background/GR1", 300 ); //blur
+	DrawScene( "background/blur/GR1", 400 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
@@ -2873,7 +2871,7 @@ void main()
 		   NULL, " So what are you saying?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/GR1", "maskleft", 7, 0, 300 ); //blur
+	DrawSceneWithMask( "background/blur/GR1", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこまで聞いた時、俺は駆け出す！！",
@@ -3077,8 +3075,8 @@ void main()
 		   NULL, "Rena knew I was her last target and that I was running towards her.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/GR3", 200 );
-	DrawScene( "background/GR3", 400 );//blur
+	DrawScene( "background/GR3", 300 );
+	DrawScene( "background/blur/GR3", 800 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );
@@ -3171,7 +3169,7 @@ void main()
 
 	DrawScene( "white", 200 );
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "background/G1", 400 );//blur
+	DrawScene( "background/blur/G1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　建設重機を挟み旋回し合いながら互いの虚を狙う。",
@@ -3223,7 +3221,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
-	DrawScene( "background/GR2", 400 );//blur
+	DrawScene( "background/blur/GR2", 400 );
 	PlayBGM( 1, "semi", 120, 0 );
 	PlayBGM( 2, "suzume", 120, 0 );
 
@@ -3249,10 +3247,10 @@ void main()
 
 	DrawScene( "white", 200 );
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "background/GR1", 200 );//blur
+	DrawScene( "background/blur/GR1", 200 );
 
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "background/GR2", 400 );//blur
+	DrawScene( "background/blur/GR2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えるならダンスのよう。",
@@ -3324,7 +3322,7 @@ void main()
 		   NULL, "I didn't know why, but it was great fun just to fight against Rena, and I didn't even care whether I won or lost. In fact, I never even wanted it to end.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/GR2", "maskup", 7, 0, 300 );//blur
+	DrawSceneWithMask( "background/blur/GR2", "maskup", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　互いが牽制し合う度に水の残量が減り、射程が縮まっていく。",
@@ -3365,7 +3363,7 @@ void main()
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "white", 200 );
 	DrawScene( "black", 200 );
-	DrawScene( "background/gr1", 300 ); //blur
+	DrawScene( "background/blur/gr1", 300 );
 	PlaySE( 0, "s_furu", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -3576,7 +3574,7 @@ void main()
 		   NULL, "I became relaxed enough to enjoy the battle, and finally realized that many of our classmates were watching our one-on-one fight.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/GR2", "maskright", 7, 0, 300 );//blur
+	DrawSceneWithMask( "background/blur/GR2", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　水量は…もうまったくない。",
