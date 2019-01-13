@@ -1855,13 +1855,11 @@ void main()
 		   NULL, " What are you trying to say?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400185", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こうして思い出せば簡単だったんですのよ…！",
-		   NULL, "\"It's simple if you just remember...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400186", 128, TRUE);
+		   NULL, "It's simple if you just remember...!", Line_WaitForInput);
 	OutputLine(NULL, "　ほら、思い出せば明白…！",
-		   NULL, " Come on, it's quite obvious when you do!\"", Line_Normal);
+		   NULL, " Come on, it's quite obvious when you do!", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
