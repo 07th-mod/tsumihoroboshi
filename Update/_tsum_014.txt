@@ -5,10 +5,9 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
-	DrawSceneWithMask( "background/nort", "maskleft", 1, 0, 300 );
+	DrawScene( "background/nort", 300 );
 
 	PlayBGM( 0, "getting_mad", 120, 0 );
 
@@ -352,9 +351,7 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
 
@@ -417,11 +414,11 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は「うじ虫」の説明を求めて、三四さんに借りている数冊のスクラップ帖を、",
-		   NULL, "I flipped through one of the other scrapbooks Miyo-san let me borrow,", Line_ContinueAfterTyping);
+		   NULL, "I flipped through one of the other scrapbooks Miyo-san let me borrow,", Line_WaitForInput);
 
 	PlaySE( 0, "s_page", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 100 );
+	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_page", 128, 64 );
 
@@ -429,9 +426,7 @@ void main()
 		   NULL, " looking for an explanation of the \"maggots\" I saw.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………すると、…なんと見付かった。",
@@ -443,6 +438,7 @@ void main()
 		   NULL, "It had the exact title I was looking for.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
@@ -573,10 +569,9 @@ void main()
 		   NULL, "I'd love to see those maggots coming out of someone.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_page", 128, 64 );
-
+	DisableWindow();
 	SetColorOfMessage( TRUE, 0xff, 0xaa, 0xaa );
-	PlaySE( 0, "s_Down", 100, 64 );
+	PlaySE( 0, "wa_003", 100, 64 );
 	DrawScene( "background/file", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -689,6 +684,7 @@ void main()
 		   NULL, "...I unconsciously looked for something related to maggots.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
@@ -880,6 +876,7 @@ void main()
 		   NULL, "The story about the demons attacking the villagers must be a metaphor for the behavior of the infected villagers who were controlled by the parasite.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
 	DrawScene( "background/si_h2_01", 400 );
@@ -939,8 +936,7 @@ void main()
 		   NULL, "...What if they noticed some of her scrapbooks are missing?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………背筋がぞっとしてくるのを感じた。",
@@ -1064,9 +1060,8 @@ void main()
 		   NULL, "I might be able to find the truth, including the cause of my parents' divorce and my desperate behavior...!", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 0, "s_knock", 128, 64 );
 	DrawScene( "background/si_h2_01", 400 );
 
@@ -1108,10 +1103,8 @@ void main()
 	OutputLine(NULL, "本の取り寄せとか頼んだのか？",
 		   NULL, " Did you order some books?", Line_WaitForInput);
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlaySE( 0, "s_Z03_Haikyo", 128, 64 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlaySE( 0, "wa_023", 128, 64 );
 
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900066", 128, TRUE);
 	OutputLine(NULL, "　興宮書房の大石さんって人からだ。」",
@@ -1121,10 +1114,4 @@ void main()
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
 	CallScript( "&eye" );
-	DrawScene( "black", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 }

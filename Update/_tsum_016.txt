@@ -5,7 +5,6 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
 	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 300 );
@@ -13,8 +12,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask( "background/ma_g3_01", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "sheep counts", 120, 0 );
 
@@ -279,7 +277,7 @@ void main()
 	OutputLine(NULL, "「じゃあ…狙いは………、",
 		   NULL, "\"So... what do they want...?", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 3000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……まさかあれか。",
 		   NULL, " ...Are they after...", Line_WaitForInput);
@@ -332,12 +330,12 @@ void main()
 	OutputLine(NULL, "「……………レナ……、",
 		   NULL, "\"...Rena...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…お前、",
 		   NULL, " it sounds like...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……かなりヤバい橋を渡ってるんじゃないのか…。」",
 		   NULL, " you're playing a dangerous game...\"", Line_Normal);
@@ -483,8 +481,7 @@ void main()
 		   NULL, "I had no idea what she read that made her so certain, but whatever it was, it'd be sacrilegious for people who believed so strongly in Oyashiro-sama.", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
-
+	DrawFilm( 2, 200, 200, 200, 256, 0, 300, FALSE );
 	DrawScene( "background/ji1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -565,8 +562,7 @@ void main()
 		   NULL, "People had no resistance against whatever it was that came out of the swamp. They became demons, attacked the other villagers, and turned them into demons as well.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, FALSE );
-	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
+	Negative( 100 , FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう。",
@@ -602,7 +598,7 @@ void main()
 	OutputLine(NULL, "「………確かに、",
 		   NULL, "\"...It actually...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………それだと、伝説をうまく説明できるな…。",
 		   NULL, " explains the legend...", Line_WaitForInput);
@@ -610,12 +606,12 @@ void main()
 	OutputLine(NULL, "……じゃあ、…オヤシロさまってのは……ひょっとして、",
 		   NULL, " ...So... was Oyashiro-sama...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………異国から来た、",
 		   NULL, " a doctor", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "医者？」",
 		   NULL, " who came from a foreign country?\"", GetGlobalFlag(GLinemodeSp));
@@ -636,8 +632,8 @@ void main()
 		   NULL, " But he couldn't cure it for good.\"", Line_Normal);
 	ClearMessage();
 
+	FadeFilm( 600, FALSE );
 	DrawScene( "black", 400 );
-	FadeFilm( 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　対症療法とは即ち、症状を軽減させるだけの根本的でない治療法を指す。",
@@ -696,7 +692,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	FadeFilm( 0, TRUE );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「オヤシロさま」の力があれば、感染者も異常な症状を出さずに生活できる。",
@@ -757,7 +753,7 @@ void main()
 		   NULL, "...That reaction is the truth behind 'the curse of Oyashiro-sama'.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/ryuuketu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　感染症の最大の特徴は、錯乱や凶暴性だった。",
@@ -849,7 +845,7 @@ void main()
 	OutputLine(NULL, "「………そうか、",
 		   NULL, "\"...I see.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……自然淘汰か…！」",
 		   NULL, " ...You're talking about natural selection...!\"", Line_Normal);
@@ -958,7 +954,7 @@ void main()
 		   NULL, "They created a vaccine from the infected people who died from the extremely strong parasites, and that helped the uninfected villagers boost their immune system.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 50 );
+	DrawScene( "black", 400 );
 	FadeFilm( 0, FALSE );
 	DrawSceneWithMask( "background/ma_g3_01", "maskright", 1, 0, 300 );
 
@@ -973,7 +969,7 @@ void main()
 	OutputLine(NULL, "…医学先進国っていうと、",
 		   NULL, " ...He must've been from a very advanced country...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ドイツか？",
 		   NULL, " Was he German?", Line_WaitForInput);
@@ -1137,8 +1133,6 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0x88, 0x88 );
 	DrawSceneWithMask( "background/re_tel", "maskleft", 7, 0, 300 );
-
-	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200904", 128, TRUE);
@@ -1783,7 +1777,7 @@ void main()
 	OutputLine(NULL, "「………なぁ、それってよ、",
 		   NULL, "\"...That's...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……悪いことなんだよな…？」",
 		   NULL, " a bad thing, isn't it...?\"", GetGlobalFlag(GLinemodeSp));
@@ -1794,12 +1788,12 @@ void main()
 	OutputLine(NULL, "「危険性の高い病原体をバラまこうというんだから、",
 		   NULL, "\"I think you can say that", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 3800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "多分、",
 		   NULL, " because", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "悪いことに分類されるだろうね。」",
 		   NULL, " they're trying to spread a very dangerous pathogen.\"", Line_Normal);
@@ -1871,9 +1865,8 @@ void main()
 		   NULL, "\"...Do you think that'd be a problem...?\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
-	DisableWindow();
-	ModDrawCharacterWithFiltering(0, 11, "sprite/normal/oisi1_1_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
+	ModDrawCharacter(0, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawScene( "black", 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200948", 128, TRUE);
@@ -1928,7 +1921,7 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200956", 128, TRUE);
 	OutputLine(NULL, "　沙都子ちゃんの叔母さんが殺された事件。",
 		   NULL, " Satoko-chan's aunt was murdered.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps2/02/170200957", 240, TRUE);
+	ModPlayVoiceLS(4, 2, "ps2/02/i_170200957", 240, TRUE);
 	OutputLine(NULL, "あれは犯人は悟史くん以外に考えられないんだけど、……その後、犯人は麻薬中毒者だったということになった。",
 		   NULL, " I believe Satoshi-kun did it. But... the police fingered a drug addict as the murderer. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1942,7 +1935,7 @@ void main()
 	OutputLine(NULL, "「…………警察内部に狂信的な連中の手先が混じっていて……、",
 		   NULL, "\"...Some of the fanatics are with the police...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 5000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "犯人を捏造したってことか…？！」",
 		   NULL, " and they fabricated the murderer...?!\"", Line_Normal);
@@ -2428,10 +2421,5 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
-	DrawScene( "black", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 1000, TRUE );
 }

@@ -233,9 +233,10 @@ void main()
 	OutputLine(NULL, "見かけたら父さんにも教えてくれよ。",
 		   NULL, " So, if you happen to see them, let your dad know, okay?", Line_WaitForInput);
 	OutputLine(NULL, "きっとだぞー！",
-		   NULL, " Promise me, okay?!", Line_ContinueAfterTyping);
-	SetSpeedOfMessage( TRUE, 128 );
+		   NULL, " Promise me, okay?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -267,14 +268,12 @@ void main()
 	DrawScene( "background/furiker_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
-
-	OutputLine(NULL, "　ぐほぐぎぇッ？！",
-		   NULL, " Cough cough!!", Line_ContinueAfterTyping);
-
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_Down", 128, 64 );
-	SetSpeedOfMessage( FALSE, 0 );
-	OutputLineAll(NULL, "", Line_Normal);
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぐほぐぎぇッ？！",
+		   NULL, "Cough cough!!", Line_Normal);
 
 	ClearMessage();
 

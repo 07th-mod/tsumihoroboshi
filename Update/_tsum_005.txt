@@ -6,8 +6,6 @@ void main()
 
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
-	DisplayWindow();
-
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母は、とても忙しい人だった。",
@@ -135,7 +133,6 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　溢れる才能と情熱をこんな田舎で冷めさせたくない。",
@@ -241,8 +238,7 @@ void main()
 		   NULL, "We ate dinner without my mother more and more often.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
-	DrawScene( "background/flashback/Re_H3", 400 );
+	DrawSceneWithMask( "background/flashback/re_h3", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お母さんはまた忙しいんだね。",
@@ -379,7 +375,6 @@ void main()
 		   NULL, "I still remember there was this one guy who particularly doted on me. He was a good-looking young man (I called him \"Uncle\" once and he got mad at me) who was nicely tanned with dyed brown hair.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -443,7 +438,7 @@ void main()
 		   NULL, "On that day, I realized my mother's design work had made her a very successful woman and she was earning a lot of money.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/flashback/saten1", 400 );
+	DrawSceneWithMask( "background/flashback/saten1", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、オレンジジュースだけでも１０００円するような高級な喫茶店で一休みした。",
@@ -622,11 +617,7 @@ void main()
 		   NULL, "\"If I said I'm going to live in another house away from your father, which of us would you like to live with?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200210", 128, TRUE);
@@ -649,7 +640,6 @@ void main()
 		   NULL, " about divorcing your father and getting married to Akihito-san.\"", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, 0, 0, 0, 0, 256, 0, 0, 0, TRUE );
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -819,7 +809,7 @@ void main()
 		   NULL, "I thought my mother appreciated his support.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/flashback/saten1", 400 );
+	DrawSceneWithMask( "background/flashback/saten1", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから。",
@@ -892,17 +882,14 @@ void main()
 		   NULL, " You haven't talked with my father about this, have you? It's not too late!", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの母</color>", NULL, "<color=#f5e6d3>Rena's mother</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000012", 128, TRUE);
 	OutputLine(NULL, "「お母さんね。",
 		   NULL, "\"I'm...", Line_WaitForInput);
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "transparent", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000013", 128, TRUE);
 	OutputLine(NULL, "………妊娠してるの。」",
 		   NULL, "......pregnant.\"", Line_Normal);
 	ClearMessage();
@@ -911,11 +898,10 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "T2", 120, 0 );
+	PlayBGM( 1, "T2", 120, 0 );
 	DrawSceneWithMask( "background/flashback/re_h1", "maskc", 1, 0, 1300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの母</color>", NULL, "<color=#f5e6d3>Rena's mother</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/173000013", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母が父に、離婚したい旨を直接会って話したかどうかは分からない。",
 		   NULL, "I don't know whether my mother actually told him about the divorce in person.", Line_Normal);
 	ClearMessage();
@@ -944,8 +930,6 @@ void main()
 		   NULL, "Well, again, I'm not even sure if she told him in person.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/flashback/denwa", 400 );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　弁護士は父に、直接の面会、職場への連絡その他を何から何まであれこれと制約し、",
 		   NULL, "The lawyer told him not to meet my mother, not to call her at work, and many other things, too.", Line_WaitForInput);
@@ -957,8 +941,6 @@ void main()
 	OutputLine(NULL, "二度と母に会うなと告げた。",
 		   NULL, " she told him not to see my mother ever again.", Line_Normal);
 	ClearMessage();
-
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでも母と話がしたくて、父も知る母の友人たちに連絡を取ったが、浮気の相手の名が分かる以上の何もなりはしなかった。",
@@ -1001,8 +983,8 @@ void main()
 		   NULL, "...I'll never forget how he looked when I told him that.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "white", 0 );
-	DrawScene( "black", 10 );
+	DrawScene( "white", 50 );
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父は私に初めて手を上げた。",
@@ -1123,7 +1105,7 @@ void main()
 		   NULL, "If I tried to do so... my parents wouldn't have had to break up.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/flashback/re_h3", 400 );
+	DrawSceneWithMask( "background/flashback/re_h3", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父と二人して流す涙だったが、…二人の涙は少しだけ意味が違う。",
@@ -1355,7 +1337,7 @@ void main()
 		   NULL, "At that moment, I hated my name for the first time in my life.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 0 );
+	DrawScene( "black", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200216", 128, TRUE);
@@ -1430,9 +1412,10 @@ void main()
 	OutputLine(NULL, "　それらを乱暴に黒いゴミ袋に放り込んでいくうちに、",
 		   NULL, "I roughly threw her things into a black trash bag.", Line_WaitForInput);
 	OutputLine(NULL, "だんだんと片付け方が乱暴になり、",
-		   NULL, " I started to do so frantically.", Line_WaitForInput);
+		   NULL, " I started to do so frantically. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "母の衣装ケースを倒し、",
-		   NULL, " By the time I knocked down her wardrobe,", Line_ContinueAfterTyping);
+		   NULL, "By the time I knocked down her wardrobe,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -1492,6 +1475,8 @@ void main()
 		   NULL, "Maybe I was thinking that I wanted to do damage to her reputation and successful life by destroying her daughter, destroying myself.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 2, "Suzu", 120, 0 );
 	PlayBGM( 0, "Soul_scour", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1511,8 +1496,6 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "background/oyashirosama", 400 );
-
-	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまが、来てくれたのだ。",
@@ -1573,6 +1556,7 @@ void main()
 		   NULL, " We had to go back to Hinamizawa.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 2, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1585,7 +1569,7 @@ void main()
 		   NULL, "It might be a scream from within me telling me not to push myself too hard to remember any further.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "background/flashback/re_s2", 400 );
+	DrawSceneWithMask( "background/flashback/re_s2", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて雛見沢に住んでいた家は、元のまま残っていた。",
@@ -1613,7 +1597,7 @@ void main()
 		   NULL, "I forgot the streets and even the names of close friends I used to play with.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/flashback/hi1", "maskup", 1, 0, 300 );
+	DrawScene( "background/flashback/hi1", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ご近所の人たちは、亡くなった祖母の息子夫婦が離婚で戻ってきたことは理解していたが、",
@@ -1744,12 +1728,10 @@ void main()
 		   NULL, " ...would everything in this world disappear?", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "black", 2000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　灯りを、",
 		   NULL, "I turned off...", Line_ContinueAfterTyping);
-
-	DrawFilm( 2, 0x66, 0x66, 0x66, 256, 0, 200, TRUE );
-
 	OutputLine(NULL, "……消してみる。",
 		   NULL, " the light.", Line_Normal);
 	ClearMessage();
@@ -1867,9 +1849,7 @@ void main()
 		   NULL, "I found the switch of the table lamp, and turned it back on.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
-
-	DrawSceneWithMask( "background/mo_r1_02", "maskup", 1, 0, 300 );
+	DrawScene( "background/mo_r1_02", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時計を見ると、午後の１１時をとっくに過ぎていた。",
@@ -2087,6 +2067,8 @@ void main()
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
 	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_tsum005", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

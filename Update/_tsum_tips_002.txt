@@ -53,12 +53,10 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 14 ); }
 
 	OutputLine(NULL, "専属マネージャー　間宮リナ",
-		   NULL, "                 Private Manager Rina Mamiya", Line_ContinueAfterTyping);
-	SetSpeedOfMessage( FALSE, 0 );
-	OutputLineAll(NULL, "", Line_Normal);
-
-
+		   NULL, "                 Private Manager Rina Mamiya", Line_Normal);
 	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene( "black", 1000 );
 
