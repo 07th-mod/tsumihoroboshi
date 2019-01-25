@@ -4140,7 +4140,7 @@ void main()
 		   NULL, "\"Ah, old appliances didn't have timers.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700505", 128, TRUE);
 	OutputLine(NULL, "それでね、コンセント穴の付いたキッチンタイマーって名前の目覚まし時計がありましてねぇ。",
-		   NULL, " A kitchen timer is a device that turns on appliances at a given time.", 
+		   NULL, " A kitchen timer is a device that turns on appliances at a given time.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
