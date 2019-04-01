@@ -1,0 +1,239 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	Wait( 100 );
+
+
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+	SetColorOfMessage( TRUE, 0xff, 0x00, 0x00 );
+	DrawSceneWithMask( "M_Y4", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　大石との電話を終えて電話ボックスを出た瞬間。",
+		   NULL, "I finished talking with Ooishi on the phone, and soon left the phone booth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………私は今さらのようにそれに気付き、ぞっとした。",
+		   NULL, "...I realized something, and a chill ran through my body.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この暗闇の中で、これだけ目立つ電話ボックスにいたのだ。",
+		   NULL, "I was in a phone booth that stood out tremendously in the dark.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰にも見られていないわけがない。",
+		   NULL, "Somebody must've seen me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いや、見られていないわけがないんじゃなくて、",
+		   NULL, "I was certain", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	SetSpeedOfMessage( TRUE, 16 );
+	OutputLine(NULL, "見ラレテイタ。",
+		   NULL, " I was being <i>watched</i>.", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	PlayBGM( 1, "semi_r", 120, 0 );
+	DrawFilm( 3, 255, 255, 255, 256, 0, 0, TRUE );
+
+	OutputLine(NULL, "　暗闇からじっとこちらを覗く、光る目…。",
+		   NULL, "I saw glowing eyes staring at me in the dark...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………それが人間であるはずはない。",
+		   NULL, "......It wasn't human.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　幻覚？",
+		   NULL, "Was it an illusion?", Line_WaitForInput);
+	OutputLine(NULL, "　違う。",
+		   NULL, " No.", Line_WaitForInput);
+	OutputLine(NULL, "やつらの正体はすでに知っている。",
+		   NULL, " I knew who they were.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それは雛見沢を支配する御三家を、真の意味で支配するやつら。",
+		   NULL, "...They were the ones controlling the Three Families who ruled Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その目の位置は低く、……薄っすらと見える輪郭も貧弱だった。",
+		   NULL, "Its eye level was too low for it to be human... and its outline was vague.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そう、やつらが体格的に貧弱であることはすでに過去の記録から明らかなのだ。",
+		   NULL, "...I knew from the past records that they were physically frail.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その、人間ではないことを示すシルエットは、信じられないくらいに非現実的だった。",
+		   NULL, "The silhouette, which indicated its inhuman appearance, was unbelievably unrealistic.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…特に頭部のシルエットが異常で、突起物のような何かがあり、明らかに人のそれではない。",
+		   NULL, "...Especially its protruding head.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……やつらの外見については、三四さんに預かったもう１冊のスクラップ帖の方が詳しかった。",
+		   NULL, "...One of the scrapbooks I received from Miyo-san described their appearance in detail.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その眼球は血のように真っ赤で、",
+		   NULL, "...Their eyeballs were pure red, like blood...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…身体にはアンモニア臭があり、",
+		   NULL, " and their bodies smell like ammonia.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………過去において世界で何度か捕獲の例があるはずなのに、",
+		   NULL, " ...Even though some of them have, at times, been captured around the world...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……みな、溶けたりして消えてしまい、跡形も残さない。",
+		   NULL, " all of them melted or disappeared, leaving no trace behind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……残るのは、やつらが確かに「降臨」したことを示す跡だけ………。",
+		   NULL, "...The only traces remaining are the marks proving their descent to Earth...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その時、ありえない非現実的なシルエットが一歩、",
+		   NULL, "Right then, the impossible unrealistic silhouette took a step closer...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_Lf257", 128, 64 );
+
+	OutputLine(NULL, "歩み寄り…、",
+		   NULL, " and got closer and closer towards me...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "じゃりりと現実的な音を立てた。",
+		   NULL, " making a realistic noise as it crunched across the gravel.", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 0, TRUE );
+
+	OutputLine(NULL, "　その音のあまりに残酷なくらいの現実感が、私を現実に引き戻す。",
+		   NULL, "The noise pulled me back to reality.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ち、……近寄らないで、バケモノめッ！！」",
+		   NULL, "\"D-Don't come closer... you monster!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　じゃりり、ガッ、ジャララララ！！",
+		   NULL, "It kept walking towards me!!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "　道路の砂利が、爆ぜたり、飛び散ったりして、奇怪な音を立てた。",
+		   NULL, "It sounded like it was kicking pebbles everywhere as it walked.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しかもそれは徐々に、私に迫ってくるのだ。",
+		   NULL, "It was coming closer and closer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……私は恐怖に駆られてもう一度同じ言葉を口にする。",
+		   NULL, "...I was scared, so I said the same thing once again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　すると今度は、私がたった今まで使っていた電話ボックスのガラス扉がびりびりと振るえ、バン！",
+		   NULL, "And this time, the glass door of the phone booth I was just in started to rattle and shake!", Line_ContinueAfterTyping);
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	OutputLine(NULL, "バン！",
+		   NULL, " Bang!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+
+	OutputLine(NULL, "と打ち付けるような怪奇音を立て始めるのだった。",
+		   NULL, " It made weird sounds as if being struck by something.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　私は絹を裂くような悲鳴を挙げ、駆け出す。",
+		   NULL, "I screamed loudly in fear and started running.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　そして肺が爆発しそうになるまで走ってから振り返り、……もうあの奇怪な気配がそこにいないことを悟る。",
+		   NULL, "I ran so hard that it felt like my lungs were about to explode. And then, I looked back... to find that the thing was no longer chasing after me.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "M_Y2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　…………気のせい………？",
+		   NULL, "......Was it my imagination...?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　気のせいなものか、砂利を蹴散らすような音、電話ボックスを鳴らす怪奇音は確かに聞いたじゃないか！！",
+		   NULL, "There's no way it was just my imagination. I definitely heard the sound of the gravel being kicked and the phone booth rattling!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも落ち着け竜宮レナ…！",
+		   NULL, "But I needed to calm down...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……気のせいということにしてもいいから、今は心臓を落ち着けるんだ。",
+		   NULL, "...Right then, I needed to make my heart stop beating so fast.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……どうせ、…いつか戦う相手じゃないか。",
+		   NULL, "...I'd have to fight them eventually.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…次に現れたら、刃向かってやれ…。",
+		   NULL, "...The next time they appeared, I was going to strike back at them...", Line_WaitForInput);
+	OutputLine(NULL, "分厚い鉈を頭に叩き込んでやれ…！",
+		   NULL, " I was going to squash their heads with my big hatchet...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢は私が守る、それが私の使命なんだ。",
+		   NULL, "I'd protect Hinamizawa. It was my duty to do so.", Line_WaitForInput);
+	OutputLine(NULL, "…やつらの好きになんかさせるものか…ッ！！",
+		   NULL, " I wouldn't allow them to do whatever they wanted...!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　チリチリチリチリ……チリチリチリチリ。",
+		   NULL, "I saw the lights flickering in my head again...", Line_Normal);
+	ClearMessage();
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

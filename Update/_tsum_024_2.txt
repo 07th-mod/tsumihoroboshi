@@ -1,0 +1,951 @@
+﻿void main()
+{
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Re_DefB1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「みんな起立起立〜。",
+		   NULL, "\"Everybody, stand up.", Line_WaitForInput);
+	OutputLine(NULL, "教室の真ん中に集まってー。」",
+		   NULL, " Move to the center of the room.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　全員がぎょっとして、息を呑んだ。",
+		   NULL, "Everyone gasped in surprise.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　知恵先生が入ってきたって、ここまでぴたっと静かになることはなかった。",
+		   NULL, "Even Chie-sensei couldn't make everybody go so quiet all of a sudden.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
+
+	OutputLine(NULL, "　レナはお手洗いに行ってた子の肩を掴み、……もう片手には、あの晩も持っていた肉厚の物騒な鉈を弄んでいた。",
+		   NULL, "Rena was gripping the shoulder of the student who came back from the bathroom... In her other hand, she had a big, scary-looking hatchet. It was the same one she had the other night.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　誰もが、レナが人質を取っていることを理解した。",
+		   NULL, "Everyone immediately understood that Rena had taken a hostage.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_DefB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…みんな聞こえてない？",
+		   NULL, "\"...Are you all deaf?", Line_WaitForInput);
+	OutputLine(NULL, "　教室の真ん中に集まってー。",
+		   NULL, " Move to the center of the room.", Line_WaitForInput);
+	OutputLine(NULL, "机は周りにどけちゃってねー。」",
+		   NULL, " Push the desks to the sides.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナが何を言っているのかよくわからず、みんなはただ凍りついているだけだった。",
+		   NULL, "Nobody grasped what she was asking us to do. We all froze.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな中、ひとりだけやさしそうに笑っているレナが、……とても恐ろしい。",
+		   NULL, "Rena was the only one who was smiling... It was terrifying.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_DefA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぃちゃん。",
+		   NULL, "\"Mii-chan,", Line_WaitForInput);
+	OutputLine(NULL, "委員長でしょ？",
+		   NULL, " you're the class president.", Line_WaitForInput);
+	OutputLine(NULL, "　みんなに指示して。」",
+		   NULL, " Tell everyone to move to the center.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Me_OdorokiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「………レ、…レレ、レナ…、あんた、……何をやってんの………！」",
+		   NULL, "\"...R-R-Rena... what are you doing...?\"", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　バッギャッ！！！",
+		   NULL, "Bam!!!", Line_ContinueAfterTyping);
+
+	DrawScene( "black", 0 );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawBustshotWithFiltering( 0, "Re_Hi_DefB1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　魅音の言葉は暴力的な音に掻き消された。",
+		   NULL, "A loud noise washed out Mion's voice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それはレナが思い切り力任せに鉈で教壇を叩いた音だった。",
+		   NULL, "...Rena hit the teacher's desk really hard with her hatchet.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…バリバリと不気味な音を立てながら、レナは天板に食い込む鉈を抜く。",
+		   NULL, "...She pulled out the hatchet, making an ominous ripping noise.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そこには一文字の乱暴な跡がくっきりと刻まれているのだった。",
+		   NULL, "...There was now a line of violence carved plainly into the desk.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………あ〜あ……、",
+		   NULL, "...Uh-oh...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "壊しちゃった…、",
+		   NULL, " She broke it...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…知恵先生、帰ってきたら怒るぞ……。",
+		   NULL, " Chie-sensei is going to get mad when she comes back......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "……じゃなくてじゃなくて、",
+		   NULL, " No, that wasn't it.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………な、",
+		   NULL, " ......What...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………な、",
+		   NULL, " ......the", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…な、",
+		   NULL, " hell...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_defA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぃちゃんはやっぱり駄目だね。",
+		   NULL, "\"I knew I couldn't trust you, Mii-chan.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ圭一くんに頼むよ。",
+		   NULL, " I'm going to ask Keiichi-kun, then.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_DefB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……圭一くんだけは最後まで私の仲間なんだよね？",
+		   NULL, " ...You're my only friend, right, Keiichi-kun?", Line_WaitForInput);
+	OutputLine(NULL, "　だから、信じていいんだよね…？」",
+		   NULL, " So, I can trust you, can't I...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlayBGM( 1, "semi_r", 120, 0 );
+
+	OutputLine(NULL, "　……レ、レナ、……お前、……なんて恐ろしい目をしてんだよ……。",
+		   NULL, "...R-Rena... Your eyes... You look so scary...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺は生まれて初めて見たのだ。",
+		   NULL, "I've never seen eyes like that in my life.", Line_WaitForInput);
+	OutputLine(NULL, "……狂気に澱む目を！",
+		   NULL, " ...Your eyes are full of insanity!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　狂気をどうして人は恐れるんだろう？",
+		   NULL, "Why are people afraid of insanity?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　狂気ってのはつまり、その人間と自分たちが価値観や社会常識を共有できていないってことだ。",
+		   NULL, "Insanity means that a person doesn't share the same values and the same common sense as us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　例えば…、泥棒に踏み込まれてぐるぐるに縛られたとするじゃないか。",
+		   NULL, "For example, say a thief breaks into your house, and he ties you up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…ひょっとすると帰りがけに刺されるかもしれないと怯えはするよな。",
+		   NULL, "...You'll get scared and wonder if he's going to stab you before he leaves.", Line_WaitForInput);
+	OutputLine(NULL, "……でも、泥棒も人間、むやみに人の命は奪わないはずだ、って…祈るじゃないか。",
+		   NULL, " ...But you hope that the thief has feelings too, and that he's not going to kill you for no reason...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　つまり、どんな悪人が相手でも、俺たちは価値観や社会常識、道徳が共有できている限り、相手の善意を信じる。",
+		   NULL, "No matter how bad the person is, we tend to believe in his goodwill as long as we share the same values, the same common sense, and the same morals as him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、……それがない相手には善意など期待できるわけがない。",
+		   NULL, "But... we can't expect goodwill from somebody who doesn't have those things.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　善意が期待できない相手というのは、コミュニケーションが取れない相手ということだ。",
+		   NULL, "We can't expect goodwill from a person who can't communicate with us.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……ナイフを振り下ろす強盗相手に、やめるよう懇願するのは、ひょっとすると聞き入れてくれるかもしれないことを期待して、相手の善意に訴えるものだ。",
+		   NULL, "...When a burglar has a knife and you beg him not to hurt you, you expect him to listen to you and to show you mercy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、コミュニケーションが取れるということ。",
+		   NULL, "In other words, you can still communicate with him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、……コミュニケーションが取れない相手というのは、",
+		   NULL, "But... if he doesn't have the ability to communicate", Line_WaitForInput);
+	OutputLine(NULL, "……例えるなら襲い掛かる猛獣であるとか、……いや、上から落ちてくるギロチンの刃のようなものだ。",
+		   NULL, " ...he's just like a monster that's trying to attack you... or like the blade of a guillotine that's falling down on you.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　意思疎通の余地のない、人間でない存在に感じる恐怖。",
+		   NULL, "You fear him, because you can't communicate with him.", Line_WaitForInput);
+	OutputLine(NULL, "それが狂気だ。",
+		   NULL, " That's insanity.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だから、……俺たちが今、レナに感じている恐怖の正体は、…それ。",
+		   NULL, "It was the same fear we were feeling towards Rena at that very moment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一見、俺たちと同じ人間に見えるのに、……でも、同じ人間としてのコミュニケーションの余地がない。",
+		   NULL, "She looked like a human just like us... but there was no room for her to communicate with us like a normal person could do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………そういう恐ろしさを、みんな理屈抜きに理解しているのだ。",
+		   NULL, "......Everybody understood that fear instinctively.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「圭一くん。",
+		   NULL, "\"Keiichi-kun,", Line_WaitForInput);
+	OutputLine(NULL, "机をどけさせて、教室の真ん中に広場を作って？」",
+		   NULL, " make them move the desks to make room in the middle.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わ、……わかった。",
+		   NULL, "\"O-Okay.", Line_WaitForInput);
+	OutputLine(NULL, "……み、みんな……レナが言うのに従おう…！」",
+		   NULL, " ...E-Everybody... let's do as Rena says...!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　レナの感情は今や火薬のようなもの。",
+		   NULL, "Rena was like a barrel of gunpowder at that moment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……一見大人しそうな表情は、わずかの切っ掛けで爆発するのだ。",
+		   NULL, "...She seemed really calm and quiet, but she could explode any minute.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そしてその爆発はわずかの容赦も伴わないだろう。",
+		   NULL, "When she did, I doubt she'd show us any mercy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…今のレナは、間違いなくあの鉈を人間に振り下ろすことを躊躇わない。",
+		   NULL, "...She probably wouldn't hesitate to use that hatchet on us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………そうさ、俺がレナと魅音を殴り殺すのに、何の罪も躊躇いも感じなかったように…！！",
+		   NULL, "...That's right. Just like how I didn't feel guilty or hesitate to kill Rena and Mion...!!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　クラス中が、お通夜のように静まり返りながら、机を壁際に寄せて、レナの希望する広場を作った。",
+		   NULL, "Everybody went all quiet while pushing the desks against the wall to make a space where Rena wanted it.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	OutputLine(NULL, "　時折、レナが遅い遅いと言いながら恐ろしい音を立てて、黒板を鉈で打ちつけた。",
+		   NULL, "Rena, saying that we're moving too slow, hit the blackboard with the hatchet, making a horrible noise.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その度に、俺たちが学校でもっとも長い時間眺めいているはずのそこは、見るも無残な跡が刻まれていくのだった。",
+		   NULL, "Every time she did that, she left an equally horrible scar on the blackboard, the thing that we looked at most in the school.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃあ圭一くん。",
+		   NULL, "\"Keiichi-kun,", Line_WaitForInput);
+	OutputLine(NULL, "みんなのロッカーから、縄跳びを出してもらえるかな。",
+		   NULL, " can you get the jump ropes out from the lockers?", Line_WaitForInput);
+	OutputLine(NULL, "それを使って、みんなを後ろ手で縛ってね。」",
+		   NULL, " Use them to tie our classmates up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……お、……俺、縛るのとか下手くそなんだよ…。",
+		   NULL, "\"......I... I'm not good at tying knots...", Line_WaitForInput);
+	OutputLine(NULL, "多分、上手に縛れないぞ…。」",
+		   NULL, " I probably can't tie them up very well...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あとでちゃんと縛れているか、全員のを調べる。",
+		   NULL, "\"I'll check one by one if you tied them up well enough.", Line_WaitForInput);
+	OutputLine(NULL, "緩い人はその場で『殺しちゃう』から、しっかり縛ってあげてね。」",
+		   NULL, " If I find the ropes loose, I'll <i>kill</i> the person, so you better tie them up really well.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………く………………。」",
+		   NULL, "\".........Ah.........\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺たちもガキンチョだ。",
+		   NULL, "We were still kids.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　殺すなんて言葉は日常でもスラング感覚でぽんぽん使う。",
+		   NULL, "We saw the word \"kill\" all the time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　アニメや漫画にだっていくらでも出て来る。",
+		   NULL, "It was used a lot in comic books and cartoons, after all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だから「殺す」なんて言葉は散々聞き飽きてるはずだ。",
+		   NULL, "...So, normally you'd assume we'd be used to hearing the word \"kill\".", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……なのに、……レナの『殺す』は、……俺が今まで一度も聞いたことがないような、恐ろしい響きを含んでいるのだった。",
+		   NULL, "...But... when Rena said she'd <i>kill</i> us... it sounded so frightening. I'd never heard something like that before in my life.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　レナにとって今やこのクラス内の命は、…交渉に使えるカードの枚数と同じだ。",
+		   NULL, "To Rena, our lives were... like cards she could use for negotiation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　誰かが難問を断る度に、１枚カードを切ればいい。",
+		   NULL, "She'd get rid of one card every time somebody refused her request.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……切れば？",
+		   NULL, "...Get rid of?", Line_WaitForInput);
+	OutputLine(NULL, "　くそ、何でカードは「切る」なんて物騒な言い方なんだよ……！！",
+		   NULL, " Damn it! Why did we use such scary words like \"get rid of\" for simple things like playing cards...?!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　とにかく、……このクラスには…２０何人かいる。",
+		   NULL, "Anyway... there were about twenty students... in the class.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…レナにとっては、ちょっと手に余る数だ。",
+		   NULL, "That was a little bit too many for Rena to handle.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……見せしめに１人や２人、間引いたって何の問題もない…。",
+		   NULL, "...She might get rid of one or two just to set an example...", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "GK3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　俺はレナを不機嫌にさせないため、…とりあえず指示に従い、みんなのロッカーから縄跳びを集めた。",
+		   NULL, "I decided to do what Rena said because I didn't want her to lose her temper... I got out everybody's jump ropes from their lockers.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "re_Hi_muhyouA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃあみんな、床にうつ伏せになってね。",
+		   NULL, "\"All of you, get on the floor.", Line_WaitForInput);
+	OutputLine(NULL, "圭一くんは後ろ手にどんどん縛っていって。",
+		   NULL, " Keiichi-kun, you can start tying their hands behind their backs.", Line_WaitForInput);
+	OutputLine(NULL, "……きっちり縛るんだよ。",
+		   NULL, " ...Tie them really tightly.", Line_WaitForInput);
+	OutputLine(NULL, "圭一くんは私の味方だもん。",
+		   NULL, " You're on my side, aren't you?", Line_WaitForInput);
+	OutputLine(NULL, "だからわざと緩くなんか縛ったりしない。",
+		   NULL, " You wouldn't tie them loosely on purpose,", Line_WaitForInput);
+	OutputLine(NULL, "ね？」",
+		   NULL, " would you?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「………………………………ぅ…。」",
+		   NULL, "\"........................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　魅音が目配せをしてくる。",
+		   NULL, "Mion tried to make eye contact with me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……ここで全員が縛られたら、もうレナの教室占拠を止められないだろう。",
+		   NULL, "...If everybody was tied down, we wouldn't be able to stop her from occupying the school.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今なら、クラス全員２０人以上がいる。",
+		   NULL, "There were more than twenty students in this class.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……男子はその半分で、ほとんどがレナよりも体格も劣る小さな子たちばかり。",
+		   NULL, "...Half of them were boys, but most of them were smaller than Rena.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、…レナひとりを取り押さえられるだけの人数がいる。",
+		   NULL, "But... there were enough people here to overpower her.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	DrawScene( "ryuuketu1", 400 );
+
+	OutputLine(NULL, "　……だが、そうなれば必ずレナは、今、人質に取っている子の頭に鉈を打ち込むだろう。",
+		   NULL, "...But if we did that, Rena would probably hit her hostage with the hatchet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして襲い来る俺たちに怯みもせず、その鉈で戦い、……俺たちは血みどろの肉弾戦になるだろう。",
+		   NULL, "And she'd use the hatchet to attack the rest of us without hesitation... It'd be a bloody battle.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…取り押さえる時に怪我をする者が出るのは当然だし、",
+		   NULL, "...I'm sure somebody would get hurt if we tried to overpower her.", Line_WaitForInput);
+	OutputLine(NULL, "……人質の子は…、",
+		   NULL, " ...The hostage...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "よくて重症、",
+		   NULL, " would be seriously injured,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "悪ければ……………死ぬ。",
+		   NULL, " or... maybe even... die.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなことになれば、……もうレナは破滅だ。",
+		   NULL, "If that happened... it was over.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どう取り繕おうとも、元の平穏な生活になんか戻れなくなってしまう…。",
+		   NULL, "No matter how hard we tried to cover up, she'd never be able to live peacefully like before...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……それは魅音もわかっているようだった。",
+		   NULL, "...Mion seemed to understand that, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……レナの目を見れば、彼女に手加減などあろうはずもないことがわかる。",
+		   NULL, "...I could tell from Rena's eyes that she wasn't going to go easy on us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…反抗的な態度を見せれば、人質はその場で頭を叩き割られる。",
+		   NULL, "...If somebody showed defiance, she'd break the hostage's head open immediately.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…………しかも皮肉にも、…レナにはその経験があるわけだから、さらに容赦なく慣れた手つきで、だ…。",
+		   NULL, "...Of course... Rena had done that before. She'd probably do it again with no hesitation...", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "GK2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　だが、……レナの要求に応じている内は、少なくとも流血の惨事が起きない。",
+		   NULL, "But... as long as we did what she said, we could prevent that bloody tragedy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……何とか、誰の血も流さずに解決できれば、……まだまだ魅音の力でなかったことに出来るかもしれない。",
+		   NULL, "...If we could somehow solve this situation without shedding any blood... with Mion's influence, we might still be able to pretend that this never happened.", Line_WaitForInput);
+	OutputLine(NULL, "………少なくとも、死人が出ているよりは。",
+		   NULL, " ...At the least, we had to make sure she didn't kill anyone.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 1, "Me_YowakiA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……………………従おう。",
+		   NULL, "\"...Let's do as Rena says,", Line_WaitForInput);
+	OutputLine(NULL, "圭ちゃん……。」",
+		   NULL, " Kei-chan...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　レナを取り押さえるあらゆる手を数手先まで読んでいた魅音だったが、",
+		   NULL, "Mion tried to think of ways to overpower Rena.", Line_WaitForInput);
+	OutputLine(NULL, "……どう考えても、人質を救える結果が導き出せなかった。",
+		   NULL, " ...But she couldn't come up with any good ideas to save the hostage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それくらいにレナは容赦なく、人質を殺してしまえるのだ…！",
+		   NULL, "That's how easy it would be for Rena to kill them...!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……レナを刺激しないようにしながら、チャンスを待つのが、多分、今この瞬間の選択肢としては一番妥当だと思った。",
+		   NULL, "...The best thing to do at that time was to wait for a chance without agitating her further.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "maskdown" , 7, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　魅音がうつ伏せになると、みんなも恐る恐る従う…。",
+		   NULL, "Mion lay down on the floor, and everyone else followed suit, sluggish with terror...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして俺だけが取り残され、…クラス中の縄跳びを持ったまま、立ちすくんでいた。",
+		   NULL, "And I was left alone... standing rooted to the spot with jump ropes in my hands.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…俺はクラスの全員が床にうつ伏せになって、……教壇の後ではレナが人質に鉈を突きつけながら俺たち全体を凝視するその異常な光景に、……ただただ呆然とする他なかった…。",
+		   NULL, "...All my classmates were lying face-down on the floor... while Rena was pointing the hatchet at the hostage, watching our every move from behind the teacher's desk... I just stood frozen in the middle of it all...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「圭一くんにはまだまだ手伝ってもらうことがたくさんあるの。",
+		   NULL, "\"Keiichi-kun, there are many things I want you to help me with.", Line_WaitForInput);
+	OutputLine(NULL, "だから早くして。",
+		   NULL, " So hurry up.", Line_WaitForInput);
+	OutputLine(NULL, "………あんまり時間が掛かると、何人かが死んでしまうかもしれない。」",
+		   NULL, " ...If you take too long, some of them might have to die.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナが口にする「死」という言葉の凄みに、小さい子たちが何人か泣き出す…。",
+		   NULL, "Some of the little kids started crying when they heard the word \"die\"...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_Hi_DefB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「大丈夫だよみんな。",
+		   NULL, "\"It's all right, everyone.", Line_WaitForInput);
+	OutputLine(NULL, "圭一くんがきっと助けてくれるから。",
+		   NULL, " Keiichi-kun will save you.", Line_WaitForInput);
+	OutputLine(NULL, "だからきっと誰も殺されないよ。",
+		   NULL, " So nobody is going to die.", Line_WaitForInput);
+	OutputLine(NULL, "……あははははははははははははははははははははは。」",
+		   NULL, " ...Ahahahahahahahahahahahahahahahahahahahaha!\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……くそ……。",
+		   NULL, "...Damn it...", Line_WaitForInput);
+	OutputLine(NULL, "……なんて露骨な脅迫だよ……。",
+		   NULL, " What a bold threat...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺のことを仲間なんて言葉で弄んでるだけだ…。",
+		   NULL, "She said I was her friend, but she was just playing with the meaning of the word...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　確かに、この状況下では俺だけがレナに対抗できる最後の１人だ。",
+		   NULL, "I was the last person who could still fight against Rena under these circumstances.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…でも、だからこそ、鉈を持ったレナを容易には取り押さえられない。",
+		   NULL, "...But it wasn't going to be easy to overpower her by myself.", Line_WaitForInput);
+	OutputLine(NULL, "……それどころか、取り押さえられるかどうかも、もはや怪しい。",
+		   NULL, " ...I wasn't sure if I could do that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺が粋がったところで、教室中に寝転がる誰かの首筋に刃を突きつけられたら、それで結局は「詰み」だ。",
+		   NULL, "Even if I tried to act tough, once Rena pointed the hatchet at somebody's neck, it was over.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　とにかく、………今は逆らわない方がいい。",
+		   NULL, "I shouldn't fight against her for now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…チャンスを待とう。",
+		   NULL, "...I should just wait for a chance.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　レナが１人である以上、必ず隙が生まれる。",
+		   NULL, "As long as Rena was alone, there would be a chance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……自ら縛れず、俺に縛らせているのがその証拠みたいなもんだ。",
+		   NULL, "...She made me tie them up because she couldn't do that by herself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…レナが単独であるがゆえに、様々な限界があるはずなんだ…。",
+		   NULL, "...There was a limit to what she could do, because she was by herself...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　先生が戻る前にうまく誤魔化せれば、……クラスみんなで芋虫ごっこをしてましたと誤魔化せるかもしれないのだから。",
+		   NULL, "If we could cover this up somehow before Chie-sensei came back... we'd still be able to pretend like we were kidding around.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………そこで俺はようやく気付く。",
+		   NULL, "...I finally realized something.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…知恵先生が呼び出された電話の意味が。",
+		   NULL, "...I realized why Rena called Chie-sensei to meet with her.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Tie2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　……レナが教室を占拠する上で、一番邪魔な存在が知恵先生だったのだ。",
+		   NULL, "...In order for Rena to take over the classroom, she needed to get rid of Chie-sensei.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　正義感の強い人だもんな。",
+		   NULL, "Chie-sensei had a very strong sense of justice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　例えレナが拳銃を持っていたって、知恵先生は怯まないだろう。",
+		   NULL, "Even if Rena had a gun, she wouldn't hesitate to overpower her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　生徒のためなら体を張れる、…そんな先生をいかに摘出するかが、この教室占拠の最初の鍵だったんだ。",
+		   NULL, "She was the kind of teacher who would risk her life for her students... Rena needed to figure out how to get rid of Chie-sensei. That was the key to her plan.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　背後から襲い掛かるという手も、もちろん一番最初に考えただろうが、",
+		   NULL, "Rena probably thought about attacking her from behind at first,", Line_WaitForInput);
+	OutputLine(NULL, "やはり大人を敵に回すリスクを考えた結果、直接襲うのは適当ではないと考えたに違いない。",
+		   NULL, " but there was risk there, as Chie-sensei was a grown-up woman. So, she probably thought that attacking her directly wasn't a wise choice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　……なら、どこかへ誘き出してしまえばいいんだ…！",
+		   NULL, "...So, naturally, the next option was to lure her out somewhere...!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Denwa", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　レナは知恵先生に電話をかけ、誰にも内緒で相談したいことがある…と言って、どこか遠くへ呼んだに違いない。",
+		   NULL, "Rena called Chie-sensei and told her she wanted to talk to her in private... in order to lure her out to some place far from here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　先生も含め、ほとんどの人たちはレナが家出しただけだとしか思っていない。",
+		   NULL, "Most people, including Chie-sensei, thought Rena was just running away from home.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だから知恵先生は、レナに何か悩み事があって、それを打ち明けたがっているのだろう、そう解釈するに違いない。",
+		   NULL, "...So, Chie-sensei must've thought Rena had some problems she wanted to talk to her about.", Line_WaitForInput);
+	OutputLine(NULL, "…………騙すのはあまりに簡単だ。",
+		   NULL, " .........It was too easy to deceive her.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　じゃあ……レナは、電話をどこから…？",
+		   NULL, "Where did she make the phone call from...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そう、学校の中からだ。",
+		   NULL, "She probably used the phone in the school.", Line_WaitForInput);
+	OutputLine(NULL, "いや、厳密には違う。",
+		   NULL, " Well, not in school, to be exact.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　多分、学校の２階、……営林署の事務室からだ。",
+		   NULL, "She probably used the phone on the second floor of the school... the one belonging to the forestry service.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "GR2", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　この学校の入っている営林署は出張所みたいなもので、いつも職員が常駐しているわけではない。",
+		   NULL, "This school was using part of the forestry service building, but this particular location was more of a branch office,", Line_WaitForInput);
+	OutputLine(NULL, "日によってはいないこともある。",
+		   NULL, " so it's not like somebody was here all the time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナはそれを知っていて、ずっと２階に隠れていたのだ。",
+		   NULL, "Rena knew that, and she had probably been hiding there for a while.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、２階から１階に電話して、……知恵先生を遠方に遠ざけたのだ。",
+		   NULL, "She called the phone on the first floor from the second floor... and she made Chie-sensei leave the school.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今日が校長の出張の日だというのも偶然ではないだろう。",
+		   NULL, "I didn't think it was a coincidence that the principal was on a business trip today.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……多分、レナはこの学校に昨日から忍び込んでいた。",
+		   NULL, "...She probably snuck into the school yesterday.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それで、校長の日程も内線電話のことも全て把握した上で実行に及んでいるのだ。",
+		   NULL, "She saw the principal's schedule, learned how to call the phone on the first floor from the second, and carried out her plan.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……なんて狡猾な……。",
+		   NULL, "...She planned it perfectly...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……いや、…わかる。",
+		   NULL, "...Yeah, I knew it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……あの状態のレナは、狂気に心を奪われながらも、…実はひどく冷静なのだ。",
+		   NULL, "...Rena was insane... but I knew she was also actually really calm.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……自分が取り憑かれている妄想に対して、信じられないくらい冷静なのだ。",
+		   NULL, "...She was possessed by her delusion, but she was also unbelievably calm about it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だから、……信じられないくらいに頭が回る。",
+		   NULL, "...So... she could still think fast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それは自分にも身に覚えがあったからよくわかった。",
+		   NULL, "...I knew that very well, because I'd been through the same thing before.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あと、……さらについてないのは、魅音の護衛のために校門前にいた園崎家のボディーガードまでもいなくなってしまってることだ。",
+		   NULL, "What was worse is that Mion's bodyguards were gone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……知恵先生がレナに会いに行くと思って、魅音が尾行するように言ってしまったから。",
+		   NULL, "...Mion told them to follow Chie-sensei because she thought Chie-sensei was going to meet with Rena.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……畜生、……何から何まで……、……やってくれるぜ………。",
+		   NULL, "...Damn it... Everything seemed to be working out in her favor...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "GK3", 1000 );
+
+	OutputLine(NULL, "「………縛ったぞ………。」",
+		   NULL, "\"...I'm done...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺は最後のひとりの腕を縄跳びで縛り、レナの方に振り返る。",
+		   NULL, "I tied up the last person, and I looked in Rena's direction.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　きつく縛らなければレナは本当にその子を殺すだろう。",
+		   NULL, "If I didn't tie them up really tightly, Rena would kill them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…かと言って、きつく絞めるとそれは苦痛となり、クラスメートたちは痛さに呻く。",
+		   NULL, "...But when I tied them too tightly, they suffered in pain.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……その声が、何もできない俺を苛んだ。",
+		   NULL, "...Their pained cries made me feel useless.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Re_Hi_muhyouA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ありがとう、圭一くん。",
+		   NULL, "\"Thank you, Keiichi-kun.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "re_Hi_DEfB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……圭一くんを疑りはしないけど、一応、全員を調べるね？",
+		   NULL, " ...I don't mean to doubt you, Keiichi-kun, but I'll make sure just in case.", Line_WaitForInput);
+	OutputLine(NULL, "　圭一くんは頭の上で手を組んで、うつ伏せに寝ててね。",
+		   NULL, " Please put your hands on your head and lie face-down on the floor.", Line_WaitForInput);
+	OutputLine(NULL, "……これは全員に言うけど、",
+		   NULL, " ......And I'm saying this to everybody.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_OkoruA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "私の断りなく立ち上がったら殺すッ！！",
+		   NULL, " If you stand up without my permission, I'll kill you!!", Line_WaitForInput);
+	OutputLine(NULL, "　本人も殺すし、見せしめでランダムにもう１人殺す！！",
+		   NULL, " I'll kill whoever stood up, and one more person randomly, to set an example!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "re_WaraiB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　……ランダムじゃよくないね。",
+		   NULL, "...It's not nice to be chosen randomly, huh?", Line_WaitForInput);
+	OutputLine(NULL, "じゃあこうしよう。",
+		   NULL, " Oh, there's a good idea.", Line_WaitForInput);
+	OutputLine(NULL, "言うことを聞かなかった子と、出席番号に１０を加えた子を殺す、にしようかな？",
+		   NULL, " I'll kill the person who didn't listen to me, add 10 to his or her student number, and kill that person too.", Line_WaitForInput);
+	OutputLine(NULL, "　例えば……岡村くんが言うことを聞かなかったとする。",
+		   NULL, " For example... let's say Okamura-kun didn't listen to me.", Line_WaitForInput);
+	OutputLine(NULL, "そうすると、……出席番号１１番。",
+		   NULL, " I'd kill him and Watanabe-kun", Line_WaitForInput);
+	OutputLine(NULL, "渡辺くんが一緒に殺されちゃう。",
+		   NULL, " because his student number is 11.", Line_WaitForInput);
+	OutputLine(NULL, "わかる？！",
+		   NULL, " Get it?!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_Hi_OkoruB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　常に２人死ぬのッ！！",
+		   NULL, " I'll always be killing two of you at the same time!!", Line_WaitForInput);
+	OutputLine(NULL, "　刃向かっても自分の命１つじゃ責任が取れないってこと、よく胸に刻んでおくんだよッ！！！」",
+		   NULL, " You'd better remember that you involve another person's life besides your own when you attempt to stand against me!!!\"", Line_Normal);
+	ClearMessage();
+	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+
+	OutputLine(NULL, "　……なんてやつだ…。",
+		   NULL, "...How awful...", Line_WaitForInput);
+	OutputLine(NULL, "脅迫ってやつを心底理解してやがる……。",
+		   NULL, " She totally understood how to threaten people...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　抵抗ってのは、失敗しても死ぬのは自分だけという、ある種の自己責任の上で行なうものだ。",
+		   NULL, "Normally, you stand against an attacker at your own risk. If you fail, you're going to die.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それを連帯責任にされたら、抵抗なんてできなくなってしまう。",
+		   NULL, "...But if you were responsible for someone else, then you couldn't try to resist.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の命を自分の一存で危険になんか晒せない…！",
+		   NULL, "You can't risk somebody's life with your own decisions...!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_Hi_DefA1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……うん、全員ちゃんと縛れてるね。",
+		   NULL, "\"...Okay. Everybody is tied up nice and tight.", Line_WaitForInput);
+	OutputLine(NULL, "…圭一くん、縛るの下手くそって言ってたけど、結構うまいよ。",
+		   NULL, " ...You said you aren't good at tying knots, but you did very well, Keiichi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "自信持っていいよ。",
+		   NULL, " You should be proud of yourself.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ、圭一くんは立って。」",
+		   NULL, " Well, you can stand up now.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………今さら逆らうことはできない。",
+		   NULL, "...It was too late to fight back.", Line_WaitForInput);
+	OutputLine(NULL, "俺は大人しく指示に従う。",
+		   NULL, " I followed her orders.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　とにかく、……何かのチャンスを待つんだ。",
+		   NULL, " I just had to wait for a chance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　まだ洒落で済む段階なんだ…。",
+		   NULL, "We could still turn this into some kind of a bad joke...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　何とか……何とか、しなくちゃ……！",
+		   NULL, "I had to... I had to do something...!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……それより、……レナは何を企んでやがるんだ…？！",
+		   NULL, "...Anyway... What were you planning to do, Rena...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　まさか、…こんなことがレナの言ってた、起死回生の逆転の一手だって言うんじゃないだろうな？！",
+		   NULL, "Don't tell me this is the come-from-behind victory you were talking about!", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+}

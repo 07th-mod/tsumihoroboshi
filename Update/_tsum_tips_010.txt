@@ -1,0 +1,166 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, TRUE );
+
+	PlayBGM( 0, "sheep counts", 120, 0);
+
+	OutputLine(NULL, "　「文化依存症候群」の危険性は、「解釈妄想病」を誘発しやすい点にあります。",
+		   NULL, "The danger of a culture-bound syndrome lies in the fact that it can easily trigger delusional misidentification syndrome.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまりこの度のケースでは、患者は瑣末な何かを見る度に、それを「祟り」であると解釈しようとします。",
+		   NULL, "That is to say, in the current case, every time the patient sees something trivial, she tries to interpret it as a \"curse\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そしてそれらが了解可能な形で累積した結果、妄想体系を作り上げ、パラノイアに至ると思われます。",
+		   NULL, "And it's believed that as a result of the accumulation of these events in an understandable form, a delusional system is created, ultimately leading to paranoia.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　また、患者にはわずかですが人格性精神障害の傾向も見られます。",
+		   NULL, "Furthermore, the patient is also exhibiting slight signs of a personality disorder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もちろんこれは極めて軽微なレベルであり一般的な生活に何の支障もありません。",
+		   NULL, "Of course, it's at a very mild level, and it's not causing any hindrance whatsoever to the patient's daily life.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　健常な人間であっても、日常生活において一次妄想（真性妄想）をすることは少なくありません。",
+		   NULL, "It's common for even healthy individuals to have primary delusions in their daily lives.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ただしその内容が支離滅裂であるため、当人にも了解できず自然と無視されるのが普通です。",
+		   NULL, "But they usually ignore it automatically without recognition, since those delusions are nonsensical.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ところが、了解不能にもかかわらず累積していくケースが存在します。",
+		   NULL, "However, there are cases where these delusions accumulate despite being incomprehensible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは素質によるものが大きいとされ、患者は比較的この素質が大きいと思われます。",
+		   NULL, "It largely depends on the particular characteristics of the individual, and it's believed that the patient shows relatively strong characteristics in this area.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　さて、一次妄想は３つのケースに分類されることは黒田先生に置かれましてもご存知のことと思います。",
+		   NULL, "I believe you're very much aware that primary delusions are categorized into three different kinds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　「妄想気分」は根拠なき危機感の切迫を感じ、",
+		   NULL, "\"Delusional mood\" is the feeling of impending crisis without basis.", Line_WaitForInput);
+	OutputLine(NULL, "「妄想着想」は根拠なき使命感や目的を感じ、",
+		   NULL, " \"Delusional intuition\" is the feeling of a sense of duty or goal without basis.", Line_WaitForInput);
+	OutputLine(NULL, "「妄想知覚」は根拠なき現象に対し根拠なき理由を感じるとされています。",
+		   NULL, " \"Delusional perception\" is the feeling of a baseless cause against a baseless target.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　患者のケースでは、これら了解不能な妄想が累積し、",
+		   NULL, "In the patient's case, it's believed that these incomprehensible delusions accumulated, acted out simultaneously with the", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「文化依存症候群」と併発することで「解釈妄想病」を誘発し、",
+		   NULL, "culture-bound syndrome, which triggered a delusional misidentification syndrome. \n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "了解不能な妄想を「祟り」と解釈することで了解可能としたと思われます。",
+		   NULL, "And it ultimately caused the incomprehensible delusions to become understandable by interpreting them as a \"curse\".", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　了解可能な妄想体系は了解可能な二次妄想（妄想様観念）を誘発し、自らの妄想体系を時間と共にますます強固にしていきます。",
+		   NULL, "The comprehensible delusional system induces understandable secondary delusions, further strengthening the patient's delusional system with the passage of time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　（この二次妄想の中に、先の「寄生虫妄想症」も含まれると考えられます）",
+		   NULL, "(\"The delusional parasitosis\" mentioned earlier can be considered a secondary delusion.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　パラノイアの患者に共通することは、発症後も人格の変化はなく、一見して極めて正常である点です。",
+		   NULL, "A common factor of all cases of paranoia is that even after an outbreak, they still appear perfectly normal with no change in their personalities.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本人にも罹患の自覚はなく、また妄想体系を本人なりの解釈により了解しているため、",
+		   NULL, "The patients are unaware of their own ailments, and due to their personal interpretations of their delusional system,", Line_WaitForInput);
+	OutputLine(NULL, "高度な理論武装をしているケースが少なくなく、第３者がそれを妄想であると指摘することは極めて困難です。",
+		   NULL, " there are many cases where patients arm themselves logically, making it extremely difficult for a third party to point out that they're having a delusion.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
+		   NULL, "Furthermore, although it may depend on the tendency of the delusions, there are also cases where a \"persecutory delusion\" turns into a \"pursuit delusion\" or a \"conspiracy delusion,\" resulting in the patient creating an imaginary enemy and taking up anti-social behavior.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
+		   NULL, "(For example, there are cases where believers of a religious cult were deeply influenced by the cult founder's paranoid visions, which shifted the group into a conspiracy delusion, and that made them conduct anti-social behavior in the name of self-defense.", Line_WaitForInput);
+	OutputLine(NULL, "集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
+		   NULL, " Although no such cases have been reported in Japan yet, it could very well happen in the near future.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　幸い、現在の患者はここまで重度には至っていません。",
+		   NULL, "Fortunately, the patient hasn't reached that serious condition as of now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　適切な治療を受けることで、容易に社会復帰を果たせるでしょう。",
+		   NULL, "With proper treatment, she should be able to make a full recovery.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　父親にも、これが極めて異常なケースではなく、",
+		   NULL, "Please make sure that her father also understands that this is not an unusual case,", Line_WaitForInput);
+	OutputLine(NULL, "いくつかのささやかな要因の積み重なった、人間誰しも起こり得るケースであることをよく理解させてください。",
+		   NULL, " but something caused by the accumulation of a number of innocent factors that anyone could have.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　父親との絆を深めることでしか治療できず、また父親の絆があれば必ず治療できるのです。",
+		   NULL, "The patient can be treated only by deepening her bond with her father. As long as she has that bond, she can certainly be treated.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　以上の理由から、郷里へ帰郷されるならば、その後も専門の医療機関で継続的な指導を受けられることを強く勧めていただきたいと思います。",
+		   NULL, "For the reasons above, if the patient is to return to her home village, I strongly recommend that the patient continue to receive guidance from specialized medical institutions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　長文を大変申し訳ございませんでした。",
+		   NULL, "Please excuse me for writing such a long letter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　最後までお読みいただきましたことを感謝いたします。",
+		   NULL, "Thank you for reading this until the very end.", Line_Normal);
+	ClearMessage();
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

@@ -1,0 +1,143 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+
+	DrawScene( "white", 400 );
+	PlaySE( 0, "s_door", 128, 64 );
+	DrawSceneWithMask( "Sora5", "maskright", 7, 0, 300 );
+	PlayBGM( 1, "higurashi", 120, 0 );
+
+	OutputLine(NULL, "　私はお気に入りの窓を開け、いつものように座布団をそこに敷くと、ささやかな縁側を楽しむのだった。",
+		   NULL, "I opened the window, placed my cushion nearby, and prepared to enjoy the weather.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "03_cele", 120, 0 );
+
+	OutputLine(NULL, "　…なのに、せっかくの夕方の静かなひと時を、どたどたと騒がしいのが一匹。",
+		   NULL, "...But she came over and disrupted my peaceful evening.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お陰で涼やかな夕方のひと時が台無しだ。",
+		   NULL, "She always ruins my time of solitude.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………幸せそうね。",
+		   NULL, "\"...You look pleased.", Line_WaitForInput);
+	OutputLine(NULL, "そっか、今日はあんたの大好きな甘いものがたくさん食べられたものね。」",
+		   NULL, " Oh, that's right. You ate lots of your favorite sweets today.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この子は甘いのに目がないからな。",
+		   NULL, "This girl loves sweets more than anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…私も嫌いじゃないけど、今日くらいの量があったら胸焼けがしてしまう。",
+		   NULL, "...I like them too, but I can't eat like she does. It'd give me heartburn if I ate the amount she ate today.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　取り合えず、幸せそうなのでしばらく放っておいてやることにする。",
+		   NULL, "She seemed to be very happy, so I'll leave her alone for a while.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ここしばらく、私好みの辛いものやしょっぱいものばかりを食べさせてたから、さぞや嬉しかったのだろう。",
+		   NULL, "I'd been making my favorite hot and salty food for the past few days, so she must be quite pleased today.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん、私にとっても今日は本当に楽しい一日だった。",
+		   NULL, "It was a very fun day for me, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私はその喜びを、こうして夕涼みしながらかみ締めていれば充分だった。",
+		   NULL, "I just wanted to enjoy the memory of the excitement I felt today by sitting here quietly, enjoying the sunset.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　でも、空を見上げるとほんの少しだけ重みのある雲が見えた。",
+		   NULL, "But when I looked up at the sky, I saw some thick clouds forming there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…少し風も涼しすぎるように思う。",
+		   NULL, "...The wind was a bit cooler than usual.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　夕立にでもなるかもしれない。",
+		   NULL, "It might start raining soon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………大地震や大津波などの報せとして、浅瀬に普段は絶対に見かけることができない深海の魚が現れることがある。",
+		   NULL, "\"......People say that when deep-sea animals come up to the shallows", Line_WaitForInput);
+	OutputLine(NULL, "…っていう話があるらしいわね。」",
+		   NULL, " it's a sign of a big earthquake or a tsunami.\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "　今日、私たちの浅瀬に、普段は絶対に見かけることができない珍しい深海魚が現れたのを見た。",
+		   NULL, "We saw a very rare fish that dwells in deep water in the shallows today.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　海のバケモノの伝説のほとんどがそうであるように、人は深海の生物を忌み嫌い、不吉の前兆としたがる。",
+		   NULL, "Just as the ancient stories of sea monsters say, people hate deep-sea animals and tend to interpret them as omens of a disaster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それが生きて現れようとも、死んで死体が打ち上げられようとも。",
+		   NULL, "It didn't matter if they showed up alive or dead.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あぁ、それって言い得ていて面白いかもしれない。",
+		   NULL, "Ah, I said something interesting just now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　生きて現れようとも、死んで死体が打ち上げられようとも。",
+		   NULL, "Even if they showed up alive or dead,", Line_WaitForInput);
+	OutputLine(NULL, "不吉の徴、か。",
+		   NULL, " it was an omen of a disaster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　あぁ、……雨が降るかもしれない。",
+		   NULL, "Oh... It might start raining soon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……うるさいな、言われなくてもわかってる。",
+		   NULL, "\"...Yeah, yeah, I know. You don't have to tell me.", Line_WaitForInput);
+	OutputLine(NULL, "洗濯物を取り入れるわよ。」",
+		   NULL, " I'll get the laundry.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私は表の物干し竿ではためいている洗濯物を取り込むために、洗濯籠を掴むと表へ向かうのだった。",
+		   NULL, "I grabbed a basket and went outside to take the laundry in.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雲はますますに鉛色になってくる。",
+		   NULL, "The clouds were getting darker.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雨は好きだけど、…今日は好きになれそうになかった。",
+		   NULL, "I normally like rain... but I didn't think I'd enjoy it today.", Line_Normal);
+	ClearMessage();
+
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

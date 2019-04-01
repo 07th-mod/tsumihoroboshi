@@ -1,0 +1,3893 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+
+	DrawScene( "black", 3000 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawSceneWithMask( "white", "maskm1", 1, 0, 300 );
+	PlayBGM( 1, "semi", 120, 0 );
+	DrawScene( "Sora3", 1000 );
+
+	OutputLine(NULL, "　例えば今が１２月、暦の上では冬だとしてもだ。",
+		   NULL, "Let's say it's a winter month like December right now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　連日、セミが鳴くような蒸し暑い日が続いたらどうなる？",
+		   NULL, "What would you do if, all of a sudden, you had a week of hot and humid days with crying cicadas?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでも律儀にコートにマフラーで生活するだろうか？",
+		   NULL, "Would you still wear your coat and scarf?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんなはずはない。",
+		   NULL, "Absolutely not, right?", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "Cafe", 120, 0 );
+
+	OutputLine(NULL, "　だから６月であっても、これだけ暑い日が続けば、俺たちにとってはそりゃ夏だ！",
+		   NULL, "Even though it's still June,", Line_WaitForInput);
+	OutputLine(NULL, "ってことになるわけだ。",
+		   NULL, " it's already summer to us, since we've been having hot days for so long!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　で、これだけ暑い中で部活をしようってなれば、そりゃこういう種目もありえるわけだ！",
+		   NULL, "So, it's totally okay to do this kind of club activity in June!", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "GR1", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　体育の時間は、みんな好き勝手に過ごすのがうちの学校の慣わしだが、今日は例外でクラスメート全員が校庭に集合していた。",
+		   NULL, "At my school, everybody usually does what they want in PE class, but today would be an exception. All my classmates were gathered in the schoolyard.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　全員が雁首を揃えたのを確認すると、魅音が大声を張り上げた。",
+		   NULL, "Mion looked over everybody gathered there, then spoke up loudly.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Me_WinkA2&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「さぁてみんな、今日の主旨はよくわかってるねぇ？！」",
+		   NULL, "\"Hey, everyone! You ready?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "「「「おおーーーー！！！！」」」",
+		   NULL, "\"Yeah!!!!!\"", Line_ContinueAfterTyping);
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　全員が突き出す手には、みんな水鉄砲が握られている。",
+		   NULL, "They all raised the water guns in their hands.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これだけ蒸し暑い日が続けば、例え６月だろうと水鉄砲は使用できるのだ！",
+		   NULL, "It's okay to use water guns in June, because it's been so hot and humid!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、クラス全員で銃撃戦となれば熱くなるなという方が無理な話ってもんだぜ！",
+		   NULL, "All my classmates were joining in, so it's gonna be a big water gun battle. I'm so excited!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Sa_AkuwaraiA1&", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「さすがクラス全員で部活だと、何だか盛り上がりますわねぇ！」",
+		   NULL, "\"It is so exciting to do a club activity with everyone from class!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_WaraiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そうだね！",
+		   NULL, "\"Yeah!", Line_WaitForInput);
+	OutputLine(NULL, "　全員で表ではしゃぐのって何だか楽しそうかな、かな！」",
+		   NULL, " It's going to be so much fun to play outside with everybody together, together!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_DefA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……みんなは楽しいですが、ボクたちは例によって負けられないのです。」",
+		   NULL, "\"......It's going to be fun for them, but we have to be serious, because we can't lose.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「ま、そういうこったな！…およそ勝負と名のつく以上、俺たち部活メンバーは常にリスクを背負ってるからな。」",
+		   NULL, "\"Well, yeah! For us club members, every game comes with a risk.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Me_TokuiA2&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くっくっく！",
+		   NULL, "\"Heh heh heh!", Line_WaitForInput);
+	OutputLine(NULL, "　まぁそういうこと！",
+		   NULL, " Exactly!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Me_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　部活メンバー諸君は迂闊に負けたりしちゃうと大変なペナルティが待ってるからねー。",
+		   NULL, " I look forward to the punishment our more careless members are going to suffer.", Line_WaitForInput);
+	OutputLine(NULL, "せいぜいしっかり戦うことー！」",
+		   NULL, " Good luck, everyone!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「よしよし、盛り上がってきたぜー！！",
+		   NULL, "\"I'm so pumped!!", Line_WaitForInput);
+	OutputLine(NULL, "　生徒諸君、武器点検は充分か？！",
+		   NULL, " Everybody, listen up. Did you all check your guns?!", Line_WaitForInput);
+	OutputLine(NULL, "　弾倉は満タンか？！」",
+		   NULL, " Are your tanks full?!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "「任せて下さいよ前原さん！",
+		   NULL, "\"We're all ready, Maebara-san!", Line_WaitForInput);
+	OutputLine(NULL, "　銃撃戦は僕たちのもっとも得意とするところですからねー！」",
+		   NULL, " We're very good at gun battles!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ri_NikoA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……富田たちはよく水鉄砲で遊んでますから、かなり強敵かもなのですよ。」",
+		   NULL, "\"......Tomita and his friends play with water guns a lot, so they might have an advantage.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ふっふっふ！",
+		   NULL, "\"Huh huh huh!", Line_WaitForInput);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　今日の僕たちは少し違います！」",
+		   NULL, " We're different men today!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　富田くんと岡村くんは、普段とは違って自信たっぷりに笑い合うと、手馴れた様子で水鉄砲を構えた。",
+		   NULL, "Tomita-kun and Okamura-kun smiled confidently, holding their guns in a practiced manner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　実力は自信となり、面持ちさえ変えるというのが、彼らの顔から見て取れる！",
+		   NULL, "Their skills must give them confidence. They even looked different!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "G1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「魅音は言うに及ばず、沙都子も梨花ちゃんもかなり強敵になりそうだぜ…！",
+		   NULL, "\"As we all know, Mion is going to be a tough opponent, but I think Satoko and Rika-chan could be, too...!", Line_WaitForInput);
+	OutputLine(NULL, "　レナはどうだ？！　ちょこまか動いてイの一番にやられないように頑張れよ！！",
+		   NULL, " What about you, Rena? You can move fast, but you could end up being their target as well, so be careful!!", Line_WaitForInput);
+	OutputLine(NULL, "　そう言えば最近のレナは罰ゲーム常連だな。」",
+		   NULL, " You've been losing a lot of games lately and taking most of the punishments.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Re_HauA1&", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はぅ…。",
+		   NULL, "\"Hauu...", Line_WaitForInput);
+	OutputLine(NULL, "さ、最近、不得意なゲームが多かったから…。",
+		   NULL, " It's just that the recent games weren't my specialty...", Line_WaitForInput);
+	OutputLine(NULL, "で、でも、圭一くんも最近、私と同じで罰ゲームが多いと思うかな、かな。」",
+		   NULL, " B-But, Keiichi-kun, I think you've been losing a lot these days too, haven't you?\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "rika", 120, 0 );
+
+	OutputLine(NULL, "「はっはっはっはっは！！",
+		   NULL, "\"Ha ha ha ha ha!!", Line_WaitForInput);
+	OutputLine(NULL, "　罰ゲームでブラを付けたまま帰宅して、さぁ脱ごうとしたところでお袋に見つかった俺の哀愁などわかるものかーー！",
+		   NULL, " You have no idea how miserable I was when I had to go home wearing a bra and my mom saw me in it right before I was about to take it off!", Line_WaitForInput);
+	OutputLine(NULL, "　むがー！！！」",
+		   NULL, " Gah!!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_KomaruB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「わ、私だって…、先週のはひどいよ、普通の女の子ならお嫁に行けなくなっちゃうよーー！！」",
+		   NULL, "\"My last punishment was as terrible as yours... I'm ruined for marriage after having to do that!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　最近の負け常連の俺たちが、互いの壮絶な罰ゲームを思い出してワナワナ震えていると、それを沙都子の甲高い声が嘲笑った。",
+		   NULL, "Satoko laughed at us loudly while we were shuddering at the memory of the cruel punishments we suffered in the past.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshotWithFiltering( 2, "Sa_WaraiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「ほーーっほっほっほ！！",
+		   NULL, "\"Hooo ho ho ho ho!!", Line_WaitForInput);
+	OutputLine(NULL, "　覇気や運気にも偏りと言うのがございましてよー！",
+		   NULL, " You've been low on both luck and spirit!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Sa_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　その意味から言えば！",
+		   NULL, " I know why you've been losing so frequently!", Line_WaitForInput);
+	OutputLine(NULL, "　ここしばらくのレナさんや圭一さんは、いわゆる負け組というヤツでございますわねー！！」",
+		   NULL, " That's because, you see, you're both losers!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_TokuiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くっくっく！！",
+		   NULL, "\"Heh heh heh!!", Line_WaitForInput);
+	OutputLine(NULL, "　確かに負けグセってやつはあるねぇ〜！",
+		   NULL, " She's right. Once you get used to losing, you just can't stop!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Me_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　闘志ってやつは負けが続くと挫けてくる。",
+		   NULL, " After all those losses, your fighting spirit fades away.", Line_WaitForInput);
+	OutputLine(NULL, "絶対勝てるという信念が砕けると、まったく同じことをやっても裏目裏目に出るもんだからねー！」",
+		   NULL, " When you can't believe in yourself, nothing goes right, even if you're doing the same thing as everyone else!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "4", 120, 0 );
+
+	OutputLine(NULL, "「…て、てめらぁ〜！！",
+		   NULL, "\"...You!!", Line_WaitForInput);
+	OutputLine(NULL, "　たまったま、俺とレナがちょいと罰ゲームを哀れに思って引き受けてやってたのを感謝もせずにその言い草かー！！」",
+		   NULL, " Haven't you realized that Rena and I took those punishments on purpose because we wanted to spare you that fate?! You should be thanking us, not calling us losers!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Sa_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あぁら、そうでしたの？",
+		   NULL, "\"Oh, is that so?", Line_WaitForInput);
+	OutputLine(NULL, "　それは感謝の気持ちが足りず申し訳ないことでございましてよー！！」",
+		   NULL, " I'm very sorry for not thanking you enough, then!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うおーー！！！",
+		   NULL, "\"Ugh!!!", Line_WaitForInput);
+	OutputLine(NULL, "　沙都子てめー！！",
+		   NULL, " Satoko!!", Line_WaitForInput);
+	OutputLine(NULL, "　そのセリフは俺の怒りに火を注いだぜ！！",
+		   NULL, " You just added oil to the flames of my rage!!", Line_WaitForInput);
+	OutputLine(NULL, "　後悔させてやらああぁー！！！」",
+		   NULL, " I'll make you regret what you just said!!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Me_HutekiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くっくっく！！",
+		   NULL, "\"Heh heh heh!!", Line_WaitForInput);
+	OutputLine(NULL, "　その意気だよ圭ちゃん。",
+		   NULL, " That's the spirit, Kei-chan.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Me_WinkA2&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "まぁせいぜい足掻いておじさんを楽しませて頂戴よね。",
+		   NULL, " This ol' man hopes you can at least last long enough to serve as entertainment.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Me_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "レナもがんばって。",
+		   NULL, " Rena, you too.", Line_WaitForInput);
+	OutputLine(NULL, "あぅあぅ言ってる間にクラスで一番最初に脱落したら、さすがに恥ずかしいからねー？",
+		   NULL, " You'd be embarrassed if you were the first one to get shot.", Line_WaitForInput);
+	OutputLine(NULL, "　でもその可能性も高いかなぁ？",
+		   NULL, " But I'm pretty sure that's what's going to happen!", Line_WaitForInput);
+	OutputLine(NULL, "　くっくっく！」",
+		   NULL, " Heh heh heh!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Sa_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「一番最初に脱落するのがレナさんだと思いましてよー！",
+		   NULL, "\"I too think Rena-san is going down first!", Line_WaitForInput);
+	OutputLine(NULL, "　どんな目に遭うか、今からお覚悟なさいませなー！",
+		   NULL, " Prepare yourself for a bad time!", Line_WaitForInput);
+	OutputLine(NULL, "　をーっほっほ！！」",
+		   NULL, " O ho ho!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_HauA1&", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「うう、ひどいよ魅ぃちゃんも沙都子ちゃんも……。」",
+		   NULL, "\"No... Mii-chan, Satoko-chan, you're so mean...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_WaraiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……レナも圭一も、ファイト、お〜ですよ☆」",
+		   NULL, "\"......Rena and Keiichi, go for it, yay☆.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "GR2", 400 );
+
+	OutputLine(NULL, "　魅音たちは俺たちを一通り笑うと、他のクラスメートを冷やかしに去っていく。",
+		   NULL, "Mion and Satoko laughed at us as loud as they could, then moved on to tease their next target.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　取り残された俺は地団太を踏んで悔しがるしかない！",
+		   NULL, "Left alone, all I could do was stomp on the floor in anger.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「くっそぉ！！",
+		   NULL, "\"Damn it!!", Line_WaitForInput);
+	OutputLine(NULL, "　絶対ぇ負けねえ、あそこまで言われたら負けられねえぜ！！」",
+		   NULL, " I'm going to win! I can't let them laugh at me like that again!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Re_DefA1&", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あははは、そうだね。",
+		   NULL, "\"Ahahaha, I agree.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_NandeB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "あそこまで言われると悔しいよね…。」",
+		   NULL, " It feels bad to have them laugh at us like that...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「って言うか、悔しいどころじゃねえぞ、プライドの問題だぞ！",
+		   NULL, "\"It's not only how it feels, it's also how they step on my pride!", Line_WaitForInput);
+	OutputLine(NULL, "　くそッ！」",
+		   NULL, " Damn it!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぃちゃんの言うように、負けグセってやっぱりあるかもしれないよね。",
+		   NULL, "\"Like Mii-chan said, it might be true that you can't stop losing once you get used to it.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "…だから今日は絶対に勝って、みんなを見返してやろ！」",
+		   NULL, " ...That's why we have to win today, no matter what, so we can get even!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナを見ると、いつの間にか普段と違う目つきをしていた。",
+		   NULL, "Rena's eyes looked different.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　普段、ふざけている一面ばかりが目に付くが、ここ一番の時、揺ぎ無い決意をする一面があることを俺は知っている。",
+		   NULL, "She's usually a funny and weird person, but I know she has the determination to do what she needs to.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そう、この目をした時のレナは、ちょっと手強いかもしれない。",
+		   NULL, "When Rena looks like this, she can be a tough opponent.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「今日は私も、部活の規則に則り、手加減なしで行く。」",
+		   NULL, "\"Today, I'll follow the first club rule: I'm going to do everything I can to win.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おおぅ、何だかかっこいいこと言うじゃねえの。",
+		   NULL, "\"Oh, you sound determined.", Line_WaitForInput);
+	OutputLine(NULL, "まるで、普段の自分はわざと手を抜いているって言わんばかりだぜー？」",
+		   NULL, " You sound cool, but also as if you've been going easy on them before.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　レナは笑う。",
+		   NULL, "Rena smiled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　多分「にやり」と呼ぶのが相応しい笑い方だ。",
+		   NULL, "Or maybe you could have called it a wicked grin.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…参ったな。",
+		   NULL, "...She was serious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　こいつ、本当の本当に、本気でやるつもりだぞ。",
+		   NULL, "She was serious about what she said.", Line_WaitForInput);
+	OutputLine(NULL, "あの笑い方は容赦なしだ。",
+		   NULL, " I could tell that from her expression alone.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　レナは多分、部活メンバーで一番の良識派だと思う。",
+		   NULL, "Among all the club members, Rena is easily the most sensible one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　やっちゃいけないことは何もないはずの部活で、おそらく一番モラルに気を遣うタイプだ。",
+		   NULL, "The rule of our club is that we can do anything in order to win, but she's the only one who has moral qualms in doing it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから吹っ切れた時はともかく、普段は苦戦することが少なくない。",
+		   NULL, "That's why we rarely have a hard time against her, except for when she snaps.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのレナが、手加減しないって言うのはなかなかあることじゃない！",
+		   NULL, "It's rare to hear her say that she won't go easy!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 0, "Re_WaraiA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "GR2", 400 );
+
+	OutputLine(NULL, "「ちっくしょう…、そんな笑い方されたら、俺も超本気で行くしかねえじゃねぇかよ！」",
+		   NULL, "\"Damn it... When you grin like that, you leave me no choice! I have to be super serious about this too!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いつも本気で戦うのが部活だけど、それでもやっぱり、それ以上に本気じゃないといけない時ってあるよね。",
+		   NULL, "\"I always have to fight with all I have in our club, but I believe there's a time when I have to get super serious about it.", Line_WaitForInput);
+	OutputLine(NULL, "今日は多分、それだね！」",
+		   NULL, " I think today is the time!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だな！！」",
+		   NULL, "\"Indeed!!\"", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "「うん！！」",
+		   NULL, " \"Yes!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何の予備動作もなく二人で互いの掌を叩き合う。",
+		   NULL, "We pounded our fists together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　普段の俺たちだったら、負けたくない時は、どちらからともなく共闘を申し出るもんなんだが、レナはそれを言い出さない。",
+		   NULL, "Usually, when we really don't want to lose the game, one asks the other to work together, but Rena didn't ask this time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そりゃつまりどういうことかって言うと、",
+		   NULL, "Which meant", Line_WaitForInput);
+	OutputLine(NULL, "こいつ、自分ひとりでクラス丸ごと殲滅するつもりなんだ。",
+		   NULL, " that she was going to try to defeat everybody by herself.", Line_WaitForInput);
+	OutputLine(NULL, "いや、つもりなんてもんじゃない。",
+		   NULL, " No, not \"try\".", Line_WaitForInput);
+	OutputLine(NULL, "クラスを丸ごと殲滅",
+		   NULL, " She was going to", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "“する”、",
+		   NULL, " \"do\"", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ひとりで！",
+		   NULL, " it by herself!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だけどそんなやたらとかっこいいレナを見ても、俺は臆さない。",
+		   NULL, "Rena looked really cool at that moment, but I wasn't scared.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナがここまで本気で“やる”って言ってんだから、俺がそうならないわけにはいかないだろ。",
+		   NULL, "If she was seriously going to \"do\" it, I'd have to be serious and do it, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　このところ、負け続きでふて腐れていた俺の闘志が、今頃になってめらめらと燃え上がってくる！",
+		   NULL, "My fighting spirit had been dented after many losses, but it had begun to burn hot once more!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「圭一くんも、なかなかいい顔してるね。",
+		   NULL, "\"You look good too, Keiichi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "怖いな、全員と１人で戦っても勝てるつもりでいる顔だね？」",
+		   NULL, " You're even scaring me a little. You look like you're going to defeat everybody all by yourself.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「レナだってそのつもりだろ。」",
+		   NULL, "\"I know that's what you're going to do, too.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃあぶつかるのは最後だね。」",
+		   NULL, "\"That means we're going to fight against each other at the very end.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「互いにクラス全員を全滅させたら、最後にゃそうなるな。」",
+		   NULL, "\"We would, if we defeated everybody else.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「最後の戦いの時、そこにいるのが圭一くんなのを期待してるね。」",
+		   NULL, "\"I hope you'll be the last one I have to fight against.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おう！！」",
+		   NULL, "\"Yeah, me too!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もう一度俺たちは互いの掌を叩き合う！",
+		   NULL, "We pounded our fists together again!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawBustshot( 0, "Me_WinkA2&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "GR1", 400 );
+
+	OutputLine(NULL, "「交戦規定はちゃんと覚えてるね？",
+		   NULL, "\"Does everyone remember the rules?", Line_WaitForInput);
+	OutputLine(NULL, "　被弾時の申請だけは正直にねー！",
+		   NULL, " You have to call it out when you get hit!", Line_WaitForInput);
+	OutputLine(NULL, "　被弾した人は撃っちゃだめだよ、仮に当てても無効ね！」",
+		   NULL, " Once you're hit, you can't shoot anyone. Even if you did, it wouldn't count!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「魅音、被弾の定義を再確認したいぜ。」",
+		   NULL, "\"Mion, I'd like to confirm the definition of being hit one last time.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_DefA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「水鉄砲で撃たれたら被弾。",
+		   NULL, "\"When somebody shoots you with a water gun, you're hit.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "…くっくっく、ひねくれた圭ちゃんのためにさらに補足するなら、",
+		   NULL, " ...Heh heh heh, I'll break it down more for you, Kei-chan.", Line_WaitForInput);
+	OutputLine(NULL, "水鉄砲というこの容器から出た水が最初に触れたものが標的であった時、被弾とするわけ。",
+		   NULL, " You're only hit when it's water from a water gun.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、水鉄砲を経由した水をバケツに貯めてぶっかけても無効ってわけ。」",
+		   NULL, " In other words, you're not hit when somebody splashes you with a bucket of water.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_DefB1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「直接攻撃以外は有効じゃないってことだね。",
+		   NULL, "\"Only direct shots from a water gun count.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子ちゃんの脅威が少し薄らいだかな？」",
+		   NULL, " I'm sure you're not so scared of Satoko-chan's trap attacks now, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_WaraiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ほっほっほ！！",
+		   NULL, "\"Ho ho ho!!", Line_WaitForInput);
+	OutputLine(NULL, "　トラップにも色々ございましてよー？",
+		   NULL, " I will still have many kinds of traps ready for you!", Line_WaitForInput);
+	OutputLine(NULL, "　レナさんなんか一番最初に餌食にしてさしあげましてよー！」",
+		   NULL, " Rena-san, you'll be my first target!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_WaraiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あははははは、それは無理。",
+		   NULL, "\"Ahahahahaha, I don't think so.", Line_WaitForInput);
+	OutputLine(NULL, "私を仕留めようとしたら、沙都子ちゃんじゃまだまだ役不足だね。」",
+		   NULL, " You're not strong enough to take me down yet.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_odorokiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…な、なな、なんですってぇえぇ？！」",
+		   NULL, "\"...Wh-What did you just say?!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Me_TokuiA1&", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「おおー！",
+		   NULL, "\"Oh-ho!", Line_WaitForInput);
+	OutputLine(NULL, "　レナが売り言葉とはねぇ。",
+		   NULL, " I can't believe Rena gave Satoko tit for tat.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Me_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "こりゃあ面白くなりそうだよ！",
+		   NULL, " This is going to be fun!", Line_WaitForInput);
+	OutputLine(NULL, "　くっくっく！",
+		   NULL, " Heh heh heh!", Line_WaitForInput);
+	OutputLine(NULL, "　ねぇ、圭ちゃん？」",
+		   NULL, " Don't you think so, Kei-chan?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「大して面白くねぇと思うぞ。",
+		   NULL, "\"I don't think so.", Line_WaitForInput);
+	OutputLine(NULL, "俺かレナか、どっちにやられたいかを選ばされるだけなんだからな。」",
+		   NULL, " At least not for you, because all you'll be doing is choosing which of us is going to shoot you first.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_WaraiA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……圭一もやる気満々なのです。」",
+		   NULL, "\"......Keiichi seems determined to win.\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　魅音は俺とレナの表情から、ただならぬ闘志を嗅ぎ取ったようだった。",
+		   NULL, "Mion seemed to sense the fighting spirit in me and Rena.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……上等だね、こっちこそ手加減無用で行かせてもらうよ！！",
+		   NULL, "...I could tell that she's as serious as we are", Line_WaitForInput);
+	OutputLine(NULL, "　そう表情に書いてありやがる！",
+		   NULL, " just from the way she looks.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "semi", 120, 0 );
+	DisableWindow();
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, FALSE );
+	DrawBustshot( 0, "Me_WinkA2&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「よっしゃ！！",
+		   NULL, "\"All right!!", Line_WaitForInput);
+	OutputLine(NULL, "　いい面構えだよ気に入った！！",
+		   NULL, " I like your spirit!!", Line_WaitForInput);
+	OutputLine(NULL, "　じゃあ始めるよ？！",
+		   NULL, " Are you all ready to start?!", Line_WaitForInput);
+	OutputLine(NULL, "　全員散開！！",
+		   NULL, " Everybody, get to your positions!!", Line_WaitForInput);
+	OutputLine(NULL, "　クジで決められた場所に移動してねー！」",
+		   NULL, " The ones you drew by lot earlier!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　予め俺たち全員はクジを引かされていて、各々決められた場所からスタートするのだ。",
+		   NULL, "Everybody had to draw lots to pick a place to start the game from.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　互いが至近距離でいきなりスタートしたら、面白くないもんな。",
+		   NULL, "It wouldn't be fun if everybody was close together at the beginning of the game.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ちなみに俺は校舎裏からのスタートになっていた。",
+		   NULL, "By the way, my starting position was behind the school building.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "GR3", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　…この場所が当たった時、前にやった鬼ごっこと同じで、隠れてやり過ごして、",
+		   NULL, "...When I drew this starting position, I thought about hiding until there were only a few people left like I did in our last game of tag...", Line_WaitForInput);
+	OutputLine(NULL, "頭数が減ってきたところでひょっこり現われて…なんて考えていたが、そんな消極的な作戦はもう興味なかった。",
+		   NULL, " But a defensive tactic like that wasn't interesting to me anymore.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何だかこう、久しぶりに熱くなってきたぜ…！",
+		   NULL, "I hadn't been this excited in a long time...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　足元からゾクゾクするものが込み上げてくる。",
+		   NULL, "My legs were shaking with the excitement.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　武者震いってやつを俺は初めて経験していた。",
+		   NULL, "It was my first time experiencing that kind of feeling.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　遠くから魅音のカウントダウンの声が聞こえてくる。",
+		   NULL, "I could hear Mion's countdown from some distance away.", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「…３、",
+		   NULL, "\"...Three,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…２、",
+		   NULL, " two,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…１、」",
+		   NULL, " one...\"", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	DrawScene( "GR3", 200 );
+	PlayBGM( 0, "mienai", 120, 0 );
+
+	OutputLine(NULL, "　パァンと運動会の時に使う合図用のピストルの音が響いた。",
+		   NULL, "A single shot of a toy pistol echoed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その音に弾かれるように、俺は校舎を大回りする。",
+		   NULL, "With that sound, I was already running around the building.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　校舎裏には何人か、下級生の小さい子たちが配置されていたはずだ。",
+		   NULL, "There had to be some underclassmen nearby.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな小兵はわざわざ俺が潰さなくても誰かが潰してくれる、そんな甘えはなかった。",
+		   NULL, "I'd usually assume that somebody else would take care of them... but this time was different.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black" , 0 );
+	DrawScene( "GR3", 100 );
+	EnlargeScreen( 288, 216, 64, 48, FALSE, 500, TRUE );
+	DrawScene( "GR4", 400 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "「うおおおおぉりゃああああぁああぁ！！！」",
+		   NULL, "\"Whoaaaarryaaaaahhh!!!\"", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼らは、俺が凄まじい雄叫びをあげて突撃してくるのを見て、さすがにすくみ上がったようだった。",
+		   NULL, "They stood frozen in fear as I ran towards them screaming at the top of my voice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　戦おうか逃げようかの判断に迷っているその一瞬の間に、次々と撃ち抜いて行く！",
+		   NULL, "They took a moment to quickly decide whether to fight or to run away, and in that moment, I shot one after another!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「悪ぃな！",
+		   NULL, "\"Sorry, guys!", Line_WaitForInput);
+	OutputLine(NULL, "　俺の隣が当たった時点で運がなかったと思ってくれ。」",
+		   NULL, " You just got unlucky with where you started.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ゲーム開始後、一瞬にして敗北した後輩たちの頭を軽く撫で、彼らの銃を没収する。",
+		   NULL, "I felt bad for them because they lost the game so quickly, so I rubbed their heads to cheer them up, and then took their water guns.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　そう、銃が大事なのだ。",
+		   NULL, "Yes, that was the key factor in this game.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　水鉄砲の水は大して多くない。",
+		   NULL, "You can't put very much water in a water gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それが１０人以上と乱戦になって撃ち合ったらすぐに空っぽになってしまうからだ。",
+		   NULL, "With ten people around you in a gun battle, the water would be gone in a minute.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺は彼らを撃った最初の銃を投棄すると、彼らの銃を二丁両手に構え、校庭の様子をうかがった。",
+		   NULL, "I abandoned the gun I used to shoot them, held one of their guns in each hand, and scoped out the school yard.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　そこは予想を裏切らず、阿鼻叫喚の戦場だった。",
+		   NULL, "Just like I expected, there was an intense battle happening there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺が校舎裏を駆け抜けた一瞬の間に、ほとんどの連中は射殺されていたからだ。",
+		   NULL, "In the short time it took me to take care of the area behind the school building, it seems like most of my classmates were already shot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その光景はもちろん予想できていた。",
+		   NULL, "I wasn't surprised, though. I kind of knew it'd happen.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何もない広大なだけの校庭は実力勝負だ。",
+		   NULL, "You need to have a high skill to fight in the open school yard.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　他の部活メンバーのほとんどが校庭にいる以上、アリを踏み潰すゾウの如く蹂躙するはず！！",
+		   NULL, "Especially when most of the club members were there, it must have been like a battle of elephants and ants!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…な、なんだ魅音のあれは……！」",
+		   NULL, "\"...Wh-What is it that Mion is holding...?\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Me_AkuwaraiA1&", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　魅音はスタートの時とはまったく違う、大型の機関銃タイプの水鉄砲に変わっていた。",
+		   NULL, "Mion was holding a different water gun from the one she had when the game started. She was now holding one that looked like a huge machine gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　射程も連射力もタンクの容量も桁違い。",
+		   NULL, "Its range capability, its pump-action shooting, and the amount of water it can hold were way beyond comparison.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　確かに今日の水鉄砲は特に制限はないもんな。",
+		   NULL, "There were no restrictions on what kind of water guns we could use today.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　水鉄砲なら何でもいいことになっていた。",
+		   NULL, "As long as it's a water gun, we were allowed to use any kind.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR1", "maskleft", 7, 0, 300 );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　だからほとんどの連中は、近所の駄菓子屋か文房具屋で標準的な拳銃タイプを購入してきた。",
+		   NULL, "Most of us have a normal pistol-style water gun from a local toy store or something similar.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　そりゃ魅音が持ってるみたいな大型タイプがあれば俺だって買った。",
+		   NULL, "I would've bought a bigger one like Mion's if they'd had one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも取り寄せになるからと諦めたのだ。",
+		   NULL, "But they weren't in stock, and I'd have to order it in.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…ってことは魅音は今日のためにずいぶん前から取り寄せて準備していたことになるな。",
+		   NULL, "...In other words, Mion ordered hers a long time ago, just for today.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　つくづく勝つことに対する準備だけは入念なヤツだぜ。",
+		   NULL, "She's always well prepared when it comes to winning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを最初から持ってれば非難されて使用不可にされるかもしれないと思い、スタートまでどこかに隠していやがったというわけだ。",
+		   NULL, "She must've thought that we wouldn't allow her to use the big water gun if she showed it off before the game started, so she must've hidden it somewhere.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora", "maskup", 7, 0, 300 );
+
+	OutputLine(NULL, "　ほとんどの連中は、スタートからわずかの時間で一掃されたようだった。",
+		   NULL, "It looks like most of our classmates were shot right after the game started.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　わずか数人がそれを生き残り、建設重機を遮蔽物に何とかやり過ごそうとしていた。",
+		   NULL, "Only a few were still alive, trying to survive as long as they could by using the heavy construction equipment as a shield.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを容赦ない火力（水力？）で魅音があぶり出しにかかる！",
+		   NULL, "Mion mercilessly shot at them from various angles to make them come out from behind the shield!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Me_WaraiA2&", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「あっはっはっは！！",
+		   NULL, "\"Aha ha ha ha ha!!", Line_WaitForInput);
+	OutputLine(NULL, "　そぅらそんなとこに隠れてないで出て来なぁ！！」",
+		   NULL, " Stop hiding, cowards!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DrawSceneWithMask( "G1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "　遮蔽物越しに抵抗するのは富田くんと岡村くんのコンビだった。",
+		   NULL, "Tomita-kun and Okamura-kun were trying their best to resist her attack from behind their shield.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　一見すると魅音に圧倒されいいところなしに見える。",
+		   NULL, "It looked like they had no chance against her,", Line_WaitForInput);
+	OutputLine(NULL, "だがそれは大きな間違いだった。",
+		   NULL, " but that actually wasn't true.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　あの２人は水鉄砲の銃撃戦に相当の熟練があった。",
+		   NULL, "After all, the two of them were only still alive", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だからこそ今生き残っている。",
+		   NULL, "because of all their experience in water gun battles.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　９９％、スタートと同時に避けきれなかったはずの魅音の猛襲を掻い潜り、今この瞬間にも生き残っている…！！",
+		   NULL, "They survived the first few minutes of her assault, even though 99% of their classmates didn't, and they were still surviving at that very moment...!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが魅音はさすがに百戦錬磨だ。",
+		   NULL, "Mion, however, is also a battle-hardened soldier.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　豊富なタンクの水量を生かして弾幕を張りながら確実に２人を追い詰めていく。",
+		   NULL, "She used the advantage of her big water tank, and gradually but certainly drove them into a corner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　制圧は時間の問題だった。",
+		   NULL, "It was only a matter of time until she broke them down.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「だ、だめだ、あのマシンガンはずるいよ…！」",
+		   NULL, "\"W-We're cornered. It's not fair that she has a machine gun...!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「委員長の水が少なくなるまで何とか凌ごう…。",
+		   NULL, "\"All we have to do is survive 'til her tank runs low...", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "今は手も足も出ないよ…。」",
+		   NULL, " We don't stand a chance against her when she's shooting at us like this...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　後輩たちは何とかやり過ごそうと、魅音の移動射撃に合わせて、遮蔽物を挟みながらぐるぐる逃げ回るしかない。",
+		   NULL, "They tried to hold out against her, but all they could do for now was to keep running behind cover as Mion strafed closer and closer to them.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　２人である有利を活かしたいところだが、そのチャンスがないようだった。",
+		   NULL, "They wanted to use their two-against-one advantage, but it seemed like they wouldn't even get that chance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　無謀な攻撃を仕掛けてどちらかがやられれば、もう勝ちの目はない！",
+		   NULL, "If they tried attacking recklessly, one of them might get shot, and then the other would have no chance of winning!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だからこそ最後のチャンスに賭けて慎重になればなるほど、攻め手を欠いているのだった。",
+		   NULL, "So they grew more cautious, placing their bets on their final chance, but that caused their offense to wane.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DrawBustshot( 13, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 13, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DisableWindow();
+	DrawSprite( 0, "Me_eyex1", NULL, 90-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, 90-320-90, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	DrawScene( "black", 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　もちろん、魅音は２人のそんな思考は完全に読みきっている。",
+		   NULL, "Of course, Mion saw through their plan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　２人が焦れて短絡的に攻撃を仕掛けてくるように挑発しているのだ。",
+		   NULL, "She was purposely provoking them so that they'd lose their patience and start attacking her recklessly.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "　魅音と２人が建設重機を挟んでぐるりと一周し、魅音が俺に背中を向ける形になる。",
+		   NULL, "Mion circled around the construction equipment, and now she was standing with her back towards me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　魅音のあの機関銃と正面からやり合えば、おそらく俺に勝ち目はない。",
+		   NULL, "If I went up against her machine gun fair and square, I wouldn't stand a chance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　勝てるとしたら…背後からの奇襲だけかッ？！",
+		   NULL, "So... attacking from behind would be the only way for me to defeat her...!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しかしいくら魅音が背後を許しているとしても、…この距離が微妙だ。",
+		   NULL, "Even though she was in a defenseless position... there was some distance between us.", Line_WaitForInput);
+	OutputLine(NULL, "決して近くない！",
+		   NULL, " I was still too far away!", Line_WaitForInput);
+	OutputLine(NULL, "　いや…正面からやり合う勝率に比べたら、今の方が絶対に有利なはず…！",
+		   NULL, " But... it would still be better to attack her now than to take her head-on...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　迷うな圭一！！",
+		   NULL, "Don't hesitate, Keiichi!!", Line_WaitForInput);
+	OutputLine(NULL, "　躊躇したチャンスに二度目はないッ！！",
+		   NULL, " You won't have this chance again!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　物陰から躍り出た俺は、まさに二丁拳銃を構えた豹となって魅音までの距離を疾駆する。",
+		   NULL, "I stepped out from my hiding place and ran as fast as I could towards her with two water guns in my hands.", Line_WaitForInput);
+	OutputLine(NULL, "気配を殺してゆっくりと、何て悠長なことは考えなかった、思いつかなかった！！",
+		   NULL, " Instead of approaching slowly and silently, I screamed at the top of my lungs!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	EnlargeScreen( 288, 216, 64, 48, FALSE, 1000, TRUE );
+	DrawScene( "G1", 400 );
+
+	OutputLine(NULL, "「ううをおおおりゃあぁああああぁ！！",
+		   NULL, "\"Whooooryaaaaaah!!", Line_WaitForInput);
+	OutputLine(NULL, "　魅音んんんんん！！！」",
+		   NULL, " Mioooooooooooon!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Me_OdorokiA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ッ？！",
+		   NULL, "\"What?!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Me_AkuwaraiA2&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　そこから来たか、圭ちゃああん！！」",
+		   NULL, " There you are, Kei-chan!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音は俺の奇襲にほんの少しは驚いたようだったが、武装の圧倒的優位を知っていて、すぐに余裕を取り戻す。",
+		   NULL, "Mion seemed a little shocked by my surprise attack, but she immediately pulled herself together. She knew the advantages of her weapon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ならば即座に撃てばいいものを！！",
+		   NULL, "But she didn't shoot me just yet!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが魅音は撃たずに俺を引き寄せた。",
+		   NULL, "She held back, luring me closer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　残りの水の量が決して多くないことを理解しているのだ。",
+		   NULL, "Mion was well aware of how much water she had left.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　同じ銃同士で戦えば、射程は概ね互角。",
+		   NULL, "If she had the same kind of water gun as me, we would've had the same range capability.", Line_WaitForInput);
+	OutputLine(NULL, "あとは双方の技量の問題になる。",
+		   NULL, " So, it would've been down to our technique to decide the winner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　他の後輩たちが相手なら、同じ銃でも圧倒できるだろう。",
+		   NULL, "If she was fighting against one of her underclassmen, she could've defeated them easily.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、魅音は即座に、今の俺に対しては、武器の有利すら加味しなければ勝てないことをすぐに弾き出した。",
+		   NULL, "Mion immediately calculated her chance of winning against me and figured out that her only chance was to use the advantage of her water gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今の俺の気迫が普段のそれとはまったく異なることを瞬時に見て取ったのだ。",
+		   NULL, "She saw the eye of the tiger in me and recalculated her chances of winning in a split second.", Line_WaitForInput);
+	OutputLine(NULL, "その電光石火の計算速度には感服する！！",
+		   NULL, " Really, I can admire how fast she does those things!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "GR1", 200 );
+
+	OutputLine(NULL, "　駆け寄る俺が間合いをザクザクと詰めていった。",
+		   NULL, "I ran at top speed to shorten the distance between us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　満タンの俺の銃と、水量の減っている魅音の機関銃、間合いはほぼ互角だ。",
+		   NULL, "Our strength should have been equal. I had two water guns with full tanks and she had a machine gun with a half-empty tank.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　互いにその間合いを読み間違わない！！",
+		   NULL, "We both waited for the perfect moment!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DrawBustshot( 13, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 13, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DisableWindow();
+	DrawSprite( 0, "Me_eyex2", NULL, 90-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, 90-320-90, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「今日の圭ちゃんの気迫には敬意を表するよ。",
+		   NULL, "\"Your fighting spirit deserves my respect, Kei-chan.", Line_WaitForInput);
+	OutputLine(NULL, "今日のあんたには正面からぶつかりあって、互角以上の勝率を弾き出せる自信がない！！」",
+		   NULL, " I'm not sure if I would've been a match for you today if I didn't have this gun!!\"", Line_Normal);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DrawBustshot( 13, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 13, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DisableWindow();
+	DrawSprite( 1, "Kei_eyexa1", NULL, 7-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 1, 7-320+100, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	ClearMessage();
+
+	OutputLine(NULL, "「残念だぜ魅音、勝率の弾き方も鈍ったな。",
+		   NULL, "\"I'm disappointed in you, Mion. Your calculations are off today.", Line_WaitForInput);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "今日の俺に正面からぶつかりあったら、互角どころじゃない。",
+		   NULL, " Did you say you thought you could beat me?", Line_WaitForInput);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "……てめえの負けだああぁ！！！」",
+		   NULL, " ...Because you don't stand a chance!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 200 );
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　互いの射程圏が重なり合った瞬間ッ！！",
+		   NULL, "The moment we step within range,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺も魅音もコンマ０００１の差もなく互いに引き金を絞る！！",
+		   NULL, "Mion and I pulled our triggers at the same time!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "GR2", 200 );
+
+	OutputLine(NULL, "　走りながら発砲する俺と、一直線に駆けて来る俺に精密に照準していた魅音では射線の正確さが完全に違った。",
+		   NULL, "Mion set her sight squarely on me while I was trying to shoot and run at the same time. Her shot would obviously be more accurate than mine.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi_r", 120, 0 );
+	DrawFilm( 3, 255, 255, 255, 256, 0, 400, TRUE );
+
+	OutputLine(NULL, "　俺の放った水流は魅音が避けずとも当たらない、あさっての方角に弧を描く。",
+		   NULL, "My shot of water flew towards nowhere. Mion didn't even need to duck.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、魅音の水流は俺の胸板と銃口を結ぶ、もっとも美しいカーブを描いて放たれていた。",
+		   NULL, "But Mion's shot made a beautiful arc straight towards my chest.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　水流が俺目がけて迸るのを目で追えても、それを避けるには今の俺の身体はあまりに不安定だった。",
+		   NULL, "I could see the line of water coming straight at me, but I was too unstable to dodge.", Line_WaitForInput);
+	OutputLine(NULL, "だから、魅音は必中を疑わない！",
+		   NULL, " Mion had no doubt that she got me!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Me_TokuiA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「気合だけではどうにもならない現実がこれだったね！！",
+		   NULL, "\"You need more than spirit to defeat me!!", Line_WaitForInput);
+	OutputLine(NULL, "　やっぱり圭ちゃんは最初に脱落だああぁ！！」",
+		   NULL, " I knew you'd be the first to go down!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「やっぱり残念だぜ魅音。",
+		   NULL, "\"I'm still disappointed in you, Mion.", Line_WaitForInput);
+	OutputLine(NULL, "今日の魅音のコンピュータは一手読みが足りないぜ。」",
+		   NULL, " Your calculations are really off today.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_IkariA2&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ほざくな！！",
+		   NULL, "\"Bullshit!!", Line_WaitForInput);
+	OutputLine(NULL, "　その体勢からかわす術はない！！",
+		   NULL, " You can't dodge that shot!!", Line_WaitForInput);
+	OutputLine(NULL, "　水の弾丸で撃ち抜かれろ、そしてどうして私の背後を沈黙して奪わず、叫びながら襲う愚を犯したかを呪うがいいよ！！」",
+		   NULL, " It'll go straight through you, and you'll regret the moment you chose to come at me screaming rather than creeping up from behind!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　惜しいぜ魅音。",
+		   NULL, "You're really disappointing me today, Mion.", Line_WaitForInput);
+	OutputLine(NULL, "そこまでわかっているなら、あと１秒も深く考えれば多分読みきれたぜ。",
+		   NULL, " You could've figured it out if you'd spent just one more second to think.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どうして俺が、これだけ盛大に喚きながら、背後を奪えるという利点を捨てて突撃してきたのかってのをな！！",
+		   NULL, "You could've figured out the reason why I didn't creep up on you, but screamed as loud as I could instead!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　魅音は俺の奇襲に気付き、俺に向き直ったってことはつまり、今まで対峙していた方角に対して背後を許したってことだ。",
+		   NULL, "Mion noticed my surprise attack and turned around to face me--in other words, she turned her back on the opponents she was fighting earlier.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、かつて対峙していた彼らは俺の雄叫びを聞いて、魅音が背後を晒したことに気付くのだ…！！",
+		   NULL, "Those opponents heard my scream and saw that she had turned her back on them...!!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	FadeFilm( 0, TRUE );
+
+	DrawSceneWithMask( "white", "maskc", 7, 0, 300 );
+	DrawScene( "Sora", 200 );
+	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "「ッ？！……な、なんだってええぇえッ？！」",
+		   NULL, "\"What?! ...What's this?!\"", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawBustshotWithFiltering( 0, "Me_OdorokiA1&", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "　魅音は背中の冷たい感触に気付く。",
+		   NULL, "Mion noticed her back was wet and cold.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　さっきまで追い詰めていた後輩たちが牙を剥き、逆に自分の背後から襲いかかってきた事実をその感触で気付くのだ！",
+		   NULL, "She finally understood that the underclassmen she was attacking just earlier had shown their fangs and attacked her from behind!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺はまさに自分の胸板を貫こうとしていた水流を、",
+		   NULL, "I blocked her water shot with my arm", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 0 );
+	DrawBustshot( 0, "Me_OdorokiA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 10, FALSE );
+	DrawScene( "GR2", 10 );
+
+	OutputLine(NULL, "腕で弾き返す！",
+		   NULL, " right before it hit my chest!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　水流が叩き割られ、無数の水滴となって飛び散った…！",
+		   NULL, "The line of water was broken into droplets and splattered away...!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そ、そうだったかぁ！",
+		   NULL, "\"D-Damn it!", Line_WaitForInput);
+	OutputLine(NULL, "　被弾者の攻撃は被弾しても…無効だッ！！」",
+		   NULL, " I got hit first, so my shot didn't count!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そいつに気付くのだいぶ遅かったぜ！！",
+		   NULL, "\"You took too long to figure it out!!", Line_WaitForInput);
+	OutputLine(NULL, "　伏せろ魅音んんッ！！」",
+		   NULL, " Now get down, Mion!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "maskdown" , 7, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_Down", 100, 64 );
+
+	OutputLine(NULL, "　魅音がはっとして頭を抱えるようにしゃがみ込む。",
+		   NULL, "Mion squatted down and covered her head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その瞬間、魅音の背後を襲った富田くん、岡村くんの二人が俺と対峙する！！",
+		   NULL, "Now it was me versus Tomita-kun and Okamura-kun!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　二人とも反応は決して鈍くなかった。",
+		   NULL, "Their reflexes weren't so bad.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音を挟撃すれば、その次は向かい合った俺と銃撃戦になるのは当然のこと！",
+		   NULL, "They knew well that I'd be their next target after Mion was gone!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ピンチを助けてくれた恩など微塵も感じずに、俺を次の標的と瞬時に認識した二人は決して悪くないセンスだった。",
+		   NULL, "They didn't feel sorry at all for attacking me right after I just saved them from their predicament.", Line_WaitForInput);
+	OutputLine(NULL, "その残酷なまでの頭の切り替え速度は高評価だ。",
+		   NULL, " I can respect the cruelty in how quickly they shifted gears.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのセンスをあと３年も磨きゃ部活のメンバーに加われるかもなッ！！",
+		   NULL, "They may one day be able to join our club if they keep refining their sense and skill!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「次は前原さんだ、このまま撃ち殺すんだ…！」",
+		   NULL, "\"Our next target is Maebara-san. Let's get him...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こ、こっちは二人だもんね！",
+		   NULL, "\"It's one against two!", Line_WaitForInput);
+	OutputLine(NULL, "　負けるわけがない…！」",
+		   NULL, " We can take him...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　会話がズレすぎてるぜお二人さん。",
+		   NULL, "They were, however, one step behind me.", Line_WaitForInput);
+	OutputLine(NULL, "それでも遅すぎるんだよ！！",
+		   NULL, " It was already too late!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　こいつらにとっては、魅音を倒し、その次の敵が俺だ。",
+		   NULL, "For them, Mion was their first target and I was next.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　だが、俺は違う。",
+		   NULL, "But I was different.", Line_WaitForInput);
+	OutputLine(NULL, "最初っからこいつらが標的だった。",
+		   NULL, " My first target was them from the start.", Line_WaitForInput);
+	OutputLine(NULL, "こいつらが射殺するだろう魅音は初めから",
+		   NULL, " I didn't even see Mion as my target to begin with...", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "標的にしていなかったんだッ！！",
+		   NULL, " because I knew they'd take care of her!!", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　二人が魅音に向けていた銃口を俺に向けなおすその時間に俺はすでに、いや、魅音に向けて駆けていた時からこいつらだけを照準し続けていた！！",
+		   NULL, "I was pointing my guns at them long before they moved their sights from Mion to me!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺の左右の銃が、何のためらいもなく二人を照準していたことに、二人は最後の一瞬で気付けたようだった。",
+		   NULL, "It seemed like they noticed at the last moment that both of my guns had been pointing at them from the beginning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ってことは、もう手遅れってことだッ！！！",
+		   NULL, "Which meant... it was already too late for them!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	EnlargeScreen( 220, 0, 200, 48, FALSE, 500, TRUE );
+	RotateBG( 320, 24, 320, 24, 540, 0x100000, 0x80000, FALSE, 0, 0, 0, 0, 200, TRUE);
+	DrawScene( "GR1", 400 );
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「うおおおおおりゃあああぁあぁあッ！！」",
+		   NULL, "\"Whoooaaryaaah!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しゃがんだ魅音の頭の上を飛び越え、地面を転げる！！",
+		   NULL, "I jumped over Mion, rolled on the ground, and landed on my feet!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺の両手は左右に大きく開かれ、まるでそれは体操選手が種目を終えた時のような、そんな優雅さをたたえていた。",
+		   NULL, "I looked as elegant as an athlete who had just finished a perfect performance.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その翼のような両手の先にはそれぞれ銃が。",
+		   NULL, "I had a gun in each of my hands.", Line_WaitForInput);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "そして、寸分の狂いもなく二人を撃ち抜いていた。",
+		   NULL, " And with those guns, I shot them each in the middle of their chests.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………は、早過ぎる…。」",
+		   NULL, "\"...S-So fast...\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「ぼ、僕たちが二人掛りで負けるなんて…。」",
+		   NULL, "\"How could the two of us lose against one...\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　富田くんと岡村くんがガクリと膝を付く。",
+		   NULL, "Tomita-kun and Okamura-kun fell to their knees in disappointment.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Me_OdorokiA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…け、圭ちゃんがこれだけのことをやってのけるなんて…、私も鈍ったってことかなぁ…。」",
+		   NULL, "\"...I can't believe you did all this, Kei-chan... I guess I'm off today, like you said...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音が自分の膝を叩いて悔しがっていた。",
+		   NULL, "Mion wiped the dirt off her knees, looking frustrated.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「別に魅音は鈍っちゃいなかったろ。」",
+		   NULL, "\"Don't worry, it wasn't you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Me_TohohoA2&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃ、じゃあ何でおじさんが負けたわけよ…！」",
+		   NULL, "\"Then, why did I lose...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなの決まってるじゃねぇか。」",
+		   NULL, "\"That's simple.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺はクルクルと銃を指で回しながら言ってやる。",
+		   NULL, "I twirled my guns on the tips of my fingers.", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 50 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「たまには勝たねぇとカッコがつかねぇからだよ！」",
+		   NULL, "\"I have to win sometimes in order to keep looking so cool!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DrawScene( "Bg0", 0 );
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawScene( "white", 400 );
+	DrawScene( "G1", 400 );
+
+	OutputLine(NULL, "　生き残りの生徒はもうほとんど残っていなかった。",
+		   NULL, "There were only a few people left alive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…残っているのは、俺と、レナと沙都子だけだ。",
+		   NULL, "...Rena, Satoko, and myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　そのレナと沙都子は今や一対一で壮絶な戦いを演じていた。",
+		   NULL, "Rena and Satoko were fighting fiercely.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　互角？",
+		   NULL, "Were they evenly matched?", Line_WaitForInput);
+	OutputLine(NULL, "　いや、沙都子が押している。",
+		   NULL, " No, Satoko was pushing her hard.", Line_WaitForInput);
+	OutputLine(NULL, "そのすばしっこい動きでレナを圧倒していた。",
+		   NULL, " Moving fast, she was driving Rena into a corner.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今日のレナは普段のおっとりしたレナとはまったく異なる。",
+		   NULL, "Rena was usually gentle and slow, but today she was different.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本気のレナだ。",
+		   NULL, "She was very serious today and yet...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのレナを圧倒しているのだから、沙都子め、トラップなんて小細工抜きでも恐ろしいやつだぜ…！",
+		   NULL, "Satoko was still overwhelming her. She's a tough customer even without her tricky traps...!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Sa_AkuwaraiA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「ほっほっほっほ！！",
+		   NULL, "\"Ho ho ho ho!!", Line_WaitForInput);
+	OutputLine(NULL, "　最初の威勢はどこへ行ってしまいましたのかしらぁ？！」",
+		   NULL, " Do you remember threatening me earlier? I suppose you were just bluffing!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Re_DefA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いい動きをするね…！",
+		   NULL, "\"You move well...!", Line_WaitForInput);
+	OutputLine(NULL, "　私も負けられないよ！」",
+		   NULL, " But I'm still going to win!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "Sora", 200 );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	DrawBustshotWithFiltering( 0, "Sa_DefA1&", "maskup", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskup", 7, 0, 300 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　沙都子め、豊富な運動量で常に立ち位置を変えながら常にプレッシャーをかけ続け、レナを釘付けにしている。",
+		   NULL, "Satoko kept moving around, piling on pressure in order to pin Rena down.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　あんな撃ちまくる戦い方をしていたらすぐに水がなくなってしまいそうなのに、沙都子の銃の水流は鋭いままだった。",
+		   NULL, "She kept shooting, so her tank must have almost been empty... but her shots were still sharp and fast.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　見れば沙都子の足元にはバケツがあり、その中にはかなりの数の銃が入っていた。",
+		   NULL, "I noticed a bucket near her feet, which was full of many water guns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なるほど、負けた子の銃を掻き集めていたというわけか！",
+		   NULL, "I understood, seeing that. She had been taking guns from others who were already out of the game!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この銃撃戦は、実際の銃撃戦以上に弾丸の補充が危険な行為だ。",
+		   NULL, "In this battle, reloading bullets (water) was more crucial than the actual shooting.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　水鉄砲の給水口は小さい。",
+		   NULL, "The hole that you put water into on these guns is rather small.", Line_WaitForInput);
+	OutputLine(NULL, "そこに蛇口の水を入れるのは器用で時間のかかる行為。",
+		   NULL, " To put water through it from a faucet takes time and requires a certain amount of skill.", Line_WaitForInput);
+	OutputLine(NULL, "つまり自殺行為だ。",
+		   NULL, " In a battle like this, it would almost be suicidal.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこは俺も理解していて、倒した相手の銃を奪っていたわけだが、それでも両手で二丁持つのが限界。",
+		   NULL, "I understand that well, so I'd been taking guns from the people I defeated. But I could only hold one in each hand.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子はその限界を超えるために、バケツという道具を活用したというわけだ…！",
+		   NULL, "Satoko used a bucket to overcome the limit...!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_DefB1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　レナは銃を一丁しか持っていないようだった。",
+		   NULL, "Rena looked like she had only one water gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もちろんレナもかつては二丁を持ち、時に銃を奪いもしていただろう。",
+		   NULL, "I'd assume she had two earlier,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　だが、沙都子との長い銃撃戦の中で、弾丸である水をだいぶ失っていたようだった。",
+		   NULL, "but she must've used a lot of water during her long battle with Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　残りの水量を温存し、チャンスを待っているようだったが、沙都子の圧倒的な弾幕の前に追い詰められるのは時間の問題のように見えた。",
+		   NULL, "It looked like she was trying to save her water for the right moment, but with Satoko's fierce attacks, it was obvious that it was only a matter of time before Rena was driven into a corner.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR3", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　だがレナもうまい。",
+		   NULL, "However, Rena is also quite skilled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子に追い詰められる風を装いながら、確実に有利な地形に誘い込んでいる。",
+		   NULL, "She only pretended to be driven into a corner, but she was actually luring Satoko to a place where she'd have the advantage.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　校舎裏の体育倉庫の辺りは狭くて込み入っているからな。",
+		   NULL, "There was a narrow, twisting path near the gymnasium warehouse behind the school building.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　水量に不安のあるレナは肉迫して一撃で逆転したいはず。",
+		   NULL, "With Rena's water levels running low, she'd want to turn things around with a single, close-range shot.", Line_WaitForInput);
+	OutputLine(NULL, "そんなレナには逆転が狙えるいい地形だ。",
+		   NULL, " That narrow path was a perfect place for her to do that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSprite( 0, "Re_eyexa1", NULL, -43-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, -43-320+150, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「あれあれ、どうしたのかな？",
+		   NULL, "\"What's wrong?", Line_WaitForInput);
+	OutputLine(NULL, "　攻撃の手が鈍ってきたね。",
+		   NULL, " You're slowing down a little.", Line_WaitForInput);
+	OutputLine(NULL, "疲れてきた？」",
+		   NULL, " Getting tired?\"", Line_Normal);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSprite( 1, "Sa_eyexa2", NULL, 170-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 1, 170-320-170, 300-240, 0, 0, 0, 0, 0, 20*17, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	ClearMessage();
+
+	OutputLine(NULL, "「をっほっほ！",
+		   NULL, "\"O ho ho!", Line_WaitForInput);
+	OutputLine(NULL, "　お気遣いは嬉しいですけど、まだまだでしてよ！",
+		   NULL, " I appreciate your concern, but I'm not tired at all!", Line_WaitForInput);
+	OutputLine(NULL, "　それよりそちらのお水は大丈夫ですの？",
+		   NULL, " I think you should worry more about your remaining water.", Line_WaitForInput);
+	OutputLine(NULL, "　さっきから全然撃ち返して来ませんわよ？",
+		   NULL, " You haven't shot back at me for a while.", Line_WaitForInput);
+	OutputLine(NULL, "　ひょっとしてもう弾切れじゃございませんの？」",
+		   NULL, " Your tank is empty, I suppose?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだと思うなら、お顔を出してみたらどう？」",
+		   NULL, "\"If you think so, why don't you stop hiding and show your face?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「遠慮いたしましてよ。",
+		   NULL, "\"I will pass.", Line_WaitForInput);
+	OutputLine(NULL, "最後の一発を温存しているのはわかっていますわ。」",
+		   NULL, " I'm aware you've been holding onto your last shot.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「一発あれば充分だよ。",
+		   NULL, "\"One shot is all I need.", Line_WaitForInput);
+	OutputLine(NULL, "体操服を濡らしちゃ気の毒だからね、額を撃ってあげるね！」",
+		   NULL, " I'll be nice and shoot you in the forehead. I don't want you to get your clothes wet, after all!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「をっほっほっほ！！",
+		   NULL, "\"O ho ho ho!!", Line_WaitForInput);
+	OutputLine(NULL, "　まさかレナさんと、こんなにもスリリングなやり取りが出来るなんて思いませんでしたわ！",
+		   NULL, " I never imagined I could have such a thrilling battle with you, Rena-san!", Line_WaitForInput);
+	OutputLine(NULL, "　でも、最後の一発分の水量では、大して勢いもないでしょうから射程もほとんどないんじゃありません？」",
+		   NULL, " However, with the amount of water you have remaining, I doubt you have enough pressure to make that last shot go far.\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "GR1", 200 );
+
+	OutputLine(NULL, "　どうも沙都子の言うことは図星らしい。",
+		   NULL, "Satoko was right about that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナにはあと一発分のチャンスしか残されていないようだった。",
+		   NULL, "Rena had just enough water to make one last shot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、水鉄砲は水の残量に応じて飛距離が下がってしまう。",
+		   NULL, "As the amount of water left in the tank dwindles, the range of shots you can make shortens.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その為、最後の一撃は全弾の中でもっとも射程のない一撃になってしまう！",
+		   NULL, "That makes the last shot the shortest and weakest of them all!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな絶対的に不利な状況下でも、レナの顔には焦りはなかった。",
+		   NULL, "Regardless of her absolutely disadvantageous situation, Rena didn't look frustrated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　くそ、レナのやつ、全然負ける気がしてないぞ。",
+		   NULL, "I could tell she had no intention to lose.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子なんか問題にもしてないらしい！",
+		   NULL, " It was almost like she didn't even see Satoko as a threat!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Sa_AkireruA1&", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「うまい位置に逃げ込みましたわね。",
+		   NULL, "\"You picked a perfect location for yourself, did you not?", Line_WaitForInput);
+	OutputLine(NULL, "私もさすがに慎重にならざるを得ませんわ。」",
+		   NULL, " I have to tread cautiously.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子は、さすがに直接対峙しているだけあって、レナの最後の一撃の恐ろしさをここで見ている俺以上に敏感に嗅ぎ取っているようだった。",
+		   NULL, "Satoko seemed to understand how dangerous Rena's last shot was going to be better than I did, since she was the one actually fighting against her.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「私、将棋はあまりやらないんですけれど、こういうのを詰め将棋って言うんでございましょうねぇ？」",
+		   NULL, "\"I don't play chess very often, but I believe this kind of situation is called a stalemate, is it not?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子は水が満タンの銃に持ち返ると、慎重にレナを追い詰め始める。",
+		   NULL, "Satoko took out another gun with a full tank and shortened the distance between them slowly and carefully.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　満タンの銃なら、射程があるだけじゃない。",
+		   NULL, "A gun with a full tank doesn't only have a long range.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　勢いもあるから狙いも正確だ。",
+		   NULL, "It also has enough power to make shots more accurate.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　正面からの撃ち合いになれば、おそらく、９割９分沙都子が打ち勝つ…！",
+		   NULL, "If they shot at each other in a frontal attack, Satoko would have a 99% chance to win...!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だがそれでもレナの最後の一撃が恐ろしい。",
+		   NULL, "Even so, Satoko was still afraid of Rena's last shot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナを追い詰め不敵に笑う沙都子だが、その胸中は恐れで満たされていることが見て取れた。",
+		   NULL, "Satoko shortened the distance even further, smiling as if unafraid, but I could tell she was actually full of fear.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…沙都子はさっき詰め将棋に例えたが、これは正確には詰め将棋ではないのだ。",
+		   NULL, "...Satoko compared this situation to chess earlier, but it wasn't exactly the same.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　詰め将棋は複数の駒を使って相手を追い詰めるが、ここにはレナと沙都子しかいない。",
+		   NULL, "In chess, you can use some pieces to drive the opponent's king into a corner, but in this case, there were only Rena and Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　詰め将棋は敵の王将を詰めるためにいくつかの駒を失ってもいいが、沙都子には駒はないのだ。",
+		   NULL, "You can lose some of your pieces in order to achieve a win, but Satoko doesn't have any pieces other than herself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　王将が単独で詰めることなどありえない！",
+		   NULL, "A king can't drive the other king into a corner alone! That's called a stalemate!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だからこの勝負は一見沙都子が追い詰めていて絶対有利なように見えて、その実はまったくの互角ッ！！",
+		   NULL, "That's why while at first glance it looks like Satoko has the absolute advantage, they're actually on equal footing!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「さぁ参りますわよ、このままチャイムを待つなんて私たちらしくありませんわ！！」",
+		   NULL, "\"Let us finish this. It's not like us to wait for the bell to bring an end to this battle!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだね。",
+		   NULL, "\"You're right.", Line_WaitForInput);
+	OutputLine(NULL, "勝負しよう！！！」",
+		   NULL, " Let's do this!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　おかしい、沙都子の挑発に乗る必要がない。",
+		   NULL, "That's strange, I thought. Rena wouldn't have to move just on a dare from Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナに何が策が？！",
+		   NULL, "What kind of plan did she have?!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskleft", 7, 0, 300 );
+	DrawBustshotWithFiltering( 2, "Re_DefB1&", "maskleft", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "　それまでずっと隠れていたレナが大胆にも姿を現す！！",
+		   NULL, "Rena had been hiding behind cover for a while, but she came out without hesitation!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　すぐに俺は気付いた。",
+		   NULL, "I noticed something right away.", Line_WaitForInput);
+	OutputLine(NULL, "レナの銃がさっきと違ってる？！",
+		   NULL, " Rena had a different gun!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子もそれに気付いたようだった。",
+		   NULL, "Satoko seemed to notice it as well.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ここには弾切れになったら逃げ込もうと考えててね。",
+		   NULL, "\"I had a plan to hide here when my water ran low.", Line_WaitForInput);
+	OutputLine(NULL, "予め一丁拾って隠してあったの。」",
+		   NULL, " I hid a gun in advance.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ち、やるじゃねえか！！",
+		   NULL, "Damn! She's good!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　最後の最後に仕掛けをかまして逆転するなんて、沙都子の得意手を逆にやり返してやったみたいじゃないか！！",
+		   NULL, "In using a trap at the last moment for a come-from-behind victory, it was as though she was taking Satoko's best skill from her and firing it right back!!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 1, "Sa_AkuwaraiA1&", "maskright", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　だが沙都子は余裕の表情を崩さなかった。",
+		   NULL, "Satoko no longer had any advantages now that both of them were pointing their guns at each other with full tanks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　互いに満タンの銃を向け合っている以上、何の優位もないはずなのにだ。",
+		   NULL, "But she still looked confident.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何だよ、まだこの上何か策があるってのか？！",
+		   NULL, "What was going on? Did she have some kind of plan, too?!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「その一丁は、私にとっても大切な一丁でしたのよ。」",
+		   NULL, "\"That gun you're holding right now is very important to me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshotWithFiltering( 2, "Re_DefB1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「……どうしてかな？」",
+		   NULL, "\"...What do you mean?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だって、その一丁がなかったらレナさんは、さっきの銃のまま一撃逆転を狙い続けて、こうして私の前に姿を現れたりはしませんもの。」",
+		   NULL, "\"You would've kept waiting for your perfect shot and wouldn't have come out of hiding if you didn't have that gun.\"", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 3, 255, 255, 255, 256, 0, 200, TRUE );
+	PlayBGM( 1, "semi_r", 120, 0 );
+	FadeFilm( 200, TRUE );
+
+	OutputLine(NULL, "　その瞬間、俺の脳髄に雷が走り、状況を全て理解させる！！",
+		   NULL, "At that moment, lightning ran through my brain and I instantly understood the situation!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そうかそういうことかッ！！！",
+		   NULL, "Of course!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　さっきまでの状況は、確かにレナに不利ではあったけど、沙都子にとっても責め崩せない状態だった。",
+		   NULL, "Rena was in a disadvantageous situation earlier, but it was actually the same for Satoko, since she didn't have a chance to make her shot while Rena was in hiding.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナが最後の逆転を狙うために慎重になるからこそ、沙都子は攻めあぐねていたんだ。",
+		   NULL, "Rena had remained cautious in order to hit with her last shot, and that made it difficult for Satoko to attack her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ならばもし、レナが",
+		   NULL, "However, what if,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「最後の逆転」",
+		   NULL, " Rena didn't need to take", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "が必要なくなったら？！",
+		   NULL, " \"the last shot for a come-from-behind victory\"?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いや、正しい言い方じゃない。",
+		   NULL, "No, I said it wrong.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、レナが新しい満タンの銃を手に入れたなら？！",
+		   NULL, " What if Rena got a new gun with a full tank?!", Line_WaitForInput);
+	OutputLine(NULL, "　篭城をやめて、一気に勝負に来るじゃないか！！",
+		   NULL, " She'd stop hiding and come out to fight against Satoko!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_WaraiA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「つまり、レナさんがここを目指しながら逃げて、その銃を拾うことは最初から読んでいましたってことですのよ…？」",
+		   NULL, "\"You see, I knew from the beginning that you'd run over here in order to obtain that gun...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなのは沙都子の御託のはずだ。",
+		   NULL, "Let Satoko talk crap, Rena.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナは聞く耳など貸さず、さっさと沙都子を撃ち抜けばいい！",
+		   NULL, "You don't have to listen to her. Just shoot her right now!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_OkoruB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　もちろんレナだって迷わない。",
+		   NULL, "Rena thought the same thing.", Line_WaitForInput);
+	OutputLine(NULL, "躊躇なくそうした！",
+		   NULL, " She shot at Satoko without any hesitation!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "WA_038", 128, 64 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_BikkuriB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……だがその表情が一瞬だけ歪む…！",
+		   NULL, " ...But, she frowned in confusion a moment after...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どういうことだッ？！…撃てないのか？！",
+		   NULL, "What was going on?! ...She couldn't shoot?!", Line_WaitForInput);
+	OutputLine(NULL, "　あの水鉄砲壊れてる？",
+		   NULL, " Was her water gun broken?", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　いや、壊されてるッ？！",
+		   NULL, " Or did somebody break it?!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 5*2, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	SetSpeedOfMessage( FALSE, 0 );
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「水鉄砲なんて、ちょっと砂粒を入れて空撃ちすれば、すぐに詰まっちゃうんですのよ？",
+		   NULL, "\"Didn't you know that you can easily break a water gun by putting a little bit of sand in an empty tank and pulling the trigger several times?", Line_WaitForInput);
+	OutputLine(NULL, "　ほっほっほっほ！！」",
+		   NULL, " Ho ho ho ho!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_OkoruA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…私が切り札をここに一丁持ってることを先に読んで細工したってわけだね…。」",
+		   NULL, "\"...You knew I was hiding my trump card here and pulled a cheap trick like that, huh...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「私、いつも言ってましてよ？",
+		   NULL, "\"I told you.", Line_WaitForInput);
+	OutputLine(NULL, "　トラップは最後の最後でほんのひとつささやかに。",
+		   NULL, " You only set one small trap at the last moment.", Line_WaitForInput);
+	OutputLine(NULL, "これが究極の美徳でございましてよー！！」",
+		   NULL, " That is the beauty of traps!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "black", 400 );
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　トラップだけを取ればやはり沙都子の方が一枚上手なのか…！！",
+		   NULL, "When it comes to traps, Satoko remained a notch above Rena after all...!!", Line_WaitForInput);
+	OutputLine(NULL, "　相手の策すら読みきって仕掛けを施すとは…！",
+		   NULL, " I couldn't believe Satoko figured out Rena's plan in advance and set a trap to counter it...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だがレナめ、ミスったな…！",
+		   NULL, "Rena, you made a big mistake...!", Line_WaitForInput);
+	OutputLine(NULL, "　さっきの銃も持っていればまだ何とかなったはず。",
+		   NULL, " You should've kept the old gun with you. You could've at least made that last shot.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だけど今の状況では拾いなおしている時間はない…！",
+		   NULL, "But it's too late now for you to pick it up again...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今のレナはさっきよりも最悪。",
+		   NULL, "Rena was in a worse situation than she was before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　何しろ、最後の一撃すら放てないのだから…！！",
+		   NULL, "She couldn't even take another shot...!!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Sa_WaraiA1&", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "「さぁて、観念なさいませ。",
+		   NULL, "\"Be prepared.", Line_WaitForInput);
+	OutputLine(NULL, "さっきレナさんは私の額を撃つとか言われましたわねぇ？",
+		   NULL, " You told me earlier that you'd shoot me in the forehead, did you not?", Line_WaitForInput);
+	OutputLine(NULL, "　私が逆に額を撃って差し上げましてよー！！！」",
+		   NULL, " Well, I will be at least kind enough to do you the same favor...!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子がじりじりと間合いを縮め、レナの額に銃口を向ける……！",
+		   NULL, "Satoko slowly narrowed her distance again and pointed the muzzle at Rena's forehead!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だがレナに達観の様子はない。",
+		   NULL, "Rena still didn't look like she'd given up.", Line_WaitForInput);
+	OutputLine(NULL, "まだまだ互角の状況だと言わんばかりだ。",
+		   NULL, " She still thought the game was undecided.", Line_Normal);
+	ClearMessage();
+	DrawBustshotWithFiltering( 1, "Sa_WaraiA1&", "maskright", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "Re_DefB1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「…沙都子ちゃんも、まだまだ甘いね。」",
+		   NULL, "\"...Satoko-chan, you're not as good as you think you are.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_OdorokiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……な、なんですってぇ？」",
+		   NULL, "\"...Wh-What did you say?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_OkoruA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「トラップで相手を仕留めたならね、沙都子ちゃんが余裕を見せるのは勝者の権利だと思う。",
+		   NULL, "\"If you got me with your trap, it'd be your right as the winner to allow yourself the room to breathe and smile like you're doing right now.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "だけどね、今の沙都子ちゃんは私を絡め捕っただけで、仕留めたわけじゃない。",
+		   NULL, " But all you've done is drive me into a tough spot. You haven't killed me yet.", Line_WaitForInput);
+	OutputLine(NULL, "余裕を見せるのはまだまだ早い段階だとは思わない？」",
+		   NULL, " Don't you think it's a little too early for you to act like you've already got me?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkireruA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ほっほっほっほ！",
+		   NULL, "\"Ho ho ho ho!", Line_WaitForInput);
+	OutputLine(NULL, "　何を言い出すかと思えば。",
+		   NULL, " I thought you were going to say something much scarier than that.", Line_WaitForInput);
+	OutputLine(NULL, "今から仕留めるから同じことですわ。」",
+		   NULL, " It makes no difference, because I'm going to get you right now.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_DefA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「私が逆の立場なら、能書きなんか言わずにさっさと撃つ。",
+		   NULL, "\"If I were you, I'd just shoot rather than keep talking.", Line_WaitForInput);
+	OutputLine(NULL, "じゃないと、負けるから。」",
+		   NULL, " You know why? Because if I didn't, I'd lose.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkuwaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「負ける？",
+		   NULL, "\"Lose?", Line_WaitForInput);
+	OutputLine(NULL, "　誰が？",
+		   NULL, " Are you talking about me?", Line_WaitForInput);
+	OutputLine(NULL, "　あぁら、その壊れた水鉄砲でどうやって戦うおつもりで？」",
+		   NULL, " I highly doubt you can fight with a jammed water gun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_OkoruB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「被弾の定義、覚えてる？",
+		   NULL, "\"Do you remember the rule?", Line_WaitForInput);
+	OutputLine(NULL, "　水鉄砲というこの容器から出た水が最初に触れたものが標的であった時、被弾とする。」",
+		   NULL, " You're hit when it's water from a water gun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkireruA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はあ？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　それが一体何だって言うんですの。」",
+		   NULL, " So what are you saying?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "　そこまで聞いた時、俺は駆け出す！！",
+		   NULL, "When I heard her saying that, I started running!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　標的は最後の１人であるレナだった。",
+		   NULL, "My target was Rena.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もう沙都子はいないも同然だった。",
+		   NULL, "Satoko was already dead to me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　なぜなら…今から数瞬の後にレナに倒されるからだ！！",
+		   NULL, "Why? ...She was going to be shot by Rena within the second!!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Sa_AkireruA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR4", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「レナさんが何を言っているのか、私さっぱりでしてよ。",
+		   NULL, "\"I have absolutely no idea what you're referring to, Rena-san.", Line_WaitForInput);
+	OutputLine(NULL, "その壊れた水鉄砲で何ができるおつもりだか。」",
+		   NULL, " What do you think you can do with a jammed water gun?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Re_DefA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「水鉄砲の中に水があれば、戦えるんだよ。",
+		   NULL, "\"As long as I have water in my gun, I can still fight.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "わかんないかなッ！！」",
+		   NULL, " Don't you get it yet?!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 200 );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	DrawScene( "black", 200 );
+
+	OutputLine(NULL, "　レナは銃口の詰まったその銃を思い切り振り上げると、握りの部分を校舎の壁に力強く叩きつけるッ！",
+		   NULL, "Rena raised her broken water gun up high and smashed its handle on the wall of the school building as hard as she could!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　華奢なプラスチックのその部分は割れ、中の水が溢れ出した…！！",
+		   NULL, "The plastic broke easily and water flowed out of it...!!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetDrawingPointOfMessage( 0, 5 );
+
+	OutputLine(NULL, "「水鉄砲から出た水が当たればいいんだよ。",
+		   NULL, "\"As long as the water from the gun hits you, you're dead.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　水鉄砲のどこから出たかは問題にしてない。」",
+		   NULL, "It doesn't matter where the water comes out.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Sa_AkireruA1&", "maskup", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskup", 7, 0, 300 );
+
+	OutputLine(NULL, "　そうなんだ、発想の問題だったんだ。",
+		   NULL, "Rena was right. She just saved herself by thinking it through.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これが本物の鉄砲なら銃口からしか弾は出ない。",
+		   NULL, "If she was using a real gun, bullets would only come out from one end of the gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だがこれは水鉄砲なんだ。",
+		   NULL, "But this was a water gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　銃口以外からだって弾である水は出せる…！！",
+		   NULL, "She could make her bullets, water in this case, come out from any place, not just the barrel of the gun...!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_OdorokiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……………なッ！！！！」",
+		   NULL, "\"...Wha?!!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子はその瞬間に、ようやく自分があまりに無防備な姿をレナの前に晒している事実に気が付く。",
+		   NULL, "Satoko finally realized that she was standing defenselessly in front of Rena.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
+	PlayBGM( 1, "semi_r", 120, 0 );
+
+	OutputLine(NULL, "　沙都子のトラップは失敗してはいなかった。",
+		   NULL, "Satoko's trap was successful.", Line_WaitForInput);
+	OutputLine(NULL, "だが過信し過ぎた！！",
+		   NULL, " But she overestimated its effect!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナが新しい銃が壊れていると気付く前に畳み掛ければよかったのだ、躊躇なく！！",
+		   NULL, "She should've just shot Rena without hesitation before Rena noticed her new water gun was jammed!!", Line_WaitForInput);
+	OutputLine(NULL, "　勝ちを確信したその驕りこそが敗因ッ！！",
+		   NULL, " She was going to fail because she had grown overconfident of her victory!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子の銃が引き金を絞るより一瞬早く、レナは割れた部分から迸る水を、",
+		   NULL, "A second before Satoko pulled the trigger,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "まるで刃でも振るうように思い切り横に振り抜く！！",
+		   NULL, " Rena swung her water gun as if slashing Satoko with a sword!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+	FadeFilm( 0, TRUE );
+
+	OutputLine(NULL, "　沙都子の銃が放たれたが、完全に遅かった。",
+		   NULL, "Satoko fired her bullets, but it was too late.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それがレナに命中するより数瞬早く水の刃が沙都子の顔面を叩く。",
+		   NULL, "A second before Rena would be shot down, a blade of water hit Satoko in the face.", Line_WaitForInput);
+	OutputLine(NULL, "いや、叩いたと言うより、切り伏せるかのようだった…！！",
+		   NULL, " No, not hit. It cut her face open...!!", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshotWithFiltering( 2, "Re_WaraiB1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "GR3", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「まだまだ詰めが甘かったね…！！」",
+		   NULL, "\"Your endgame wasn't good enough...!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_HannbesoA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「こ、…この私が…ッ！！」",
+		   NULL, "\"I can't believe... I lost...!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　レナは呆然とする沙都子に駆け寄ると、その手の銃を引っ手繰った。",
+		   NULL, "Rena ran towards Satoko, who was standing still in shock, and took her water gun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そう、水を放った瞬間に、レナが倒すべき最後の敵は俺だけになり、その俺が肉迫してくることを知ったからだ。",
+		   NULL, "Rena knew I was her last target and that I was running towards her.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "GR3", 200 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「レナああぁああぁあああぁッ！！！」",
+		   NULL, "\"Renaaaaaaaaaaaaaaaa!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　猛烈に迫る俺をかわすように、レナも機動力を活かし始める。",
+		   NULL, "Rena, using her superior mobility, began to duck and weave.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora", 200 );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　撃ち合えば互角。",
+		   NULL, "We were evenly matched.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが状況を変えることで少しでも勝率を高めようとする努力を怠らなかった。",
+		   NULL, "Neither of us neglected to make any effort possible to take advantage of the situation.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Re_DefA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「最後には一騎打ちになると思ってたよ。",
+		   NULL, "\"I knew it'd end up being a one-on-one battle with you.", Line_WaitForInput);
+	OutputLine(NULL, "やっぱりこうでなくっちゃあね…！」",
+		   NULL, " I knew you wouldn't disappoint me...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「見直したぜ、とんでもない根性見せてくれるじゃねえかッ！！」",
+		   NULL, "\"I'm seeing you in a new light today. I didn't know you had the guts!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「見直したより、惚れ直したの方が嬉しいかな！」",
+		   NULL, "\"Rather than a new light, I'd like you to see me in a romantic way!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「負けてくれたらそれでもいいぜ！」",
+		   NULL, "\"I can try if you let me win!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ごめんだね！！！」",
+		   NULL, "\"No thanks!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 200 );
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "GR1" , 200 );
+	EnlargeScreen( 0, 216, 64, 48, FALSE, 600, TRUE );
+	DrawScene( "G1", 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　建設重機を挟み旋回し合いながら互いの虚を狙う。",
+		   NULL, "We circled around the construction equipment, trying to take shots at each other.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もう俺もレナも汗だくだった。",
+		   NULL, "We were both sweating like crazy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが疲労感はない。",
+		   NULL, "But I didn't feel tired.", Line_WaitForInput);
+	OutputLine(NULL, "珠のようになって転げ落ちる汗の雫がくすぐったいぜ。",
+		   NULL, " Big drops of sweat tickled as they ran down my body.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora", "maskdown", 7, 0, 300 );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+
+	DrawScene( "GR2", 400 );
+	PlayBGM( 1, "semi", 120, 0 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　互いの弾丸の激しい応酬。",
+		   NULL, "Rapid bursts of water flew across both of our paths.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　有利も感じないし不利も感じない。",
+		   NULL, "Neither of us had the advantage or disadvantage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　勝てるかもしれないという高揚感もないし、負けるかもしれないという焦燥感もない。",
+		   NULL, "I didn't feel elated that I might win or frustrated that I might lose.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ただ、レナとの銃撃のやり取りが無性に楽しかった。",
+		   NULL, "I was just enjoying this battle with Rena.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 200 );
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "GR1", 200 );
+	EnlargeScreen( 288, 216, 64, 24, FALSE, 400, TRUE );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "GR2", 0 );
+	EnlargeScreen( 0, 216, 32, 48, FALSE, 400, TRUE );
+	DrawScene( "GR2", 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　例えるならダンスのよう。",
+		   NULL, "It was like a dance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それはひとりでは絶対にできない舞い。",
+		   NULL, "A dance that I couldn't dance alone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分と互角の力を持った相手とだけ舞えるダンスのよう…！！",
+		   NULL, "A dance that I could only dance with an opponent...!!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Me_MajimeA1&", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「本気のレナはやっぱり冴えるね…。",
+		   NULL, "\"Rena sure is sharp when she gets serious...", Line_WaitForInput);
+	OutputLine(NULL, "見てるだけで震えが来るよ！」",
+		   NULL, " It's giving me chills!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_odorokiA1&", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そのレナさんと互角に渡り合うなんて、圭一さんもやりますわね…！！」",
+		   NULL, "\"Keiichi-san is good, too. He's evenly matched with her...!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 0, "Ri_WaraiA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……どちらが勝つか全然予想がつきませんです。」",
+		   NULL, "\"......I can't tell who's going to win.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora", 200 );
+
+	OutputLine(NULL, "　ギャラリーは誰もがそう思っていた。",
+		   NULL, "In fact, none of the observers could tell who was going to win.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　俺たちだってそう思っている。",
+		   NULL, "Neither could we.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どっちが勝つか想像もつかない。",
+		   NULL, "We had no idea who was going to win.", Line_WaitForInput);
+	OutputLine(NULL, "いや、決着がいつ着くのかすら想像がつかないぜ…！",
+		   NULL, " We had no idea when this battle would end...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも何だか、レナとのこの伯仲した戦いが何だか無性に愉快で、勝つにせよ負けるにせよ、決着がついてしまうことが惜しく感じるから不思議だった。",
+		   NULL, "I didn't know why, but it was great fun just to fight against Rena, and I didn't even care whether I won or lost. In fact, I never even wanted it to end.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR2", "maskup", 7, 0, 300 );
+
+	OutputLine(NULL, "　互いが牽制し合う度に水の残量が減り、射程が縮まっていく。",
+		   NULL, "As we fired at each other, both of our tanks emptied, shortening our range.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　必然的にいつしかそれは銃撃戦と呼ぶより、格闘戦と呼ぶのが相応しいやり取りになっていた。",
+		   NULL, "Inevitably, it became more and more like a melee than a gun battle.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　実際、俺たちは撃つというより、銃を振るってその軌跡で相手を斬ろうとしているかのようだった。",
+		   NULL, "We fired our water guns as if trying to cut each other with blades of water, swinging the gun like a sword.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　勢いのなくなった銃に腕を鋭く振るうことで遠心力を与え、少しでも攻撃力を与えようと互いが同時に思いついた手だった。",
+		   NULL, "We both came up with the idea to swing the gun hard to generate centrifugal force, in order to increase the range of our attacks.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 200 );
+	DrawScene( "black", 200 );
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　飛んでかわし、",
+		   NULL, "I dived to duck her shot.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "舞うように踏み込み！",
+		   NULL, " I rolled on the ground and landed on my feet!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　伏せてかわしてから、",
+		   NULL, " I ducked her shot again", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "払うように斬るッ！！",
+		   NULL, " and swung my gun like a sword!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "GR1", 0 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今日の部活、水鉄砲によるクラス全員での銃撃戦から、こんな一対一の白兵戦が起こるなんて誰が予想できた？",
+		   NULL, "Who could've imagined that our club's water gun battle would turn into one-on-one close combat like this?", Line_WaitForInput);
+	OutputLine(NULL, "　ただのひとりだって予想できたはずがない…！",
+		   NULL, " Absolutely nobody...!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Re_WaraiB1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あははははは！」",
+		   NULL, "\"Ahahahahaha!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あぁ、やっぱりレナもそう思うか？」",
+		   NULL, "\"Oh, you think so too, Rena?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃあ圭一くんもそう思うんだ？」",
+		   NULL, "\"You too, Keiichi-kun?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　互いに肩で息を切らしながら踏み込む間合いを計りあう。",
+		   NULL, "We're both breathing hard, calculating the timing needed to take a closer step.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　それから互いにニヤリと笑い合った。",
+		   NULL, "And then, we both grinned wickedly at each other.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「やり合うのが楽しくてならねえぜ！",
+		   NULL, "\"This is so fun!", Line_WaitForInput);
+	OutputLine(NULL, "　決着がつくことすら興醒めするくらいになッ！！」",
+		   NULL, " I don't want it to ever end!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_WaraiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あっはっはっは！",
+		   NULL, "\"Ahahahaha!", Line_WaitForInput);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLine(NULL, "　負けても恨まないでね！！」",
+		   NULL, " Don't hate me if you lose!!\"   ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あぁ恨まない！！",
+		   NULL, "\"No, never!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　この勝負を終わらせた自分の不甲斐なさを恨んでやるぜ！！",
+		   NULL, " I'd hate myself for ending this game!!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　だが、そいつを恨むのはどうやらレナの方になりそうだなッ！！」",
+		   NULL, " But I know I won't be the one crying in the end!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	ChangeBustshot( 0, "Re_DefA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「どうかな？！",
+		   NULL, "\"I don't know about that!", Line_WaitForInput);
+	OutputLine(NULL, "　圭一くん、足が藁だよ！！」",
+		   NULL, " Your feet are getting weak, like they're made of straw!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「くそったれええぇ！！",
+		   NULL, "\"Shut uuuup!!", Line_WaitForInput);
+
+	DrawScene( "white" , 200 );
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "GR2" , 400 );
+	EnlargeScreen( 0, 216, 64, 48, FALSE, 400, TRUE );
+	DrawScene( "black", 100 );
+
+	OutputLine(NULL, "　うをおりゃあああ！！！」",
+		   NULL, " Whoaaaryaaahhhhh!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "G1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「……すごい。",
+		   NULL, "\"...Wow.", Line_WaitForInput);
+	OutputLine(NULL, "…何だかものすごくかっこいい…！」",
+		   NULL, " ...They both look so cool...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「前原さん、がんばれええ！！」",
+		   NULL, "\"Maebara-san, go!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「竜宮さん、しっかりーー！！」",
+		   NULL, "\"Ryugu-san, you can get him!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　戦いを楽しむ心のゆとりが生まれ始めて、俺たちの一騎打ちがどれほど大勢のギャラリーの応援を受けていたかを知る。",
+		   NULL, "I became relaxed enough to enjoy the battle, and finally realized that many of our classmates were watching our one-on-one fight.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GR2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　水量は…もうまったくない。",
+		   NULL, "I barely had any water left.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　次の一撃で決められなければおしまいだ。",
+		   NULL, "I would have to make the next shot count, or I was done for.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナの様子を見ると、向こうも事情はまったく同じようだった。",
+		   NULL, "It seemed like Rena was in the same situation, too.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSprite( 0, "Kei_eyexa2", NULL, 150-320, 300-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, 150-320-150, 300-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「…泣いても笑っても次で終わりだな。",
+		   NULL, "\"...The next shot will decide it.", Line_WaitForInput);
+	OutputLine(NULL, "水が有限なのが惜しいぜ。」",
+		   NULL, " I wish we could fill up our tanks and keep doing this forever.\"", Line_Normal);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSprite( 1, "Re_eyexa1", NULL, -43-320, 100-240, 0, 0, 0, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 1, -43-320+150, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	ClearMessage();
+
+	OutputLine(NULL, "「限りがあるから美しい。",
+		   NULL, "\"Well, people enjoy things because they end eventually.", Line_WaitForInput);
+	OutputLine(NULL, "花も一緒だよ。」",
+		   NULL, " Flowers are beautiful especially because they wither.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「なるほどな、そういう見方もあるか！！」",
+		   NULL, "\"I see. That's one way to look at it!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「本当に楽しかった。",
+		   NULL, "\"It's been fun fighting against you.", Line_WaitForInput);
+	OutputLine(NULL, "でもこれで終わりだね！」",
+		   NULL, " But this is it!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だな！！",
+		   NULL, "\"Indeed!!", Line_WaitForInput);
+	OutputLine(NULL, "　無粋かも知れんが、勝って決着させてもらうぜ！！」",
+		   NULL, " Sorry, but I'm going to end this battle!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「上等だよ圭一くん！！」",
+		   NULL, "\"Good luck, Keiichi-kun!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「負けて泣くなよ！！」",
+		   NULL, "\"Don't cry when you lose!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「勝負ッ！！！」",
+		   NULL, "\"Let's do this!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「乗ったああ！！",
+		   NULL, "\"Hell yeah!!", Line_WaitForInput);
+	OutputLine(NULL, "　うをおぉおおおぉおおおおぉッ！！！」",
+		   NULL, " Whoaaaaaaaahhh!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 0 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "GR2", "maskc", 1, 0, 300 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「…………ぉ、……おおお……。」",
+		   NULL, "\"...W-Wow...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Sa_OdorokiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ど、…どっちが勝ったんですの…？！」",
+		   NULL, "\"W-Which one of them won...?!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "GR1", 400 );
+
+	OutputLine(NULL, "　セミたちの合唱は、時計のない校庭で代わりに時を刻む針の音のようだ。",
+		   NULL, "The cries of the cicadas echoed in the quiet school yard. They sounded like the hand of a watch ticking away the seconds.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺も、レナも、……ぴくりとも動かない。",
+		   NULL, "Neither one of us moved.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…互いに、最後の渾身の一撃を繰り出したまま、…そのままの姿で動きを止めていた……それはまるで、時代劇か何かの中の一騎打ちのよう。",
+		   NULL, "...We took our final shots and now stood motionless... It looked like one of those duels in Western movies.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…どっちが先に……？」",
+		   NULL, "\"...Who hit the other first...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……わかんない、全然見えなかった…。」",
+		   NULL, "\"...I don't know. I couldn't see it...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　緊張の糸が最初に切れたのはクラスメートたちだった。",
+		   NULL, "Our classmates broke the silence first.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この美しくも激しい一騎打ちが幕を下ろした事にようやく気付いたのである…。",
+		   NULL, "They finally realized that our intensely beautiful one-on-one battle was over...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「い、委員長、…判定は…？！」",
+		   NULL, "\"C-Class prez, what is your decision...?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Me_OdorokiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　魅音は、自分が判定を下さない限り、決着がつかないことにようやく気付く。",
+		   NULL, "Mion, in turn, realized that she had to deliver a verdict to end the game.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、我に返るまで、…魅音も呆然としている内のひとりに過ぎなかった。",
+		   NULL, "But she was just as stunned as the others and it took her a moment to recover.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…魅音はどちらが優勢であったか、判定を下せずにいる。",
+		   NULL, "...Mion was taking time to render her verdict.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　実際、俺たちにもそれはわからなかった。",
+		   NULL, "In fact, Rena and I didn't know who won either.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺の最後の一振りが、飛沫の刃となってレナの胸元を横一文字に掻っ捌いた。",
+		   NULL, "My last shot flew fast and splashed sideways as if a blade had cut her chest.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは間違いない。",
+		   NULL, "I knew that for sure.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、同じ瞬間でレナの一閃もまた、俺を肩から斜めにバッサリと叩き割っていた。",
+		   NULL, "But at the same moment, Rena's shot hit me in the shoulder.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…ルール上、一瞬でも先に相手に当てた方が勝ちだ。",
+		   NULL, "...Whoever shot the other first wins.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、それが自分なのか相手なのか、互いにわからなかった。",
+		   NULL, "But we didn't know if it was me or her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、誰かにその判定をもらえるまで、身動きが取れなかった…。",
+		   NULL, "That's why we stood motionless, waiting for the verdict to be delivered...", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Sa_AkireruA1&", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「…り、梨花には…見えまして？」",
+		   NULL, "\"...Did you see it, Rika...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_KomaruA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ボクにだってわかるわけないのです…。」",
+		   NULL, "\"......I can't tell...\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora", 400 );
+
+	OutputLine(NULL, "「委員長、……どっちの勝ちなの……？」",
+		   NULL, "\"Class prez... who won...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　皆、固唾を呑んで魅音のジャッジを待つ…。",
+		   NULL, "Everybody held their breath, waiting for Mion to call it...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　俺もレナも、互いに相手の瞳をにらみ合ったままだった。",
+		   NULL, "Rena and I kept staring at each other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　勝敗なんて観覧人の関心であって、…俺たちにはそれほど重要なことではなかったかもしれない。",
+		   NULL, "The spectators were the only ones who were interested in who the winner was... To us, it wasn't that important.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、互いが相手を上回ろうという強い意思が拮抗していたからこそ、あれだけの戦いが舞えたのだ。",
+		   NULL, "We had a great battle. We had both really wanted to do better than the other.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　多分、俺もレナも引き分けを一番望んでいたに違いない。",
+		   NULL, "We both wanted to call it a tie.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　引き分けという評価だけが、俺たちの最後の一騎打ちに対する唯一にして最上の評価だと思ったから。",
+		   NULL, "For this great battle, settling for a tie would be the best and most proper option.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、…この一騎打ちは勝敗を決める「戦い」ではなかったということなんだ…。",
+		   NULL, "In other words... this one-on-one fight wasn't a battle to decide the winner...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはどうやら俺たちだけでなく、クラスメートみんなも同じ考えのようだった。",
+		   NULL, "It seems like everybody is thinking the same way.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ri_NikoA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……魅ぃ？」",
+		   NULL, "\"......Mii?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_TohohoA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…ん…。」",
+		   NULL, "\"...Yeah...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……判定が出ないと２人とも動けませんです。」",
+		   NULL, "\"......They can't move if you don't deliver a verdict.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Me_TokuiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ぁ、……うん…。」",
+		   NULL, "\"...Ah... yeah...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 0, "Me_MajimeA1&", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	DisplayWindow();
+
+	OutputLine(NULL, "　優劣をつけることを好む魅音は引き分け同着を嫌う。",
+		   NULL, "Mion hates to settle for a tie because she loves to draw a line between superiors and inferiors.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　罰ゲームの人数が増える分には楽しいから、ビリの同着だけは好むようだが、……こと１着に関してだけは、引き分け同着を許した試しはない。",
+		   NULL, "She tends to settle for a tie when deciding who is the loser because it's more fun to have as many people as possible suffer the punishment... But she's never settled for a tie between winners before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　魅音がナンバーワンという言葉に特別な意味を感じているからこそだろう。",
+		   NULL, "Mion holds a special feeling towards the meaning of being number one.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　クラスメート全員が魅音のジャッジが下されるのを、固唾を呑んで見守る…。",
+		   NULL, "Everybody continued holding their breath, awaiting her verdict.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…どうか引き分けにしてほしい…。",
+		   NULL, "...Please make it a tie...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そういう懇願をみんなが目で訴えていた。",
+		   NULL, "Everybody wished for that in their hearts.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　魅音も迷っていた。",
+		   NULL, "Mion was hesitating to make the decision.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　互いにわずかの優劣でもあれば、それを理由に僅差で勝敗を分けることも出来よう。",
+		   NULL, "She could've chosen a winner more easily if one of us did even a little bit better than the other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だが、仮にそのわずかの優劣があったにせよ、引き分け以外のあらゆる決着がこの上なく無粋に感じられた。",
+		   NULL, "...But even if one of us did a little better than the other, I feel like nothing fits better than settling for a tie.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_TokuiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「今日の二人は、……見事だったよ。」",
+		   NULL, "\"The two of you did... great today.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音がようやく口を開く。",
+		   NULL, "Mion finally started speaking.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…圭ちゃんもレナも、ここしばらくの連敗に発奮し、最高の力を発揮してくれた。",
+		   NULL, "\"...Kei-chan and Rena, you showed us significant spirit and skill today.", Line_WaitForInput);
+	OutputLine(NULL, "その瞬発力は…評価の高低の段階を超えてもはや美しいと呼べるまでに昇華されてたよ。",
+		   NULL, " The explosive power you showed us was so beautiful that it's beyond even the highest praise I can ever give.", Line_WaitForInput);
+	OutputLine(NULL, "…私は二人の最高の戦いぶりに評価を惜しめない。」",
+		   NULL, " ...It's very difficult for me to decide who the winner should be after watching such an amazing battle.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 1, "Sa_OdorokiA1&", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「じゃ、………じゃあ、…決着はどうなるんですの………？」",
+		   NULL, "\"Th-Then... you mean we have two winners...?\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Me_MajimeA2&", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "「……会則の精神から、１位を２人に認定するのは好ましくない。",
+		   NULL, "\"...I don't like to have two winners. That's not really the point of our club.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_WinkA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……でも、二人にはわずかの優劣もなく、どちらを降着させるかの判断もとてもつかない…。",
+		   NULL, " ...However, they were both so good that it's very hard for me to decide who was better...", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_WaraiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "よってッ！！",
+		   NULL, " So!!", Line_WaitForInput);
+	OutputLine(NULL, "　本日の戦いを預かり勝負とし、",
+		   NULL, " I'm going to call it a tie for today.", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "後日改めて決着をつけることといたしたいッ！！」",
+		   NULL, " And they'll have another battle some other time to decide the winner!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　引き分けまでは読めたが、再勝負とはな！",
+		   NULL, "I expected she might settle for a tie,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　考えなかった…！",
+		   NULL, "but I never thought she'd make us have another battle!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "GR1", "maskright", 7, 0, 300 );
+	PlayBGM( 0, "Cafe", 120, 0 );
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「前原さん、すごかったですよー！！！",
+		   NULL, "\"Maebara-san, you were awesome!!!", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　カッコ良過ぎます！！」",
+		   NULL, " You were so cool!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「竜宮さんにもシビレましたー！！",
+		   NULL, "\"Ryugu-san, you gave me chills!!", Line_WaitForInput);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "　何かこう、なぁ？！",
+		   NULL, " It was like, you know?", Line_WaitForInput);
+	OutputLine(NULL, "　見てるこっちまで熱くなるというかー！！」",
+		   NULL, " You set our hearts on fire!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　クラスメートたちが、どっと駆け寄り、俺たちを賞賛する。",
+		   NULL, "The classmates rushed towards us and praised us for showing them something that cool.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこでようやく俺もレナも金縛りから解かれ、がくりと膝をつき合った。",
+		   NULL, "Rena and I were finally released from the tension of battle and dropped to our knees.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_WaraiA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「残念。",
+		   NULL, "\"Too bad.", Line_WaitForInput);
+	OutputLine(NULL, "決着をつけ損なったね。」",
+		   NULL, " We tied.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まぁな。",
+		   NULL, "\"Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "次の機会を楽しみにしようぜ。」",
+		   NULL, " I can't wait for our next battle.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_DefB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「肩を貸してほしいな。」",
+		   NULL, "\"Can you give me your hand?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「先に言うな。",
+		   NULL, "\"Of course.", Line_WaitForInput);
+	OutputLine(NULL, "俺が借りようと思ったのに。」",
+		   NULL, " I was going to ask you the same thing.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora", 400 );
+
+	OutputLine(NULL, "　二人して笑い合う。",
+		   NULL, "We both smiled at each other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　レナとこんなにも意気投合したのは始めての経験だった。",
+		   NULL, "It was the first time we ever hit it off like this.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_DefA1&", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「それはそうと。」",
+		   NULL, "\"By the way.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うまいことやったよな。」",
+		   NULL, "\"You're pretty good at that.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_AkireruA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……？？",
+		   NULL, "\"......??", Line_WaitForInput);
+	OutputLine(NULL, "　うまいことって、何がですの？」",
+		   NULL, " What do you mean?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_WaraiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぃちゃん、うまいこと言って今日の罰ゲーム、うやむやにする気だー。」",
+		   NULL, "\"Mii-chan, you're trying to get away without suffering the punishment, aren't you?\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 1, "Me_TohohoA2&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「………ぎく。」",
+		   NULL, "\"...Ah...\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「かっこつけときながら、保身第一って辺りが魅音っぽい。",
+		   NULL, "\"She was just trying to sound cool, but the main reason she delivered that verdict was to protect herself.", Line_WaitForInput);
+	OutputLine(NULL, "うん。",
+		   NULL, " That's so like Mion, you know?", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_boyoon", 128, 64 );
+
+	OutputLine(NULL, "あ！",
+		   NULL, " Look!", Line_WaitForInput);
+	OutputLine(NULL, "　逃げたぞ！………ず、図星かよ…わかりやすいヤツだなぁ…。」",
+		   NULL, " She's running away! ...Looks like my guess was right... She's so obvious...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 0, "s_chaim", 128, 64 );
+	Wait( 300 );
+	PlaySE( 0, "s_chaim", 128, 64 );
+
+	OutputLine(NULL, "　みんなが大笑いする中、授業の終わりを告げる振鈴の音が鳴り響くのだった。",
+		   NULL, "The bell rang, a sign that class was over, while we all laughed at Mion.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　オチ。",
+		   NULL, "After that...", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Ri_WaraiA1&", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……二人ともお疲れさまなのです。",
+		   NULL, "\"......Good job out there, you two.", Line_WaitForInput);
+	OutputLine(NULL, "タオルをどうぞなのです。」",
+		   NULL, " Here, use this towel.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshotWithFiltering( 2, "Re_KomaruA1&", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "Ri_WaraiA1&", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "G1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花ちゃんが満面の笑みでタオルを差し出してくれた。",
+		   NULL, "Rika-chan held out a towel, a big smile on her face.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが俺とレナは一歩後退ると、二人して水鉄砲を向ける。",
+		   NULL, "However, Rena and I stepped back and pointed our water guns at her.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ri_KomaruA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "…もうみんなにいっぱいいっぱい撃たれましたのです。",
+		   NULL, " ...I was already shot many times.", Line_WaitForInput);
+	OutputLine(NULL, "もう撃たれてると言っても誰も信じてくれないのですよ。」",
+		   NULL, " I told everybody I was already hit, but nobody believes me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　梨花ちゃんだけがやたらとずぶ濡れだ。",
+		   NULL, "Rika-chan was soaking wet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……まぁなぁ。",
+		   NULL, "...Well...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花ちゃんのことだから、撃たれたふりをして、最後まで居残ってそうだもんなぁ。",
+		   NULL, "Nobody believed her because she really could be that sneaky, pretending that she was hit in order to stay in the game.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Sa_AkireruA1&", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GR2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「普段が普段でございますものねぇ…。",
+		   NULL, "\"It's your own fault that nobody believes you.", Line_WaitForInput);
+	OutputLine(NULL, "信じろというのが難しい相談でございましてよ。」",
+		   NULL, " Sometimes it's hard to believe anything you say.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_KomaruA1&", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……みーーー。",
+		   NULL, "\"......Meeeep.", Line_WaitForInput);
+	OutputLine(NULL, "…みんながいじめるのです。",
+		   NULL, " ...Everybody is so mean to me.", Line_WaitForInput);
+	OutputLine(NULL, "ボクはもう独りぼっちなのです。",
+		   NULL, " I feel lonely.", Line_WaitForInput);
+	OutputLine(NULL, "……ダンボール箱の中でみーみー鳴いて、誰も拾ってくれないかわいそかわいそな猫さんなのですよ。",
+		   NULL, " ...I'm lonely like a poor kitten crying in a cardboard box because nobody wants her.", Line_WaitForInput);
+	OutputLine(NULL, "……みーみー…。」",
+		   NULL, " Meep-meep...\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_boyoon", 128, 64 );
+	DisableWindow();
+	DrawBustshot( 2, "Re_KaiiB1&", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　ぽん！",
+		   NULL, "Boom!", Line_WaitForInput);
+	OutputLine(NULL, "　と音がしたのはレナの頭だ。",
+		   NULL, " The sound came from Rena's head.", Line_WaitForInput);
+	OutputLine(NULL, "丸い輪っかの煙が立ち昇っている。",
+		   NULL, " I saw a circle of smoke coming out of it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…どうやら、梨花ちゃんがダンボールの中に捨て猫状態で入っていて、みーみー鳴いているところが想像できたらしい。",
+		   NULL, "...Rena must have pictured Rika-chan meowing like a cat in a cardboard box.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "re_KaiiA1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はぅ〜〜！！！",
+		   NULL, "\"Hauuuuuuuu!!!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_KaiiB1&", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　梨花ちゃん捨ててあるよ捨ててある、レナが拾うよ、お持ち帰りいいいーーー！！！」",
+		   NULL, " Rika-chan is an abandoned kitten, kitten. I'm taking her home with me!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "G1", 10 );
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "むが、",
+		   NULL, "Aw!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "むぐ、",
+		   NULL, " Ugh!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_boyoon", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_boyoon", 128, 64 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "ぎゅいぎゅい、",
+		   NULL, "Ouch!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	OutputLine(NULL, "みーみー！",
+		   NULL, " Meep-meep!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　きゅい、",
+		   NULL, " Mmm...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "すぽん！！",
+		   NULL, " Boom!!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　かっこいい余韻も台無しだー！",
+		   NULL, "Rena, you're ruining how cool we looked earlier!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　レナはいつものレナに戻ると梨花ちゃんを瞬時に、カメレオンばりの速度で捕食する。",
+		   NULL, "Rena was back to her normal self, and jumped on Rika-chan like a chameleon capturing its prey.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花ちゃんはそれから逃れようともがくのだった。",
+		   NULL, "Rika-chan struggles to get away.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "G1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「はーーい、皆さん、早く教室に戻りなさーーい！！」",
+		   NULL, "\"Come on, everyone! Get back to your classroom now!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　知恵先生が職員室の窓から手を叩きながら大声をあげている。",
+		   NULL, "Chie-sensei clapped her hands and yelled at us from the window of the teacher's office.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「行こうぜ、みんな！」",
+		   NULL, "\"Let's go!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　全員が笑顔で応え、昇降口に向かって競争のように駆け出していくのだった。",
+		   NULL, "Everyone exchanged smiles and ran back to the classroom.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyeCamp" );
+	SetValidityOfSkipping( FALSE );
+	DrawSceneWithMask( "GetTIP_tsum001", "mask1900", 7, 0, 400 );
+	Wait( 5000 );
+	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
+	SetValidityOfSkipping( TRUE );
+
+}
