@@ -1443,12 +1443,14 @@ void main()
 	OutputLine(NULL, "「もしもし！",
 		   NULL, "\"Hello!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s09/11/170700219", 128, TRUE);
-	OutputLine(NULL, "　もしもーし！！",
-		   NULL, " Hello!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s09/09/170900075", 128, TRUE);
-	OutputLine(NULL, "　…………切れたか。」",
-		   NULL, " ...She hung up.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　もしもーし！！」",
+		   NULL, " Hello!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………切れたか。",
+		   NULL, "...She hung up.", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう少し話をしたかった大石は、小さく舌打ちをすると受話器を置いた。",
