@@ -8,9 +8,9 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 
 	DrawScene( "white", 400 );
-	PlaySE( 0, "s_door", 128, 64 );
+	PlaySE( 0, "s_door", 56, 64 );
 	DrawSceneWithMask( "background/Sora6", "maskright", 7, 0, 300 );
-	PlayBGM( 1, "higurashi", 120, 0 );
+	PlayBGM( 1, "higurashi", 56, 0 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -18,7 +18,7 @@ void main()
 		   NULL, "I opened the window, placed my cushion nearby, and prepared to enjoy the weather.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "03_cele", 120, 0 );
+	PlayBGM( 0, "03_cele", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…なのに、せっかくの夕方の静かなひと時を、どたどたと騒がしいのが一匹。",
@@ -32,7 +32,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500037", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500037", 256, TRUE);
 	OutputLine(NULL, "「………幸せそうね。",
 		   NULL, "\"...You look pleased.", Line_Continue);
 	Wait( 1900 ); // autofix multiline voice
@@ -91,7 +91,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500038", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500038", 256, TRUE);
 	OutputLine(NULL, "「………大地震や大津波などの報せとして、浅瀬に普段は絶対に見かけることができない深海の魚が現れることがある。",
 		   NULL, "\"......People say that when deep-sea animals come up to the shallows", Line_Continue);
 	Wait( 11200 ); // autofix multiline voice
@@ -99,7 +99,7 @@ void main()
 		   NULL, " it's a sign of a big earthquake or a tsunami.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_daidageki", 128, 64 );
+	PlaySE( 0, "s_daidageki", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日、私たちの浅瀬に、普段は絶対に見かけることができない珍しい深海魚が現れたのを見た。",
@@ -136,7 +136,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500039", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500039", 256, TRUE);
 	OutputLine(NULL, "「……うるさいな、言われなくてもわかってる。",
 		   NULL, "\"...Yeah, yeah, I know. You don't have to tell me.", Line_Continue);
 	Wait( 4500 ); // autofix multiline voice

@@ -9,7 +9,7 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0x77, 0x77 );
 	DrawScene( "background/Sora", 400 );
-	PlayBGM( 0, "semi_r", 120, 0 );
+	PlayBGM( 0, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　垣根を草刈機で剪定するやつらは、なるほど私が学校の敷地を出ないように監視しているかのようだった。",
@@ -78,9 +78,9 @@ void main()
 	DrawScene( "white", 400 );
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/g1", "maskdown", 1, 0, 300 );
-	PlayBGM( 0, "semi", 120, 0 );
-	PlayBGM( 2, "suzume", 120, 0 );
-	PlaySE( 0, "wa_001", 128, 64 );
+	PlayBGM( 0, "semi", 56, 0 );
+	PlayBGM( 2, "suzume", 56, 0 );
+	PlaySE( 0, "wa_001", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -89,7 +89,7 @@ void main()
 	DrawScene( "background/gk3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 22, "ps3/s09/22/171400043", 128, TRUE);
+	ModPlayVoiceLS(4, 22, "ps3/s09/22/171400043", 256, TRUE);
 	OutputLine(NULL, "「竜宮さんの早退を他に聞いている人はいませんか？」",
 		   NULL, "\"Did anyone else talk to Ryuugu-san before she left school?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -111,7 +111,7 @@ void main()
 	DrawScene( "background/gk1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400118", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400118", 256, TRUE);
 	OutputLine(NULL, "「でもレナさん、最近はいつも体調悪そうでございましたものねぇ。」",
 		   NULL, "\"Rena-san has been feeling sick these days.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -120,7 +120,7 @@ void main()
 	ModDrawCharacterWithFiltering(0, 5, "sprite/normal/ri1_komaru_a1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500091", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500091", 256, TRUE);
 	OutputLine(NULL, "「……みー。」",
 		   NULL, "\"......Meep.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -129,16 +129,16 @@ void main()
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_yowaki_a1_", "0", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300433", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300433", 256, TRUE);
 	OutputLine(NULL, "「レナ、鞄なんかも置きっぱなしだし。",
 		   NULL, "\"She left her bag here.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300434", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300434", 256, TRUE);
 	OutputLine(NULL, "……どうしちゃったんだろ？」",
 		   NULL, " ...What happened to her?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100775", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100775", 256, TRUE);
 	OutputLine(NULL, "「…………………何だか、嫌な予感がするぜ。」",
 		   NULL, "\"............I have a bad feeling about this.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -147,7 +147,7 @@ void main()
 	ModDrawCharacter(1, 3, "sprite/normal/me1a_tohoho_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300435", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300435", 256, TRUE);
 	OutputLine(NULL, "「ふぇ？」",
 		   NULL, "\"What?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -175,7 +175,7 @@ void main()
 	SetColorOfMessage( TRUE, 0xff, 0x66, 0x66 );
 	Wait( 1000 );
 	DrawSceneWithMask( "background/re_s2", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "depressive paranoia", 120, 0 );
+	PlayBGM( 0, "depressive paranoia", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は急ぎ家に帰った。",
@@ -241,7 +241,7 @@ void main()
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100776", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100776", 256, TRUE);
 	OutputLine(NULL, "「鷹野さんめ、とんでもない置き土産を…！」",
 		   NULL, "\"Takano-san left us a huge parting gift...!\"", Line_Normal);
 	ClearMessage();
@@ -763,7 +763,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 7, 0, 300 );
-	PlaySE( 0, "s_door", 128, 64 );
+	PlaySE( 0, "s_door", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は父の引き出しを開け、再び金庫を開ける。",
@@ -860,8 +860,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	PlayBGM( 1, "semi", 120, 0 );
-	PlayBGM( 2, "suzume", 120, 0 );
+	PlayBGM( 1, "semi", 56, 0 );
+	PlayBGM( 2, "suzume", 56, 0 );
 	DrawSceneWithMask( "background/re_s2", "maskright", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -878,19 +878,19 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "s_Down", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "s_Down", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 100 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "s_Down", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "s_Down", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　店番の老婆は幸い、ボケ気味で、度を越した買い物であっても何の関心も示さなかった。",
@@ -953,7 +953,7 @@ void main()
 		   NULL, "After I organized things, I took out the scrapbooks I hid here, and put my brain into top gear, flipping through the pages.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さぁどうしよう。",
@@ -1120,10 +1120,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900070", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900070", 256, TRUE);
 	OutputLine(NULL, "「駐在さぁぁぁぁん！！",
 		   NULL, "\"Police officer!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900071", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900071", 256, TRUE);
 	OutputLine(NULL, "　ここですここですーー！！」",
 		   NULL, " Here! Over here!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1139,19 +1139,19 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17001", 256, TRUE);
 	OutputLine(NULL, "「はぁ、はぁ！",
 		   NULL, "\"Haah, haah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17002", 256, TRUE);
 	OutputLine(NULL, "　お待たせしました、状況を御伺いします。」",
 		   NULL, " I hope you didn't wait too long. Please tell me what happened.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900072", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900072", 256, TRUE);
 	OutputLine(NULL, "「確かに施錠して出て行ったんです。",
 		   NULL, "\"I know I locked the door before I left.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900073", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900073", 256, TRUE);
 	OutputLine(NULL, "そうしたら、まず家の扉が開きっぱなしになってまして……。」",
 		   NULL, " But when I came back, the door was left open and...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1165,103 +1165,103 @@ void main()
 	DrawScene( "background/re_h1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900074", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900074", 256, TRUE);
 	OutputLine(NULL, "「それで、私の部屋の……手提げ金庫がまんまとやられまして……。」",
 		   NULL, "\"And... look... my cash box was left open in my room...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17003", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17003", 256, TRUE);
 	OutputLine(NULL, "「ご主人、これはその時のまま？",
 		   NULL, "\"Is this how you found it?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17004", 256, TRUE);
 	OutputLine(NULL, "　触ってない？」",
 		   NULL, " You didn't touch anything?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900075", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900075", 256, TRUE);
 	OutputLine(NULL, "「えぇ、犯人の指紋とかあるだろうと思いまして、金庫には触れてません。",
 		   NULL, "\"I didn't touch the cash box itself because I thought they might have left fingerprints.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900076", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900076", 256, TRUE);
 	OutputLine(NULL, "ただ、中身を確認したので、中のものには少し触れています…。」",
 		   NULL, " I did touch the contents a little bit to check what was missing...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17005", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17005", 256, TRUE);
 	OutputLine(NULL, "「ふむふむ、それで取られたものは？」",
 		   NULL, "\"Hmm. And what did they take?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900077", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900077", 256, TRUE);
 	OutputLine(NULL, "「貯金通帳と印鑑は大丈夫だったんですが、…中に入ってた現金を全部。」",
 		   NULL, "\"They didn't take my bankbooks or my personal seal, but... they took the cash.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17006", 256, TRUE);
 	OutputLine(NULL, "「通帳と印鑑、大丈夫だったんですかぁ。",
 		   NULL, "\"They didn't take your bankbooks or personal seal, huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17007", 256, TRUE);
 	OutputLine(NULL, "そりゃあ不幸中の幸いでしたねぇ。",
 		   NULL, " You were lucky.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17008", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17008", 256, TRUE);
 	OutputLine(NULL, "……最近は、通帳から足が付くと思って、プロは現金しか持ってかないんですよねー。",
 		   NULL, " ...Professional thieves today don't take bankbooks because they know how easily they can get caught by using them. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17009", 256, TRUE);
 	OutputLine(NULL, "…こりゃあだいぶ手馴れた空き巣かなぁ。",
 		   NULL, "...This might be a professional cat burglar.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17010", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17010", 256, TRUE);
 	OutputLine(NULL, "…金庫ごと持ってかないで、この場で開けちゃうってんだから、相当のプロだねぇ。",
 		   NULL, " ...Instead of taking the cash box with him, he opened it here. He has to be a pro.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17011", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17011", 256, TRUE);
 	OutputLine(NULL, "で、お金はどのくらいやられちゃって？」",
 		   NULL, " So, how much cash was in there?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900078", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900078", 256, TRUE);
 	OutputLine(NULL, "「………んんん、ちょっと数えてなかったんですが、……多分、壱万円札で１００枚近くはあったと思います。」",
 		   NULL, "\"...Umm... I haven't counted it for a long time... but I believe there were about a hundred 10,000 yen bills.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17012", 256, TRUE);
 	OutputLine(NULL, "「あーーーそう……。",
 		   NULL, "\"Ah... I see...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17013", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17013", 256, TRUE);
 	OutputLine(NULL, "それだけの現金が入ってることを誰かに知らせた？」",
 		   NULL, " Did you tell anybody that you had that much cash in here?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900079", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900079", 256, TRUE);
 	OutputLine(NULL, "「……いえ、誰にも知らせてはいませんが、……あの女たちなら、この家に金があることを知っていたかも……。」",
 		   NULL, "\"...No, I didn't. But... they probably knew I kept some cash in the house...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17014", 256, TRUE);
 	OutputLine(NULL, "「あの女？",
 		   NULL, "\"They? Who are 'they'?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17015", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17015", 256, TRUE);
 	OutputLine(NULL, "　ふむふむ、ちょっとお話を聞かせていただけますか…。」",
 		   NULL, " Can you tell me more about them...?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900080", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900080", 256, TRUE);
 	OutputLine(NULL, "「………実は…、あまり見っともいい話じゃないんで、お恥ずかしいんですが……。",
 		   NULL, "\"...Well, it's kind of an embarrassing story...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900081", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900081", 256, TRUE);
 	OutputLine(NULL, "間宮リナという女とですね…………、」",
 		   NULL, " Her name is Rina Mamiya, and...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "M_Denwa8k", 120, 0 );
+	PlayBGM( 0, "M_Denwa8k", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、竜宮家の電話がけたたましく鳴った。",
@@ -1269,10 +1269,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900082", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900082", 256, TRUE);
 	OutputLine(NULL, "「……あぁぁ、すみません、ちょっと出てきますね。",
 		   NULL, "\"...Oh, excuse me. I'll just go get that.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900083", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900083", 256, TRUE);
 	OutputLine(NULL, "すぐ戻ります。」",
 		   NULL, " Please give me a minute.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1287,46 +1287,46 @@ void main()
 	DrawScene( "background/re_tel", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900084", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900084", 256, TRUE);
 	OutputLine(NULL, "「はい、竜宮です。」",
 		   NULL, "\"Hello. This is the Ryuugu residence.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100777", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100777", 256, TRUE);
 	OutputLine(NULL, "「あ！",
 		   NULL, "\"Ah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100778", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100778", 256, TRUE);
 	OutputLine(NULL, "　…………っと、すみません。",
 		   NULL, " ...Umm, hello.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100779", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100779", 256, TRUE);
 	OutputLine(NULL, "前原と申しますが、レナさんはいらっしゃいますか？」",
 		   NULL, " This is Maebara. Is Rena-san there?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900085", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900085", 256, TRUE);
 	OutputLine(NULL, "「レナはまだ帰ってきません。」",
 		   NULL, "\"No, she hasn't come back from school yet.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100780", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100780", 256, TRUE);
 	OutputLine(NULL, "「まだ帰ってない？！",
 		   NULL, "\"She hasn't?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100781", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100781", 256, TRUE);
 	OutputLine(NULL, "　……うーーーん……。」",
 		   NULL, " ...Umm...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900086", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900086", 256, TRUE);
 	OutputLine(NULL, "「あー、申し訳ないんですが、ちょっと今、立て込んでます。",
 		   NULL, "\"I'm very sorry, but I'm in the middle of something right now.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900087", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900087", 256, TRUE);
 	OutputLine(NULL, "遊びの電話でしたら、また掛けなおしていただけますかねぇ…。",
 		   NULL, " Can you call back later...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900088", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900088", 256, TRUE);
 	OutputLine(NULL, "申し訳ないですね、失礼いたします。」",
 		   NULL, " I'm sorry. Bye.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1353,7 +1353,7 @@ void main()
 	DrawScene( "background/mo3", 400 );
 
 	SetColorOfMessage( TRUE, 0xff, 0x44, 0x44 );
-	PlayBGM( 0, "higurashi_utu", 120, 0 );
+	PlayBGM( 0, "higurashi_utu", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は呆然とする他なかった。",
@@ -1406,7 +1406,7 @@ void main()
 	OutputLine(NULL, "　…………だが、最大の問題は、……………死体の袋が出てこなかったことなのだ！",
 		   NULL, ".........But the biggest problem of all...... is that there are no bags in there at all!", Line_ContinueAfterTyping);
 
-	PlaySE( 0, "s_jikuu", 128, 64 );
+	PlaySE( 0, "s_jikuu", 56, 64 );
 	DrawFilm( 3, 255, 255, 255, 256, 0, 0, FALSE );
 
 	OutputLineAll(NULL, "", Line_Normal);
@@ -1541,7 +1541,7 @@ void main()
 		   NULL, "Then, why are the corpses gone?", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残る答えは１つしかない。",
@@ -1848,7 +1848,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "hig_sample_kyouki", 120, 0 );
+	PlayBGM( 1, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……父と一緒に話しているのは、駐在警察官だ。",
@@ -1861,10 +1861,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Rena's dad</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900089", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900089", 256, TRUE);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900090", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900090", 256, TRUE);
 	OutputLine(NULL, "いつもはそこに停めてあるはずなんです…。」",
 		   NULL, " She usually parks it there...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1875,16 +1875,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Resident</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17016", 256, TRUE);
 	OutputLine(NULL, "「ふぅーむ…。",
 		   NULL, "\"Hmmm...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17017", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17017", 256, TRUE);
 	OutputLine(NULL, "わかりました。",
 		   NULL, " Okay.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17018", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17018", 256, TRUE);
 	OutputLine(NULL, "もしお嬢さんが帰られましたらご連絡をください。",
 		   NULL, " Please let us know whenever your daughter comes back.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17019", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17019", 256, TRUE);
 	OutputLine(NULL, "こちらの方でも探して見ます。」",
 		   NULL, " We'll try to find her as well.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

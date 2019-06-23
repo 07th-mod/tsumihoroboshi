@@ -8,7 +8,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 
 	DrawScene( "white", 400 );
-	PlayBGM( 0, "Feel", 120, 0 );
+	PlayBGM( 0, "Feel", 56, 0 );
 	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	ClearMessage();
@@ -39,7 +39,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	PlaySE( 0, "s_door", 128, 64 );
+	PlaySE( 0, "s_door", 56, 64 );
 	DrawSceneWithMask( "background/hu_r1", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -128,7 +128,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500040", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500040", 256, TRUE);
 	OutputLine(NULL, "「……うるさいな。",
 		   NULL, "\"Shut up.", Line_Continue);
 	Wait( 2200 ); // autofix multiline voice
@@ -137,7 +137,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100001", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100001", 256, TRUE);
 	OutputLine(NULL, "「だ、だめなのです…！",
 		   NULL, "\"Y-You can't...!", Line_Continue);
 	Wait( 2300 ); // autofix multiline voice
@@ -162,7 +162,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500041", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500041", 256, TRUE);
 	OutputLine(NULL, "「……何で私が憂鬱か知りたい？",
 		   NULL, "\"...Do you want to know why I'm depressed?", Line_Continue);
 	Wait( 4100 ); // autofix multiline voice
@@ -176,7 +176,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500042", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500042", 256, TRUE);
 	OutputLine(NULL, "「そんなに落ち込まなくてもいいのよ。",
 		   NULL, "\"You don't have to feel down.", Line_Continue);
 	Wait( 2800 ); // autofix multiline voice
@@ -192,31 +192,31 @@ void main()
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100002", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100002", 256, TRUE);
 	OutputLine(NULL, "「…………でも、……また、…駄目なのです。」",
 		   NULL, "\"...But... not yet.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500043", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500043", 256, TRUE);
 	OutputLine(NULL, "「そうね。",
 		   NULL, "\"I know.", Line_Continue);
 	Wait( 2200 ); // autofix multiline voice
 	OutputLine(NULL, "……また駄目ね。",
 		   NULL, " ......Not yet.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500044", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500044", 256, TRUE);
 	OutputLine(NULL, "………これだと、私の命日はいつだっけ？」",
 		   NULL, " ...When am I going to die again?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100003", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100003", 256, TRUE);
 	OutputLine(NULL, "「…………………６月の、２５日の夜だと思いましたです。」",
 		   NULL, "\".........I think it's the night of the 25th of June.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500045", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500045", 256, TRUE);
 	OutputLine(NULL, "「綿流しの祭りが終わってから、大体１週間後か。",
 		   NULL, "\"It's about a week after the Watanagashi festival.", Line_Continue);
 	Wait( 6400 ); // autofix multiline voice
@@ -225,13 +225,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100004", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100004", 256, TRUE);
 	OutputLine(NULL, "「やっぱり、……………………私のせいなのでしょうか。」",
 		   NULL, "\"Is it......... my fault?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500046", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500046", 256, TRUE);
 	OutputLine(NULL, "「決まってるでしょ。",
 		   NULL, "\"Of course it is.", Line_Continue);
 	Wait( 2300 ); // autofix multiline voice
@@ -240,7 +240,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100005", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/441100005", 256, TRUE);
 	OutputLine(NULL, "「…ぁぅあぅぁぅ。」",
 		   NULL, "\"...Au au au...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -253,7 +253,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500047", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500047", 256, TRUE);
 	OutputLine(NULL, "「がんばりましょ。",
 		   NULL, "\"Let's keep trying.", Line_Continue);
 	Wait( 2100 ); // autofix multiline voice

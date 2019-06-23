@@ -11,7 +11,7 @@ void main()
 
 	ClearMessage();
 
-	PlayBGM( 0, "z2_hig1", 120, 0 );
+	PlayBGM( 0, "z2_hig1", 56, 0 );
 	SetColorOfMessage( TRUE, 0xff, 0x00, 0x00 );
 	DrawSceneWithMask( "background/m_y4", "maskup", 1, 0, 300 );
 
@@ -50,7 +50,7 @@ void main()
 
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　暗闇からじっとこちらを覗く、光る目…。",
@@ -135,7 +135,7 @@ void main()
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE( 0, "s_Lf257", 128, 64 );
+	PlaySE( 0, "s_Lf257", 56, 64 );
 
 	OutputLine(NULL, "歩み寄り…、",
 		   NULL, " and got closer and closer towards me...", Line_ContinueAfterTyping);
@@ -152,7 +152,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200085", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200085", 256, TRUE);
 	OutputLine(NULL, "「ち、……近寄らないで、バケモノめッ！！」",
 		   NULL, "\"D-Don't come closer... you monster!!\"", Line_Normal);
 	ClearMessage();
