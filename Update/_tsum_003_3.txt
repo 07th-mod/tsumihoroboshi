@@ -1,5 +1,33 @@
 void main()
 {
+	char sprite_iri_def1;
+	char sprite_iri_def2;
+	char sprite_iri_majime;
+	char sprite_iri_majime2;
+
+	int i;
+	i = GetRandomNumber( 3 );
+
+	if (i == 0) {
+		sprite_iri_def1 = "sprite/normal/iri1_def1_";
+		sprite_iri_def2 = "sprite/normal/iri1_def2_";
+		sprite_iri_majime = "sprite/normal/iri1_majime_";
+		sprite_iri_majime2 = "sprite/normal/iri1_majime2_";
+	}
+
+	if (i == 1) {
+		sprite_iri_def1 = "sprite/normal/iri2_def1_";
+		sprite_iri_def2 = "sprite/normal/iri2_def2_";
+		sprite_iri_majime = "sprite/normal/iri2_majime_";
+		sprite_iri_majime2 = "sprite/normal/iri2_majime2_";
+	}
+
+	if (i == 2) {
+		sprite_iri_def1 = "sprite/normal/iri3_def1_";
+		sprite_iri_def2 = "sprite/normal/iri3_def2_";
+		sprite_iri_majime = "sprite/normal/iri3_majime_";
+		sprite_iri_majime2 = "sprite/normal/iri3_majime2_";
+	}
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
@@ -39,7 +67,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "wa_007", 56, 64 );
 
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 10, sprite_iri_majime, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/res1", 50 );
 	PlayBGM( 0, "4", 56, 0 );
 
@@ -49,7 +77,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 10, sprite_iri_majime2, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000002", 256, TRUE);
@@ -134,9 +162,9 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 10, sprite_iri_majime2, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 10, sprite_iri_majime, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 300, TRUE );
 	PlaySE( 0, "wa_003", 56, 64 );
 
@@ -1013,7 +1041,7 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 10, sprite_iri_majime2, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/res1", 50 );
 	PlaySE( 0, "wa_007", 56, 64 );
 	Wait( 500 );
@@ -1149,7 +1177,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 10, sprite_iri_majime, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskleft", 1, 0, 300 );
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 
@@ -1160,7 +1188,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 10, sprite_iri_majime2, "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000015", 256, TRUE);
@@ -1408,7 +1436,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 10, sprite_iri_def1, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1431,7 +1459,7 @@ void main()
 
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	DrawScene( "white", 100 );
-	ModDrawCharacter(1, 10, "sprite/normal/iri1_majime2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 10, sprite_iri_majime2, "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/res1", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -1779,7 +1807,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "wa_011", 56, 64 );
 	DrawScene( "white", 200 );
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 10, sprite_iri_def2, "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/res1", 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -1789,7 +1817,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_majime_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 10, sprite_iri_majime, "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000021", 256, TRUE);
@@ -1808,7 +1836,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
-	ModDrawCharacter(2, 10, "sprite/normal/iri1_majime2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 10, sprite_iri_majime2, "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s09/10/171000023", 256, TRUE);
