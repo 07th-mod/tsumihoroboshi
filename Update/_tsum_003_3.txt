@@ -681,7 +681,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 0, "ps2/00/mank17008", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "ps2/00/mank17008", 540, TRUE);
 	OutputLine(NULL, "　ウェイトレスさんではないのでござるか？！",
 		   NULL, " You're not a waitress?!", Line_Continue);
 
@@ -821,7 +821,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 25, "ps2/00/172400012", 256, TRUE);
+	ModPlayVoiceLS(4, 25, "ps2/00/172400012", 540, TRUE);
 	OutputLine(NULL, "「大体、前原さんが昨日ので優勝できたのは、",
 		   NULL, "\"First of all, you only won the game yesterday because", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -841,10 +841,10 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(5, 24, "ps2/00/172500010", 256, TRUE);
+	ModPlayVoiceLS(5, 24, "ps2/00/172500010", 540, TRUE);
 	OutputLine(NULL, "「前原さんが負けたら罰ゲームが可哀想だなぁと思って、わざと負けてあげたんです！！",
 		   NULL, "\"We felt sorry for you always having to suffer punishments, so we let you shoot us!!", Line_WaitForInput);
-	ModPlayVoiceLS(5, 24, "ps2/00/172500011", 256, TRUE);
+	ModPlayVoiceLS(5, 24, "ps2/00/172500011", 540, TRUE);
 	OutputLine(NULL, "　僕たちにもちょっとは感謝してほしいです…！！！」",
 		   NULL, " You should appreciate our sacrifice...!!!\"", Line_Normal);
 	ClearMessage();
@@ -952,7 +952,7 @@ void main()
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400012", 256, TRUE);
 	OutputLine(NULL, "「そう言えば、圭一さんとレナさんの勝負は、預かり勝負でございましたものねぇ。",
 		   NULL, "\"Now that I think about it, the game was a tie.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps2/04/170400013", 256, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/170400013", 540, TRUE);
 	OutputLine(NULL, "少し外野が混じるとは言え、ここで優勝決勝戦をされるのも面白いですものねぇ。」",
 		   NULL, " It'll be fun to have the finale here with a few extra fighters.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
