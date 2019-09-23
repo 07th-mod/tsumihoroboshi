@@ -1,0 +1,3574 @@
+void main()
+{
+
+
+//*Tsumihoroboshi Bad End 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//#26 レナと電話
+
+	DrawScene("black", 1000 );
+
+	PlayBGM(2, "hm03_17", 128, 0);
+
+	DrawScene("background/ma3", 1000 );
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/m_hi3", 1000 );
+
+	DrawBustshot( 3, "sprite/normal/me1a_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//r魅音と二人での登校は、やはりレナがいない寂しさがあった。
+	OutputLine(NULL, "魅音と二人での登校は、やはりレナがいない寂しさがあった。",
+			NULL, "Going to school with just Mion, without Rena here with us, was definitely lonelier.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1b_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300628.「……どうしたのさ、圭ちゃん。kvS09/03/170300629.さっきからきょろきょろしてさ」
+	PlaySE(4, "ps3/s09/03/170300628", 256, 64);
+	OutputLine(NULL, "「……どうしたのさ、圭ちゃん。",
+			NULL, "\"What's up, Kei-chan. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300629", 256, 64);
+	OutputLine(NULL, "さっきからきょろきょろしてさ」",
+			NULL, "You've been a bit edgy for a while now\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101125.「ん？kvS09/01/170101126.　あ、あぁ、何でもないよ」
+	PlaySE(4, "ps3/s09/01/170101125", 256, 64);
+	OutputLine(NULL, "「ん？",
+			NULL, "\"Hm?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101126", 256, 64);
+	OutputLine(NULL, "　あ、あぁ、何でもないよ」",
+			NULL, " Ah, Oh, it's nothing, really.\"", Line_Normal); 
+	ClearMessage();
+
+//rいつもの慣れた道を登校するだけなのに、…俺は緊張感で張り詰めていた。
+	OutputLine(NULL, "いつもの慣れた道を登校するだけなのに、…俺は緊張感で張り詰めていた。",
+			NULL, "We were just walking to school taking our usual road, and yet... I was incredibly tense.", Line_Normal); 
+	ClearMessage();
+
+//r……レナが昨夜言っていた、明日で勝つという、逆転の一手とは何なのか。
+	OutputLine(NULL, "……レナが昨夜言っていた、明日で勝つという、逆転の一手とは何なのか。",
+			NULL, "...I was wondering what exactly this 'comeback victory' that Rena was talking about last night entailed.", Line_Normal); 
+	ClearMessage();
+
+//r俺はどうしても物騒な意味を感じて仕方がなかった。
+	OutputLine(NULL, "俺はどうしても物騒な意味を感じて仕方がなかった。",
+			NULL, "I couldn't help thinking it was something outrageous.", Line_Normal); 
+	ClearMessage();
+
+//rレナにとって、魅音は敵方の首魁の１人だ。
+	OutputLine(NULL, "レナにとって、魅音は敵方の首魁の１人だ。",
+			NULL, "In Rena's eyes, Mion had become the ringleader of the enemy side.", Line_Normal); 
+	ClearMessage();
+
+//r……物陰から刃物を構えたレナが突然踊りださないとも限らない…。
+	OutputLine(NULL, "……物陰から刃物を構えたレナが突然踊りださないとも限らない…。",
+			NULL, "It wouldn't be a long shot to think she was hiding in the shadows holding a blade, and might jump on us all of a sudden.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_wink_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300630.「大丈夫だぁって。kvS09/03/170300631.レナがそんな短絡的なことをするわけないよ。kvS09/03/170300632.まぁ、仮にそうでも、自分の身くらい守れるからね！」
+	PlaySE(4, "ps3/s09/03/170300630", 256, 64);
+	OutputLine(NULL, "「大丈夫だぁって。",
+			NULL, "\"It's gonna be okay.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300631", 256, 64);
+	OutputLine(NULL, "レナがそんな短絡的なことをするわけないよ。",
+			NULL, "There was no way Rena would something so hasty.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300632", 256, 64);
+	OutputLine(NULL, "まぁ、仮にそうでも、自分の身くらい守れるからね！」",
+			NULL, "Well, evn if she did, I can at least take care of myself!\"", Line_Normal); 
+	ClearMessage();
+
+//r魅音は余裕をアピールしたかったのか、楽観的な言い方をした。
+	OutputLine(NULL, "魅音は余裕をアピールしたかったのか、楽観的な言い方をした。",
+			NULL, "I didn't know if Mion wanted to put me at ease, but she spoke optimistically.", Line_Normal); 
+	ClearMessage();
+
+//rだが、……今のレナの心情を知る俺だからこそ、とても楽観はできなかった。
+	OutputLine(NULL, "だが、……今のレナの心情を知る俺だからこそ、とても楽観はできなかった。",
+			NULL, "However......having understood Rena's true intentions, I just couldn't calm down that easily.", Line_Normal); 
+	ClearMessage();
+
+//r今のレナはきっと、…せめて勝てぬ相手なら相打ちになってでも…なんて考えてるに違いないのだ。
+	OutputLine(NULL, "今のレナはきっと、…せめて勝てぬ相手なら相打ちになってでも…なんて考えてるに違いないのだ。",
+			NULL, "For Rena as she was now, there's no doubt she's thinking she could drag it to a draw somehow, if she couldn't score a victory.", Line_Normal); 
+	ClearMessage();
+
+//r……もちろん、物騒な手段に訴えると決まったわけじゃないが。k……その可能性も否定できない。
+	OutputLine(NULL, "……もちろん、物騒な手段に訴えると決まったわけじゃないが。",
+			NULL, "......Of course, it's not decided that it's going to be a dangerous move.", Line_WaitForInput); 
+	OutputLine(NULL, "……その可能性も否定できない。",
+			NULL, "......But that possibility cannot be overruled.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300633.「それよりおじさんが気にかかるのは、どうしてレナが急に変になっちゃったのか、その理由の方だね」
+	PlaySE(4, "ps3/s09/03/170300633", 256, 64);
+	OutputLine(NULL, "「それよりおじさんが気にかかるのは、どうしてレナが急に変になっちゃったのか、その理由の方だね」",
+			NULL, "\"More than that, this old man is more worried about why Rena went bonkers all of a sudden\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+//r……………理由なんて、…あるんだろうか。
+	OutputLine(NULL, "……………理由なんて、…あるんだろうか。",
+			NULL, "............was there really... any reason, per se?", Line_Normal); 
+	ClearMessage();
+
+//r俺は、……かつての惨劇を思い出す。
+	OutputLine(NULL, "俺は、……かつての惨劇を思い出す。",
+			NULL, "I begin to remember....... the past tragedy.", Line_Normal); 
+	ClearMessage();
+
+//r………何を切っ掛けに世界がおかしくなったのか、…よく思い出せない。
+	OutputLine(NULL, "………何を切っ掛けに世界がおかしくなったのか、…よく思い出せない。",
+			NULL, "............I can't exactly remember... what it was that made the world go crazy.", Line_Normal); 
+	ClearMessage();
+
+//rでも、いつの間にかとてつもなく恐ろしい世界に迷い込んでいたのは確かなんだ。
+	OutputLine(NULL, "でも、いつの間にかとてつもなく恐ろしい世界に迷い込んでいたのは確かなんだ。",
+			NULL, "But before I had realized, I had strayed into an utterly terrifying world.", Line_Normal); 
+	ClearMessage();
+
+//rその最初は、………本当に些細なことの積み重なりだったような気がする。
+	OutputLine(NULL, "その最初は、………本当に些細なことの積み重なりだったような気がする。",
+			NULL, "I think it started out......... with the littlest of things which piled up on top of each other.", Line_Normal); 
+	ClearMessage();
+
+//rこうして普段の自分が考えれば、馬鹿馬鹿しくて吹き出してしまいそうな下らないこと。
+	OutputLine(NULL, "こうして普段の自分が考えれば、馬鹿馬鹿しくて吹き出してしまいそうな下らないこと。",
+			NULL, "If it were the usual me, I would have found those things ridiculous and brushed them off.", Line_Normal); 
+	ClearMessage();
+
+//r……そういうことが全て引っかかって無視できなくなる、……そういう病気なんだ。
+	OutputLine(NULL, "……そういうことが全て引っかかって無視できなくなる、……そういう病気なんだ。",
+			NULL, "......Those kind of things begin to bother you and you can't get them out of your head.......that's the kind of illness it is.", Line_Normal); 
+	ClearMessage();
+
+//r…これが病気と呼べるならの話だが。
+	OutputLine(NULL, "…これが病気と呼べるならの話だが。",
+			NULL, "...If this could be considered an illness, that is.", Line_Normal); 
+	ClearMessage();
+
+//rでも、…理由はあるはずだった。
+	OutputLine(NULL, "でも、…理由はあるはずだった。",
+			NULL, "But... there had to be some reason behind this.", Line_Normal); 
+	ClearMessage();
+
+//r世界がおかしくなる根本的な切っ掛けがあったはずなのだ。
+	OutputLine(NULL, "世界がおかしくなる根本的な切っ掛けがあったはずなのだ。",
+			NULL, "Some kind of a trigger that fundamentally drives the world insane.", Line_Normal); 
+	ClearMessage();
+
+//rでもきっと、それはとても小さくて気付けない何かなのだ。
+	OutputLine(NULL, "でもきっと、それはとても小さくて気付けない何かなのだ。",
+			NULL, But I'm sure, it's something so minor that we aren't privy to and can't recognize.`"", Line_Normal); 
+	ClearMessage();
+
+//r…しかもその理由は悲しいくらいに判り難くて、………多分、死ぬまで気付かない。
+	OutputLine(NULL, "…しかもその理由は悲しいくらいに判り難くて、………多分、死ぬまで気付かない。",
+			NULL, "...Moreover that trigger is sadly so unintelligible....... that we probably won't understand it for as long as we live.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/m_hi3", 1000 );
+
+	DrawBustshot( 3, "sprite/normal/me1a_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300634.「親戚にお医者がいてね、ちょっと聞いてみたんだけど。kvS09/03/170300635.脳とかに腫瘍が出来て、たまたまそれが珍しいところだったりすると、性格が急に変わったり、普段と別人みたいになってしまうことがあったりするんだって」
+	PlaySE(4, "ps3/s09/03/170300634", 256, 64);
+	OutputLine(NULL, "「親戚にお医者がいてね、ちょっと聞いてみたんだけど。",
+			NULL, "\"Amongst my relatives, there's a doctor, and I talked to them about this.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300635", 256, 64);
+	OutputLine(NULL, "脳とかに腫瘍が出来て、たまたまそれが珍しいところだったりすると、性格が急に変わったり、普段と別人みたいになってしまうことがあったりするんだって」",
+			NULL, "Say if someone gets a brain tumour, and it happens to be in a strange location, they may start showing personality changes and in certain cases, may act like a different person altogether.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_wink_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300636.「大昔はこの病気が、悪魔憑きや狐憑きなんて呼ばれて、オカルト的に脚色されてたこともあるんだってさ」
+	PlaySE(4, "ps3/s09/03/170300636", 256, 64);
+	OutputLine(NULL, "「大昔はこの病気が、悪魔憑きや狐憑きなんて呼ばれて、オカルト的に脚色されてたこともあるんだってさ」",
+			NULL, "\"In olden times, this condition was treated as a demonic possession or bewitchery by a fox spirit, and was often dramatized in an occultic fashion.\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101127.「……ってことはつまり、脳と言う体の一部に起きた肉体的な病気ってわけか」
+	PlaySE(4, "ps3/s09/01/170101127", 256, 64);
+	OutputLine(NULL, "「……ってことはつまり、脳と言う体の一部に起きた肉体的な病気ってわけか」",
+			NULL, "\"So in other words, it's actually a physiological condition that's caused by one part of the body—the brain?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1b_majime_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300637.「今回に関しては、精神的と捉えてもいいかもしれないね。kvS09/03/170300638.……レナは、リナ・鉄平殺しの後、かなり動揺していて心が不安定になってた時期があった」
+	PlaySE(4, "ps3/s09/03/170300637", 256, 64);
+	OutputLine(NULL, "「今回に関しては、精神的と捉えてもいいかもしれないね。",
+			NULL, "\"In our case, I guess we can perceive it as a psychological issue.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300638", 256, 64);
+	OutputLine(NULL, "……レナは、リナ・鉄平殺しの後、かなり動揺していて心が不安定になってた時期があった」",
+			NULL, "......After murdering Rina and Teppei, Rena was rather shaken and unstable for a time.\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300639.「そんな時期に、大石のバカタレが、富竹さんたちの事件を大袈裟に吹き込むもんだから…」
+	PlaySE(4, "ps3/s09/03/170300639", 256, 64);
+	OutputLine(NULL, "「そんな時期に、大石のバカタレが、富竹さんたちの事件を大袈裟に吹き込むもんだから…」",
+			NULL, "\"In this sort of situation, that retard Ooishi feeds her the exaggerated incident of Tomitake-san and the others...\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101128.「…………大石さんって人もさ、鷹野さんのスクラップ帳に少し似てるとこがあるかもな」
+	PlaySE(4, "ps3/s09/01/170101128", 256, 64);
+	OutputLine(NULL, "「…………大石さんって人もさ、鷹野さんのスクラップ帳に少し似てるとこがあるかもな」",
+			NULL, "\"..........Ooishi-san actually has something in common with Takano-san's scrapbooks.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_wink_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300640.「へぇ？　どの辺が？」
+	PlaySE(4, "ps3/s09/03/170300640", 256, 64);
+	OutputLine(NULL, "「へぇ？　どの辺が？」",
+			NULL, "\"Huh? What do you mean?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101129.「……何て言うのかな、…雛見沢村連続怪死事件というものが、存在しているというあたりについて妄信しているというか。kvS09/01/170101130.………現に５年連続で起こってるのにこんなことを言うのもなんだけど」
+	PlaySE(4, "ps3/s09/01/170101129", 256, 64);
+	OutputLine(NULL, "「……何て言うのかな、…雛見沢村連続怪死事件というものが、存在しているというあたりについて妄信しているというか。",
+			NULL, "\"......How do I put this... They both blindly believe that the Series of Mysterious Deaths in Hinamizawa exists.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101130", 256, 64);
+	OutputLine(NULL, "………現に５年連続で起こってるのにこんなことを言うのもなんだけど」",
+			NULL, ".........And in fact, it's been going on for 5 years straight, so this might be a bit out there.\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101131.「……俺さ、…もともと連続事件なんて存在しないんじゃないかって思ってる」
+	PlaySE(4, "ps3/s09/01/170101131", 256, 64);
+	OutputLine(NULL, "「……俺さ、…もともと連続事件なんて存在しないんじゃないかって思ってる」",
+			NULL, "\"......You know, I... I feel like the Series of Incidents doesn't really exist.\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/sora", 1000 );
+
+//r確かに不思議な事件が５年連続で起こってる。
+	OutputLine(NULL, "確かに不思議な事件が５年連続で起こってる。",
+			NULL, "Without doubt, strange incidents have been happening for 5 years consecutively now.", Line_Normal); 
+	ClearMessage();
+
+//r……でもそれは、個々に解決してることで、…たとえて言うなら、俺やレナの話さなくてもいい過去によく似ている。
+	OutputLine(NULL, "……でもそれは、個々に解決してることで、…たとえて言うなら、俺やレナの話さなくてもいい過去によく似ている。",
+			NULL, "......However, they've all been resolved individually... and if I were to think of an analogy—they're like the pasts of Rena and I, which we'd rather not talk about.", Line_Normal); 
+	ClearMessage();
+
+//r連続怪死事件だから、今年も何か起こるんだ。
+	OutputLine(NULL, "連続怪死事件だから、今年も何か起こるんだ。",
+			NULL, "Because they think of it as a "Series of Mysterious Deaths", something happens again this year.", Line_Normal); 
+	ClearMessage();
+
+//rだから陰謀があって、k園崎家が暗躍していて……kという連鎖的な妄想が、そもそもおかしいんじゃないだろうか。
+	OutputLine(NULL, "だから陰謀があって、",
+			NULL, "And that's why there's a conspiracy,", Line_WaitForInput); 
+	OutputLine(NULL, "園崎家が暗躍していて……",
+			NULL, "And everyone thinks the Sonozaki family is pulling the strings from the shadows......", Line_WaitForInput); 
+	OutputLine(NULL, "という連鎖的な妄想が、そもそもおかしいんじゃないだろうか。",
+			NULL, "And such contagious delusions arise—but aren't they ridiculous from the get-go?", Line_Normal); 
+	ClearMessage();
+
+//rかつての俺が、レナの不穏な過去を知って、勝手に距離を置こうとしてしまったように、………誰もがこの雛見沢の不穏な過去に対して、勝手に距離を置いてしまってるんじゃないだろうか…？
+	OutputLine(NULL, "かつての俺が、レナの不穏な過去を知って、勝手に距離を置こうとしてしまったように、",
+			NULL, "Just like back when I had learned of Rena's unsavoury past, and selfishly decided to keep a distance from a her,", Line_WaitForInput); 
+	OutputLine(NULL, "………誰もがこの雛見沢の不穏な過去に対して、勝手に距離を置いてしまってるんじゃないだろうか…？",
+			NULL, ".........Isn't everyone conveniently distancing themselves from Hinamizawa's unsettling past...? ", Line_Normal); 
+	ClearMessage();
+
+//r鷹野さんのスクラップ帳はまさにそれで、近年の事件や過去の残酷な歴史をオカルト風味に脚色して、kもっともらしい嘘をでっち上げ、園崎家が黒幕であるかのような幻想を作り出す。
+	OutputLine(NULL, "鷹野さんのスクラップ帳はまさにそれで、近年の事件や過去の残酷な歴史をオカルト風味に脚色して、",
+			NULL, "And Takano-san's scrapbooks only serve to further dramatize the recent years' incidents and Hinamizawa's cruel history in an occult fashion, ", Line_WaitForInput); 
+	OutputLine(NULL, "もっともらしい嘘をでっち上げ、園崎家が黒幕であるかのような幻想を作り出す。",
+			NULL, "Fabricating plausible lies, and creating a fantasy where the Sonozaki family are the masterminds.", Line_Normal); 
+	ClearMessage();
+
+//rそれは大石さんも同じで、k必ず、裏で園崎家が暗躍しているという思い込みが、ものごとを常に悪い方に解釈していくように思う。
+	OutputLine(NULL, "それは大石さんも同じで、",
+			NULL, "And that goes without saying for Ooishi-san too,", Line_WaitForInput); 
+	OutputLine(NULL, "必ず、裏で園崎家が暗躍しているという思い込みが、ものごとを常に悪い方に解釈していくように思う。",
+			NULL, "being prejudiced that the Sonozaki family are pulling strings in the dark, only proves to worsen the situation each time. ", Line_Normal); 
+	ClearMessage();
+
+//r……その意味では、大石さんもまた、レナと同じ妄想の病にかかっていると言えるかもしれない。
+	OutputLine(NULL, "……その意味では、大石さんもまた、レナと同じ妄想の病にかかっていると言えるかもしれない。",
+			NULL, "......In that sense, you may as well say that Ooishi-san is afflicted by the same delusional illness that Rena has.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/m_hi3", 1000 );
+
+//圭一rvS09/01/170101132.「その辺にはさー、何かあるごとに黒幕のように振舞う園崎家の責任もあるんじゃねーのかなぁ。kvS09/01/170101133.……この村では何かおかしなことがあれば全て園崎家の暗躍」
+	PlaySE(4, "ps3/s09/01/170101132", 256, 64);
+	OutputLine(NULL, "「その辺にはさー、何かあるごとに黒幕のように振舞う園崎家の責任もあるんじゃねーのかなぁ。",
+			NULL, "\"As for that, I feel like the Sonozaki family are also responsible—for acting like they're the masterminds whenever something happens.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101133", 256, 64);
+	OutputLine(NULL, "……この村では何かおかしなことがあれば全て園崎家の暗躍」",
+			NULL, ".......if something strange happens in this village, it's immediately a "dark conspiracy" by the Sonozaki family\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101134.「…それで決着をつけられてしまう魔法の言葉になっちゃってるんだよ。kvS09/01/170101135.…たとえて言えばほら、この世の現象は全てプラズマで説明できる、みたいな感じだよ」
+	PlaySE(4, "ps3/s09/01/170101134", 256, 64);
+	OutputLine(NULL, "「…それで決着をつけられてしまう魔法の言葉になっちゃってるんだよ。",
+			NULL, "\"It's almost like they're the magic words that are the solution to everything.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101135", 256, 64);
+	OutputLine(NULL, "…たとえて言えばほら、この世の現象は全てプラズマで説明できる、みたいな感じだよ」",
+			NULL, "...Like how all the phenomena in this world can be explained with plasma, or something like that.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300641.「ほーー、つまりそれは何よ。kvS09/03/170300642.園崎家が全部悪いーってわけぇ？」
+	PlaySE(4, "ps3/s09/03/170300641", 256, 64);
+	OutputLine(NULL, "「ほーー、つまりそれは何よ。",
+			NULL, "\"Well well... so in other words, you're saying,", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300642", 256, 64);
+	OutputLine(NULL, "園崎家が全部悪いーってわけぇ？」",
+			NULL, "that it's all the Sonozaki family's fault?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101136.「そうだ、お前が全部悪い。kvS09/01/170101137.よって、お前の名前は今日からプラズマ魅音と呼ぶ。kvS09/01/170101138.うは、何だかレスラーみたいな名前だなぁ」
+	PlaySE(4, "ps3/s09/01/170101136", 256, 64);
+	OutputLine(NULL, "「そうだ、お前が全部悪い。",
+			NULL, "\"That's right, you only have yourself to blame.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101137", 256, 64);
+	OutputLine(NULL, "よって、お前の名前は今日からプラズマ魅音と呼ぶ。",
+			NULL, "And so, from today your name's gonna be Plasma Mion.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101138", 256, 64);
+	OutputLine(NULL, "うは、何だかレスラーみたいな名前だなぁ」",
+			NULL, "Woah, that almost sounds like a wrestler's nickname\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300643.「ほほー、プロレスラー大いに結構！」
+	PlaySE(4, "ps3/s09/03/170300643", 256, 64);
+	OutputLine(NULL, "「ほほー、プロレスラー大いに結構！」",
+			NULL, "\"Hoho~ A pro wrestler, that's absolutely fantastic!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me1b_akuwarai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS09/03/170300644.「そうだ圭ちゃん、コブラツイストって知ってるー？！」
+	PlaySE(4, "ps3/s09/03/170300644", 256, 64);
+	OutputLine(NULL, "「そうだ圭ちゃん、コブラツイストって知ってるー？！」",
+			NULL, "\"Oh yeah, Kei-chan, have you heard of the Cobra Twist~?\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("background/sora", 1000 );
+
+//圭一rvS09/01/170101139.「やや、やめろ、このクソ暑いのに絡みつくな！！」
+	PlaySE(4, "ps3/s09/01/170101139", 256, 64);
+	OutputLine(NULL, "「やや、やめろ、このクソ暑いのに絡みつくな！！」",
+			NULL, "\"No wait, stop it, it's fucking humid today, get off me!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "nageru", 256, 64);
+
+	PlaySE(3, "nageru", 256, 64);
+
+//圭一rvS09/01/170101140.「ぎゃぎゃ痛てて！！」
+	PlaySE(4, "ps3/s09/01/170101140", 256, 64);
+	OutputLine(NULL, "「ぎゃぎゃ痛てて！！」",
+			NULL, "\"Gahhhhh, that hurts!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+
+	PlaySE(3, "kyupirn", 256, 64);
+
+	PlaySE(3, "daidageki", 256, 64);
+
+//圭一rvS09/01/170101141.「ふぎゃーーッ！！！」
+	PlaySE(4, "ps3/s09/01/170101141", 256, 64);
+	OutputLine(NULL, "「ふぎゃーーッ！！！」",
+			NULL, "\"Ugyaaaahhhh——!!!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g1", 1000 );
+
+	DrawScene("black", 1000 );
+
+	PlaySE(3, "door", 256, 64);
+
+	DrawScene("background/gk3", 1000 );
+
+	DrawBustshot( 3, "sprite/normal/sa1a_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS09/04/170400147.「おはようございますですわ、圭一さん」
+	PlaySE(4, "ps3/s09/04/170400147", 256, 64);
+	OutputLine(NULL, "「おはようございますですわ、圭一さん」",
+			NULL, "\"Why, good morning to you, Keiichi-san. \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/ri1_def_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS09/05/170500232.「……おはようなのです」
+	PlaySE(4, "ps3/s09/05/170500232", 256, 64);
+	OutputLine(NULL, "「……おはようなのです」",
+			NULL, "\".......Good morning. \"", Line_Normal); 
+	ClearMessage();
+
+//r俺と魅音が２人で来たことを知り、沙都子も梨花ちゃんも少し寂しそうな顔をした。
+	OutputLine(NULL, "俺と魅音が２人で来たことを知り、沙都子も梨花ちゃんも少し寂しそうな顔をした。",
+			NULL, "Knowing that Mion and I had come by ourselves, Satoko and Rika-chan made long faces.", Line_Normal); 
+	ClearMessage();
+
+//r…俺たちが何事もなかったかのように３人で登校してきたなら、どんなに喜んだことだろう。
+	OutputLine(NULL, "…俺たちが何事もなかったかのように３人で登校してきたなら、どんなに喜んだことだろう。",
+			NULL, "...I wonder how much happier they would've been, had all three of us came to school like nothing had happened.", Line_Normal); 
+	ClearMessage();
+
+//rだが、クラス全体は、レナがいないことをbとが.<咎>めようとはせず、いつもの賑やかな朝の様子と変わらなかった。
+	OutputLine(NULL, "だが、クラス全体は、レナがいないことを咎(とが)めようとはせず、いつもの賑やかな朝の様子と変わらなかった。",
+			NULL, "However, nobody in class nagged us about Rena's absence and the morning went on, as lively as it always was.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("background/gk1", 1000 );
+
+//r知恵先生がもうじきやって来て、朝のホームルームになるだろう。
+	OutputLine(NULL, "知恵先生がもうじきやって来て、朝のホームルームになるだろう。",
+			NULL, "It was almost time for Chie sensei to come in, and then the morning homeroom would begin.", Line_Normal); 
+	ClearMessage();
+
+//rそれまでのわずかな時間すら惜しいらしくて、みんなは教室内でバタバタとはしゃぎ回る。
+	OutputLine(NULL, "それまでのわずかな時間すら惜しいらしくて、みんなは教室内でバタバタとはしゃぎ回る。",
+			NULL, "Even the small timeframe between that seemed wasteful, so everyone prattled on merrily inside the classroom.", Line_Normal); 
+	ClearMessage();
+
+//女子rvS09/00/girlA17001.「ねーー、今日はくさいーーー、窓しめてー」
+	PlaySE(4, "ps3/s09/00/girla17001", 256, 64);
+	OutputLine(NULL, "「ねーー、今日はくさいーーー、窓しめてー」",
+			NULL, "\"Hey~, it kinda stinks outside today———, close the window—\"", Line_Normal); 
+	ClearMessage();
+
+//少年rvS09/00/boyA17001.「ばぁか、窓を閉めたらもっと暑くなるんだよー！！」
+	PlaySE(4, "ps3/s09/00/boya17001", 256, 64);
+	OutputLine(NULL, "「ばぁか、窓を閉めたらもっと暑くなるんだよー！！」",
+			NULL, "\"Idiot, it's only gonna get hotter in here if we shut the windows—!!\"", Line_Normal); 
+	ClearMessage();
+
+//rそう言えば今日はガソリンだか何だかの臭いがひどいな。
+	OutputLine(NULL, "そう言えば今日はガソリンだか何だかの臭いがひどいな。",
+			NULL, "Speaking of which, the smell of gasoline or something was pretty pungent today. ", Line_Normal); 
+	ClearMessage();
+
+//r営林署の人がどこかで重機に燃料でも入れてるのだろう。
+	OutputLine(NULL, "営林署の人がどこかで重機に燃料でも入れてるのだろう。",
+			NULL, "The Forestry Service people are probably fuelling their heavy machinery nearby or something. ", Line_Normal); 
+	ClearMessage();
+
+//rそれで窓際の生徒が臭いから窓を閉めたいと騒いでいるのだ。
+	OutputLine(NULL, "それで窓際の生徒が臭いから窓を閉めたいと騒いでいるのだ。",
+			NULL, "And so the kids next to the windows were yelling about wanting to close them. ", Line_Normal); 
+	ClearMessage();
+
+//rこの辺がうちが普通の学校じゃないところだ。k結局、営林署の間借りだからなぁ。
+	OutputLine(NULL, "この辺がうちが普通の学校じゃないところだ。",
+			NULL, "It's most likely because our school wasn't a normal one. ", Line_WaitForInput); 
+	OutputLine(NULL, "結局、営林署の間借りだからなぁ。",
+			NULL, "We were just tenants at the Forestry Service Agency's office, after all.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/me1a_tokui_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS09/03/170300645.「いやいや、こんなの大したことないって！kvS09/03/170300646.　いつだったかなぁ、カイズカイブキを剪定した枝葉をトラック山盛り何杯分か運び込んできたことがあってさー！」
+	PlaySE(4, "ps3/s09/03/170300645", 256, 64);
+	OutputLine(NULL, "「いやいや、こんなの大したことないって！",
+			NULL, "\"Geez, this isn't a big deal at all!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300646", 256, 64);
+	OutputLine(NULL, "　いつだったかなぁ、カイズカイブキを剪定した枝葉をトラック山盛り何杯分か運び込んできたことがあってさー！」",
+			NULL, "I wonder when it was, when they were pruning the Chinese juniper trees, and they had truckloads of scraps and foliage to carry out—!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/me1b_akuwarai_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS09/03/170300647.「あれはひどかった、あの独特の刺激臭は頭痛を起こさせるよねぇ」
+	PlaySE(4, "ps3/s09/03/170300647", 256, 64);
+	OutputLine(NULL, "「あれはひどかった、あの独特の刺激臭は頭痛を起こさせるよねぇ」",
+			NULL, "\"That was the worst, that peculiar smell really gives you headaches, you know~\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa1b_yareyare_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS09/04/170400148.「カイズカイブキって何ですの？」
+	PlaySE(4, "ps3/s09/04/170400148", 256, 64);
+	OutputLine(NULL, "「カイズカイブキって何ですの？」",
+			NULL, "\"What's a 'Chinese juniper tree'? \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/ri1_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS09/05/170500233.「……みー。kvS09/05/170500234.お野菜の名前なのです」
+	PlaySE(4, "ps3/s09/05/170500233", 256, 64);
+	OutputLine(NULL, "「……みー。",
+			NULL, "\".......Mi—", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/05/170500234", 256, 64);
+	OutputLine(NULL, "お野菜の名前なのです」",
+			NULL, "It's the name of a vegetable. \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/ri1_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS09/05/170500235.「たまにカレーに入ってますのですよ？」
+	PlaySE(4, "ps3/s09/05/170500235", 256, 64);
+	OutputLine(NULL, "「たまにカレーに入ってますのですよ？」",
+			NULL, "\"They put it in curry sometimes, didn't you know?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101142.「わっはっはっは！kvS09/01/170101143.　今度、スーパーに行ったら探してみろ」
+	PlaySE(4, "ps3/s09/01/170101142", 256, 64);
+	OutputLine(NULL, "「わっはっはっは！",
+			NULL, "\"Bwahahaha!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101143", 256, 64);
+	OutputLine(NULL, "　今度、スーパーに行ったら探してみろ」",
+			NULL, " Try looking for it the next time you go to the supermarket. \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa1a_akireru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS09/04/170400149.「？？？kvS09/04/170400150.　よくわかんないけど、最初は梨花と圭一さんに毒見をさせた方が良さそうでございますわね」
+	PlaySE(4, "ps3/s09/04/170400149", 256, 64);
+	OutputLine(NULL, "「？？？",
+			NULL, "\" ??? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/04/170400150", 256, 64);
+	OutputLine(NULL, "　よくわかんないけど、最初は梨花と圭一さんに毒見をさせた方が良さそうでございますわね」",
+			NULL, " I don't really understand, but it sounds like I should have Rika and Keiichi-san taste-test it first, if I must. \"", Line_Normal); 
+	ClearMessage();
+
+//少年rvS09/00/boyB17001.「あれーーー？！kvS09/00/boyB17002.　俺たちのボールがねえー！kvS09/00/boyB17003.　北条、お前がまた隠したんだろー！！」
+	PlaySE(4, "ps3/s09/00/boyb17001", 256, 64);
+	OutputLine(NULL, "「あれーーー？！",
+			NULL, "\"Hey———?! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/boyb17002", 256, 64);
+	OutputLine(NULL, "　俺たちのボールがねえー！",
+			NULL, " Our ball is missing—! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/boyb17003", 256, 64);
+	OutputLine(NULL, "　北条、お前がまた隠したんだろー！！」",
+			NULL, "Hōjō, did you hide it somewhere again—?!! \"", Line_Normal); 
+	ClearMessage();
+
+//rさっきからボールをさがしている男子たちが沙都子に言った。
+	OutputLine(NULL, "さっきからボールをさがしている男子たちが沙都子に言った。",
+			NULL, "The boys who'd been searching for their ball all this time called out to Satoko.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa1a_odoroki_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS09/04/170400151.「誰がそんなものを隠しますの」
+	PlaySE(4, "ps3/s09/04/170400151", 256, 64);
+	OutputLine(NULL, "「誰がそんなものを隠しますの」",
+			NULL, "\"Who'd want to hide something like that. \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa1a_akireru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS09/04/170400152.「どうせ隠すならもう少し気の利いたものを隠しましてよ」
+	PlaySE(4, "ps3/s09/04/170400152", 256, 64);
+	OutputLine(NULL, "「どうせ隠すならもう少し気の利いたものを隠しましてよ」",
+			NULL, "\"If I were to hide something, it'd be something more tasteful, I'll have you know. \"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/me1a_warai_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS09/03/170300648.「お、ほらほら先生来たよー！！kvS09/03/170300649.　みんな席に着きなーーー！！」
+	PlaySE(4, "ps3/s09/03/170300648", 256, 64);
+	OutputLine(NULL, "「お、ほらほら先生来たよー！！",
+			NULL, "\"Oh, guys, here comes the teach—!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300649", 256, 64);
+	OutputLine(NULL, "　みんな席に着きなーーー！！」",
+			NULL, "All of you, back to your seats———!!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	PlaySE(3, "door", 256, 64);
+
+	DrawScene("background/gk3", 1000 );
+
+	DrawBustshot( 3, "sprite/normal/tie_1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//知恵rvS09/22/171400045.「はい、皆さん。kvS09/22/171400046.席に着いてくださいー」
+	PlaySE(4, "ps3/s09/22/171400045", 256, 64);
+	OutputLine(NULL, "「はい、皆さん。",
+			NULL, "\"Yes, everyone. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400046", 256, 64);
+	OutputLine(NULL, "席に着いてくださいー」",
+			NULL, "Please take your seats—\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/gr2", 1000 );
+
+	FadeOutBGM(2, 200, FALSE);
+
+	PlaySE(3, "chaimu", 256, 64);
+
+	DrawScene("background/sora", 1000 );
+
+	PlayBGM( 1, "semi", 128, 0 );
+
+//r授業の間、俺はレナのことをずっと考えていた。
+	OutputLine(NULL, "授業の間、俺はレナのことをずっと考えていた。",
+			NULL, "Throughout the class, Rena was all I could think about.", Line_Normal); 
+	ClearMessage();
+
+//rレナが昨夜言っていた、…逆転の一手とは何だろうと。
+	OutputLine(NULL, "レナが昨夜言っていた、…逆転の一手とは何だろうと。",
+			NULL, "About what the 'comeback victory' she told me about last night was.", Line_Normal); 
+	ClearMessage();
+
+//r鷹野さんの妄想によるなら、細菌テロの黒幕は御三家とそれを支配する信者集団。
+	OutputLine(NULL, "鷹野さんの妄想によるなら、細菌テロの黒幕は御三家とそれを支配する信者集団。",
+			NULL, "If we were to go by Takano-san's wild ideas, the big bads behind the bioterrorism plot are the Three Great Houses and the mass of devout believers they control.", Line_Normal); 
+	ClearMessage();
+
+//r………簡単に言えば園崎本家のことを指すだろう。
+	OutputLine(NULL, "………簡単に言えば園崎本家のことを指すだろう。",
+			NULL, ".........To put it plainly, we're talking about the Sonozaki Main House here.", Line_Normal); 
+	ClearMessage();
+
+//rそれに対し、レナが単身でできることって何だろう？
+	OutputLine(NULL, "それに対し、レナが単身でできることって何だろう？",
+			NULL, "I wonder how Rena plans to fight against them, all by herself.", Line_Normal); 
+	ClearMessage();
+
+//r園崎本家ってのは、魅音と頭首である婆さんの二人暮らしらしい。
+	OutputLine(NULL, "園崎本家ってのは、魅音と頭首である婆さんの二人暮らしらしい。",
+			NULL, "Speaking of the 'Sonozaki Main House', it comprises of Mion and the family head Oryou, who live by themselves.", Line_Normal); 
+	ClearMessage();
+
+//r……刃物を持ったレナが押し入ることも考えられなくない。
+	OutputLine(NULL, "……刃物を持ったレナが押し入ることも考えられなくない。",
+			NULL, ".......We can't cross out the possibility that Rena, who is in possession of a blade, may try to force her way in.", Line_Normal); 
+	ClearMessage();
+
+//rでも、俺はその可能性は昨夜の内に思いついていた。
+	OutputLine(NULL, "でも、俺はその可能性は昨夜の内に思いついていた。",
+			NULL, "But I had already thought of that last night.", Line_Normal); 
+	ClearMessage();
+
+//rだから魅音に警告の電話をした。
+	OutputLine(NULL, "だから魅音に警告の電話をした。",
+			NULL, "Which is why I had called up Mion and warned her.", Line_Normal); 
+	ClearMessage();
+
+//r今朝の登校時に聞いたのだが、早朝から園崎家にはボディガードの若い衆が来ているらしい。
+	OutputLine(NULL, "今朝の登校時に聞いたのだが、早朝から園崎家にはボディガードの若い衆が来ているらしい。",
+			NULL, "From what I'd heard on the way to school, a couple of young bodyguards had arrived early this morning at the Sonozaki Mansion.", Line_Normal); 
+	ClearMessage();
+
+//r魅音の方にもボディガードが付くと言っていた。
+	OutputLine(NULL, "魅音の方にもボディガードが付くと言っていた。",
+			NULL, "Apparently, Mion will have bodyguards tailing her too.", Line_Normal); 
+	ClearMessage();
+
+//r……校門のところに見慣れない黒塗りの車がいつの間にか停まっているが、多分あれだろう。
+	OutputLine(NULL, "……校門のところに見慣れない黒塗りの車がいつの間にか停まっているが、多分あれだろう。",
+			NULL, "......At the school gates, an unfamiliar black car had been parked before we had even noticed, but that was probably it. ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r………しかし、…あの『寄生虫説』によるなら、園崎家のトップを討てばそれでおしまいという話ではなかったはずだ。
+	OutputLine(NULL, "………しかし、…あの『寄生虫説』によるなら、園崎家のトップを討てばそれでおしまいという話ではなかったはずだ。",
+			NULL, ".........But, ...going by that 'parasitic organism theory', it's not as simple as taking out the top dog.", Line_Normal); 
+	ClearMessage();
+
+//rレナに取り憑いている妄想によるならば、レナにとっての『勝利条件』は複雑だ。
+	OutputLine(NULL, "レナに取り憑いている妄想によるならば、レナにとっての『勝利条件』は複雑だ。",
+			NULL, "If we go by Rena's delusions, her 'conditions for victory' become more complex.", Line_Normal); 
+	ClearMessage();
+
+//r園崎家の背後にいる妄信者団体を暴かなくちゃならないし、k『寄生虫』の研究を破壊しなくてはならない。
+	OutputLine(NULL, "園崎家の背後にいる妄信者団体を暴かなくちゃならないし、",
+			NULL, "She has to stop the band of religious believers, who are controlled by the Sonozaki Family,", Line_WaitForInput); 
+	OutputLine(NULL, "『寄生虫』の研究を破壊しなくてはならない。",
+			NULL, "and she has to bring an end to the research into the 'parasites'.", Line_Normal); 
+	ClearMessage();
+
+//rまた、レナ自身も怪しげな毒物によって余命がないことになっている。
+	OutputLine(NULL, "また、レナ自身も怪しげな毒物によって余命がないことになっている。",
+			NULL, "Moreover, Rena also feels her life is in danger, after being infected by some strange poison.", Line_Normal); 
+	ClearMessage();
+
+//r……この状況で、起死回生の逆転の一手なんて、一体何ができるんだ？
+	OutputLine(NULL, "……この状況で、起死回生の逆転の一手なんて、一体何ができるんだ？",
+			NULL, "......In this state, exactly what sort of comeback is going to revive her, from the brink of death?", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/a/waku_b", 1000 );
+
+	DrawScene("background/js1", 1000 );
+
+//r妄信者団体を、……たとえば村の役員会と読み解くか？
+	OutputLine(NULL, "妄信者団体を、……たとえば村の役員会と読み解くか？",
+			NULL, "Suppose we were to interpret "band of religious followers", as the Village Council, per se,", Line_Normal); 
+	ClearMessage();
+
+//rそうなれば、村の老人たちが神社の集会所で会合をする時に襲うことが考えられる。
+	OutputLine(NULL, "そうなれば、村の老人たちが神社の集会所で会合をする時に襲うことが考えられる。",
+			NULL, " In that case, she may attack when the village elderly gather at the assmebly hall for their meeting.", Line_Normal); 
+	ClearMessage();
+
+//rでも、役員会の会合なんて、多分、多くても月に１度くらいしかやらないだろう。kそれが都合よく今日だとは考え難い。
+	OutputLine(NULL, "でも、役員会の会合なんて、多分、多くても月に１度くらいしかやらないだろう。",
+			NULL, "But, the Village Council meetings happen only once a month at most. ", Line_WaitForInput); 
+	OutputLine(NULL, "それが都合よく今日だとは考え難い。",
+			NULL, "It's too good to be true to think that they're going to take place today. ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/sinryou_soto1", 1000 );
+
+//r『寄生虫』の研究所は、……多分、診療所ということになっているのだろう。
+	OutputLine(NULL, "『寄生虫』の研究所は、……多分、診療所ということになっているのだろう。",
+			NULL, "The reseatch lab of the 'parasites' would most likely be...... the clinic.", Line_Normal); 
+	ClearMessage();
+
+//rレナは最初からあそこを怪しいと決め付けていた。k…今頃、レナの頭の中では、『怪しい』ではなく『確固たる証拠がある』に昇格しているに違いない。
+	OutputLine(NULL, "レナは最初からあそこを怪しいと決め付けていた。",
+			NULL, "Rena had pegged that place as suspicious from the very beginning. ", Line_WaitForInput); 
+	OutputLine(NULL, "…今頃、レナの頭の中では、『怪しい』ではなく『確固たる証拠がある』に昇格しているに違いない。",
+			NULL, "...By this time, inside Rena's head, 'suspicious' would have escalated to 'irrefutable evidence'. ", Line_Normal); 
+	ClearMessage();
+
+//rなら診療所を襲う？
+	OutputLine(NULL, "なら診療所を襲う？",
+			NULL, "If so, is she going to attack the clinic?", Line_Normal); 
+	ClearMessage();
+
+//r………アクション映画じゃあるまいし、レナが単身襲ってどうするというんだ。k……まさか放火でもするのか？
+	OutputLine(NULL, "………アクション映画じゃあるまいし、レナが単身襲ってどうするというんだ。",
+			NULL, ".........It's not like it's an action movie—what's Rena going to do attacking that place all by herself? ", Line_WaitForInput); 
+	OutputLine(NULL, "……まさか放火でもするのか？",
+			NULL, "......don't tell me she's going to set fire to the place or something?", Line_Normal); 
+	ClearMessage();
+
+//rいや、それじゃ意味がない。
+	OutputLine(NULL, "いや、それじゃ意味がない。",
+			NULL, "Nah, that's meaningless.", Line_Normal); 
+	ClearMessage();
+
+//r陰謀を暴くってことは、寄生虫を研究していた証拠を掴まなければならない。
+	OutputLine(NULL, "陰謀を暴くってことは、寄生虫を研究していた証拠を掴まなければならない。",
+			NULL, "In order to unveil the conspiracy, she has to obtain evidence of a research into the parasites. ", Line_Normal); 
+	ClearMessage();
+
+//r……診療所に乗り込んで、怪しげなホルマリン漬けの標本でも漁る…？
+	OutputLine(NULL, "……診療所に乗り込んで、怪しげなホルマリン漬けの標本でも漁る…？",
+			NULL, "......Does she plan to sneak inside the clinic and fish out one of those weird bottled formalin specimens? ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそして最後の、レナ自身の余命が問題だ。
+	OutputLine(NULL, "そして最後の、レナ自身の余命が問題だ。",
+			NULL, "And lastly, Rena's lifespan itself was its own problem.", Line_Normal); 
+	ClearMessage();
+
+//r………絶望的に不利な状況下で、自らにも残された時間が少ないと知ったら、刺し違えてでもと短絡的になることは考えられる。
+	OutputLine(NULL, "………絶望的に不利な状況下で、自らにも残された時間が少ないと知ったら、刺し違えてでもと短絡的になることは考えられる。",
+			NULL, "........Being put in a disadvantageous and desperate position, I can understand why she may turn hasty instead, if she thought she didn't have long to live anyway. ", Line_Normal); 
+	ClearMessage();
+
+//r……でもレナは、全てが終わったら元の生活に戻れると信じていたような気がする。
+	OutputLine(NULL, "……でもレナは、全てが終わったら元の生活に戻れると信じていたような気がする。",
+			NULL, "......But Rena seemed to think that we would regain our happy lives, after this was over.", Line_Normal); 
+	ClearMessage();
+
+//r何の根拠もないのだが、……レナは生きて勝利すると言っていたように思うのだ。
+	OutputLine(NULL, "何の根拠もないのだが、……レナは生きて勝利すると言っていたように思うのだ。",
+			NULL, "There's no basis for this but, ......I feel like Rena meant that she'll win and come out of this alive.", Line_Normal); 
+	ClearMessage();
+
+//rならば、………解毒剤のようなものがあるのか？
+	OutputLine(NULL, "ならば、………解毒剤のようなものがあるのか？",
+			NULL, "In that case, ......is there an antidote or something?", Line_Normal); 
+	ClearMessage();
+
+//rそれが本当の解毒剤でなくてもいいのだ。
+	OutputLine(NULL, "それが本当の解毒剤でなくてもいいのだ。",
+			NULL, "It's alright even if that isn't an authentic antidote. ", Line_Normal); 
+	ClearMessage();
+
+//rレナの妄想の中で解毒剤という設定になるならば、米のとぎ汁であっても構わないに違いない。
+	OutputLine(NULL, "レナの妄想の中で解毒剤という設定になるならば、米のとぎ汁であっても構わないに違いない。",
+			NULL, "Even if it's just rice water, it's good enough if it qualifies as an antidote in Rena's delusions. ", Line_Normal); 
+	ClearMessage();
+
+//rでも、そんな簡単に入手できるなら、レナは余命が短いと嘆きはしない。
+	OutputLine(NULL, "でも、そんな簡単に入手できるなら、レナは余命が短いと嘆きはしない。",
+			NULL, "But, if it's that easily obtainable, Rena would never lament about not having long to live. ", Line_Normal); 
+	ClearMessage();
+
+//r……その解毒剤の入手はおそらく困難なのだ。
+	OutputLine(NULL, "……その解毒剤の入手はおそらく困難なのだ。",
+			NULL, "......I feel like obtaining that antidote will be the most troublesome for her. ", Line_Normal); 
+	ClearMessage();
+
+//r…もっとも容易に考えられる設定は、…秘密研究所である診療所のどこかに隠されている…だろう。
+	OutputLine(NULL, "…もっとも容易に考えられる設定は、…秘密研究所である診療所のどこかに隠されている…だろう。",
+			NULL, "...The simplest scenario I can think of, is that it must be hidden somewhere in the secret research facility—the clinic.", Line_Normal); 
+	ClearMessage();
+
+//rこうして統合すると、……何だか監督と診療所がとても危険な予感がした。
+	OutputLine(NULL, "こうして統合すると、……何だか監督と診療所がとても危険な予感がした。",
+			NULL, "The more I think of it that way, ......the more I feel like the director and the clinic are in grave danger. ", Line_Normal); 
+	ClearMessage();
+
+//rそう言えば、村の老人たちって、サロン感覚で診療所の待合室に入り浸ってなかったっけ？
+	OutputLine(NULL, "そう言えば、村の老人たちって、サロン感覚で診療所の待合室に入り浸ってなかったっけ？",
+			NULL, "Now that I think about it, weren't the village seniors having a salon gathering at the clinic and lounging in the waiting room?", Line_Normal); 
+	ClearMessage();
+
+//r……村の古老たちが診療所に集まったなら、それでレナの攻撃目標は全て１ヶ所に集中することになるのでは……。
+	OutputLine(NULL, "……村の古老たちが診療所に集まったなら、それでレナの攻撃目標は全て１ヶ所に集中することになるのでは……。",
+			NULL, "......With the elderly of the village gathered in the clinic, wouldn't that mean that all of Rena's targets were now under a single roof......?", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+	PlaySE(3, "chaimu", 256, 64);
+
+	DrawScene("background/gk1", 1000 );
+
+	PlayBGM(2, "hm02_12", 128, 0);
+
+//r俺はその思いつきを昼休みに魅音に打ち明けた。
+	OutputLine(NULL, "俺はその思いつきを昼休みに魅音に打ち明けた。",
+			NULL, "I told Mion about this possibility during the lunch break. ", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/me1a_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS09/03/170300650.「………普段ならそんな馬鹿な～って言いたいところだけど」
+	PlaySE(4, "ps3/s09/03/170300650", 256, 64);
+	OutputLine(NULL, "「………普段ならそんな馬鹿な～って言いたいところだけど」",
+			NULL, "/"Normally, expect my reply to be "you gotta kidding me~", ...but now /"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/me1b_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS09/03/170300651.「その可能性をまったく否定できなくもないからね。kvS09/03/170300652.本家に電話してみるよ。kvS09/03/170300653.診療所にも人を配置するように言っとく」
+	PlaySE(4, "ps3/s09/03/170300651", 256, 64);
+	OutputLine(NULL, "「その可能性をまったく否定できなくもないからね。",
+			NULL, "\"At this stage, I can't really deny the possibility. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300652", 256, 64);
+	OutputLine(NULL, "本家に電話してみるよ。",
+			NULL, "I'll go call up the Main House. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300653", 256, 64);
+	OutputLine(NULL, "診療所にも人を配置するように言っとく」",
+			NULL, "I'll also have some people stationed at the clinic.\"", Line_Normal); 
+	ClearMessage();
+
+//r魅音は俺の突拍子な思いつきにも異論を挟まなかった。
+	OutputLine(NULL, "魅音は俺の突拍子な思いつきにも異論を挟まなかった。",
+			NULL, "Mion didn't object to my outrageous idea. ", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r箸をおくと席を立ち、職員	aq室に電話を借りに行った。
+	OutputLine(NULL, "箸をおくと席を立ち、職員室に電話を借りに行った。",
+			NULL, "She puts her chopsticks down and gets up, to go the staffroom and borrow the telephone. ", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/sa1a_akireru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS09/04/170400153.「先ほどから、何だか物騒な話でございますけど。kvS09/04/170400154.……本当にレナさんがそんな恐ろしいことをなさいますの…？kvS09/04/170400155.　診療所を襲うなんて、信じられませんわ」
+	PlaySE(4, "ps3/s09/04/170400153", 256, 64);
+	OutputLine(NULL, "「先ほどから、何だか物騒な話でございますけど。",
+			NULL, "\"You seem to be discussing rather unsettling things for a while now, might I say.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/04/170400154", 256, 64);
+	OutputLine(NULL, "……本当にレナさんがそんな恐ろしいことをなさいますの…？",
+			NULL, "......Are you sure Rena-san will really take to such frightening acts...?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/04/170400155", 256, 64);
+	OutputLine(NULL, "　診療所を襲うなんて、信じられませんわ」",
+			NULL, " I simply can't believe she would attack the clinic. \"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/170101144.「するかも知れない。kvS09/01/170101145.しないかも知れない。kvS09/01/170101146.………でもな、起こっちまったらおしまいなんだよ。kvS09/01/170101147.……惨劇に抗うってことは、起こさないように戦うってことなんだから」
+	PlaySE(4, "ps3/s09/01/170101144", 256, 64);
+	OutputLine(NULL, "「するかも知れない。",
+			NULL, "\"She may. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101145", 256, 64);
+	OutputLine(NULL, "しないかも知れない。",
+			NULL, "Or she may not. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101146", 256, 64);
+	OutputLine(NULL, "………でもな、起こっちまったらおしまいなんだよ。",
+			NULL, ".........But we can't be crying over spilt milk. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/170101147", 256, 64);
+	OutputLine(NULL, "……惨劇に抗うってことは、起こさないように戦うってことなんだから」",
+			NULL, ".........We're only making sure that she doesn't stir something up at the clinic, just in case.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/ri1_komaru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS09/05/170500236.「……何事もないことを祈りたいのです」
+	PlaySE(4, "ps3/s09/05/170500236", 256, 64);
+	OutputLine(NULL, "「……何事もないことを祈りたいのです」",
+			NULL, "\"......I want to pray that nothing will happen.\"", Line_Normal); 
+	ClearMessage();
+
+//rそう、ぽつりと呟いた梨花ちゃんに、俺は…。
+	OutputLine(NULL, "そう、ぽつりと呟いた梨花ちゃんに、俺は…。",
+			NULL, "To Rika-chan who had whispered that, I...", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200002.「…ちょっと俺、魅音のところに行ってくる」
+	PlaySE(4, "ps3/s09/01/430200002", 256, 64);
+	OutputLine(NULL, "「…ちょっと俺、魅音のところに行ってくる」",
+			NULL, "\"I'll just go see Mion for a bit.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/g2", 1000 );
+
+//r二人にそう断ってから俺は教室を出て、魅音が電話をかけに行った職員室へと向かう。
+	OutputLine(NULL, "二人にそう断ってから俺は教室を出て、魅音が電話をかけに行った職員室へと向かう。",
+			NULL, "After taking my leave from them, I leave the classroom and head to the faculty office where Mion had gone to make a phone call.", Line_Normal); 
+	ClearMessage();
+
+//r…特に、そばにいたからといって俺に何かができるわけでもない。
+	OutputLine(NULL, "…特に、そばにいたからといって俺に何かができるわけでもない。",
+			NULL, "...It's not like I could do anything, even if I stayed by her. ", Line_Normal); 
+	ClearMessage();
+
+//rただ、ここで不安を抱いたまま、じっとしているのが嫌だった。
+	OutputLine(NULL, "ただ、ここで不安を抱いたまま、じっとしているのが嫌だった。",
+			NULL, "I just hated staying still doing nothing but wallow in anxiety.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	PlayBGM( 1, "denwa", 128, 0 );
+
+	FadeOutBGM(1, 200, TRUE);
+
+//葛西rvS09/15/1715000055.「わかりました。kvS09/15/1715000056.若いのを２人ほど診療所に送ります」
+	PlaySE(4, "ps3/s09/15/1715000055", 256, 64);
+	OutputLine(NULL, "「わかりました。",
+			NULL, "\"I understand. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/15/1715000056", 256, 64);
+	OutputLine(NULL, "若いのを２人ほど診療所に送ります」",
+			NULL, "I'll send two youths over to the clinic.\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300654.「まさかとは思うけどね…。kvS09/03/170300655.何をやらかすかわかったもんじゃない」
+	PlaySE(4, "ps3/s09/03/170300654", 256, 64);
+	OutputLine(NULL, "「まさかとは思うけどね…。",
+			NULL, "\"It's only just in case...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300655", 256, 64);
+	OutputLine(NULL, "何をやらかすかわかったもんじゃない」",
+			NULL, " Not because I think something will happen there.\"", Line_Normal); 
+	ClearMessage();
+
+//葛西rvS09/15/1715000057.「姿を見たら、ただちにひっ捕らえてしまって構いませんか？」
+	PlaySE(4, "ps3/s09/15/1715000057", 256, 64);
+	OutputLine(NULL, "「姿を見たら、ただちにひっ捕らえてしまって構いませんか？」",
+			NULL, "\"Is it alright for us to seize her at sight?\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300656.「……本当は嫌なんだけどなぁ…。kvS09/03/170300657.……どうしようねぇ」
+	PlaySE(4, "ps3/s09/03/170300656", 256, 64);
+	OutputLine(NULL, "「……本当は嫌なんだけどなぁ…。",
+			NULL, "\" I don't really like the sound of that...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300657", 256, 64);
+	OutputLine(NULL, "……どうしようねぇ」",
+			NULL, ".......but I guess we have no choice.\"", Line_Normal); 
+	ClearMessage();
+
+//葛西rvS09/15/1715000058.「先日の会合で、竜宮レナを確保して警察に引き渡すことで決着しています。kvS09/15/1715000059.ですので、ひっ捕らえても一応、筋は通ります」
+	PlaySE(4, "ps3/s09/15/1715000058", 256, 64);
+	OutputLine(NULL, "「先日の会合で、竜宮レナを確保して警察に引き渡すことで決着しています。",
+			NULL, "\"At the last meeting, it was established that we will hand Rena Ryūgū over to the police once we have custody of her.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/15/1715000059", 256, 64);
+	OutputLine(NULL, "ですので、ひっ捕らえても一応、筋は通ります」",
+			NULL, "Therefore, even if we capture her, we won't be straying from our word. \"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300658.「うちの体面じゃなくて、レナの心情的に気の毒だなってこと！kvS09/03/170300659.　できたら、本当に静かに静かに決着したいんだけどね…」
+	PlaySE(4, "ps3/s09/03/170300658", 256, 64);
+	OutputLine(NULL, "「うちの体面じゃなくて、レナの心情的に気の毒だなってこと！",
+			NULL, "\"This isn't about family honour, it's about concern for Rena's feelings!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300659", 256, 64);
+	OutputLine(NULL, "　できたら、本当に静かに静かに決着したいんだけどね…」",
+			NULL, " If I can, I just want to settle this all quietly...\"", Line_Normal); 
+	ClearMessage();
+
+//葛西rvS09/15/1715000060.「まぁ、お若いですから。kvS09/15/1715000061.人さえ殺さなければ大抵はごめんなさいで済みますよ」
+	PlaySE(4, "ps3/s09/15/1715000060", 256, 64);
+	OutputLine(NULL, "「まぁ、お若いですから。",
+			NULL, "\"Well, you're both very young. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/15/1715000061", 256, 64);
+	OutputLine(NULL, "人さえ殺さなければ大抵はごめんなさいで済みますよ」",
+			NULL, "As long as you don't kill anyone, just a simple apology would resolve everything.\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300663.「わっはっは。kvS09/03/170300664.まぁいいや、それじゃあくれぐれもよろしくお願いします」
+	PlaySE(4, "ps3/s09/03/170300663", 256, 64);
+	OutputLine(NULL, "「わっはっは。",
+			NULL, "\"Bwahaha. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300664", 256, 64);
+	OutputLine(NULL, "まぁいいや、それじゃあくれぐれもよろしくお願いします」",
+			NULL, "Okay then, I'll be counting on you, please take care.\"", Line_Normal); 
+	ClearMessage();
+
+//葛西rvS09/15/1715000068.「了解しました。kvS09/15/1715000069.……ではひっ捕らえてよろしいんですね？」
+	PlaySE(4, "ps3/s09/15/1715000068", 256, 64);
+	OutputLine(NULL, "「了解しました。",
+			NULL, "\"Roger that. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/15/1715000069", 256, 64);
+	OutputLine(NULL, "……ではひっ捕らえてよろしいんですね？」",
+			NULL, ".......May I take that to mean we can seize her?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/g3", 1000 );
+
+//魅音rvS09/03/170300665.「……ちゃんとタッチアウトにするんだよー？kvS09/03/170300666.　クロスプレーなんかにしないようによろしく頼みます」
+	PlaySE(4, "ps3/s09/03/170300665", 256, 64);
+	OutputLine(NULL, "「……ちゃんとタッチアウトにするんだよー？",
+			NULL, "\" Make sure it's gonna be a touchout, okay~?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300666", 256, 64);
+	OutputLine(NULL, "　クロスプレーなんかにしないようによろしく頼みます」",
+			NULL, " Try to avoid a crossplay at any point.\"", Line_Normal); 
+	ClearMessage();
+
+//r葛西さんとついつい他愛のない話をしてしまった。
+	OutputLine(NULL, "葛西さんとついつい他愛のない話をしてしまった。",
+			NULL, "I unconsciously had a very silly conversation with Kasai-san.", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "dsse08", 256, 64);
+
+//r受話器を置くと、何となく先生の目線を感じた。
+	OutputLine(NULL, "受話器を置くと、何となく先生の目線を感じた。",
+			NULL, "As soon as I put the receiver down, I somehow felt the teacher's gaze on me.", Line_Normal); 
+	ClearMessage();
+
+//r……この狭い部屋で、一緒にいるんだし、私の電話が聞こえるのは当り前だった。
+	OutputLine(NULL, "……この狭い部屋で、一緒にいるんだし、私の電話が聞こえるのは当り前だった。",
+			NULL, "......Being with me here in this small faculty room, it's only obvious she would've overheard my conversation.", Line_Normal); 
+	ClearMessage();
+
+//r知恵先生はスプーンを置くと、ちょっと悲しそうな顔で聞いてきた。
+	OutputLine(NULL, "知恵先生はスプーンを置くと、ちょっと悲しそうな顔で聞いてきた。",
+			NULL, "Chie sensei put her spoon down and spoke to me with a sad expression.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/tie_3_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//知恵rvS09/22/171400047.「……今の電話は、竜宮さんを巡る話ですか？」
+	PlaySE(4, "ps3/s09/22/171400047", 256, 64);
+	OutputLine(NULL, "「……今の電話は、竜宮さんを巡る話ですか？」",
+			NULL, "\"......Was that phone call just now, about Ryūgū-san?\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300667.「まぁ、………はい」
+	PlaySE(4, "ps3/s09/03/170300667", 256, 64);
+	OutputLine(NULL, "「まぁ、………はい」",
+			NULL, "\"Well, .........Yes.\"", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400048.「園崎さん、……竜宮さんはどうして家出をしちゃったんでしょう。kvS09/22/171400049.……お友達として、何か知ってはいませんか？」
+	PlaySE(4, "ps3/s09/22/171400048", 256, 64);
+	OutputLine(NULL, "「園崎さん、……竜宮さんはどうして家出をしちゃったんでしょう。",
+			NULL, "\"Sonozaki-san, ......I wonder why Ryūgū-san ran away from home.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400049", 256, 64);
+	OutputLine(NULL, "……お友達として、何か知ってはいませんか？」",
+			NULL, "......As her good friend, isn't there something you know?\"", Line_Normal); 
+	ClearMessage();
+
+//rおそらく、私を除いたら、レナと直接接点があった圭ちゃん以外には、今のレナの状況はわかるまい。
+	OutputLine(NULL, "おそらく、私を除いたら、レナと直接接点があった圭ちゃん以外には、今のレナの状況はわかるまい。",
+			NULL, "Apart from me, Kei-chan was the only one who was directly in contact with Rena, and it's likely even he doesn't know what her situation is right now.", Line_Normal); 
+	ClearMessage();
+
+//rだから、ほとんどの人間は、レナが家出をしたと思っている。
+	OutputLine(NULL, "だから、ほとんどの人間は、レナが家出をしたと思っている。",
+			NULL, "So, most people would normally think Rena had run away from home.", Line_Normal); 
+	ClearMessage();
+
+//rだが、家出後の警察の対応が派手過ぎた。
+	OutputLine(NULL, "だが、家出後の警察の対応が派手過ぎた。",
+			NULL, "But, corresponding with the police after a runaway is too flashy.", Line_Normal); 
+	ClearMessage();
+
+//r……スクラップ帳が特ダネだと信じた大石の大げさ野郎が、派手に騒いでレナを追い掛けすぎた。
+	OutputLine(NULL, "……スクラップ帳が特ダネだと信じた大石の大げさ野郎が、派手に騒いでレナを追い掛けすぎた。",
+			NULL, "......That pompous bastard Ooishi who thinks the scrapbooks are a big scoop, is making a huge scene out of chasing Rena", Line_Normal); 
+	ClearMessage();
+
+//r村の中をサイレンなしとはいえ、パトカー何台もで走り回り、挙句、町会の連絡網まで使った。
+	OutputLine(NULL, "村の中をサイレンなしとはいえ、パトカー何台もで走り回り、挙句、町会の連絡網まで使った。",
+			NULL, "Even if it was without the sirens, he had a couple of patrol cars cruise around the village—and in the end, ended up using the council's contact network.", Line_Normal); 
+	ClearMessage();
+
+//rだから、村の中では、レナが何か悪いことをして警察から逃げてるのではないかと思われているのだ。
+	OutputLine(NULL, "だから、村の中では、レナが何か悪いことをして警察から逃げてるのではないかと思われているのだ。",
+			NULL, "And so, the people in the village think Rena has done something bad, and was on the run from the police.", Line_Normal); 
+	ClearMessage();
+
+//r私にとっては、レナの身柄を確保することよりも、確保した後、レナの名誉を回復するためどんなカバーストーリーを作るかの方が難題なようだった。
+	OutputLine(NULL, "私にとっては、レナの身柄を確保することよりも、確保した後、レナの名誉を回復するためどんなカバーストーリーを作るかの方が難題なようだった。",
+			NULL, "As for me, I was more preoccupied with what cover story I should make up in order to protect Rena's innocence.", Line_Normal); 
+	ClearMessage();
+
+//r………散歩に出た途中で、転んで豆腐の角に頭をぶつけて記憶喪失になっていた、kそこに大石の勘違いが加わってレナが犯罪者に勘違いされて……。
+	OutputLine(NULL, "………散歩に出た途中で、転んで豆腐の角に頭をぶつけて記憶喪失になっていた、",
+			NULL, ".........While she was on a walk, she tripped and hit her head on a block of tofu and lost her memory, ", Line_WaitForInput); 
+	OutputLine(NULL, "そこに大石の勘違いが加わってレナが犯罪者に勘違いされて……。",
+			NULL, "and then, Ooishi's bad intuition led him to mistake her for a criminal.........", Line_Normal); 
+	ClearMessage();
+
+//r…安直だなー。
+	OutputLine(NULL, "…安直だなー。",
+			NULL, "That's too cliché.", Line_Normal); 
+	ClearMessage();
+
+//rとにかく今回は大石が悪役ってことが会合で決着してる。
+	OutputLine(NULL, "とにかく今回は大石が悪役ってことが会合で決着してる。",
+			NULL, "Anyway, at the last meeting, it was concluded that Ooishi was the one in the bad.", Line_Normal); 
+	ClearMessage();
+
+//r大石が珍しくへこんでる間に、あいつの名前を最大限に使わせてもらうとしよう…。
+	OutputLine(NULL, "大石が珍しくへこんでる間に、あいつの名前を最大限に使わせてもらうとしよう…。",
+			NULL, "While he's depressed, we should make the most use of his name...", Line_Normal); 
+	ClearMessage();
+
+//r私が考えなくちゃならないのは、とにかく大騒ぎにせず、…レナが全部忘れて、速やかに元の生活を取り戻せるように環境を整えることに違いなかった。
+	OutputLine(NULL, "私が考えなくちゃならないのは、とにかく大騒ぎにせず、…レナが全部忘れて、速やかに元の生活を取り戻せるように環境を整えることに違いなかった。",
+			NULL, "What I really had to figure out was how to settle everything without a ruckus, and have Rena return to her daily life environment.", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300668.「大丈夫ですよ先生。kvS09/03/170300669.……レナは今ちょっと病気になってるだけです」
+	PlaySE(4, "ps3/s09/03/170300668", 256, 64);
+	OutputLine(NULL, "「大丈夫ですよ先生。",
+			NULL, "\"It's alright, sensei. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300669", 256, 64);
+	OutputLine(NULL, "……レナは今ちょっと病気になってるだけです」",
+			NULL, "......Rena is just a little sick.\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300670.「それを警察の某ベテラン刑事が素敵に勘違いして話をややこしくしただけです。kvS09/03/170300671.まさか先生、レナが悪いことをして逃走中なんて、信じちゃいないですよね？」
+	PlaySE(4, "ps3/s09/03/170300670", 256, 64);
+	OutputLine(NULL, "「それを警察の某ベテラン刑事が素敵に勘違いして話をややこしくしただけです。",
+			NULL, "\"And a certain veteran of the police department just misunderstood that and blew it out of proportion. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300671", 256, 64);
+	OutputLine(NULL, "まさか先生、レナが悪いことをして逃走中なんて、信じちゃいないですよね？」",
+			NULL, "Don't tell me you're actually buying those stories about Rena stirring up trouble and absconding?/"", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400050.「……それは、…もちろんですけど…。kvS09/22/171400051.でも、……家出することによってご家族にお掛けしている迷惑を考えれば、悪くないということはありません」
+	PlaySE(4, "ps3/s09/22/171400050", 256, 64);
+	OutputLine(NULL, "「……それは、…もちろんですけど…。",
+			NULL, "\"......Well, ...that's certainly true.....", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400051", 256, 64);
+	OutputLine(NULL, "でも、……家出することによってご家族にお掛けしている迷惑を考えれば、悪くないということはありません」",
+			NULL, "However, ......it's still very irresponsible of her to run away from home and cause so much distress for her family.\"", Line_Normal); 
+	ClearMessage();
+
+//r………親と喧嘩してのちょっとした家出。
+	OutputLine(NULL, "………親と喧嘩してのちょっとした家出。",
+			NULL, ".........She just got into an argument with her father and ran away from home.", Line_Normal); 
+	ClearMessage();
+
+//r…若気の至りだったということにするのが最善かもしれない。
+	OutputLine(NULL, "…若気の至りだったということにするのが最善かもしれない。",
+			NULL, "...It's best to just make it seem like an extreme adolescent tantrum. ", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400052.「何か悩みがあったのでしょうか。kvS09/22/171400053.………それに気付けなかった私は教師失格ですね…。kvS09/22/171400054.一度、竜宮さんとじっくりお話がしたかったです…」
+	PlaySE(4, "ps3/s09/22/171400052", 256, 64);
+	OutputLine(NULL, "「何か悩みがあったのでしょうか。",
+			NULL, "\"I wonder if she was having some kind of difficulty. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400053", 256, 64);
+	OutputLine(NULL, "………それに気付けなかった私は教師失格ですね…。",
+			NULL, ".........I must be a bad teacher for not realizing it sooner... ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400054", 256, 64);
+	OutputLine(NULL, "一度、竜宮さんとじっくりお話がしたかったです…」",
+			NULL, "I wish I had the chance to thoroughly discuss it with her for once...", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300672.「あはははは、先生、ちょっとヘビーに考えすぎです。kvS09/03/170300673.もうちょっとリラックスリラックス…。kvS09/03/170300674.プチ家出なんて、今時珍しくないですって！」
+	PlaySE(4, "ps3/s09/03/170300672", 256, 64);
+	OutputLine(NULL, "「あはははは、先生、ちょっとヘビーに考えすぎです。",
+			NULL, "\"Ahahahaha, sensei, you're just overthinking. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300673", 256, 64);
+	OutputLine(NULL, "もうちょっとリラックスリラックス…。",
+			NULL, "Just relax already... ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300674", 256, 64);
+	OutputLine(NULL, "プチ家出なんて、今時珍しくないですって！」",
+			NULL, "A measly running-away-from-home isn't that uncommon in these times!\"", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400055.「ああぁあぁぁぁぁ、竜宮さんがこのまま不良になってしまって悪いことを始めたらどうしましょう！！kvS09/22/171400056.　あぅあぅあぅ～！」
+	PlaySE(4, "ps3/s09/22/171400055", 256, 64);
+	OutputLine(NULL, "「ああぁあぁぁぁぁ、竜宮さんがこのまま不良になってしまって悪いことを始めたらどうしましょう！！",
+			NULL, "\"Aahhhh, I wonder if Ryūgū-san will continue to do immoral things and turn into a delinquent!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400056", 256, 64);
+	OutputLine(NULL, "　あぅあぅあぅ～！」",
+			NULL, " Au au au~!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+//r竜宮さんが不良になるr|y↓r悪いことをして逮捕されるr|y↓r担任の重大な責任r|y↓r懲戒免職r|y↓rカレーが食べられないr|y↓r死|y
+	OutputLine(NULL, "竜宮さんが不良になるr|y↓r悪いことをして逮捕されるr|y↓r担任の重大な責任r|y↓r懲戒免職r|y↓rカレーが食べられないr|y↓r死|y",
+			NULL, "Ryūgū-san will become a delinquentr|y↓rShe'll get arrested for doing bad thingsr|y↓rClass teacher takes most blamer|y↓Disciplinary Dismissalr|y↓rCan't eat curryr|y↓rDeath|y", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "kira", 256, 64);
+
+	PlaySE(3, "dageki", 256, 64);
+
+	PlaySE(3, "tataku", 256, 64);
+
+	PlaySE(3, "daidageki", 256, 64);
+
+	PlaySE(3, "kaminari2", 256, 64);
+
+	DrawScene("background/aka2", 1000 );
+
+	PlaySE(3, "a6", 256, 64);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g3", 1000 );
+
+	DrawBustshot( 3, "sprite/normal/tie_3_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//知恵rvS09/22/171400057.「ガーン、ガーン、ガーン……」
+	PlaySE(4, "ps3/s09/22/171400057", 256, 64);
+	OutputLine(NULL, "「ガーン、ガーン、ガーン……」",
+			NULL, "\"Oh, no. Oh, noooooo...\", Line_Normal); 
+	ClearMessage();
+
+//r……知恵先生は、何だか楽しげな妄想でショックを受けているようだった。
+	OutputLine(NULL, "……知恵先生は、何だか楽しげな妄想でショックを受けているようだった。",
+			NULL, "...Chie-sensei seemed comically upset by her own imagination.", Line_Normal); 
+	ClearMessage();
+
+//rとりあえず楽しそうなので、そっとしておくことにする。
+	OutputLine(NULL, "とりあえず楽しそうなので、そっとしておくことにする。",
+			NULL, "It looked funny, so I decided to leave her alone.", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "door", 256, 64);
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+//r私は職員室を出て、教室へ戻ることにした。
+	OutputLine(NULL, "私は職員室を出て、教室へ戻ることにした。",
+			NULL, "I made to leave the teacher's office to go back to the classroom, but...", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM( 1, "denwa", 128, 0 );
+
+//rちょうど職員室を出た時、電話が鳴る。
+	OutputLine(NULL, "ちょうど職員室を出た時、電話が鳴る。",
+			NULL, "Right then, the phone rang.", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+//知恵rvS09/22/171400058.「はいもしもし。kvS09/22/171400059.雛見沢分校でございます」
+	PlaySE(4, "ps3/s09/22/171400058", 256, 64);
+	OutputLine(NULL, "「はいもしもし。",
+			NULL, "\"Hello.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400059", 256, 64);
+	OutputLine(NULL, "雛見沢分校でございます」",
+			NULL, " This is the Hinamizawa Branch School.\"", Line_Normal); 
+	ClearMessage();
+
+//r今日は校長先生が出張らしいので、電話は１人で受けなきゃならないから知恵先生も大変だ。
+	OutputLine(NULL, "今日は校長先生が出張らしいので、電話は１人で受けなきゃならないから知恵先生も大変だ。",
+			NULL, "Chie-sensei had to answer the phone all day today because the principal was on a business trip.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/g2", 1000 );
+
+//r私は深く考えず廊下に出る。
+	OutputLine(NULL, "私は深く考えず廊下に出る。",
+			NULL, "I step into the hallway without thinking much of it.", Line_Normal); 
+	ClearMessage();
+
+//r……その時、電話に出ている先生の声色が変った。
+	OutputLine(NULL, "……その時、電話に出ている先生の声色が変った。",
+			NULL, "...At that time, I hear the tone of her voice change.", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400060.「え？！kvS09/22/171400061.　……い、……今、どこにいるんですか？！」
+	PlaySE(4, "ps3/s09/22/171400060", 256, 64);
+	OutputLine(NULL, "「え？！",
+			NULL, ""\"What?!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400061", 256, 64);
+	OutputLine(NULL, "　……い、……今、どこにいるんですか？！」",
+			NULL, " ...Wh-Where are you right now?!\"", Line_Normal); 
+	ClearMessage();
+
+//r私も、『え？！』と叫び、振り返る。
+	OutputLine(NULL, "私も、『え？！』と叫び、振り返る。",
+			NULL, "What?! Even I yelped the same as her and looked back.", Line_Normal); 
+	ClearMessage();
+
+//r多分、レナだ。kレナが学校に電話を掛けてきたんだ！
+	OutputLine(NULL, "多分、レナだ。",
+			NULL, "It was most likely Rena.", Line_WaitForInput); 
+	OutputLine(NULL, "レナが学校に電話を掛けてきたんだ！",
+			NULL, "Rena had called the school!", Line_Normal); 
+	ClearMessage();
+
+//r私は電話先のレナの声を聞こうと、職員室に入ろうとしたが、それを受話器片手の知恵先生が、入ってはいけませんと制止した。
+	OutputLine(NULL, "私は電話先のレナの声を聞こうと、職員室に入ろうとしたが、それを受話器片手の知恵先生が、入ってはいけませんと制止した。",
+			NULL, "I tried to go back inside the teacher's office, but Chie-sensei gestured at me not to come in.", Line_Normal); 
+	ClearMessage();
+
+//r…知恵先生は何度かの相槌の後、時計をちらりと見上げた。
+	OutputLine(NULL, "…知恵先生は何度かの相槌の後、時計をちらりと見上げた。",
+			NULL, "...Chie-sensei acknowledged what Rena was saying several times, and then, she looked up at the clock.", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400062.「わかりました。kvS09/22/171400063.今からすぐ行きます。kvS09/22/171400064.……先生との約束ですよ」
+	PlaySE(4, "ps3/s09/22/171400062", 256, 64);
+	OutputLine(NULL, "「わかりました。",
+			NULL, "\"Okay.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400063", 256, 64);
+	OutputLine(NULL, "今からすぐ行きます。",
+			NULL, " I'll be there.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400064", 256, 64);
+	OutputLine(NULL, "……先生との約束ですよ」",
+			NULL, " ...I'm your teacher. You promise me, alright?\"", Line_Normal); 
+	ClearMessage();
+
+//rそれだけ言うと、受話器を置き、ロッカーから私物のショルダーバッグを取り出す。
+	OutputLine(NULL, "それだけ言うと、受話器を置き、ロッカーから私物のショルダーバッグを取り出す。",
+			NULL, "She said only that, put the phone down, and got her purse out of her locker.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/tie_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//知恵rvS09/22/171400065.「委員長。kvS09/22/171400066.先生は急用が出来ました。kvS09/22/171400067.しばらく表へ出ますので、みんなを自習させてください」
+	PlaySE(4, "ps3/s09/22/171400065", 256, 64);
+	OutputLine(NULL, "「委員長。",
+			NULL, "\"Class president,", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400066", 256, 64);
+	OutputLine(NULL, "先生は急用が出来ました。",
+			NULL, " I have an emergency to take care of.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400067", 256, 64);
+	OutputLine(NULL, "しばらく表へ出ますので、みんなを自習させてください」",
+			NULL, " I'm going out for a while, so please have everybody study by themselves while I'm gone.\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rショルダーバッグから車のキーを出している。
+	OutputLine(NULL, "ショルダーバッグから車のキーを出している。",
+			NULL, "She takes out her car key from her purse.", Line_Normal); 
+	ClearMessage();
+
+//r…どこかでレナと待ち合わせを約束したのは明白だった。
+	OutputLine(NULL, "…どこかでレナと待ち合わせを約束したのは明白だった。",
+			NULL, "...It was obvious that she was going to meet with Rena somewhere.", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300675.「先生、今の電話はレナ？！」
+	PlaySE(4, "ps3/s09/03/170300675", 256, 64);
+	OutputLine(NULL, "「先生、今の電話はレナ？！」",
+			NULL, "\"Chie-sensei, was it Rena?!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "portrait/normal/", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//知恵rvS09/22/171400068.「以上です。kvS09/22/171400069.よろしく頼みますよ、委員長」
+	PlaySE(4, "ps3/s09/22/171400068", 256, 64);
+	OutputLine(NULL, "「以上です。",
+			NULL, "\"That's all.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400069", 256, 64);
+	OutputLine(NULL, "よろしく頼みますよ、委員長」",
+			NULL, " You're in charge of the class, okay?\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r知恵先生はあからさまに私の問い掛けを無視すると、小走りに廊下を駆けて行った。
+	OutputLine(NULL, "知恵先生はあからさまに私の問い掛けを無視すると、小走りに廊下を駆けて行った。",
+			NULL, "Chie-sensei completely ignores me and runs out into the hallway.", Line_Normal); 
+	ClearMessage();
+
+//rそれと入れ違いに、廊下の向こうから圭ちゃんがやってきた。
+	OutputLine(NULL, "それと入れ違いに、廊下の向こうから圭ちゃんがやってきた。",
+			NULL, "She dashes to the schoolyard... and gets into her car.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/kei1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS09/03/430300001.「圭ちゃんっ！」
+	PlaySE(4, "ps3/s09/03/430300001", 256, 64);
+	OutputLine(NULL, "「圭ちゃんっ！」",
+			NULL, "\"Kei-chan!\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200003.「…どうした？kvS09/01/430200004.　知恵先生慌てて、どこに行ったんだ？」
+	PlaySE(4, "ps3/s09/01/430200003", 256, 64);
+	OutputLine(NULL, "「…どうした？",
+			NULL, "\"What is it? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200004", 256, 64);
+	OutputLine(NULL, "　知恵先生慌てて、どこに行ったんだ？」",
+			NULL, "Where did Chie-sensei go in such a hurry?\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/430300002.「…レナから電話があった！」
+	PlaySE(4, "ps3/s09/03/430300002", 256, 64);
+	OutputLine(NULL, "「…レナから電話があった！」",
+			NULL, "\"There was a phone call from Rena!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/kei1_majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS09/01/430200005.「――えっ！　なんて？！」
+	PlaySE(4, "ps3/s09/01/430200005", 256, 64);
+	OutputLine(NULL, "「——えっ！　なんて？！」",
+			NULL, "\"——Wha-! What did she say?!\"", Line_Normal); 
+	ClearMessage();
+
+//r私はそれに答えず、先生の後を追う。圭ちゃんもすぐについてきた。
+	OutputLine(NULL, "私はそれに答えず、先生の後を追う。圭ちゃんもすぐについてきた。",
+			NULL, "I run after the teacher without answering that. Kei-chan follows behind me.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g1", 1000 );
+
+//r先生が昇降口から校庭に出て、……自分の車に乗り込んでいくのが見える。
+	OutputLine(NULL, "先生が昇降口から校庭に出て、……自分の車に乗り込んでいくのが見える。",
+			NULL, "The teacher exits the schoolyard, ......and we see her get into her car.", Line_Normal); 
+	ClearMessage();
+
+//rそしてその車が校門を出た瞬間に、私たちも校庭へ駆け出した。
+	OutputLine(NULL, "そしてその車が校門を出た瞬間に、私たちも校庭へ駆け出した。",
+			NULL, "As the car leaves the schoolyard, we also rush behind it.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/gr1", 1000 );
+
+	PlaySE(3, "a5_07212", 256, 64);
+
+//r校門のところに停まっている黒塗りの車に駆け寄り、窓を叩いた。
+	OutputLine(NULL, "校門のところに停まっている黒塗りの車に駆け寄り、窓を叩いた。",
+			NULL, "We head over to the black car parked in front of the school gates and knock on the window.", Line_Normal); 
+	ClearMessage();
+
+//組員rvS09/00/VT3_kumiinA1001.「お疲れさまです。kvS09/00/VT3_kumiinA1002.今のところ、異常ありません」
+	PlaySE(4, "ps3/s09/00/vt3_kumiina1001", 256, 64);
+	OutputLine(NULL, "「お疲れさまです。",
+			NULL, "\"Good to see you, miss. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_kumiina1002", 256, 64);
+	OutputLine(NULL, "今のところ、異常ありません」",
+			NULL, "The situation is under control so far.\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300676.「ああぁ、違う違う！kvS09/03/170300677.　今、出て行った先生の車を追って！！kvS09/03/170300678.　多分、行く先にレナがいる！」
+	PlaySE(4, "ps3/s09/03/170300676", 256, 64);
+	OutputLine(NULL, "「ああぁ、違う違う！",
+			NULL, "\"Aaahh, you got it all wrong!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300677", 256, 64);
+	OutputLine(NULL, "　今、出て行った先生の車を追って！！",
+			NULL, " Follow the car that just left now!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300678", 256, 64);
+	OutputLine(NULL, "　多分、行く先にレナがいる！」",
+			NULL, " Rena will most likely show up where we're going!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/kei1_majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS09/01/430200006.「なにっ？！」
+	PlaySE(4, "ps3/s09/01/430200006", 256, 64);
+	OutputLine(NULL, "「なにっ？！」",
+			NULL, "\"What~?!\"", Line_Normal); 
+	ClearMessage();
+
+//r圭ちゃんは驚きの声を上げるが、とりあえず今は説明している時間も惜しかった。
+	OutputLine(NULL, "圭ちゃんは驚きの声を上げるが、とりあえず今は説明している時間も惜しかった。",
+			NULL, "Keiichi yells in surprise, but there wasn't any time left to explain it to him now.", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/170300679.「レナは警戒心が強いから注意してね。kvS09/03/170300680.捕まえたら有無を言わさずに本家へ放り込んで葛西の指示に従うこと！kvS09/03/170300681.　私の友人だよ？！kvS09/03/170300682.　怪我なんかさせたら許さないからね！」
+	PlaySE(4, "ps3/s09/03/170300679", 256, 64);
+	OutputLine(NULL, "「レナは警戒心が強いから注意してね。",
+			NULL, "\"Rena gets suspicious easily, so be careful! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300680", 256, 64);
+	OutputLine(NULL, "捕まえたら有無を言わさずに本家へ放り込んで葛西の指示に従うこと！",
+			NULL, "\"Once we've caught her, take her to Kasai at the Main residence and await further instructions!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300681", 256, 64);
+	OutputLine(NULL, "　私の友人だよ？！",
+			NULL, " She's my best friend!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/170300682", 256, 64);
+	OutputLine(NULL, "　怪我なんかさせたら許さないからね！」",
+			NULL, " If she gets hurt, don't think you'll get away easy!\"", Line_Normal); 
+	ClearMessage();
+
+//r…知恵先生はおそらくレナに、誰にも内緒で話がしたいといって呼び出したのだろう。
+	OutputLine(NULL, "…知恵先生はおそらくレナに、誰にも内緒で話がしたいといって呼び出したのだろう。",
+			NULL, "...Chie-sensei had probably been told to come without telling anybody. ", Line_Normal); 
+	ClearMessage();
+
+//r私が聞いても無視した態度から容易に想像できた。
+	OutputLine(NULL, "私が聞いても無視した態度から容易に想像できた。",
+			NULL, "I could decipher that much from how she ignored me.", Line_Normal); 
+	ClearMessage();
+
+//rそのレナと知恵先生の約束を踏みにじるようで、ちょっと気の毒に思ったが、……レナが何か妙なことをしでかさない内に捕まえるのは、とても重要なことだった。
+	OutputLine(NULL, "そのレナと知恵先生の約束を踏みにじるようで、ちょっと気の毒に思ったが、……レナが何か妙なことをしでかさない内に捕まえるのは、とても重要なことだった。",
+			NULL, "I felt a little bad for stepping on the toes of their secret arrangement, ......but it was important to get to Rena before she does anything crazy.", Line_Normal); 
+	ClearMessage();
+
+//r何もしない今の内なら、親と喧嘩して家出して、引っ込みがつかなくなって放浪してましたで言い訳になる。
+	OutputLine(NULL, "何もしない今の内なら、親と喧嘩して家出して、引っ込みがつかなくなって放浪してましたで言い訳になる。",
+			NULL, "As long as she doesn't pull anything, I can cover for her saying she fought with her dad and left the house, and couldn't go back after doing something like that.", Line_Normal); 
+	ClearMessage();
+
+//r…これが診療所に放火なんかした後だったらお手上げだ。
+	OutputLine(NULL, "…これが診療所に放火なんかした後だったらお手上げだ。",
+			NULL, "...Our hands are tied if she had already set fire to the clinic by now.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/kei1_ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS09/01/430200007.「――魅音、俺も行く！」
+	PlaySE(4, "ps3/s09/01/430200007", 256, 64);
+	OutputLine(NULL, "「——魅音、俺も行く！」",
+			NULL, "\"――Mion, I'm coming too!\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/430300003.「圭ちゃんっ…？」
+	PlaySE(4, "ps3/s09/03/430300003", 256, 64);
+	OutputLine(NULL, "「圭ちゃんっ…？」",
+			NULL, "\"Kei-chan...?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200008.「先生がレナのいる場所に向かったんなら、俺も一緒のほうがいいはずだ！kvS09/01/430200009.　頼む！」
+	PlaySE(4, "ps3/s09/01/430200008", 256, 64);
+	OutputLine(NULL, "「先生がレナのいる場所に向かったんなら、俺も一緒のほうがいいはずだ！",
+			NULL, "\"If the teach is going to see Rena, it's better if I go! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200009", 256, 64);
+	OutputLine(NULL, "　頼む！」",
+			NULL, " Please!\"", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/430300004.「……。kvS09/03/430300005.そうだね、確かに。kvS09/03/430300006.じゃ圭ちゃん、早く乗って！」
+	PlaySE(4, "ps3/s09/03/430300004", 256, 64);
+	OutputLine(NULL, "「……。",
+			NULL, "\"......... ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/430300005", 256, 64);
+	OutputLine(NULL, "そうだね、確かに。",
+			NULL, "You're probably right. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/03/430300006", 256, 64);
+	OutputLine(NULL, "じゃ圭ちゃん、早く乗って！」",
+			NULL, "Okay then, Kei-chan, get on quick!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/kei1_def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS09/01/430200010.「わかった！」
+	PlaySE(4, "ps3/s09/01/430200010", 256, 64);
+	OutputLine(NULL, "「わかった！」",
+			NULL, "\"Gotcha!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r助手席の扉を開けて、圭ちゃんは素早く乗り込む。
+	OutputLine(NULL, "助手席の扉を開けて、圭ちゃんは素早く乗り込む。",
+			NULL, "Kei-chan opens the car door and swiftly climbs into the passenger seat. ", Line_Normal); 
+	ClearMessage();
+
+//rそうこうしている間にも、先生の車は離れていく一方だ。
+	OutputLine(NULL, "そうこうしている間にも、先生の車は離れていく一方だ。",
+			NULL, "While we were dilly-dallying, the teacher's car was beginning to disappear from our line of sight.", Line_Normal); 
+	ClearMessage();
+
+//r後は見失わないことを祈るだけ…。
+	OutputLine(NULL, "後は見失わないことを祈るだけ…。",
+			NULL, "We could only pray we didn't lose sight of her......", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS09/03/430300007.「よろしく頼んだよ、圭ちゃん！」
+	PlaySE(4, "ps3/s09/03/430300007", 256, 64);
+	OutputLine(NULL, "「よろしく頼んだよ、圭ちゃん！」",
+			NULL, "\"I'm counting on you, Kei-chan!\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200011.「ああ、任せとけっ！」
+	PlaySE(4, "ps3/s09/01/430200011", 256, 64);
+	OutputLine(NULL, "「ああ、任せとけっ！」",
+			NULL, "\"Yeah, leave it to me!\"", Line_Normal); 
+	ClearMessage();
+
+//r車は砂利をガリガリ弾きながら、乱暴にターンすると、ものすごい速度で知恵先生の車を追っていく。
+	OutputLine(NULL, "車は砂利をガリガリ弾きながら、乱暴にターンすると、ものすごい速度で知恵先生の車を追っていく。",
+			NULL, "The car crunched forward on the gravel, and took violent turns, pursuing Chie-sensei's car at an unbelievable speed.", Line_Normal); 
+	ClearMessage();
+
+//r…私は消えていく車の影を見送りながら、…この一連のトラブルが、もっとも静かな形で終わりを迎えてくれるよう祈るしかなかった。
+	OutputLine(NULL, "…私は消えていく車の影を見送りながら、…この一連のトラブルが、もっとも静かな形で終わりを迎えてくれるよう祈るしかなかった。",
+			NULL, "...As we tailed the shadow of the disappearing car, I could only pray for this series of misfortune to end on a quiet note.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/kuruma1", 1000 );
+
+//r知恵先生の車は、ほどなく発見できた。
+	OutputLine(NULL, "知恵先生の車は、ほどなく発見できた。",
+			NULL, "Chie-sensei's car soon came into view.", Line_Normal); 
+	ClearMessage();
+
+//r…かなり急いだ走行だったが、法定外の速度には上げられない性格がこっちには幸いした。
+	OutputLine(NULL, "…かなり急いだ走行だったが、法定外の速度には上げられない性格がこっちには幸いした。",
+			NULL, "...It was travelling at a very fast pace, but thankfully, she was the sort of person who didn't drive above the speed limit. ", Line_Normal); 
+	ClearMessage();
+
+//r古手神社の石段を通り過ぎ、途中で舗装された道路が途切れて、砂利だらけの狭い山道へと入っていく。
+	OutputLine(NULL, "古手神社の石段を通り過ぎ、途中で舗装された道路が途切れて、砂利だらけの狭い山道へと入っていく。",
+			NULL, "We passed the stone steps of the Furude Shrine and left the paved road partway, into a coarse mountain trail.", Line_Normal); 
+	ClearMessage();
+
+//r向かう先はダム工事現場跡の、ゴミ山でもない。
+	OutputLine(NULL, "向かう先はダム工事現場跡の、ゴミ山でもない。",
+			NULL, "Where we were headed... wasn't even to the Dam Construction Site, where the mountains of trash lay. ", Line_Normal); 
+	ClearMessage();
+
+//r土地勘がまだあやふやな俺には全く馴染みのない区画だった。
+	OutputLine(NULL, "土地勘がまだあやふやな俺には全く馴染みのない区画だった。",
+			NULL, "We were headed to an unknown location which I wasn't aware of, as I was still unfamiliar with the area.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200012.「この道って、どこに続いています？」
+	PlaySE(4, "ps3/s09/01/430200012", 256, 64);
+	OutputLine(NULL, "「この道って、どこに続いています？」",
+			NULL, "\"Where is this pathway headed to?\"", Line_Normal); 
+	ClearMessage();
+
+//組員rvS09/00/VT3_kumiinA1003.「山のほうっすね。kvS09/00/VT3_kumiinA1004.このまま行くと、谷をまたいだ隣の町へのルートになるっす」
+	PlaySE(4, "ps3/s09/00/vt3_kumiina1003", 256, 64);
+	OutputLine(NULL, "「山のほうっすね。",
+			NULL, "\"Most likely into the mountains. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_kumiina1004", 256, 64);
+	OutputLine(NULL, "このまま行くと、谷をまたいだ隣の町へのルートになるっす」",
+			NULL, "If we carry on like this, we'll reach a route that leads to a neighbourhood across the valley.\"", Line_Normal); 
+	ClearMessage();
+
+//rすると、運転するその人の言葉を裏付けるように木々の生い茂る視界が片方だけ開けて、少し離れた先に山と、その間の谷が見えてくる。
+	OutputLine(NULL, "すると、運転するその人の言葉を裏付けるように木々の生い茂る視界が片方だけ開けて、少し離れた先に山と、その間の谷が見えてくる。",
+			NULL, "And as if they nodded in agreement with the driver's words, the vegetation around us opened up on one side, and we saw mountains in the distance and a valley between them.", Line_Normal); 
+	ClearMessage();
+
+//r眼下には沢が見え、それをまたぐようにかけられた吊り橋が目に入った。
+	OutputLine(NULL, "眼下には沢が見え、それをまたぐようにかけられた吊り橋が目に入った。",
+			NULL, "I saw a stream up ahead and a suspension bridge straddling it.", Line_Normal); 
+	ClearMessage();
+
+//r彼の話によると、その近くには確かに万一の事故の連絡用として無人の事務所小屋が設置されているという。
+	OutputLine(NULL, "彼の話によると、その近くには確かに万一の事故の連絡用として無人の事務所小屋が設置されているという。",
+			NULL, "According to him, there was certainly an unmanned office cabin in the vicinity set up for emergency purposes. ", Line_Normal); 
+	ClearMessage();
+
+//r知恵先生の慌てようから考えて、まさかレナ、…来なければそこから飛び降りる、とでも言って呼び出したのか？
+	OutputLine(NULL, "知恵先生の慌てようから考えて、まさかレナ、…来なければそこから飛び降りる、とでも言って呼び出したのか？",
+			NULL, "Judging by Chie-sensei's panic, had Rena threatened to jump off from there or something, if she didn't come?", Line_Normal); 
+	ClearMessage();
+
+//rだとしたらいったい、何のために？！
+	OutputLine(NULL, "だとしたらいったい、何のために？！",
+			NULL, "If so, then why exactly?!", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+//rそうだ。
+	OutputLine(NULL, "そうだ。",
+			NULL, "That's right. ", Line_Normal); 
+	ClearMessage();
+
+//rいったい、何のために、知恵先生を、『吊り橋まで』呼び出したんだ…？
+	OutputLine(NULL, "いったい、何のために、知恵先生を、『吊り橋まで』呼び出したんだ…？",
+			NULL, "Just why had she called Chie-sensei out to the 'suspension bridge'...?", Line_Normal); 
+	ClearMessage();
+
+//rふとわいた疑問がじわじわと胸に広がって、…やがて、大きな不安となっていく。
+	OutputLine(NULL, "ふとわいた疑問がじわじわと胸に広がって、…やがて、大きな不安となっていく。",
+			NULL, "The sudden question triggers a throbbing anxiety, which spreads across my chest", Line_Normal); 
+	ClearMessage();
+
+//rそもそも、…レナと知恵先生にどんな接点があるというのか。
+	OutputLine(NULL, "そもそも、…レナと知恵先生にどんな接点があるというのか。",
+			NULL, "...First of all, what did Rena even have to do with Chie-sensei? ", Line_Normal); 
+	ClearMessage();
+
+//r二人の仲が悪いという意味じゃない。レナはいい生徒だから、先生との関係も良好だった。
+	OutputLine(NULL, "二人の仲が悪いという意味じゃない。レナはいい生徒だから、先生との関係も良好だった。",
+			NULL, "I mean, it's not like they were on bad terms. Rena was a good student, so she had a good relationship with her teacher.", Line_Normal); 
+	ClearMessage();
+
+//rしかしだからといって、知恵先生をわざわざ呼び出してまで相談するような親密さと信頼関係があったとも思えない。
+	OutputLine(NULL, "しかしだからといって、知恵先生をわざわざ呼び出してまで相談するような親密さと信頼関係があったとも思えない。",
+			NULL, "But it's not like she had a trusting relationship with her, enough to call her and consult her on such affairs. ", Line_Normal); 
+	ClearMessage();
+
+//rそれに、…どうして吊り橋なんだ？
+	OutputLine(NULL, "それに、…どうして吊り橋なんだ？",
+			NULL, "And also... why the suspension bridge?", Line_Normal); 
+	ClearMessage();
+
+//r『来なければ飛び降りる』という脅しのつもりなら、途中にあった古手神社の高台であったとしても十分だ。
+	OutputLine(NULL, "『来なければ飛び降りる』という脅しのつもりなら、途中にあった古手神社の高台であったとしても十分だ。",
+			NULL, "If it was a threat to "jump off if she didn't come", the shrine was good enough elevation for that.", Line_Normal); 
+	ClearMessage();
+
+//r別にこんな、遠くにまで呼び出さなくても…。
+	OutputLine(NULL, "別にこんな、遠くにまで呼び出さなくても…。",
+			NULL, "She didn't have to call her all the way out here... ", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200013.「――っ、しまった！！」
+	PlaySE(4, "ps3/s09/01/430200013", 256, 64);
+	OutputLine(NULL, "「——っ、しまった！！」",
+			NULL, "\"――ugh, Fuck!!\"", Line_Normal); 
+	ClearMessage();
+
+//r俺はようやく、レナの『意図』を悟って愕然となった。
+	OutputLine(NULL, "俺はようやく、レナの『意図』を悟って愕然となった。",
+			NULL, "I was astonished, finally having understood Rena's intentions.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200014.「運転手さん、知恵先生の車を停めてくれ！」
+	PlaySE(4, "ps3/s09/01/430200014", 256, 64);
+	OutputLine(NULL, "「運転手さん、知恵先生の車を停めてくれ！」",
+			NULL, "\"Driver, please stop Chie-sensei's car!\"", Line_Normal); 
+	ClearMessage();
+
+//組員rvS09/00/VT3_kumiinA1005.「え、えっ？」
+	PlaySE(4, "ps3/s09/00/vt3_kumiina1005", 256, 64);
+	OutputLine(NULL, "「え、えっ？」",
+			NULL, "\"Eh, ehh?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200015.「早くっ！！」
+	PlaySE(4, "ps3/s09/01/430200015", 256, 64);
+	OutputLine(NULL, "「早くっ！！」",
+			NULL, "\"Hurry~!!!\"", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r俺たちが派手に鳴らしたクラクションとぶつけようとせんばかりの接近で、知恵先生はようやく車を停め、憤然とした様子で降りてくる。
+	OutputLine(NULL, "俺たちが派手に鳴らしたクラクションとぶつけようとせんばかりの接近で、知恵先生はようやく車を停め、憤然とした様子で降りてくる。",
+			NULL, "As we noisily rang the car horn, Chie-sensei's car came to a halt, almost close enough to hit us, and she got down looking stunned.", Line_Normal); 
+	ClearMessage();
+
+//rそして、そのすぐ後ろに止まった車の助手席に俺の姿を認めて怒鳴りつけようとしたが、俺はその言葉を遮って『大変だ！』と叫んだ。
+	OutputLine(NULL, "そして、そのすぐ後ろに止まった車の助手席に俺の姿を認めて怒鳴りつけようとしたが、俺はその言葉を遮って『大変だ！』と叫んだ。",
+			NULL, "And after recognizing me in the passenger seat of the car behind hers, she tried to yell out, but I beat her to it and cried "We're in big trouble!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/kuruma3_01", 1000 );
+
+	DrawBustshot( 4, "sprite/normal/tie_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//知恵rvS09/22/VT3_chie1001.「な、なに？」
+	PlaySE(4, "ps3/s09/22/vt3_chie1001", 256, 64);
+	OutputLine(NULL, "「な、なに？」",
+			NULL, "\"W-What?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200016.「先生、俺たちレナに騙されたんだ！kvS09/01/430200017.　レナはここにはいないっ！！」
+	PlaySE(4, "ps3/s09/01/430200016", 256, 64);
+	OutputLine(NULL, "「先生、俺たちレナに騙されたんだ！",
+			NULL, "\"Sensei, we've been duped by Rena!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200017", 256, 64);
+	OutputLine(NULL, "　レナはここにはいないっ！！」",
+			NULL, " Rena isn't here!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/tie_3_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//知恵rvS09/22/VT3_chie1002.「え、えっ？」
+	PlaySE(4, "ps3/s09/22/vt3_chie1002", 256, 64);
+	OutputLine(NULL, "「え、えっ？」",
+			NULL, "\"H-Huh?\"", Line_Normal); 
+	ClearMessage();
+
+//r先生は俺の言っている意味がわからず、戸惑いの表情を浮かべる。
+	OutputLine(NULL, "先生は俺の言っている意味がわからず、戸惑いの表情を浮かべる。",
+			NULL, "The teacher didn't understand what I was talking about and donned a confused expression.", Line_Normal); 
+	ClearMessage();
+
+//rしかし、説明している時間もなく俺はそばにあった電話ボックスに駆け寄ると、１０円玉を放り込んでうろ覚えの職員室への電話番号をダイヤルしていった。
+	OutputLine(NULL, "しかし、説明している時間もなく俺はそばにあった電話ボックスに駆け寄ると、１０円玉を放り込んでうろ覚えの職員室への電話番号をダイヤルしていった。",
+			NULL, "But, there wasn't even any time to explain it to her, so I flew towards the phone booth near us, put a 10 yen coin in the slot and dialled the phone number to the staffroom which I vaguely recalled.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/ta_tel", 1000 );
+
+	PlayBGM( 1, "denwa", 128, 0 );
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+//r……。
+	OutputLine(NULL, "……。",
+			NULL, "......", Line_Normal); 
+	ClearMessage();
+
+//r頼む、誰か出てくれ！
+	OutputLine(NULL, "頼む、誰か出てくれ！",
+			NULL, "Please, somebody answer!", Line_Normal); 
+	ClearMessage();
+
+//r魅音、沙都子、梨花ちゃん、…そのほかの誰かでも、構わない！
+	OutputLine(NULL, "魅音、沙都子、梨花ちゃん、…そのほかの誰かでも、構わない！",
+			NULL, "Mion, Satoko, Rika-chan, ...I don't care if it's somebody else either!", Line_Normal); 
+	ClearMessage();
+
+//r早くこのことを、学校にいる連中に伝えなくては！
+	OutputLine(NULL, "早くこのことを、学校にいる連中に伝えなくては！",
+			NULL, "I had to tell this to the people at school fast!", Line_Normal); 
+	ClearMessage();
+
+//rだから、早く！
+	OutputLine(NULL, "だから、早く！",
+			NULL, "So, hurry!", Line_Normal); 
+	ClearMessage();
+
+//r早くこの電話に気付いてくれッッ！！
+	OutputLine(NULL, "早くこの電話に気付いてくれッッ！！",
+			NULL, "Hurry up and pick up the phone~!", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, "............", Line_Normal); 
+	ClearMessage();
+
+//r……。
+	OutputLine(NULL, "……。",
+			NULL, "......", Line_Normal); 
+	ClearMessage();
+
+//rそして、おそらく１０回以上のコールが鳴り響いて諦めかけたその時。
+	OutputLine(NULL, "そして、おそらく１０回以上のコールが鳴り響いて諦めかけたその時。",
+			NULL, "And then, after the phone had rang around 10 times and I had almost given up...", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+//r電話が、つながった。
+	OutputLine(NULL, "電話が、つながった。",
+			NULL, "The call went through.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200018.「…も、もしもし？」
+	PlaySE(4, "ps3/s09/01/430200018", 256, 64);
+	OutputLine(NULL, "「…も、もしもし？」",
+			NULL, "\"...H, Hello?\"", Line_Normal); 
+	ClearMessage();
+
+//？？？r「……」
+	OutputLine(NULL, "「……」",
+			NULL, "\"......\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200019.「すみません、俺前原です！kvS09/01/430200020.　すぐに園崎魅音に繋いでください！」
+	PlaySE(4, "ps3/s09/01/430200019", 256, 64);
+	OutputLine(NULL, "「すみません、俺前原です！",
+			NULL, "\"Excuse me, this is Maebara!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200020", 256, 64);
+	OutputLine(NULL, "　すぐに園崎魅音に繋いでください！」",
+			NULL, " Please put Mion Sonozaki on the line right away!\"", Line_Normal); 
+	ClearMessage();
+
+//？？？r「……」
+	OutputLine(NULL, "「……」",
+			NULL, "\"......\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200021.「もしもし？kvS09/01/430200022.　聞こえてるのか、もしもしっ！！」
+	PlaySE(4, "ps3/s09/01/430200021", 256, 64);
+	OutputLine(NULL, "「もしもし？",
+			NULL, "\"Hello?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200022", 256, 64);
+	OutputLine(NULL, "　聞こえてるのか、もしもしっ！！」",
+			NULL, " Can you hear me, hello?!?!\"", Line_Normal); 
+	ClearMessage();
+
+//r古い電話で回線が遠いのか、受話器先からは何も聞こえない。
+	OutputLine(NULL, "古い電話で回線が遠いのか、受話器先からは何も聞こえない。",
+			NULL, "I didn't know if it was because I was using an old phone, or because the line was too far away, but I couldn't hear anything from the receiver.", Line_Normal); 
+	ClearMessage();
+
+//rそして、さらに声を張り上げて呼びかけようとしたその時。
+	OutputLine(NULL, "そして、さらに声を張り上げて呼びかけようとしたその時。",
+			NULL, "And then, when I was about to raise my voice and yell into the phone...", Line_Normal); 
+	ClearMessage();
+
+//？？？rvS09/02/renaDS3001.「……。kvS09/02/renaDS3002.なに、圭一くん。kvS09/02/renaDS3003.魅ぃちゃんになにか、用かな？　…かな？」
+	PlaySE(4, "ps3/s09/02/renads3001", 256, 64);
+	OutputLine(NULL, "「……。",
+			NULL, "\"......... ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3002", 256, 64);
+	OutputLine(NULL, "なに、圭一くん。",
+			NULL, "What is it, Keiichi-kun?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3003", 256, 64);
+	OutputLine(NULL, "魅ぃちゃんになにか、用かな？　…かな？」",
+			NULL, " I wonder what you want with Mii-chan... I wonder...?\"", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM(2, "hm03_15", 128, 0);
+
+//圭一rvS09/01/430200023.「――っ！！」
+	PlaySE(4, "ps3/s09/01/430200023", 256, 64);
+	OutputLine(NULL, "「——っ！！」",
+			NULL, "\"——~!!\"", Line_Normal); 
+	ClearMessage();
+
+//r……俺の読みは、当たっていた。
+	OutputLine(NULL, "……俺の読みは、当たっていた。",
+			NULL, "......My prediction was on the mark.", Line_Normal); 
+	ClearMessage();
+
+//r最悪のかたちで。
+	OutputLine(NULL, "最悪のかたちで。",
+			NULL, "It was even worse than I had imagined.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200024.「……れ、レナ。kvS09/01/430200025.そこに、いるんだな…？」
+	PlaySE(4, "ps3/s09/01/430200024", 256, 64);
+	OutputLine(NULL, "「……れ、レナ。",
+			NULL, "\"......Re, Rena.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200025", 256, 64);
+	OutputLine(NULL, "そこに、いるんだな…？」",
+			NULL, " You're over there now, aren't you...?\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/renaDS3004.「うん。kvS09/02/renaDS3005.いるよ。kvS09/02/renaDS3006.魅ぃちゃんたちも一緒にね。kvS09/02/renaDS3007.あはははははは」
+	PlaySE(4, "ps3/s09/02/renads3004", 256, 64);
+	OutputLine(NULL, "「うん。",
+			NULL, "\"Yup.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3005", 256, 64);
+	OutputLine(NULL, "いるよ。",
+			NULL, " I'm here.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3006", 256, 64);
+	OutputLine(NULL, "魅ぃちゃんたちも一緒にね。",
+			NULL, " With Mii-chan and the others.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3007", 256, 64);
+	OutputLine(NULL, "あはははははは」",
+			NULL, " Ahahahahaha\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200026.「…っ！！」
+	PlaySE(4, "ps3/s09/01/430200026", 256, 64);
+	OutputLine(NULL, "「…っ！！」",
+			NULL, "\"...~!!\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/renaDS3008.「圭一くんがいないのが残念だよ。kvS09/02/renaDS3009.一人じゃなかなかやりづらくって。kvS09/02/renaDS3010.うるさく騒いだり泣いたりして頭に来たから、何度か殴っちゃった。kvS09/02/renaDS3011.あははははははははは」
+	PlaySE(4, "ps3/s09/02/renads3008", 256, 64);
+	OutputLine(NULL, "「圭一くんがいないのが残念だよ。",
+			NULL, "\"It's a shame you aren't here, Keiichi-kun. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3009", 256, 64);
+	OutputLine(NULL, "一人じゃなかなかやりづらくって。",
+			NULL, "It's pretty hard to do this by myself. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3010", 256, 64);
+	OutputLine(NULL, "うるさく騒いだり泣いたりして頭に来たから、何度か殴っちゃった。",
+			NULL, "They made a lot of noise screaming and crying and it really got to my head, so I ended up hitting them a few times. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3011", 256, 64);
+	OutputLine(NULL, "あははははははははは」",
+			NULL, "Ahahahahahaha\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200027.「な、なんてことを…！kvS09/01/430200028.　お、おいレナっ！kvS09/01/430200029.　いいか、ここには知恵先生もいる！kvS09/01/430200030.　だから、落ち着いて俺の話を…」
+	PlaySE(4, "ps3/s09/01/430200027", 256, 64);
+	OutputLine(NULL, "「な、なんてことを…！",
+			NULL, "\"W, What the hell have you done...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200028", 256, 64);
+	OutputLine(NULL, "　お、おいレナっ！",
+			NULL, " H, Hey Rena~!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200029", 256, 64);
+	OutputLine(NULL, "　いいか、ここには知恵先生もいる！",
+			NULL, " Listen, Chie-sensei is here with me too!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200030", 256, 64);
+	OutputLine(NULL, "　だから、落ち着いて俺の話を…」",
+			NULL, " So calm down and listen to what I...\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/renaDS3012.「…ああ、圭一くんはそっちに行っちゃったのかぁ。kvS09/02/renaDS3013.だったら、お話はこっちで聞くね。kvS09/02/renaDS3014.早く来てね、待ってるから」
+	PlaySE(4, "ps3/s09/02/renads3012", 256, 64);
+	OutputLine(NULL, "「…ああ、圭一くんはそっちに行っちゃったのかぁ。",
+			NULL, "\"Ah, so you ended up going there, huh? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3013", 256, 64);
+	OutputLine(NULL, "だったら、お話はこっちで聞くね。",
+			NULL, "Then I'll listen to what you have to say here, okay? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/renads3014", 256, 64);
+	OutputLine(NULL, "早く来てね、待ってるから」",
+			NULL, "Come quick, I'll be waiting for you.\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200031.「お、おいレナっ！！kvS09/01/430200032.　待て、切るなっ――！」
+	PlaySE(4, "ps3/s09/01/430200031", 256, 64);
+	OutputLine(NULL, "「お、おいレナっ！！",
+			NULL, "\"W, Wait, Rena!! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200032", 256, 64);
+	OutputLine(NULL, "　待て、切るなっ——！」",
+			NULL, "Stop, don't hang up——!", Line_Normal); 
+	ClearMessage();
+
+//rその、言葉もむなしく。
+	OutputLine(NULL, "その、言葉もむなしく。",
+			NULL, "Those words fell on dead ears.", Line_Normal); 
+	ClearMessage();
+
+//r受話器の向こうのレナは、あっさりと通話を切ってしまった…。
+	OutputLine(NULL, "受話器の向こうのレナは、あっさりと通話を切ってしまった…。",
+			NULL, "Rena who was on the other side swiftly ended the conversation like it was nothing.", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+//BADEND1 (レナのたくらみ)
+
+	PlayBGM(2, "hm02_12", 128, 0);
+
+	DrawScene("background/kuruma1", 1000 );
+
+//興宮ＰＳrvS09/00/VTP_OkeijiA_1001.「興宮ＰＳより全車へ。kvS09/00/VTP_OkeijiA_1002.興宮ＰＳより全車へ。kvS09/00/VTP_OkeijiA_1003.雛見沢営林署にて篭城事件発生。kvS09/00/VTP_OkeijiA_1004.人質多数。kvS09/00/VTP_OkeijiA_1005.全車は至急、雛見沢営林署へ向かわれたし」
+	PlaySE(4, "ps3/s09/00/vtp_okeijia_1001", 256, 64);
+	OutputLine(NULL, "「興宮ＰＳより全車へ。",
+			NULL, "\"Okinomiya Police Station to all vehicles. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vtp_okeijia_1002", 256, 64);
+	OutputLine(NULL, "興宮ＰＳより全車へ。",
+			NULL, "Okinomiya Police Station to all vehicles. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vtp_okeijia_1003", 256, 64);
+	OutputLine(NULL, "雛見沢営林署にて篭城事件発生。",
+			NULL, "A hijack incident has occured at the Hinamizawa Forestry Service Office. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vtp_okeijia_1004", 256, 64);
+	OutputLine(NULL, "人質多数。",
+			NULL, "Multiple hostages have been reported. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vtp_okeijia_1005", 256, 64);
+	OutputLine(NULL, "全車は至急、雛見沢営林署へ向かわれたし」",
+			NULL, "All vehicles to head immediately to the Hinamizawa Forestry Service Office.\"", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM( 1, "semi", 128, 0 );
+
+	DrawScene("background/sora", 1000 );
+
+	DrawScene("background/sora2", 1000 );
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g1_01", 1000 );
+
+	DrawBustshot( 5, "sprite/sunset/kuma_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_3_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700308.「熊ちゃん！！kvS09/11/170700309.　遅れて申し訳ない！kvS09/11/170700310.　状況は？！」
+	PlaySE(4, "ps3/s09/11/170700308", 256, 64);
+	OutputLine(NULL, "「熊ちゃん！！",
+			NULL, "\"Kuma-chan!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700309", 256, 64);
+	OutputLine(NULL, "　遅れて申し訳ない！",
+			NULL, " Sorry I'm late!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700310", 256, 64);
+	OutputLine(NULL, "　状況は？！」",
+			NULL, " What's the situation?!\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100071.「ご苦労さまっす！kvS09/19/173100072.　本日午後１時頃、雛見沢営林署内の雛見沢分校区画にて教室占拠が発生しました」
+	PlaySE(4, "ps3/s09/19/173100071", 256, 64);
+	OutputLine(NULL, "「ご苦労さまっす！",
+			NULL, "\Thank you for coming!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100072", 256, 64);
+	OutputLine(NULL, "　本日午後１時頃、雛見沢営林署内の雛見沢分校区画にて教室占拠が発生しました」",
+			NULL, " Around 1PM today afternoon, the Hinamizawa Branch School's classroom located in the Hinamizawa Forestry Service Office premises was hijacked.", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100074.「犯人側の第一要求は、営林署敷地内への一切の立ち入りの禁止と、当方へのホットラインの確保です」
+	PlaySE(4, "ps3/s09/19/173100074", 256, 64);
+	OutputLine(NULL, "「犯人側の第一要求は、営林署敷地内への一切の立ち入りの禁止と、当方へのホットラインの確保です」",
+			NULL, "The immediate request of the perpetrator was to prohibit entry to the Forest Service Agency premises and to secure a hotline to us.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700311.「……ってことは、初めっから警察と交渉する気ってことですか。kvS09/11/170700312.…どういうつもりだ…」
+	PlaySE(4, "ps3/s09/11/170700311", 256, 64);
+	OutputLine(NULL, "「……ってことは、初めっから警察と交渉する気ってことですか。",
+			NULL, "\"...So you're telling me their goal was to negotiate with the police from the very beginning? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700312", 256, 64);
+	OutputLine(NULL, "…どういうつもりだ…」",
+			NULL, "...I wonder what they want...\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100075.「……あと、犯人は交渉人に大石さんを指名してます。kvS09/19/173100076.犯人は、竜宮礼奈」
+	PlaySE(4, "ps3/s09/19/173100075", 256, 64);
+	OutputLine(NULL, "「……あと、犯人は交渉人に大石さんを指名してます。",
+			NULL, "\"......Furthermore, the perpetrator has nominated Ooishi-san to be the negotiator. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100076", 256, 64);
+	OutputLine(NULL, "犯人は、竜宮礼奈」",
+			NULL, "The suspect is, Reina Ryūgū.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_4_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700313.「竜宮さんが…？！」
+	PlaySE(4, "ps3/s09/11/170700313", 256, 64);
+	OutputLine(NULL, "「竜宮さんが…？！」",
+			NULL, "\"Ryūgū-san did what...?!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700314.「……わかりました。kvS09/11/170700315.いいですよぅ、こうなりゃ腐れ縁です。kvS09/11/170700316.とことんお付き合いさせてもらいましょ」
+	PlaySE(4, "ps3/s09/11/170700314", 256, 64);
+	OutputLine(NULL, "「……わかりました。",
+			NULL, "\"......I understand. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700315", 256, 64);
+	OutputLine(NULL, "いいですよぅ、こうなりゃ腐れ縁です。",
+			NULL, "At this rate, we're almost partners in crime. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700316", 256, 64);
+	OutputLine(NULL, "とことんお付き合いさせてもらいましょ」",
+			NULL, " Let's get on her nice side while we can.", Line_Normal); 
+	ClearMessage();
+
+//r大石は苦々しく笑うのだった。
+	OutputLine(NULL, "大石は苦々しく笑うのだった。",
+			NULL, "Ooishi laughs sardonically.", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100077.「竜宮礼奈以外に犯人がいるかは不明です。kvS09/19/173100078.カーテンが閉められているので、状況も一切確認できていません」
+	PlaySE(4, "ps3/s09/19/173100077", 256, 64);
+	OutputLine(NULL, "「竜宮礼奈以外に犯人がいるかは不明です。",
+			NULL, "\"It is currently unknown whether there are suspects other than Reina Ryūgū involved. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100078", 256, 64);
+	OutputLine(NULL, "カーテンが閉められているので、状況も一切確認できていません」",
+			NULL, "The curtains have been drawn shut and we haven't been able to grasp the situation inside at all.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700317.「通報者に占拠時の様子は聞いてませんか」
+	PlaySE(4, "ps3/s09/11/170700317", 256, 64);
+	OutputLine(NULL, "「通報者に占拠時の様子は聞いてませんか」",
+			NULL, "\"Haven't you heard the situation at the time of the hijack from the informant?\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/VT3_kuma1001.「いえ、竜宮礼奈からの直接の犯行声明でした。kvS09/19/VT3_kuma1002.よって内部の状況は一切不明。kvS09/19/VT3_kuma1003.担任と生徒の一名は犯行直前に、竜宮礼奈の電話呼び出しを受け、遠方に呼び出された間の犯行でした」
+	PlaySE(4, "ps3/s09/19/vt3_kuma1001", 256, 64);
+	OutputLine(NULL, "「いえ、竜宮礼奈からの直接の犯行声明でした。",
+			NULL, "\"No, the crime was directly reported by Reina Ryūgū herself. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/vt3_kuma1002", 256, 64);
+	OutputLine(NULL, "よって内部の状況は一切不明。",
+			NULL, "Therefore, the situation inside is currently unclear. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/vt3_kuma1003", 256, 64);
+	OutputLine(NULL, "担任と生徒の一名は犯行直前に、竜宮礼奈の電話呼び出しを受け、遠方に呼び出された間の犯行でした」",
+			NULL, "Right before the crime, the teacher in-charge and one of the students had received a phone call from Reina Ryūgū, and the crime took place while they were away.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_5_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700318.「…計画的ですねぇ。kvS09/11/170700319.営林署側の人間は人質には？」
+	PlaySE(4, "ps3/s09/11/170700318", 256, 64);
+	OutputLine(NULL, "「…計画的ですねぇ。",
+			NULL, "\"...Everything sounds well-planned out. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700319", 256, 64);
+	OutputLine(NULL, "営林署側の人間は人質には？」",
+			NULL, "Are any of the Forest Service Agency personnel amongst the hostages?\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/VT3_kuma1004.「今日は営林署職員は不在でした。kvS09/19/VT3_kuma1005.よって、生徒２４名のみ。kvS09/19/VT3_kuma1006.生徒数は担任が出席簿で確認した人数です」
+	PlaySE(4, "ps3/s09/19/vt3_kuma1004", 256, 64);
+	OutputLine(NULL, "「今日は営林署職員は不在でした。",
+			NULL, "\"The Forest Service Agency staff were not present today. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/vt3_kuma1005", 256, 64);
+	OutputLine(NULL, "よって、生徒２４名のみ。",
+			NULL, "And so, only the 24 students are said to be present. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/vt3_kuma1006", 256, 64);
+	OutputLine(NULL, "生徒数は担任が出席簿で確認した人数です」",
+			NULL, "The number of students has been confirmed by the teacher in-charge as per the attendance record.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_3_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700320.「それプラス犯人ってわけか。kvS09/11/170700321.竜宮礼奈以外に犯人らしき人影は？」
+	PlaySE(4, "ps3/s09/11/170700320", 256, 64);
+	OutputLine(NULL, "「それプラス犯人ってわけか。",
+			NULL, "\"So that, plus the suspect, eh? ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700321", 256, 64);
+	OutputLine(NULL, "竜宮礼奈以外に犯人らしき人影は？」",
+			NULL, "Anybody else other than Reina Ryūgū who is possibly a suspect?\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100085.「いえ、何度かカーテンから覗く人影がありましたが、いずれも竜宮礼奈本人でした。kvS09/19/173100086.…ですが規模他を考えて、おそらく最低でも、もう１、２人はいると予想されます」
+	PlaySE(4, "ps3/s09/19/173100085", 256, 64);
+	OutputLine(NULL, "「いえ、何度かカーテンから覗く人影がありましたが、いずれも竜宮礼奈本人でした。",
+			NULL, "\"No, there was the silhouette of a person peeking out from behind the curtain mutliple times, but it was only Reina Ryūgū.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100086", 256, 64);
+	OutputLine(NULL, "…ですが規模他を考えて、おそらく最低でも、もう１、２人はいると予想されます」",
+			NULL, "...But judging by the scale of this hijack, there may be one or two more people involved.\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("background/gr1_01", 1000 );
+
+	DrawBustshot( 5, "sprite/sunset/tie_3_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//知恵rvS09/22/171400072.「……レナちゃんはとても真面目ないい子なんです…！kvS09/22/171400073.　こんなことをするなんて…何かの間違いに決まっています…！kvS09/22/171400074.　うううぅぅぅぅ！」
+	PlaySE(4, "ps3/s09/22/171400072", 256, 64);
+	OutputLine(NULL, "「……レナちゃんはとても真面目ないい子なんです…！",
+			NULL, "\"Rena-chan is a sweet and intelligent girl...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400073", 256, 64);
+	OutputLine(NULL, "　こんなことをするなんて…何かの間違いに決まっています…！",
+			NULL, " I can't believe she would do something like this, ...there has to be a mistake...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400074", 256, 64);
+	OutputLine(NULL, "　うううぅぅぅぅ！」",
+			NULL, " Uuuuhhhhhh!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700321_2.「だ、大丈夫ですか…」
+	PlaySE(4, "ps3/s09/11/170700321_2", 256, 64);
+	OutputLine(NULL, "「だ、大丈夫ですか…」",
+			NULL, "\"A, Are you alright...?\"", Line_Normal); 
+	ClearMessage();
+
+//rハンカチを目に当てながら泣き崩れる知恵先生に大石が駆け寄る…。
+	OutputLine(NULL, "ハンカチを目に当てながら泣き崩れる知恵先生に大石が駆け寄る…。",
+			NULL, "Ooishi rushes over to Chie-sensei who was dabbing her eyes with a handkerchief and collapsing with tears...", Line_Normal); 
+	ClearMessage();
+
+//r知恵先生はすっかりしゃがみ込んでしまって、それ以上の話はできそうになかった。
+	OutputLine(NULL, "知恵先生はすっかりしゃがみ込んでしまって、それ以上の話はできそうになかった。",
+			NULL, "Chie-sensei looked completely battered down and it seemed like she couldn't talk anymore than she did.", Line_Normal); 
+	ClearMessage();
+
+//校長rvS09/00/173200020.「大石殿、よろしくお頼みしますぞ。kvS09/00/173200021.……もしできるなら、人質の交換を申し出たい。kvS09/00/173200022.ぜひ私と子どもたちを交換していただきたい！」
+	PlaySE(4, "ps3/s09/00/173200020", 256, 64);
+	OutputLine(NULL, "「大石殿、よろしくお頼みしますぞ。",
+			NULL, "\"Mr. Ooishi, I leave this in your hands. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/173200021", 256, 64);
+	OutputLine(NULL, "……もしできるなら、人質の交換を申し出たい。",
+			NULL, "......If it is possible, I would like for the hostages to be exchanged. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/173200022", 256, 64);
+	OutputLine(NULL, "ぜひ私と子どもたちを交換していただきたい！」",
+			NULL, "Please allow me to be taken as a hostage in return for the children!\"", Line_Normal); 
+	ClearMessage();
+
+//知恵rvS09/22/171400075.「校長先生、それは私がやります！！kvS09/22/171400076.　私が悪いんです、ああああぁぁあぁぁぁぁ…！！」
+	PlaySE(4, "ps3/s09/22/171400075", 256, 64);
+	OutputLine(NULL, "「校長先生、それは私がやります！！",
+			NULL, "\"Principal, please let me do so!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/22/171400076", 256, 64);
+	OutputLine(NULL, "　私が悪いんです、ああああぁぁあぁぁぁぁ…！！」",
+			NULL, " This is all my fault. Aaaaahhhhhhh...!!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700328.「先生方、どうかご自分を責められないでください。kvS09/11/170700329.…先生方には校内の状況についていろいろとお聞きしたいことがありますので、ご協力をお願いいたします」
+	PlaySE(4, "ps3/s09/11/170700328", 256, 64);
+	OutputLine(NULL, "「先生方、どうかご自分を責められないでください。",
+			NULL, "\"Teachers, please don't blame yourselves. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700329", 256, 64);
+	OutputLine(NULL, "…先生方には校内の状況についていろいろとお聞きしたいことがありますので、ご協力をお願いいたします」",
+			NULL, "...There are a lot of things we would like to ask you about the school interior, so we humbly request your support.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/oisi1_4_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700330.「盆地くん！kvS09/11/170700331.　図面の方で話を聞いてあげてください」
+	PlaySE(4, "ps3/s09/11/170700330", 256, 64);
+	OutputLine(NULL, "「盆地くん！",
+			NULL, "\"Bonchi-kun! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700331", 256, 64);
+	OutputLine(NULL, "　図面の方で話を聞いてあげてください」",
+			NULL, "Please listen to what they have to say about the map of the school.\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawBustshot( 5, "sprite/sunset/kuma_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//熊谷rvS09/19/173100088.「失礼します！kvS09/19/173100089.　１号車の無線に高杉課長です！」
+	PlaySE(4, "ps3/s09/19/173100088", 256, 64);
+	OutputLine(NULL, "「失礼します！",
+			NULL, "\"Excuse me! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100089", 256, 64);
+	OutputLine(NULL, "　１号車の無線に高杉課長です！」",
+			NULL, " Section chief Takasugi is on the wireless line in Vehicle No.1!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	FadeOutBGM(1, 200, TRUE);
+
+	DrawScene("background/kuruma1_02", 1000 );
+
+//大石rvS09/11/170700332.「はいはいもしもし、……大石です」
+	PlaySE(4, "ps3/s09/11/170700332", 256, 64);
+	OutputLine(NULL, "「はいはいもしもし、……大石です」",
+			NULL, "\"Yes, hello, ......this is Ooishi speaking.\"", Line_Normal); 
+	ClearMessage();
+
+//高杉rvS09/00/taka17003.「大石さん、ご苦労さん！kvS09/00/taka17004.　状況の大体は熊谷くんに聞いたよ。kvS09/00/taka17005.犯人は未成年だそうだね？kvS09/00/taka17006.　マスコミ規制の方を厳重に頼むよ！」
+	PlaySE(4, "ps3/s09/00/taka17003", 256, 64);
+	OutputLine(NULL, "「大石さん、ご苦労さん！",
+			NULL, "\"Ooishi-san, good work there!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/taka17004", 256, 64);
+	OutputLine(NULL, "　状況の大体は熊谷くんに聞いたよ。",
+			NULL, " I've heard a good chunk of the situation from Kumagai-kun. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/taka17005", 256, 64);
+	OutputLine(NULL, "犯人は未成年だそうだね？",
+			NULL, "From what I hear, the suspect is a minor. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/taka17006", 256, 64);
+	OutputLine(NULL, "　マスコミ規制の方を厳重に頼むよ！」",
+			NULL, " Please ask the media to be very cautious!\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700333.「わかってます。kvS09/11/170700334.……あと、犯人側が私を交渉人に指定してきてるようですが、問題ありませんかね」
+	PlaySE(4, "ps3/s09/11/170700333", 256, 64);
+	OutputLine(NULL, "「わかってます。",
+			NULL, "\"I understand. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700334", 256, 64);
+	OutputLine(NULL, "……あと、犯人側が私を交渉人に指定してきてるようですが、問題ありませんかね」",
+			NULL, "......Also, the perpetrator has asked me to be the negotiator, is that alright?\"", Line_Normal); 
+	ClearMessage();
+
+//高杉rvS09/00/VX_takasugi_0001.「とりあえず、犯人の要求ならいたしかたが無い。kvS09/00/VX_takasugi_0002.…頼んだよ」
+	PlaySE(4, "ps3/s09/00/vx_takasugi_0001", 256, 64);
+	OutputLine(NULL, "「とりあえず、犯人の要求ならいたしかたが無い。",
+			NULL, "\"For now, if that's the suspect's demand, we have no choice. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vx_takasugi_0002", 256, 64);
+	OutputLine(NULL, "…頼んだよ」",
+			NULL, "...it's up to you.\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100090.「大石さん……！kvS09/19/173100091.　車載電話に、……犯人です、竜宮礼奈です……！」
+	PlaySE(4, "ps3/s09/19/173100090", 256, 64);
+	OutputLine(NULL, "「大石さん……！",
+			NULL, "\"Ooishi-san......!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100091", 256, 64);
+	OutputLine(NULL, "　車載電話に、……犯人です、竜宮礼奈です……！」",
+			NULL, " It's the suspect, ......on the internal line, it's Reina Ryūgū......!\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700336.「…さっそくご指名の電話が来ました。kvS09/11/170700337.さっそく出ることにします」
+	PlaySE(4, "ps3/s09/11/170700336", 256, 64);
+	OutputLine(NULL, "「…さっそくご指名の電話が来ました。",
+			NULL, "\"...There comes the call as expected. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700337", 256, 64);
+	OutputLine(NULL, "さっそく出ることにします」",
+			NULL, "I'll get to it right away.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//大石rvS09/11/170700338.「………ありがとう。kvS09/11/170700339.……ハイもしもし、大石です」
+	PlaySE(4, "ps3/s09/11/170700338", 256, 64);
+	OutputLine(NULL, "「………ありがとう。",
+			NULL, "\"........Thank you. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700339", 256, 64);
+	OutputLine(NULL, "……ハイもしもし、大石です」",
+			NULL, ".........Yes, hello, this is Ooishi speaking.", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "addse05", 256, 64);
+
+//圭一rvS09/01/430200033.「くっ…！！」
+	PlaySE(4, "ps3/s09/01/430200033", 256, 64);
+	OutputLine(NULL, "「くっ…！！」",
+			NULL, "\"Ugh...!!\"", Line_Normal); 
+	ClearMessage();
+
+//rぎりっ、と怒りと悔しさで歯を食いしばり、こぶしを握り締める。
+	OutputLine(NULL, "ぎりっ、と怒りと悔しさで歯を食いしばり、こぶしを握り締める。",
+			NULL, "I clench my teeth in frustration and roll up my fists into a ball.", Line_Normal); 
+	ClearMessage();
+
+//rおびただしい数の警官たちの壁に阻まれて、警察や先生たちの様子を遠巻きに見守ることしかできない自分が情けなかった。
+	OutputLine(NULL, "おびただしい数の警官たちの壁に阻まれて、警察や先生たちの様子を遠巻きに見守ることしかできない自分が情けなかった。",
+			NULL, "An overwhelming wall of police officers blocked my way, and I felt pathetic for only being able to watch the teachers and the detectives from afar.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/tie_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//r知恵先生が呼び出された、電話の意味。
+	OutputLine(NULL, "知恵先生が呼び出された、電話の意味。",
+			NULL, "The reason behind why Chie-sensei had been phoned and summoned out of the school.", Line_Normal); 
+	ClearMessage();
+
+//r…レナが教室を占拠する上で、一番邪魔な存在が知恵先生だったのだ。
+	OutputLine(NULL, "…レナが教室を占拠する上で、一番邪魔な存在が知恵先生だったのだ。",
+			NULL, "...For Rena who wanted to hijack to classroom, the biggest obstacle was Chie-sensei.", Line_Normal); 
+	ClearMessage();
+
+//r正義感の強い人だもんな。
+	OutputLine(NULL, "正義感の強い人だもんな。",
+			NULL, "She was someone who had a strong sense of justice.", Line_Normal); 
+	ClearMessage();
+
+//rたとえレナが拳銃を持っていたって、知恵先生は怯まないだろう。
+	OutputLine(NULL, "たとえレナが拳銃を持っていたって、知恵先生は怯まないだろう。",
+			NULL, "Even if Rena had held a pistol to her, Chie-sensei probably wouldn't have hesitated.", Line_Normal); 
+	ClearMessage();
+
+//r生徒のためなら体を張れる、…そんな先生をいかに摘出するかが、教室占拠の最初の鍵だったんだ。
+	OutputLine(NULL, "生徒のためなら体を張れる、…そんな先生をいかに摘出するかが、教室占拠の最初の鍵だったんだ。",
+			NULL, "For the welfare of her students, she would put herself in danger... getting rid of someone like her was the primary step in order to hijack the classroom.", Line_Normal); 
+	ClearMessage();
+
+//r背後から襲い掛かるという手も、もちろん一番最初に考えただろうが、kやはり大人を敵に回すリスクを考えた結果、直接襲うのは適当ではないと考えたに違いない。
+	OutputLine(NULL, "背後から襲い掛かるという手も、もちろん一番最初に考えただろうが、",
+			NULL, "Attacking her from behind would have been her very first line of thought but, ", Line_WaitForInput); 
+	OutputLine(NULL, "やはり大人を敵に回すリスクを考えた結果、直接襲うのは適当ではないと考えたに違いない。",
+			NULL, "I'm sure she decided taking an adult on directly was a risky affair.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r…なら、どこかへ誘き出してしまえばいいんだ…！
+	OutputLine(NULL, "…なら、どこかへ誘き出してしまえばいいんだ…！",
+			NULL, "...In that case, it was better to lure her away to someplace..!", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/a/waku_b", 1000 );
+
+	DrawScene("background/g3", 1000 );
+
+//rレナは知恵先生に電話をかけ、誰にも内緒で相談したいことがある…と言って、あの吊り橋にまで呼び寄せたに違いない。
+	OutputLine(NULL, "レナは知恵先生に電話をかけ、誰にも内緒で相談したいことがある…と言って、あの吊り橋にまで呼び寄せたに違いない。",
+			NULL, "Rena had then phoned Chie-sensei, and then told her she wished to seek her advice in someplace private...and asked to meet her near that suspension bridge. ", Line_Normal); 
+	ClearMessage();
+
+//r先生も含め、ほとんどの人たちはレナが家出しただけだとしか思っていない。
+	OutputLine(NULL, "先生も含め、ほとんどの人たちはレナが家出しただけだとしか思っていない。",
+			NULL, "Including Chie-sensei, a good majority of the people thought that Rena had merely run away from home. ", Line_Normal); 
+	ClearMessage();
+
+//r…だから知恵先生は、レナに何か悩み事があって、それを打ち明けたがっているのだろう、そう解釈するに違いない。k……騙すのはあまりに簡単だ。
+	OutputLine(NULL, "…だから知恵先生は、レナに何か悩み事があって、それを打ち明けたがっているのだろう、そう解釈するに違いない。",
+			NULL, "...So Chie-sensei probably thought Rena merely had some troubles she wished to discuss. ", Line_WaitForInput); 
+	OutputLine(NULL, "……騙すのはあまりに簡単だ。",
+			NULL, "......Fooling her was that easy.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rじゃあ…レナは、電話をどこから…？
+	OutputLine(NULL, "じゃあ…レナは、電話をどこから…？",
+			NULL, "So...where did Rena make the call from...?", Line_Normal); 
+	ClearMessage();
+
+//rそう、学校の中からだ。kいや、厳密には違う。
+	OutputLine(NULL, "そう、学校の中からだ。",
+			NULL, "Yes, it was from within the school. ", Line_WaitForInput); 
+	OutputLine(NULL, "いや、厳密には違う。",
+			NULL, "Well, not exactly.", Line_Normal); 
+	ClearMessage();
+
+//r多分、学校の２階、……営林署の事務室からだ。
+	OutputLine(NULL, "多分、学校の２階、……営林署の事務室からだ。",
+			NULL, "It was most likely from the first floor of the school building, .......from the office room of the Forestry Service. ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/gr2", 1000 );
+
+//rこの学校の入っている営林署は出張所みたいなもので、いつも職員が常駐しているわけではない。k日によってはいないこともある。
+	OutputLine(NULL, "この学校の入っている営林署は出張所みたいなもので、いつも職員が常駐しているわけではない。",
+			NULL, "The Forestry Service at our school was more like a Branch Office, so it wasn't like the staff were always present. ", Line_WaitForInput); 
+	OutputLine(NULL, "日によってはいないこともある。",
+			NULL, "Depending on the day, they might not even be there. ", Line_Normal); 
+	ClearMessage();
+
+//rレナはそれを知っていて、ずっと２階に隠れていたのだ。
+	OutputLine(NULL, "レナはそれを知っていて、ずっと２階に隠れていたのだ。",
+			NULL, "Rena had known this, and had been hiding on the first floor all this time. ", Line_Normal); 
+	ClearMessage();
+
+//rそして、２階から１階に電話して、……知恵先生を遠方に遠ざけたのだ。
+	OutputLine(NULL, "そして、２階から１階に電話して、……知恵先生を遠方に遠ざけたのだ。",
+			NULL, "And then, she had made a call to the ground floor from up there, ......and sent Chie-sensei to a faraway place. ", Line_Normal); 
+	ClearMessage();
+
+//r今日が校長の出張の日だというのも偶然ではないだろう。
+	OutputLine(NULL, "今日が校長の出張の日だというのも偶然ではないだろう。",
+			NULL, "It probably wasn't a coincidence that the principal had also been away on a business trip today.", Line_Normal); 
+	ClearMessage();
+
+//r……多分、レナはこの学校に昨日から忍び込んでいた。
+	OutputLine(NULL, "……多分、レナはこの学校に昨日から忍び込んでいた。",
+			NULL, "......Rena had most likely snuck into the school yesterday itself.", Line_Normal); 
+	ClearMessage();
+
+//rそれで、校長の日程も内線電話のことも全て把握した上で実行に及んでいるのだ。
+	OutputLine(NULL, "それで、校長の日程も内線電話のことも全て把握した上で実行に及んでいるのだ。",
+			NULL, "And then, she had discerned the principal's itinerary and the workings of the internal phone line before she put her plan into action.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r……なんて狡猾な……。
+	OutputLine(NULL, "……なんて狡猾な……。",
+			NULL, "......How cunning it all was......", Line_Normal); 
+	ClearMessage();
+
+//r……いや、…わかる。
+	OutputLine(NULL, "……いや、…わかる。",
+			NULL, "......No, I understood. ", Line_Normal); 
+	ClearMessage();
+
+//r…今レナは、殺意に心を奪われながらも、…実はひどく冷静なのだ。
+	OutputLine(NULL, "…今レナは、殺意に心を奪われながらも、…実はひどく冷静なのだ。",
+			NULL, "...Right now, even as she was possessed by a murderous rage, ...Rena was keeping her composure.", Line_Normal); 
+	ClearMessage();
+
+//r…自分が取り憑かれている妄想に対して、信じられないくらい冷静なのだ。
+	OutputLine(NULL, "…自分が取り憑かれている妄想に対して、信じられないくらい冷静なのだ。",
+			NULL, "...She was unbelievably calm despite being plagued by her delusion that controlled her.", Line_Normal); 
+	ClearMessage();
+
+//r…だから、…信じられないくらいに頭が回る。
+	OutputLine(NULL, "…だから、…信じられないくらいに頭が回る。",
+			NULL, "...And so, ...just thinking about it made my spin.", Line_Normal); 
+	ClearMessage();
+
+//r…それは自分にも身に覚えがあったからよくわかった。
+	OutputLine(NULL, "…それは自分にも身に覚えがあったからよくわかった。",
+			NULL, "...Because I had even personally experienced what she was going through before.", Line_Normal); 
+	ClearMessage();
+
+//rあと、…さらについてないのは、魅音の護衛のために校門前にいた園崎家のボディーガードまでもいなくなってしまってることだ。
+	OutputLine(NULL, "あと、…さらについてないのは、魅音の護衛のために校門前にいた園崎家のボディーガードまでもいなくなってしまってることだ。",
+			NULL, "Also, ...what was even more unlucky was the absence of the Sonozaki Family bodyguard who had been standing by the gate.", Line_Normal); 
+	ClearMessage();
+
+//r……知恵先生がレナに会いに行くと思って、魅音が尾行するように言ってしまったから。
+	OutputLine(NULL, "……知恵先生がレナに会いに行くと思って、魅音が尾行するように言ってしまったから。",
+			NULL, "......It was because Mion had sent him to follow Chie-sensei who had set out to meet Rena.", Line_Normal); 
+	ClearMessage();
+
+//r……畜生、……何から何まで……、……やってくれるぜ………。
+	OutputLine(NULL, "……畜生、……何から何まで……、……やってくれるぜ………。",
+			NULL, ".........Fuck, ......everything was so screwed up......, ...on so many levels.........", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/kuruma2_02", 1000 );
+
+//大石rvS09/11/170700374.「……今ですね、県警の暴対と公安部で一斉捜査作戦を準備中なんです。kvS09/11/170700375.何しろ、市内全域を一斉にやりますからねぇ、調整に多少の時間が、」
+	PlaySE(4, "ps3/s09/11/170700374", 256, 64);
+	OutputLine(NULL, "「……今ですね、県警の暴対と公安部で一斉捜査作戦を準備中なんです。",
+			NULL, "\"......You see, right now, the organized crime unit of the Prefectural Police Department and the Public Safety Department are preparing for a simultaneous investigation as we speak.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700375", 256, 64);
+	OutputLine(NULL, "何しろ、市内全域を一斉にやりますからねぇ、調整に多少の時間が、」",
+			NULL, "At any rate, they are planning to raid the entire city at once, so we need some time to finalize the particulars,\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/170201482.「遅すぎるッ！！！kvS09/02/170201483.　大石さん、私たちは今、鹿骨市が置かれている緊急的危機について、よく理解し合っているんじゃなかったでしたっけ？！」
+	PlaySE(4, "ps3/s09/02/170201482", 256, 64);
+	OutputLine(NULL, "「遅すぎるッ！！！",
+			NULL, "\"That's too late!!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/170201483", 256, 64);
+	OutputLine(NULL, "　大石さん、私たちは今、鹿骨市が置かれている緊急的危機について、よく理解し合っているんじゃなかったでしたっけ？！」",
+			NULL, " Ooishi-san, aren't we the only ones who understand how much of an emergency Shishibone City is in now?!\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/170201484.「何をのんびりとしたことを！！kvS09/02/170201485.　……大石さん、本当に私の話を信じてくれているんですよね？！kvS09/02/170201486.　私の味方なんですよね？！kvS09/02/170201487.　味方ですよねッ？！kvS09/02/170201488.　答えてください！！！」
+	PlaySE(4, "ps3/s09/02/170201484", 256, 64);
+	OutputLine(NULL, "「何をのんびりとしたことを！！",
+			NULL, "\"How could you be so nonchalant!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/170201485", 256, 64);
+	OutputLine(NULL, "　……大石さん、本当に私の話を信じてくれているんですよね？！",
+			NULL, " ......Ooishi-san, are you sure you really believe in my story?!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/170201486", 256, 64);
+	OutputLine(NULL, "　私の味方なんですよね？！",
+			NULL, " Are you really my ally?!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/170201487", 256, 64);
+	OutputLine(NULL, "　味方ですよねッ？！",
+			NULL, " Are you?!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/170201488", 256, 64);
+	OutputLine(NULL, "　答えてください！！！」",
+			NULL, " Answer me!!!\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700376.「も、もちろんですとも…！kvS09/11/170700377.　ですが警察組織ってやつは簡単じゃないんです。kvS09/11/170700378.私も最大限、努力をしてるんですよ、えぇ本当です！kvS09/11/170700379.　……ただですね、やはり話の規模があまりに大き過ぎるもので、」
+	PlaySE(4, "ps3/s09/11/170700376", 256, 64);
+	OutputLine(NULL, "「も、もちろんですとも…！",
+			NULL, "\"O, Of course I am...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700377", 256, 64);
+	OutputLine(NULL, "　ですが警察組織ってやつは簡単じゃないんです。",
+			NULL, " However, the police force is a different story.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700378", 256, 64);
+	OutputLine(NULL, "私も最大限、努力をしてるんですよ、えぇ本当です！",
+			NULL, "I'm also trying the best I can, I really am!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700379", 256, 64);
+	OutputLine(NULL, "　……ただですね、やはり話の規模があまりに大き過ぎるもので、」",
+			NULL, "......It's just that, the scale of the conspiracy is too large,\"", Line_Normal); 
+	ClearMessage();
+
+//r…交渉はお世辞にも、順調とはいえなかった。
+	OutputLine(NULL, "…交渉はお世辞にも、順調とはいえなかった。",
+			NULL, "...The negotiations weren't that satisfactory, to be honest.", Line_Normal); 
+	ClearMessage();
+
+//r話している間にも竜宮レナの焦燥と、今にも爆発しそうな緊張がびりびりと伝わってくる。
+	OutputLine(NULL, "話している間にも竜宮レナの焦燥と、今にも爆発しそうな緊張がびりびりと伝わってくる。",
+			NULL, " Even as they spoke, it was clear from the overwhelming tension that Rena's impatience was wearing thinner and thinner.", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/430400001.「…じゃあ、圭一くんを呼んで」
+	PlaySE(4, "ps3/s09/02/430400001", 256, 64);
+	OutputLine(NULL, "「…じゃあ、圭一くんを呼んで」",
+			NULL, "\"...Okay, call Keiichi-kun over here\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/430500001.「は？kvS09/11/430500002.　いま、何とおっしゃいました？」
+	PlaySE(4, "ps3/s09/11/430500001", 256, 64);
+	OutputLine(NULL, "「は？",
+			NULL, "\"What?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/430500002", 256, 64);
+	OutputLine(NULL, "　いま、何とおっしゃいました？」",
+			NULL, " Could you say that again?\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/430400002.「そっちにいるんでしょう、圭一くん？kvS09/02/430400003.　彼と話をするから、早く呼び出して！」
+	PlaySE(4, "ps3/s09/02/430400002", 256, 64);
+	OutputLine(NULL, "「そっちにいるんでしょう、圭一くん？",
+			NULL, "\"Isn't Keiichi-kun there right now?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/430400003", 256, 64);
+	OutputLine(NULL, "　彼と話をするから、早く呼び出して！」",
+			NULL, " I'd like to talk to him now so please call him over immediately!\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/430500003.「…わ、わかりました」
+	PlaySE(4, "ps3/s09/11/430500003", 256, 64);
+	OutputLine(NULL, "「…わ、わかりました」",
+			NULL, "\"...I, I understand.\"", Line_Normal); 
+	ClearMessage();
+
+//r大石は部下の刑事に、バリケードで足止めした人だかりの最前列にいる少年を呼んでくるように命令する。
+	OutputLine(NULL, "大石は部下の刑事に、バリケードで足止めした人だかりの最前列にいる少年を呼んでくるように命令する。",
+			NULL, "Ooishi asks one of his subordinates to summon the boy who stood in the front line of the crowd gathered at the barricade.", Line_Normal); 
+	ClearMessage();
+
+//rほどなく彼は小走りで車のそばにやってきた。
+	OutputLine(NULL, "ほどなく彼は小走りで車のそばにやってきた。",
+			NULL, "He immediately jogged over to the car as soon as he was called.", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/430500004.「前原圭一さんですね？」
+	PlaySE(4, "ps3/s09/11/430500004", 256, 64);
+	OutputLine(NULL, "「前原圭一さんですね？」",
+			NULL, "\"You must be Keiichi Maebara, I assume?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200034.「は、はい…」
+	PlaySE(4, "ps3/s09/01/430200034", 256, 64);
+	OutputLine(NULL, "「は、はい…」",
+			NULL, "\"Y, Yes...\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/430500005.「竜宮レナさんが、あなたと話がしたいそうです。kvS09/11/430500006.通話、代わってもらえますか？」
+	PlaySE(4, "ps3/s09/11/430500005", 256, 64);
+	OutputLine(NULL, "「竜宮レナさんが、あなたと話がしたいそうです。",
+			NULL, "\"Miss Rena Ryūgū would like to have a word with you.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/430500006", 256, 64);
+	OutputLine(NULL, "通話、代わってもらえますか？」",
+			NULL, "Could you please take the call?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200035.「…わかりました」
+	PlaySE(4, "ps3/s09/01/430200035", 256, 64);
+	OutputLine(NULL, "「…わかりました」",
+			NULL, "\"...I understand\"", Line_Normal); 
+	ClearMessage();
+
+//rそして大石は受話器を圭一に渡し、外の様子に目を向けて何かに気付いたのか、車を出て行った。
+	OutputLine(NULL, "そして大石は受話器を圭一に渡し、外の様子に目を向けて何かに気付いたのか、車を出て行った。",
+			NULL, "Ooishi then hands over the receiver to Keiichi and then he notices something happening outside and leaves the car.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200036.「…もしもし」
+	PlaySE(4, "ps3/s09/01/430200036", 256, 64);
+	OutputLine(NULL, "「…もしもし」",
+			NULL, "\"...Hello?\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/430400004.「あ、圭一くん…？kvS09/02/430400005.　よかった、戻ってきてくれたんだね」
+	PlaySE(4, "ps3/s09/02/430400004", 256, 64);
+	OutputLine(NULL, "「あ、圭一くん…？",
+			NULL, "\"Ah, Keiichi-kun...?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/430400005", 256, 64);
+	OutputLine(NULL, "　よかった、戻ってきてくれたんだね」",
+			NULL, " It's good that you came back here.\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200037.「レナ…」
+	PlaySE(4, "ps3/s09/01/430200037", 256, 64);
+	OutputLine(NULL, "「レナ…」",
+			NULL, "\"Rena...\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/430400006.「警察がね、レナの言うことを信じてくれないの。kvS09/02/430400007.レナの言ってることが本当で、…レナがやろうとしてることが本気だって圭一くんからも言ってくれないかな。…かな？」
+	PlaySE(4, "ps3/s09/02/430400006", 256, 64);
+	OutputLine(NULL, "「警察がね、レナの言うことを信じてくれないの。",
+			NULL, "\"The police isn't believing what I'm telling them. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/430400007", 256, 64);
+	OutputLine(NULL, "レナの言ってることが本当で、…レナがやろうとしてることが本気だって圭一くんからも言ってくれないかな。…かな？」",
+			NULL, "Could you please tell them that the things I'm saying are true, and that I'm very serious about what I'm about to do...could you?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200038.「……。kvS09/01/430200039.やろうとしてることって、なんだよ…？」
+	PlaySE(4, "ps3/s09/01/430200038", 256, 64);
+	OutputLine(NULL, "「……。",
+			NULL, ".........", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200039", 256, 64);
+	OutputLine(NULL, "やろうとしてることって、なんだよ…？」",
+			NULL, "What do you mean by..."what I'm about to do"...?\"", Line_Normal); 
+	ClearMessage();
+
+//レナrvS09/02/430400008.「今、この教室にね、ガソリンをまいたの。kvS09/02/430400009.だから、レナが持ってるライターでちょっと火をつければ、ここにいる人質はみんな死んじゃう。kvS09/02/430400010.…それを、大石さんに教えてくれないかな」
+	PlaySE(4, "ps3/s09/02/430400008", 256, 64);
+	OutputLine(NULL, "「今、この教室にね、ガソリンをまいたの。",
+			NULL, "\"I've just finished poured gasoline all over this classroom. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/430400009", 256, 64);
+	OutputLine(NULL, "だから、レナが持ってるライターでちょっと火をつければ、ここにいる人質はみんな死んじゃう。",
+			NULL, "So, if I just ignite the lighter I have on hand, all the hostages here will die. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/02/430400010", 256, 64);
+	OutputLine(NULL, "…それを、大石さんに教えてくれないかな」",
+			NULL, "...Could you please let Ooishi-san know about that?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200040.「なっ？！」
+	PlaySE(4, "ps3/s09/01/430200040", 256, 64);
+	OutputLine(NULL, "「なっ？！」",
+			NULL, "\"Wha-?!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/kuruma3_02", 1000 );
+
+	DrawBustshot( 4, "sprite/sunset/kuma_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//熊谷rvS09/19/173100171.「な、何ですかあんたたちは…！」
+	PlaySE(4, "ps3/s09/19/173100171", 256, 64);
+	OutputLine(NULL, "「な、何ですかあんたたちは…！」",
+			NULL, "\"Wh-Who are you people?!\"", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1001.「退きたまえ。kvS09/00/VT3_ootaka1002.ここの責任者は誰だね」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1001", 256, 64);
+	OutputLine(NULL, "「退きたまえ。",
+			NULL, "\"Move over.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1002", 256, 64);
+	OutputLine(NULL, "ここの責任者は誰だね」",
+			NULL, " Who's in charge here?\"", Line_Normal); 
+	ClearMessage();
+
+//r何台かの車が次々にのりつけ、興宮署の刑事でない男たちが何人も現れた。
+	OutputLine(NULL, "何台かの車が次々にのりつけ、興宮署の刑事でない男たちが何人も現れた。",
+			NULL, "Several cars had arrived, bringing with them several men. They weren't from Okinomiya Police station.", Line_Normal); 
+	ClearMessage();
+
+//rこの暑いのにスーツをきっちり着こなした細身の男が、制止しようとする熊谷を払いのけて、大石のところへやって来た。
+	OutputLine(NULL, "この暑いのにスーツをきっちり着こなした細身の男が、制止しようとする熊谷を払いのけて、大石のところへやって来た。",
+			NULL, "One of the men was wearing a suit, mindless of the hot weather. He approached Ooishi, pushing Kumagai aside.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g1_01", 1000 );
+
+	DrawBustshot( 4, "sprite/sunset/oisi1_1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//大石rvS09/11/170700522.「…おや、これはこれは。kvS09/11/170700523.お久しぶりですねぇ、県警本部の大高くんじゃありませんか」
+	PlaySE(4, "ps3/s09/11/170700522", 256, 64);
+	OutputLine(NULL, "「…おや、これはこれは。",
+			NULL, "\"...Hey, look who's here.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700523", 256, 64);
+	OutputLine(NULL, "お久しぶりですねぇ、県警本部の大高くんじゃありませんか」",
+			NULL, "Good to see you again, Ootaka-kun from the prefectural headquarters.\"", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1003.「言葉を慎みたまえ。kvS09/00/VT3_ootaka1004.もう、君に『くん』と呼ばれる階級ではない」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1003", 256, 64);
+	OutputLine(NULL, "「言葉を慎みたまえ。",
+			NULL, "\"Watch your mouth.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1004", 256, 64);
+	OutputLine(NULL, "もう、君に『くん』と呼ばれる階級ではない」",
+			NULL, " I'm ranked much higher than you now, so don't address me so casually.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/sunset/oisi1_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//大石rvS09/11/170700524.「何か御用ですかね大高『くん』。k|yvS09/11/170700525.今、非常に立て込んでいます。kvS09/11/170700526.まさか県警がこの現場を乗っ取るおつもりで？kvS09/11/170700527.　誰の了解で！」
+	PlaySE(4, "ps3/s09/11/170700524", 256, 64);
+	OutputLine(NULL, "「何か御用ですかね大高『くん』。",
+			NULL, "\"Can I help you with something, Ootaka-<i>kun</i>?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700525", 256, 64);
+	OutputLine(NULL, "今、非常に立て込んでいます。",
+			NULL, " I'm rather busy at the moment.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700526", 256, 64);
+	OutputLine(NULL, "まさか県警がこの現場を乗っ取るおつもりで？",
+			NULL, " You can't possibly be thinking about taking over this case?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700527", 256, 64);
+	OutputLine(NULL, "　誰の了解で！」",
+			NULL, " Who approved that, exactly?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/sunset/oisi1_5_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//署長rvS09/00/syocho17001.「私が許可した、大石くん！」
+	PlaySE(4, "ps3/s09/00/syocho17001", 256, 64);
+	OutputLine(NULL, "「私が許可した、大石くん！」",
+			NULL, "\"I did, Ooishi-kun!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/sunset/oisi1_3_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//大石rvS09/11/170700528.「しょ、署長！」
+	PlaySE(4, "ps3/s09/11/170700528", 256, 64);
+	OutputLine(NULL, "「しょ、署長！」",
+			NULL, "\"Ch-Chief...?\"", Line_Normal); 
+	ClearMessage();
+
+//署長rvS09/00/syocho17002.「高杉くんから事情は聞いている。kvS09/00/syocho17003.君が蒔いたタネだという話も聞いているぞ。kvS09/00/syocho17004.君はもう下がってあとは機動隊に任せるんだ！」
+	PlaySE(4, "ps3/s09/00/syocho17002", 256, 64);
+	OutputLine(NULL, "「高杉くんから事情は聞いている。",
+			NULL, "\"Takasugi-kun has informed me of the situation.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/syocho17003", 256, 64);
+	OutputLine(NULL, "君が蒔いたタネだという話も聞いているぞ。",
+			NULL, " He also told me that you started all this.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/syocho17004", 256, 64);
+	OutputLine(NULL, "君はもう下がってあとは機動隊に任せるんだ！」",
+			NULL, " You can go now. The troops will take over!\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700529.「機動隊って、…大高くん、あんたまさか急襲する気ですか！」
+	PlaySE(4, "ps3/s09/11/170700529", 256, 64);
+	OutputLine(NULL, "「機動隊って、…大高くん、あんたまさか急襲する気ですか！」",
+			NULL, "\"The troops? ...Ootaka-kun, you aren't going to storm the building, are you?\"", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1005.「危険は重々承知だ。kvS09/00/VT3_ootaka1006.だが、現状では埒が明かず、いたずらに時間を費やしているだけじゃないか。kvS09/00/VT3_ootaka1007.君は腰を据えてかかりすぎだ。kvS09/00/VT3_ootaka1008.その尻拭いを我々がしようと言うんだ。kvS09/00/VT3_ootaka1009.君らは引き継いで後方に下がりたまえ」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1005", 256, 64);
+	OutputLine(NULL, "「危険は重々承知だ。",
+			NULL, "\"I understand the risk.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1006", 256, 64);
+	OutputLine(NULL, "だが、現状では埒が明かず、いたずらに時間を費やしているだけじゃないか。",
+			NULL, " But aren't you currently just wasting time without making any progress?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1007", 256, 64);
+	OutputLine(NULL, "君は腰を据えてかかりすぎだ。",
+			NULL, " You've taken too long waiting around.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1008", 256, 64);
+	OutputLine(NULL, "その尻拭いを我々がしようと言うんだ。",
+			NULL, " We're here to take care of the mess you left behind.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1009", 256, 64);
+	OutputLine(NULL, "君らは引き継いで後方に下がりたまえ」",
+			NULL, " Your units can just fall back for a minute and let us do the job.\"", Line_Normal); 
+	ClearMessage();
+
+//r署長と県警本部の人間に凄まれては、立場上、大石は譲らざるを得ない。
+	OutputLine(NULL, "署長と県警本部の人間に凄まれては、立場上、大石は譲らざるを得ない。",
+			NULL, "I couldn't talk back if both the chief and a guy from the prefectural headquarters gave me an order.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/sora2", 1000 );
+
+//熊谷rvS09/19/173100172.「お、…大石さん、何者っすかあいつは…！」
+	PlaySE(4, "ps3/s09/19/173100172", 256, 64);
+	OutputLine(NULL, "「お、…大石さん、何者っすかあいつは…！」",
+			NULL, "\"O...Ooishi-san, who the heck is he?\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700530.「大高くん。kvS09/11/170700531.んっふっふ、昔、麻雀がクソ弱いくせに粋がってたから、ちょいと叩き潰してやったことがありましてねー」
+	PlaySE(4, "ps3/s09/11/170700530", 256, 64);
+	OutputLine(NULL, "「大高くん。",
+			NULL, "\"That's Ootaka-kun.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700531", 256, 64);
+	OutputLine(NULL, "んっふっふ、昔、麻雀がクソ弱いくせに粋がってたから、ちょいと叩き潰してやったことがありましてねー」",
+			NULL, " Nfu fu, a long time ago, he was showing off even though he was bad at mahjong, so I taught him a lesson. ", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700532.「それともあれかな、剣道大会で偉そうにしてやがったから、面食らわして失神させたのを根に持ってるのかなぁ」
+	PlaySE(4, "ps3/s09/11/170700532", 256, 64);
+	OutputLine(NULL, "「それともあれかな、剣道大会で偉そうにしてやがったから、面食らわして失神させたのを根に持ってるのかなぁ」",
+			NULL, "Or maybe he's still holding a grudge from when I knocked him unconscious in that kendo tournament.\"", Line_Normal); 
+	ClearMessage();
+
+//rそれ以上を聞かなくても、二人が犬猿の仲であることは容易に想像できた。
+	OutputLine(NULL, "それ以上を聞かなくても、二人が犬猿の仲であることは容易に想像できた。",
+			NULL, "Even without saying more, it was apparent that they both were as close as cats and mice.", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1010.「大石くん、現在の最新の状況を説明したまえ」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1010", 256, 64);
+	OutputLine(NULL, "「大石くん、現在の最新の状況を説明したまえ」",
+			NULL, "\"Give me the latest update, Ooishi-kun.\"", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/170700533.「あんた、本気で突入する気で？」
+	PlaySE(4, "ps3/s09/11/170700533", 256, 64);
+	OutputLine(NULL, "「あんた、本気で突入する気で？」",
+			NULL, "\"Are you serious about storming the school?", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1011.「突入は府警の専門部隊が担当する。kvS09/00/VT3_ootaka1012.君はバックアップに回りたまえ」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1011", 256, 64);
+	OutputLine(NULL, "「突入は府警の専門部隊が担当する。",
+			NULL, "A special unit from the prefectural police department will handle the infiltration.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1012", 256, 64);
+	OutputLine(NULL, "君はバックアップに回りたまえ」",
+			NULL, " Your unit will be their backup.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/g1_01", 1000 );
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_3_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+	DrawBustshot( 3, "sprite/sunset/kuma_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//大石rvS09/11/170700536.「……署長」
+	PlaySE(4, "ps3/s09/11/170700536", 256, 64);
+	OutputLine(NULL, "「……署長」",
+			NULL, "\"...Chief.", Line_Normal); 
+	ClearMessage();
+
+//署長rvS09/00/syocho17005.「大石くん。kvS09/00/syocho17006.府警の専門部隊はただの機動隊じゃないぞ。kvS09/00/syocho17007.第２機動隊と言えば、君ほどの男なら噂くらい聞いてるだろう？」
+	PlaySE(4, "ps3/s09/00/syocho17005", 256, 64);
+	OutputLine(NULL, "「大石くん。",
+			NULL, "\"Ooishi-kun. ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/syocho17006", 256, 64);
+	OutputLine(NULL, "府警の専門部隊はただの機動隊じゃないぞ。",
+			NULL, "The special unit from the prefectural police department isn't just any old riot force.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/syocho17007", 256, 64);
+	OutputLine(NULL, "第２機動隊と言えば、君ほどの男なら噂くらい聞いてるだろう？」",
+			NULL, " You've heard about the Second Company, haven't you?\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100173.「………なんすか大石さん。kvS09/19/173100174.第２機動隊って有名なんですか…？」
+	PlaySE(4, "ps3/s09/19/173100173", 256, 64);
+	OutputLine(NULL, "「………なんすか大石さん。",
+			NULL, "\".........What's that, Ooishi-san?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/19/173100174", 256, 64);
+	OutputLine(NULL, "第２機動隊って有名なんですか…？」",
+			NULL, " Is this \"Second Company\" that well known?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_5_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//大石rvS09/11/170700547.「５年くらい前だっけ、…空港の飛行機に犯人が立て篭もった事件があったでしょ。kvS09/11/170700548.あれを切っ掛けに、東京と大阪にハイジャック専門の特殊部隊が組織されたって噂は聞いてましたがね。kvS09/11/170700549.………実在してましたか…」
+	PlaySE(4, "ps3/s09/11/170700547", 256, 64);
+	OutputLine(NULL, "「５年くらい前だっけ、…空港の飛行機に犯人が立て篭もった事件があったでしょ。",
+			NULL, "\"Do you remember, about five years ago, ... when the JRA hijacked that airplane? Flight 472?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700548", 256, 64);
+	OutputLine(NULL, "あれを切っ掛けに、東京と大阪にハイジャック専門の特殊部隊が組織されたって噂は聞いてましたがね。",
+			NULL, " I've heard that special counter-terrorist units were put together in Tokyo and Osaka after that incident.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700549", 256, 64);
+	OutputLine(NULL, "………実在してましたか…」",
+			NULL, ".........So they really do exist...\"", Line_Normal); 
+	ClearMessage();
+
+//熊谷rvS09/19/173100175.「で、でも、何だって府警の機動隊がこんなところに…」
+	PlaySE(4, "ps3/s09/19/173100175", 256, 64);
+	OutputLine(NULL, "「で、でも、何だって府警の機動隊がこんなところに…」",
+			NULL, "\"B-But why would a special unit from Osaka be here?\"", Line_Normal); 
+	ClearMessage();
+
+//r大高が得意げにニヤリと笑った。
+	OutputLine(NULL, "大高が得意げにニヤリと笑った。",
+			NULL, "Ootaka smiled proudly.", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1013.「たまたま県警機動隊との交流訓練があってね。kvS09/00/VT3_ootaka1014.特別に応援を要請したのだよ」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1013", 256, 64);
+	OutputLine(NULL, "「たまたま県警機動隊との交流訓練があってね。",
+			NULL, "\"We just happened to be holding a training session with your prefectural police unit.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1014", 256, 64);
+	OutputLine(NULL, "特別に応援を要請したのだよ」",
+			NULL, " We requested their help.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//大石rvS09/11/170700550.「なっはっは、……相変わらずですねぇ。k|yvS09/11/170700551.…話をすぐ派手にしたがる、その癖は」
+	PlaySE(4, "ps3/s09/11/170700550", 256, 64);
+	OutputLine(NULL, "「なっはっは、……相変わらずですねぇ。",
+			NULL, "\"Na ha ha... you haven't changed, have you?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700551", 256, 64);
+	OutputLine(NULL, "…話をすぐ派手にしたがる、その癖は」",
+			NULL, "...You have a bad tendency to let issues escalate quickly.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_5_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("background/sora2", 1000 );
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+
+//rとても日本的とは思えない武装をした黒装束の機動隊員たちが次々と降車しては、予め決められたらしい位置に散っていく。
+	OutputLine(NULL, "とても日本的とは思えない武装をした黒装束の機動隊員たちが次々と降車しては、予め決められたらしい位置に散っていく。",
+			NULL, "The Company members exited the vehicles one after another and took position.", Line_Normal); 
+	ClearMessage();
+
+//rその動きはとても警察的とは思えなかった。
+	OutputLine(NULL, "その動きはとても警察的とは思えなかった。",
+			NULL, "They didn't move like policemen...", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/kuruma3_02", 1000 );
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_3_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//大石rvS09/11/170700552.「大高くん！kvS09/11/170700553.　あんた学校で銃撃戦をやる気かい！」
+	PlaySE(4, "ps3/s09/11/170700552", 256, 64);
+	OutputLine(NULL, "「大高くん！",
+			NULL, "\"Ootaka-kun!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700553", 256, 64);
+	OutputLine(NULL, "　あんた学校で銃撃戦をやる気かい！」",
+			NULL, " Are you really going to have a gunfight here?", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1015.「安心したまえ。kvS09/00/VT3_ootaka1016.突入班が使うのは火器じゃない。kvS09/00/VT3_ootaka1017.暴徒鎮圧用の最新武装だ。kvS09/00/VT3_ootaka1018.高圧ガスで催涙ガスを噴出する。kvS09/00/VT3_ootaka1019.何の問題もない」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1015", 256, 64);
+	OutputLine(NULL, "「安心したまえ。",
+			NULL, "\"Don't worry.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1016", 256, 64);
+	OutputLine(NULL, "突入班が使うのは火器じゃない。",
+			NULL, "They won't use firearms.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1017", 256, 64);
+	OutputLine(NULL, "暴徒鎮圧用の最新武装だ。",
+			NULL, " They're using riot shields and riot guns.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1018", 256, 64);
+	OutputLine(NULL, "高圧ガスで催涙ガスを噴出する。",
+			NULL, " These guns send out tear gas at high pressures.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1019", 256, 64);
+	OutputLine(NULL, "何の問題もない」",
+			NULL, "There will be no issues.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_5_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//大石rvS09/11/170700555.「………へぇ～、そりゃ便利な水鉄砲があったもんで。kvS09/11/170700556.ところで、その玩具は校庭を横断して教室まで届くほど便利なものなんで？」
+	PlaySE(4, "ps3/s09/11/170700555", 256, 64);
+	OutputLine(NULL, "「………へぇ～、そりゃ便利な水鉄砲があったもんで。",
+			NULL, "\"......Wow, I've never heard of such convenient water guns.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/170700556", 256, 64);
+	OutputLine(NULL, "ところで、その玩具は校庭を横断して教室まで届くほど便利なものなんで？」",
+			NULL, " By the way, can that toy reach the classroom from across the schoolyard?\"", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1020.「それは君が心配することではない。kvS09/00/VT3_ootaka1021.後は我々に任せて下がりたまえ」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1020", 256, 64);
+	OutputLine(NULL, "「それは君が心配することではない。",
+			NULL, "\"You don't need to worry about that.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1021", 256, 64);
+	OutputLine(NULL, "後は我々に任せて下がりたまえ」",
+			NULL, " You just move over and let us do our job.\"", Line_Normal); 
+	ClearMessage();
+
+//rそして、大高の指示のもと機動隊員たちは学校の窓から見える死角へと回り込んで、突入命令に備えて身構える。
+	OutputLine(NULL, "そして、大高の指示のもと機動隊員たちは学校の窓から見える死角へと回り込んで、突入命令に備えて身構える。",
+			NULL, "And then, following Ootaka's orders, the special forces take positions at a blind spot visible from the school window and prepare to infiltrate.", Line_Normal); 
+	ClearMessage();
+
+//rその物々しさと反論を許さぬ傲岸さに大石は鼻白みながら、レナと圭一がいま会話をしている最中であることを思い出して、車のほうへと足を向けた。
+	OutputLine(NULL, "その物々しさと反論を許さぬ傲岸さに大石は鼻白みながら、レナと圭一がいま会話をしている最中であることを思い出して、車のほうへと足を向けた。",
+			NULL, "Ooishi wrinkles his nose at Ootaka's arrogance and pretentious attitude that didn't give way for counterarguements. Remembering that Rena and Keiichi were having a conversation, he turns on his heel heading over to the patrol car.", Line_Normal); 
+	ClearMessage();
+
+//rそこへ。
+	OutputLine(NULL, "そこへ。",
+			NULL, "And there,", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/kei1_ikari1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//圭一rvS09/01/430200041.「――た、大変だ刑事さんっ！！」
+	PlaySE(4, "ps3/s09/01/430200041", 256, 64);
+	OutputLine(NULL, "「——た、大変だ刑事さんっ！！」",
+			NULL, ""——Detective, we have an emergency!!\"", Line_Normal); 
+	ClearMessage();
+
+//r突然車のドアが勢いよく開いて、大声を上げながら圭一が飛び出してくる。
+	OutputLine(NULL, "突然車のドアが勢いよく開いて、大声を上げながら圭一が飛び出してくる。",
+			NULL, "At once, the door to the car swings open and Keiichi rushes over to him screaming.", Line_Normal); 
+	ClearMessage();
+
+//大石rvS09/11/430500007.「どうしました、前原さん？」
+	PlaySE(4, "ps3/s09/11/430500007", 256, 64);
+	OutputLine(NULL, "「どうしました、前原さん？」",
+			NULL, "\"What's the matter, Maebara-san?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200042.「れ、レナが教室内に、が、ガソリンをまいたって…！！」
+	PlaySE(4, "ps3/s09/01/430200042", 256, 64);
+	OutputLine(NULL, "「れ、レナが教室内に、が、ガソリンをまいたって…！！」",
+			NULL, "\"Re, Rena just told me she's poured gasoline all over the classroom...!!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/oisi1_3_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//大石rvS09/11/430500008.「んなっ？！」
+	PlaySE(4, "ps3/s09/11/430500008", 256, 64);
+	OutputLine(NULL, "「んなっ？！」",
+			NULL, "\"Whaaa~?!\"", Line_Normal); 
+	ClearMessage();
+
+//rガソリンだと…？！　そんな揮発性の危険物があるなんて話は聞いていないぞ！！　いや、そんなことよりも、だったら今は――！！
+	OutputLine(NULL, "ガソリンだと…？！　そんな揮発性の危険物があるなんて話は聞いていないぞ！！　いや、そんなことよりも、だったら今は——！！",
+			NULL, "Gasoline...?! I didn't hear that there was something so inflammable in the vicinity!! No, it's not about that, right now——!!", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1022.「射撃用意、構え――」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1022", 256, 64);
+	OutputLine(NULL, "「射撃用意、構え——」",
+			NULL, "\"Preparing to shoot, steady——\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "addse19", 256, 64);
+
+	PlaySE(3, "addse19", 256, 64);
+
+	PlaySE(3, "addse19", 256, 64);
+
+	PlaySE(3, "addse19", 256, 64);
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawBustshot( 4, "portrait/sunset/", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//大石rvS09/11/430500009.「ま、待ってください！kvS09/11/430500010.　やめろ、撃つなっ！！」
+	PlaySE(4, "ps3/s09/11/430500009", 256, 64);
+	OutputLine(NULL, "「ま、待ってください！",
+			NULL, "\"P, Please wait! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/11/430500010", 256, 64);
+	OutputLine(NULL, "　やめろ、撃つなっ！！」",
+			NULL, " Stop, don't shoot!!\"", Line_Normal); 
+	ClearMessage();
+
+//大高rvS09/00/VT3_ootaka1023.「撃てっ！！」
+	PlaySE(4, "ps3/s09/00/vt3_ootaka1023", 256, 64);
+	OutputLine(NULL, "「撃てっ！！」",
+			NULL, "\"Fire~!!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+	PlaySE(3, "mc071", 256, 64);
+
+	PlaySE(3, "mc071", 256, 64);
+
+	PlaySE(3, "mc071", 256, 64);
+
+	PlaySE(3, "mc071", 256, 64);
+
+	PlaySE(3, "daidageki", 256, 64);
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+	DrawScene("black", 1000 );
+
+	FadeOutBGM(2, 200, FALSE);
+
+//大石＆圭一ro75.vS09/11/430500011|S09/01/430200043.「「うわぁぁっっ！！」」
+	PlaySE(4, "ps3/s09/11/430500011", 256, 64);
+	PlaySE(5, "ps3/s09/01/430200043", 256, 64);
+	OutputLine(NULL, "「「うわぁぁっっ！！」」",
+			NULL, "\"Uwaaaahhhh~~!!\"", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, "............ ", Line_Normal); 
+	ClearMessage();
+
+//r……。
+	OutputLine(NULL, "……。",
+			NULL, "...... ", Line_Normal); 
+	ClearMessage();
+
+//r突然、身体が吹き飛ばされて地面に叩きつけられ、…一瞬、何が起こったのかわからなかった。
+	OutputLine(NULL, "突然、身体が吹き飛ばされて地面に叩きつけられ、…一瞬、何が起こったのかわからなかった。",
+			NULL, "Our bodies were promptly blown away and hit the floor, and we didn't understand what had happened for a moment.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200044.「……。kvS09/01/430200045.…っ…？」
+	PlaySE(4, "ps3/s09/01/430200044", 256, 64);
+	OutputLine(NULL, "「……。",
+			NULL, "\".........", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200045", 256, 64);
+	OutputLine(NULL, "…っ…？」",
+			NULL, "...gh...?\"", Line_Normal); 
+	ClearMessage();
+
+//r耳鳴りが頭に激しく響きわたり、くらくらとしたbめまい.<眩暈>で意識が遠のきそうになる。
+	OutputLine(NULL, "耳鳴りが頭に激しく響きわたり、くらくらとした眩暈(めまい)で意識が遠のきそうになる。",
+			NULL, "A high pitched tinnitus violently reverberated within my skull, and an overwhelming dizziness distanced me from my consciousness.", Line_Normal); 
+	ClearMessage();
+
+//rたち込める砂埃と焼け焦げた空気を感じて、喉と鼻の奥が…痛い。
+	OutputLine(NULL, "たち込める砂埃と焼け焦げた空気を感じて、喉と鼻の奥が…痛い。",
+			NULL, "My throat and nasal passage felt irritated from the suspended dust particles and smouldered air.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200046.「……っ」
+	PlaySE(4, "ps3/s09/01/430200046", 256, 64);
+	OutputLine(NULL, "「……っ」",
+			NULL, "\".....gh\"", Line_Normal); 
+	ClearMessage();
+
+//r口の中のじゃりじゃりとしたものを唾とともに吐き出しながら、俺は痛む身体を起こして立ち上がり、…顔を前に、向けた。
+	OutputLine(NULL, "口の中のじゃりじゃりとしたものを唾とともに吐き出しながら、俺は痛む身体を起こして立ち上がり、…顔を前に、向けた。",
+			NULL, "Spitting out the crunchy debris from my mouth, I dragged my beaten body up into a stance, ...and faced forward, looking ahead of me.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/gr1_01", 1000 );
+
+//圭一rvS09/01/430200047.「…………。kvS09/01/430200048.…………。kvS09/01/430200049.……あ…………？」
+	PlaySE(4, "ps3/s09/01/430200047", 256, 64);
+	OutputLine(NULL, "「…………。",
+			NULL, "\"............ ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200048", 256, 64);
+	OutputLine(NULL, "…………。",
+			NULL, "......... ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200049", 256, 64);
+	OutputLine(NULL, "……あ…………？」",
+			NULL, "...Ah.........?\"", Line_Normal); 
+	ClearMessage();
+
+//rグラウンドには、たくさんの警察官が転がって、呻いている。
+	OutputLine(NULL, "グラウンドには、たくさんの警察官が転がって、呻いている。",
+			NULL, "There were many police officers scattered about on the ground, groaning from the impact.", Line_Normal); 
+	ClearMessage();
+
+//r…すぐそばで、苦悶の声。…目を向けると、さっきまで話していた刑事だった。
+	OutputLine(NULL, "…すぐそばで、苦悶の声。…目を向けると、さっきまで話していた刑事だった。",
+			NULL, "...A voice of agony filled the air next to me. ...As I faced it, it turned out to be the detective I'd been talking to just now.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200050.「ぐ…っ…！！」
+	PlaySE(4, "ps3/s09/01/430200050", 256, 64);
+	OutputLine(NULL, "「ぐ…っ…！！」",
+			NULL, "\"Ugh...~...!!\"", Line_Normal); 
+	ClearMessage();
+
+//r顔も、服も、全身を泥と埃にまみれさせて、…頭からは血を流している。
+	OutputLine(NULL, "顔も、服も、全身を泥と埃にまみれさせて、…頭からは血を流している。",
+			NULL, "His entire body was covered in dirt and debris, ...and he was bleeding from his head\"", Line_Normal); 
+	ClearMessage();
+
+//rそれを気遣おうと膝を折りかけて、…俺は、レナや魅音たちの安否を思い出す。
+	OutputLine(NULL, "それを気遣おうと膝を折りかけて、…俺は、レナや魅音たちの安否を思い出す。",
+			NULL, "As I begin to sit down in concern for him, ...I am suddenly reminded of Mion and Rena's safety.", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM(2, "hm03_17", 128, 0);
+
+	DrawScene("background/gr2_03", 1000 );
+
+//rそして、校舎の方向に目を向けて、
+	OutputLine(NULL, "そして、校舎の方向に目を向けて、",
+			NULL, And then, I turn towards the direction of the school, "", Line_Normal); 
+	ClearMessage();
+
+//r…俺は、k…自分の見ている光景が、k…信じられなかった。
+	OutputLine(NULL, "…俺は、",
+			NULL, "...I, ", Line_WaitForInput); 
+	OutputLine(NULL, "…自分の見ている光景が、",
+			NULL, "...couldn't believe, ", Line_WaitForInput); 
+	OutputLine(NULL, "…信じられなかった。",
+			NULL, "...what I was seeing. ", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200051.「…………」
+	PlaySE(4, "ps3/s09/01/430200051", 256, 64);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"............\"", Line_Normal); 
+	ClearMessage();
+
+//rそこにあったのは木材と、石材と、それ以外の何かがいびつに入り混じった…まるで巨大な、崩れたばかりのキャンプファイアーの焚き木。
+	OutputLine(NULL, "そこにあったのは木材と、石材と、それ以外の何かがいびつに入り混じった…まるで巨大な、崩れたばかりのキャンプファイアーの焚き木。",
+			NULL, "What stood before me was a disordered conglomerate of wood, bricks and other distorted articles mixed in... crudely resembling an enormous camping bonfire.", Line_Normal); 
+	ClearMessage();
+
+//rその中で燃え盛る炎は、夕焼けの空に突き上がるほど高く。
+	OutputLine(NULL, "その中で燃え盛る炎は、夕焼けの空に突き上がるほど高く。",
+			NULL, "The flames that had risen up in between that mass burned so high they seemed to reach up into the evening twilight.", Line_Normal); 
+	ClearMessage();
+
+//rかなり離れたこの場所にいても、その熱気と焦臭ははっきりと伝わってきた。
+	OutputLine(NULL, "かなり離れたこの場所にいても、その熱気と焦臭ははっきりと伝わってきた。",
+			NULL, "Even from this faraway distance, I could perceive the heat and the scorching smell.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200052.「…………」
+	PlaySE(4, "ps3/s09/01/430200052", 256, 64);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"............\"", Line_Normal); 
+	ClearMessage();
+
+//r…違う。
+	OutputLine(NULL, "…違う。",
+			NULL, "...No.", Line_Normal); 
+	ClearMessage();
+
+//r違う、これは夢だ。
+	OutputLine(NULL, "違う、これは夢だ。",
+			NULL, "No, this had to be a dream. ", Line_Normal); 
+	ClearMessage();
+
+//rこれは、俺たちの学校じゃ、ない。
+	OutputLine(NULL, "これは、俺たちの学校じゃ、ない。",
+			NULL, "This couldn't be our school.", Line_Normal); 
+	ClearMessage();
+
+//r俺はどこか、別の方向を見ているだけだ。
+	OutputLine(NULL, "俺はどこか、別の方向を見ているだけだ。",
+			NULL, "", Line_Normal); 
+	ClearMessage();
+
+//rいや、ここがそもそも、学校じゃないんだ…。
+	OutputLine(NULL, "いや、ここがそもそも、学校じゃないんだ…。",
+			NULL, "No, this wasn't even a school in the first place...", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200053.「…………」
+	PlaySE(4, "ps3/s09/01/430200053", 256, 64);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"............\"", Line_Normal); 
+	ClearMessage();
+
+//rふらふら、…と。
+	OutputLine(NULL, "ふらふら、…と。",
+			NULL, "I staggered over.", Line_Normal); 
+	ClearMessage();
+
+//r俺は、頼りない足取りで何度も躓きながら、それに向かって歩いていく。
+	OutputLine(NULL, "俺は、頼りない足取りで何度も躓きながら、それに向かって歩いていく。",
+			NULL, "Fumbling forward with my useless legs, I walked over to that monstrosity.", Line_Normal); 
+	ClearMessage();
+
+//rそして、ふと目を向けた先の崩れて折り重なった木材の中に見知った顔を見つけ、はっ、と息をのんで駆け寄った。
+	OutputLine(NULL, "そして、ふと目を向けた先の崩れて折り重なった木材の中に見知った顔を見つけ、はっ、と息をのんで駆け寄った。",
+			NULL, "And then before me, amidst the crumbled remains of timber, I discovered a face I recognized and drew a breath before I rushed over.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//圭一rvS09/01/430200054.「――魅音っ…！」
+	PlaySE(4, "ps3/s09/01/430200054", 256, 64);
+	OutputLine(NULL, "「——魅音っ…！」",
+			NULL, "\"——Mion...!\"", Line_Normal); 
+	ClearMessage();
+
+//r魅音は目を見開いたまま、こちらに顔を向けて右腕を伸ばしている。
+	OutputLine(NULL, "魅音は目を見開いたまま、こちらに顔を向けて右腕を伸ばしている。",
+			NULL, "Mion's eyes were wide open, facing my way, with her right arm raised.", Line_Normal); 
+	ClearMessage();
+
+//rわずかに開いた口。…きっと、声が出ないんだろう。
+	OutputLine(NULL, "わずかに開いた口。…きっと、声が出ないんだろう。",
+			NULL, "Her mouth was slightly open.... she probably couldn't speak. ", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200055.「よかった…魅音っ…！」
+	PlaySE(4, "ps3/s09/01/430200055", 256, 64);
+	OutputLine(NULL, "「よかった…魅音っ…！」",
+			NULL, "\"Thank god... Mion...!\"", Line_Normal); 
+	ClearMessage();
+
+//rとにかく、今は助け出すことが先だ！
+	OutputLine(NULL, "とにかく、今は助け出すことが先だ！",
+			NULL, "I had to get her out here first!", Line_Normal); 
+	ClearMessage();
+
+//rそう思って俺は、その右腕をつかみ――。
+	OutputLine(NULL, "そう思って俺は、その右腕をつかみ——。",
+			NULL, "Thinking that, I tightly grasped that right arm——.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS09/01/430200056.「…………」
+	PlaySE(4, "ps3/s09/01/430200056", 256, 64);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"............\"", Line_Normal); 
+	ClearMessage();
+
+//r手応えのない、軽い感触。kそれは瓦礫の中から、k|yすぽりと『抜けた』。
+	OutputLine(NULL, "手応えのない、軽い感触。",
+			NULL, "It felt light, there was no resistance. ", Line_WaitForInput); 
+	OutputLine(NULL, "それは瓦礫の中から、",
+			NULL, "And then, from within the rubble, ", Line_WaitForInput); 
+	OutputLine(NULL, "|yすぽりと『抜けた』。",
+			NULL, "|y'it' came out. ", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+	DrawScene("background/ryuuketu1_01", 1000 );
+
+	PlayBGM(2, "hm06_26", 128, 0);
+
+//圭一rvS09/01/430200057.「……あ…」
+	PlaySE(4, "ps3/s09/01/430200057", 256, 64);
+	OutputLine(NULL, "「……あ…」",
+			NULL, "\"......Ah...\"", Line_Normal); 
+	ClearMessage();
+
+//rそして、ごろり、とk小さな塊が、足元に転がる。
+	OutputLine(NULL, "そして、ごろり、と",
+			NULL, "And then, a small mass rolled over,", Line_WaitForInput); 
+	OutputLine(NULL, "小さな塊が、足元に転がる。",
+			NULL, " and touched my feet.", Line_Normal); 
+	ClearMessage();
+
+//r魅w600.音w600.のw600.首w600.かw600.らw600.下w600.はw600.、w600.なw600.にw600.もw600.、w600.なw600.かw600.っw600.たw600.。
+	OutputLine(NULL, "魅w600.音w600.のw600.首w600.かw600.らw600.下w600.はw600.、w600.なw600.にw600.もw600.、w600.なw600.かw600.っw600.たw600.。",
+			NULL, "Miw600.on'sw600.headw600.hadw600.comew600.aw600.partw600.fromw600.herw600.bow600.dyw600.、w600..w600..w600..w600.~w600..w600.。", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "addse07", 256, 64);
+
+	DrawScene("background/ryuuketu2", 1000 );
+
+//圭一rvS09/01/430200058.「う、うわぁぁぁああああぁぁぁぁぁっっっ！！kvS09/01/430200059.　ああぁぁあああぁぁぁぁっっっ！！！！」
+	PlaySE(4, "ps3/s09/01/430200058", 256, 64);
+	OutputLine(NULL, "「う、うわぁぁぁああああぁぁぁぁぁっっっ！！",
+			NULL, "\"U, Uwaaaaaaaaaaaahhhhhhhhh!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s09/01/430200059", 256, 64);
+	OutputLine(NULL, "　ああぁぁあああぁぁぁぁっっっ！！！！」",
+			NULL, " Aaaaahhhhhhhhh!!!!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+	DrawScene("black", 1000 );
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+}
