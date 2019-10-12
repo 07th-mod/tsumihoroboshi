@@ -463,7 +463,9 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 20, "sprite/normal/rina_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 21, "sprite/normal/tetu_3_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/saten2", "maskright", 1, 0, 300 );
 
@@ -1393,6 +1395,7 @@ void main()
 
 	DisableWindow();
 	ModDrawCharacter(1, 6, "sprite/normal/si1a_def_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacterWithFiltering(0, 15, "sprite/normal/kasa_3_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

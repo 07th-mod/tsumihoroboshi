@@ -10,6 +10,7 @@ void main()
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "background/ma1", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 2, "sprite/normal/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/m_hi1", "maskright", 1, 0, 300 );
 
@@ -20,7 +21,9 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 2, "sprite/normal/re1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/m_hi3", 400 );
 

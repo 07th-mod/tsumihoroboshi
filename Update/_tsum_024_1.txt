@@ -13,6 +13,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 3, "sprite/normal/me1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/m_hi3", "maskright", 1, 0, 300 );
 
@@ -185,6 +186,7 @@ void main()
 		   NULL, "...And unfortunately, the reason was very difficult to understand... and you wouldn't be able to figure it out until you died.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/m_hi3", "maskright", 1, 0, 300 );
 
@@ -427,6 +429,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_def_a1_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -618,6 +621,7 @@ void main()
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	PlaySE( 0, "s_door", 56, 64 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "background/gk3", "maskleft", 1, 0, 300 );
 

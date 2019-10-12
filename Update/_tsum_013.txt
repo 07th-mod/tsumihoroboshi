@@ -68,6 +68,7 @@ void main()
 		   NULL, " ...I saw her there.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/tosyo2", 3000 );
 
@@ -1249,6 +1250,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 9, "portrait/normal/ta1_human_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/ke_ky2", 1000 );
 	PlayBGM( 0, "higurashi", 56, 0 );

@@ -141,7 +141,9 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 5, "sprite/normal/ri6_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 2, "sprite/normal/re2b_kaii_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/res1", 300 );
 
@@ -205,7 +207,9 @@ void main()
 		   NULL, "Tomita-kun, our underclassman, pushed his way through the crowd.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 25, "sprite/normal/oka1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 24, "sprite/normal/tomita1_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/res5", "maskleft", 1, 0, 300 );
 

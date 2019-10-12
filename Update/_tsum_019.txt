@@ -1457,6 +1457,7 @@ void main()
 		   NULL, "Ooishi wanted to talk more. He clicked his tongue and put the phone down.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 19, "sprite/normal/kuma_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/ke_s2", "maskright", 7, 0, 300 );
 
@@ -1494,6 +1495,7 @@ void main()
 		   NULL, " Akane Sonozaki's right-hand man...?\"", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "black", 1000 );
 
@@ -1675,6 +1677,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/si_g1", 400 );
 

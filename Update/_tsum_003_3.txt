@@ -106,6 +106,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "white", 200 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa6_hau_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/furiker_c", 50 );
 	FadeOutBGM( 0, 100, FALSE );
@@ -400,8 +401,10 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 400, FALSE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 4, "sprite/normal/sa6_hau_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(2, 3, "sprite/normal/me5_def_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 5, "sprite/normal/ri6_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "background/res1", 400 );
 	PlayBGM( 0, "cafe", 56, 0 );
@@ -849,6 +852,7 @@ void main()
 		   NULL, " You should appreciate our sacrifice...!!!\"", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 3, "sprite/normal/me5_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskup", 1, 0, 300 );
 

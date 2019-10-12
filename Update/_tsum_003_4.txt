@@ -7,6 +7,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 1, "sprite/normal/kei2_nayamu_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskright", 1, 0, 300 );
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
@@ -116,6 +117,7 @@ void main()
 		   NULL, " but I didn't care, exactly because I was having so much fun.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me5_wink_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskup", 1, 0, 300 );
 
