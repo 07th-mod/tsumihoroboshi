@@ -456,6 +456,12 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 24)
 	{
 		CallScript( "_tsum_024_1");
+		if (LoadValueFromLocalWork( SelectResult ) == 1) {
+			CallScript( "tsum_badend1" );
+			JumpSection("Title");
+		}
+
+		CallScript( "_tsum_024_1a" );
 		CallScript( "_tsum_024_2");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 25)
@@ -465,6 +471,11 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 26)
 	{
 		CallScript( "_tsum_026");
+		if (LoadValueFromLocalWork( SelectResult ) == 0) {
+			CallScript( "tsum_badend2" );
+			JumpSection("Title");
+		}
+		CallScript( "_tsum_026a");
 	}
 
 	SetGlobalFlag( GFlag_GameClear, TRUE );
