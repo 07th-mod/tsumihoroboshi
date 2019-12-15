@@ -10,7 +10,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……沙都子からの返事は、まだない。",
-			NULL, ".........There still wasn't any reply from Satoko", Line_Normal);
+			NULL, ".........There still wasn't any reply from Satoko.", Line_Normal);
 	ClearMessage();
 
 //rくそ……！　早く、レナが時限発火装置を隠した場所を見つけ出さないと！！
@@ -31,24 +31,24 @@ void main()
 			NULL, "Please.........Satoko, you're the only one we're counting on!!", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(4, 256, "sunset");
+	ModDrawCharacter(4, 2, "sprite/re2a_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("background/g2_01", 1000 );
-
-	ModDrawCharacter(4, 2, "sprite/sunset/re2a_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS09/02/170201629.「あはははははあははははははははは！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201629", 256, TRUE);
 	OutputLine(NULL, "「あはははははあははははははははは！」",
-			NULL, "\"Ahahahahaha Ahahahahahahahahaha!\"", Line_Normal);
+			NULL, "\"Ahahahahaha Ahahahahahahahahaha!", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprite/sunset/re2a_hig_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_hig_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS09/02/170201630.「すごいよ、すごいよ、これは部活じゃないんだよ？kvS09/02/170201629.　あははははははははははははははは！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201630", 256, TRUE);
 	OutputLine(NULL, "「すごいよ、すごいよ、これは部活じゃないんだよ？",
-			NULL, "\"Awesome, awesome, it's not like we're having club activities or anything, you know?", Line_WaitForInput);
+			NULL, "Awesome, awesome, it's not like we're having club activities or anything, you know?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201629", 256, TRUE);
 	OutputLine(NULL, "　あははははははははははははははは！！」",
 			NULL, " Ahahahahahahahahahahahahahahaha!!\"", Line_Normal);
@@ -57,10 +57,10 @@ void main()
 //r梨花ちゃんを突き飛ばしたレナは、ゆらぁり、と凶悪に輝く目に怒りを浮かべながら、立ち上がって俺に向き直る。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "梨花ちゃんを突き飛ばしたレナは、ゆらぁり、と凶悪に輝く目に怒りを浮かべながら、立ち上がって俺に向き直る。",
-			NULL, "Rena who had thrown Rika-chan aside swung around to face me as she stood up, her eyes glittering with fury.", Line_Normal);
+			NULL, "Rena who had thrown Rika-chan aside, swung around to face me as she stood up, her eyes glittering with fury.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprite/sunset/renasen1_ikakaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/renasen1_ikakaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //rそして、冷たい笑みを身の毛がよだつような声に乗せて、手に持ったbなた.<鉈>を上段に振りかぶって構えた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -72,23 +72,21 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201648", 256, TRUE);
 	OutputLine(NULL, "「ひゃああああああああッ！！！",
-			NULL, "\"Hyaaaaaaaaaaaaa~!!!\"", Line_WaitForInput);
+			NULL, "\"Hyaaaaaaaaaaaaa~!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201649", 256, TRUE);
 	OutputLine(NULL, "　一撃で叩き割ってあげるよおおおおおおおおッツ！！！！！」",
-			NULL, "I'll smash your head in with a single striiiiiiikeeeeee~~!!!!!", Line_Normal);
+			NULL, " I'll smash your head in with a single striiiiiiikeeeeee~!!!!!\"", Line_Normal);
 	ClearMessage();
 
 //r――――くそっ……！！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "————くそっ……！！",
-			NULL, "————Shit~......!!", Line_Normal);
+			NULL, "Shit......!!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(3, "nageru", 256, 64);
-
-	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
-
-	DrawScene("black", 1000 );
+	DisableWindow();
+	PlaySE(3, "s_furu", 256, 64);
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 200 );
 
 //r懸命に気持ちを奮い立たせた俺は、間合いをつめてきたレナの攻撃に対して身体をひねりながら、辛うじてかわす。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -96,49 +94,46 @@ void main()
 			NULL, "Adrenaline gushing through my veins, I twisted my body to barely dodge Rena's attack as the hatchet sliced through the air. ", Line_Normal);
 	ClearMessage();
 
-	PlaySE(3, "tatakiwaru", 256, 64);
-
-	PlaySE(3, "nageru", 256, 64);
-
+	PlaySE(3, "s_tataku", 256, 64);
+	ModDrawCharacter(4, 2, "sprite/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("background/g2_01", 1000 );
-
-	ModDrawCharacter(4, 2, "sprite/sunset/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "s_furu", 256, 64);
 
 //r勢いよく振り下ろしたbなた.<鉈>は轟音とともに木の床に深くめり込むが、レナはなんでもなかったようにそれを引き抜くと、再びそれを構えてにたり……と、赤い舌を出しながら笑った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "勢いよく振り下ろした鉈(なた)は轟音とともに木の床に深くめり込むが、レナはなんでもなかったようにそれを引き抜くと、再びそれを構えてにたり……と、赤い舌を出しながら笑った。",
-			NULL, "The hatchet she had swung recklessly sunk into the wooden floor with a thunderous roar, and Rena retracted it as if it were nothing and held it up once more as she sniggered,...... flashing her red tongue in mirth.", Line_Normal);
+			NULL, "The hatchet she had swung recklessly sunk into the wooden floor with a thunderous roar, and Rena retracted it as if it were nothing and held it up once more as she sniggered, flashing her red tongue in mirth.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	Wait( 3000 );
+	Wait( 1000 );
 	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
 	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	FadeOutBGM( 0, 3000, FALSE  );
 	DrawScene( "black", 3000 );
 	SetValidityOfInput( TRUE );
 
 //BADEND2 (校舎爆発)
 
-	PlayBGM(2, "hm06_30", 128, 0);
+	PlayBGM(2, "depressive paranoia", 128, 0);
 
 //レナrvS09/02/170201649_1.「さよなら、圭一くん。kvS09/02/170201649_2.…………レナに謝ってもいいよ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201649_1", 256, TRUE);
 	OutputLine(NULL, "「さよなら、圭一くん。",
-			NULL, "\"Goodbye, Keiichi-kun. ", Line_WaitForInput);
+			NULL, "\"Goodbye, Keiichi-kun.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201649_2", 256, TRUE);
 	OutputLine(NULL, "…………レナに謝ってもいいよ？」",
-			NULL, ".........You're free to apologise to me when you have the chance.\"", Line_Normal);
+			NULL, " .........You're free to apologize to me when you have the chance.\"", Line_Normal);
 	ClearMessage();
 
+	ModDrawCharacter(4, 2, "sprite/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("background/g2_01", 1000 );
-
-	ModDrawCharacter(4, 2, "sprite/sunset/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //rちきしょう…………ッ！！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -165,7 +160,7 @@ void main()
 			NULL, "\"Keiichi-saaan, we don't have tiiiimeeeee~!!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM(2, 200, FALSE);
+	FadeOutBGM(2, 300, FALSE);
 
 //rそして、沙都子が悲痛な悲鳴を上げた、そのときだった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -173,13 +168,13 @@ void main()
 			NULL, "And then, it was immediately after Satoko's desperate scream.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(3, "daidageki", 256, 64);
-
-	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
-
+	DisableWindow();
+	PlaySE(3, "s_daidageki", 256, 64);
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	DrawSceneWithMask( "white", "maskc", 1, 0, 2000 );
 	DrawScene("black", 1000 );
-
-	DrawScene("black", 1000 );
+	ModSetLayerFilter(4, 256, "none");
 
 //r目の前の世界から、全てのものが消え去った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -193,17 +188,14 @@ void main()
 			NULL, "Including, myself...............", Line_Normal);
 	ClearMessage();
 
-	DrawScene("black", 1000 );
-
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	FadeOutBGM(0, 2000, FALSE);
+	DrawScene("black", 2000 );
+	PlaySE( 3, "s_z03_haikyo", 56, 64 );
+	DrawScene("bad_end", 3000 );
 	Wait( 2000 );
-	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawScene("black", 3000 );
 	Wait( 1000 );
-	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
 	SetValidityOfInput( TRUE );
 }
