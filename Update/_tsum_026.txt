@@ -1476,19 +1476,23 @@ void main()
 		   NULL, "I turned in Satoko's direction.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
-	char Choice2[2];
+	if (GetGlobalFlag(GChoiceMode) > 0) {
+		if (GetGlobalFlag(GChoiceMode) == 2) {
+			DrawBustshot(5, "2choices_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
+		} else {
+			DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 300, TRUE );
+		}
+		char Choice2[2];
 
+		if (GetGlobalFlag(GLanguage) == 1) {
+			Choice2[0] = "Satoko, are you still there?! There's no time!!";
+			Choice2[1] = "Well, Satoko?! You should be able to figure it out!!";
+		} else {
+			Choice2[0] = "沙都子、まだかっ？！　もう時間がないぞ！！";
+			Choice2[1] = "沙都子、どうだっ？！　お前ならわかるはずだ！！";
+		}
 
-	if (GetGlobalFlag(GLanguage) == 1) {
-		Choice2[0] = "Satoko, are you still there?! There's no time!!";
-		Choice2[1] = "Well, Satoko?! You should be able to figure it out!!";
-	} else {
-		Choice2[0] = "沙都子、まだかっ？！　もう時間がないぞ！！";
-		Choice2[1] = "沙都子、どうだっ？！　お前ならわかるはずだ！！";
+		Select( 2, Choice2 );
+		FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 	}
-
-	Select( 2, Choice2 );
-	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
-
 }
