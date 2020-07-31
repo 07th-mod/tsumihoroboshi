@@ -1,0 +1,60 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100132", 256, TRUE);
+	OutputLine(NULL, "「私ね、プロポ一ズされたの」",
+		   NULL, "\"He proposed to me.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お父さんがプロポ一ズ？",
+		   NULL, "My father proposed?", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　こんなヤツに？？",
+		   NULL, " To <i>her</i>??", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "嘘だ嘘だ、",
+		   NULL, " That's a lie!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "大嘘だ…！！",
+		   NULL, " That's a big lie...!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100135", 256, TRUE);
+	OutputLine(NULL, "「向こうからのお願いだから、聞かないわけにも行かないしねー。",
+		   NULL, "\"It's something he wanted, so who am I to refuse?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100136", 256, TRUE);
+	OutputLine(NULL, "指輪ももらっちゃったしー。",
+		   NULL, " He gave me a ring already, too.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100137", 256, TRUE);
+	OutputLine(NULL, "それに結婚を前提のお付き合いだったわけだしね",
+		   NULL, " Plus, we started this relationship with marriage in mind.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100138", 256, TRUE);
+	OutputLine(NULL, "指輪まで贈っておいて、今さらちゃぶ台返しなんてことになるとー、最近は問題が多いわよねぇ？」",
+		   NULL, "If he changed his mind after putting a ring on me... that'd be quite a big problem nowadays, you know?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
