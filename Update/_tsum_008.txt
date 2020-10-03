@@ -2078,7 +2078,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私じゃない私に体を委ねたような不思議な感じ。",
-		   NULL, "I felt as if was letting another me use my body.", Line_WaitForInput);
+		   NULL, "I felt as if I was letting another me use my body.", Line_WaitForInput);
 	OutputLine(NULL, "ものすごくキナ臭い修羅場にいるはずなのに、まるで他人事のよう。",
 		   NULL, " I was in the middle of a disastrous battlefield, but I felt like it wasn't even my business.", Line_Normal);
 	ClearMessage();
@@ -2146,12 +2146,11 @@ void main()
 
 	DisableWindow();
 	ModDrawCharacter(0, 20, "sprite/rina_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100132", 256, TRUE);
-	OutputLine(NULL, "「私ね、妊娠してるの。」",
-		   NULL, "\"I'm pregnant.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_ztsum_008_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_ztsum_008_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -2178,41 +2177,18 @@ void main()
 		   NULL, "It's a lie. It's a lie. It's a lie... It's a big lie...!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　妊娠したから離婚しなくちゃならない、妊娠したから再婚しなくちゃならないなんて、",
-		   NULL, "She has to divorce because she got pregnant. She has to get married because she got pregnant.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "嘘だ嘘だ、",
-		   NULL, " That's a lie!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "大嘘だ…！！",
-		   NULL, " That's a big lie...!!", Line_Normal);
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100135", 256, TRUE);
-	OutputLine(NULL, "「私、クリスチャンだから中絶は出来ないのよねー。",
-		   NULL, "\"I'm a Christian, so I can't get an abortion.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100136", 256, TRUE);
-	OutputLine(NULL, "認知してもらわざるを得ないしー。",
-		   NULL, " He'll just have to accept it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100137", 256, TRUE);
-	OutputLine(NULL, "それに結婚を前提の性交渉だったわけだしね。",
-		   NULL, " Plus, we had sex with marriage in mind.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_ztsum_008_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_ztsum_008_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 	DisableWindow();
 	ModDrawCharacter(0, 20, "sprite/rina_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100138", 256, TRUE);
-	OutputLine(NULL, "妊娠までさせといて、今さらちゃぶ台返しなんてことになるとー、最近は問題が多いわよねぇ？」",
-		   NULL, "He made me pregnant. If he changes his mind and takes no responsibility, it's going to be a big mess, you know?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_ztsum_008_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_ztsum_008_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 	DrawScene( "black", 400 );
 

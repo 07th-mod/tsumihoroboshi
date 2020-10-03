@@ -1,0 +1,55 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100132", 256, TRUE);
+	OutputLine(NULL, "「私ね、妊娠してるの。」",
+		   NULL, "\"I'm pregnant.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　妊娠したから離婚しなくちゃならない、妊娠したから再婚しなくちゃならないなんて、",
+		   NULL, "She has to divorce because she got pregnant. She has to get married because she got pregnant.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "嘘だ嘘だ、",
+		   NULL, " That's a lie!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "大嘘だ…！！",
+		   NULL, " That's a big lie...!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100135", 256, TRUE);
+	OutputLine(NULL, "「私、クリスチャンだから中絶は出来ないのよねー。",
+		   NULL, "\"I'm a Christian, so I can't get an abortion.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100136", 256, TRUE);
+	OutputLine(NULL, "認知してもらわざるを得ないしー。",
+		   NULL, " He'll just have to accept it.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100137", 256, TRUE);
+	OutputLine(NULL, "それに結婚を前提の性交渉だったわけだしね。",
+		   NULL, " Plus, we had sex with marriage in mind.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100138", 256, TRUE);
+	OutputLine(NULL, "妊娠までさせといて、今さらちゃぶ台返しなんてことになるとー、最近は問題が多いわよねぇ？」",
+		   NULL, "He made me pregnant. If he changes his mind and takes no responsibility, it's going to be a big mess, you know?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
