@@ -989,7 +989,6 @@ void main()
 		   NULL, "They'll look just like the real people... but they're totally different inside. They're an abnormal existence that's beyond our imagination.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "yabaisemi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、…………現れる。",
@@ -1002,6 +1001,8 @@ void main()
 	OutputLine(NULL, "現れてる。",
 		   NULL, " here.", Line_Normal);
 	ClearMessage();
+	
+	PlayBGM( 2, "semi_r", 56, 0 );
 
 	DrawScene( "background/aka1", 400 );
 
@@ -1033,6 +1034,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "background/mo_r1_03", "maskup", 1, 0, 300 );
 	PlaySE( 0, "wa_023", 56, 64 );
 
@@ -1067,7 +1069,7 @@ void main()
 		   NULL, "<i>Its</i> shadow is very small... I can tell <i>it</i> \nisn't an adult.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	PlayBGM( 0, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全身にぞわぞわっとしたものが走り抜ける…！",
@@ -1240,7 +1242,7 @@ void main()
 	DrawScene( "scene/039a", 0 );
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, FALSE );
-	PlayBGM( 0, "msys08", 56, 0 );
+	PlayBGM( 0, "z2_hig1", 56, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

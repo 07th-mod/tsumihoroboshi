@@ -623,9 +623,7 @@ void main()
 		   NULL, " I'll look into those two options myself!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	PlayBGM( 1, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう惨劇はごめんだ。",
@@ -646,6 +644,9 @@ void main()
 	OutputLine(NULL, "　てめぇらには床に散らばったポップコーンを拾わせてやるぜ…！！",
 		   NULL, "And then I'm going to make you pick up your popcorn off the floor!!", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺は、宇宙人の話を延々と続けるレナに言った。",
@@ -1071,7 +1072,6 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
 	FadeFilm( 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1097,9 +1097,10 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	PlayBGM( 2, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺をぬっと、黒い影が覆った。",
@@ -1115,6 +1116,8 @@ void main()
 	OutputLine(NULL, "　ゆっくり振り返ると、……………そこには鉈を振り上げた人影があった…。",
 		   NULL, "I turned around slowly...... and saw someone holding a hatchet above their head.", Line_Normal);
 	ClearMessage();
+	
+	PlayBGM( 1, "semi", 56, 0 );
 
 	ModSetLayerFilter(0, 256, "night");
 	ModDrawCharacter(0, 2, "portrait/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
@@ -1142,7 +1145,6 @@ void main()
 
 	DisableWindow();
 	ModDrawCharacter(0, 2, "portrait/renasen1_tuukaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
-	PlayBGM( 0, "suzu", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201625", 256, TRUE);
@@ -1264,8 +1266,8 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
-	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawScene( "white", 100 );
 	ModDrawCharacter(0, 2, "portrait/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/js3", 200 );

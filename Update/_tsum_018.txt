@@ -79,7 +79,6 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/g1", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	PlaySE( 0, "wa_001", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -864,7 +863,6 @@ void main()
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	DrawSceneWithMask( "background/re_s2", "maskright", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1264,6 +1262,7 @@ void main()
 		   NULL, " Her name is Rina Mamiya, and...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "M_Denwa8k", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
