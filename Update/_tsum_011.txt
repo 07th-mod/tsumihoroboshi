@@ -1064,9 +1064,7 @@ void main()
 		   NULL, " He's not coming back.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
-	PlayBGM( 1, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は痛々しい表情で俯く。",
@@ -1095,7 +1093,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(0, 2, "sprite/re2a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/mo_g1_01", 300 );
 	PlayBGM( 0, "Birth_and_death", 56, 0 );
@@ -2723,7 +2721,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 1, "yoru", 56, 0 );
+	PlayBGM( 1, "higurashi", 56, 0 );
 	ModDrawCharacter(0, 3, "sprite/me1b_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3489,7 +3487,6 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

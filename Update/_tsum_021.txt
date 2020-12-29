@@ -1949,9 +1949,8 @@ void main()
 		   NULL, "Rena Ryuugu is Rena Ryuugu. He'll forgive me because it was Reina Ryuugu who did all those bad things in Ibaraki!", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask( "background/aka2", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	PlayBGM( 0, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あっはっはっは、あっはっはっはっは！！！",
@@ -1988,11 +1987,8 @@ void main()
 	ClearMessage();
 
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(0, 2, "portrait/re2a_hig_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/mo_yg1", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100939_1", 256, TRUE);
@@ -2001,7 +1997,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	FadeOutBGM( 0, 100, FALSE );
 	FadeOutBGM( 1, 100, FALSE );
+	FadeOutBGM( 2, 100, FALSE );
 	PlaySE( 0, "s_tataku", 56, 64 );
 	DrawScene( "white", 50 );
 	ModDrawCharacter(0, 2, "portrait/re2a_hig_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
