@@ -581,6 +581,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawSceneWithMask( "background/res_s1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -688,7 +689,8 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "background/res_s1", "maskright", 7, 0, 300 );
-	PlayBGM( 0, "3", 56, 0 );
+	ModPlayBGM( 0, "4", 56, 0, 0 );
+	ModPlayBGM( 0, "3", 56, 0, 1 );
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );

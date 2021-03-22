@@ -3,6 +3,7 @@ void main()
 
 	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -10,24 +11,34 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene( "background/jt1", 5000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "white", 1000 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
 	DrawScene( "background/Sora", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
+	ModFadeOutBGM( 2, 1000, FALSE, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 0 );
 	DrawScene( "background/Sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
 	DrawScene( "background/moon", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "white", 400 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene( "background/ma1", 2000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -404,7 +415,9 @@ void main()
 		   NULL, " Let's do this!!\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
+	ModPlayBGM( 0, "4", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100475", 256, TRUE);
@@ -595,10 +608,12 @@ void main()
 		   NULL, "It was the right decision to force her to play with us today.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_door", 56, 64 );
 	ModDrawCharacter(2, 22, "sprite/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/gk3", "maskright", 7, 0, 300 );
+	ModPlayBGM( 0, "z2_hig2", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうやって楽しく遊んでいると、ふいに知恵先生がやって来た。",
@@ -622,8 +637,8 @@ void main()
 	OutputLine(NULL, "「はぅ？」",
 		   NULL, "\"Hau?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
-	FadeOutBGM( 0, 300, FALSE );
+
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s09/22/171400006", 256, TRUE);
@@ -711,9 +726,11 @@ void main()
 
 	SetColorOfMessage( TRUE, 0xff, 0xbb, 0xff );
 
+	ModFadeOutBGM( 0, 1300, FALSE, 0 );
 	DrawScene( "black", 1300 );
 	DrawScene( "white", 3000 );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene( "background/gr1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1024,7 +1041,8 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "white", 1000 );
 	DrawSceneWithMask( "background/gk1", "maskright", 7, 0, 300 );
-	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 0, "cafe", 56, 0, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 1 );
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

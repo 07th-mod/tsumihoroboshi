@@ -1438,8 +1438,8 @@ void main()
 	OutputLine(NULL, "　…魅音の元気付けるような笑顔が、ぐにゃりと歪む…。",
 		   NULL, "...Mion is trying to cheer me up with an encouraging smile on her face, but her expression became distorted all of a sudden...", Line_Normal);
 	ClearMessage();
-	
-	PlayBGM( 0, "higurashi", 56, 0 );
+
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の目から…大粒の涙が、",
@@ -1465,7 +1465,7 @@ void main()
 	OutputLine(NULL, "……………なんで…………涙が……………。",
 		   NULL, " am I crying...?", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	DrawScene( "black", 1000 );
 	PlayBGM( 0, "Birth_and_death", 56, 0 );

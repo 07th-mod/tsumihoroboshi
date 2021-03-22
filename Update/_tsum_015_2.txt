@@ -32,7 +32,8 @@ void main()
 	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 2, "sprite/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/m_hi5", 400 );
-	PlayBGM( 0, "getting_mad", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200700", 256, TRUE);
@@ -1004,6 +1005,7 @@ void main()
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene( "background/aka2", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100577", 256, TRUE);
@@ -1395,6 +1397,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　面識のない自分に話しかけるわけもない。",

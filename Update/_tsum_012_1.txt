@@ -579,7 +579,7 @@ void main()
 	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacter(1, 19, "sprite/kuma_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/m_y4", "maskup", 1, 0, 400 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s09/19/173100014_1", 256, TRUE);
@@ -1191,7 +1191,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	DrawScene( "background/ryuuketu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -894,7 +894,9 @@ void main()
 	OutputLine(NULL, "　男と律子も、しばらくかかることが分かっているようで、上機嫌に下品な雑談を始めていた。",
 		   NULL, "The man and Ritsuko, already knowing that, started talking amongst themselves.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "getting_mad", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s09/21/172000046", 256, TRUE);
@@ -922,8 +924,8 @@ void main()
 	OutputLine(NULL, "どのくらい絞れそうなんよ。」",
 		   NULL, " How much do ya think you can squeeze out of 'im?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
-	FadeOutBGM( 1, 300, FALSE );
+
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100065", 256, TRUE);
@@ -1660,7 +1662,8 @@ void main()
 
 	DisableWindow();
 	ModDrawCharacter(0, 15, "sprite/kasa_3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
-	PlayBGM( 0, "iwakannnohatuga", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "iwakannnohatuga", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s09/15/1715000020", 256, TRUE);
