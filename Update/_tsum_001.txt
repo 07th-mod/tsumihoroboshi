@@ -11,6 +11,7 @@ void main()
 
 	DrawSceneWithMask( "white", "maskm1", 1, 0, 300 );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene( "background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -267,7 +268,8 @@ void main()
 		   NULL, " B-But, Keiichi-kun, I think you've been losing a lot these days too, haven't you?\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "rika", 56, 0 );
+	ModPlayBGM( 0, "3", 56, 0, 0 );
+	ModPlayBGM( 0, "rika", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/hr_kei22240", 256, TRUE);
@@ -911,6 +913,7 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 300, FALSE );
 	ModDrawCharacter(3, 3, "sprite/me3_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/500300648", 256, TRUE);
@@ -2704,6 +2707,7 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 	DrawScene( "black", 400 );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　トラップだけを取ればやはり沙都子の方が一枚上手なのか…！！",
@@ -3001,6 +3005,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	Negative( 300 , TRUE );
 	PlayBGM( 1, "kaze", 56, 0 );
 
@@ -3047,6 +3052,7 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(2, 2, "sprite/re3b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/GR3", 300 );
+	ModPlayBGM( 0, "mienai", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/500200760", 256, TRUE);
@@ -3221,6 +3227,7 @@ void main()
 
 	DrawScene( "background/blur/GR2", 400 );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　互いの弾丸の激しい応酬。",

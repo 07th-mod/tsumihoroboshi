@@ -2,6 +2,7 @@ void main()
 {
 
 	DrawScene( "white", 400 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -93,7 +94,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 2, "demo_48khz", 56, 0 );
 
@@ -559,6 +560,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お客は成人の女性。",

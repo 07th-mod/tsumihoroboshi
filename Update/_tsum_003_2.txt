@@ -116,8 +116,9 @@ void main()
 		   NULL, "Rena raised her weird voice, and everybody in the store followed suit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( TRUE, 128 );
-	
-	PlayBGM( 1, "semi", 56, 0 );
+
+
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );
@@ -457,6 +458,7 @@ void main()
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, FALSE );
+	ModFadeOutBGM( 0, 50, FALSE, 0 );
 	DrawScene( "background/res4", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -475,9 +477,10 @@ void main()
 		   NULL, "...I don't remember what kind of costume she picked.", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( TRUE, 128 );
-	
-	FadeOutBGM( 0, 400, FALSE );
-	FadeOutBGM( 1, 400, FALSE );
+
+
+	ModFadeOutBGM( 0, 400, FALSE, 1 );
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 	PlayBGM( 2, "3", 56, 0 );
 	PlaySE( 0, "s_furu", 56, 64 );
 	SetValidityOfInput( FALSE );
