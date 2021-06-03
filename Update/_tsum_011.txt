@@ -1248,6 +1248,8 @@ void main()
 	DisableWindow();
 	if (GetGlobalFlag(GArtStyle) == 0) {
 		DrawScene( "scene/034", 1000);
+	} else if (GetGlobalFlag(GArtStyle) == 2) {
+		DrawScene( "re1_ev", 1000);
 	} else {
 		DrawBustshot(4, "scene/034", 0, -80, -134, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 1000, TRUE );
 		DrawBustshot(1, "", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
