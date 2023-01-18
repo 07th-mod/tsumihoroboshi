@@ -1768,6 +1768,8 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	SetSpeedOfMessage( FALSE, 0 );
+
 	DisableWindow();
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	DrawScene( "white", 200 );
