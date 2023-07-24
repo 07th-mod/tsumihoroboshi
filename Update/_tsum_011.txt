@@ -687,15 +687,13 @@ void main()
 	DrawScene( "background/mo_g1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200477", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5032", 256, TRUE);
 	OutputLine(NULL, "「北条家のトラブルはね、雛見沢では誰もが知っていたんだよ。",
 		   NULL, "\"Everybody in Hinamizawa knew about the trouble the Houjou family had.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200478", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5033", 256, TRUE);
 	OutputLine(NULL, "叔母さんがヒステリックで頭のネジのどうかしてることも、悟史くんと沙都子ちゃんを意味もなく虐めていたことも全部、",
-		   NULL, " Everybody knew that their aunt was a hysterical and crazy person, and that she bullied Satoshi-kun and Satoko-chan.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 8200 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " Everybody knew that their aunt was a hysterical and crazy person, and that she bullied Satoshi-kun and Satoko-chan.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5034", 256, TRUE);
 	OutputLine(NULL, "全部ね。",
 		   NULL, " Everybody knew everything. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1659,10 +1657,10 @@ void main()
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100369", 256, TRUE);
 	OutputLine(NULL, "　これしか方法がなかったと思い込むことだけじゃないか！！",
 		   NULL, "You have to believe that this was the only choice!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100370", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/s09/01/170100370a_org", 256, TRUE);
 	OutputLine(NULL, "　それはつまり、仲間に相談する価値がないって思うこと、仲間を一生否定し続けるってことだぞ！！！",
-		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_Continue);
-	Wait(9100);
+		   NULL, " That means you have to live your life denying your friends, and denying that your friends are worth asking for help!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/s09/01/170100370b_org", 256, TRUE);
 	OutputLine(NULL, "　レナにとって、俺たちはその程度の存在だったのか？！",
 		   NULL, " Are we worth nothing to you, Rena?", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
@@ -1807,27 +1805,27 @@ void main()
 	DrawScene( "background/Sora2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100392", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5027", 256, TRUE);
 	OutputLine(NULL, "「人の命を奪うのは許されることじゃないっていう、道徳的なことはもちろん理解している。",
 		   NULL, "\"I understand that depriving people of their lives is an unforgivable crime.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100393", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5028", 256, TRUE);
 	OutputLine(NULL, "でも、それを理解した上で、仲間であるレナが、こうする他なかったことを理解する！！",
 		   NULL, " But I also understand that my friend, Rena, had no other choice but to do this!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100394", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5029", 256, TRUE);
 	OutputLine(NULL, "　だから俺は、レナを汚らわしいと思わないし、恐ろしいとも思わない！！",
 		   NULL, "So, I don't think you're filthy, and I'm not scared of you!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100395", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5030", 256, TRUE);
 	OutputLine(NULL, "　次に同じようなことがあったら、今度はこういう結果にならないように悩み合おう。",
 		   NULL, " If something like this happens again, we should talk and think about what we can do together.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100396", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5031", 256, TRUE);
 	OutputLine(NULL, "だけど、すでに起こってしまったこの出来事を、俺は理解する！",
 		   NULL, " But this already happened, and I understand that! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100397", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5032", 256, TRUE);
 	OutputLine(NULL, "　理解ってのはつまり、許すということだ。",
 		   NULL, "When I say I understand, I mean I forgive you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100398", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5033", 256, TRUE);
 	OutputLine(NULL, "………俺は、レナのこの行為を、否定したりしない！！」",
 		   NULL, " ...I don't hate you for what you did!!\"", Line_Normal);
 	ClearMessage();
@@ -1843,18 +1841,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100399", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5034", 256, TRUE);
 	OutputLine(NULL, "「俺は、レナのやったこの出来事を、受け入れる。",
 		   NULL, "\"I accept what Rena did.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100400", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5035", 256, TRUE);
 	OutputLine(NULL, "これしかどうしようもなくて、悩み抜いた上で至った、最後の最後の手段だったってことを、受け入れる。",
 		   NULL, " I accept that she had no choice other than to do this, and that this was her last resort after thinking it through many times.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100401", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5036", 256, TRUE);
 	OutputLine(NULL, "だから、",
-		   NULL, " So...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1400 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " So...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi5037", 256, TRUE);
 	OutputLine(NULL, "……俺はレナに協力しようと思う…！」",
 		   NULL, " I'm going to side with her...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1938,39 +1934,39 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100412", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5038", 256, TRUE);
 	OutputLine(NULL, "「このヤバい袋の山を知ったのは俺たちだけだ。",
 		   NULL, "\"We're the only ones who know about these bags.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100413", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5039", 256, TRUE);
 	OutputLine(NULL, "俺たち全員が秘密にすればそれでおしまいだ。",
 		   NULL, " If we keep it to ourselves, everything will be fine.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100414", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5040", 256, TRUE);
 	OutputLine(NULL, "レナは何も気にすることはない。",
 		   NULL, " Rena doesn't have to worry about a thing.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/170100415", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5041", 256, TRUE);
 	OutputLine(NULL, "最初の予定通りにこの袋をどこかに隠しちまおうぜ！",
 		   NULL, " Let's hide them somewhere like she planned. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/170100416", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5042", 256, TRUE);
 	OutputLine(NULL, "　そして全員で塩でお清めでもして、一丁上がりだ！！",
 		   NULL, "We'll cleanse ourselves with salt later, and that's it!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100417", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5043", 256, TRUE);
 	OutputLine(NULL, "　そしたら俺たちは全ての罪を許し合おう。",
 		   NULL, " Let's forgive each other for our sins.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100418", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5044", 256, TRUE);
 	OutputLine(NULL, "そして、取り戻そうぜ、本当に平穏な日々を！！",
 		   NULL, " And then we'll regain our happy and peaceful days!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100419", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5045", 256, TRUE);
 	OutputLine(NULL, "　これだろ？！",
 		   NULL, " This is it, right?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100420", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5046", 256, TRUE);
 	OutputLine(NULL, "　レナが本当に選びたかった未来ってヤツは！！",
 		   NULL, " Rena, this is the future you chose,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100421", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5047", 256, TRUE);
 	OutputLine(NULL, "　こっちなんだろ？！",
 		   NULL, " right? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100422", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5048", 256, TRUE);
 	OutputLine(NULL, "　最善の選択肢は！！！」",
 		   NULL, "This is the best possible choice, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

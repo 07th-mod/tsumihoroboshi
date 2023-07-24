@@ -2239,9 +2239,10 @@ void main()
 		   NULL, " I don't remember.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……今度から魅ぃと麻雀をやる時は、終わった後にも牌の数を調べた方がいいと思いますです。",
-		   NULL, "......I recommend checking the total number of tiles after we play mahjong with Mion next time.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "org/rika5000", 256, TRUE);
+	OutputLine(NULL, "「……今度から魅ぃと麻雀をやる時は、終わった後にも牌の数を調べた方がいいと思いますです。」",
+		   NULL, "\"......I recommend checking the total number of tiles after we play mahjong with Mion next time.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2375,13 +2376,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100303", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5024", 256, TRUE);
 	OutputLine(NULL, "「へーー、そんな噂あるのかよ。",
 		   NULL, "\"I didn't know there was a rumor like that.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100304", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5025", 256, TRUE);
 	OutputLine(NULL, "……確か、バラバラ殺人があって、主犯が未だ逃走中。",
 		   NULL, " ...I do know that someone was murdered there and that the main suspect is still on the loose.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100305", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi5026", 256, TRUE);
 	OutputLine(NULL, "そいつの隠した腕一本が未だ見付からないとか言うんだろ？」",
 		   NULL, " He hid the arm of the victim, and it hasn't been found yet, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2390,7 +2391,7 @@ void main()
 	ModDrawCharacter(2, 5, "sprite/ri1_komaru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500041", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika5001", 256, TRUE);
 	OutputLine(NULL, "「……その腕を探して、バラバラにされた監督さんが、幽霊になって彷徨っているという噂があるのです。」",
 		   NULL, "\"......There's a rumor that the construction site manager, the victim of the dismemberment murder case, became a ghost and that he's wandering around the place to find his missing arm.\"", Line_Normal);
 	ClearMessage();
@@ -2556,10 +2557,10 @@ void main()
 	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300198", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5006", 256, TRUE);
 	OutputLine(NULL, "「じゃあ決まり！",
 		   NULL, "\"Well, let's do it!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300199", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5007", 256, TRUE);
 	OutputLine(NULL, "　今日はゴミ山探検にしよう！",
 		   NULL, " Let's go treasure hunting!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2568,17 +2569,17 @@ void main()
 	ModDrawCharacter(1, 3, "sprite/me1a_wink_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300200", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5008", 256, TRUE);
 	OutputLine(NULL, "幽霊を見つけれたら優勝！",
 		   NULL, "If you find a ghost, you win!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/170300201", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5009", 256, TRUE);
 	OutputLine(NULL, "　次点は隠された右腕。",
 		   NULL, " You get a point if you find the victim's missing right arm.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300202", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5010", 256, TRUE);
 	OutputLine(NULL, "その次は、えぇっと、じゃあレナが気に入りそうな何かだね！",
 		   NULL, " And you also get a point if you find... umm, anything that Rena would like! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300203", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion5011", 256, TRUE);
 	OutputLine(NULL, "　レナに見せてシロクロを付けてもらうってことでどうよ！」",
 		   NULL, "We can show what we found to Rena later, and we'll let her decide who's the winner!\"", Line_Normal);
 	ClearMessage();

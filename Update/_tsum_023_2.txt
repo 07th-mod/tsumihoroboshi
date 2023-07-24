@@ -179,25 +179,19 @@ void main()
 	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201341", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5130", 256, TRUE);
 	OutputLine(NULL, "「…………もうね、…だめなの。",
 		   NULL, "\"...I can't... take it anymore.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201342", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5131", 256, TRUE);
 	OutputLine(NULL, "………今のこの瞬間も、",
-		   NULL, " ......Even at this moment,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " ......Even at this moment,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5132", 256, TRUE);
 	OutputLine(NULL, "…私の全身の中で、",
-		   NULL, " the maggots are moving", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " the maggots are moving", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5133", 256, TRUE);
 	OutputLine(NULL, "うじ虫が蠢いてて、",
-		   NULL, " through my body.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2500 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " through my body.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5134", 256, TRUE);
 	OutputLine(NULL, "…痒くて痒くて、……溢れ出しそうなの…。」",
 		   NULL, " ...It itches really badly, and... it feels like they're about to come out from everywhere...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

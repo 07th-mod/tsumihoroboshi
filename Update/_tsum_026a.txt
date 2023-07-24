@@ -1187,9 +1187,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ootaka</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17024", 540, TRUE);
-	OutputLine(NULL, "「こ、こら！　何の真似だね！！　お、大石くん、無線を返したまッグギャッ……？！　…あ………ぐぐぐぐぐぐ……」",
-		   NULL, "\"Hey! What are you doing? Ooishi-kun, give me back the radio... Gyahh! Ah... guhhhhh.\"", Line_Normal);
+	ModPlayVoiceLS(4, 0, "org/s09/00/ootaka17024a_org", 256, TRUE);
+	OutputLine(NULL, "「こ、こら！　何の真似だね！！",
+		   NULL, "\"Hey! What are you doing?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/s09/00/ootaka17024b_org", 256, TRUE);
+	OutputLine(NULL, "　お、大石くん、無線を返したまッグギャッ……？！　…あ………ぐぐぐぐぐぐ……」",
+		   NULL, " Ooishi-kun, give me back the radio... Gyahh! Ah... guhhhhh.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -3812,7 +3815,7 @@ void main()
 	DrawScene( "background/moon", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201705", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5135", 256, TRUE);
 	OutputLine(NULL, "「月に狂うか、何だかかっこいいじゃない？！",
 		   NULL, "\"Going crazy under the moon, huh? That sounds cool, doesn't it?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3832,7 +3835,7 @@ void main()
 	DrawScene( "background/moon", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201706", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5136", 256, TRUE);
 	OutputLine(NULL, "私たちはもう月に狂ってるのかもしれないね！！」",
 		   NULL, "Maybe we're already crazy!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -6448,29 +6451,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201794", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5137", 256, TRUE);
 	OutputLine(NULL, "「………あの２人を殺すことは正しいことだと思ってた。",
 		   NULL, "\"......I thought it was right to kill them.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201795", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5138", 256, TRUE);
 	OutputLine(NULL, "　……でも、あの２人を殺した日から、",
-		   NULL, "But the day I killed them...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 3900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "But the day I killed them...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5139", 256, TRUE);
 	OutputLine(NULL, "…もう世界は狂い始めていたと思う。",
 		   NULL, " the world started to go crazy.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201796", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5140", 256, TRUE);
 	OutputLine(NULL, "………だということは、……。",
 		   NULL, " Did that mean...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201797", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena5141", 256, TRUE);
 	OutputLine(NULL, "……あの２人を殺すのは、",
-		   NULL, " that it was wrong", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " that it was wrong", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena5142", 256, TRUE);
 	OutputLine(NULL, "……正しいことじゃなかったのかな……。」",
 		   NULL, " to kill them...?\"", Line_Normal);
 	ClearMessage();
