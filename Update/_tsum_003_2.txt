@@ -31,6 +31,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/303a", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri6_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res5", 400 );}
 	PlayBGM( 0, "rika", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -39,10 +41,16 @@ void main()
 		   NULL, "\"......Meep.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_kaii_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200074", 256, TRUE);
 	OutputLine(NULL, "「はッうううぅううぅう！！！",
 		   NULL, "\"HAUUUUuUUuuUuuUuu!!!", Line_WaitForInput);
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200075", 256, TRUE);
 	OutputLine(NULL, "　りりり梨ぃ花ちゃぁぁん！！",
@@ -71,6 +79,9 @@ void main()
 		   NULL, " You can't take her home yet. She has to finish her punishment first.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 5, "sprite/ri6_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res5", 400 );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんはお盆にお冷とおしぼりを乗せての登場だ。",
 		   NULL, "Rika-chan appears with glasses of water and wet napkins on a tray.", GetGlobalFlag(GLinemodeSp));
@@ -81,6 +92,9 @@ void main()
 	OutputLine(NULL, "　梨花ちゃんが引いた罰ゲームの衣装は、もはや罰ゲームの定番と化した感もある、エンジェルモートの制服だった。",
 		   NULL, "They drew lots to decide on the costumes. Rika-chan's costume is the uniform of Angel Mort, which we use regularly for punishments.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 5, "sprite/ri6_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/170500001_1", 256, TRUE);
@@ -95,6 +109,8 @@ void main()
 	OutputLine(NULL, "　梨花ちゃんは、お客を迎える口上を述べると、俺とレナの前にお冷とおしぼりを並べた。",
 		   NULL, " Rika-chan put the glasses of water and the wet napkins in front of Rena and me.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/res4", "maskleft", 1, 0, 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200077", 256, TRUE);
@@ -552,11 +568,16 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/303b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 3, "sprite/me5_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res5", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300001", 256, TRUE);
 	OutputLine(NULL, "「こーなりゃヤケだね。",
 		   NULL, "\"There's no turning back. I guess I've got to do what I've got to do.", Line_WaitForInput);
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 3, "sprite/me5_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300002", 256, TRUE);
 	OutputLine(NULL, "毎度ども〜！",
 		   NULL, " Welcome to Angel Mort!", Line_WaitForInput);
@@ -577,6 +598,9 @@ void main()
 		   NULL, " Now I remember what she picked for her costume...!!", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 2, "sprite/re2a_kaii_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200085", 256, TRUE);
 	OutputLine(NULL, "「はぅ〜〜！！！",
@@ -586,6 +610,9 @@ void main()
 		   NULL, " Mii-chan, you look so kyute too!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 3, "sprite/me5_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300003_1", 256, TRUE);
 	OutputLine(NULL, "「あーもぅ、とんでもない災難だよー！",
@@ -594,6 +621,8 @@ void main()
 	OutputLine(NULL, "　この格好は圭ちゃんにやらせるつもりだったのになぁ！」",
 		   NULL, " I was going to make Kei-chan wear it!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/res4", 400 );}
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }

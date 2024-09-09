@@ -2206,16 +2206,19 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2252,6 +2255,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2270,6 +2274,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -2306,16 +2311,19 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2345,6 +2353,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -2391,6 +2400,8 @@ void main()
 
 	DisableWindow();
 	DrawBustshot(4, "scene/014d", 0, 240, -135, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen2_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/sora2", 200 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201679", 256, TRUE);
@@ -2398,6 +2409,8 @@ void main()
 		   NULL, "\"So what are you going to do after you beat me?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );}
 	DrawScene( "background/gy3_01", 300 );
 	PlaySE( 0, "s_furu", 56, 64 );
 	SetValidityOfInput( FALSE );
@@ -2408,6 +2421,7 @@ void main()
 	Wait( 150 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2420,16 +2434,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 245, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 245, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
@@ -2448,6 +2465,7 @@ void main()
 	DrawScene( "background/gy3_01", 200 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2486,11 +2504,13 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 245, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -2515,6 +2535,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_ikakaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/sora2", 200 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2537,11 +2558,13 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/renasen1_muhyokaku_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/sora2", 200 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
@@ -2549,6 +2572,7 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2568,11 +2592,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -2620,6 +2646,7 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -2657,6 +2684,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -2675,6 +2703,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2693,6 +2722,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2705,11 +2735,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -2731,21 +2763,25 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2777,6 +2813,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/Sora2", 200 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	DrawScene( "black", 150 );
 	ModDrawCharacter(0, 2, "sprite/renasen2_tuukaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
@@ -2805,6 +2842,7 @@ void main()
 		   NULL, "Actually, I'll win, and make you my servant!!\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 5*2, TRUE );
@@ -2813,12 +2851,14 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
 	DrawScene( "black", 150 );
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2831,6 +2871,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2851,6 +2892,7 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
@@ -2860,6 +2902,7 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2871,6 +2914,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2886,6 +2930,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2897,6 +2942,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2908,11 +2954,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -2935,6 +2983,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2960,6 +3009,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2968,6 +3018,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -2988,6 +3039,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/sora2", 200 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3002,6 +3054,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3021,6 +3074,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 1*2, TRUE );
@@ -3028,6 +3082,7 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawScene( "background/blur/gy3_01", 400 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3061,11 +3116,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
@@ -3084,6 +3141,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 56, 64 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3100,6 +3158,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3119,6 +3178,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3136,6 +3196,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3150,6 +3211,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3167,6 +3229,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
@@ -3183,6 +3246,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 1*2, TRUE );
@@ -3199,6 +3263,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 1*2, TRUE );
@@ -3212,6 +3277,7 @@ void main()
 		   NULL, "Instead of sweat, you'll be covered in your own blood!!\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3369,6 +3435,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3386,6 +3453,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3415,6 +3483,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3427,6 +3496,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3442,6 +3512,7 @@ void main()
 	PlaySE( 0, "s_furu", 56, 64 );
 	Wait( 200 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3450,6 +3521,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3463,11 +3535,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
@@ -3483,6 +3557,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3508,6 +3583,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_ikakaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/sora_01", 200 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3530,6 +3606,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3546,6 +3623,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
@@ -3567,6 +3645,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3581,16 +3660,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3629,6 +3711,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 5*2, TRUE );
@@ -3717,6 +3800,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3730,6 +3814,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3742,11 +3827,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3764,6 +3851,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3777,6 +3865,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3791,6 +3880,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3802,11 +3892,13 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -3827,6 +3919,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
@@ -3849,6 +3942,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3925,6 +4019,7 @@ void main()
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -3938,6 +4033,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3950,6 +4046,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3972,6 +4069,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -3987,6 +4085,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
@@ -4011,6 +4110,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -4019,6 +4119,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -4052,6 +4153,7 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -4070,6 +4172,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -4078,6 +4181,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -4149,16 +4253,19 @@ void main()
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4196,6 +4303,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin2", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4329,16 +4437,19 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 1*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 1*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin3", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -4377,6 +4488,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/moon", 200 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4418,6 +4530,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -4435,6 +4548,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_Down", 56, 64 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4444,6 +4558,7 @@ void main()
 	DrawScene( "black", 150 );
 	PlaySE( 0, "s_Down", 56, 64 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -4580,16 +4695,19 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin4", "maskdown", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawSceneWithMask( "scene/cutin6", "maskleft", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -5024,6 +5142,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/renasen1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/moon", 200 );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -5051,6 +5170,7 @@ void main()
 	DisableWindow();
 	DrawSprite( 5, "scene/014b", NULL, -429, -723, -135, 0, 0, 0, FALSE, FALSE, 0, 0, 4, 200, TRUE );
 	MoveSprite( 5, -429, -240, -135, 0, 0, 0, 0, 3000, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen2_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201728", 256, TRUE);
@@ -5060,6 +5180,7 @@ void main()
 
 	DisableWindow();
 	DrawSprite( 4, "scene/014a", NULL, -429, -240, -135, 0, 0, 0, FALSE, FALSE, 0, 0, 5, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );}
 	PlaySE( 0, "s_tataku", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -5117,6 +5238,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "scene/cutin5", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	PlaySE( 0, "s_Ken_A8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -5134,16 +5256,20 @@ void main()
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "scene/cutin1", "maskright", 1, 0, 150 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_c", 150 );}
 	PlaySE( 0, "s_Ken_B8k", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 150 );
 	DrawBustshot(4, "scene/014a", 0, 240, -135, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen2_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201732", 256, TRUE);
 	OutputLine(NULL, "「あははははははははははは！！！",
 		   NULL, "\"Ahahahahahahahahahahaha!!!", Line_WaitForInput);
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 2, "sprite/renasen1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );}
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201733", 256, TRUE);
 	OutputLine(NULL, "　そうだったね、すっかり忘れてたよ、私は今夜中に首を掻き毟って死んでしまうんだったっけッ！！！」",
 		   NULL, " That's right, I completely forgot about that. I'm supposed to claw out my throat and die tonight!!\"", Line_Normal);
@@ -6571,6 +6697,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/042a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/moon", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201799", 256, TRUE);
@@ -6753,6 +6880,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/042b", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/moon", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101576", 256, TRUE);

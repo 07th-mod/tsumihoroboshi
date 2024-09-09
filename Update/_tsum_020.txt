@@ -1242,6 +1242,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/039a", 0 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/mo_yg1", 0 );}
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, FALSE );
 	ModPlayBGM( 0, "msys08", 56, 0, 0 );
@@ -1261,6 +1262,9 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/039b", 2000 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(2, 256, "night");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それは、……梨花ちゃんだった。",

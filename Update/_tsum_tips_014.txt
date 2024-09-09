@@ -249,6 +249,7 @@ void main()
 		   NULL, " and Rika Furude.", Line_Normal);
 	ClearMessage();
 	DrawScene( "scene/011f", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/moon", 1000 );}
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );

@@ -459,6 +459,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/301", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_def_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/mo_g1_01", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして両手を広げて、ふわっと回転してスカートをなびかせた後、スカートの両端を摘んで、優雅そうなお辞儀の真似をする。",
